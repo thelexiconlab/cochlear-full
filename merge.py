@@ -12,4 +12,4 @@ def merge_results_hearing_status(df1, df2):
     return merged_df
 
 print(merge_results_hearing_status(df1,df2))
-merge_results_hearing_status(df1,df2).to_csv(path_or_buf='forager/output/merge_results.csv')
+merge_results_hearing_status(df1,df2).to_csv(path_or_buf='forager/output/cochlear_food_fulldata_forager_results/merge_results.csv')
