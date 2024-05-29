@@ -5,6 +5,7 @@ df1 = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/individ
 #print(df1)
 df2 = pd.read_csv("forager/data/fluency_lists/cochlear_status_data.csv")
 #print(df2)
+results_path = 'forager/output/cochlear_food_fulldata_forager_results/merge_results.csv'
 
 
 def merge_results_hearing_status(df1, df2):
@@ -12,4 +13,4 @@ def merge_results_hearing_status(df1, df2):
     return merged_df
 
 print(merge_results_hearing_status(df1,df2))
-merge_results_hearing_status(df1,df2).to_csv(path_or_buf='forager/output/cochlear_food_fulldata_forager_results/merge_results.csv')
+merge_results_hearing_status(df1,df2).to_csv(path_or_buf=results_path)
