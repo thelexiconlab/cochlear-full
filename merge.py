@@ -1,9 +1,9 @@
 #function to add column to lexical results by merging data
 
 import pandas as pd
-df1 = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results 2/individual_descriptive_stats.csv")
+df1 = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/individual_descriptive_stats.csv")
 #print(df1)
-df2 = pd.read_csv("forager/data/fluency_lists/cochlear_status_data - Sheet1.csv")
+df2 = pd.read_csv("forager/data/fluency_lists/cochlear_status_data.csv")
 #print(df2)
 
 
