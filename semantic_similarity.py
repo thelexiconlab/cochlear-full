@@ -14,3 +14,12 @@ def calc_semantic_sim(first_word, second_word):
     return semantic_sim
 
 print(calc_semantic_sim("pizza","popcorn"))
+print(calc_semantic_sim("popcorn", "hot dog"))
+print(calc_semantic_sim("hot dog","cheese"))
+print(calc_semantic_sim("cheese","coffee"))
+print(calc_semantic_sim("coffee","tea"))
+print(calc_semantic_sim("tea","soda"))
+print(calc_semantic_sim("soda","water"))
+print(calc_semantic_sim("water","asparagus"))
+print(calc_semantic_sim("asparagus","broccoli"))
+print(calc_semantic_sim("strawberries","blueberries"))
