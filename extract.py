@@ -1,2 +1,2 @@
 #extract unique words from large txt file
-#move words into list iteratively, if a duplicate -- then do not add
+#move words into dictionary (key = word, value = array of embeddings) iteratively, if a duplicate -- then do not add
