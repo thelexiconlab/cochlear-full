@@ -17,3 +17,9 @@ def extract_unique(file):
 
 extract_unique("forager/data/fluency_lists/speech2vec_100.txt")
 
+def if_match(file1,file2):
+    speech2vec_vocab_df = pd.read_csv("forager/data/lexical_data/speech2vec_vocab.csv")
+    food_data_df = pd.read_csv("forager/data/fluency_lists/food_data - Sheet1.csv")
+    for index,row in speech2vec_vocab_df.iterrows():
+        
+
