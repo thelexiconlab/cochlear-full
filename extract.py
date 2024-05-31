@@ -16,3 +16,4 @@ def extract_unique(file):
     word_list_df.to_csv(path_or_buf="forager/data/lexical_data/speech2vec_vocab.csv")
 
 extract_unique("forager/data/fluency_lists/speech2vec_100.txt")
+
