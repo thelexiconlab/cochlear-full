@@ -11,15 +11,20 @@ import numpy as np
 def cosine_similarity(word1, word2):
     file = open("forager/data/fluency_lists/speech2vec_100.txt", "r")
     word_embeddings = {}
-    new_file = file.readlines()
-    first_line_skipped = new_file[1: ]
+    list_of_lines = file.readlines()
+    first_line_skipped = list_of_lines[1: ]
     
     for line in first_line_skipped:
         split_line = line.split(" ")
         key = split_line[0]
-        string_list = split_line[1: ]
-        float_list = list(map(float, string_list))
+        string_list = split_line[1:-1]
+        float_list = []
+        for item in string_list:
+            float(item) #float_list = list(map(float, string_list))
+            float_list.append(item)
+            
         word_embeddings[key] = float_list
+    #print(word_embeddings)
         
     vector1 = word_embeddings[word1]
     vector2 = word_embeddings[word2]
