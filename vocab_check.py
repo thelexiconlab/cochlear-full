@@ -20,8 +20,11 @@ def cosine_similarity(word1, word2):
         string_list = split_line[1:-1]
         float_list = []
         for item in string_list:
-            float(item) #float_list = list(map(float, string_list))
-            float_list.append(item)
+            if item:
+                float_list.append(float(item))
+                 #float_list = list(map(float, string_list))
+            else:
+                continue
             
         word_embeddings[key] = float_list
     #print(word_embeddings)
@@ -34,4 +37,4 @@ def cosine_similarity(word1, word2):
     cosine_sim = dot_product/(magnitude1*magnitude2)
     print("Cosine Similarity:", cosine_sim)
 
-cosine_similarity("apple", "apricot")
+cosine_similarity("apple", "the")
