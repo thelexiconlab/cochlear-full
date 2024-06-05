@@ -1,0 +1,1021 @@
+vocab,evaluation,difflib
+acornsquash,NOT FOUND,"['squash', 'cornua', 'acorns']"
+adobo,NOT FOUND,"['adobe', 'doo', 'ado']"
+alcohol,FOUND,alcohol
+alfalfa,NOT FOUND,"['valhalla', 'allay', 'allan']"
+alfredo,NOT FOUND,"['alfred', 'alfredston', ""alfred's""]"
+alligator,FOUND,alligator
+almond,FOUND,almond
+almondbutter,NOT FOUND,"['nutter', 'mutter', 'butter']"
+almondmilk,NOT FOUND,"['almond', 'almonds', 'klondike']"
+almonds,FOUND,almonds
+americancheese,NOT FOUND,"['americans', ""american's"", 'americas']"
+anchovies,FOUND,anchovies
+anchovy,FOUND,anchovy
+angelfoodcake,NOT FOUND,"['angelica', 'angelo', 'angela']"
+animalfood,NOT FOUND,"['animal', 'animals', 'manifold']"
+appetizer,NOT FOUND,"['appetite', 'appetites', 'appetible']"
+apple,FOUND,apple
+applepie,NOT FOUND,"['applies', 'applied', 'apple']"
+appleturnover,NOT FOUND,"['approve', 'lecturer', 'approves']"
+applesauce,NOT FOUND,"['applause', 'apples', 'applauded']"
+apricot,FOUND,apricot
+apricots,FOUND,apricots
+artichoke,NOT FOUND,"['article', 'choke', 'particle']"
+arugula,NOT FOUND,"['regular', 'augusta', 'angular']"
+asiago,NOT FOUND,"['sago', 'iago', 'asia']"
+asparagus,FOUND,asparagus
+avocado,NOT FOUND,"['advocated', 'volcano', 'bravado']"
+babaghanoush,NOT FOUND,"['barbarous', 'barbarians', 'magnanimous']"
+bacon,FOUND,bacon
+bagel,NOT FOUND,"['barge', 'badge', 'babel']"
+baguette,NOT FOUND,"['banquette', 'babette', 'butte']"
+bakedbean,NOT FOUND,"['baked', 'baden', 'brakeman']"
+bakedbeans,NOT FOUND,"['brakeman', 'beans', 'baked']"
+bakedchicken,NOT FOUND,"['chicken', 'chickens', 'thicken']"
+bakedpotato,NOT FOUND,"['potato', 'adaptation', 'exportation']"
+bakedturkey,NOT FOUND,"['turkey', 'bakery', 'turnkey']"
+baklava,NOT FOUND,"['lava', 'batavia', 'larva']"
+balut,NOT FOUND,"['salut', 'blunt', 'but']"
+bambooshoots,NOT FOUND,"['bamboos', 'shoots', 'bloodshot']"
+banana,FOUND,banana
+bananabread,NOT FOUND,"['banana', 'barnard', 'bananas']"
+bananacreampie,NOT FOUND,['banana']
+bananapepper,NOT FOUND,"['pepper', 'banner', 'banana']"
+bananapudding,NOT FOUND,"['pudding', 'budding', 'puddings']"
+bananasplit,NOT FOUND,"['bananas', 'banana', 'annapolis']"
+bananasfoster,NOT FOUND,"['bannister', 'bananas', 'banister']"
+bangersandmash,NOT FOUND,"['grandma', 'bananas', 'understands']"
+banhmi,NOT FOUND,"['bahia', 'branching', 'branch']"
+barbecue,NOT FOUND,"['rescue', 'barque', 'barber']"
+barley,FOUND,barley
+basil,FOUND,basil
+bass,FOUND,bass
+bbq,NOT FOUND,"['ebb', 'bub', 'boq']"
+bean,FOUND,bean
+beandip,NOT FOUND,"['bandit', 'bend', 'bean']"
+beans,FOUND,beans
+beansprouts,NOT FOUND,"['sprouts', 'sprout', 'beasts']"
+beef,FOUND,beef
+beefandbrocolli,NOT FOUND,[]
+beefandeggnoodles,NOT FOUND,[]
+beefandnoodles,NOT FOUND,"['noodles', 'bloodless', 'beardless']"
+beeffriedrice,NOT FOUND,"['befriended', 'frederic', 'befriend']"
+beefjerky,NOT FOUND,"['jerky', 'bewery', 'belfry']"
+beefpastrami,NOT FOUND,"['beefsteak', 'benefactor', 'bertram']"
+beefstew,NOT FOUND,"['beefsteak', 'bestow', 'bereft']"
+beefstroganoff,NOT FOUND,['beefsteak']
+beeftaco,NOT FOUND,"['benefactor', 'benefactors', 'bereft']"
+beer,FOUND,beer
+beet,FOUND,beet
+beets,FOUND,beets
+bellpepper,NOT FOUND,"['pepper', 'peppers', 'peppered']"
+bellpeppers,NOT FOUND,"['peppers', 'pepper', 'lepers']"
+berries,FOUND,berries
+bibblettuce,NOT FOUND,"['lettuce', 'babette', 'villette']"
+bibimbap,NOT FOUND,"['biblical', 'simba', 'bibbs']"
+biscuit,FOUND,biscuit
+biscuitsandgravy,NOT FOUND,"['biscuits', 'biscuit']"
+bison,FOUND,bison
+blackbean,NOT FOUND,"['blacken', 'blackbeard', 'blackened']"
+blackbeans,NOT FOUND,"['blacken', 'blackbeard', 'blackest']"
+blackolives,NOT FOUND,"['blackie', 'blackish', 'blackest']"
+blackberries,FOUND,blackberries
+blackberry,FOUND,blackberry
+blackeyedpeas,NOT FOUND,"['blackened', 'lackeys', 'blacked']"
+bleucheese,NOT FOUND,"['lucchese', 'cheese', 'lunches']"
+bltsandwich,NOT FOUND,"['sandwich', 'sandwiches', 'blanch']"
+bluecheese,NOT FOUND,"['lucchese', 'cheese', 'lunches']"
+blueberries,NOT FOUND,"['bleoberis', 'blackberries', 'berries']"
+blueberry,NOT FOUND,"['bluebeard', 'blubber', 'blackberry']"
+blueberryjelly,NOT FOUND,"['bluebells', 'liberally', 'bluebeard']"
+bluegill,NOT FOUND,"['buell', 'luella', 'bluebells']"
+boiledegg,NOT FOUND,"['boiled', 'broiled', 'oiled']"
+bokchoy,NOT FOUND,"['broncho', 'bothy', 'botch']"
+bologna,FOUND,bologna
+bonelesswings,NOT FOUND,"['blessings', 'blessing', 'confessing']"
+bostonlettuce,NOT FOUND,"['lettuce', 'toilette', 'obsolete']"
+boysenberry,NOT FOUND,"['gooseberry', 'dysentery', 'sowerberry']"
+bratwurst,NOT FOUND,"['bradhurst', 'burst', 'brats']"
+brazilnut,NOT FOUND,"['brazil', 'brazilian', 'brant']"
+bread,FOUND,bread
+breadbowl,NOT FOUND,"['breakdown', 'bread', 'brawl']"
+breadpudding,NOT FOUND,"['reaping', 'reading', 'pudding']"
+breadfruit,NOT FOUND,"['redruth', 'recruit', 'breadth']"
+breadstick,NOT FOUND,"['breast', 'realistic', 'seasick']"
+breadsticks,NOT FOUND,"['breasts', 'sticks', 'bricks']"
+bready,NOT FOUND,"['ready', 'bread', 'brady']"
+breakfastsandwich,NOT FOUND,"['breakfasts', 'breakfasted', 'breakfast']"
+brie,NOT FOUND,"['brine', 'brier', 'brieg']"
+brioche,NOT FOUND,"['brice', 'brooches', 'broached']"
+brisket,NOT FOUND,"['brisker', 'brisk', 'risked']"
+broccoli,NOT FOUND,"['morocco', 'bucolic', 'broncho']"
+broccolirabe,NOT FOUND,"['brocade', 'sociable', 'reliable']"
+brookie,NOT FOUND,"['brooke', 'brook', 'broke']"
+broth,FOUND,broth
+brownrice,NOT FOUND,"['brownie', 'brownies', 'browne']"
+brownie,FOUND,brownie
+brusselssprout,NOT FOUND,"['brussels', 'passepartout', ""russell's""]"
+brusselssprouts,NOT FOUND,"['brussels', 'sprouts']"
+buddhasdelight,NOT FOUND,"['delight', 'buddhas', 'gaslight']"
+buffalowing,NOT FOUND,"['flowing', 'buffalo', 'blowing']"
+buffalowings,NOT FOUND,"['buffaloes', 'flowing', 'buffalo']"
+buicake,NOT FOUND,"['buckle', 'bucket', 'bicker']"
+bulgogi,NOT FOUND,"['bulldog', 'bulging', 'logic']"
+bulltesticles,NOT FOUND,"['bullets', 'utensils', 'trestles']"
+bun,FOUND,bun
+bunchofgrapes,NOT FOUND,"['bunches', 'biographies', 'anchorage']"
+burger,FOUND,burger
+burrito,NOT FOUND,"['burton', 'burrow', 'burros']"
+burritobowl,NOT FOUND,"['burrow', 'burrows', 'bristow']"
+butter,FOUND,butter
+butterlettuce,NOT FOUND,"['lettuce', 'butterflies', 'buttered']"
+butterfinger,NOT FOUND,"['butteridge', 'uttering', 'butterflies']"
+buttermilkbiscuit,NOT FOUND,"['buttermilk', 'butterflies', 'uttermost']"
+butternutsquash,NOT FOUND,"['buttercups', 'bitterness', 'buttress']"
+buttonmushrooms,NOT FOUND,"['mushrooms', 'mushroom', 'buttonholes']"
+cabbage,FOUND,cabbage
+caesarsalad,NOT FOUND,"['caesars', ""caesar's"", 'caesar']"
+cake,FOUND,cake
+calamari,NOT FOUND,"['lamar', 'calamity', 'colmar']"
+calzone,NOT FOUND,"['alone', 'chaloner', 'malone']"
+canadianbacon,NOT FOUND,"['canadian', 'canadians', 'carnation']"
+candy,FOUND,candy
+candybar,NOT FOUND,"['candy', 'calendar', 'candor']"
+candycane,NOT FOUND,"['anodyne', 'andante', 'candy']"
+cannoli,NOT FOUND,"['cannot', 'cannon', 'annapolis']"
+cantaloupe,NOT FOUND,"['catalogue', 'catalogues', 'catalogued']"
+capncrunch,NOT FOUND,"['punch', 'cruncher', 'crunching']"
+cappuccino,NOT FOUND,"['clapping', 'cappadocian', 'jannuccio']"
+carneasada,NOT FOUND,"['carnes', 'canada', 'creased']"
+carnitas,NOT FOUND,"['critias', ""anita's"", 'carts']"
+carrot,FOUND,carrot
+carrotcake,NOT FOUND,"['carrot', 'caretaker', 'partake']"
+carrots,FOUND,carrots
+cashew,NOT FOUND,"['cashed', 'shew', 'chew']"
+cashews,NOT FOUND,"['shews', 'cases', 'ashes']"
+cassava,NOT FOUND,"['casanova', 'cassandra', 'cass']"
+casserole,FOUND,casserole
+cat,FOUND,cat
+catfish,NOT FOUND,"['crayfish', 'crawfish', 'fish']"
+cauliflower,FOUND,cauliflower
+caviar,NOT FOUND,"['caviare', 'octavia', 'clavier']"
+celeriac,NOT FOUND,"['cleric', 'celia', 'electric']"
+celery,FOUND,celery
+cereal,NOT FOUND,"['cereals', 'cerebral', 'real']"
+cerealbar,NOT FOUND,"['cereals', 'cerebral', 'cellar']"
+chalupa,NOT FOUND,"['chap', 'chapman', 'scalp']"
+chard,NOT FOUND,"['hard', 'char', 'card']"
+cheddar,FOUND,cheddar
+cheddarcheese,NOT FOUND,"['cheddars', 'cheddar', 'searches']"
+cheese,FOUND,cheese
+cheesecurds,NOT FOUND,"['cheeses', ""cheesacre's"", 'cheese']"
+cheesepuff,NOT FOUND,"['cheese', 'cheeses', 'cheesacre']"
+cheesestick,NOT FOUND,"['cheeses', 'cheese', 'seasick']"
+cheeseburger,NOT FOUND,"['cheese', 'cheesacre', 'burger']"
+cheesecake,NOT FOUND,"['chesapeake', 'cheese', 'cheesacre']"
+cheesesteak,NOT FOUND,"['cheeses', 'cheese', 'beefsteak']"
+cheetos,NOT FOUND,"['sheets', 'cheese', 'cheers']"
+cheezits,NOT FOUND,"['chemists', 'sheets', 'chests']"
+cheezit,NOT FOUND,"['chit', 'chee', 'chemist']"
+cherries,FOUND,cherries
+cherry,FOUND,cherry
+cherrypie,NOT FOUND,"['cherrie', 'cherries', 'cherry']"
+chicken,FOUND,chicken
+chickenalfredo,NOT FOUND,"['thickened', 'checkered', 'chicken']"
+chickenandrice,NOT FOUND,"['chickadee', 'chickie', 'chicken']"
+chickenandwaffles,NOT FOUND,"['chickens', 'chickadee']"
+chickenbarbecue,NOT FOUND,"['chickadee', 'chicken', 'chickens']"
+chickenbreast,NOT FOUND,"['chickens', 'chicken', 'thickest']"
+chickenenchilada,NOT FOUND,"['thickened', 'chicken']"
+chickenfingers,NOT FOUND,"['thickening', 'chickens', 'sickening']"
+chickenfriedrice,NOT FOUND,"['thickened', 'checkered', 'chickie']"
+chickenfriedsteak,NOT FOUND,"['chiefest', 'chickens', 'thickened']"
+chickenlomein,NOT FOUND,"['chicken', 'thickening', 'chinamen']"
+chickenmarsala,NOT FOUND,"['chickens', 'chicken', 'chickamauga']"
+chickennoodlesoup,NOT FOUND,['chickens']
+chickennoodles,NOT FOUND,"['chickens', 'noodles', 'chicken']"
+chickennuggets,NOT FOUND,"['chickens', 'thickening', 'nuggets']"
+chickenparmesan,NOT FOUND,"['parmesan', 'chinamen', 'chinaman']"
+chickenpotpie,NOT FOUND,"['chickie', 'chicken', 'chickens']"
+chickensalad,NOT FOUND,"['chickens', 'chicken', 'thickened']"
+chickensandwich,NOT FOUND,"['sandwich', 'chickens', 'icelandic']"
+chickenstrips,NOT FOUND,"['chickens', 'chicken', 'chichester']"
+chickenstromboli,NOT FOUND,"['chickens', 'chichester', 'chicken']"
+chickentandoori,NOT FOUND,"['chicken', 'chickens']"
+chickentender,NOT FOUND,"['thickened', 'cricketer', 'chicken']"
+chickentenders,NOT FOUND,"['chickens', 'thickened', 'engenders']"
+chickenwing,NOT FOUND,"['thickening', 'sickening', 'chicken']"
+chickenwings,NOT FOUND,"['thickening', 'chickens', 'sickening']"
+chickpea,NOT FOUND,"['chickie', 'chicken', 'chick']"
+chili,FOUND,chili
+chilibean,NOT FOUND,"['chillen', 'caliban', 'chilblains']"
+chilipepper,NOT FOUND,"['clipper', 'philippe', 'pepper']"
+chinese,FOUND,chinese
+chinesefood,NOT FOUND,"['chinese', 'chinook', 'chested']"
+chip,FOUND,chip
+chipotlechicken,NOT FOUND,"['thicken', 'chicken', 'chechen']"
+chips,FOUND,chips
+chitterlings,NOT FOUND,"['chattering', 'hitting', 'twittering']"
+chives,NOT FOUND,"['hives', 'archives', 'achieves']"
+chocolate,FOUND,chocolate
+chocolatechip,NOT FOUND,"['chocolate', 'schoolmate', 'schoolmates']"
+chocolatechipcookie,NOT FOUND,['chocolate']
+chocolatechipcookies,NOT FOUND,['chocolate']
+chocolatechips,NOT FOUND,"['chocolate', 'schoolmates', 'catechism']"
+chocolatecreampie,NOT FOUND,"['chocolate', 'schoolmaster', 'schoolmasters']"
+chocolatepie,NOT FOUND,"['chocolate', 'schoolmate', 'schoolmates']"
+chofan,NOT FOUND,"['chan', 'hoffman', 'honan']"
+choppedsalad,NOT FOUND,"['chopped', 'hopped', 'cropped']"
+chowmein,NOT FOUND,"['comin', 'cowering', 'comedian']"
+chowder,NOT FOUND,"['shower', 'powder', 'lowder']"
+chowmein,NOT FOUND,"['comin', 'cowering', 'comedian']"
+churro,NOT FOUND,"['hurry', 'huron', 'curry']"
+chutney,NOT FOUND,"['chute', 'courtney', 'putney']"
+cilantro,NOT FOUND,"['canto', 'citron', 'canton']"
+cinnamon,FOUND,cinnamon
+cinnamonbun,NOT FOUND,"['cinnamon', 'infamous', 'chinamen']"
+cinnamonroll,NOT FOUND,"['cinnamon', 'controlled', 'control']"
+clam,FOUND,clam
+clamchowder,NOT FOUND,"['lowder', 'clamor', 'clavichord']"
+clementine,NOT FOUND,"['clement', 'cemented', 'cement']"
+clubsandwich,NOT FOUND,"['sandwich', 'sandwiches', 'icelandic']"
+cobbler,FOUND,cobbler
+coco,NOT FOUND,"['cocoa', 'coo', 'coop']"
+coconut,NOT FOUND,"['cocoanut', 'cocoanuts', 'coon']"
+coconutcustardpie,NOT FOUND,['cocoanuts']
+coconutmilk,NOT FOUND,"['cocoanut', 'cocoanuts', 'colonial']"
+cod,FOUND,cod
+coffee,FOUND,coffee
+coffeebean,NOT FOUND,"['coffee', 'offend', 'feeble']"
+coleslaw,NOT FOUND,"['collar', 'olenska', 'foresaw']"
+collard,NOT FOUND,"['collared', 'collar', 'pollard']"
+collardgreens,NOT FOUND,"['collars', 'colleges', 'collared']"
+combinationfriedrice,NOT FOUND,"['combination', 'combinations', 'contamination']"
+congee,NOT FOUND,"['congested', 'congealed', 'cone']"
+cookedcatfish,NOT FOUND,"['codfish', 'cooked', 'commendations']"
+cookedchicken,NOT FOUND,"['chicken', 'chickens', 'woodchuck']"
+cookedham,NOT FOUND,"['cooked', 'crooked', 'uncooked']"
+cookie,FOUND,cookie
+corn,FOUND,corn
+corndog,NOT FOUND,"['corned', 'cordon', 'corn']"
+cornonthecob,NOT FOUND,"['corinthe', 'coronation', 'connection']"
+cornbread,NOT FOUND,"['cornered', 'corned', 'conrad']"
+corndog,NOT FOUND,"['corned', 'cordon', 'corn']"
+cornedbeef,NOT FOUND,"['corned', 'scorned', 'concede']"
+cornedbeefandcabbage,NOT FOUND,[]
+cornmeal,FOUND,cornmeal
+cosmicbrownies,NOT FOUND,"['brownies', 'cronies', 'brownie']"
+cottagecheese,NOT FOUND,"['cottages', 'cottagers', 'cottage']"
+couscous,NOT FOUND,"['luscious', 'scouts', 'cosmos']"
+crab,FOUND,crab
+crabcake,NOT FOUND,"['crackle', 'cracker', 'cracked']"
+crablegs,NOT FOUND,"['cables', 'rambles', 'cradles']"
+cracker,FOUND,cracker
+crackers,FOUND,crackers
+craisin,NOT FOUND,"['raisin', 'raisins', 'raising']"
+cranberries,FOUND,cranberries
+cranberry,FOUND,cranberry
+cranberrysauce,NOT FOUND,"['cranberry', 'cranberries', 'abeyance']"
+cream,FOUND,cream
+creamcheese,NOT FOUND,"['reaches', 'creche', 'creams']"
+creamofmushroomsoup,NOT FOUND,['mushrooms']
+creamedcorn,NOT FOUND,"['screamed', 'dreamer', 'dreamed']"
+creampuff,NOT FOUND,"['cream', 'cramp', 'scruff']"
+cremebrulee,NOT FOUND,"['tremble', 'remembered', 'referee']"
+crispyduck,NOT FOUND,"['crisply', 'crisp']"
+croissant,NOT FOUND,"['cross', 'criss', 'puissant']"
+crouton,NOT FOUND,"['croutons', 'crofton', 'cotton']"
+crumpet,NOT FOUND,"['trumpet', 'trumpets', 'strumpet']"
+cubesteak,NOT FOUND,"['beefsteak', 'bespeak', 'steak']"
+cucumber,FOUND,cucumber
+cupcake,NOT FOUND,"['cake', 'pancake', 'clucked']"
+curry,FOUND,curry
+custard,FOUND,custard
+daikon,NOT FOUND,"['dickon', 'davison', 'drain']"
+dairy,FOUND,dairy
+danish,FOUND,danish
+darkchocolate,NOT FOUND,"['chocolate', 'schoolmate', 'schoolmates']"
+date,FOUND,date
+dates,FOUND,dates
+deepfriedsnickers,NOT FOUND,"['experiences', 'drinkers', 'defences']"
+delimeat,NOT FOUND,"['delineate', 'delineated', 'deliberate']"
+desert,FOUND,desert
+dessert,FOUND,dessert
+deviledeggs,NOT FOUND,"['devils', 'reviled', 'divides']"
+dill,FOUND,dill
+dip,FOUND,dip
+dog,FOUND,dog
+dolphin,FOUND,dolphin
+donut,NOT FOUND,"['dont', 'doubt', ""don't""]"
+doritos,NOT FOUND,"['doris', 'dormitories', 'orbits']"
+dough,FOUND,dough
+doughnut,FOUND,doughnut
+dragonfruit,NOT FOUND,"['ragout', 'dragon', 'dragoon']"
+dressing,FOUND,dressing
+duck,FOUND,duck
+ducksauce,NOT FOUND,"['sauce', 'ducks', 'sauces']"
+dumplings,FOUND,dumplings
+dungenesscrab,NOT FOUND,"['dungeons', 'drunkenness', 'genera']"
+durian,NOT FOUND,"['during', 'durand', 'adrian']"
+easterpudding,NOT FOUND,"['studding', 'westering', 'pestering']"
+eclair,NOT FOUND,"['clair', 'claire', 'lair']"
+eclaire,NOT FOUND,"['claire', 'declare', 'clare']"
+edamame,NOT FOUND,"['dammed', 'damage', 'dame']"
+eel,FOUND,eel
+egg,FOUND,egg
+eggroll,NOT FOUND,"['roll', 'troll', 'rolls']"
+eggsalad,NOT FOUND,"['salad', 'zealand', 'sala']"
+eggnog,NOT FOUND,"['pegging', 'legging', 'begging']"
+eggplant,NOT FOUND,"['plant', 'pliant', 'plants']"
+eggroll,NOT FOUND,"['roll', 'troll', 'rolls']"
+eggs,FOUND,eggs
+eggsbenedict,NOT FOUND,"['benedict', 'benediction', 'benedictions']"
+elbowmacaroni,NOT FOUND,"['macaroni', 'bowman', 'emaciation']"
+elephantear,NOT FOUND,"['elephant', 'elephants', ""elephant's""]"
+enchilada,NOT FOUND,"['hilda', 'child', 'pencilled']"
+energybar,NOT FOUND,"['energy', 'henery', 'generator']"
+energybites,NOT FOUND,"['energies', 'energy', 'generates']"
+englishmuffin,NOT FOUND,"['englishmen', 'englishman', 'englishwoman']"
+escargot,NOT FOUND,"['cargo', 'iscariot', 'spargo']"
+fajita,NOT FOUND,"['fait', 'fatal', 'faria']"
+falafel,NOT FOUND,"['fall', 'flannel', 'falsely']"
+fat,FOUND,fat
+fats,NOT FOUND,"['flats', 'feats', 'fates']"
+fetacheese,NOT FOUND,"['fetches', 'cheese', 'therese']"
+fettuccine,NOT FOUND,"['lettuce', 'fretting', 'fetching']"
+fettuccinealfredo,NOT FOUND,['fettered']
+fettucine,NOT FOUND,"['lettuce', 'fretting', 'fetching']"
+fettucinealfredo,NOT FOUND,"['fettered', 'unfettered']"
+fig,FOUND,fig
+filet,NOT FOUND,"['fillet', 'file', 'fillets']"
+filetmignon,NOT FOUND,"['mignon', 'wilmington', 'reflection']"
+fish,FOUND,fish
+fishandchips,NOT FOUND,"['friendships', 'hardships', 'franchise']"
+fishfillet,NOT FOUND,"['fillet', 'skillet', 'fillets']"
+fishsandwich,NOT FOUND,"['sandwich', 'sandwiches', 'standish']"
+fishsticks,NOT FOUND,"['sticks', 'fiddlesticks', 'fisticuffs']"
+flan,NOT FOUND,"['flank', 'lan', 'fan']"
+flatbread,NOT FOUND,"['flared', 'flattered', 'flatheads']"
+flour,FOUND,flour
+fondue,NOT FOUND,"['fondle', 'fonder', 'fond']"
+fortunecookie,NOT FOUND,"['fortune', 'uncooked', 'fortunes']"
+foulhalabi,NOT FOUND,['lullabies']
+frenchbread,NOT FOUND,"['wrenched', 'forehead', 'drenched']"
+frenchdip,NOT FOUND,"['french', 'friendship', 'wrenched']"
+frenchfries,NOT FOUND,"['franchises', 'trenches', 'french']"
+frenchfry,NOT FOUND,"['french', 'wrench', 'trench']"
+frenchonionsoup,NOT FOUND,"['recognition', 'frenchwoman', ""frenchman's""]"
+frenchtoast,NOT FOUND,"['forecast', 'frenchwoman', ""frenchman's""]"
+fried,FOUND,fried
+friedchicken,NOT FOUND,"['chicken', 'chickens', 'frederick']"
+friedeggs,NOT FOUND,"['friends', 'friendless', 'rides']"
+friedfish,NOT FOUND,"['fiendish', 'reddish', 'friends']"
+friedpickles,NOT FOUND,"['freckles', 'pickles', 'freckle']"
+friedrice,NOT FOUND,"['frederic', 'fierce', 'frederick']"
+friedscallops,NOT FOUND,"['recalls', 'scollops', 'friendships']"
+friedshrimp,NOT FOUND,"['friendship', 'friendships', 'shrimp']"
+fries,NOT FOUND,"['furies', 'fringes', 'friends']"
+fritopie,NOT FOUND,"['frailties', 'fitzpiers', 'rope']"
+frogleg,NOT FOUND,"['role', 'frog', 'fogg']"
+frozendinner,NOT FOUND,"['frontier', 'fazender', 'render']"
+frozenyogurt,NOT FOUND,"['frozen', 'gardencourt', 'fancourt']"
+fruit,FOUND,fruit
+fruitbythefoot,NOT FOUND,"['whitefoot', 'fairyfoot']"
+fruitcup,NOT FOUND,"['fruit', 'fruitful', 'fruits']"
+fruitsalad,NOT FOUND,"['fruits', 'friesland', 'salad']"
+fruitsnack,NOT FOUND,"['fruits', 'snack', 'fruition']"
+fruitsnacks,NOT FOUND,"['fruits', 'fruitless', 'furnaces']"
+fruits,FOUND,fruits
+fudge,FOUND,fudge
+funnelcake,NOT FOUND,"['funnel', 'funnels', 'unlocked']"
+garbanzobeans,NOT FOUND,"['arabians', 'abandons', 'barbadoes']"
+garlic,FOUND,garlic
+garlicbread,NOT FOUND,"['garlic', 'garbed', 'gnarled']"
+generaltsoschicken,NOT FOUND,"['generalship', 'generative', 'generation']"
+generaltsoschicken,NOT FOUND,"['generalship', 'generative', 'generation']"
+ghee,NOT FOUND,"['hee', 'gee', 'thee']"
+ginger,FOUND,ginger
+gingerpork,NOT FOUND,"['ginger', 'interior', 'ingeborg']"
+gizzard,FOUND,gizzard
+gnocchi,NOT FOUND,"['pinocchio', ""pinocchio's"", 'notch']"
+goatcheese,NOT FOUND,"['cheese', 'gatherers', 'watches']"
+goldfish,FOUND,goldfish
+goldfishcracker,NOT FOUND,"['goldfish', 'cracker', 'disgrace']"
+gordita,NOT FOUND,"['gordian', 'gloria', 'rita']"
+gouda,NOT FOUND,"['gourd', 'gould', 'aouda']"
+grahamcracker,NOT FOUND,"['cracker', 'crackers', 'character']"
+grahamcrackers,NOT FOUND,"['crackers', 'cracker', 'characters']"
+grain,FOUND,grain
+grains,FOUND,grains
+granola,NOT FOUND,"['gran', 'gaol', 'gala']"
+granolabar,NOT FOUND,"['malabar', 'granary', 'granada']"
+grape,FOUND,grape
+grapefruit,NOT FOUND,"['recruit', 'refit', 'recruits']"
+grapes,FOUND,grapes
+gravy,FOUND,gravy
+greenbean,NOT FOUND,"['greene', 'greenland', 'green']"
+greenbeans,NOT FOUND,"['greens', 'greene', 'greenness']"
+greenonion,NOT FOUND,"['retention', 'greenwood', 'reunion']"
+greenonions,NOT FOUND,"['greenish', 'pretensions', 'onions']"
+greenpea,NOT FOUND,"['greene', 'green', 'greenery']"
+greenpepper,NOT FOUND,"['greenery', 'pepper', 'greene']"
+greenpeppers,NOT FOUND,"['peppers', 'greenery', 'creepers']"
+greenleaflettuce,NOT FOUND,"['greenwater', 'lettuce']"
+greens,FOUND,greens
+grilledcheese,NOT FOUND,"['grilled', 'riches', 'grille']"
+grilledchicken,NOT FOUND,"['grilled', 'chicken', 'gretchen']"
+grilledfish,NOT FOUND,"['grilled', 'goldfish', 'grille']"
+grilledpeppers,NOT FOUND,"['peppers', 'grilled', 'ringleaders']"
+grilledvegetables,NOT FOUND,"['vegetables', 'vegetable', 'regrettable']"
+grits,NOT FOUND,"['grit', 'gris', 'gits']"
+groundbeef,NOT FOUND,"['grounded', 'ground', 'rounder']"
+groundcherries,NOT FOUND,"['groceries', 'cherries', 'roundheads']"
+groundchuck,NOT FOUND,"['ground', 'woodchuck', 'groundwork']"
+groundround,NOT FOUND,"['grounded', 'rondon', 'ground']"
+groundsirloin,NOT FOUND,"['rousillon', 'grounds', 'rounding']"
+grouper,NOT FOUND,"['grouped', 'roper', 'group']"
+gruyere,NOT FOUND,"['ruyter', 'grayer', ""ye're""]"
+guacamole,NOT FOUND,"['gambol', 'gamble', 'cajole']"
+guava,NOT FOUND,"['guiana', 'lava', 'java']"
+guineapig,NOT FOUND,"['guinea', 'guineas', 'unmeaning']"
+gum,FOUND,gum
+gumbo,NOT FOUND,"['gum', 'gub', 'umbool']"
+gummibear,NOT FOUND,"['summer', 'number', 'mummer']"
+gummybears,NOT FOUND,"['summers', 'numbers', 'mummers']"
+gummyworms,NOT FOUND,"['worms', 'gummy', 'rumors']"
+gyro,NOT FOUND,"['grow', 'gros', 'grog']"
+haggis,NOT FOUND,"['hags', 'higgins', 'hangs']"
+halibut,NOT FOUND,"['haut', 'halt', 'hurlbut']"
+ham,FOUND,ham
+hamandcheesesandwich,NOT FOUND,[]
+hamburger,NOT FOUND,"['hamburg', 'burger', 'limburger']"
+hardboiledegg,NOT FOUND,"['harbored', 'harboured', 'harold']"
+hash,FOUND,hash
+hashbrowns,NOT FOUND,"['browns', ""brown's"", 'washburn']"
+hashbrown,NOT FOUND,"['shown', 'brown', 'washburn']"
+hashbrowns,NOT FOUND,"['browns', ""brown's"", 'washburn']"
+hazelnut,NOT FOUND,"['hazel', 'walnut', 'walnuts']"
+hibachi,NOT FOUND,"['bach', 'kihachi', 'ibrahim']"
+hoagie,NOT FOUND,"['homage', 'hostage', 'osage']"
+hominy,NOT FOUND,"['homily', 'shiny', 'minty']"
+honey,FOUND,honey
+honeybun,NOT FOUND,"['honey', 'honeymoon', 'honeycomb']"
+honeydew,NOT FOUND,"['honeyed', 'honey', 'horned']"
+honeydewmelon,NOT FOUND,"['honeymoon', 'wonderment', 'honeyed']"
+horsdoeuvres,NOT FOUND,"['whosoever', 'ourselves', 'orders']"
+hotbrown,NOT FOUND,"['brown', 'outgrown', 'thrown']"
+hotdog,NOT FOUND,"['outdo', 'hondo', 'hodge']"
+hotpocket,NOT FOUND,"['pocket', 'pockets', 'hooke']"
+hotsauce,NOT FOUND,"['sauce', 'sauces', 'saucer']"
+hotdog,NOT FOUND,"['outdo', 'hondo', 'hodge']"
+hotpot,NOT FOUND,"['hoot', 'outpost', 'shoot']"
+housefriedrice,NOT FOUND,"['frederic', 'housebreaker', 'hurricane']"
+huevosrancheros,NOT FOUND,"['remonstrances', 'utterances', 'ranches']"
+hummus,NOT FOUND,"['hums', 'humours', 'humbugs']"
+hushpuppy,NOT FOUND,"['puppy', 'supply', 'unhappy']"
+ice,FOUND,ice
+icecream,NOT FOUND,"['cream', 'scream', 'creamy']"
+icecreamsandwich,NOT FOUND,"['sandwich', 'icelandic', 'sandwiches']"
+iceberglettuce,NOT FOUND,"['lettuce', 'iceberg', 'icebergs']"
+intestine,NOT FOUND,"['intestines', 'intestinal', 'intertwined']"
+italian,FOUND,italian
+italianfood,NOT FOUND,"['italian', 'italians', 'talisman']"
+italiansausage,NOT FOUND,"['italians', 'sausage', 'italian']"
+jackfruit,NOT FOUND,"['fruit', 'jackie', 'jacket']"
+jalapeno,NOT FOUND,"['jalap', 'alan', 'kalganov']"
+jam,FOUND,jam
+jambalaya,NOT FOUND,"['malay', 'malady', 'himalayas']"
+japanesefood,NOT FOUND,"['japanese', 'ransford', 'panelled']"
+jello,NOT FOUND,"['nello', 'jelly', 'hello']"
+jello,NOT FOUND,"['nello', 'jelly', 'hello']"
+jelly,FOUND,jelly
+jellybeans,NOT FOUND,"['jellyband', 'pelleas', 'jellies']"
+jerkchicken,NOT FOUND,"['chicken', 'chickens', 'jerkin']"
+jerky,FOUND,jerky
+jicama,NOT FOUND,"['jamak', 'jocapa', 'jim']"
+jonessoda,NOT FOUND,"[""jones's"", 'jones', 'jonson']"
+juice,FOUND,juice
+kabob,NOT FOUND,"['nabob', 'bob', 'absorb']"
+kale,NOT FOUND,"['ale', 'yale', 'vale']"
+karikara,NOT FOUND,"['varvara', 'kara', 'jaikark']"
+kebab,NOT FOUND,"['kebby', 'ebb', 'bab']"
+ketchup,FOUND,ketchup
+keylimepie,NOT FOUND,"['kelpie', 'timepiece', 'eliminate']"
+kidneybean,NOT FOUND,"['kidney', 'kidneys', 'sidney']"
+kimchi,NOT FOUND,"['kihachi', 'kinch', 'chokichi']"
+kiwi,NOT FOUND,"['kwai', 'wi', 'ki']"
+kohlrabi,NOT FOUND,"['rabid', 'rabbi', 'orbit']"
+krackel,NOT FOUND,"['racket', 'racked', 'rachel']"
+kumquat,NOT FOUND,"['squat', 'quart', 'murat']"
+lakefish,NOT FOUND,"['lakes', 'blackish', 'rakish']"
+lamb,FOUND,lamb
+lambchop,NOT FOUND,"['lamp', 'lambole', 'lambeth']"
+lambchops,NOT FOUND,"['lamps', 'lambs', 'chops']"
+lasagna,NOT FOUND,"['laana', 'laysan', 'larsan']"
+latkes,NOT FOUND,"['lakes', 'slates', 'plates']"
+latte,NOT FOUND,"['platte', 'latter', 'late']"
+leaflettuce,NOT FOUND,"['lettuce', 'leaflets', 'lafayette']"
+leek,NOT FOUND,"['sleek', 'lee', 'week']"
+lemon,FOUND,lemon
+lemonsquare,NOT FOUND,"['lemonade', 'square', 'mosque']"
+lemonade,FOUND,lemonade
+lentil,NOT FOUND,"['lentils', 'entail', 'plentiful']"
+lentils,FOUND,lentils
+lettuce,FOUND,lettuce
+lettucewrap,NOT FOUND,"['lettuce', 'letter', 'letters']"
+licorice,NOT FOUND,"['cornice', 'cornices', 'icicle']"
+limabean,NOT FOUND,"['laban', 'elizabethan', 'limbed']"
+limabeans,NOT FOUND,"['means', 'limes', 'limbs']"
+limburger,FOUND,limburger
+lime,FOUND,lime
+lingonberry,NOT FOUND,"['linger', 'lingers', 'library']"
+linguine,NOT FOUND,"['sanguine', 'flinging', 'clinging']"
+liver,FOUND,liver
+lomein,NOT FOUND,"['omen', 'mein', 'loin']"
+lobster,FOUND,lobster
+lobsterbisque,NOT FOUND,"['lobsters', 'lobster', 'obstetrics']"
+lobsterstuffedwithtaco,NOT FOUND,[]
+lollipop,NOT FOUND,"['loop', 'lolling', 'folliot']"
+luckycharm,NOT FOUND,"['lukewarm', 'lucky', 'lucca']"
+lumpia,NOT FOUND,"['lump', 'olympia', 'plump']"
+lunchables,NOT FOUND,"['lunches', 'uncles', 'unable']"
+lychee,NOT FOUND,"['chee', 'lynch', 'cheer']"
+macandcheese,NOT FOUND,"['manchester', 'vacancies', 'comanches']"
+macadamia,NOT FOUND,"['arcadia', 'academical', 'madam']"
+macadamianut,NOT FOUND,"['adamant', 'arcadian', 'madman']"
+macaron,NOT FOUND,"['macaroni', 'aaron', 'matron']"
+macaroni,FOUND,macaroni
+macaroniandcheese,NOT FOUND,"['carolinians', 'acarnanians', 'macaroni']"
+macaronicheese,NOT FOUND,"['macaroni', 'marches', 'manicheans']"
+macaronisalad,NOT FOUND,"['macaroni', 'matrimonial', 'carnival']"
+mackerel,FOUND,mackerel
+mahimahi,NOT FOUND,"['mahina', 'ahimsa', 'mimi']"
+mandarin,NOT FOUND,"['mazarin', 'madrina', 'fanarin']"
+mango,NOT FOUND,"['mungo', 'manor', 'manon']"
+manicotti,NOT FOUND,"['marriott', 'fannicot', 'barnicot']"
+mapotofu,NOT FOUND,"['teaspoonful', 'vaporous', 'spoonful']"
+marbledryebread,NOT FOUND,"['murdered', 'martyred']"
+marmalade,FOUND,marmalade
+marshmallow,NOT FOUND,"['marshall', 'shallow', 'marshal']"
+mashedpotato,NOT FOUND,"['potato', 'mashed', 'meditation']"
+mashedpotatoes,NOT FOUND,"['potatoes', 'meditates', 'mottoes']"
+matzo,NOT FOUND,"['mat', 'tomato', 'matron']"
+matzoball,NOT FOUND,"['atoll', 'atolls', 'rationally']"
+matzoballsoup,NOT FOUND,['atolls']
+mayonnaise,FOUND,mayonnaise
+meat,FOUND,meat
+meatbun,NOT FOUND,"['meat', 'mean', 'maun']"
+meatloaf,NOT FOUND,"['smeaton', 'mercato', 'meat']"
+meatball,NOT FOUND,"['metal', 'metallic', 'mentally']"
+meatballhoagie,NOT FOUND,"['metallic', 'catalogue', 'analogies']"
+meatballsandwich,NOT FOUND,"['sandwich', 'metallic', 'sandwiches']"
+meatballs,NOT FOUND,"['metals', 'metal', 'meats']"
+meatloaf,NOT FOUND,"['smeaton', 'mercato', 'meat']"
+melon,FOUND,melon
+menudo,NOT FOUND,"['menu', 'mend', 'mendoza']"
+mexican,FOUND,mexican
+mexicanfood,NOT FOUND,"['mexican', 'mexicans', 'mexico']"
+milanesa,NOT FOUND,"['milanese', 'mines', 'miles']"
+milanocookie,NOT FOUND,"['cookie', 'melancolia', 'locomotive']"
+milk,FOUND,milk
+milkshake,NOT FOUND,"['mistake', 'shake', 'mistakes']"
+millefeuille,NOT FOUND,"['millville', 'illegible', 'skillfully']"
+millet,FOUND,millet
+minestrone,NOT FOUND,"['milestone', 'minstrel', 'inertron']"
+mint,FOUND,mint
+miso,NOT FOUND,"['mis', 'milsom', 'muso']"
+misosoup,NOT FOUND,"['missouri', 'missus', 'soup']"
+mocha,FOUND,mocha
+mochi,NOT FOUND,"['mocha', 'moloch', 'cochin']"
+monkey,FOUND,monkey
+monterey,FOUND,monterey
+mooncake,NOT FOUND,"['mooney', 'monkey', 'monica']"
+mozzarella,NOT FOUND,"['marcella', 'morrell', 'marvell']"
+mozzarellastick,NOT FOUND,"[""marcella's"", 'elastic', 'monastic']"
+mozzarellasticks,NOT FOUND,"[""marcella's"", 'elastic']"
+mrgoodbar,NOT FOUND,"['robarts', 'goodman', 'goodbye']"
+muffin,FOUND,muffin
+muffuletta,NOT FOUND,"['muffler', 'muffled', 'ruffle']"
+mulberries,NOT FOUND,"['berries', 'mulberry', 'merriest']"
+mushroom,FOUND,mushroom
+mushrooms,FOUND,mushrooms
+muskmelon,NOT FOUND,"['melon', 'skeleton', 'skeletons']"
+mussel,FOUND,mussel
+mustard,FOUND,mustard
+mutton,FOUND,mutton
+naan,NOT FOUND,"['nan', 'nathan', 'canaan']"
+nacho,NOT FOUND,"['ach', 'tatcho', 'snatch']"
+nachos,NOT FOUND,"['gauchos', 'anchors', 'naxos']"
+napoleon,FOUND,napoleon
+nectarine,NOT FOUND,"['nectar', 'sectaries', 'catharine']"
+newyorkstrip,NOT FOUND,"['worship', 'nostril', 'newport']"
+noodle,FOUND,noodle
+noodles,FOUND,noodles
+northernbean,NOT FOUND,"['northern', 'norther', 'northumberland']"
+nuggets,FOUND,nuggets
+nut,FOUND,nut
+nutthins,NOT FOUND,"['nothings', 'cuttings', 'thinks']"
+nutella,NOT FOUND,"['nutshell', 'stella', 'luella']"
+nutrients,NOT FOUND,"['nutriment', 'entries', 'sentiments']"
+nuts,FOUND,nuts
+oatmeal,FOUND,oatmeal
+oats,FOUND,oats
+octopus,NOT FOUND,"['corpus', 'tops', 'opus']"
+oil,FOUND,oil
+okra,NOT FOUND,"['okar', 'nora', 'lora']"
+olem,NOT FOUND,"['ole', 'solemn', 'moslem']"
+olive,FOUND,olive
+oliveoil,NOT FOUND,"['olive', 'olivia', 'olives']"
+olives,FOUND,olives
+omelet,FOUND,omelet
+omelette,FOUND,omelette
+onigiri,NOT FOUND,"['ongar', 'ogier', 'conciergerie']"
+onion,FOUND,onion
+onionring,NOT FOUND,"['motioning', 'honouring', 'confining']"
+onionrings,NOT FOUND,"['moorings', 'onions', 'motioning']"
+onions,FOUND,onions
+orange,FOUND,orange
+orangechicken,NOT FOUND,"['chicken', 'chickens', 'franchise']"
+orangejuice,NOT FOUND,"['orange', 'prejudice', 'rejoice']"
+orangepepper,NOT FOUND,"['ranger', 'pepper', 'orange']"
+oregano,NOT FOUND,"['organ', 'regain', 'organs']"
+oreo,NOT FOUND,"['ore', 'oregon', 'forego']"
+oreocookies,NOT FOUND,"['rockies', 'cookies', 'cookie']"
+orzo,NOT FOUND,"['lorenzo', 'horizon', 'ro']"
+oxalis,NOT FOUND,"['oasis', 'goals', 'foals']"
+oxtail,NOT FOUND,"['tail', 'trail', 'total']"
+oyster,FOUND,oyster
+padthai,NOT FOUND,"['path', 'pathway', 'plata']"
+palakpaneer,NOT FOUND,"['salamander', 'pleasanter', 'planter']"
+pancake,FOUND,pancake
+pancakes,FOUND,pancakes
+panini,NOT FOUND,"['pani', 'pain', 'panting']"
+papaya,NOT FOUND,"['papacy', 'papa', 'papal']"
+parmesan,FOUND,parmesan
+parmesancheese,NOT FOUND,"['parmesan', 'preachers', 'reaches']"
+parsley,FOUND,parsley
+parsnip,NOT FOUND,"['parson', 'snip', 'pani']"
+passionfruit,NOT FOUND,"['passion', 'passionate', 'passport']"
+passionfruit,NOT FOUND,"['passion', 'passionate', 'passport']"
+pasta,NOT FOUND,"['past', 'rasta', 'posta']"
+pastasalad,NOT FOUND,"['staal', 'salad', 'pastoral']"
+pastrami,NOT FOUND,"['upstream', 'pastrini', 'pastoral']"
+pastry,FOUND,pastry
+pate,FOUND,pate
+pattymelt,NOT FOUND,"['payment', 'patty', 'payments']"
+pea,FOUND,pea
+peach,FOUND,peach
+peanut,FOUND,peanut
+peanutbutter,NOT FOUND,"['peanut', 'patter', 'nutter']"
+peanutbutterandjellysandwiches,NOT FOUND,[]
+peanutbuttercookie,NOT FOUND,[]
+peanutbutterjelly,NOT FOUND,"['butterwell', 'butterfly']"
+peanuts,FOUND,peanuts
+pear,FOUND,pear
+peas,FOUND,peas
+pecan,NOT FOUND,"['pelican', 'pemmican', 'pen']"
+pecans,NOT FOUND,"['pens', 'peas', 'pans']"
+pekingduck,NOT FOUND,"['peking', 'pecking', 'speaking']"
+penne,NOT FOUND,"['penned', 'penn', 'pennies']"
+pepper,FOUND,pepper
+pepperoni,NOT FOUND,"['pepper', 'peppers', 'peppermint']"
+peppers,FOUND,peppers
+pesto,NOT FOUND,"['presto', 'pest', 'preston']"
+pheasant,FOUND,pheasant
+pho,NOT FOUND,"['po', 'ho', 'phone']"
+picantesauce,NOT FOUND,"['picturesque', 'incandescent', 'picturesquely']"
+pickle,FOUND,pickle
+pickledginger,NOT FOUND,"['pledging', 'picketing', 'pickering']"
+pie,FOUND,pie
+pierogi,NOT FOUND,"['piero', 'pietro', 'pier']"
+pierogies,NOT FOUND,"['prodigies', 'prerogatives', 'peonies']"
+pigfeet,NOT FOUND,"['feet', 'puget', 'piety']"
+pill,FOUND,pill
+pinenuts,NOT FOUND,"['peanuts', 'intents', 'pinus']"
+pineapple,FOUND,pineapple
+pintobean,NOT FOUND,"['intolerant', 'pinto', 'nobleman']"
+pintobeans,NOT FOUND,"['pinions', 'phineas', 'intents']"
+pistachio,NOT FOUND,"['mustachios', 'pitch', 'pisah']"
+pistachios,NOT FOUND,"['mustachios', 'distractions', 'pitches']"
+pita,NOT FOUND,"['pit', 'pitman', 'spit']"
+pitabread,NOT FOUND,"['tread', 'pared', 'bread']"
+pizza,NOT FOUND,"['piazza', 'pizarro', 'pisa']"
+pizzaroll,NOT FOUND,"['pizarro', 'piazza', 'patrol']"
+plantains,NOT FOUND,"['plantations', 'plantation', 'planting']"
+plum,FOUND,plum
+polenta,NOT FOUND,"['potent', 'pollen', 'polina']"
+polishsausage,NOT FOUND,"['sausage', 'sausages', 'polishes']"
+pomegranate,FOUND,pomegranate
+poptart,NOT FOUND,"['ptarth', 'powart', 'potato']"
+popcorn,NOT FOUND,"['poor', 'corn', 'proctor']"
+popcornshrimp,NOT FOUND,"['courtship', 'conscript', 'shrimp']"
+popsicle,NOT FOUND,"['possible', 'sickle', 'posies']"
+pork,FOUND,pork
+porkchops,NOT FOUND,"['workshops', 'porthos', 'porches']"
+porkloin,NOT FOUND,"['workin', 'poring', 'poplin']"
+porkroast,NOT FOUND,"['roast', 'porous', 'parrot']"
+porkshoulder,NOT FOUND,"['shoulder', 'shoulders', 'prouder']"
+porkchop,NOT FOUND,"['porch', 'workshop', 'poncho']"
+portabella,NOT FOUND,"['portable', 'arabella', 'portal']"
+portabellamushroom,NOT FOUND,['mushroom']
+porterhousesteak,NOT FOUND,"['storehouses', 'trousseau', 'portieres']"
+potpie,NOT FOUND,"['pope', 'poppies', 'porte']"
+potroast,NOT FOUND,"['toast', 'roast', 'portrait']"
+potato,FOUND,potato
+potatochip,NOT FOUND,"['potato', 'potatoes', 'poaching']"
+potatochips,NOT FOUND,"['potatoes', 'potato', 'patches']"
+potatosalad,NOT FOUND,"['potatoes', 'potato', 'spatola']"
+potatoes,FOUND,potatoes
+potatoessoup,NOT FOUND,"['potatoes', 'potato', 'potassium']"
+potpie,NOT FOUND,"['pope', 'poppies', 'porte']"
+potstickers,NOT FOUND,"['tickers', 'posters', ""potter's""]"
+pottedmeat,NOT FOUND,"['potted', 'spotted', 'plotted']"
+poultry,FOUND,poultry
+poutine,NOT FOUND,"['routine', 'pouting', 'outline']"
+pozole,NOT FOUND,"['poodle', 'pool', 'pole']"
+pretzel,NOT FOUND,"['gretel', 'retz', 'reel']"
+pretzels,NOT FOUND,"['reels', 'pretexts', 'pretense']"
+primerib,NOT FOUND,"['primer', 'prime', 'priori']"
+pringles,NOT FOUND,"['ringlets', 'triangles', 'springs']"
+prosciutto,NOT FOUND,"['prosecutor', 'prosecution', 'prosecute']"
+proteins,NOT FOUND,"['proteus', 'protest', 'potions']"
+prune,FOUND,prune
+pudding,FOUND,pudding
+pulledpork,NOT FOUND,"['pulled', 'uller', 'splendor']"
+pumpkin,FOUND,pumpkin
+pumpkinpie,NOT FOUND,"['pumpkin', 'pumpkins', 'pumpkinhead']"
+pumpkinseed,NOT FOUND,"['pumpkins', 'pumpkinhead', 'pumpkin']"
+pumpkinseeds,NOT FOUND,"['pumpkins', 'pumpkinhead', 'pumpkin']"
+quail,FOUND,quail
+quesadilla,NOT FOUND,"['quadrille', 'quillan', 'quill']"
+queso,NOT FOUND,"['quest', 'question', 'quo']"
+quiche,NOT FOUND,"['quince', 'guiche', 'quincey']"
+quinoa,NOT FOUND,"['quinton', 'quinnox', 'equinox']"
+rabbit,FOUND,rabbit
+radicchio,NOT FOUND,"['radio', 'tradition', 'radiation']"
+radish,NOT FOUND,"['radishes', 'rakish', 'radius']"
+raisin,FOUND,raisin
+raisinbread,NOT FOUND,"['sinbad', 'raisin', 'raised']"
+raisins,FOUND,raisins
+raison,NOT FOUND,"['risdon', 'reason', 'ration']"
+ramen,NOT FOUND,"['amen', 'raiment', 'raven']"
+ramennoodles,NOT FOUND,"['noodles', 'noodle', 'amends']"
+ranchdressing,NOT FOUND,"['undressing', 'addressing', 'dressing']"
+rapini,NOT FOUND,"['rapkin', 'rapine', 'rain']"
+raspberries,FOUND,raspberries
+raspberry,FOUND,raspberry
+raspeberry,NOT FOUND,"['raspberry', 'raspberries', 'sperry']"
+ratatouille,NOT FOUND,"['rattle', 'rattles', 'rattler']"
+ravioli,NOT FOUND,"['violin', 'rail', 'violins']"
+redcabbage,NOT FOUND,"['cabbage', 'cabbages', 'wreckage']"
+redleaflettuce,NOT FOUND,"['lettuce', 'leaflets', 'relegated']"
+redonion,NOT FOUND,"['reunion', 'ronin', 'onion']"
+redpepper,NOT FOUND,"['pepper', 'peppers', 'creeper']"
+redpeppers,NOT FOUND,"['peppers', 'creepers', 'pepper']"
+redpotatoes,NOT FOUND,"['potatoes', 'rotates', 'reputations']"
+reese,NOT FOUND,"['reverse', 'release', 'trees']"
+reeses,NOT FOUND,"['reverses', 'releases', 'recesses']"
+reesescups,NOT FOUND,"['treeless', 'reverses', 'rescuers']"
+refriedbean,NOT FOUND,"['frieda', 'refrained', 'refrain']"
+relish,FOUND,relish
+rib,FOUND,rib
+ribeye,NOT FOUND,"['bribery', 'tribe', 'riley']"
+riblets,NOT FOUND,"['giblets', 'rivulets', 'ringlets']"
+ribs,FOUND,ribs
+rice,FOUND,rice
+ricecake,NOT FOUND,"['rickie', 'reticence', 'wrecked']"
+rigatoni,NOT FOUND,"['irrigation', 'brighton', 'resignation']"
+risotto,NOT FOUND,"['grotto', 'giotto', 'cristo']"
+ritzcracker,NOT FOUND,"['tracker', 'cracker', 'nutcracker']"
+roast,FOUND,roast
+roastbeef,NOT FOUND,"['roasted', 'roast', 'roadstead']"
+roastedchicken,NOT FOUND,"['thicken', 'rostopchin', 'roasted']"
+roll,FOUND,roll
+romaine,NOT FOUND,"['romayne', 'romarin', 'romance']"
+romainelettuce,NOT FOUND,"['omelette', 'romance', 'prominence']"
+rooster,FOUND,rooster
+roots,FOUND,roots
+rosemary,FOUND,rosemary
+rotisseriechicken,NOT FOUND,[]
+russetpotatoes,NOT FOUND,"['potatoes', 'rotates', 'reputations']"
+rutabaga,NOT FOUND,"['tabatinga', 'gruagach']"
+ryebread,NOT FOUND,"['bread', 'retreated', 'redbreast']"
+ryebread,NOT FOUND,"['bread', 'retreated', 'redbreast']"
+sage,FOUND,sage
+salad,FOUND,salad
+saladdressing,NOT FOUND,"['addressing', 'dressing', 'saddening']"
+salami,NOT FOUND,"['salamis', 'salam', 'slam']"
+salmon,FOUND,salmon
+salmonpoke,NOT FOUND,"['salmon', 'salmons', 'spoke']"
+salsa,NOT FOUND,"['sala', 'seals', 'scala']"
+salt,FOUND,salt
+samosa,NOT FOUND,"['amos', 'samovar', 'salmons']"
+sandwich,FOUND,sandwich
+sardine,FOUND,sardine
+sardines,FOUND,sardines
+sashimi,NOT FOUND,"['sahim', 'sash', 'asim']"
+sauce,FOUND,sauce
+sauerkraut,NOT FOUND,"['serrated', 'saturate', 'sarka']"
+sausage,FOUND,sausage
+scallions,NOT FOUND,"['stallions', 'scullions', 'stallion']"
+scallop,NOT FOUND,"['scalloped', 'scalp', 'scollops']"
+scrambledegg,NOT FOUND,"['scrambled', 'scramble', 'rambled']"
+scrambledeggs,NOT FOUND,"['scrambled', 'scramble', 'rambles']"
+seabass,NOT FOUND,"['seas', 'sass', 'saba']"
+seafood,NOT FOUND,"['seafloor', 'food', 'stood']"
+seaweed,FOUND,seaweed
+seaweedsalad,NOT FOUND,"['seaweeds', 'seaweed', 'seaward']"
+seeds,FOUND,seeds
+seitan,NOT FOUND,"['stan', 'sita', 'sextant']"
+sesamechicken,NOT FOUND,"['chicken', 'chickens', 'searching']"
+sesameseeds,NOT FOUND,"['seaweeds', 'sesame', 'seamed']"
+shallot,NOT FOUND,"['shallow', 'shalt', 'shall']"
+shark,FOUND,shark
+shawarma,NOT FOUND,"['swarm', 'peshawar', 'swarms']"
+shepherdspie,NOT FOUND,"['shepherds', ""shepherd's"", 'shepherd']"
+sherbet,FOUND,sherbet
+shitakemushroom,NOT FOUND,"['mushroom', 'stateroom', 'mushrooms']"
+shrimp,FOUND,shrimp
+shrimpfriedrice,NOT FOUND,"['simplified', 'simplice', 'frederic']"
+shrimpscampi,NOT FOUND,"['shrimps', 'shrimp', 'shipping']"
+sirloin,NOT FOUND,"['swirling', 'stirling', 'sailin']"
+sloppyjoe,NOT FOUND,"['sloppy', 'slope', 'slopes']"
+smoothie,NOT FOUND,"['smoother', 'smoothed', 'soothe']"
+smores,NOT FOUND,"['sores', 'stores', 'snores']"
+snackcakes,NOT FOUND,"['snakes', ""snake's"", 'snatches']"
+snails,FOUND,snails
+snappeas,NOT FOUND,"['snapper', 'snapped', 'appease']"
+snicker,NOT FOUND,"['nicer', 'wicker', 'ticker']"
+snickers,NOT FOUND,"['vickers', 'tickers', 'suckers']"
+soba,NOT FOUND,"['sob', 'sola', 'sofa']"
+sod,FOUND,sod
+soda,FOUND,soda
+sopa,NOT FOUND,"['sop', 'sophia', 'stop']"
+sorbet,NOT FOUND,"['sort', 'sore', 'sherbet']"
+souffle,NOT FOUND,"['shuffle', 'scuffle', 'shuffled']"
+soup,FOUND,soup
+soupbeans,NOT FOUND,"['spans', 'soups', 'opens']"
+sourcream,NOT FOUND,"['source', 'scream', 'sources']"
+soursop,NOT FOUND,"['sous', 'sour', 'soup']"
+soysauce,NOT FOUND,"['sauce', 'source', 'solace']"
+soybeans,NOT FOUND,"['beans', 'yearns', 'oceans']"
+soymilk,NOT FOUND,"['soil', 'silk', 'milk']"
+spaghetti,NOT FOUND,"['paget', 'pathetic', 'sympathetic']"
+spaghettiandmeatballs,NOT FOUND,[]
+spam,NOT FOUND,"['spasm', 'sam', 'spasms']"
+spareribs,NOT FOUND,"['spares', 'parris', 'parrish']"
+specialk,NOT FOUND,"['special', 'especial', 'specialty']"
+spice,FOUND,spice
+spicychicken,NOT FOUND,"['chicken', 'chickens', 'sicken']"
+spinach,FOUND,spinach
+springrolls,NOT FOUND,"['springs', ""springer's"", 'springer']"
+sprinkle,FOUND,sprinkle
+sprouts,FOUND,sprouts
+squash,FOUND,squash
+squid,NOT FOUND,"['quid', 'squalid', 'squad']"
+starfruit,NOT FOUND,"['starlit', 'strut', 'start']"
+starburst,NOT FOUND,"['arbours', 'strut', 'start']"
+starbursts,NOT FOUND,"['trusts', 'starts', 'bursts']"
+starfruit,NOT FOUND,"['starlit', 'strut', 'start']"
+steak,FOUND,steak
+steamedvegetables,NOT FOUND,"['vegetables', 'vegetable', 'eatables']"
+stew,FOUND,stew
+stirfriedpork,NOT FOUND,"['stirred', 'testified', 'satisfied']"
+stirfriedvegetables,NOT FOUND,"['vegetables', 'vegetable', 'irritable']"
+stirfry,NOT FOUND,"['starry', 'stir', 'testify']"
+stirfrychicken,NOT FOUND,"['stricken', 'thicken', 'chicken']"
+strawberries,FOUND,strawberries
+strawberry,FOUND,strawberry
+strawberryjelly,NOT FOUND,"['strawberry', 'strawberries']"
+strawberrysmoothie,NOT FOUND,"['strawberries', 'strawberry']"
+stringcheese,NOT FOUND,"['ostriches', 'strings', 'trenches']"
+stromboli,NOT FOUND,"['stool', 'symbolic', 'stamboul']"
+strudel,NOT FOUND,"['truely', 'trudge', 'strode']"
+stuffedcabbage,NOT FOUND,"['stuffed', 'cabbage', 'suffrage']"
+stuffedflounder,NOT FOUND,"['flounder', 'floundered', 'stuffed']"
+stuffedpeppers,NOT FOUND,"['sufferers', 'suppers', 'suffers']"
+stuffing,FOUND,stuffing
+sub,FOUND,sub
+subsandwich,NOT FOUND,"['sandwich', 'sandwiches', 'substance']"
+subway,FOUND,subway
+subwaybread,NOT FOUND,"['swayed', 'subway', 'swarmed']"
+succotash,NOT FOUND,"['scots', 'succours', 'scottish']"
+sucker,FOUND,sucker
+suckers,FOUND,suckers
+sugar,FOUND,sugar
+sugarcookie,NOT FOUND,"['cookie', 'cookies', 'uncooked']"
+sugarfreesyrup,NOT FOUND,"['surrender', 'surrey', 'sugary']"
+summersquash,NOT FOUND,"['summers', ""summer's"", 'summer']"
+sunflowerseed,NOT FOUND,"['sunflowers', 'sunflower', 'flowered']"
+sunflowerseeds,NOT FOUND,"['sunflowers', 'sunflower', 'flowerbeds']"
+sushi,NOT FOUND,"['sushai', 'susie', 'slush']"
+sweetandsourpork,NOT FOUND,[]
+sweetpotato,NOT FOUND,"['potato', 'sweetmeat', 'sweetwater']"
+sweetpotatopie,NOT FOUND,"['sweetwater', 'potatoes', 'sweetmeat']"
+sweetpotatoes,NOT FOUND,"['potatoes', 'sweetwater', 'sweetmeats']"
+swisscheese,NOT FOUND,"['switches', 'wishes', 'cheese']"
+swordfish,NOT FOUND,"['swords', 'wolfish', 'swedish']"
+syrup,FOUND,syrup
+tbone,NOT FOUND,"['tone', 'bone', 'towne']"
+taco,NOT FOUND,"['tao', 'tatcho', 'tact']"
+tacobell,NOT FOUND,"['toll', 'tell', 'tall']"
+tacosalad,NOT FOUND,"['salad', 'oswald', 'translated']"
+tahini,NOT FOUND,"['tahiti', 'thin', 'tain']"
+tamale,NOT FOUND,"['tame', 'tale', 'male']"
+tangerine,NOT FOUND,"['tangerines', 'tangent', 'tanager']"
+tapas,NOT FOUND,"['taps', 'traps', 'tapes']"
+taquito,NOT FOUND,"['quito', 'acquit', 'tito']"
+taro,NOT FOUND,"['tar', 'tao', 'tsar']"
+tart,FOUND,tart
+tatertot,NOT FOUND,"['atherton', 'tattoo', 'uttermost']"
+tatertots,NOT FOUND,"['tatters', 'staterooms', 'tarts']"
+tea,FOUND,tea
+tempeh,NOT FOUND,"['temple', 'temper', 'tempter']"
+tempura,NOT FOUND,"['temporal', 'temper', 'temporary']"
+tenderloin,NOT FOUND,"['tenderly', 'tender', 'rendering']"
+teriyakichicken,NOT FOUND,"['thicken', 'chicken', 'teaching']"
+teriyakisauce,NOT FOUND,"['transacted', 'terrace']"
+tetrazzini,NOT FOUND,"['training', 'train', 'restraining']"
+tikkamasala,NOT FOUND,[]
+tilapia,NOT FOUND,"['titania', 'tarpeia', 'tapioca']"
+tiramisu,NOT FOUND,"['trams', 'tramps', 'traits']"
+toast,FOUND,toast
+tofu,NOT FOUND,"['tour', 'toff', 'thou']"
+tomato,FOUND,tomato
+tomatobasilsoup,NOT FOUND,"['automobiles', 'tomatoes']"
+tomatosoup,NOT FOUND,"['tomatoes', 'tomato', 'toadstool']"
+tongue,FOUND,tongue
+tonkatsu,NOT FOUND,"['toasts', 'thoats', 'tons']"
+tootsieroll,NOT FOUND,"['hoosier', 'outsider', 'troll']"
+toquito,NOT FOUND,"['quito', 'mosquito', 'mosquitos']"
+torta,NOT FOUND,"['tortuga', 'total', 'porta']"
+torte,NOT FOUND,"['tote', 'tore', 'torture']"
+tortellini,NOT FOUND,"['tellin', 'thorstein', 'trellis']"
+tortilla,NOT FOUND,"['gorilla', 'trill', 'travilla']"
+tortillachips,NOT FOUND,"['portcullis', 'trellis', 'torches']"
+tostada,NOT FOUND,"['toad', 'toasted', 'total']"
+tostitos,NOT FOUND,"['toasts', ""tito's"", 'stilts']"
+trailmix,NOT FOUND,"['trail', 'trailing', 'trails']"
+trout,FOUND,trout
+troutalmondine,NOT FOUND,"['tourmaline', 'routine', 'outline']"
+truffles,NOT FOUND,"['ruffles', 'ruffle', 'trifles']"
+tuna,NOT FOUND,"['una', 'tun', 'tundra']"
+tunapoke,NOT FOUND,"['unspoken', 'turnpike', 'unmake']"
+tunasalad,NOT FOUND,"['salad', 'nasal', 'unsealed']"
+tunasandwich,NOT FOUND,"['sandwich', 'sandwiches', 'thousandth']"
+turkey,FOUND,turkey
+turnip,FOUND,turnip
+tvdinner,NOT FOUND,"['dinner', 'thinner', 'dinners']"
+tvp,NOT FOUND,"['top', 'tip', 'tap']"
+twinkies,NOT FOUND,"['twinkle', 'twinges', 'tiniest']"
+twix,NOT FOUND,"['twixt', 'twit', 'twin']"
+twixbar,NOT FOUND,"['twixt', 'twirl', 'tiber']"
+twizzler,NOT FOUND,"['whizzer', 'wilder', 'tiller']"
+twizzlers,NOT FOUND,"['whizzer', 'toilers', 'tillers']"
+tzatziki,NOT FOUND,"['zawoiski', 'takin']"
+udon,NOT FOUND,"['udo', 'don', 'undone']"
+union,FOUND,union
+veal,FOUND,veal
+vegetable,FOUND,vegetable
+vegetabledelight,NOT FOUND,"['vegetable', 'vegetables', 'delight']"
+vegetables,FOUND,vegetables
+veggieburger,NOT FOUND,"['limburger', 'burger', 'burgher']"
+venison,FOUND,venison
+vidaliaonion,NOT FOUND,"['variation', 'valuation', 'civilization']"
+vinegar,FOUND,vinegar
+waffle,NOT FOUND,"['raffle', 'baffle', 'raffles']"
+waffles,NOT FOUND,"['raffles', 'wales', 'whales']"
+walnut,FOUND,walnut
+walnuts,FOUND,walnuts
+water,FOUND,water
+waterchestnut,NOT FOUND,"['chestnut', 'chestnuts', 'watches']"
+watermelon,FOUND,watermelon
+waxbean,NOT FOUND,"['waxen', 'wean', 'bean']"
+wheat,FOUND,wheat
+wheatbread,NOT FOUND,"['sweetbreads', 'heated', 'hatred']"
+wheatthin,NOT FOUND,"['sheathing', 'wetting', 'watchin']"
+wheatthins,NOT FOUND,"['heathens', 'heaths', 'sheathing']"
+wheatgrass,NOT FOUND,"['harass', 'whereas', 'wheat']"
+whipcream,NOT FOUND,"['hiram', 'cream', 'whispered']"
+whippedcream,NOT FOUND,"['whipped', 'whispered', 'whimpered']"
+whiteonion,NOT FOUND,"['whiten', 'whitefoot', 'intention']"
+wholewheatbread,NOT FOUND,"['wholeheartedly', 'sweetbreads', 'downhearted']"
+wiener,NOT FOUND,"['winter', 'winner', 'winder']"
+wine,FOUND,wine
+wings,FOUND,wings
+wintersquash,NOT FOUND,"['winters', ""winter's"", 'winter']"
+wrap,FOUND,wrap
+yam,NOT FOUND,"['ya', 'am', 'yea']"
+yeast,FOUND,yeast
+yellowonion,NOT FOUND,"['yellowstone', 'yellow', 'yellowish']"
+yellowpepper,NOT FOUND,"['yellower', 'yellow', 'pepper']"
+yellowpeppers,NOT FOUND,"['yellower', 'yellows', 'peppers']"
+yogurt,NOT FOUND,"['your', 'youth', 'yours']"
+yumasetti,NOT FOUND,"['upsetting', 'settin', 'mattie']"
+zandc,NOT FOUND,"['and', 'zinc', 'zeeland']"
+zebracake,NOT FOUND,"['embrace', 'bracket', 'bracken']"
+ziti,NOT FOUND,"['zizi', 'piti', 'ti']"
+zucchini,NOT FOUND,"['urchin', 'cochin', 'urchins']"
+zucchinibread,NOT FOUND,"['unchained', 'cochineal', 'inbred']"
+zucchinisalad,NOT FOUND,"['cochineal', 'urchins']"
