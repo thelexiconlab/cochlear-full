@@ -30,4 +30,4 @@ def cosine_similarity(word1, word2):
     cosine_sim = dot_product/(magnitude1*magnitude2)
     print("Cosine Similarity:", cosine_sim)
 
-cosine_similarity("apple", "peach")
+cosine_similarity("apple", "apple")
