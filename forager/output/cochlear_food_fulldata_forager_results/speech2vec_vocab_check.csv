@@ -1,0 +1,1047 @@
+id,entry,evaluation,difflib
+CAJ-663,pizza,NOT FOUND,['piazza']
+CAJ-663,popcorn,NOT FOUND,['poor']
+CAJ-663,hotdogs,NOT FOUND,['hogs']
+CAJ-663,cheese,FOUND,cheese
+CAJ-663,coffee,FOUND,coffee
+CAJ-663,tea,FOUND,tea
+CAJ-663,soda,FOUND,soda
+CAJ-663,water,FOUND,water
+CAJ-663,asparagus,FOUND,asparagus
+CAJ-663,broccoli,NOT FOUND,['morocco']
+CAJ-663,cauliflower,FOUND,cauliflower
+CAJ-663,carrots,FOUND,carrots
+CAJ-663,salad,FOUND,salad
+CAJ-663,meatloaf,NOT FOUND,['smeaton']
+CAJ-663,chicken,FOUND,chicken
+CAJ-663,hamburgers,NOT FOUND,['hamburg']
+CAJ-663,grilledcheesesandwich,NOT FOUND,['greenwich']
+CAJ-663,lemonade,FOUND,lemonade
+CAJ-663,bananas,FOUND,bananas
+CAJ-663,apples,FOUND,apples
+CAJ-663,peaches,FOUND,peaches
+CAJ-663,corn,FOUND,corn
+CAJ-663,rice,FOUND,rice
+CAJ-663,pork,FOUND,pork
+CAM-666,strawberries,FOUND,strawberries
+CAM-666,blueberries,NOT FOUND,['bleoberis']
+CAM-666,raspberries,FOUND,raspberries
+CAM-666,apricots,FOUND,apricots
+CAM-666,bread,FOUND,bread
+CAM-666,jam,FOUND,jam
+CAM-666,butter,FOUND,butter
+CAM-666,peanutbutter,NOT FOUND,['peanut']
+CAM-666,toast,FOUND,toast
+CAM-666,popcorn,NOT FOUND,['poor']
+CAM-666,pizza,NOT FOUND,['piazza']
+CAM-666,burger,FOUND,burger
+CAM-666,cheese,FOUND,cheese
+CAM-666,soda,FOUND,soda
+CAM-666,water,FOUND,water
+CAM-666,milk,FOUND,milk
+CAM-666,orangejuice,NOT FOUND,['orange']
+CAM-666,lemonjuice,NOT FOUND,['leone']
+CAM-666,grapejuice,NOT FOUND,['prejudice']
+CAM-666,raspberryjuice,NOT FOUND,['raspberries']
+CAM-666,strawberryjuice,NOT FOUND,['strawberries']
+CAM-666,cucumbers,FOUND,cucumbers
+CAM-666,pickles,FOUND,pickles
+CAM-666,cranberryjucie,NOT FOUND,['cranberries']
+CAM-666,icecream,NOT FOUND,['cream']
+CAM-666,chocolate,FOUND,chocolate
+CAM-666,vanilla,FOUND,vanilla
+CAM-666,cinnamon,FOUND,cinnamon
+CAM-666,sugar,FOUND,sugar
+CAM-666,oregano,NOT FOUND,['organ']
+CAM-666,rosemary,FOUND,rosemary
+CAP-671,grapes,FOUND,grapes
+CAP-671,water,FOUND,water
+CAP-671,hamburger,NOT FOUND,['hamburg']
+CAP-671,chips,FOUND,chips
+CAP-671,cookies,FOUND,cookies
+CAP-671,carrot,FOUND,carrot
+CAP-671,soda,FOUND,soda
+CAP-671,apple,FOUND,apple
+CAP-671,watermelon,FOUND,watermelon
+CAP-671,pear,FOUND,pear
+CAP-671,orange,FOUND,orange
+CAP-671,grapefruit,NOT FOUND,['recruit']
+CAP-671,brocolli,NOT FOUND,['rollin']
+CAP-671,pepper,FOUND,pepper
+CAP-671,tomato,FOUND,tomato
+CAP-671,juice,FOUND,juice
+CAP-671,icecream,NOT FOUND,['cream']
+CAP-671,pizza,NOT FOUND,['piazza']
+CAP-671,corn,FOUND,corn
+CAP-671,potatoes,FOUND,potatoes
+CAS-674,pizza,NOT FOUND,['piazza']
+CAS-674,gatorade,NOT FOUND,['trade']
+CAS-674,burgers,NOT FOUND,['burghers']
+CAS-674,water,FOUND,water
+CAS-674,hotdogs,NOT FOUND,['hogs']
+CAS-674,proteinbar,NOT FOUND,['protesting']
+CAS-674,chocolatemilk,NOT FOUND,['chocolate']
+CAS-674,whitemilk,NOT FOUND,['whitefield']
+CAS-674,skimmilk,NOT FOUND,['skimming']
+CAS-674,fettuccini,NOT FOUND,['fretting']
+CAS-674,spaghetti,NOT FOUND,['paget']
+CAS-674,steak,FOUND,steak
+CAS-674,chewybar,NOT FOUND,['heyward']
+CAS-674,apple,FOUND,apple
+CAS-674,orange,FOUND,orange
+CAS-674,pear,FOUND,pear
+CAS-674,strawberries,FOUND,strawberries
+CAS-674,grapes,FOUND,grapes
+CAS-674,salad,FOUND,salad
+CAS-674,tomato,FOUND,tomato
+CAS-674,soda,FOUND,soda
+CAS-674,cereal,NOT FOUND,['cereals']
+CAS-674,bagels,NOT FOUND,['barges']
+CAS-674,rolls,FOUND,rolls
+CAS-674,waffles,NOT FOUND,['raffles']
+CAS-674,pancakes,FOUND,pancakes
+CAS-674,bacon,FOUND,bacon
+CAS-674,eggs,FOUND,eggs
+CAS-674,sausage,FOUND,sausage
+CAS-674,icecream,NOT FOUND,['cream']
+CAS-674,lobster,FOUND,lobster
+CAS-674,crab,FOUND,crab
+CAV-678,apple,FOUND,apple
+CAV-678,orange,FOUND,orange
+CAV-678,water,FOUND,water
+CAV-678,beer,FOUND,beer
+CAV-678,spaghetti,NOT FOUND,['paget']
+CAV-678,lasagna,NOT FOUND,['laana']
+CAV-678,chicken,FOUND,chicken
+CAV-678,watermelon,FOUND,watermelon
+CAV-678,orange,FOUND,orange
+CAV-678,grapes,FOUND,grapes
+CAV-678,steak,FOUND,steak
+CAV-678,porkchops,NOT FOUND,['workshops']
+CAV-678,ribs,FOUND,ribs
+CAV-678,broccoli,NOT FOUND,['morocco']
+CAV-678,sauercraut,NOT FOUND,['serrated']
+CAV-678,hotdogs,NOT FOUND,['hogs']
+CAV-678,lunchmeats,NOT FOUND,['lunches']
+CAV-678,roastbeef,NOT FOUND,['roasted']
+CAV-678,porktenderloin,NOT FOUND,['rendering']
+CAV-678,icecream,NOT FOUND,['cream']
+CAV-678,mountaindew,NOT FOUND,['mountainside']
+CAV-678,drpepper,NOT FOUND,['pepper']
+CAV-678,sprite,FOUND,sprite
+CAV-678,dietrite,NOT FOUND,['detroit']
+CAV-678,rice,FOUND,rice
+CAV-678,noodles,FOUND,noodles
+CAY-681,apples,FOUND,apples
+CAY-681,bananas,FOUND,bananas
+CAY-681,peaches,FOUND,peaches
+CAY-681,oranges,FOUND,oranges
+CAY-681,pizza,NOT FOUND,['piazza']
+CAY-681,hotwings,NOT FOUND,['howlings']
+CAY-681,frenchfries,NOT FOUND,['franchises']
+CAY-681,sourcream,NOT FOUND,['source']
+CAY-681,potatoskins,NOT FOUND,['potatoes']
+CAY-681,pepsi,NOT FOUND,['peeps']
+CAY-681,drpepper,NOT FOUND,['pepper']
+CAY-681,mountaindew,NOT FOUND,['mountainside']
+CAY-681,drpepper,NOT FOUND,['pepper']
+CAY-681,sprite,FOUND,sprite
+CAY-681,sierramist,NOT FOUND,['sierras']
+CAY-681,milk,FOUND,milk
+CAY-681,water,FOUND,water
+CAY-681,juice,FOUND,juice
+CAY-681,applejuice,NOT FOUND,['prejudice']
+CAY-681,cranberryjuice,NOT FOUND,['cranberries']
+CAY-681,grapejuice,NOT FOUND,['prejudice']
+CAY-681,cranapplejuice,NOT FOUND,['unprejudiced']
+CAY-681,v8juice,NOT FOUND,['juice']
+CAY-681,bread,FOUND,bread
+CAY-681,sandwiches,FOUND,sandwiches
+CAY-681,bologna,FOUND,bologna
+CAY-681,turkey,FOUND,turkey
+CAY-681,chicken,FOUND,chicken
+CAY-681,beef,FOUND,beef
+CAY-681,empanadas,NOT FOUND,['panada']
+CAY-681,empanidas,NOT FOUND,['expands']
+CAY-681,quesadillas,NOT FOUND,['quills']
+CAY-681,tacos,NOT FOUND,['tacks']
+CAY-681,burritos,NOT FOUND,['burros']
+CAY-681,waffles,NOT FOUND,['raffles']
+CAY-681,hashbrowns,NOT FOUND,['browns']
+CAY-681,poptarts,NOT FOUND,['poplars']
+CAY-681,granolabars,NOT FOUND,['granaries']
+CAY-681,cereal,NOT FOUND,['cereals']
+CAY-681,chocolatesyrup,NOT FOUND,['chocolate']
+CBD-686,pizza,NOT FOUND,['piazza']
+CBD-686,candy,FOUND,candy
+CBD-686,chocolate,FOUND,chocolate
+CBD-686,kiwis,NOT FOUND,['wits']
+CBD-686,strawberries,FOUND,strawberries
+CBD-686,marshmallows,NOT FOUND,['shallows']
+CBD-686,pop,FOUND,pop
+CBD-686,pepsis,NOT FOUND,['persist']
+CBD-686,cocacola,NOT FOUND,['cocoa']
+CBD-686,m&ms,NOT FOUND,['simms']
+CBD-686,hersheys,NOT FOUND,['cherishes']
+CBD-686,chocolatecoveredmarshmallows,NOT FOUND,[]
+CBD-686,chocolatecoveredstrawberries,NOT FOUND,['strawberries']
+CBD-686,chocolatecoveredbrownies,NOT FOUND,[]
+CBD-686,cake,FOUND,cake
+CBD-686,chocolatecake,NOT FOUND,['chocolate']
+CBD-686,marblecake,NOT FOUND,['marble']
+CBD-686,vanillacake,NOT FOUND,['vanilla']
+CBD-686,nastycake,NOT FOUND,['stake']
+CBD-686,cakethathassugaronit,NOT FOUND,[]
+CBD-686,salsberrysteak,NOT FOUND,['alberta']
+CBF-691,chicken,FOUND,chicken
+CBF-691,milk,FOUND,milk
+CBF-691,lemon,FOUND,lemon
+CBF-691,orange,FOUND,orange
+CBF-691,cheese,FOUND,cheese
+CBF-691,orangejuice,NOT FOUND,['orange']
+CBF-691,grapejuice,NOT FOUND,['prejudice']
+CBF-691,sprite,FOUND,sprite
+CBF-691,coke,FOUND,coke
+CBF-691,pepsi,NOT FOUND,['peeps']
+CBF-691,mountaindew,NOT FOUND,['mountainside']
+CBF-691,drpepper,NOT FOUND,['pepper']
+CBF-691,gingerale,NOT FOUND,['gingerly']
+CBF-691,macaroni,FOUND,macaroni
+CBF-691,celery,FOUND,celery
+CBF-691,carrots,FOUND,carrots
+CBF-691,broccoli,NOT FOUND,['morocco']
+CBF-691,tomatoes,FOUND,tomatoes
+CBF-691,bread,FOUND,bread
+CBF-691,peppers,FOUND,peppers
+CBF-691,onions,FOUND,onions
+CBF-691,bacon,FOUND,bacon
+CBF-691,eggs,FOUND,eggs
+CBF-691,icing,FOUND,icing
+CBF-691,cake,FOUND,cake
+CBF-691,pie,FOUND,pie
+CBF-691,cherries,FOUND,cherries
+CBF-691,grapes,FOUND,grapes
+CBF-691,bananas,FOUND,bananas
+CBF-691,brusselsprouts,NOT FOUND,['brussels']
+CBH-693,water,FOUND,water
+CBH-693,apple,FOUND,apple
+CBH-693,oranges,FOUND,oranges
+CBH-693,soda,FOUND,soda
+CBH-693,grapes,FOUND,grapes
+CBH-693,granolabars,NOT FOUND,['granaries']
+CBH-693,candy,FOUND,candy
+CBH-693,hotpockets,NOT FOUND,['pockets']
+CBH-693,steak,FOUND,steak
+CBH-693,chicken,FOUND,chicken
+CBH-693,tacos,NOT FOUND,['tacks']
+CBH-693,fastfood,NOT FOUND,['stood']
+CBH-693,pomegranate,FOUND,pomegranate
+CBH-693,grapefruits,NOT FOUND,['recruits']
+CBH-693,carrots,FOUND,carrots
+CBH-693,broccoli,NOT FOUND,['morocco']
+CBH-693,icecream,NOT FOUND,['cream']
+CBH-693,turkey,FOUND,turkey
+CBH-693,ham,FOUND,ham
+CBH-693,wraps,FOUND,wraps
+CBH-693,lettuce,FOUND,lettuce
+CBH-693,tomatoes,FOUND,tomatoes
+CBH-693,spinach,FOUND,spinach
+CBH-693,applejuice,NOT FOUND,['prejudice']
+CBH-693,orangejuice,NOT FOUND,['orange']
+CBH-693,grapejuice,NOT FOUND,['prejudice']
+CBH-693,jelly,FOUND,jelly
+CBH-693,peanutbutter,NOT FOUND,['peanut']
+CBH-693,bread,FOUND,bread
+CBH-693,butter,FOUND,butter
+CBH-693,gatorade,NOT FOUND,['trade']
+CBH-693,powerade,NOT FOUND,['powered']
+CBJ-697,hamburger,NOT FOUND,['hamburg']
+CBJ-697,apple,FOUND,apple
+CBJ-697,banana,FOUND,banana
+CBJ-697,orange,FOUND,orange
+CBJ-697,spaghetti,NOT FOUND,['paget']
+CBJ-697,chicken,FOUND,chicken
+CBJ-697,milk,FOUND,milk
+CBJ-697,soda,FOUND,soda
+CBJ-697,lemonade,FOUND,lemonade
+CBJ-697,icedtea,NOT FOUND,['cetera']
+CBJ-697,meat,FOUND,meat
+CBJ-697,eggs,FOUND,eggs
+CBJ-697,sausage,FOUND,sausage
+CBJ-697,salad,FOUND,salad
+CBJ-697,milk,FOUND,milk
+CBJ-697,orangejuice,NOT FOUND,['orange']
+CBJ-697,bread,FOUND,bread
+CBJ-697,candy,FOUND,candy
+CBJ-697,ham,FOUND,ham
+CBJ-697,fish,FOUND,fish
+CBL-698,chips,FOUND,chips
+CBL-698,soda,FOUND,soda
+CBL-698,sprite,FOUND,sprite
+CBL-698,coke,FOUND,coke
+CBL-698,mashedpotatoes,NOT FOUND,['potatoes']
+CBL-698,turkey,FOUND,turkey
+CBL-698,gravy,FOUND,gravy
+CBL-698,beans,FOUND,beans
+CBL-698,bacon,FOUND,bacon
+CBL-698,water,FOUND,water
+CBL-698,koolaid,NOT FOUND,['laid']
+CBL-698,sugar,FOUND,sugar
+CBL-698,salt,FOUND,salt
+CBL-698,pepper,FOUND,pepper
+CBL-698,chicken,FOUND,chicken
+CBL-698,chickensandwich,NOT FOUND,['sandwich']
+CBL-698,pizza,NOT FOUND,['piazza']
+CBL-698,chickenpotpie,NOT FOUND,['chickie']
+CBL-698,cranberrysauce,NOT FOUND,['cranberry']
+CBL-698,baklava,NOT FOUND,['lava']
+CBL-698,donuts,NOT FOUND,['doubts']
+CBM-702,apples,FOUND,apples
+CBM-702,pizza,NOT FOUND,['piazza']
+CBM-702,candy,FOUND,candy
+CBM-702,soda,FOUND,soda
+CBM-702,water,FOUND,water
+CBM-702,juice,FOUND,juice
+CBM-702,cereal,NOT FOUND,['cereals']
+CBM-702,granolabars,NOT FOUND,['granaries']
+CBM-702,sweets,FOUND,sweets
+CBM-702,chocolates,NOT FOUND,['chocolate']
+CBM-702,seasonings,NOT FOUND,['seasoning']
+CBM-702,meats,FOUND,meats
+CBM-702,dairy,FOUND,dairy
+CBM-702,veggie,NOT FOUND,['reggie']
+CBM-702,fruits,FOUND,fruits
+CBM-702,apples,FOUND,apples
+CBM-702,bananas,FOUND,bananas
+CBM-702,greenpeppers,NOT FOUND,['peppers']
+CBM-702,onions,FOUND,onions
+CBM-702,allfoods,NOT FOUND,['foods']
+CBM-702,oatmeal,FOUND,oatmeal
+CBM-702,greenbeans,NOT FOUND,['greens']
+CBM-702,corn,FOUND,corn
+CBM-702,veggies,NOT FOUND,['reggie']
+CBM-702,frenchtoast,NOT FOUND,['forecast']
+CBM-702,waffles,NOT FOUND,['raffles']
+CBM-702,celery,FOUND,celery
+CBM-702,onions,FOUND,onions
+CBM-702,milk,FOUND,milk
+CBM-702,cheese,FOUND,cheese
+CBP-707,hamburgers,NOT FOUND,['hamburg']
+CBP-707,pizza,NOT FOUND,['piazza']
+CBP-707,pickles,FOUND,pickles
+CBP-707,cheese,FOUND,cheese
+CBP-707,fries,NOT FOUND,['furies']
+CBP-707,water,FOUND,water
+CBP-707,koolaid,NOT FOUND,['laid']
+CBP-707,tea,FOUND,tea
+CBP-707,cake,FOUND,cake
+CBP-707,apples,FOUND,apples
+CBP-707,bananas,FOUND,bananas
+CBP-707,oranges,FOUND,oranges
+CBP-707,eggplant,NOT FOUND,['plant']
+CBP-707,cheesestick,NOT FOUND,['cheeses']
+CBP-707,burrito,NOT FOUND,['burton']
+CBP-707,quesadilla,NOT FOUND,['quadrille']
+CBP-707,beef,FOUND,beef
+CBP-707,ham,FOUND,ham
+CBP-707,turkey,FOUND,turkey
+CBP-707,macaroniandcheese,NOT FOUND,['carolinians']
+CBP-707,mashedpotatoes,NOT FOUND,['potatoes']
+CBP-707,bakedpotato,NOT FOUND,['potato']
+CBP-707,peas,FOUND,peas
+CBP-707,carrots,FOUND,carrots
+CBP-707,corn,FOUND,corn
+CBP-707,chicken,FOUND,chicken
+CBP-707,biscuits,FOUND,biscuits
+CBP-707,orangejuice,NOT FOUND,['orange']
+CBP-707,applejuice,NOT FOUND,['prejudice']
+CBP-707,pepsi,NOT FOUND,['peeps']
+CBP-707,coke,FOUND,coke
+CBP-707,sprite,FOUND,sprite
+CBS-711,pizza,NOT FOUND,['piazza']
+CBS-711,hamburgers,NOT FOUND,['hamburg']
+CBS-711,water,FOUND,water
+CBS-711,pop,FOUND,pop
+CBS-711,cheeseburger,NOT FOUND,['cheese']
+CBS-711,soup,FOUND,soup
+CBS-711,coke,FOUND,coke
+CBS-711,fanta,NOT FOUND,['infanta']
+CBS-711,chickennuggetsoup,NOT FOUND,['chickens']
+CBS-711,water,FOUND,water
+CBS-711,grapejuice,NOT FOUND,['prejudice']
+CBS-711,peanutbutterandjelly,NOT FOUND,['butterwell']
+CBS-711,applejuice,NOT FOUND,['prejudice']
+CBS-711,bagel,NOT FOUND,['barge']
+CBS-711,toast,FOUND,toast
+CBS-711,waffles,NOT FOUND,['raffles']
+CBS-711,pancakes,FOUND,pancakes
+CBS-711,frenchtoast,NOT FOUND,['forecast']
+CBW-715,macandcheese,NOT FOUND,['manchester']
+CBW-715,toast,FOUND,toast
+CBW-715,butter,FOUND,butter
+CBW-715,pizza,NOT FOUND,['piazza']
+CBW-715,pepperoni,NOT FOUND,['pepper']
+CBW-715,cheese,FOUND,cheese
+CBW-715,broccoli,NOT FOUND,['morocco']
+CBW-715,crackers,FOUND,crackers
+CBW-715,tuna,NOT FOUND,['una']
+CBW-715,fish,FOUND,fish
+CBW-715,lobster,FOUND,lobster
+CBW-715,crab,FOUND,crab
+CBW-715,bread,FOUND,bread
+CBW-715,shrimp,FOUND,shrimp
+CBW-715,cauliflour,NOT FOUND,['cauliflower']
+CBW-715,lettuce,FOUND,lettuce
+CBW-715,carrots,FOUND,carrots
+CBW-715,greenbeans,NOT FOUND,['greens']
+CBW-715,beans,FOUND,beans
+CBW-715,blackbeans,NOT FOUND,['blacken']
+CBW-715,marshmallows,NOT FOUND,['shallows']
+CBW-715,candycanes,NOT FOUND,['canadians']
+CCB-720,rootbeer,NOT FOUND,['rooster']
+CCB-720,pizza,NOT FOUND,['piazza']
+CCB-720,broccoli,NOT FOUND,['morocco']
+CCB-720,macaroniandcheese,NOT FOUND,['carolinians']
+CCB-720,cocacola,NOT FOUND,['cocoa']
+CCB-720,pepsi,NOT FOUND,['peeps']
+CCB-720,icecream,NOT FOUND,['cream']
+CCB-720,popsicles,NOT FOUND,['posies']
+CCB-720,strawberries,FOUND,strawberries
+CCB-720,blueberries,NOT FOUND,['bleoberis']
+CCB-720,bananas,FOUND,bananas
+CCB-720,grapes,FOUND,grapes
+CCB-720,kiwi,NOT FOUND,['kwai']
+CCB-720,zucchinibread,NOT FOUND,['unchained']
+CCB-720,bananabread,NOT FOUND,['banana']
+CCB-720,smoothies,NOT FOUND,['soothes']
+CCD-722,burgers,NOT FOUND,['burghers']
+CCD-722,fries,NOT FOUND,['furies']
+CCD-722,ketchup,FOUND,ketchup
+CCD-722,mustard,FOUND,mustard
+CCD-722,lettuce,FOUND,lettuce
+CCD-722,onions,FOUND,onions
+CCD-722,pickles,FOUND,pickles
+CCD-722,tomatoes,FOUND,tomatoes
+CCD-722,mayo,NOT FOUND,['mayor']
+CCD-722,buns,FOUND,buns
+CCD-722,beer,FOUND,beer
+CCD-722,wine,FOUND,wine
+CCD-722,bread,FOUND,bread
+CCD-722,cheese,FOUND,cheese
+CCD-722,ham,FOUND,ham
+CCD-722,turkey,FOUND,turkey
+CCD-722,steak,FOUND,steak
+CCD-722,lobster,FOUND,lobster
+CCD-722,crab,FOUND,crab
+CCD-722,shrimp,FOUND,shrimp
+CCD-722,biscuits,FOUND,biscuits
+CCD-722,graxy,NOT FOUND,['gray']
+CCD-722,mashedpotatoes,NOT FOUND,['potatoes']
+CCD-722,macandcheese,NOT FOUND,['manchester']
+CCD-722,pasta,NOT FOUND,['past']
+CCD-722,pesto,NOT FOUND,['presto']
+CCD-722,greenpeppers,NOT FOUND,['peppers']
+CCD-722,cucumbers,FOUND,cucumbers
+CCD-722,redpeppers,NOT FOUND,['peppers']
+CCD-722,sausage,FOUND,sausage
+CCD-722,beef,FOUND,beef
+CCD-722,ham,FOUND,ham
+CCD-722,mushrooms,FOUND,mushrooms
+CCD-722,onions,FOUND,onions
+CCD-722,pepperoni,NOT FOUND,['pepper']
+CCD-722,bananapeppers,NOT FOUND,['peppers']
+CCD-722,blackolives,NOT FOUND,['blackie']
+CCD-722,pastasauce,NOT FOUND,['pasture']
+CCD-722,potatochips,NOT FOUND,['potatoes']
+CCD-722,ricecakes,NOT FOUND,['ricks']
+CCD-722,cereal,NOT FOUND,['cereals']
+CCD-722,cheerios,NOT FOUND,['cheers']
+CCD-722,water,FOUND,water
+CCD-722,sprite,FOUND,sprite
+CCF-724,sweettea,NOT FOUND,['sweetmeat']
+CCF-724,macaroni,FOUND,macaroni
+CCF-724,pizza,NOT FOUND,['piazza']
+CCF-724,water,FOUND,water
+CCF-724,chicken,FOUND,chicken
+CCF-724,sprite,FOUND,sprite
+CCF-724,sweettea,NOT FOUND,['sweetmeat']
+CCF-724,ribs,FOUND,ribs
+CCF-724,lemonade,FOUND,lemonade
+CCF-724,broccoli,NOT FOUND,['morocco']
+CCF-724,cheese,FOUND,cheese
+CCF-724,drpepper,NOT FOUND,['pepper']
+CCF-724,sunkist,NOT FOUND,['sunset']
+CCF-724,rootbeer,NOT FOUND,['rooster']
+CCF-724,milk,FOUND,milk
+CCF-724,applejuice,NOT FOUND,['prejudice']
+CCF-724,orangejuice,NOT FOUND,['orange']
+CCH-726,coffee,FOUND,coffee
+CCH-726,milk,FOUND,milk
+CCH-726,apple,FOUND,apple
+CCH-726,pie,FOUND,pie
+CCH-726,cake,FOUND,cake
+CCH-726,banana,FOUND,banana
+CCH-726,water,FOUND,water
+CCH-726,kiwi,NOT FOUND,['kwai']
+CCH-726,chocolate,FOUND,chocolate
+CCH-726,crackers,FOUND,crackers
+CCH-726,onions,FOUND,onions
+CCH-726,garlic,FOUND,garlic
+CCH-726,pretzels,NOT FOUND,['reels']
+CCH-726,strawberries,FOUND,strawberries
+CCH-726,fruitjuice,NOT FOUND,['juice']
+CCH-726,cheese,FOUND,cheese
+CCH-726,pancakes,FOUND,pancakes
+CCH-726,waffles,NOT FOUND,['raffles']
+CCH-726,bacon,FOUND,bacon
+CCH-726,eggs,FOUND,eggs
+CCH-726,beef,FOUND,beef
+CCH-726,pig,FOUND,pig
+CCH-726,spaghetti,NOT FOUND,['paget']
+CCX-744,soda,FOUND,soda
+CCX-744,grapes,FOUND,grapes
+CCX-744,fish,FOUND,fish
+CCX-744,chicken,FOUND,chicken
+CCX-744,broccoli,NOT FOUND,['morocco']
+CCX-744,pears,FOUND,pears
+CCX-744,apples,FOUND,apples
+CCX-744,bananas,FOUND,bananas
+CCX-744,mangoes,NOT FOUND,['mangles']
+CCX-744,mashedpotatoes,NOT FOUND,['potatoes']
+CCX-744,sweetpotatoes,NOT FOUND,['potatoes']
+CCX-744,turkey,FOUND,turkey
+CCX-744,dressing,FOUND,dressing
+CCX-744,ham,FOUND,ham
+CCX-744,frenchfries,NOT FOUND,['franchises']
+CCX-744,pizza,NOT FOUND,['piazza']
+CCX-744,salad,FOUND,salad
+CCX-744,icecream,NOT FOUND,['cream']
+CCX-744,yogurt,NOT FOUND,['your']
+CCX-744,candy,FOUND,candy
+CCX-744,lemons,FOUND,lemons
+CCX-744,oranges,FOUND,oranges
+CDG-753,peanuts,FOUND,peanuts
+CDG-753,cashews,NOT FOUND,['shews']
+CDG-753,bread,FOUND,bread
+CDG-753,bark,FOUND,bark
+CDG-753,soda,FOUND,soda
+CDG-753,rootbeer,NOT FOUND,['rooster']
+CDG-753,drpepper,NOT FOUND,['pepper']
+CDG-753,water,FOUND,water
+CDG-753,jello,NOT FOUND,['nello']
+CDG-753,brownies,FOUND,brownies
+CDG-753,cookies,FOUND,cookies
+CDG-753,chocolate,FOUND,chocolate
+CDG-753,milk,FOUND,milk
+CDG-753,orangejuice,NOT FOUND,['orange']
+CDG-753,limejuice,NOT FOUND,['juice']
+CDG-753,lemonade,FOUND,lemonade
+CDG-753,noodles,FOUND,noodles
+CDG-753,macandcheese,NOT FOUND,['manchester']
+CDG-753,pasta,NOT FOUND,['past']
+CDG-753,spaghetti,NOT FOUND,['paget']
+CDG-753,tomatoes,FOUND,tomatoes
+CDG-753,peppers,FOUND,peppers
+CDG-753,celery,FOUND,celery
+CDG-753,peanutbutter,NOT FOUND,['peanut']
+CDG-753,jelly,FOUND,jelly
+CDG-753,plums,FOUND,plums
+CDG-753,mangoes,NOT FOUND,['mangles']
+CDG-753,guava,NOT FOUND,['guiana']
+CDG-753,plums,FOUND,plums
+CDG-753,grapefruit,NOT FOUND,['recruit']
+CDG-753,starfruit,NOT FOUND,['starlit']
+CDG-753,limes,FOUND,limes
+CDG-753,lemons,FOUND,lemons
+CDH-754,cocacola,NOT FOUND,['cocoa']
+CDH-754,cherrycocacola,NOT FOUND,['charcoal']
+CDH-754,fantaorange,NOT FOUND,['orange']
+CDH-754,fantastrawberry,NOT FOUND,['strawberry']
+CDH-754,fantapineapple,NOT FOUND,['pineapple']
+CDH-754,fantagrape,NOT FOUND,['vantage']
+CDH-754,friedrice,NOT FOUND,['frederic']
+CDH-754,sreamedrice,NOT FOUND,['streamed']
+CDH-754,chicken,FOUND,chicken
+CDH-754,turkey,FOUND,turkey
+CDH-754,danimalscrunchers,NOT FOUND,['anstruthers']
+CDH-754,yogurt,NOT FOUND,['your']
+CDH-754,danimalssmoothies,NOT FOUND,['antipathies']
+CDH-754,sprite,FOUND,sprite
+CDH-754,spritezero,NOT FOUND,['sprite']
+CDM-759,soda,FOUND,soda
+CDM-759,macaroniandcheese,NOT FOUND,['carolinians']
+CDM-759,spaghetti,NOT FOUND,['paget']
+CDM-759,icecream,NOT FOUND,['cream']
+CDM-759,cake,FOUND,cake
+CDM-759,pizza,NOT FOUND,['piazza']
+CDM-759,maggianosalads,NOT FOUND,['marginal']
+CDM-759,rolls,FOUND,rolls
+CDM-759,hotdogs,NOT FOUND,['hogs']
+CDM-759,cranberries,FOUND,cranberries
+CDM-759,raspberries,FOUND,raspberries
+CDM-759,watermelon,FOUND,watermelon
+CDM-759,strawberries,FOUND,strawberries
+CDM-759,cantaloupe,NOT FOUND,['catalogue']
+CDM-759,peaches,FOUND,peaches
+CDM-759,water,FOUND,water
+CDM-759,juice,FOUND,juice
+CDM-759,applecider,NOT FOUND,['pleader']
+CDM-759,wine,FOUND,wine
+CDM-759,coconutcreampie,NOT FOUND,['contemptible']
+CDM-759,chocolatepie,NOT FOUND,['chocolate']
+CDM-759,applepie,NOT FOUND,['applies']
+CDM-759,coconutpie,NOT FOUND,['cocoanut']
+CDM-759,pumpkinpie,NOT FOUND,['pumpkin']
+CDM-759,chocolateicecream,NOT FOUND,['chocolate']
+CDM-759,vanillaicecream,NOT FOUND,['valliere']
+CDM-759,redvelvetcake,NOT FOUND,['velveteen']
+CDM-759,chocolateballs,NOT FOUND,['chocolate']
+CDM-759,ravioli,NOT FOUND,['violin']
+CDM-759,breadsticks,NOT FOUND,['breasts']
+CDM-759,cheesesause,NOT FOUND,['cheeses']
+CDM-759,salsa,NOT FOUND,['sala']
+CDM-759,chips,FOUND,chips
+CDM-759,doritos,NOT FOUND,['doris']
+CDM-759,coolranchdoritos,NOT FOUND,['comprachicos']
+CDR-764,chicken,FOUND,chicken
+CDR-764,chicken,FOUND,chicken
+CDR-764,ketchup,FOUND,ketchup
+CDR-764,popcorn,NOT FOUND,['poor']
+CDR-764,pizza,NOT FOUND,['piazza']
+CDR-764,orangejuice,NOT FOUND,['orange']
+CDR-764,applejuice,NOT FOUND,['prejudice']
+CDR-764,grapejuice,NOT FOUND,['prejudice']
+CDR-764,steak,FOUND,steak
+CDR-764,shrimp,FOUND,shrimp
+CDR-764,ribs,FOUND,ribs
+CDR-764,cookies,FOUND,cookies
+CDR-764,icecream,NOT FOUND,['cream']
+CDR-764,cake,FOUND,cake
+CDR-764,smoothie,NOT FOUND,['smoother']
+CDR-764,milkshake,NOT FOUND,['mistake']
+CDR-764,slushie,NOT FOUND,['susie']
+CDR-764,icecream,NOT FOUND,['cream']
+CDR-764,water,FOUND,water
+CDR-764,koolaid,NOT FOUND,['laid']
+CDR-764,cherry,FOUND,cherry
+CDR-764,apple,FOUND,apple
+CDR-764,strawberry,FOUND,strawberry
+CDR-764,banana,FOUND,banana
+CDR-764,tangerine,NOT FOUND,['tangerines']
+CDR-764,mango,NOT FOUND,['mungo']
+CDR-764,blueberries,NOT FOUND,['bleoberis']
+CDR-764,milk,FOUND,milk
+CDR-764,applesauce,NOT FOUND,['applause']
+CDR-764,pop,FOUND,pop
+CDR-764,cocacola,NOT FOUND,['cocoa']
+CDR-764,fanta,NOT FOUND,['infanta']
+CDU-767,sprite,FOUND,sprite
+CDU-767,pepsi,NOT FOUND,['peeps']
+CDU-767,lemonade,FOUND,lemonade
+CDU-767,coke,FOUND,coke
+CDU-767,orangejuice,NOT FOUND,['orange']
+CDU-767,applejuice,NOT FOUND,['prejudice']
+CDU-767,cranberryjuice,NOT FOUND,['cranberries']
+CDU-767,spaghetti,NOT FOUND,['paget']
+CDU-767,chicken,FOUND,chicken
+CDU-767,macaroni,FOUND,macaroni
+CDU-767,greens,FOUND,greens
+CDU-767,fish,FOUND,fish
+CDU-767,pop,FOUND,pop
+CDU-767,water,FOUND,water
+CDU-767,gatorade,NOT FOUND,['trade']
+CDU-767,powerade,NOT FOUND,['powered']
+CDU-767,jambalaya,NOT FOUND,['malay']
+CDU-767,meats,FOUND,meats
+CDU-767,sausages,FOUND,sausages
+CDU-767,bacon,FOUND,bacon
+CDU-767,eggs,FOUND,eggs
+CDU-767,biscuits,FOUND,biscuits
+CDU-767,bagels,NOT FOUND,['barges']
+CDU-767,bananas,FOUND,bananas
+CDU-767,cereal,NOT FOUND,['cereals']
+CDU-767,ricekrispietreats,NOT FOUND,['retreats']
+CDU-767,fruitsnacks,NOT FOUND,['fruits']
+CDU-767,cheesenips,NOT FOUND,['cheeses']
+SGO-159,macaroniandcheese,NOT FOUND,['carolinians']
+SGO-159,popcorn,NOT FOUND,['poor']
+SGO-159,pizza,NOT FOUND,['piazza']
+SGO-159,pasta,NOT FOUND,['past']
+SGO-159,grape,FOUND,grape
+SGO-159,cheese,FOUND,cheese
+SGO-159,meat,FOUND,meat
+SGO-159,pepsi,NOT FOUND,['peeps']
+SGO-159,coke,FOUND,coke
+SGO-159,mountaindew,NOT FOUND,['mountainside']
+SGO-159,dietcoke,NOT FOUND,['dickie']
+SGO-159,drpepper,NOT FOUND,['pepper']
+SGO-159,rootbeer,NOT FOUND,['rooster']
+SGO-159,orange,FOUND,orange
+SGO-159,sierramist,NOT FOUND,['sierras']
+SGO-159,sprite,FOUND,sprite
+SGO-159,grape,FOUND,grape
+SGO-159,cherry,FOUND,cherry
+SGO-159,vanillacoke,NOT FOUND,['vanilla']
+SGO-159,icecream,NOT FOUND,['cream']
+SGO-159,corndog,NOT FOUND,['corned']
+SGO-159,pizzarolls,NOT FOUND,['pizarro']
+SGO-159,chips,FOUND,chips
+SGO-159,cookies,FOUND,cookies
+SGO-159,grahamcrackers,NOT FOUND,['crackers']
+SGO-159,seacrackers,NOT FOUND,['crackers']
+SGO-159,granolabars,NOT FOUND,['granaries']
+SGO-159,corn,FOUND,corn
+SGO-159,broccoli,NOT FOUND,['morocco']
+SGO-159,langus,NOT FOUND,['languish']
+SGO-159,apple,FOUND,apple
+SGO-159,pineapple,FOUND,pineapple
+SGO-159,strawberries,FOUND,strawberries
+SGO-159,ham,FOUND,ham
+SGO-159,chicken,FOUND,chicken
+SGO-159,pork,FOUND,pork
+SKE-234,pizza,NOT FOUND,['piazza']
+SKE-234,water,FOUND,water
+SKE-234,soda,FOUND,soda
+SKE-234,cereal,NOT FOUND,['cereals']
+SKE-234,milk,FOUND,milk
+SKE-234,orangejuice,NOT FOUND,['orange']
+SKE-234,applejuice,NOT FOUND,['prejudice']
+SKE-234,apples,FOUND,apples
+SKE-234,fruit,FOUND,fruit
+SKE-234,grapes,FOUND,grapes
+SKE-234,pasta,NOT FOUND,['past']
+SKE-234,ravioli,NOT FOUND,['violin']
+SKE-234,coffee,FOUND,coffee
+SKE-234,gingerale,NOT FOUND,['gingerly']
+SKE-234,spaghetti,NOT FOUND,['paget']
+SKE-234,breadsticks,NOT FOUND,['breasts']
+SKE-234,buffalowings,NOT FOUND,['buffaloes']
+SMK-401,hamburger,NOT FOUND,['hamburg']
+SMK-401,hotdog,NOT FOUND,['outdo']
+SMK-401,chips,FOUND,chips
+SMK-401,skittles,NOT FOUND,['spittle']
+SMK-401,hershey,NOT FOUND,['herschel']
+SMK-401,hotdogs,NOT FOUND,['hogs']
+SMK-401,sausage,FOUND,sausage
+SMK-401,milk,FOUND,milk
+SMK-401,coke,FOUND,coke
+SMK-401,dietcoke,NOT FOUND,['dickie']
+SMK-401,sprite,FOUND,sprite
+SMK-401,sunkist,NOT FOUND,['sunset']
+SMK-401,frenchfries,NOT FOUND,['franchises']
+SMK-401,tatertots,NOT FOUND,['tatters']
+SMK-401,mashedpotatoes,NOT FOUND,['potatoes']
+SMK-401,corn,FOUND,corn
+SMK-401,peas,FOUND,peas
+SMK-401,grapes,FOUND,grapes
+SMK-401,apple,FOUND,apple
+SMK-401,bananas,FOUND,bananas
+SMK-401,guacamole,NOT FOUND,['gambol']
+SMK-401,cheese,FOUND,cheese
+SMK-401,pepperjackcheese,NOT FOUND,['reproaches']
+SMK-401,bread,FOUND,bread
+SMK-401,pringles,NOT FOUND,['ringlets']
+SMK-401,quakerbars,NOT FOUND,['quakers']
+SMK-401,granolabars,NOT FOUND,['granaries']
+SMK-401,popsicles,NOT FOUND,['posies']
+SMK-401,frozenpizzas,NOT FOUND,['frozen']
+SMK-401,pepperonipizza,NOT FOUND,['principia']
+SMK-401,cheesepizza,NOT FOUND,['cheese']
+SMK-401,sausagepizza,NOT FOUND,['sausage']
+SMK-401,breadsticks,NOT FOUND,['breasts']
+SMK-401,spaghetti,NOT FOUND,['paget']
+SMK-401,lasagna,NOT FOUND,['laana']
+SNI-300,soda,FOUND,soda
+SNI-300,water,FOUND,water
+SNI-300,chicken,FOUND,chicken
+SNI-300,burger,FOUND,burger
+SNI-300,rice,FOUND,rice
+SNI-300,spaghetti,NOT FOUND,['paget']
+SNI-300,macaroniandcheese,NOT FOUND,['carolinians']
+SNI-300,steak,FOUND,steak
+SNI-300,barbecue,NOT FOUND,['rescue']
+SNI-300,chinese,FOUND,chinese
+SNI-300,rice,FOUND,rice
+SNI-300,pizza,NOT FOUND,['piazza']
+SNI-300,juice,FOUND,juice
+SNI-300,orange,FOUND,orange
+SNI-300,lemon,FOUND,lemon
+SNI-300,apple,FOUND,apple
+SNI-300,pear,FOUND,pear
+SNI-300,lemon,FOUND,lemon
+SNR-308,pizza,NOT FOUND,['piazza']
+SNR-308,pizza,NOT FOUND,['piazza']
+SNR-308,chips,FOUND,chips
+SNR-308,candies,FOUND,candies
+SNR-308,pop,FOUND,pop
+SNR-308,dietcoke,NOT FOUND,['dickie']
+SNR-308,lemonade,FOUND,lemonade
+SNR-308,pies,FOUND,pies
+SNR-308,cereal,NOT FOUND,['cereals']
+SNR-308,cakes,FOUND,cakes
+SNR-308,brownies,FOUND,brownies
+SNR-308,sandwich,FOUND,sandwich
+SNR-308,peanutbutter,NOT FOUND,['peanut']
+SNR-308,tunafish,NOT FOUND,['sunfish']
+SNR-308,fish,FOUND,fish
+SNR-308,chicken,FOUND,chicken
+SNT-310,soda,FOUND,soda
+SNT-310,corn,FOUND,corn
+SNT-310,potatoes,FOUND,potatoes
+SNT-310,tomato,FOUND,tomato
+SNT-310,steak,FOUND,steak
+SNT-310,apple,FOUND,apple
+SNT-310,oranges,FOUND,oranges
+SNT-310,banana,FOUND,banana
+SNT-310,kiwi,NOT FOUND,['kwai']
+SNT-310,plums,FOUND,plums
+SNT-310,water,FOUND,water
+SNT-310,bread,FOUND,bread
+SNT-310,turkey,FOUND,turkey
+SNT-310,mayo,NOT FOUND,['mayor']
+SNT-310,mustard,FOUND,mustard
+SNT-310,lettuce,FOUND,lettuce
+SNT-310,carrots,FOUND,carrots
+SNT-310,radishes,FOUND,radishes
+SNT-310,beets,FOUND,beets
+SNT-310,cauliflower,FOUND,cauliflower
+SNT-310,broccoli,NOT FOUND,['morocco']
+SNT-310,sweetpotatoes,NOT FOUND,['potatoes']
+SNT-310,beans,FOUND,beans
+SNV-312,hotdog,NOT FOUND,['outdo']
+SNV-312,hamburger,NOT FOUND,['hamburg']
+SNV-312,burrito,NOT FOUND,['burton']
+SNV-312,chicken,FOUND,chicken
+SNV-312,rice,FOUND,rice
+SNV-312,corn,FOUND,corn
+SNV-312,celery,FOUND,celery
+SNV-312,peanutbutter,NOT FOUND,['peanut']
+SNV-312,water,FOUND,water
+SNV-312,2%milk,NOT FOUND,['milk']
+SNV-312,orangejuice,NOT FOUND,['orange']
+SNV-312,applejuice,NOT FOUND,['prejudice']
+SNV-312,chocolatemilk,NOT FOUND,['chocolate']
+SNV-312,waffles,NOT FOUND,['raffles']
+SNV-312,blueberrymuffins,NOT FOUND,['bleoberis']
+SNV-312,granolabars,NOT FOUND,['granaries']
+SNV-312,gatorade,NOT FOUND,['trade']
+SNV-312,powerade,NOT FOUND,['powered']
+SNV-312,turkey,FOUND,turkey
+SNV-312,ham,FOUND,ham
+SNV-312,mashedpotatoes,NOT FOUND,['potatoes']
+SNV-312,chickennoodles,NOT FOUND,['chickens']
+SNV-312,cornbread,NOT FOUND,['cornered']
+SNV-312,wings,FOUND,wings
+SNV-312,spaghetti,NOT FOUND,['paget']
+SNV-312,lasagna,NOT FOUND,['laana']
+SNV-312,breadsticks,NOT FOUND,['breasts']
+SNV-312,chickenpasta,NOT FOUND,['chickens']
+SNV-312,apples,FOUND,apples
+SNV-312,oranges,FOUND,oranges
+SNV-312,strawberry,FOUND,strawberry
+SNV-312,raspberries,FOUND,raspberries
+SNV-312,blueberries,NOT FOUND,['bleoberis']
+SNY-315,chicken,FOUND,chicken
+SNY-315,water,FOUND,water
+SNY-315,pop,FOUND,pop
+SNY-315,steak,FOUND,steak
+SNY-315,macaroniandcheese,NOT FOUND,['carolinians']
+SNY-315,bread,FOUND,bread
+SNY-315,milk,FOUND,milk
+SNY-315,orangejuice,NOT FOUND,['orange']
+SNY-315,applejuice,NOT FOUND,['prejudice']
+SNY-315,grapejuice,NOT FOUND,['prejudice']
+SNY-315,cranberryjuice,NOT FOUND,['cranberries']
+SNY-315,tomatojuice,NOT FOUND,['tomatoes']
+SNY-315,bananas,FOUND,bananas
+SNY-315,apples,FOUND,apples
+SNY-315,oranges,FOUND,oranges
+SNY-315,grapes,FOUND,grapes
+SNY-315,lettuce,FOUND,lettuce
+SNY-315,crackers,FOUND,crackers
+SNY-315,cereal,NOT FOUND,['cereals']
+SNY-315,cheezits,NOT FOUND,['chemists']
+SNY-315,hotchocolate,NOT FOUND,['chocolate']
+SNY-315,tea,FOUND,tea
+SNY-315,tomatosoup,NOT FOUND,['tomatoes']
+SNY-315,chickennoodlesoup,NOT FOUND,['chickens']
+SOA-317,pop,FOUND,pop
+SOA-317,food,FOUND,food
+SOA-317,rootbeer,NOT FOUND,['rooster']
+SOA-317,water,FOUND,water
+SOA-317,chew,FOUND,chew
+SOA-317,orange,FOUND,orange
+SOA-317,applejuice,NOT FOUND,['prejudice']
+SOQ-329,banana,FOUND,banana
+SOQ-329,apple,FOUND,apple
+SOQ-329,water,FOUND,water
+SOQ-329,soda,FOUND,soda
+SOQ-329,orange,FOUND,orange
+SOQ-329,strawberry,FOUND,strawberry
+SOQ-329,kiwi,NOT FOUND,['kwai']
+SOQ-329,pizza,NOT FOUND,['piazza']
+SOQ-329,icecream,NOT FOUND,['cream']
+SOQ-329,chocolate,FOUND,chocolate
+SOQ-329,beer,FOUND,beer
+SOQ-329,chips,FOUND,chips
+SOQ-329,chicken,FOUND,chicken
+SOQ-329,beef,FOUND,beef
+SOQ-329,bacon,FOUND,bacon
+SOQ-329,meatloaf,NOT FOUND,['smeaton']
+SOQ-329,hamburger,NOT FOUND,['hamburg']
+SOQ-329,steak,FOUND,steak
+SOQ-329,greenbeans,NOT FOUND,['greens']
+SOQ-329,peas,FOUND,peas
+SOQ-329,carrots,FOUND,carrots
+SOQ-329,spinach,FOUND,spinach
+SOQ-329,broccoli,NOT FOUND,['morocco']
+SOQ-329,corn,FOUND,corn
+SOQ-329,blueberries,NOT FOUND,['bleoberis']
+SOQ-329,cherries,FOUND,cherries
+SPL-436,gatorade,NOT FOUND,['trade']
+SPL-436,lemonade,FOUND,lemonade
+SPL-436,propel,NOT FOUND,['properly']
+SPL-436,chips,FOUND,chips
+SPL-436,gingerbread,FOUND,gingerbread
+SPL-436,cake,FOUND,cake
+SPL-436,icecream,NOT FOUND,['cream']
+SPL-436,cookies,FOUND,cookies
+SPL-436,turkey,FOUND,turkey
+SPL-436,ham,FOUND,ham
+SPL-436,cottagecheese,NOT FOUND,['cottages']
+SPL-436,frenchtoast,NOT FOUND,['forecast']
+SPL-436,eggs,FOUND,eggs
+SPL-436,peanuts,FOUND,peanuts
+SPV-450,tacos,NOT FOUND,['tacks']
+SPV-450,pizza,NOT FOUND,['piazza']
+SPV-450,water,FOUND,water
+SPV-450,watermelon,FOUND,watermelon
+SPV-450,hotdogs,NOT FOUND,['hogs']
+SPV-450,hamburgers,NOT FOUND,['hamburg']
+SPV-450,frenchfries,NOT FOUND,['franchises']
+SPV-450,candy,FOUND,candy
+SPV-450,spaghetti,NOT FOUND,['paget']
+SPV-450,lasagna,NOT FOUND,['laana']
+SPV-450,icecream,NOT FOUND,['cream']
+SPV-450,sodapop,NOT FOUND,['soda']
+SPV-450,liquor,FOUND,liquor
+SPV-450,mustard,FOUND,mustard
+SPV-450,tomatoes,FOUND,tomatoes
+SPV-450,onions,FOUND,onions
+SPV-450,greenpeppers,NOT FOUND,['peppers']
+SPV-450,corn,FOUND,corn
+SPV-450,strawberries,FOUND,strawberries
+SPV-450,lettuce,FOUND,lettuce
+SPV-450,cheese,FOUND,cheese
+SPV-450,garlicbread,NOT FOUND,['garlic']
+SRF-483,ribs,FOUND,ribs
+SRF-483,wings,FOUND,wings
+SRF-483,soda,FOUND,soda
+SRF-483,water,FOUND,water
+SRF-483,chickentenders,NOT FOUND,['chickens']
+SRF-483,chickenwings,NOT FOUND,['thickening']
+SRF-483,chickenlegs,NOT FOUND,['chickens']
+SRF-483,pickles,FOUND,pickles
+SRF-483,peppers,FOUND,peppers
+SRF-483,macandcheese,NOT FOUND,['manchester']
+SRF-483,cheese,FOUND,cheese
+SRF-483,noodles,FOUND,noodles
+SRF-483,parmesancheese,NOT FOUND,['parmesan']
+SRF-483,hamburgers,NOT FOUND,['hamburg']
+SRR-498,spaghetti,NOT FOUND,['paget']
+SRR-498,tacos,NOT FOUND,['tacks']
+SRR-498,milk,FOUND,milk
+SRR-498,soda,FOUND,soda
+SRR-498,chocolatemilk,NOT FOUND,['chocolate']
+SRR-498,strawberrymilk,NOT FOUND,['strawberry']
+SRR-498,eggs,FOUND,eggs
+SRR-498,bacon,FOUND,bacon
+SRR-498,toast,FOUND,toast
+SRR-498,peanutbutterandjelly,NOT FOUND,['butterwell']
+SRR-498,pudding,FOUND,pudding
+SRR-498,cake,FOUND,cake
+SRR-498,omelets,NOT FOUND,['omelet']
+SRR-498,chocolatefudge,NOT FOUND,['chocolate']
+SRR-498,water,FOUND,water
+SRR-498,romannoodles,NOT FOUND,['noodles']
+SRR-498,hamburgers,NOT FOUND,['hamburg']
+SRR-498,cheeseburgers,NOT FOUND,['cheeses']
+SRR-498,fries,NOT FOUND,['furies']
+SRR-498,ravioli,NOT FOUND,['violin']
+SRR-498,pizza,NOT FOUND,['piazza']
+SRR-498,mcdonalds,NOT FOUND,['donald']
+SSG-520,water,FOUND,water
+SSG-520,milk,FOUND,milk
+SSG-520,chickennuggets,NOT FOUND,['chickens']
+SSG-520,fish,FOUND,fish
+SSG-520,calamari,NOT FOUND,['lamar']
+SSG-520,shrimp,FOUND,shrimp
+SSG-520,beefandnoodles,NOT FOUND,['noodles']
+SSG-520,spaghetti,NOT FOUND,['paget']
+SSG-520,orangejuice,NOT FOUND,['orange']
+SSG-520,lemonade,FOUND,lemonade
+SSG-520,koolaid,NOT FOUND,['laid']
+SSG-520,candy,FOUND,candy
+SSG-520,juice,FOUND,juice
+SUG-544,pizza,NOT FOUND,['piazza']
+SUG-544,potato,FOUND,potato
+SUG-544,corn,FOUND,corn
+SUG-544,beans,FOUND,beans
+SUG-544,soup,FOUND,soup
+SUG-544,pepsi,NOT FOUND,['peeps']
+SUG-544,cherrypepsi,NOT FOUND,['cherry']
+SUG-544,icee,NOT FOUND,['ice']
+SUG-544,tea,FOUND,tea
+SUG-544,drpepper,NOT FOUND,['pepper']
+SUG-544,lemonade,FOUND,lemonade
+SUG-544,watermelon,FOUND,watermelon
+SUG-544,pumpkin,FOUND,pumpkin
+SUG-544,pumpkinpie,NOT FOUND,['pumpkin']
+SUG-544,cherry,FOUND,cherry
+SUG-544,apple,FOUND,apple
+SUG-544,orange,FOUND,orange
+SVH-570,cake,FOUND,cake
+SVH-570,icedcream,NOT FOUND,['dream']
+SVH-570,popsicles,NOT FOUND,['posies']
+SVH-570,fruit,FOUND,fruit
+SVH-570,meatloaf,NOT FOUND,['smeaton']
+SVH-570,barbecueribs,NOT FOUND,['barbers']
+SVH-570,milk,FOUND,milk
+SVH-570,water,FOUND,water
+SVH-570,orangejuice,NOT FOUND,['orange']
+SVH-570,applejuice,NOT FOUND,['prejudice']
+SVH-570,steak,FOUND,steak
+SVH-570,broccoli,NOT FOUND,['morocco']
+SVH-570,lettuce,FOUND,lettuce
+SVH-570,salad,FOUND,salad
+SVH-570,dietcoke,NOT FOUND,['dickie']
+SVH-570,sprite,FOUND,sprite
+SVY-587,peaches,FOUND,peaches
+SVY-587,apples,FOUND,apples
+SVY-587,soda,FOUND,soda
+SVY-587,chicken,FOUND,chicken
+SVY-587,squid,NOT FOUND,['quid']
+SVY-587,carrots,FOUND,carrots
+SVY-587,cabbage,FOUND,cabbage
+SVY-587,lettuce,FOUND,lettuce
+SVY-587,breadsticks,NOT FOUND,['breasts']
+SVY-587,marinarasauce,NOT FOUND,['martineau']
+SVY-587,pizza,NOT FOUND,['piazza']
+SVY-587,chickennuggets,NOT FOUND,['chickens']
+SVY-587,frenchfries,NOT FOUND,['franchises']
+SVY-587,hotdogs,NOT FOUND,['hogs']
+SVY-587,hamburgers,NOT FOUND,['hamburg']
+SVY-587,cheese,FOUND,cheese
+SVY-587,yogurt,NOT FOUND,['your']
+SVY-587,peanutbutter,NOT FOUND,['peanut']
+SVY-587,soup,FOUND,soup
+SZA-781,spaghetti,NOT FOUND,['paget']
+SZA-781,applejuice,NOT FOUND,['prejudice']
+SZA-781,v8,NOT FOUND,['v']
+SZA-781,tomatoes,FOUND,tomatoes
+SZA-781,vegetables,FOUND,vegetables
+SZA-781,applecider,NOT FOUND,['pleader']
+SZA-781,cranberryjuice,NOT FOUND,['cranberries']
+SZA-781,asparagus,FOUND,asparagus
+SZA-781,salmon,FOUND,salmon
+SZA-781,tunafish,NOT FOUND,['sunfish']

@@ -1,5 +1,5 @@
 id	entry
-CAJ-663	pizza
+CAJ-663 pizza
 CAJ-663	popcorn
 CAJ-663	hotdogs
 CAJ-663	cheese
