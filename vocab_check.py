@@ -36,13 +36,17 @@ def vocab_check(vocab_file, data_file, data_csv, column_title):
 
 #vocab_check("forager/data/fluency_lists/speech2vec_100.txt", "forager/data/fluency_lists/food_data.txt","forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
 #vocab_check("forager/data/fluency_lists/speech2vec_100.txt", "forager/data/fluency_lists/food_vocab_data.txt","forager/data/lexical_data/vocab.csv", "vocab")
+#vocab_check("forager/data/fluency_lists/speech2vec_100.txt","forager/data/fluency_lists/food_data_unduped.txt", "forager/data/fluency_lists/food_data_unduped.csv", "unduplicated entries")
 
 def unduplicate(csv_file, column_title):
     csv_df = pd.read_csv(csv_file)
     vocab = open(csv_file, "r")
     word_set = set([])
+    unduped_df = pd.DataFrame()
     for item in csv_df.loc[:, (column_title)]:
-        word_set.add()
-    csv_df["unduplicated entries"] = list(word_set)
+        word_set.add(item)
+    unduped_df["unduplicated entries"] = list(word_set)
     csv_path = "forager/data/fluency_lists/food_data_no_dups.csv"
-    csv_df.to_csv(csv_path, index=False)
+    unduped_df.to_csv(csv_path, index=False)
+
+#unduplicate("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
