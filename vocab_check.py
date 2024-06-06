@@ -49,4 +49,4 @@ def unduplicate(csv_file, column_title):
     csv_path = "forager/data/fluency_lists/food_data_no_dups.csv"
     unduped_df.to_csv(csv_path, index=False)
 
-#unduplicate("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
+unduplicate("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")

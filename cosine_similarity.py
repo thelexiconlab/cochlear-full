@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 
-def cosine_similarity(word1, word2):
-    file = open("forager/data/fluency_lists/speech2vec_100.txt", "r")
+def cosine_similarity(word1, word2, filename):
+    print("here")
+    file = open(filename, "r")
     word_embeddings = {}
     list_of_lines = file.readlines()
     first_line_skipped = list_of_lines[1: ]
@@ -15,7 +16,7 @@ def cosine_similarity(word1, word2):
         for item in string_list:
             if item:
                 float_list.append(float(item))
-                 #float_list = list(map(float, string_list))
+                #float_list = list(map(float, string_list))
             else:
                 continue
             
@@ -30,4 +31,4 @@ def cosine_similarity(word1, word2):
     cosine_sim = dot_product/(magnitude1*magnitude2)
     print("Cosine Similarity:", cosine_sim)
 
-cosine_similarity("apple", "apple")
+cosine_similarity("stack", "track", "forager/data/fluency_lists/speech2vec_100.txt")
