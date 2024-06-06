@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 
 def cosine_similarity(word1, word2, filename):
-    print("here")
     file = open(filename, "r")
     word_embeddings = {}
     list_of_lines = file.readlines()
