@@ -30,4 +30,4 @@ def cosine_similarity(word1, word2, filename):
     cosine_sim = dot_product/(magnitude1*magnitude2)
     print("Cosine Similarity:", cosine_sim)
 
-cosine_similarity("stack", "track", "forager/data/fluency_lists/speech2vec_100.txt")
+cosine_similarity("apple", "apple", "forager/data/fluency_lists/speech2vec_100.txt")

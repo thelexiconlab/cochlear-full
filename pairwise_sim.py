@@ -81,7 +81,7 @@ def calc_pairwise_sim(speech2vec_file, word2vec_file):
             word_sims.append(0.0001)
         
         word_idx += 1
-
+    print("here4")
     pairwise_sim_df["Word2vec Pairwise Cosine Similarity"] = word_sims
     csv_path = "forager/output/pairwise_cosine_sim.csv"
     pairwise_sim_df.to_csv(csv_path, index=False)
