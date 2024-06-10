@@ -22,15 +22,17 @@ def merge_results_hearing_status(df1, df2, column_title):
 
 '''
 Args:
-    (1)
+    (1) file: the string file path to the file, which will be split on spaces
+
 Returns:
-    (1)
+    (1) speech2vec_vocab.csv: a file in the lexical_data folder that conatins a list of all unique words 
+    extracted from the above file
 '''
 def extract_unique(file):
-    file = open("forager/data/fluency_lists/speech2vec_100.txt", "r")
+    open_file = open(file, "r")
     #unique_words = {}
     word_list = []
-    for line in file.readlines():
+    for line in open_file.readlines():
         split_line = line.split(" ")
         #unique_words[split_line[0]] = split_line[1: ]
         word_list.append(split_line[0])
@@ -38,8 +40,14 @@ def extract_unique(file):
     word_list_df = pd.DataFrame(word_list)
     word_list_df.to_csv(path_or_buf="forager/data/lexical_data/speech2vec_vocab.csv")
 
-#extract_unique("forager/data/fluency_lists/speech2vec_100.txt")
+'''
+Args:
+    (1) first_word: a string word to be compared to another
+    (2) second_word: a string word to be compared to another
 
+Returns:
+    (1) semantic_sim: a float, representating the semantic similarity between first_word and second_word
+'''
 def calc_semantic_sim(first_word, second_word):
     semantic_matrix = pd.read_csv("forager/data/lexical_data/USE_semantic_matrix.csv", header=None)
     vocab_df = pd.read_csv("forager/data/lexical_data/vocab.csv")
@@ -51,17 +59,18 @@ def calc_semantic_sim(first_word, second_word):
     semantic_sim = semantic_matrix.loc[index1,index2]
     return semantic_sim
 
-# print(calc_semantic_sim("pizza","popcorn"))
-# print(calc_semantic_sim("popcorn", "hot dog"))
-# print(calc_semantic_sim("hot dog","cheese"))
-# print(calc_semantic_sim("cheese","coffee"))
-# print(calc_semantic_sim("coffee","tea"))
-# print(calc_semantic_sim("tea","soda"))
-# print(calc_semantic_sim("soda","water"))
-# print(calc_semantic_sim("water","asparagus"))
-# print(calc_semantic_sim("asparagus","broccoli"))
-# print(calc_semantic_sim("strawberries","blueberries"))
+'''
+Args:
+    (1) vocab_file: the string file path to the vocab file
+    (2) data_file: the string file path to the data file, to be evaluated against the larger vocab file
+    (3) data_csv: the data file in .csv form
+    (4) column_title: the string title of the column in the data file, from which one extracts data to be 
+    compared to the vocab file
 
+Returns:
+    (1) speech2vec_vocab_check.csv: a file in the output folder containing the data entries, whether or not 
+    they were present in the vocab, and the difflib get_close_matches from the vocab 
+'''
 def vocab_check(vocab_file, data_file, data_csv, column_title):
     food_data_df = pd.read_csv(data_csv)
     
@@ -94,10 +103,15 @@ def vocab_check(vocab_file, data_file, data_csv, column_title):
     final_csv_path = "forager/output/speech2vec_vocab_check.csv"
     food_data_df.to_csv(final_csv_path, index=False)
 
-#vocab_check("forager/data/fluency_lists/speech2vec_100.txt", "forager/data/fluency_lists/food_data.txt","forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
-#vocab_check("forager/data/fluency_lists/speech2vec_100.txt", "forager/data/fluency_lists/food_vocab_data.txt","forager/data/lexical_data/vocab.csv", "vocab")
-#vocab_check("forager/data/fluency_lists/speech2vec_100.txt","forager/data/fluency_lists/food_data_unduped.txt", "forager/data/fluency_lists/food_data_unduped.csv", "unduplicated entries")
+'''
+Args:
+    (1) csv_file: the string file path to the .csv file containing the data to be unduplicated
+    (2) column_title: the string title of the column in the .csv file, from which one extracts data
 
+Returns:
+    (1) food_data_no_dups.csv: a file in the fluency_lists folder containing the data from the 
+    specified column of the .csv file, with no duplicate entries
+'''
 def unduplicate(csv_file, column_title):
     csv_df = pd.read_csv(csv_file)
     vocab = open(csv_file, "r")
@@ -109,8 +123,14 @@ def unduplicate(csv_file, column_title):
     csv_path = "forager/data/fluency_lists/food_data_no_dups.csv"
     unduped_df.to_csv(csv_path, index=False)
 
-#unduplicate("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
+'''
+Args:
+    (1) filename: the string file path to the file from which vocab data will be extracted
 
+Returns:
+    (2) vocab_list: a list containing all individual data entries from filename, minus the first row 
+    (often the column label)
+'''
 def read_extract_list(filename):
     vocab = open(filename, "r")
     vocab_list = []
@@ -121,6 +141,17 @@ def read_extract_list(filename):
         vocab_list.append(split_line[0])
     return vocab_list
 
+'''
+Args:
+    (1) word1: a string word to be compared to another
+    (2) word2: a string word to be compared to another
+    (3) filename: the string file path to the file from which a word (key): list of float embeddings (value)
+    dictionary will be constructed and utilized to calculate the cosine similarity between word1 and word2
+
+Returns:
+    (1) cosine_sim: the float represntation of the cosine similarity between word1 and word2, formatted in 
+    this template - "Cosine Similarity: x"
+'''
 def cosine_similarity(word1, word2, filename):
     file = open(filename, "r")
     word_embeddings = {}
@@ -146,10 +177,16 @@ def cosine_similarity(word1, word2, filename):
     magnitude1 = np.linalg.norm(vector1)
     magnitude2 = np.linalg.norm(vector2)
     cosine_sim = dot_product/(magnitude1*magnitude2)
-    #print("Cosine Similarity:", cosine_sim)
+    print("Cosine Similarity:", cosine_sim)
 
-#cosine_similarity("apple", "apple")
+'''
+Args:
+    (1) speech2vec_file: 
+    (2) word2vec_file:
 
+Returns:
+    (1) :
+'''
 def calc_pairwise_sim(speech2vec_file, word2vec_file):
     pairwise_sim_df = pd.DataFrame()
     print("here1")
