@@ -161,14 +161,16 @@ def cosine_similarity(word1, word2, filename):
     for line in first_line_skipped:
         split_line = line.split(" ")
         key = split_line[0]
-        string_list = split_line[1:-1]
-        float_list = []
-        for item in string_list:
-            if item:
-                float_list.append(float(item))
-            else:
-                continue
-            
+        if key in word_embeddings.keys():
+            continue
+        else:
+            string_list = split_line[1:-1]
+            float_list = []
+            for item in string_list:
+                if item:
+                    float_list.append(float(item))
+                else:
+                    continue    
         word_embeddings[key] = float_list
         
     vector1 = word_embeddings[word1]
@@ -181,56 +183,97 @@ def cosine_similarity(word1, word2, filename):
 
 '''
 Args:
-    (1) speech2vec_file: 
-    (2) word2vec_file:
+    (1) food_data_csv: the string file path to the .csv file of the food data
+    (2) subject_column_title: the string title of the column in the .csv file, from which one extracts 
+    subject data
+    (3) entry_column_title: the string title of the column in the .csv file, from which one extracts 
+    entry data
+    (4) lexical_results_csv: the string file path to a .csv file of the lexical analysis of the food_data_csv
 
 Returns:
-    (1) :
+    (1) pairwise_sim_df: a dataframe including pairwise cosine similarity calculations using speech2vec and
+    word2vec, as well as composite frequency analysis
 '''
-def calc_pairwise_sim(speech2vec_file, word2vec_file):
+def calc_pairwise_sim(food_data_csv, subject_column_title, entry_column_title, lexical_results_csv):
+    food_csv_df = pd.read_csv(food_data_csv)
     pairwise_sim_df = pd.DataFrame()
-    print("here1")
+    entry_list = []
+    subject_list = []
+    pairwise_sim_df = pd.DataFrame()
 
-    #isolate speech2vec vocab
-    speech2vec_vocab_list = read_extract_list(speech2vec_file)
-    pairwise_sim_df["Speech2vec Vocab"] = speech2vec_vocab_list
-    
-    speech_sims = []
+    #isolating the food data and subjects in separate lists
+    for item in food_csv_df.loc[:, (subject_column_title)]:
+        subject_list.append(item)
+    pairwise_sim_df["Subject"] = subject_list
+    for item in food_csv_df.loc[:, (entry_column_title)]:
+        entry_list.append(item)
+    pairwise_sim_df["Fluency_Item"] = entry_list
 
-    print("here2")
-    #calculate pairwise cosine similarity for speech2vec contents and insert them into the csv
+    #calculate pairwise cosine similarity for food_data, using speech2vec dictionary and insert them into the csv
+    speech_pair_cosines = []
     idx = 0
-    while idx < len(speech2vec_vocab_list):
+    while idx < len(entry_list):
         currentwordindex = idx
         if idx > 0:
             prevwordindex = idx-1
-            speech_sims.append(cosine_similarity(speech2vec_vocab_list[prevwordindex], speech2vec_vocab_list[currentwordindex], "forager/data/fluency_lists/speech2vec_100.txt"))
+            speech_pair_cosines.append(cosine_similarity(entry_list[prevwordindex], entry_list[currentwordindex], "forager/data/fluency_lists/speech2vec_100.txt"))
         else:
-            speech_sims.append(0.0001)
+            speech_pair_cosines.append(0.0001)
         idx += 1
 
-    pairwise_sim_df["Speech2vec Pairwise Cosine Similarity"] = speech_sims
-    print("here3")
+    pairwise_sim_df["Speech2vec_Pairwise_Cosine_Similarity"] = speech_pair_cosines
 
-    #isolate word2vec vocab
-    word2vec_vocab_list = read_extract_list(word2vec_file)
-    pairwise_sim_df["Word2vec Vocab"] = word2vec_vocab_list
-    word_sims = []
-
-    #calculate pairwise cosine similarity for word2vec contents and insert them into the csv
+    #calculate pairwise cosine similarity for food_data, using word2vec dictionary and insert them into the csv
+    word_pair_cosines = []
     word_idx = 0
-    while word_idx < len(word2vec_vocab_list):
+    while word_idx < len(entry_list):
         currentwordindex = word_idx
         if word_idx > 0:
             prevwordindex = word_idx-1
-            word_sims.append(cosine_similarity(word2vec_vocab_list[prevwordindex], word2vec_vocab_list[currentwordindex], "forager/data/fluency_lists/word2vec_100.txt"))
+            word_pair_cosines.append(cosine_similarity(entry_list[prevwordindex], entry_list[currentwordindex], "forager/data/fluency_lists/word2vec_100.txt"))
         else:
-            word_sims.append(0.0001)
+            word_pair_cosines.append(0.0001)
         
         word_idx += 1
-    print("here4")
-    pairwise_sim_df["Word2vec Pairwise Cosine Similarity"] = word_sims
+
+    pairwise_sim_df["Word2vec_Pairwise_Cosine_Similarity"] = word_pair_cosines
+
+    #adding in pre-existing phonological and frequency data from lexical_results.csv
+    lexical_df = pd.read_csv(lexical_results_csv)
+    phon_list = []
+    for item in lexical_df.loc[:, ("Phonological_Similarity")]:
+        phon_list.append(item)
+    
+
+    pairwise_sim_df["Phonological_Similarity"] = phon_list
+
     csv_path = "forager/output/pairwise_cosine_sim.csv"
     pairwise_sim_df.to_csv(csv_path, index=False)
 
-calc_pairwise_sim("forager/data/fluency_lists/speech2vec_100.txt", "forager/data/fluency_lists/word2vec_100.txt")
+calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv", "id", "entry", "forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+
+'''
+Args:
+    (1) lexical_results_csv: the string file path to the .csv file of the lexical analysis of a given dataset
+
+Returns:
+    (1) composite_freq: a list of the pairwise composite frequencies of the entries in the dataset embedded in
+    lexical_rewsults_csv
+'''
+def composite_freq(lexical_results_csv):
+    lexical_df = pd.read_csv(lexical_results_csv)
+    freq_list = []
+    for item in lexical_df.loc[:,("Frequency Value")]:
+        freq_list.append(item)
+    
+    composite_freq = []
+    idx = 0
+    while idx < len(freq_list):
+        currentfreqindex = idx
+        prevfreqindex = idx-1
+        product = freq_list[currentfreqindex]*freq_list[prevfreqindex]
+        composite_freq.append(product)
+        idx += 1
+
+    return composite_freq
+
