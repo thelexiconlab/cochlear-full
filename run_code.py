@@ -36,3 +36,6 @@ calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
 
 '''composite_frequency'''
 #composite_freq("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+
+'''pairwise_phon'''
+#pairiwse_phon("broccoli", "cauliflower", "forager/data/lexical_data/USE_phonological_matrix.csv")

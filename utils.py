@@ -215,6 +215,7 @@ def calc_pairwise_sim(food_data_csv):
     pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
     # print(pairwise_sim_df.head())
 
+    print("pair cosines completed")
     # #adding in pre-existing phonological and frequency data from lexical_results.csv
     lexical_results = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
     
@@ -228,68 +229,12 @@ def calc_pairwise_sim(food_data_csv):
     final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
     final_df['Previous_Word_Frequency'] = final_df['Frequency_Value'].shift(1)
     final_df['Composite_Frequency'] = final_df['Frequency_Value']*final_df['Previous_Word_Frequency']
-    #print(final_df.head())
+    final_df['Phonological_Scratch'] = pairiwse_phon(entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
+    print(final_df.head())
 
     csv_path = "forager/output/final_pairwise_cosine_sim.csv"
     final_df.to_csv(csv_path, index=False)
     print("done")
-
-'''
-Args:
-    (1) lexical_results_csv: the string file path to the .csv file of the lexical analysis of a given dataset
-
-Returns:
-    (1) composite_freq: a list of the pairwise composite frequencies of the entries in the dataset embedded in
-    lexical_rewsults_csv
-'''
-def composite_freq(lexical_results_csv):
-    lexical_df = pd.read_csv(lexical_results_csv)
-    freq_list = []
-    for item in lexical_df.loc[:,('Frequency_Value')]:
-        freq_list.append(item)
-    
-    composite_freq = []
-    idx = 0
-    while idx < (len(freq_list)):
-        #now the lists are different lengths, what are the last elements pairwise calculations?
-        if idx > 0:
-            currentfreqindex = idx
-            prevfreqindex = idx-1
-            product = freq_list[currentfreqindex]*freq_list[prevfreqindex]
-            composite_freq.append(product)
-            currentfreqindex = idx
-        else:
-            composite_freq.append(2)
-        idx += 1
-    # print(composite_freq)
-    # print(len(composite_freq))
-    return composite_freq
-
-'''
-Args:
-    (1) existing_df: an existing dataframe where phonological and frequency data will be added
-
-Returns:
-    (1) existing_df: the dataframe with additional phonological similarity, frequency value, and composite
-    frequency data
-'''
-def adding_phon_freq(existing_df, lexical_results_csv):
-    #adding phonologcial information
-    lexical_results_df = pd.read_csv(lexical_results_csv)
-
-    phon_list = []
-    for item in lexical_results_df.loc[:, ('Phonological_Similarity')]:
-        phon_list.append(item)
-    existing_df['Phonological_Similarity'] = phon_list
-
-    #adding frequency and composite frequency
-    freq_list = []
-    for item in lexical_results_df.loc[:, ('Frequency_Value')]:
-        freq_list.append(item)
-    existing_df['Frequency_Value'] = freq_list
-    existing_df['Composite_Frequency'] = composite_freq(lexical_results_csv)
-
-    return existing_df
 
 '''
 Args:
@@ -362,3 +307,35 @@ def pairwise_sim(data_csv, dict_file):
         idx += 1
     #print(pair_cosines)
     return pair_cosines
+
+'''
+Args:
+    (1) lexical_results_csv: the string file path to the .csv file of the lexical analysis of a given dataset
+
+Returns:
+    (1) composite_freq: a list of the pairwise composite frequencies of the entries in the dataset embedded in
+    lexical_rewsults_csv
+'''
+def pairiwse_phon(entries, vocab_csv, phon_matrix):
+    phon_matrix_df = pd.read_csv(phon_matrix, header=None)
+    vocab_df = pd.read_csv(vocab_csv)
+
+    vocab = {}
+    for index, word in vocab_df.itertuples():
+        vocab[word] = index
+    pairwise_phons = []
+
+    idx = 0
+    while idx < len(vocab):
+        if idx > 0:
+            currphonidx = idx
+            prevphonidx = idx-1
+            index1 = vocab[entries[currphonidx]]
+            index2 = vocab[entries[prevphonidx]]
+            phon_sim = phon_matrix_df.loc[index1,index2]
+            pairwise_phons.append(phon_sim)
+        else:
+            pairwise_phons.append(0.0001)
+        idx+= 1
+    print(pairwise_phons)
+    return pairwise_phons
