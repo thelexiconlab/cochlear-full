@@ -26,7 +26,7 @@ from utils import *
 #cosine_similarity("apple", "apricot", "forager/data/fluency_lists/speech2vec_100.txt")
 
 '''calc_pairwise_sim'''
-calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
+calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
 
 '''extract_entries'''
 #extract_entries("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")

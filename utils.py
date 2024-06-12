@@ -198,22 +198,42 @@ def calc_pairwise_sim(food_data_csv):
     print("running")
     pairwise_sim_df = pd.DataFrame()
     subjects = extract_subject(food_data_csv, "id")
+    #print(subjects)
     entries = extract_entries(food_data_csv, "entry")
+    #print(entries)
 
     pairwise_sim_df['Subject'] = subjects
     pairwise_sim_df['Fluency_Item'] = entries
+
+    #print(pairwise_sim_df)
     
     speech_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/speech2vec_100.txt")
     pairwise_sim_df['Speech2vec_Pairwise_Cosine_Similarity'] = speech_pair_cosines
+    print(pairwise_sim_df.head())
 
-    word_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/word2vec_100.txt")
-    pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
+    # word_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/word2vec_100.txt")
+    # pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
+    # print(pairwise_sim_df.head())
 
-    #adding in pre-existing phonological and frequency data from lexical_results.csv
-    adding_phon_freq(pairwise_sim_df, "forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+    # #adding in pre-existing phonological and frequency data from lexical_results.csv
+    lexical_results = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+    
+    # lexical_results['response_number'] = lexical_results.groupby(['Subject']).cumcount()+1
+    # print("lexical_results=", lexical_results.head())
 
-    csv_path = "forager/output/pairwise_cosine_sim.csv"
-    pairwise_sim_df.to_csv(csv_path, index=False)
+    # pairwise_sim_df['response_number'] = pairwise_sim_df.groupby(['Subject']).cumcount()+1
+    # print("lexical_results=", pairwise_sim_df.head())
+
+
+    ## join with pairwise_sim_df
+    final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
+    print(final_df.head())
+
+
+    # #adding_phon_freq(pairwise_sim_df, "forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+
+    # csv_path = "forager/output/pairwise_cosine_sim.csv"
+    # pairwise_sim_df.to_csv(csv_path, index=False)
     print("done")
 
 '''
@@ -319,6 +339,7 @@ Returns:
 '''
 def pairwise_sim(data_csv, dict_file):
     entry_list = extract_entries(data_csv, "entry")
+    #print(entry_list)
 
     pair_cosines = []
     idx = 0
@@ -329,6 +350,7 @@ def pairwise_sim(data_csv, dict_file):
                 currentwordindex = idx
                 prevwordindex = idx-1
                 curr_speech_cosine = cosine_similarity(entry_list[prevwordindex], entry_list[currentwordindex], dict_file)
+                #print(f"cosine between {entry_list[currentwordindex]} and {entry_list[prevwordindex]} =", curr_speech_cosine)
                 pair_cosines.append(curr_speech_cosine)
             except KeyError:
                 pair_cosines.append("NA")
@@ -340,5 +362,5 @@ def pairwise_sim(data_csv, dict_file):
         # print(idx)
         # print(pair_cosines)
         idx += 1
-    # print(pair_cosines)
+    #print(pair_cosines)
     return pair_cosines
