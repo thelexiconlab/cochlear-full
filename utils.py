@@ -326,16 +326,22 @@ def pairiwse_phon(entries, vocab_csv, phon_matrix):
     pairwise_phons = []
 
     idx = 0
-    while idx < len(vocab):
+    while idx < len(entries):
         if idx > 0:
-            currphonidx = idx
-            prevphonidx = idx-1
-            index1 = vocab[entries[currphonidx]]
-            index2 = vocab[entries[prevphonidx]]
-            phon_sim = phon_matrix_df.loc[index1,index2]
-            pairwise_phons.append(phon_sim)
+            try:
+                currphonidx = idx
+                prevphonidx = idx-1
+                index1 = vocab[entries[currphonidx]]
+                index2 = vocab[entries[prevphonidx]]
+                phon_sim = phon_matrix_df.loc[index1,index2]
+                pairwise_phons.append(phon_sim)
+            except KeyError:
+                pairwise_phons.append("NA")
         else:
-            pairwise_phons.append(0.0001)
+            try:
+                pairwise_phons.append(0.0001)
+            except KeyError:
+                pairwise_phons.append("NA")
         idx+= 1
-    print(pairwise_phons)
+    #print(pairwise_phons)
     return pairwise_phons
