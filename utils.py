@@ -195,6 +195,7 @@ Returns:
     word2vec, as well as composite frequency analysis
 '''
 def calc_pairwise_sim(food_data_csv):
+    print("running")
     pairwise_sim_df = pd.DataFrame()
     subjects = extract_subject(food_data_csv, "id")
     entries = extract_entries(food_data_csv, "entry")
@@ -209,10 +210,11 @@ def calc_pairwise_sim(food_data_csv):
     pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
 
     #adding in pre-existing phonological and frequency data from lexical_results.csv
-    adding_phon_freq(pairwise_sim_df)
+    adding_phon_freq(pairwise_sim_df, "forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
 
     csv_path = "forager/output/pairwise_cosine_sim.csv"
     pairwise_sim_df.to_csv(csv_path, index=False)
+    print("done")
 
 '''
 Args:
@@ -225,7 +227,7 @@ Returns:
 def composite_freq(lexical_results_csv):
     lexical_df = pd.read_csv(lexical_results_csv)
     freq_list = []
-    for item in lexical_df.loc[:,("Frequency_Value")]:
+    for item in lexical_df.loc[:,('Frequency_Value')]:
         freq_list.append(item)
     
     composite_freq = []
@@ -253,19 +255,21 @@ Returns:
     (1) existing_df: the dataframe with additional phonological similarity, frequency value, and composite
     frequency data
 '''
-def adding_phon_freq(existing_df):
+def adding_phon_freq(existing_df, lexical_results_csv):
     #adding phonologcial information
+    lexical_results_df = pd.read_csv(lexical_results_csv)
+
     phon_list = []
-    for item in existing_df.loc[:, ('Phonological_Similarity')]:
+    for item in lexical_results_df.loc[:, ('Phonological_Similarity')]:
         phon_list.append(item)
     existing_df['Phonological_Similarity'] = phon_list
 
     #adding frequency and composite frequency
     freq_list = []
-    for item in existing_df.loc[:, ('Frequency_Value')]:
+    for item in lexical_results_df.loc[:, ('Frequency_Value')]:
         freq_list.append(item)
     existing_df['Frequency_Value'] = freq_list
-    existing_df['Composite_Frequency'] = composite_freq("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+    existing_df['Composite_Frequency'] = composite_freq(lexical_results_csv)
 
     return existing_df
 

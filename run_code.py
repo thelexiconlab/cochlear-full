@@ -26,7 +26,7 @@ from utils import *
 #cosine_similarity("apple", "apricot", "forager/data/fluency_lists/speech2vec_100.txt")
 
 '''calc_pairwise_sim'''
-#calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv", "id", "entry", "forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
 
 '''extract_entries'''
 #extract_entries("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
@@ -35,4 +35,4 @@ from utils import *
 #extract_subject("forager/data/fluency_lists/food_data - Sheet1.csv", "id")
 
 '''composite_frequency'''
-composite_freq("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+#composite_freq("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
