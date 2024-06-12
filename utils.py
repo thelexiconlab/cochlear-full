@@ -209,10 +209,10 @@ def calc_pairwise_sim(food_data_csv):
     
     speech_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/speech2vec_100.txt")
     pairwise_sim_df['Speech2vec_Pairwise_Cosine_Similarity'] = speech_pair_cosines
-    print(pairwise_sim_df.head())
+    #print(pairwise_sim_df.head())
 
-    # word_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/word2vec_100.txt")
-    # pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
+    word_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/word2vec_100.txt")
+    pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
     # print(pairwise_sim_df.head())
 
     # #adding in pre-existing phonological and frequency data from lexical_results.csv
@@ -224,16 +224,14 @@ def calc_pairwise_sim(food_data_csv):
     # pairwise_sim_df['response_number'] = pairwise_sim_df.groupby(['Subject']).cumcount()+1
     # print("lexical_results=", pairwise_sim_df.head())
 
-
     ## join with pairwise_sim_df
     final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
-    print(final_df.head())
+    final_df['Previous_Word_Frequency'] = final_df['Frequency_Value'].shift(1)
+    final_df['Composite_Frequency'] = final_df['Frequency_Value']*final_df['Previous_Word_Frequency']
+    #print(final_df.head())
 
-
-    # #adding_phon_freq(pairwise_sim_df, "forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
-
-    # csv_path = "forager/output/pairwise_cosine_sim.csv"
-    # pairwise_sim_df.to_csv(csv_path, index=False)
+    csv_path = "forager/output/final_pairwise_cosine_sim.csv"
+    final_df.to_csv(csv_path, index=False)
     print("done")
 
 '''
@@ -261,7 +259,7 @@ def composite_freq(lexical_results_csv):
             composite_freq.append(product)
             currentfreqindex = idx
         else:
-            composite_freq.append(0.0001)
+            composite_freq.append(2)
         idx += 1
     # print(composite_freq)
     # print(len(composite_freq))
@@ -356,7 +354,7 @@ def pairwise_sim(data_csv, dict_file):
                 pair_cosines.append("NA")
         else:
             try:
-                pair_cosines.append(0.0001)
+                pair_cosines.append(2)
             except KeyError:
                 pair_cosines.append("NA")
         # print(idx)
