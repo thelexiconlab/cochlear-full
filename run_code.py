@@ -27,6 +27,7 @@ from utils import *
 
 '''calc_pairwise_sim'''
 calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
+#calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
 
 '''extract_entries'''
 #extract_entries("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")

@@ -229,7 +229,7 @@ def calc_pairwise_sim(food_data_csv):
     final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
     final_df['Previous_Word_Frequency'] = final_df['Frequency_Value'].shift(1)
     final_df['Composite_Frequency'] = final_df['Frequency_Value']*final_df['Previous_Word_Frequency']
-    final_df['Phonological_Scratch'] = pairiwse_phon(entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
+    final_df['Phonological_Scratch'] = pairwise_phon(entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
     print(final_df.head())
 
     csv_path = "forager/output/final_pairwise_cosine_sim.csv"
@@ -310,38 +310,40 @@ def pairwise_sim(data_csv, dict_file):
 
 '''
 Args:
-    (1) lexical_results_csv: the string file path to the .csv file of the lexical analysis of a given dataset
+    (1) entries: a list of the data that will be compared and pairwise phonological similarity will be
+    calculated
+    (2) vocab_csv: the string file path to the vocabulary specific to this domain of data
+    (3) phon_matrix: the string file path to the phonological matrix that is specific to this domain of data
 
 Returns:
-    (1) composite_freq: a list of the pairwise composite frequencies of the entries in the dataset embedded in
-    lexical_rewsults_csv
+    (1) pairwise_phons: a list of the pairwise phonological similarity calculations
 '''
-def pairiwse_phon(entries, vocab_csv, phon_matrix):
+def pairwise_phon(entries, vocab_csv, phon_matrix):
     phon_matrix_df = pd.read_csv(phon_matrix, header=None)
     vocab_df = pd.read_csv(vocab_csv)
 
     vocab = {}
-    for index, word in vocab_df.itertuples():
+    for index,word in vocab_df.itertuples():
         vocab[word] = index
+    
     pairwise_phons = []
 
     idx = 0
-    while idx < len(entries):
-        if idx > 0:
-            try:
-                currphonidx = idx
-                prevphonidx = idx-1
-                index1 = vocab[entries[currphonidx]]
-                index2 = vocab[entries[prevphonidx]]
-                phon_sim = phon_matrix_df.loc[index1,index2]
-                pairwise_phons.append(phon_sim)
-            except KeyError:
-                pairwise_phons.append("NA")
-        else:
-            try:
-                pairwise_phons.append(0.0001)
-            except KeyError:
-                pairwise_phons.append("NA")
-        idx+= 1
-    #print(pairwise_phons)
+    for idx in range(len(entries)):
+        curr_word = entries[idx]
+        try:
+            curr_index = vocab[curr_word]
+            if idx > 0:
+                prev_word = entries[idx - 1]
+                try:
+                    prev_index = vocab[prev_word]
+                    phon_sim = phon_matrix_df.iloc[curr_index, prev_index]
+                    pairwise_phons.append(phon_sim)
+                except KeyError:
+                    pairwise_phons.append("NA")
+            else:
+                pairwise_phons.append(0.0001)  # default value for the first entry
+        except KeyError:
+            pairwise_phons.append("NA")  # handle missing entry in vocab
+
     return pairwise_phons
