@@ -64,4 +64,4 @@ def calc_pairwise_sim(food_data_csv_path):
     full_df.to_csv(csv_path, index=False)
     print("done")
 
-calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
+calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
