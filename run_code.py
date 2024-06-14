@@ -26,8 +26,8 @@ from utils import *
 #cosine_similarity("apple", "apricot", "forager/data/fluency_lists/speech2vec_100.txt")
 
 '''calc_pairwise_sim'''
-calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
-#calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
+#calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
+calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
 
 '''extract_entries'''
 #extract_entries("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
@@ -40,3 +40,7 @@ calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
 
 '''pairwise_phon'''
 #pairiwse_phon("broccoli", "cauliflower", "forager/data/lexical_data/USE_phonological_matrix.csv")
+#pairwise_phon(["apple", "apple", "banana"], "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
+
+'''get_frequency'''
+#get_frequency(["acornsquash","adobo", "alcohol"], "forager/data/lexical_data/USE_frequencies.csv")

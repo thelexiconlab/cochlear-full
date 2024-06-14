@@ -184,40 +184,38 @@ def cosine_similarity(word1, word2, filename):
 '''
 Args:
     (1) food_data_csv: the string file path to the .csv file of the food data
-    (2) subject_column_title: the string title of the column in the .csv file, from which one extracts 
-    subject data
-    (3) entry_column_title: the string title of the column in the .csv file, from which one extracts 
-    entry data
-    (4) lexical_results_csv: the string file path to a .csv file of the lexical analysis of the food_data_csv
 
 Returns:
     (1) pairwise_sim_df: a dataframe including pairwise cosine similarity calculations using speech2vec and
     word2vec, as well as composite frequency analysis
 '''
-def calc_pairwise_sim(food_data_csv):
+def calc_pairwise_sim(food_data_csv_path):
     print("running")
     pairwise_sim_df = pd.DataFrame()
-    subjects = extract_subject(food_data_csv, "id")
+    food_csv_df = pd.read_csv(food_data_csv_path)
+    subjects = food_csv_df['id'].tolist()
+    #subjects = extract_subject(food_data_csv, "id")
     #print(subjects)
-    entries = extract_entries(food_data_csv, "entry")
+    entries = food_csv_df['entry'].tolist()
+    #entries = extract_entries(food_data_csv, "entry")
     #print(entries)
 
     pairwise_sim_df['Subject'] = subjects
     pairwise_sim_df['Fluency_Item'] = entries
 
-    #print(pairwise_sim_df)
     
-    speech_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/speech2vec_100.txt")
+    speech_pair_cosines = pairwise_sim("forager/data/fluency_lists/speech2vec_100.txt", entries)
     pairwise_sim_df['Speech2vec_Pairwise_Cosine_Similarity'] = speech_pair_cosines
-    #print(pairwise_sim_df.head())
+    print(pairwise_sim_df.head())
+    print(len(pairwise_sim_df))
 
     word_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/word2vec_100.txt")
     pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
-    # print(pairwise_sim_df.head())
+    print(pairwise_sim_df.head())
 
     print("pair cosines completed")
     # #adding in pre-existing phonological and frequency data from lexical_results.csv
-    lexical_results = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
+    # lexical_results = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
     
     # lexical_results['response_number'] = lexical_results.groupby(['Subject']).cumcount()+1
     # print("lexical_results=", lexical_results.head())
@@ -226,11 +224,16 @@ def calc_pairwise_sim(food_data_csv):
     # print("lexical_results=", pairwise_sim_df.head())
 
     ## join with pairwise_sim_df
-    final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
-    final_df['Previous_Word_Frequency'] = final_df['Frequency_Value'].shift(1)
-    final_df['Composite_Frequency'] = final_df['Frequency_Value']*final_df['Previous_Word_Frequency']
-    final_df['Phonological_Scratch'] = pairwise_phon(entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
-    print(final_df.head())
+    # final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
+    # print(len(final_df))
+    # final_df['Previous_Word_Frequency'] = final_df['Frequency_Value'].shift(1)
+    # final_df['Composite_Frequency'] = final_df['Frequency_Value']*final_df['Previous_Word_Frequency']
+    # print("final df has X rows:", len(final_df))
+    # print("entries has X rows", len(entries))
+    final_df = pairwise_phon(entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
+
+    # print(len(final_df))
+    # print(final_df)
 
     csv_path = "forager/output/final_pairwise_cosine_sim.csv"
     final_df.to_csv(csv_path, index=False)
@@ -272,27 +275,29 @@ def extract_entries(food_data_csv, entry_column_title):
 
 '''
 Args:
-    (1) data_csv: the string file path to the .csv file of the desired dataset
-    (2) dict_file: the string file to the .txt from which to extract a word (key): embeddings (value) 
+    (1) dict_file_path: the string file to the .txt from which to extract a word (key): embeddings (value) 
     dictionary
+    (2) 
 
 Returns:
     (1) pair_cosines: a list of pairwise cosine similarity calculations for the data in the data_csv using
     a dictionary of embeddings extracted from the dict_file
+    (2) entries: a list of the data that will be compared and pairwise cosine similarity will be
+    calculated
 '''
-def pairwise_sim(data_csv, dict_file):
-    entry_list = extract_entries(data_csv, "entry")
+def pairwise_sim(dict_file_path, entries):
+    #entry_list = extract_entries(data_csv, "entry")
     #print(entry_list)
 
     pair_cosines = []
     idx = 0
 
-    while idx < len(entry_list):
+    while idx < len(entries):
         if idx > 0:
             try:
                 currentwordindex = idx
                 prevwordindex = idx-1
-                curr_speech_cosine = cosine_similarity(entry_list[prevwordindex], entry_list[currentwordindex], dict_file)
+                curr_speech_cosine = cosine_similarity(entries[prevwordindex], entries[currentwordindex], dict_file_path)
                 #print(f"cosine between {entry_list[currentwordindex]} and {entry_list[prevwordindex]} =", curr_speech_cosine)
                 pair_cosines.append(curr_speech_cosine)
             except KeyError:
@@ -329,15 +334,16 @@ def pairwise_phon(entries, vocab_csv, phon_matrix):
     pairwise_phons = []
 
     idx = 0
-    for idx in range(len(entries)):
+    while idx < len(entries):
         curr_word = entries[idx]
+        #print(curr_word)
         try:
             curr_index = vocab[curr_word]
             if idx > 0:
                 prev_word = entries[idx - 1]
                 try:
                     prev_index = vocab[prev_word]
-                    phon_sim = phon_matrix_df.iloc[curr_index, prev_index]
+                    phon_sim = phon_matrix_df.loc[curr_index, prev_index]
                     pairwise_phons.append(phon_sim)
                 except KeyError:
                     pairwise_phons.append("NA")
@@ -345,5 +351,24 @@ def pairwise_phon(entries, vocab_csv, phon_matrix):
                 pairwise_phons.append(0.0001)  # default value for the first entry
         except KeyError:
             pairwise_phons.append("NA")  # handle missing entry in vocab
+        idx += 1
 
+    #print("length of pairwise_phon:", len(pairwise_phons))
     return pairwise_phons
+
+def get_frequency(entries, freq_csv_path):
+    freq_df = pd.read_csv(freq_csv_path,header=None)
+    freq_df.columns = ["Entry", "Frequency_Value", "Count"]
+    #print(freq_df.head())
+    entries_df = pd.DataFrame(entries, columns=["Entry"])
+    #print(entries_df.head())
+
+    merged_df = pd.merge(entries_df, freq_df, on=['Entry'], how='left')
+    frequencies = merged_df['Frequency_Value'].tolist()
+
+    # print(merged_df)
+    # print(len(merged_df))
+    # print(frequencies)
+    return frequencies
+
+#get_frequency(["acornsquash","adobo", "alcohol"], "forager/data/lexical_data/USE_frequencies.csv")
