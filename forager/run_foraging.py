@@ -275,7 +275,9 @@ def run_switches(data,switch_type):
 
 def indiv_desc_stats(lexical_results, switch_results = None):
     metrics = lexical_results[['Subject', 'Semantic_Similarity', 'Frequency_Value', 'Phonological_Similarity']]
-    metrics.replace(.0001, np.nan, inplace=True)
+    metrics.loc[metrics.groupby('Subject').head(1).index, ['Semantic_Similarity', 'Phonological_Similarity']] = np.nan
+    metrics = metrics.reset_index(drop=True)
+    #metrics.replace(.0001, np.nan, inplace=True)
     grouped = metrics.groupby('Subject').agg(['mean', 'std'])
     grouped.columns = ['{}_{}'.format(col[0], col[1]) for col in grouped.columns]
     grouped.reset_index(inplace=True)

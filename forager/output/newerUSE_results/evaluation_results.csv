@@ -1,0 +1,1047 @@
+SID,entry,evaluation,replacement
+CAJ-663,pizza,FOUND,pizza
+CAJ-663,popcorn,FOUND,popcorn
+CAJ-663,hotdogs,REPLACE,hotdog
+CAJ-663,cheese,FOUND,cheese
+CAJ-663,coffee,FOUND,coffee
+CAJ-663,tea,FOUND,tea
+CAJ-663,soda,FOUND,soda
+CAJ-663,water,FOUND,water
+CAJ-663,asparagus,FOUND,asparagus
+CAJ-663,broccoli,FOUND,broccoli
+CAJ-663,cauliflower,FOUND,cauliflower
+CAJ-663,carrots,FOUND,carrots
+CAJ-663,salad,FOUND,salad
+CAJ-663,meatloaf,FOUND,meatloaf
+CAJ-663,chicken,FOUND,chicken
+CAJ-663,hamburgers,REPLACE,hamburger
+CAJ-663,grilledcheesesandwich,EXCLUDE,EXCLUDE
+CAJ-663,lemonade,FOUND,lemonade
+CAJ-663,bananas,REPLACE,banana
+CAJ-663,apples,REPLACE,apple
+CAJ-663,peaches,REPLACE,peach
+CAJ-663,corn,FOUND,corn
+CAJ-663,rice,FOUND,rice
+CAJ-663,pork,FOUND,pork
+CAM-666,strawberries,FOUND,strawberries
+CAM-666,blueberries,FOUND,blueberries
+CAM-666,raspberries,FOUND,raspberries
+CAM-666,apricots,FOUND,apricots
+CAM-666,bread,FOUND,bread
+CAM-666,jam,FOUND,jam
+CAM-666,butter,FOUND,butter
+CAM-666,peanutbutter,REPLACE,peanut butter
+CAM-666,toast,FOUND,toast
+CAM-666,popcorn,FOUND,popcorn
+CAM-666,pizza,FOUND,pizza
+CAM-666,burger,FOUND,burger
+CAM-666,cheese,FOUND,cheese
+CAM-666,soda,FOUND,soda
+CAM-666,water,FOUND,water
+CAM-666,milk,FOUND,milk
+CAM-666,orangejuice,REPLACE,orange juice
+CAM-666,lemonjuice,EXCLUDE,EXCLUDE
+CAM-666,grapejuice,EXCLUDE,EXCLUDE
+CAM-666,raspberryjuice,EXCLUDE,EXCLUDE
+CAM-666,strawberryjuice,EXCLUDE,EXCLUDE
+CAM-666,cucumbers,REPLACE,cucumber
+CAM-666,pickles,REPLACE,pickle
+CAM-666,cranberryjucie,EXCLUDE,EXCLUDE
+CAM-666,icecream,REPLACE,ice cream
+CAM-666,chocolate,FOUND,chocolate
+CAM-666,vanilla,EXCLUDE,EXCLUDE
+CAM-666,cinnamon,FOUND,cinnamon
+CAM-666,sugar,FOUND,sugar
+CAM-666,oregano,FOUND,oregano
+CAM-666,rosemary,FOUND,rosemary
+CAP-671,grapes,FOUND,grapes
+CAP-671,water,FOUND,water
+CAP-671,hamburger,FOUND,hamburger
+CAP-671,chips,FOUND,chips
+CAP-671,cookies,REPLACE,cookie
+CAP-671,carrot,FOUND,carrot
+CAP-671,soda,FOUND,soda
+CAP-671,apple,FOUND,apple
+CAP-671,watermelon,FOUND,watermelon
+CAP-671,pear,FOUND,pear
+CAP-671,orange,FOUND,orange
+CAP-671,grapefruit,FOUND,grapefruit
+CAP-671,brocolli,REPLACE,broccoli
+CAP-671,pepper,FOUND,pepper
+CAP-671,tomato,FOUND,tomato
+CAP-671,juice,FOUND,juice
+CAP-671,icecream,REPLACE,ice cream
+CAP-671,pizza,FOUND,pizza
+CAP-671,corn,FOUND,corn
+CAP-671,potatoes,FOUND,potatoes
+CAS-674,pizza,FOUND,pizza
+CAS-674,gatorade,EXCLUDE,EXCLUDE
+CAS-674,burgers,REPLACE,burger
+CAS-674,water,FOUND,water
+CAS-674,hotdogs,REPLACE,hotdog
+CAS-674,proteinbar,EXCLUDE,EXCLUDE
+CAS-674,chocolatemilk,EXCLUDE,EXCLUDE
+CAS-674,whitemilk,EXCLUDE,EXCLUDE
+CAS-674,skimmilk,EXCLUDE,EXCLUDE
+CAS-674,fettuccini,REPLACE,fettuccine
+CAS-674,spaghetti,FOUND,spaghetti
+CAS-674,steak,FOUND,steak
+CAS-674,chewybar,EXCLUDE,EXCLUDE
+CAS-674,apple,FOUND,apple
+CAS-674,orange,FOUND,orange
+CAS-674,pear,FOUND,pear
+CAS-674,strawberries,FOUND,strawberries
+CAS-674,grapes,FOUND,grapes
+CAS-674,salad,FOUND,salad
+CAS-674,tomato,FOUND,tomato
+CAS-674,soda,FOUND,soda
+CAS-674,cereal,FOUND,cereal
+CAS-674,bagels,REPLACE,bagel
+CAS-674,rolls,REPLACE,roll
+CAS-674,waffles,FOUND,waffles
+CAS-674,pancakes,FOUND,pancakes
+CAS-674,bacon,FOUND,bacon
+CAS-674,eggs,FOUND,eggs
+CAS-674,sausage,FOUND,sausage
+CAS-674,icecream,REPLACE,ice cream
+CAS-674,lobster,FOUND,lobster
+CAS-674,crab,FOUND,crab
+CAV-678,apple,FOUND,apple
+CAV-678,orange,FOUND,orange
+CAV-678,water,FOUND,water
+CAV-678,beer,FOUND,beer
+CAV-678,spaghetti,FOUND,spaghetti
+CAV-678,lasagna,FOUND,lasagna
+CAV-678,chicken,FOUND,chicken
+CAV-678,watermelon,FOUND,watermelon
+CAV-678,orange,FOUND,orange
+CAV-678,grapes,FOUND,grapes
+CAV-678,steak,FOUND,steak
+CAV-678,porkchops,REPLACE,pork chops
+CAV-678,ribs,FOUND,ribs
+CAV-678,broccoli,FOUND,broccoli
+CAV-678,sauercraut,REPLACE,sauerkraut
+CAV-678,hotdogs,REPLACE,hotdog
+CAV-678,lunchmeats,EXCLUDE,EXCLUDE
+CAV-678,roastbeef,REPLACE,roast beef
+CAV-678,porktenderloin,EXCLUDE,EXCLUDE
+CAV-678,icecream,REPLACE,ice cream
+CAV-678,mountaindew,EXCLUDE,EXCLUDE
+CAV-678,drpepper,REPLACE,pepper
+CAV-678,sprite,REPLACE,spice
+CAV-678,dietrite,EXCLUDE,EXCLUDE
+CAV-678,rice,FOUND,rice
+CAV-678,noodles,FOUND,noodles
+CAY-681,apples,REPLACE,apple
+CAY-681,bananas,REPLACE,banana
+CAY-681,peaches,REPLACE,peach
+CAY-681,oranges,REPLACE,orange
+CAY-681,pizza,FOUND,pizza
+CAY-681,hotwings,EXCLUDE,EXCLUDE
+CAY-681,frenchfries,REPLACE,french fries
+CAY-681,sourcream,REPLACE,sour cream
+CAY-681,potatoskins,EXCLUDE,EXCLUDE
+CAY-681,pepsi,EXCLUDE,EXCLUDE
+CAY-681,drpepper,REPLACE,pepper
+CAY-681,mountaindew,EXCLUDE,EXCLUDE
+CAY-681,drpepper,REPLACE,pepper
+CAY-681,sprite,REPLACE,spice
+CAY-681,sierramist,EXCLUDE,EXCLUDE
+CAY-681,milk,FOUND,milk
+CAY-681,water,FOUND,water
+CAY-681,juice,FOUND,juice
+CAY-681,applejuice,EXCLUDE,EXCLUDE
+CAY-681,cranberryjuice,EXCLUDE,EXCLUDE
+CAY-681,grapejuice,EXCLUDE,EXCLUDE
+CAY-681,cranapplejuice,EXCLUDE,EXCLUDE
+CAY-681,v8juice,REPLACE,juice
+CAY-681,bread,FOUND,bread
+CAY-681,sandwiches,REPLACE,sandwich
+CAY-681,bologna,FOUND,bologna
+CAY-681,turkey,FOUND,turkey
+CAY-681,chicken,FOUND,chicken
+CAY-681,beef,FOUND,beef
+CAY-681,empanadas,EXCLUDE,EXCLUDE
+CAY-681,empanidas,EXCLUDE,EXCLUDE
+CAY-681,quesadillas,REPLACE,quesadilla
+CAY-681,tacos,REPLACE,taco
+CAY-681,burritos,REPLACE,burrito
+CAY-681,waffles,FOUND,waffles
+CAY-681,hashbrowns,FOUND,hashbrowns
+CAY-681,poptarts,REPLACE,pop tart
+CAY-681,granolabars,REPLACE,granola bar
+CAY-681,cereal,FOUND,cereal
+CAY-681,chocolatesyrup,EXCLUDE,EXCLUDE
+CBD-686,pizza,FOUND,pizza
+CBD-686,candy,FOUND,candy
+CBD-686,chocolate,FOUND,chocolate
+CBD-686,kiwis,REPLACE,kiwi
+CBD-686,strawberries,FOUND,strawberries
+CBD-686,marshmallows,REPLACE,marshmallow
+CBD-686,pop,EXCLUDE,EXCLUDE
+CBD-686,pepsis,EXCLUDE,EXCLUDE
+CBD-686,cocacola,EXCLUDE,EXCLUDE
+CBD-686,m&ms,EXCLUDE,EXCLUDE
+CBD-686,hersheys,EXCLUDE,EXCLUDE
+CBD-686,chocolatecoveredmarshmallows,EXCLUDE,EXCLUDE
+CBD-686,chocolatecoveredstrawberries,EXCLUDE,EXCLUDE
+CBD-686,chocolatecoveredbrownies,EXCLUDE,EXCLUDE
+CBD-686,cake,FOUND,cake
+CBD-686,chocolatecake,EXCLUDE,EXCLUDE
+CBD-686,marblecake,EXCLUDE,EXCLUDE
+CBD-686,vanillacake,EXCLUDE,EXCLUDE
+CBD-686,nastycake,EXCLUDE,EXCLUDE
+CBD-686,cakethathassugaronit,EXCLUDE,EXCLUDE
+CBD-686,salsberrysteak,EXCLUDE,EXCLUDE
+CBF-691,chicken,FOUND,chicken
+CBF-691,milk,FOUND,milk
+CBF-691,lemon,FOUND,lemon
+CBF-691,orange,FOUND,orange
+CBF-691,cheese,FOUND,cheese
+CBF-691,orangejuice,REPLACE,orange juice
+CBF-691,grapejuice,EXCLUDE,EXCLUDE
+CBF-691,sprite,REPLACE,spice
+CBF-691,coke,REPLACE,cookie
+CBF-691,pepsi,EXCLUDE,EXCLUDE
+CBF-691,mountaindew,EXCLUDE,EXCLUDE
+CBF-691,drpepper,REPLACE,pepper
+CBF-691,gingerale,EXCLUDE,EXCLUDE
+CBF-691,macaroni,FOUND,macaroni
+CBF-691,celery,FOUND,celery
+CBF-691,carrots,FOUND,carrots
+CBF-691,broccoli,FOUND,broccoli
+CBF-691,tomatoes,REPLACE,tomato
+CBF-691,bread,FOUND,bread
+CBF-691,peppers,FOUND,peppers
+CBF-691,onions,FOUND,onions
+CBF-691,bacon,FOUND,bacon
+CBF-691,eggs,FOUND,eggs
+CBF-691,icing,EXCLUDE,EXCLUDE
+CBF-691,cake,FOUND,cake
+CBF-691,pie,FOUND,pie
+CBF-691,cherries,FOUND,cherries
+CBF-691,grapes,FOUND,grapes
+CBF-691,bananas,REPLACE,banana
+CBF-691,brusselsprouts,REPLACE,brussels sprouts
+CBH-693,water,FOUND,water
+CBH-693,apple,FOUND,apple
+CBH-693,oranges,REPLACE,orange
+CBH-693,soda,FOUND,soda
+CBH-693,grapes,FOUND,grapes
+CBH-693,granolabars,REPLACE,granola bar
+CBH-693,candy,FOUND,candy
+CBH-693,hotpockets,REPLACE,hot pocket
+CBH-693,steak,FOUND,steak
+CBH-693,chicken,FOUND,chicken
+CBH-693,tacos,REPLACE,taco
+CBH-693,fastfood,EXCLUDE,EXCLUDE
+CBH-693,pomegranate,FOUND,pomegranate
+CBH-693,grapefruits,REPLACE,grapefruit
+CBH-693,carrots,FOUND,carrots
+CBH-693,broccoli,FOUND,broccoli
+CBH-693,icecream,REPLACE,ice cream
+CBH-693,turkey,FOUND,turkey
+CBH-693,ham,FOUND,ham
+CBH-693,wraps,REPLACE,wrap
+CBH-693,lettuce,FOUND,lettuce
+CBH-693,tomatoes,REPLACE,tomato
+CBH-693,spinach,FOUND,spinach
+CBH-693,applejuice,EXCLUDE,EXCLUDE
+CBH-693,orangejuice,REPLACE,orange juice
+CBH-693,grapejuice,EXCLUDE,EXCLUDE
+CBH-693,jelly,FOUND,jelly
+CBH-693,peanutbutter,REPLACE,peanut butter
+CBH-693,bread,FOUND,bread
+CBH-693,butter,FOUND,butter
+CBH-693,gatorade,EXCLUDE,EXCLUDE
+CBH-693,powerade,EXCLUDE,EXCLUDE
+CBJ-697,hamburger,FOUND,hamburger
+CBJ-697,apple,FOUND,apple
+CBJ-697,banana,FOUND,banana
+CBJ-697,orange,FOUND,orange
+CBJ-697,spaghetti,FOUND,spaghetti
+CBJ-697,chicken,FOUND,chicken
+CBJ-697,milk,FOUND,milk
+CBJ-697,soda,FOUND,soda
+CBJ-697,lemonade,FOUND,lemonade
+CBJ-697,icedtea,EXCLUDE,EXCLUDE
+CBJ-697,meat,FOUND,meat
+CBJ-697,eggs,FOUND,eggs
+CBJ-697,sausage,FOUND,sausage
+CBJ-697,salad,FOUND,salad
+CBJ-697,milk,FOUND,milk
+CBJ-697,orangejuice,REPLACE,orange juice
+CBJ-697,bread,FOUND,bread
+CBJ-697,candy,FOUND,candy
+CBJ-697,ham,FOUND,ham
+CBJ-697,fish,FOUND,fish
+CBL-698,chips,FOUND,chips
+CBL-698,soda,FOUND,soda
+CBL-698,sprite,REPLACE,spice
+CBL-698,coke,REPLACE,cookie
+CBL-698,mashedpotatoes,REPLACE,mashed potatoes
+CBL-698,turkey,FOUND,turkey
+CBL-698,gravy,FOUND,gravy
+CBL-698,beans,FOUND,beans
+CBL-698,bacon,FOUND,bacon
+CBL-698,water,FOUND,water
+CBL-698,koolaid,EXCLUDE,EXCLUDE
+CBL-698,sugar,FOUND,sugar
+CBL-698,salt,FOUND,salt
+CBL-698,pepper,FOUND,pepper
+CBL-698,chicken,FOUND,chicken
+CBL-698,chickensandwich,REPLACE,chicken sandwich
+CBL-698,pizza,FOUND,pizza
+CBL-698,chickenpotpie,REPLACE,chicken potpie
+CBL-698,cranberrysauce,REPLACE,cranberry sauce
+CBL-698,baklava,FOUND,baklava
+CBL-698,donuts,REPLACE,donut
+CBM-702,apples,REPLACE,apple
+CBM-702,pizza,FOUND,pizza
+CBM-702,candy,FOUND,candy
+CBM-702,soda,FOUND,soda
+CBM-702,water,FOUND,water
+CBM-702,juice,FOUND,juice
+CBM-702,cereal,FOUND,cereal
+CBM-702,granolabars,REPLACE,granola bar
+CBM-702,sweets,REPLACE,seeds
+CBM-702,chocolates,REPLACE,chocolate
+CBM-702,seasonings,EXCLUDE,EXCLUDE
+CBM-702,meats,REPLACE,meat
+CBM-702,dairy,FOUND,dairy
+CBM-702,veggie,EXCLUDE,EXCLUDE
+CBM-702,fruits,FOUND,fruits
+CBM-702,apples,REPLACE,apple
+CBM-702,bananas,REPLACE,banana
+CBM-702,greenpeppers,REPLACE,green peppers
+CBM-702,onions,FOUND,onions
+CBM-702,allfoods,EXCLUDE,EXCLUDE
+CBM-702,oatmeal,FOUND,oatmeal
+CBM-702,greenbeans,REPLACE,green beans
+CBM-702,corn,FOUND,corn
+CBM-702,veggies,EXCLUDE,EXCLUDE
+CBM-702,frenchtoast,REPLACE,french toast
+CBM-702,waffles,FOUND,waffles
+CBM-702,celery,FOUND,celery
+CBM-702,onions,FOUND,onions
+CBM-702,milk,FOUND,milk
+CBM-702,cheese,FOUND,cheese
+CBP-707,hamburgers,REPLACE,hamburger
+CBP-707,pizza,FOUND,pizza
+CBP-707,pickles,REPLACE,pickle
+CBP-707,cheese,FOUND,cheese
+CBP-707,fries,FOUND,fries
+CBP-707,water,FOUND,water
+CBP-707,koolaid,EXCLUDE,EXCLUDE
+CBP-707,tea,FOUND,tea
+CBP-707,cake,FOUND,cake
+CBP-707,apples,REPLACE,apple
+CBP-707,bananas,REPLACE,banana
+CBP-707,oranges,REPLACE,orange
+CBP-707,eggplant,FOUND,eggplant
+CBP-707,cheesestick,REPLACE,cheese stick
+CBP-707,burrito,FOUND,burrito
+CBP-707,quesadilla,FOUND,quesadilla
+CBP-707,beef,FOUND,beef
+CBP-707,ham,FOUND,ham
+CBP-707,turkey,FOUND,turkey
+CBP-707,macaroniandcheese,REPLACE,macaroni and cheese
+CBP-707,mashedpotatoes,REPLACE,mashed potatoes
+CBP-707,bakedpotato,REPLACE,baked potato
+CBP-707,peas,FOUND,peas
+CBP-707,carrots,FOUND,carrots
+CBP-707,corn,FOUND,corn
+CBP-707,chicken,FOUND,chicken
+CBP-707,biscuits,REPLACE,biscuit
+CBP-707,orangejuice,REPLACE,orange juice
+CBP-707,applejuice,EXCLUDE,EXCLUDE
+CBP-707,pepsi,EXCLUDE,EXCLUDE
+CBP-707,coke,REPLACE,cookie
+CBP-707,sprite,REPLACE,spice
+CBS-711,pizza,FOUND,pizza
+CBS-711,hamburgers,REPLACE,hamburger
+CBS-711,water,FOUND,water
+CBS-711,pop,EXCLUDE,EXCLUDE
+CBS-711,cheeseburger,FOUND,cheeseburger
+CBS-711,soup,FOUND,soup
+CBS-711,coke,REPLACE,cookie
+CBS-711,fanta,REPLACE,fat
+CBS-711,chickennuggetsoup,EXCLUDE,EXCLUDE
+CBS-711,water,FOUND,water
+CBS-711,grapejuice,EXCLUDE,EXCLUDE
+CBS-711,peanutbutterandjelly,EXCLUDE,EXCLUDE
+CBS-711,applejuice,EXCLUDE,EXCLUDE
+CBS-711,bagel,FOUND,bagel
+CBS-711,toast,FOUND,toast
+CBS-711,waffles,FOUND,waffles
+CBS-711,pancakes,FOUND,pancakes
+CBS-711,frenchtoast,REPLACE,french toast
+CBW-715,macandcheese,REPLACE,mac and cheese
+CBW-715,toast,FOUND,toast
+CBW-715,butter,FOUND,butter
+CBW-715,pizza,FOUND,pizza
+CBW-715,pepperoni,FOUND,pepperoni
+CBW-715,cheese,FOUND,cheese
+CBW-715,broccoli,FOUND,broccoli
+CBW-715,crackers,FOUND,crackers
+CBW-715,tuna,FOUND,tuna
+CBW-715,fish,FOUND,fish
+CBW-715,lobster,FOUND,lobster
+CBW-715,crab,FOUND,crab
+CBW-715,bread,FOUND,bread
+CBW-715,shrimp,FOUND,shrimp
+CBW-715,cauliflour,REPLACE,cauliflower
+CBW-715,lettuce,FOUND,lettuce
+CBW-715,carrots,FOUND,carrots
+CBW-715,greenbeans,REPLACE,green beans
+CBW-715,beans,FOUND,beans
+CBW-715,blackbeans,REPLACE,black beans
+CBW-715,marshmallows,REPLACE,marshmallow
+CBW-715,candycanes,REPLACE,candy cane
+CCB-720,rootbeer,EXCLUDE,EXCLUDE
+CCB-720,pizza,FOUND,pizza
+CCB-720,broccoli,FOUND,broccoli
+CCB-720,macaroniandcheese,REPLACE,macaroni and cheese
+CCB-720,cocacola,EXCLUDE,EXCLUDE
+CCB-720,pepsi,EXCLUDE,EXCLUDE
+CCB-720,icecream,REPLACE,ice cream
+CCB-720,popsicles,REPLACE,popsicle
+CCB-720,strawberries,FOUND,strawberries
+CCB-720,blueberries,FOUND,blueberries
+CCB-720,bananas,REPLACE,banana
+CCB-720,grapes,FOUND,grapes
+CCB-720,kiwi,FOUND,kiwi
+CCB-720,zucchinibread,REPLACE,zucchini bread
+CCB-720,bananabread,REPLACE,banana bread
+CCB-720,smoothies,REPLACE,smoothie
+CCD-722,burgers,REPLACE,burger
+CCD-722,fries,FOUND,fries
+CCD-722,ketchup,FOUND,ketchup
+CCD-722,mustard,FOUND,mustard
+CCD-722,lettuce,FOUND,lettuce
+CCD-722,onions,FOUND,onions
+CCD-722,pickles,REPLACE,pickle
+CCD-722,tomatoes,REPLACE,tomato
+CCD-722,mayo,REPLACE,matzo
+CCD-722,buns,REPLACE,bun
+CCD-722,beer,FOUND,beer
+CCD-722,wine,FOUND,wine
+CCD-722,bread,FOUND,bread
+CCD-722,cheese,FOUND,cheese
+CCD-722,ham,FOUND,ham
+CCD-722,turkey,FOUND,turkey
+CCD-722,steak,FOUND,steak
+CCD-722,lobster,FOUND,lobster
+CCD-722,crab,FOUND,crab
+CCD-722,shrimp,FOUND,shrimp
+CCD-722,biscuits,REPLACE,biscuit
+CCD-722,graxy,REPLACE,gravy
+CCD-722,mashedpotatoes,REPLACE,mashed potatoes
+CCD-722,macandcheese,REPLACE,mac and cheese
+CCD-722,pasta,FOUND,pasta
+CCD-722,pesto,FOUND,pesto
+CCD-722,greenpeppers,REPLACE,green peppers
+CCD-722,cucumbers,REPLACE,cucumber
+CCD-722,redpeppers,REPLACE,red peppers
+CCD-722,sausage,FOUND,sausage
+CCD-722,beef,FOUND,beef
+CCD-722,ham,FOUND,ham
+CCD-722,mushrooms,FOUND,mushrooms
+CCD-722,onions,FOUND,onions
+CCD-722,pepperoni,FOUND,pepperoni
+CCD-722,bananapeppers,REPLACE,banana pepper
+CCD-722,blackolives,REPLACE,black olives
+CCD-722,pastasauce,EXCLUDE,EXCLUDE
+CCD-722,potatochips,REPLACE,potato chips
+CCD-722,ricecakes,REPLACE,rice cake
+CCD-722,cereal,FOUND,cereal
+CCD-722,cheerios,REPLACE,cheetos
+CCD-722,water,FOUND,water
+CCD-722,sprite,REPLACE,spice
+CCF-724,sweettea,EXCLUDE,EXCLUDE
+CCF-724,macaroni,FOUND,macaroni
+CCF-724,pizza,FOUND,pizza
+CCF-724,water,FOUND,water
+CCF-724,chicken,FOUND,chicken
+CCF-724,sprite,REPLACE,spice
+CCF-724,sweettea,EXCLUDE,EXCLUDE
+CCF-724,ribs,FOUND,ribs
+CCF-724,lemonade,FOUND,lemonade
+CCF-724,broccoli,FOUND,broccoli
+CCF-724,cheese,FOUND,cheese
+CCF-724,drpepper,REPLACE,pepper
+CCF-724,sunkist,EXCLUDE,EXCLUDE
+CCF-724,rootbeer,EXCLUDE,EXCLUDE
+CCF-724,milk,FOUND,milk
+CCF-724,applejuice,EXCLUDE,EXCLUDE
+CCF-724,orangejuice,REPLACE,orange juice
+CCH-726,coffee,FOUND,coffee
+CCH-726,milk,FOUND,milk
+CCH-726,apple,FOUND,apple
+CCH-726,pie,FOUND,pie
+CCH-726,cake,FOUND,cake
+CCH-726,banana,FOUND,banana
+CCH-726,water,FOUND,water
+CCH-726,kiwi,FOUND,kiwi
+CCH-726,chocolate,FOUND,chocolate
+CCH-726,crackers,FOUND,crackers
+CCH-726,onions,FOUND,onions
+CCH-726,garlic,FOUND,garlic
+CCH-726,pretzels,FOUND,pretzels
+CCH-726,strawberries,FOUND,strawberries
+CCH-726,fruitjuice,EXCLUDE,EXCLUDE
+CCH-726,cheese,FOUND,cheese
+CCH-726,pancakes,FOUND,pancakes
+CCH-726,waffles,FOUND,waffles
+CCH-726,bacon,FOUND,bacon
+CCH-726,eggs,FOUND,eggs
+CCH-726,beef,FOUND,beef
+CCH-726,pig,REPLACE,pie
+CCH-726,spaghetti,FOUND,spaghetti
+CCX-744,soda,FOUND,soda
+CCX-744,grapes,FOUND,grapes
+CCX-744,fish,FOUND,fish
+CCX-744,chicken,FOUND,chicken
+CCX-744,broccoli,FOUND,broccoli
+CCX-744,pears,REPLACE,peas
+CCX-744,apples,REPLACE,apple
+CCX-744,bananas,REPLACE,banana
+CCX-744,mangoes,REPLACE,mango
+CCX-744,mashedpotatoes,REPLACE,mashed potatoes
+CCX-744,sweetpotatoes,REPLACE,sweet potatoes
+CCX-744,turkey,FOUND,turkey
+CCX-744,dressing,FOUND,dressing
+CCX-744,ham,FOUND,ham
+CCX-744,frenchfries,REPLACE,french fries
+CCX-744,pizza,FOUND,pizza
+CCX-744,salad,FOUND,salad
+CCX-744,icecream,REPLACE,ice cream
+CCX-744,yogurt,FOUND,yogurt
+CCX-744,candy,FOUND,candy
+CCX-744,lemons,REPLACE,lemon
+CCX-744,oranges,REPLACE,orange
+CDG-753,peanuts,FOUND,peanuts
+CDG-753,cashews,FOUND,cashews
+CDG-753,bread,FOUND,bread
+CDG-753,bark,REPLACE,shark
+CDG-753,soda,FOUND,soda
+CDG-753,rootbeer,EXCLUDE,EXCLUDE
+CDG-753,drpepper,REPLACE,pepper
+CDG-753,water,FOUND,water
+CDG-753,jello,FOUND,jello
+CDG-753,brownies,REPLACE,brownie
+CDG-753,cookies,REPLACE,cookie
+CDG-753,chocolate,FOUND,chocolate
+CDG-753,milk,FOUND,milk
+CDG-753,orangejuice,REPLACE,orange juice
+CDG-753,limejuice,EXCLUDE,EXCLUDE
+CDG-753,lemonade,FOUND,lemonade
+CDG-753,noodles,FOUND,noodles
+CDG-753,macandcheese,REPLACE,mac and cheese
+CDG-753,pasta,FOUND,pasta
+CDG-753,spaghetti,FOUND,spaghetti
+CDG-753,tomatoes,REPLACE,tomato
+CDG-753,peppers,FOUND,peppers
+CDG-753,celery,FOUND,celery
+CDG-753,peanutbutter,REPLACE,peanut butter
+CDG-753,jelly,FOUND,jelly
+CDG-753,plums,REPLACE,plum
+CDG-753,mangoes,REPLACE,mango
+CDG-753,guava,FOUND,guava
+CDG-753,plums,REPLACE,plum
+CDG-753,grapefruit,FOUND,grapefruit
+CDG-753,starfruit,FOUND,starfruit
+CDG-753,limes,REPLACE,lime
+CDG-753,lemons,REPLACE,lemon
+CDH-754,cocacola,EXCLUDE,EXCLUDE
+CDH-754,cherrycocacola,EXCLUDE,EXCLUDE
+CDH-754,fantaorange,EXCLUDE,EXCLUDE
+CDH-754,fantastrawberry,EXCLUDE,EXCLUDE
+CDH-754,fantapineapple,EXCLUDE,EXCLUDE
+CDH-754,fantagrape,EXCLUDE,EXCLUDE
+CDH-754,friedrice,REPLACE,fried rice
+CDH-754,sreamedrice,EXCLUDE,EXCLUDE
+CDH-754,chicken,FOUND,chicken
+CDH-754,turkey,FOUND,turkey
+CDH-754,danimalscrunchers,EXCLUDE,EXCLUDE
+CDH-754,yogurt,FOUND,yogurt
+CDH-754,danimalssmoothies,EXCLUDE,EXCLUDE
+CDH-754,sprite,REPLACE,spice
+CDH-754,spritezero,EXCLUDE,EXCLUDE
+CDM-759,soda,FOUND,soda
+CDM-759,macaroniandcheese,REPLACE,macaroni and cheese
+CDM-759,spaghetti,FOUND,spaghetti
+CDM-759,icecream,REPLACE,ice cream
+CDM-759,cake,FOUND,cake
+CDM-759,pizza,FOUND,pizza
+CDM-759,maggianosalads,EXCLUDE,EXCLUDE
+CDM-759,rolls,REPLACE,roll
+CDM-759,hotdogs,REPLACE,hotdog
+CDM-759,cranberries,FOUND,cranberries
+CDM-759,raspberries,FOUND,raspberries
+CDM-759,watermelon,FOUND,watermelon
+CDM-759,strawberries,FOUND,strawberries
+CDM-759,cantaloupe,FOUND,cantaloupe
+CDM-759,peaches,REPLACE,peach
+CDM-759,water,FOUND,water
+CDM-759,juice,FOUND,juice
+CDM-759,applecider,EXCLUDE,EXCLUDE
+CDM-759,wine,FOUND,wine
+CDM-759,coconutcreampie,EXCLUDE,EXCLUDE
+CDM-759,chocolatepie,REPLACE,chocolate pie
+CDM-759,applepie,REPLACE,apple pie
+CDM-759,coconutpie,EXCLUDE,EXCLUDE
+CDM-759,pumpkinpie,REPLACE,pumpkin pie
+CDM-759,chocolateicecream,EXCLUDE,EXCLUDE
+CDM-759,vanillaicecream,EXCLUDE,EXCLUDE
+CDM-759,redvelvetcake,EXCLUDE,EXCLUDE
+CDM-759,chocolateballs,EXCLUDE,EXCLUDE
+CDM-759,ravioli,FOUND,ravioli
+CDM-759,breadsticks,FOUND,breadsticks
+CDM-759,cheesesause,EXCLUDE,EXCLUDE
+CDM-759,salsa,FOUND,salsa
+CDM-759,chips,FOUND,chips
+CDM-759,doritos,FOUND,doritos
+CDM-759,coolranchdoritos,EXCLUDE,EXCLUDE
+CDR-764,chicken,FOUND,chicken
+CDR-764,chicken,FOUND,chicken
+CDR-764,ketchup,FOUND,ketchup
+CDR-764,popcorn,FOUND,popcorn
+CDR-764,pizza,FOUND,pizza
+CDR-764,orangejuice,REPLACE,orange juice
+CDR-764,applejuice,EXCLUDE,EXCLUDE
+CDR-764,grapejuice,EXCLUDE,EXCLUDE
+CDR-764,steak,FOUND,steak
+CDR-764,shrimp,FOUND,shrimp
+CDR-764,ribs,FOUND,ribs
+CDR-764,cookies,REPLACE,cookie
+CDR-764,icecream,REPLACE,ice cream
+CDR-764,cake,FOUND,cake
+CDR-764,smoothie,FOUND,smoothie
+CDR-764,milkshake,FOUND,milkshake
+CDR-764,slushie,REPLACE,sushi
+CDR-764,icecream,REPLACE,ice cream
+CDR-764,water,FOUND,water
+CDR-764,koolaid,EXCLUDE,EXCLUDE
+CDR-764,cherry,FOUND,cherry
+CDR-764,apple,FOUND,apple
+CDR-764,strawberry,FOUND,strawberry
+CDR-764,banana,FOUND,banana
+CDR-764,tangerine,FOUND,tangerine
+CDR-764,mango,FOUND,mango
+CDR-764,blueberries,FOUND,blueberries
+CDR-764,milk,FOUND,milk
+CDR-764,applesauce,FOUND,applesauce
+CDR-764,pop,EXCLUDE,EXCLUDE
+CDR-764,cocacola,EXCLUDE,EXCLUDE
+CDR-764,fanta,REPLACE,fat
+CDU-767,sprite,REPLACE,spice
+CDU-767,pepsi,EXCLUDE,EXCLUDE
+CDU-767,lemonade,FOUND,lemonade
+CDU-767,coke,REPLACE,cookie
+CDU-767,orangejuice,REPLACE,orange juice
+CDU-767,applejuice,EXCLUDE,EXCLUDE
+CDU-767,cranberryjuice,EXCLUDE,EXCLUDE
+CDU-767,spaghetti,FOUND,spaghetti
+CDU-767,chicken,FOUND,chicken
+CDU-767,macaroni,FOUND,macaroni
+CDU-767,greens,FOUND,greens
+CDU-767,fish,FOUND,fish
+CDU-767,pop,EXCLUDE,EXCLUDE
+CDU-767,water,FOUND,water
+CDU-767,gatorade,EXCLUDE,EXCLUDE
+CDU-767,powerade,EXCLUDE,EXCLUDE
+CDU-767,jambalaya,FOUND,jambalaya
+CDU-767,meats,REPLACE,meat
+CDU-767,sausages,REPLACE,sausage
+CDU-767,bacon,FOUND,bacon
+CDU-767,eggs,FOUND,eggs
+CDU-767,biscuits,REPLACE,biscuit
+CDU-767,bagels,REPLACE,bagel
+CDU-767,bananas,REPLACE,banana
+CDU-767,cereal,FOUND,cereal
+CDU-767,ricekrispietreats,EXCLUDE,EXCLUDE
+CDU-767,fruitsnacks,REPLACE,fruit snacks
+CDU-767,cheesenips,EXCLUDE,EXCLUDE
+SGO-159,macaroniandcheese,REPLACE,macaroni and cheese
+SGO-159,popcorn,FOUND,popcorn
+SGO-159,pizza,FOUND,pizza
+SGO-159,pasta,FOUND,pasta
+SGO-159,grape,FOUND,grape
+SGO-159,cheese,FOUND,cheese
+SGO-159,meat,FOUND,meat
+SGO-159,pepsi,EXCLUDE,EXCLUDE
+SGO-159,coke,REPLACE,cookie
+SGO-159,mountaindew,EXCLUDE,EXCLUDE
+SGO-159,dietcoke,EXCLUDE,EXCLUDE
+SGO-159,drpepper,REPLACE,pepper
+SGO-159,rootbeer,EXCLUDE,EXCLUDE
+SGO-159,orange,FOUND,orange
+SGO-159,sierramist,EXCLUDE,EXCLUDE
+SGO-159,sprite,REPLACE,spice
+SGO-159,grape,FOUND,grape
+SGO-159,cherry,FOUND,cherry
+SGO-159,vanillacoke,EXCLUDE,EXCLUDE
+SGO-159,icecream,REPLACE,ice cream
+SGO-159,corndog,FOUND,corndog
+SGO-159,pizzarolls,REPLACE,pizza roll
+SGO-159,chips,FOUND,chips
+SGO-159,cookies,REPLACE,cookie
+SGO-159,grahamcrackers,REPLACE,graham crackers
+SGO-159,seacrackers,EXCLUDE,EXCLUDE
+SGO-159,granolabars,REPLACE,granola bar
+SGO-159,corn,FOUND,corn
+SGO-159,broccoli,FOUND,broccoli
+SGO-159,langus,EXCLUDE,EXCLUDE
+SGO-159,apple,FOUND,apple
+SGO-159,pineapple,FOUND,pineapple
+SGO-159,strawberries,FOUND,strawberries
+SGO-159,ham,FOUND,ham
+SGO-159,chicken,FOUND,chicken
+SGO-159,pork,FOUND,pork
+SKE-234,pizza,FOUND,pizza
+SKE-234,water,FOUND,water
+SKE-234,soda,FOUND,soda
+SKE-234,cereal,FOUND,cereal
+SKE-234,milk,FOUND,milk
+SKE-234,orangejuice,REPLACE,orange juice
+SKE-234,applejuice,EXCLUDE,EXCLUDE
+SKE-234,apples,REPLACE,apple
+SKE-234,fruit,FOUND,fruit
+SKE-234,grapes,FOUND,grapes
+SKE-234,pasta,FOUND,pasta
+SKE-234,ravioli,FOUND,ravioli
+SKE-234,coffee,FOUND,coffee
+SKE-234,gingerale,EXCLUDE,EXCLUDE
+SKE-234,spaghetti,FOUND,spaghetti
+SKE-234,breadsticks,FOUND,breadsticks
+SKE-234,buffalowings,REPLACE,buffalo wings
+SMK-401,hamburger,FOUND,hamburger
+SMK-401,hotdog,FOUND,hotdog
+SMK-401,chips,FOUND,chips
+SMK-401,skittles,EXCLUDE,EXCLUDE
+SMK-401,hershey,EXCLUDE,EXCLUDE
+SMK-401,hotdogs,REPLACE,hotdog
+SMK-401,sausage,FOUND,sausage
+SMK-401,milk,FOUND,milk
+SMK-401,coke,REPLACE,cookie
+SMK-401,dietcoke,EXCLUDE,EXCLUDE
+SMK-401,sprite,REPLACE,spice
+SMK-401,sunkist,EXCLUDE,EXCLUDE
+SMK-401,frenchfries,REPLACE,french fries
+SMK-401,tatertots,REPLACE,tater tots
+SMK-401,mashedpotatoes,REPLACE,mashed potatoes
+SMK-401,corn,FOUND,corn
+SMK-401,peas,FOUND,peas
+SMK-401,grapes,FOUND,grapes
+SMK-401,apple,FOUND,apple
+SMK-401,bananas,REPLACE,banana
+SMK-401,guacamole,FOUND,guacamole
+SMK-401,cheese,FOUND,cheese
+SMK-401,pepperjackcheese,EXCLUDE,EXCLUDE
+SMK-401,bread,FOUND,bread
+SMK-401,pringles,FOUND,pringles
+SMK-401,quakerbars,EXCLUDE,EXCLUDE
+SMK-401,granolabars,REPLACE,granola bar
+SMK-401,popsicles,REPLACE,popsicle
+SMK-401,frozenpizzas,EXCLUDE,EXCLUDE
+SMK-401,pepperonipizza,EXCLUDE,EXCLUDE
+SMK-401,cheesepizza,EXCLUDE,EXCLUDE
+SMK-401,sausagepizza,EXCLUDE,EXCLUDE
+SMK-401,breadsticks,FOUND,breadsticks
+SMK-401,spaghetti,FOUND,spaghetti
+SMK-401,lasagna,FOUND,lasagna
+SNI-300,soda,FOUND,soda
+SNI-300,water,FOUND,water
+SNI-300,chicken,FOUND,chicken
+SNI-300,burger,FOUND,burger
+SNI-300,rice,FOUND,rice
+SNI-300,spaghetti,FOUND,spaghetti
+SNI-300,macaroniandcheese,REPLACE,macaroni and cheese
+SNI-300,steak,FOUND,steak
+SNI-300,barbecue,FOUND,barbecue
+SNI-300,chinese,FOUND,chinese
+SNI-300,rice,FOUND,rice
+SNI-300,pizza,FOUND,pizza
+SNI-300,juice,FOUND,juice
+SNI-300,orange,FOUND,orange
+SNI-300,lemon,FOUND,lemon
+SNI-300,apple,FOUND,apple
+SNI-300,pear,FOUND,pear
+SNI-300,lemon,FOUND,lemon
+SNR-308,pizza,FOUND,pizza
+SNR-308,pizza,FOUND,pizza
+SNR-308,chips,FOUND,chips
+SNR-308,candies,EXCLUDE,EXCLUDE
+SNR-308,pop,EXCLUDE,EXCLUDE
+SNR-308,dietcoke,EXCLUDE,EXCLUDE
+SNR-308,lemonade,FOUND,lemonade
+SNR-308,pies,REPLACE,pie
+SNR-308,cereal,FOUND,cereal
+SNR-308,cakes,REPLACE,cake
+SNR-308,brownies,REPLACE,brownie
+SNR-308,sandwich,FOUND,sandwich
+SNR-308,peanutbutter,REPLACE,peanut butter
+SNR-308,tunafish,EXCLUDE,EXCLUDE
+SNR-308,fish,FOUND,fish
+SNR-308,chicken,FOUND,chicken
+SNT-310,soda,FOUND,soda
+SNT-310,corn,FOUND,corn
+SNT-310,potatoes,FOUND,potatoes
+SNT-310,tomato,FOUND,tomato
+SNT-310,steak,FOUND,steak
+SNT-310,apple,FOUND,apple
+SNT-310,oranges,REPLACE,orange
+SNT-310,banana,FOUND,banana
+SNT-310,kiwi,FOUND,kiwi
+SNT-310,plums,REPLACE,plum
+SNT-310,water,FOUND,water
+SNT-310,bread,FOUND,bread
+SNT-310,turkey,FOUND,turkey
+SNT-310,mayo,REPLACE,matzo
+SNT-310,mustard,FOUND,mustard
+SNT-310,lettuce,FOUND,lettuce
+SNT-310,carrots,FOUND,carrots
+SNT-310,radishes,REPLACE,radish
+SNT-310,beets,FOUND,beets
+SNT-310,cauliflower,FOUND,cauliflower
+SNT-310,broccoli,FOUND,broccoli
+SNT-310,sweetpotatoes,REPLACE,sweet potatoes
+SNT-310,beans,FOUND,beans
+SNV-312,hotdog,FOUND,hotdog
+SNV-312,hamburger,FOUND,hamburger
+SNV-312,burrito,FOUND,burrito
+SNV-312,chicken,FOUND,chicken
+SNV-312,rice,FOUND,rice
+SNV-312,corn,FOUND,corn
+SNV-312,celery,FOUND,celery
+SNV-312,peanutbutter,REPLACE,peanut butter
+SNV-312,water,FOUND,water
+SNV-312,2%milk,REPLACE,milk
+SNV-312,orangejuice,REPLACE,orange juice
+SNV-312,applejuice,EXCLUDE,EXCLUDE
+SNV-312,chocolatemilk,EXCLUDE,EXCLUDE
+SNV-312,waffles,FOUND,waffles
+SNV-312,blueberrymuffins,EXCLUDE,EXCLUDE
+SNV-312,granolabars,REPLACE,granola bar
+SNV-312,gatorade,EXCLUDE,EXCLUDE
+SNV-312,powerade,EXCLUDE,EXCLUDE
+SNV-312,turkey,FOUND,turkey
+SNV-312,ham,FOUND,ham
+SNV-312,mashedpotatoes,REPLACE,mashed potatoes
+SNV-312,chickennoodles,REPLACE,chicken noodles
+SNV-312,cornbread,FOUND,cornbread
+SNV-312,wings,FOUND,wings
+SNV-312,spaghetti,FOUND,spaghetti
+SNV-312,lasagna,FOUND,lasagna
+SNV-312,breadsticks,FOUND,breadsticks
+SNV-312,chickenpasta,EXCLUDE,EXCLUDE
+SNV-312,apples,REPLACE,apple
+SNV-312,oranges,REPLACE,orange
+SNV-312,strawberry,FOUND,strawberry
+SNV-312,raspberries,FOUND,raspberries
+SNV-312,blueberries,FOUND,blueberries
+SNY-315,chicken,FOUND,chicken
+SNY-315,water,FOUND,water
+SNY-315,pop,EXCLUDE,EXCLUDE
+SNY-315,steak,FOUND,steak
+SNY-315,macaroniandcheese,REPLACE,macaroni and cheese
+SNY-315,bread,FOUND,bread
+SNY-315,milk,FOUND,milk
+SNY-315,orangejuice,REPLACE,orange juice
+SNY-315,applejuice,EXCLUDE,EXCLUDE
+SNY-315,grapejuice,EXCLUDE,EXCLUDE
+SNY-315,cranberryjuice,EXCLUDE,EXCLUDE
+SNY-315,tomatojuice,EXCLUDE,EXCLUDE
+SNY-315,bananas,REPLACE,banana
+SNY-315,apples,REPLACE,apple
+SNY-315,oranges,REPLACE,orange
+SNY-315,grapes,FOUND,grapes
+SNY-315,lettuce,FOUND,lettuce
+SNY-315,crackers,FOUND,crackers
+SNY-315,cereal,FOUND,cereal
+SNY-315,cheezits,REPLACE,cheez its
+SNY-315,hotchocolate,EXCLUDE,EXCLUDE
+SNY-315,tea,FOUND,tea
+SNY-315,tomatosoup,REPLACE,tomato soup
+SNY-315,chickennoodlesoup,REPLACE,chicken noodle soup
+SOA-317,pop,EXCLUDE,EXCLUDE
+SOA-317,food,EXCLUDE,EXCLUDE
+SOA-317,rootbeer,EXCLUDE,EXCLUDE
+SOA-317,water,FOUND,water
+SOA-317,chew,REPLACE,cashew
+SOA-317,orange,FOUND,orange
+SOA-317,applejuice,EXCLUDE,EXCLUDE
+SOQ-329,banana,FOUND,banana
+SOQ-329,apple,FOUND,apple
+SOQ-329,water,FOUND,water
+SOQ-329,soda,FOUND,soda
+SOQ-329,orange,FOUND,orange
+SOQ-329,strawberry,FOUND,strawberry
+SOQ-329,kiwi,FOUND,kiwi
+SOQ-329,pizza,FOUND,pizza
+SOQ-329,icecream,REPLACE,ice cream
+SOQ-329,chocolate,FOUND,chocolate
+SOQ-329,beer,FOUND,beer
+SOQ-329,chips,FOUND,chips
+SOQ-329,chicken,FOUND,chicken
+SOQ-329,beef,FOUND,beef
+SOQ-329,bacon,FOUND,bacon
+SOQ-329,meatloaf,FOUND,meatloaf
+SOQ-329,hamburger,FOUND,hamburger
+SOQ-329,steak,FOUND,steak
+SOQ-329,greenbeans,REPLACE,green beans
+SOQ-329,peas,FOUND,peas
+SOQ-329,carrots,FOUND,carrots
+SOQ-329,spinach,FOUND,spinach
+SOQ-329,broccoli,FOUND,broccoli
+SOQ-329,corn,FOUND,corn
+SOQ-329,blueberries,FOUND,blueberries
+SOQ-329,cherries,FOUND,cherries
+SPL-436,gatorade,EXCLUDE,EXCLUDE
+SPL-436,lemonade,FOUND,lemonade
+SPL-436,propel,EXCLUDE,EXCLUDE
+SPL-436,chips,FOUND,chips
+SPL-436,gingerbread,EXCLUDE,EXCLUDE
+SPL-436,cake,FOUND,cake
+SPL-436,icecream,REPLACE,ice cream
+SPL-436,cookies,REPLACE,cookie
+SPL-436,turkey,FOUND,turkey
+SPL-436,ham,FOUND,ham
+SPL-436,cottagecheese,REPLACE,cottage cheese
+SPL-436,frenchtoast,REPLACE,french toast
+SPL-436,eggs,FOUND,eggs
+SPL-436,peanuts,FOUND,peanuts
+SPV-450,tacos,REPLACE,taco
+SPV-450,pizza,FOUND,pizza
+SPV-450,water,FOUND,water
+SPV-450,watermelon,FOUND,watermelon
+SPV-450,hotdogs,REPLACE,hotdog
+SPV-450,hamburgers,REPLACE,hamburger
+SPV-450,frenchfries,REPLACE,french fries
+SPV-450,candy,FOUND,candy
+SPV-450,spaghetti,FOUND,spaghetti
+SPV-450,lasagna,FOUND,lasagna
+SPV-450,icecream,REPLACE,ice cream
+SPV-450,sodapop,EXCLUDE,EXCLUDE
+SPV-450,liquor,EXCLUDE,EXCLUDE
+SPV-450,mustard,FOUND,mustard
+SPV-450,tomatoes,REPLACE,tomato
+SPV-450,onions,FOUND,onions
+SPV-450,greenpeppers,REPLACE,green peppers
+SPV-450,corn,FOUND,corn
+SPV-450,strawberries,FOUND,strawberries
+SPV-450,lettuce,FOUND,lettuce
+SPV-450,cheese,FOUND,cheese
+SPV-450,garlicbread,REPLACE,garlic bread
+SRF-483,ribs,FOUND,ribs
+SRF-483,wings,FOUND,wings
+SRF-483,soda,FOUND,soda
+SRF-483,water,FOUND,water
+SRF-483,chickentenders,REPLACE,chicken tenders
+SRF-483,chickenwings,REPLACE,chicken wings
+SRF-483,chickenlegs,EXCLUDE,EXCLUDE
+SRF-483,pickles,REPLACE,pickle
+SRF-483,peppers,FOUND,peppers
+SRF-483,macandcheese,REPLACE,mac and cheese
+SRF-483,cheese,FOUND,cheese
+SRF-483,noodles,FOUND,noodles
+SRF-483,parmesancheese,REPLACE,parmesan cheese
+SRF-483,hamburgers,REPLACE,hamburger
+SRR-498,spaghetti,FOUND,spaghetti
+SRR-498,tacos,REPLACE,taco
+SRR-498,milk,FOUND,milk
+SRR-498,soda,FOUND,soda
+SRR-498,chocolatemilk,EXCLUDE,EXCLUDE
+SRR-498,strawberrymilk,EXCLUDE,EXCLUDE
+SRR-498,eggs,FOUND,eggs
+SRR-498,bacon,FOUND,bacon
+SRR-498,toast,FOUND,toast
+SRR-498,peanutbutterandjelly,EXCLUDE,EXCLUDE
+SRR-498,pudding,FOUND,pudding
+SRR-498,cake,FOUND,cake
+SRR-498,omelets,REPLACE,omelet
+SRR-498,chocolatefudge,EXCLUDE,EXCLUDE
+SRR-498,water,FOUND,water
+SRR-498,romannoodles,EXCLUDE,EXCLUDE
+SRR-498,hamburgers,REPLACE,hamburger
+SRR-498,cheeseburgers,REPLACE,cheeseburger
+SRR-498,fries,FOUND,fries
+SRR-498,ravioli,FOUND,ravioli
+SRR-498,pizza,FOUND,pizza
+SRR-498,mcdonalds,EXCLUDE,EXCLUDE
+SSG-520,water,FOUND,water
+SSG-520,milk,FOUND,milk
+SSG-520,chickennuggets,REPLACE,chicken nuggets
+SSG-520,fish,FOUND,fish
+SSG-520,calamari,FOUND,calamari
+SSG-520,shrimp,FOUND,shrimp
+SSG-520,beefandnoodles,REPLACE,beef and noodles
+SSG-520,spaghetti,FOUND,spaghetti
+SSG-520,orangejuice,REPLACE,orange juice
+SSG-520,lemonade,FOUND,lemonade
+SSG-520,koolaid,EXCLUDE,EXCLUDE
+SSG-520,candy,FOUND,candy
+SSG-520,juice,FOUND,juice
+SUG-544,pizza,FOUND,pizza
+SUG-544,potato,FOUND,potato
+SUG-544,corn,FOUND,corn
+SUG-544,beans,FOUND,beans
+SUG-544,soup,FOUND,soup
+SUG-544,pepsi,EXCLUDE,EXCLUDE
+SUG-544,cherrypepsi,EXCLUDE,EXCLUDE
+SUG-544,icee,REPLACE,ice
+SUG-544,tea,FOUND,tea
+SUG-544,drpepper,REPLACE,pepper
+SUG-544,lemonade,FOUND,lemonade
+SUG-544,watermelon,FOUND,watermelon
+SUG-544,pumpkin,FOUND,pumpkin
+SUG-544,pumpkinpie,REPLACE,pumpkin pie
+SUG-544,cherry,FOUND,cherry
+SUG-544,apple,FOUND,apple
+SUG-544,orange,FOUND,orange
+SVH-570,cake,FOUND,cake
+SVH-570,icedcream,REPLACE,ice cream
+SVH-570,popsicles,REPLACE,popsicle
+SVH-570,fruit,FOUND,fruit
+SVH-570,meatloaf,FOUND,meatloaf
+SVH-570,barbecueribs,EXCLUDE,EXCLUDE
+SVH-570,milk,FOUND,milk
+SVH-570,water,FOUND,water
+SVH-570,orangejuice,REPLACE,orange juice
+SVH-570,applejuice,EXCLUDE,EXCLUDE
+SVH-570,steak,FOUND,steak
+SVH-570,broccoli,FOUND,broccoli
+SVH-570,lettuce,FOUND,lettuce
+SVH-570,salad,FOUND,salad
+SVH-570,dietcoke,EXCLUDE,EXCLUDE
+SVH-570,sprite,REPLACE,spice
+SVY-587,peaches,REPLACE,peach
+SVY-587,apples,REPLACE,apple
+SVY-587,soda,FOUND,soda
+SVY-587,chicken,FOUND,chicken
+SVY-587,squid,FOUND,squid
+SVY-587,carrots,FOUND,carrots
+SVY-587,cabbage,FOUND,cabbage
+SVY-587,lettuce,FOUND,lettuce
+SVY-587,breadsticks,FOUND,breadsticks
+SVY-587,marinarasauce,EXCLUDE,EXCLUDE
+SVY-587,pizza,FOUND,pizza
+SVY-587,chickennuggets,REPLACE,chicken nuggets
+SVY-587,frenchfries,REPLACE,french fries
+SVY-587,hotdogs,REPLACE,hotdog
+SVY-587,hamburgers,REPLACE,hamburger
+SVY-587,cheese,FOUND,cheese
+SVY-587,yogurt,FOUND,yogurt
+SVY-587,peanutbutter,REPLACE,peanut butter
+SVY-587,soup,FOUND,soup
+SZA-781,spaghetti,FOUND,spaghetti
+SZA-781,applejuice,EXCLUDE,EXCLUDE
+SZA-781,v8,EXCLUDE,EXCLUDE
+SZA-781,tomatoes,REPLACE,tomato
+SZA-781,vegetables,FOUND,vegetables
+SZA-781,applecider,EXCLUDE,EXCLUDE
+SZA-781,cranberryjuice,EXCLUDE,EXCLUDE
+SZA-781,asparagus,FOUND,asparagus
+SZA-781,salmon,FOUND,salmon
+SZA-781,tunafish,EXCLUDE,EXCLUDE

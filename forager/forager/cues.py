@@ -185,3 +185,15 @@ class phonology_funcs:
 
 ### SAMPLE RUN CODE ###
 #create_semantic_matrix('../data/lexical_data/USE_embeddings.csv')
+
+## sample code for phonological simimilarityu
+
+# w1 = "coffee"
+# w2 = "tea"
+
+# ph_w1 = phonology_funcs.wordbreak(w1)[0]
+# ph_w2 = phonology_funcs.wordbreak(w2)[0]
+# print(ph_w1)
+# print(ph_w2)
+# print(phonology_funcs.normalized_edit_distance(ph_w1, ph_w2))
+

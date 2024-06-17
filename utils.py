@@ -11,14 +11,15 @@ Args:
 Returns:
     (1) merged_df: a merged dataframe containing data from both df1 and df2
 '''
-def merge_results_hearing_status(df1, df2, column_title):
-    df1 = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/individual_descriptive_stats.csv")
+def merge_results_hearing_status(column_title):
+    df1 = pd.read_csv("forager/output/corrected_forager_results/individual_descriptive_stats.csv")
     #print(df1)
     df2 = pd.read_csv("forager/data/fluency_lists/cochlear_status_data.csv")
     #print(df2)
-    results_path = 'forager/output/cochlear_food_fulldata_forager_results/merge_results.csv'
+    results_path = 'forager/output/corrected_forager_results/merge_results.csv'
     merged_df = pd.merge(df1,df2, on=column_title, how='left')
-    return merged_df
+    merged_df.to_csv(path_or_buf=results_path)
+
 
 '''
 Args:

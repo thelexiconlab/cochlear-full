@@ -1,8 +1,7 @@
 from utils import *
 
 '''merge_results_hearing_status'''
-#print(merge_results_hearing_status(df1,df2,"Subject"))
-#merge_results_hearing_status(df1,df2).to_csv(path_or_buf=results_path)
+#merge_results_hearing_status("Subject")
 
 '''extract_unique'''
 #extract_unique("forager/data/fluency_lists/speech2vec_100.txt")
