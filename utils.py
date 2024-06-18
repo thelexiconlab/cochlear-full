@@ -522,17 +522,35 @@ H1 = "µ1 - µ2 ≠ 0"
 # 0.46484518,0.41250202,0.61157537,2,0.6310249,0.677289,0.82806998,0.69959005,2,0.33435483,0.70480168,0.60541344,2,0.62934154,
 # 0.67720272,2,2,0.69100039,2,0.76105386,2,0.64101077,0.45494416,0.50591456,2,0.72658966,])
 
-t_stat, p_value = stats.ttest_ind(zerospeech,zeroword)
+#t_stat, p_value = stats.ttest_ind(zerospeech,zeroword)
 
-alpha = 0.05
-print(len(zerospeech))
-print(len(zeroword))
-if p_value < alpha:
-    print(t_stat)
-    print(p_value)
-    print("Reject null hypothesis: There is a significant difference between the groups.")
-else:
-    print(t_stat)
-    print(p_value)
-    print("Fail to reject null hypothesis: There is no significant difference between the groups.")
+# alpha = 0.05
+# print(len(zerospeech))
+# print(len(zeroword))
+# if p_value < alpha:
+#     print(t_stat)
+#     print(p_value)
+#     print("Reject null hypothesis: There is a significant difference between the groups.")
+# else:
+#     print(t_stat)
+#     print(p_value)
+#     print("Fail to reject null hypothesis: There is no significant difference between the groups.")
 
+'''
+Args:
+    (1) replacements_csv_path: the string file path to the .csv file containing the entries and the correspodning
+    speech2vec replacements
+
+Returns:
+    (1) 
+'''
+def repetitions_after_replacement(replacements_csv_path):
+    replacement_df = pd.read_csv(replacements_csv_path)
+    replacement_df['Previous_Replacement'] = replacement_df['Speech2vec_Replacement'].shift(1)
+    replacement_df['Replacement_Comparison'] = (replacement_df['Speech2vec_Replacement'] == replacement_df['Previous_Replacement']).astype(int)
+
+    results_path = "forager/output/repetitions_after_relacement.csv"
+    replacement_df.to_csv(path_or_buf=results_path)
+    print(replacement_df)
+
+repetitions_after_replacement("forager/data/fluency_lists/speech2vec_replacements.csv")
