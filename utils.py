@@ -1,15 +1,15 @@
 import pandas as pd
 import difflib
 import numpy as np
+import scipy.stats as stats
 
 '''
 Args: 
-    (1) df1: the base dataframe for data to be merged to
-    (2) df2: the dataframe containing the data desired to be merged/added to df1
-    (3) column_title: the string title of the column or index level to on (must be found in both dataframes)
+    (1) column_title: the string title of the column or index level to on (must be found in both dataframes)
 
 Returns:
-    (1) merged_df: a merged dataframe containing data from both df1 and df2
+    (1) merged_df: a merged dataframe containing data from both df1 and df2 (currently static and assigned inside
+    the function itself)
 '''
 def merge_results_hearing_status(column_title):
     df1 = pd.read_csv("forager/output/corrected_forager_results/individual_descriptive_stats.csv")
@@ -19,18 +19,19 @@ def merge_results_hearing_status(column_title):
     results_path = 'forager/output/corrected_forager_results/merge_results.csv'
     merged_df = pd.merge(df1,df2, on=column_title, how='left')
     merged_df.to_csv(path_or_buf=results_path)
+    return merged_df
 
 
 '''
 Args:
-    (1) file: the string file path to the file, which will be split on spaces
+    (1) file path: the string file path to the file, which will be split on spaces
 
 Returns:
     (1) speech2vec_vocab.csv: a file in the lexical_data folder that conatins a list of all unique words 
     extracted from the above file
 '''
-def extract_unique(file):
-    open_file = open(file, "r")
+def extract_unique(file_path):
+    open_file = open(file_path, "r")
     #unique_words = {}
     word_list = []
     for line in open_file.readlines():
@@ -62,9 +63,9 @@ def calc_semantic_sim(first_word, second_word):
 
 '''
 Args:
-    (1) vocab_file: the string file path to the vocab file
-    (2) data_file: the string file path to the data file, to be evaluated against the larger vocab file
-    (3) data_csv: the data file in .csv form
+    (1) vocab_file_path: the string file path to the vocab file
+    (2) data_file_path: the string file path to the data file, to be evaluated against the larger vocab file
+    (3) data_csv_path: the data file in .csv form
     (4) column_title: the string title of the column in the data file, from which one extracts data to be 
     compared to the vocab file
 
@@ -72,10 +73,10 @@ Returns:
     (1) speech2vec_vocab_check.csv: a file in the output folder containing the data entries, whether or not 
     they were present in the vocab, and the difflib get_close_matches from the vocab 
 '''
-def vocab_check(vocab_file, data_file, data_csv, column_title):
-    food_data_df = pd.read_csv(data_csv)
+def vocab_check(vocab_file_path, data_file_path, data_csv_path, column_title):
+    food_data_df = pd.read_csv(data_csv_path)
     
-    vocab = open(vocab_file, "r")
+    vocab = open(vocab_file_path, "r")
     speech2vec_vocab_list = []
     vocab_lines = vocab.readlines()
     label_skipped = vocab_lines[1: ]
@@ -83,7 +84,7 @@ def vocab_check(vocab_file, data_file, data_csv, column_title):
         split_line = line.split(" ")
         speech2vec_vocab_list.append(split_line[0])
     
-    data = open(data_file, "r")
+    data = open(data_file_path, "r")
     food_data_list = []
     for item in food_data_df.loc[:, (column_title)]:
         food_data_list.append(item)
@@ -106,16 +107,16 @@ def vocab_check(vocab_file, data_file, data_csv, column_title):
 
 '''
 Args:
-    (1) csv_file: the string file path to the .csv file containing the data to be unduplicated
+    (1) csv_file_path: the string file path to the .csv file containing the data to be unduplicated
     (2) column_title: the string title of the column in the .csv file, from which one extracts data
 
 Returns:
     (1) food_data_no_dups.csv: a file in the fluency_lists folder containing the data from the 
     specified column of the .csv file, with no duplicate entries
 '''
-def unduplicate(csv_file, column_title):
-    csv_df = pd.read_csv(csv_file)
-    vocab = open(csv_file, "r")
+def unduplicate(csv_file_path, column_title):
+    csv_df = pd.read_csv(csv_file_path)
+    vocab = open(csv_file_path, "r")
     word_set = set([])
     unduped_df = pd.DataFrame()
     for item in csv_df.loc[:, (column_title)]:
@@ -126,14 +127,14 @@ def unduplicate(csv_file, column_title):
 
 '''
 Args:
-    (1) filename: the string file path to the file from which vocab data will be extracted
+    (1) filename_path: the string file path to the file from which vocab data will be extracted
 
 Returns:
     (2) vocab_list: a list containing all individual data entries from filename, minus the first row 
     (often the column label)
 '''
-def read_extract_list(filename):
-    vocab = open(filename, "r")
+def read_extract_list(filename_path):
+    vocab = open(filename_path, "r")
     vocab_list = []
     list_of_lines = vocab.readlines()
     label_skipped = list_of_lines[1: ]
@@ -146,15 +147,15 @@ def read_extract_list(filename):
 Args:
     (1) word1: a string word to be compared to another
     (2) word2: a string word to be compared to another
-    (3) filename: the string file path to the file from which a word (key): list of float embeddings (value)
+    (3) filename_path: the string file path to the file from which a word (key): list of float embeddings (value)
     dictionary will be constructed and utilized to calculate the cosine similarity between word1 and word2
 
 Returns:
     (1) cosine_sim: the float represntation of the cosine similarity between word1 and word2, formatted in 
     this template - "Cosine Similarity: x"
 '''
-def cosine_similarity(word1, word2, filename):
-    file = open(filename, "r")
+def cosine_similarity(word1, word2, filename_path):
+    file = open(filename_path, "r")
     word_embeddings = {}
     list_of_lines = file.readlines()
     first_line_skipped = list_of_lines[1: ]
@@ -184,7 +185,7 @@ def cosine_similarity(word1, word2, filename):
 
 '''
 Args:
-    (1) food_data_csv: the string file path to the .csv file of the food data
+    (1) food_data_csv_path: the string file path to the .csv file of the food data
 
 Returns:
     (1) pairwise_sim_df: a dataframe including pairwise cosine similarity calculations using speech2vec and
@@ -195,62 +196,74 @@ def calc_pairwise_sim(food_data_csv_path):
     pairwise_sim_df = pd.DataFrame()
     food_csv_df = pd.read_csv(food_data_csv_path)
     subjects = food_csv_df['id'].tolist()
-    #subjects = extract_subject(food_data_csv, "id")
-    #print(subjects)
     entries = food_csv_df['entry'].tolist()
-    #entries = extract_entries(food_data_csv, "entry")
-    #print(entries)
 
     pairwise_sim_df['Subject'] = subjects
     pairwise_sim_df['Fluency_Item'] = entries
 
+    grouped = food_csv_df.groupby('id')
+
+    full_df = pd.DataFrame()
+    for name,group in grouped:
+        id_list = group['entry'].to_list()
+        stats_df = id_df(id_list)
+        stats_df["ID"]= name
+        full_df = pd.concat([full_df, stats_df], ignore_index = True)
     
-    speech_pair_cosines = pairwise_sim("forager/data/fluency_lists/speech2vec_100.txt", entries)
-    pairwise_sim_df['Speech2vec_Pairwise_Cosine_Similarity'] = speech_pair_cosines
-    print(pairwise_sim_df.head())
-    print(len(pairwise_sim_df))
-
-    word_pair_cosines = pairwise_sim(food_data_csv, "forager/data/fluency_lists/word2vec_100.txt")
-    pairwise_sim_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
-    print(pairwise_sim_df.head())
-
-    print("pair cosines completed")
-    # #adding in pre-existing phonological and frequency data from lexical_results.csv
-    # lexical_results = pd.read_csv("forager/output/cochlear_food_fulldata_forager_results/lexical_results.csv")
-    
-    # lexical_results['response_number'] = lexical_results.groupby(['Subject']).cumcount()+1
-    # print("lexical_results=", lexical_results.head())
-
-    # pairwise_sim_df['response_number'] = pairwise_sim_df.groupby(['Subject']).cumcount()+1
-    # print("lexical_results=", pairwise_sim_df.head())
-
-    ## join with pairwise_sim_df
-    # final_df = pd.merge(pairwise_sim_df, lexical_results, on=['Subject', 'Fluency_Item'], how='left')
-    # print(len(final_df))
-    # final_df['Previous_Word_Frequency'] = final_df['Frequency_Value'].shift(1)
-    # final_df['Composite_Frequency'] = final_df['Frequency_Value']*final_df['Previous_Word_Frequency']
-    # print("final df has X rows:", len(final_df))
-    # print("entries has X rows", len(entries))
-    final_df = pairwise_phon(entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
-
-    # print(len(final_df))
-    # print(final_df)
-
-    csv_path = "forager/output/final_pairwise_cosine_sim.csv"
-    final_df.to_csv(csv_path, index=False)
+    csv_path = "forager/output/optimized_pairwise_cosine_sim.csv"
+    full_df.to_csv(csv_path, index=False)
     print("done")
 
 '''
 Args:
-    (1) food_data_csv: the string file path to the .csv file of the food data
+    (1) id_entries: a list of the entries and fluency items generated, specific to a single individual (ID)
+
+Retunrns:
+    (1) id_df: a dataframe containing the pairiwse cosine similairty calculated from speech2vec and word2vec
+    dictionaries, phonological similairty calculations from scratch, and composite frequency analysis for that 
+    specific individual (ID)
+
+'''
+def id_df(id_entries):
+    id_df = pd.DataFrame()
+    #creating entries common column
+    id_df['Fluency_Item'] = id_entries
+    #calculating pairwise cosine similarity using Speech2vec
+    speech_pair_cosines = pairwise_sim("forager/data/fluency_lists/speech2vec_100.txt", id_entries)
+    id_df['Speech2vec_Pairwise_Cosine_Similarity'] = speech_pair_cosines
+    #print("speech pairwise complete")
+
+    #calculating pairwise cosine similarity using Word2vec
+    word_pair_cosines = pairwise_sim("forager/data/fluency_lists/word2vec_100.txt", id_entries)
+    id_df['Word2vec_Pairwise_Cosine_Similarity'] = word_pair_cosines
+    #print("word pairwise complete")
+
+    #calculating pairwise phonological similarity from scratch
+    pairwise_phon_stats = pairwise_phon(id_entries, "forager/data/lexical_data/vocab.csv", "forager/data/lexical_data/USE_phonological_matrix.csv")
+    id_df['Phonological_Scratch'] = pairwise_phon_stats
+    #print("phon pairwise complete")
+
+    #adding in pre-existing phonological and frequency data from lexical_results.csv
+    id_df['Frequency_Value'] = get_frequency(id_entries, "forager/data/lexical_data/USE_frequencies.csv")
+    id_df['Previous_Word_Frequency'] = id_df['Frequency_Value'].shift(1)
+    id_df['Composite_Frequency'] = id_df['Frequency_Value']*id_df['Previous_Word_Frequency']
+
+    #print("id_df complete")
+    #print(id_df)
+
+    return id_df
+
+'''
+Args:
+    (1) food_data_csv_path: the string file path to the .csv file of the food data
     (2) subject_column_title: the string title of the column in the .csv file, from which one extracts 
     subject data
 
 Returns:
     (1) subject_list: a list of each individual subject extracted from the food_data_csv 
 '''
-def extract_subject(food_data_csv, subject_column_title):
-    food_csv_df = pd.read_csv(food_data_csv)
+def extract_subject(food_data_csv_path, subject_column_title):
+    food_csv_df = pd.read_csv(food_data_csv_path)
     subject_list = []
 
     for item in food_csv_df.loc[:, (subject_column_title)]:
@@ -259,15 +272,15 @@ def extract_subject(food_data_csv, subject_column_title):
 
 '''
 Args:
-    (1) food_data_csv: the string file path to the .csv file of the food data
+    (1) food_data_csv_path: the string file path to the .csv file of the food data
     (2) entry_column_title: the string title of the column in the .csv file, from which one extracts 
     entry data
 
 Returns:
     (1) entry_list: a list of the food fluency items extracted from the food_data_csv
 '''
-def extract_entries(food_data_csv, entry_column_title):
-    food_csv_df = pd.read_csv(food_data_csv)
+def extract_entries(food_data_csv_path, entry_column_title):
+    food_csv_df = pd.read_csv(food_data_csv_path)
     entry_list = []
 
     for item in food_csv_df.loc[:, (entry_column_title)]:
@@ -318,15 +331,15 @@ def pairwise_sim(dict_file_path, entries):
 Args:
     (1) entries: a list of the data that will be compared and pairwise phonological similarity will be
     calculated
-    (2) vocab_csv: the string file path to the vocabulary specific to this domain of data
-    (3) phon_matrix: the string file path to the phonological matrix that is specific to this domain of data
+    (2) vocab_csv_path: the string file path to the vocabulary specific to this domain of data
+    (3) phon_matrix_path: the string file path to the phonological matrix that is specific to this domain of data
 
 Returns:
     (1) pairwise_phons: a list of the pairwise phonological similarity calculations
 '''
-def pairwise_phon(entries, vocab_csv, phon_matrix):
+def pairwise_phon(entries, vocab_csv_path, phon_matrix):
     phon_matrix_df = pd.read_csv(phon_matrix, header=None)
-    vocab_df = pd.read_csv(vocab_csv)
+    vocab_df = pd.read_csv(vocab_csv_path)
 
     vocab = {}
     for index,word in vocab_df.itertuples():
@@ -357,6 +370,15 @@ def pairwise_phon(entries, vocab_csv, phon_matrix):
     #print("length of pairwise_phon:", len(pairwise_phons))
     return pairwise_phons
 
+'''
+Args:
+    (1) entries: list of the entries/fluency items for a specific individual
+    (2) freq_csv_path: the string file path to the .csv file containing the frequency values pertaining to each 
+    word existent in the vocab
+
+Returns:
+    (1) frequencies: a list of the frequency values corresponding to the specfic entries for that individual
+'''
 def get_frequency(entries, freq_csv_path):
     freq_df = pd.read_csv(freq_csv_path,header=None)
     freq_df.columns = ["Entry", "Frequency_Value", "Count"]
@@ -371,5 +393,3 @@ def get_frequency(entries, freq_csv_path):
     # print(len(merged_df))
     # print(frequencies)
     return frequencies
-
-#get_frequency(["acornsquash","adobo", "alcohol"], "forager/data/lexical_data/USE_frequencies.csv")
