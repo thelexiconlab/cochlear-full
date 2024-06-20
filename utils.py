@@ -544,13 +544,19 @@ Args:
 Returns:
     (1) 
 '''
-def repetitions_after_replacement(replacements_csv_path):
+def repetitions_after_replacement(food_data_csv_path,replacements_csv_path):
+    print("running")
+    data_df = pd.read_csv(food_data_csv_path)
     replacement_df = pd.read_csv(replacements_csv_path)
-    replacement_df['Previous_Replacement'] = replacement_df['Speech2vec_Replacement'].shift(1)
-    replacement_df['Replacement_Comparison'] = (replacement_df['Speech2vec_Replacement'] == replacement_df['Previous_Replacement']).astype(int)
+    merged_df = pd.merge(data_df,replacement_df,on="entry",how="left")
+    print(merged_df)
 
-    results_path = "forager/output/repetitions_after_relacement.csv"
-    replacement_df.to_csv(path_or_buf=results_path)
-    print(replacement_df)
 
-repetitions_after_replacement("forager/data/fluency_lists/speech2vec_replacements.csv")
+    # replacement_df['Previous_Replacement'] = replacement_df['Speech2vec_Replacement'].shift(1)
+    # replacement_df['Replacement_Comparison'] = (replacement_df['Speech2vec_Replacement'] == replacement_df['Previous_Replacement']).astype(int)
+
+    # results_path = "forager/output/repetitions_after_relacement.csv"
+    # replacement_df.to_csv(path_or_buf=results_path)
+    # print(replacement_df)
+
+repetitions_after_replacement("forager/data/fluency_lists/food_data.txt","forager/data/fluency_lists/speech2vec_replacements.csv")
