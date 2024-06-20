@@ -26,7 +26,7 @@ from utils import *
 
 '''calc_pairwise_sim'''
 #calc_pairwise_sim("forager/data/fluency_lists/test_data.csv")
-calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
+#calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
 
 '''extract_entries'''
 #extract_entries("forager/data/fluency_lists/food_data - Sheet1.csv", "entry")
@@ -43,3 +43,6 @@ calc_pairwise_sim("forager/data/fluency_lists/food_data - Sheet1.csv")
 
 '''get_frequency'''
 #get_frequency(["acornsquash","adobo", "alcohol"], "forager/data/lexical_data/USE_frequencies.csv")
+
+'''repetitions_after_replacement'''
+#repetitions_after_replacement("forager/data/fluency_lists/food_data - Sheet1.csv","forager/data/fluency_lists/speech2vec_replacements.csv")

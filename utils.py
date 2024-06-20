@@ -1,5 +1,6 @@
 import pandas as pd
 import difflib
+import math
 import numpy as np
 from scipy import stats
 
@@ -188,8 +189,9 @@ Args:
     (1) food_data_csv_path: the string file path to the .csv file of the food data
 
 Returns:
-    (1) pairwise_sim_df: a dataframe including pairwise cosine similarity calculations using speech2vec and
+    (1) full_df: a dataframe including pairwise cosine similarity calculations using speech2vec and
     word2vec, as well as composite frequency analysis
+    (2) optimized_pairwise_cosine_sim.csv: a .csv version of the full_df, routed to the output of forager
 '''
 def calc_pairwise_sim(food_data_csv_path):
     print("running")
@@ -213,12 +215,13 @@ def calc_pairwise_sim(food_data_csv_path):
     csv_path = "forager/output/optimized_pairwise_cosine_sim.csv"
     full_df.to_csv(csv_path, index=False)
     print("done")
+    return full_df
 
 '''
 Args:
     (1) id_entries: a list of the entries and fluency items generated, specific to a single individual (ID)
 
-Retunrns:
+Returns:
     (1) id_df: a dataframe containing the pairiwse cosine similairty calculated from speech2vec and word2vec
     dictionaries, phonological similairty calculations from scratch, and composite frequency analysis for that 
     specific individual (ID)
@@ -395,7 +398,7 @@ def get_frequency(entries, freq_csv_path):
     return frequencies
 
 '''
-Hypotheis Testing Code: evaluating pairiwse summary statistics calcuated for both NHs and CIs for phonological
+Hypothesis Testing Code: evaluating pairiwse summary statistics calcuated for both NHs and CIs for phonological
 transitions (zero and non-zero) and frequency transitions (high and low)
 
 Type of test: independent groups t-test
@@ -522,6 +525,27 @@ H1 = "µ1 - µ2 ≠ 0"
 # 0.46484518,0.41250202,0.61157537,2,0.6310249,0.677289,0.82806998,0.69959005,2,0.33435483,0.70480168,0.60541344,2,0.62934154,
 # 0.67720272,2,2,0.69100039,2,0.76105386,2,0.64101077,0.45494416,0.50591456,2,0.72658966,])
 
+'''
+Data used is commented out above.
+
+Hypothesis Testing Code: evaluating pairiwse summary statistics calcuated for both NHs and CIs for phonological
+transitions (zero and non-zero) and frequency transitions (high and low)
+
+Type of test: independent groups t-test
+
+Args:
+    (1) dataset1: a dataset of the dependent variable of one group
+    (2) dataset1: a dataset of the dependent variable of a second group
+
+Returns:
+    (1) A decision conerning the null hypothesis based on the alpha level 0.5 and the t-statistic calculated 
+    between groups.
+'''
+
+#Define null and alternative hypothesis
+H0 = "µ1 - µ2 = 0"
+H1 = "µ1 - µ2 ≠ 0"
+
 #t_stat, p_value = stats.ttest_ind(zerospeech,zeroword)
 
 # alpha = 0.05
@@ -538,25 +562,40 @@ H1 = "µ1 - µ2 ≠ 0"
 
 '''
 Args:
-    (1) replacements_csv_path: the string file path to the .csv file containing the entries and the correspodning
-    speech2vec replacements
+    (1) food_data_csv_path: the string file path to the .csv file containing the food data in its entirety
+    (2) replacements_csv_path: the string file path to the .csv file containing the food data exclusions and the 
+    corresponding speech2vec replacements
 
 Returns:
-    (1) 
+    (1) merged_df: a dataframe containing participant ids, initial entries, necessary speech2vec replacements,
+    and pairiwse analysis of potential repeptitions between entries after replacements have been made
+    (2) repetitions_after_relacement.csv: a .csv version of the merged_df, routed to the output folder of forager
 '''
 def repetitions_after_replacement(food_data_csv_path,replacements_csv_path):
     print("running")
     data_df = pd.read_csv(food_data_csv_path)
     replacement_df = pd.read_csv(replacements_csv_path)
-    merged_df = pd.merge(data_df,replacement_df,on="entry",how="left")
-    print(merged_df)
+    merged_df = pd.merge(data_df,replacement_df,on='entry',how='left')
 
+    replacements_list = merged_df['Speech2vec_Replacement'].tolist()
+    entry_list = data_df['entry'].tolist()
+    merge_list = []
+    
+    idx = 0
+    for value in replacements_list:
+        if isinstance(value,str) == False:
+            merge_list.append(entry_list[idx])
+        else:
+            merge_list.append(value)
+        idx += 1
+    merged_df['Replacements_Made'] = merge_list
 
-    # replacement_df['Previous_Replacement'] = replacement_df['Speech2vec_Replacement'].shift(1)
-    # replacement_df['Replacement_Comparison'] = (replacement_df['Speech2vec_Replacement'] == replacement_df['Previous_Replacement']).astype(int)
+    merged_df['Previous_Replacement'] = merged_df['Replacements_Made'].shift(1)
+    merged_df['Replacement_Comparison'] = (merged_df['Speech2vec_Replacement'] == merged_df['Previous_Replacement']).astype(int)
 
-    # results_path = "forager/output/repetitions_after_relacement.csv"
-    # replacement_df.to_csv(path_or_buf=results_path)
-    # print(replacement_df)
+    #print(merged_df)
+    results_path = "forager/output/repetitions_after_relacement.csv"
+    merged_df.to_csv(path_or_buf=results_path)
+    print("done")
 
-repetitions_after_replacement("forager/data/fluency_lists/food_data.txt","forager/data/fluency_lists/speech2vec_replacements.csv")
+    return merged_df
