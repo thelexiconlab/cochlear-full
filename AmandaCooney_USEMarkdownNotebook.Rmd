@@ -1,0 +1,402 @@
+---
+title: "Amanda_CooneyUSEMarkdownNotebook"
+output:
+  pdf_document: default
+  html_document: default
+date: "2024-08-01"
+---
+
+# Graphical and Statistical Analysis of Food and Animal Data using USE
+
+This notebook details the analysis of Animal and Food VFT data of normal hearing (NH) individuals compared with prelingually deaf individuals with cochlear implants (CI), using Universal Sentence Encoder. Analysis includes three main levels of comparison: semantic similarity, frequency value, and phonological similarity.
+
+## Initial Graphical Analysis of Food Data
+
+This section compares the Food data of NH and CI individuals in regard to semantic similarity, frequency value, and phonological similarity. 
+
+### Group Differences in Mean Semantic Similarity
+
+```{r}
+library(ggplot2)
+
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Food_Summary_Stats_Data.csv", header = TRUE)
+
+CI <- which(data$Group == "CI")
+NH <- which(data$Group == "NH")
+
+CI_sem <- data[CI,]$Semantic_Similarity_mean
+NH_sem <- data[NH,]$Semantic_Similarity_mean
+
+mean_sem <- c(mean(CI_sem),mean(NH_sem))
+groups_sem <- c("CI","NH")
+
+sem_df <- data.frame(Group = groups_sem, means = mean_sem)
+
+sem_graph <- ggplot(sem_df, aes(x = Group, y = means, fill = Group)) +
+  geom_bar(stat = "identity") +
+  labs(x = "Hearing Status", y = "Mean Semantic Similarity", title = "Group Differences in Mean Semantic Similarity (Food Domain)") +
+  coord_cartesian(ylim = c(0,0.5))
+```
+
+### Group Differences in Mean Frequency Value
+
+```{r}
+library(ggplot2)
+
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Food_Summary_Stats_Data.csv", header = TRUE)
+
+CI <- which(data$Group == "CI")
+NH <- which(data$Group == "NH")
+
+CI_freq <- data[CI,]$Frequency_Value_mean
+NH_freq <- data[NH,]$Frequency_Value_mean
+
+means <- c(mean(CI_freq),mean(NH_freq))
+groups <- c("CI","NH")
+
+freq_df <- data.frame(Group = groups,means = means)
+
+freq_graph <- ggplot(freq_df, aes(x = Group, y = means, fill = Group)) +
+  geom_bar(stat = "identity") + 
+  labs(x = "Hearing Status", y = "Mean Frequency Value", title = "Group Differences in Mean Frequency Value (Food Domain)") +
+  coord_cartesian(ylim = c(0,7))
+```
+
+### Group Differences in Mean Phonological Similiarity
+
+```{r}
+library(ggplot2)
+
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Food_Summary_Stats_Data.csv", header = TRUE)
+
+CI <- which(data$Group == "CI")
+NH <- which(data$Group == "NH")
+
+CI_phon <- data[CI,]$Values_Computed_from_Phonological_Means
+NH_phon <- data[NH,]$Values_Computed_from_Phonological_Means
+
+mean_phon <- c(mean(CI_phon, na.rm = TRUE),mean(NH_phon, na.rm = TRUE))
+groups_phon <- c("CI","NH")
+
+phon_df <- data.frame(Group = groups_phon, means = mean_phon)
+
+phon_graph <- ggplot(phon_df, aes(x = Group, y = means, fill = Group)) +
+  geom_bar(stat = "identity") +
+  labs(x = "Hearing Status", y = "Mean Phonological Similarity", title = "Group Differences in Mean Phonological Similarity (Food Domain)") +
+  coord_cartesian(ylim = c(0,0.125))
+```
+
+## Initial Graphical Analysis of Animal Data
+
+This section compares the Animal data of NH and CI individuals in regard to semantic similarity, frequency value, and phonological similarity. 
+
+### Group Differences in Mean Semantic Similarity
+
+```{r}
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Animal_Summary_Stats_Data.csv", header = TRUE)
+
+#extracting specific data from larger csv file
+CI <- which(data$Group =="CI")
+CI_freq <- data[CI,]$Frequency_Value_mean
+
+NH <-which(data$Group == "NH")
+NH_freq <- data[NH,]$Frequency_Value_mean
+means <- c(mean(CI_freq),mean(NH_freq))
+groups <- c("CI","NH")
+
+CI_sem <- data[CI,]$Semantic_Similarity_mean
+NH_sem <- data[NH,]$Semantic_Similarity_mean
+
+mean_sem <- c(mean(CI_sem),mean(NH_sem))
+groups_sem <- c("CI","NH")
+
+sem_df <- data.frame(Group = groups_sem, means = mean_sem)
+
+sem_graph <- ggplot(sem_df, aes(x = Group, y = means, fill = Group)) +
+  geom_bar(stat = "identity") +
+  labs(x = "Hearing Status", y = "Mean Semantic Similarity", title = "Group Differences in Mean Semantic Similarity (Animal Domain)") +
+  coord_cartesian(ylim = c(0,0.5))
+```
+
+### Group Differences in Mean Frequency Value
+
+```{r}
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Animal_Summary_Stats_Data.csv", header = TRUE)
+
+#extracting specific data from larger csv file
+CI <- which(data$Group =="CI")
+CI_freq <- data[CI,]$Frequency_Value_mean
+
+NH <-which(data$Group == "NH")
+NH_freq <- data[NH,]$Frequency_Value_mean
+means <- c(mean(CI_freq),mean(NH_freq))
+groups <- c("CI","NH")
+
+freq_df <- data.frame(Group = groups,means = means)
+
+freq_graph <- ggplot(freq_df, aes(x = Group, y = means, fill = Group)) +
+  geom_bar(stat = "identity") + 
+  labs(x = "Hearing Status", y = "Mean Frequency Value", title = "Group Differences in Mean Frequency Value (Animal Domain)") +
+  coord_cartesian(ylim = c(0,7))
+```
+
+### Group Differences in Mean Phonological Similarity
+
+```{r}
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Animal_Summary_Stats_Data.csv", header = TRUE)
+
+#extracting specific data from larger csv file
+CI <- which(data$Group =="CI")
+CI_freq <- data[CI,]$Frequency_Value_mean
+
+NH <-which(data$Group == "NH")
+NH_freq <- data[NH,]$Frequency_Value_mean
+means <- c(mean(CI_freq),mean(NH_freq))
+groups <- c("CI","NH")
+
+CI_phon <- data[CI,]$Phonological_Similarity_mean
+NH_phon <- data[NH,]$Phonological_Similarity_mean
+
+mean_phon <- c(mean(CI_phon),mean(NH_phon))
+groups_phon <- c("CI","NH")
+
+phon_df <- data.frame(Group = groups_phon, means = mean_phon)
+
+phon_graph <- ggplot(phon_df, aes(x = Group, y = means, fill = Group)) +
+  geom_bar(stat = "identity") +
+  labs(x = "Hearing Status", y = "Mean Phonological Similarity", title = "Group Differences in Mean Phonological Similarity (Animal Domain)") +
+  coord_cartesian(ylim = c(0,0.1))
+```
+
+### Scatterplot of Mean Phonological Similarity vs. Number of Items Generated
+
+```{r}
+data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/Grouped_Animal_Summary_Stats_Data.csv", header = TRUE)
+
+#extracting specific data from larger csv file
+CI <- which(data$Group =="CI")
+CI_freq <- data[CI,]$Frequency_Value_mean
+
+NH <-which(data$Group == "NH")
+NH_freq <- data[NH,]$Frequency_Value_mean
+means <- c(mean(CI_freq),mean(NH_freq))
+groups <- c("CI","NH")
+
+subset_data <- data[,c("Phonological_Similarity_mean","Number_of_Items", "Group")]
+no_NA_data <- which(subset_data$Group != "NA")
+
+scatterplot <- ggplot(subset_data[no_NA_data,], aes(x = Phonological_Similarity_mean, y = Number_of_Items, color=Group)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Mean Phonological Similarity", y = "Number of Items Generated", title = "Scatter plot of Mean Phonological Similarity vs. Number of Items Generated in NH and CI Individuals") +
+  coord_cartesian(ylim = c(0,40))
+```
+
+## Refined Graphical and Statistical Analysis of Food and Animal Data
+
+This section reflects a secondary round of analysis after replacements for previous exclusions were made to the vocabularies programmed into USE.
+
+### Group Differences in Mean Semantic Similarity
+
+```{r}
+library(ggplot2)
+
+animal_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalAnimalDescStats_Grouped.csv")
+
+CI_animals <- which(animal_data$Group == "CI")
+NH_animals <- which(animal_data$Group == "NH")
+
+CI_animals_sem <- animal_data[CI,]$Semantic_Similarity_mean
+NH_animals_sem <- animal_data[NH,]$Semantic_Similarity_mean
+
+animal_mean_sem <- c(mean(CI_animals_sem),mean(NH_animals_sem))
+groups_sem <- c("CI","NH")
+
+CI_animals_sem_std <- animal_data[CI,]$Semantic_Similarity_std
+NH_animals_sem_std <- animal_data[NH,]$Semantic_Similarity_std
+
+animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
+
+animal_df <- data.frame(Group = groups_sem, means = animal_mean_sem, stdv = animal_mean_std, Domain = "Animals")
+
+food_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalFoodDescStats_Grouped.csv")
+
+CI_foods <- which(food_data$Group == "CI")
+NH_foods <- which(food_data$Group == "NH")
+
+CI_food_sem <- food_data[CI,]$Semantic_Similarity_mean
+NH_food_sem <- food_data[NH,]$Semantic_Similarity_mean
+
+food_mean_sem <- c(mean(CI_food_sem),mean(NH_food_sem))
+groups_sem <- c("CI","NH")
+
+CI_foods_sem_std <- food_data[CI,]$Semantic_Similarity_std
+NH_foods_sem_std <- food_data[NH,]$Semantic_Similarity_std
+
+food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
+
+food_df <- data.frame(Group = groups_sem, means = food_mean_sem, stdv = food_mean_std, Domain = "Foods")
+
+combined_df <- rbind(food_df, animal_df)
+
+refined_sem_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Group)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_errorbar(aes(ymin = means - stdv, ymax = means + stdv), 
+                width = 0.2,
+                position = position_dodge(width = 0.9)) +
+  labs(x = "Hearing Status", y = "Mean Semantic Similarity", title = "Group Differences in Mean Semantic Similarity")
+
+#performing t-test for mean semantic similarity of NH in Animal vs. Food Domain
+t_test_result <- t.test(NH_animals_sem,NH_food_sem)
+print(t_test_result)
+
+#performing t-test for mean semantic similarity of CI in Animal vs. Food Domain
+t_test_result <- t.test(CI_animals_sem,CI_food_sem)
+print(t_test_result)
+
+#performing t-test for mean semantic similarity between CI and NH in Animal Domain
+t_test_result <- t.test(CI_animals_sem,NH_animals_sem)
+print(t_test_result)
+
+#performing t-test for mean semantic similarity between CI and NH in Food Domain 
+t_test_result <- t.test(CI_food_sem,NH_food_sem)
+print(t_test_result)
+
+```
+
+### Group Differences in Mean Frequency Value
+
+```{r}
+library(ggplot2)
+
+animal_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalAnimalDescStats_Grouped.csv")
+
+CI_animals <- which(animal_data$Group == "CI")
+NH_animals <- which(animal_data$Group == "NH")
+
+CI_animals_freq <- animal_data[CI,]$Frequency_Value_mean
+NH_animals_freq <- animal_data[NH,]$Frequency_Value_mean
+
+animal_means_freq <- c(mean(CI_animals_freq),mean(NH_animals_freq))
+groups <- c("CI","NH")
+
+CI_animals_sem_std <- animal_data[CI,]$Frequency_Value_std
+NH_animals_sem_std <- animal_data[NH,]$Frequency_Value_std
+
+animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
+
+animal_freq_df <- data.frame(Group = groups, means = animal_means_freq, stdv = animal_mean_std, Domain = "Animals")
+
+food_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalFoodDescStats_Grouped.csv")
+
+CI_foods <- which(food_data$Group == "CI")
+NH_foods <- which(food_data$Group == "NH")
+
+CI_food_freq <- food_data[CI,]$Frequency_Value_mean
+NH_food_freq <- food_data[NH,]$Frequency_Value_mean
+
+food_means_freq <- c(mean(CI_food_freq),mean(NH_food_freq))
+groups <- c("CI","NH")
+
+CI_foods_sem_std <- food_data[CI,]$Frequency_Value_std
+NH_foods_sem_std <- food_data[NH,]$Frequency_Value_std
+
+food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
+
+food_freq_df <- data.frame(Group = groups, means = food_means_freq, stdv = food_mean_std, Domain = "Foods")
+
+combined_df <- rbind(food_freq_df, animal_freq_df)
+
+refined_freq_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Group)) +
+  geom_bar(stat = "identity", position = "dodge") + 
+  geom_errorbar(aes(ymin = means - stdv, ymax = means + stdv), 
+                width = 0.2,
+                position = position_dodge(width = 0.9)) +
+  labs(x = "Hearing Status", y = "Mean Frequency Value", title = "Group Differences in Mean Frequency Value")
+
+#performing t-test for mean frequency value of NH in Animal vs. Food Domain
+t_test_result <- t.test(NH_animals_freq,NH_food_freq)
+print(t_test_result)
+
+#performing t-test for mean frequency value of CI in Animal vs. Food Domain
+t_test_result <- t.test(CI_animals_freq,CI_food_freq)
+print(t_test_result)
+
+#performing t-test for mean frequency value between CI and NH in Animal Domain
+t_test_result <- t.test(CI_animals_freq,NH_animals_freq)
+print(t_test_result)
+
+#performing t-test for mean frequency value between CI and NH in Food Domain 
+t_test_result <- t.test(CI_food_freq,NH_food_freq)
+print(t_test_result)
+
+```
+
+### Group Differences in Mean Phonological Similarity
+
+```{r}
+library(ggplot2)
+
+animal_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalAnimalDescStats_Grouped.csv")
+
+CI_animals <- which(animal_data$Group == "CI")
+NH_animals <- which(animal_data$Group == "NH")
+
+CI_animals_phon <- animal_data[CI,]$Phonological_Similarity_mean
+NH_animals_phon <- animal_data[NH,]$Phonological_Similarity_mean
+
+animal_mean_phon <- c(mean(CI_animals_phon, na.rm = TRUE),mean(NH_animals_phon, na.rm = TRUE))
+groups_phon <- c("CI","NH")
+
+CI_animals_sem_std <- animal_data[CI,]$Phonological_Similarity_std
+NH_animals_sem_std <- animal_data[NH,]$Phonological_Similarity_std
+
+animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
+
+animal_phon_df <- data.frame(Group = groups_phon, means = animal_mean_phon, stdv = animal_mean_std, Domain = "Animals")
+
+food_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalFoodDescStats_Grouped.csv")
+
+CI_foods <- which(food_data$Group == "CI")
+NH_foods <- which(food_data$Group == "NH")
+
+CI_foods_phon <- food_data[CI,]$Phonological_Similarity_mean
+NH_foods_phon <- food_data[NH,]$Phonological_Similarity_mean
+
+food_mean_phon <- c(mean(CI_foods_phon, na.rm = TRUE),mean(NH_foods_phon, na.rm = TRUE))
+groups_phon <- c("CI","NH")
+
+CI_foods_sem_std <- food_data[CI,]$Phonological_Similarity_std
+NH_foods_sem_std <- food_data[NH,]$Phonological_Similarity_std
+
+food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
+
+food_phon_df <- data.frame(Group = groups_phon, means = food_mean_phon, stdv = food_mean_std, Domain = "Foods")
+
+combined_df <- rbind(food_phon_df, animal_phon_df)
+
+refined_phon_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Group)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_errorbar(aes(ymin = means - stdv, ymax = means + stdv), 
+                width = 0.2,
+                position = position_dodge(width = 0.9)) +
+  labs(x = "Hearing Status", y = "Mean Phonological Similarity", title = "Group Differences in Mean Phonological Similarity")
+
+#performing t-test for mean phonological similarity of NH in Animal vs. Food Domain
+t_test_result <- t.test(NH_animals_phon,NH_foods_phon)
+print(t_test_result)
+
+#performing t-test for mean phonological similarity of CI in Animal vs. Food Domain
+t_test_result <- t.test(CI_animals_phon,CI_foods_phon)
+print(t_test_result)
+
+#performing t-test for mean phonological similarity between CI and NH in Animal Domain
+t_test_result <- t.test(CI_animals_phon,NH_animals_phon)
+print(t_test_result)
+
+#performing t-test for mean phonological similarity between CI and NH in Food Domain 
+t_test_result <- t.test(CI_foods_phon,NH_foods_phon)
+print(t_test_result)
+
+```
+
