@@ -206,14 +206,14 @@ animal_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/
 CI_animals <- which(animal_data$Group == "CI")
 NH_animals <- which(animal_data$Group == "NH")
 
-CI_animals_sem <- animal_data[CI,]$Semantic_Similarity_mean
-NH_animals_sem <- animal_data[NH,]$Semantic_Similarity_mean
+CI_animals_sem <- animal_data[CI_animals,]$Semantic_Similarity_mean
+NH_animals_sem <- animal_data[NH_animals,]$Semantic_Similarity_mean
 
 animal_mean_sem <- c(mean(CI_animals_sem),mean(NH_animals_sem))
 groups_sem <- c("CI","NH")
 
-CI_animals_sem_std <- animal_data[CI,]$Semantic_Similarity_std
-NH_animals_sem_std <- animal_data[NH,]$Semantic_Similarity_std
+CI_animals_sem_std <- animal_data[CI_animals,]$Semantic_Similarity_std
+NH_animals_sem_std <- animal_data[NH_animals,]$Semantic_Similarity_std
 
 animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
 
@@ -224,14 +224,14 @@ food_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/le
 CI_foods <- which(food_data$Group == "CI")
 NH_foods <- which(food_data$Group == "NH")
 
-CI_food_sem <- food_data[CI,]$Semantic_Similarity_mean
-NH_food_sem <- food_data[NH,]$Semantic_Similarity_mean
+CI_food_sem <- food_data[CI_foods,]$Semantic_Similarity_mean
+NH_food_sem <- food_data[NH_foods,]$Semantic_Similarity_mean
 
 food_mean_sem <- c(mean(CI_food_sem),mean(NH_food_sem))
 groups_sem <- c("CI","NH")
 
-CI_foods_sem_std <- food_data[CI,]$Semantic_Similarity_std
-NH_foods_sem_std <- food_data[NH,]$Semantic_Similarity_std
+CI_foods_sem_std <- food_data[CI_foods,]$Semantic_Similarity_std
+NH_foods_sem_std <- food_data[NH_foods,]$Semantic_Similarity_std
 
 food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
 
@@ -265,6 +265,72 @@ print(t_test_result)
 ```
 
 ### Group Differences in Mean Frequency Value
+
+```{r}
+library(ggplot2)
+
+animal_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalAnimalDescStats_Grouped.csv")
+
+CI_animals <- which(animal_data$Group == "CI")
+NH_animals <- which(animal_data$Group == "NH")
+
+CI_animals_freq <- animal_data[CI_animals,]$Frequency_Value_mean
+NH_animals_freq <- animal_data[NH_animals,]$Frequency_Value_mean
+
+animal_means_freq <- c(mean(CI_animals_freq),mean(NH_animals_freq))
+groups <- c("CI","NH")
+
+CI_animals_sem_std <- animal_data[CI_animals,]$Frequency_Value_std
+NH_animals_sem_std <- animal_data[NH_animals,]$Frequency_Value_std
+
+animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
+
+animal_freq_df <- data.frame(Group = groups, means = animal_means_freq, stdv = animal_mean_std, Domain = "Animals")
+
+food_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalFoodDescStats_Grouped.csv")
+
+CI_foods <- which(food_data$Group == "CI")
+NH_foods <- which(food_data$Group == "NH")
+
+CI_food_freq <- food_data[CI_foods,]$Frequency_Value_mean
+NH_food_freq <- food_data[NH_foods,]$Frequency_Value_mean
+
+food_means_freq <- c(mean(CI_food_freq),mean(NH_food_freq))
+groups <- c("CI","NH")
+
+CI_foods_sem_std <- food_data[CI_foods,]$Frequency_Value_std
+NH_foods_sem_std <- food_data[NH_foods,]$Frequency_Value_std
+
+food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
+
+food_freq_df <- data.frame(Group = groups, means = food_means_freq, stdv = food_mean_std, Domain = "Foods")
+
+combined_df <- rbind(food_freq_df, animal_freq_df)
+
+refined_freq_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Group)) +
+  geom_bar(stat = "identity", position = "dodge") + 
+  geom_errorbar(aes(ymin = means - stdv, ymax = means + stdv), 
+                width = 0.2,
+                position = position_dodge(width = 0.9)) +
+  labs(x = "Hearing Status", y = "Mean Frequency Value", title = "Group Differences in Mean Frequency Value")
+
+#performing t-test for mean frequency value of NH in Animal vs. Food Domain
+t_test_result <- t.test(NH_animals_freq,NH_food_freq)
+print(t_test_result)
+
+#performing t-test for mean frequency value of CI in Animal vs. Food Domain
+t_test_result <- t.test(CI_animals_freq,CI_food_freq)
+print(t_test_result)
+
+#performing t-test for mean frequency value between CI and NH in Animal Domain
+t_test_result <- t.test(CI_animals_freq,NH_animals_freq)
+print(t_test_result)
+
+#performing t-test for mean frequency value between CI and NH in Food Domain 
+t_test_result <- t.test(CI_food_freq,NH_food_freq)
+print(t_test_result)
+
+`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ### Group Differences in Mean Frequency Value
 
 ```{r}
 library(ggplot2)
