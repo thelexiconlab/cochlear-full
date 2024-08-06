@@ -247,19 +247,19 @@ refined_sem_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Group
   labs(x = "Hearing Status", y = "Mean Semantic Similarity", title = "Group Differences in Mean Semantic Similarity")
 
 #performing t-test for mean semantic similarity of NH in Animal vs. Food Domain
-t_test_result <- t.test(NH_animals_sem,NH_food_sem)
+t_test_result <- t.test(NH_animals_sem,NH_food_sem, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean semantic similarity of CI in Animal vs. Food Domain
-t_test_result <- t.test(CI_animals_sem,CI_food_sem)
+t_test_result <- t.test(CI_animals_sem,CI_food_sem, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean semantic similarity between CI and NH in Animal Domain
-t_test_result <- t.test(CI_animals_sem,NH_animals_sem)
+t_test_result <- t.test(CI_animals_sem,NH_animals_sem, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean semantic similarity between CI and NH in Food Domain 
-t_test_result <- t.test(CI_food_sem,NH_food_sem)
+t_test_result <- t.test(CI_food_sem,NH_food_sem, var.equal = TRUE)
 print(t_test_result)
 
 ```
@@ -315,85 +315,19 @@ refined_freq_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Grou
   labs(x = "Hearing Status", y = "Mean Frequency Value", title = "Group Differences in Mean Frequency Value")
 
 #performing t-test for mean frequency value of NH in Animal vs. Food Domain
-t_test_result <- t.test(NH_animals_freq,NH_food_freq)
+t_test_result <- t.test(NH_animals_freq,NH_food_freq, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean frequency value of CI in Animal vs. Food Domain
-t_test_result <- t.test(CI_animals_freq,CI_food_freq)
+t_test_result <- t.test(CI_animals_freq,CI_food_freq, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean frequency value between CI and NH in Animal Domain
-t_test_result <- t.test(CI_animals_freq,NH_animals_freq)
+t_test_result <- t.test(CI_animals_freq,NH_animals_freq, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean frequency value between CI and NH in Food Domain 
-t_test_result <- t.test(CI_food_freq,NH_food_freq)
-print(t_test_result)
-
-`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ### Group Differences in Mean Frequency Value
-
-```{r}
-library(ggplot2)
-
-animal_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalAnimalDescStats_Grouped.csv")
-
-CI_animals <- which(animal_data$Group == "CI")
-NH_animals <- which(animal_data$Group == "NH")
-
-CI_animals_freq <- animal_data[CI,]$Frequency_Value_mean
-NH_animals_freq <- animal_data[NH,]$Frequency_Value_mean
-
-animal_means_freq <- c(mean(CI_animals_freq),mean(NH_animals_freq))
-groups <- c("CI","NH")
-
-CI_animals_sem_std <- animal_data[CI,]$Frequency_Value_std
-NH_animals_sem_std <- animal_data[NH,]$Frequency_Value_std
-
-animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
-
-animal_freq_df <- data.frame(Group = groups, means = animal_means_freq, stdv = animal_mean_std, Domain = "Animals")
-
-food_data <- read.csv("~/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/lexicon lab/FinalFoodDescStats_Grouped.csv")
-
-CI_foods <- which(food_data$Group == "CI")
-NH_foods <- which(food_data$Group == "NH")
-
-CI_food_freq <- food_data[CI,]$Frequency_Value_mean
-NH_food_freq <- food_data[NH,]$Frequency_Value_mean
-
-food_means_freq <- c(mean(CI_food_freq),mean(NH_food_freq))
-groups <- c("CI","NH")
-
-CI_foods_sem_std <- food_data[CI,]$Frequency_Value_std
-NH_foods_sem_std <- food_data[NH,]$Frequency_Value_std
-
-food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
-
-food_freq_df <- data.frame(Group = groups, means = food_means_freq, stdv = food_mean_std, Domain = "Foods")
-
-combined_df <- rbind(food_freq_df, animal_freq_df)
-
-refined_freq_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Group)) +
-  geom_bar(stat = "identity", position = "dodge") + 
-  geom_errorbar(aes(ymin = means - stdv, ymax = means + stdv), 
-                width = 0.2,
-                position = position_dodge(width = 0.9)) +
-  labs(x = "Hearing Status", y = "Mean Frequency Value", title = "Group Differences in Mean Frequency Value")
-
-#performing t-test for mean frequency value of NH in Animal vs. Food Domain
-t_test_result <- t.test(NH_animals_freq,NH_food_freq)
-print(t_test_result)
-
-#performing t-test for mean frequency value of CI in Animal vs. Food Domain
-t_test_result <- t.test(CI_animals_freq,CI_food_freq)
-print(t_test_result)
-
-#performing t-test for mean frequency value between CI and NH in Animal Domain
-t_test_result <- t.test(CI_animals_freq,NH_animals_freq)
-print(t_test_result)
-
-#performing t-test for mean frequency value between CI and NH in Food Domain 
-t_test_result <- t.test(CI_food_freq,NH_food_freq)
+t_test_result <- t.test(CI_food_freq,NH_food_freq, var.equal = TRUE)
 print(t_test_result)
 
 ```
@@ -417,7 +351,7 @@ groups_phon <- c("CI","NH")
 CI_animals_sem_std <- animal_data[CI,]$Phonological_Similarity_std
 NH_animals_sem_std <- animal_data[NH,]$Phonological_Similarity_std
 
-animal_mean_std <- c(mean(CI_animals_sem_std),mean(NH_animals_sem_std))
+animal_mean_std <- c(mean(CI_animals_sem_std, na.rm = TRUE),mean(NH_animals_sem_std, na.rm = TRUE))
 
 animal_phon_df <- data.frame(Group = groups_phon, means = animal_mean_phon, stdv = animal_mean_std, Domain = "Animals")
 
@@ -435,7 +369,7 @@ groups_phon <- c("CI","NH")
 CI_foods_sem_std <- food_data[CI,]$Phonological_Similarity_std
 NH_foods_sem_std <- food_data[NH,]$Phonological_Similarity_std
 
-food_mean_std <- c(mean(CI_foods_sem_std),mean(NH_foods_sem_std))
+food_mean_std <- c(mean(CI_foods_sem_std, na.rm = TRUE),mean(NH_foods_sem_std, na.rm = TRUE))
 
 food_phon_df <- data.frame(Group = groups_phon, means = food_mean_phon, stdv = food_mean_std, Domain = "Foods")
 
@@ -449,19 +383,19 @@ refined_phon_graph <- ggplot(combined_df, aes(x = Domain, y = means, fill = Grou
   labs(x = "Hearing Status", y = "Mean Phonological Similarity", title = "Group Differences in Mean Phonological Similarity")
 
 #performing t-test for mean phonological similarity of NH in Animal vs. Food Domain
-t_test_result <- t.test(NH_animals_phon,NH_foods_phon)
+t_test_result <- t.test(NH_animals_phon,NH_foods_phon, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean phonological similarity of CI in Animal vs. Food Domain
-t_test_result <- t.test(CI_animals_phon,CI_foods_phon)
+t_test_result <- t.test(CI_animals_phon,CI_foods_phon, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean phonological similarity between CI and NH in Animal Domain
-t_test_result <- t.test(CI_animals_phon,NH_animals_phon)
+t_test_result <- t.test(CI_animals_phon,NH_animals_phon, var.equal = TRUE)
 print(t_test_result)
 
 #performing t-test for mean phonological similarity between CI and NH in Food Domain 
-t_test_result <- t.test(CI_foods_phon,NH_foods_phon)
+t_test_result <- t.test(CI_foods_phon,NH_foods_phon, var.equal = TRUE)
 print(t_test_result)
 
 ```
