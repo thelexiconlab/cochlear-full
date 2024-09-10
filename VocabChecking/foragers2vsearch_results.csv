@@ -1,0 +1,2083 @@
+Forager_Word,Original Found,ReplFound,Close Matches in S2V
+aardvark,FALSE,FALSE,No close match found
+aardwolf,FALSE,FALSE,No close match found
+abalone,FALSE,FALSE,No close match found
+abeja,FALSE,FALSE,No close match found
+addax,FALSE,FALSE,No close match found
+adder,TRUE,TRUE,"adder, sadder, madder"
+adelgid,FALSE,FALSE,No close match found
+adelie penguin,FALSE,FALSE,No close match found
+aedes aegypti,FALSE,FALSE,No close match found
+affenpinscher,FALSE,FALSE,No close match found
+afghan hound,FALSE,FALSE,No close match found
+african dog,FALSE,FALSE,No close match found
+african elephant,FALSE,FALSE,No close match found
+african wild dog,FALSE,FALSE,No close match found
+agama,FALSE,FALSE,No close match found
+agouti,FALSE,FALSE,No close match found
+airedale terrier,FALSE,FALSE,No close match found
+akita,FALSE,FALSE,No close match found
+albacore,FALSE,FALSE,No close match found
+albatross,TRUE,TRUE,"albatross, albatrosses"
+albino python,FALSE,FALSE,No close match found
+alga,FALSE,FALSE,No close match found
+alligator,TRUE,TRUE,"alligator, alligators"
+alligator lizard,FALSE,FALSE,No close match found
+alligator snapping turtle,FALSE,FALSE,No close match found
+allosaurus,FALSE,FALSE,No close match found
+alpaca,TRUE,TRUE,alpaca
+amberjack,FALSE,FALSE,No close match found
+american toad,FALSE,FALSE,No close match found
+amoeba,FALSE,FALSE,No close match found
+amphibian,FALSE,FALSE,No close match found
+amphioxus,FALSE,FALSE,No close match found
+amphipod,FALSE,FALSE,No close match found
+anaconda,FALSE,FALSE,No close match found
+anchovy,TRUE,TRUE,anchovy
+anemone,TRUE,TRUE,anemone
+angelfish,FALSE,FALSE,No close match found
+anglerfish,FALSE,FALSE,No close match found
+angora goat,FALSE,FALSE,No close match found
+angora rabbit,FALSE,FALSE,No close match found
+anhinga,FALSE,FALSE,No close match found
+ankylosaur,FALSE,FALSE,No close match found
+annelid,FALSE,FALSE,No close match found
+anole,FALSE,FALSE,No close match found
+ant,TRUE,TRUE,ant
+anteater,FALSE,FALSE,No close match found
+antelope,TRUE,TRUE,"antelope, antelopes"
+antelope squirrel,FALSE,FALSE,No close match found
+anthropoid,FALSE,FALSE,No close match found
+antlion,FALSE,FALSE,No close match found
+apatosaurus,FALSE,FALSE,No close match found
+ape,TRUE,TRUE,ape
+aphid,FALSE,FALSE,No close match found
+aplysia,FALSE,FALSE,No close match found
+appaloosa,FALSE,FALSE,No close match found
+apple maggot,FALSE,FALSE,No close match found
+arachnid,FALSE,FALSE,No close match found
+arapaima,FALSE,FALSE,No close match found
+archaea,FALSE,FALSE,No close match found
+archeopteryx,FALSE,FALSE,No close match found
+archosaur,FALSE,FALSE,No close match found
+arctic char,FALSE,FALSE,No close match found
+arctic fox,FALSE,FALSE,No close match found
+argali,FALSE,FALSE,No close match found
+armadillo,FALSE,FALSE,No close match found
+armyworm,FALSE,FALSE,No close match found
+arrowhead dogfish,FALSE,FALSE,No close match found
+arrowhead shark,FALSE,FALSE,No close match found
+arthropod,FALSE,FALSE,No close match found
+ascidians,FALSE,FALSE,No close match found
+asian elephant,FALSE,FALSE,No close match found
+asp,TRUE,TRUE,asp
+ass,TRUE,TRUE,ass
+assassin bug,FALSE,FALSE,No close match found
+auk,FALSE,FALSE,No close match found
+auklet,FALSE,FALSE,No close match found
+auroch,FALSE,FALSE,No close match found
+australopithecine,FALSE,FALSE,No close match found
+avian,FALSE,FALSE,No close match found
+avocet,FALSE,FALSE,No close match found
+axolotl,FALSE,FALSE,No close match found
+aye aye,FALSE,FALSE,No close match found
+babirusa,FALSE,FALSE,No close match found
+baboon,TRUE,TRUE,baboon
+baby,TRUE,TRUE,baby
+baca,FALSE,FALSE,No close match found
+bacteria,FALSE,FALSE,No close match found
+badger,TRUE,TRUE,"badger, badgers, badge"
+bald eagle,FALSE,FALSE,No close match found
+baleen whale,FALSE,FALSE,No close match found
+banana slug,FALSE,FALSE,No close match found
+bandicoot,FALSE,FALSE,No close match found
+bantam,TRUE,TRUE,"bantam, banta"
+bark beetle,FALSE,FALSE,No close match found
+barn owl,FALSE,FALSE,No close match found
+barnacle,FALSE,FALSE,No close match found
+barnacle goose,FALSE,FALSE,No close match found
+barracuda,FALSE,FALSE,No close match found
+barramundi,FALSE,FALSE,No close match found
+barred owl,FALSE,FALSE,No close match found
+basenji,FALSE,FALSE,No close match found
+basilisk,TRUE,TRUE,basilisk
+basking shark,FALSE,FALSE,No close match found
+bass,TRUE,TRUE,bass
+basset hound,FALSE,FALSE,No close match found
+bat,TRUE,TRUE,bat
+batfish,FALSE,FALSE,No close match found
+bay scallop,FALSE,FALSE,No close match found
+baya,FALSE,FALSE,No close match found
+beaded lizard,FALSE,FALSE,No close match found
+beagle,TRUE,TRUE,"beagle, eagle, beale"
+beaked whale,FALSE,FALSE,No close match found
+bear,TRUE,TRUE,bear
+bear cub,FALSE,FALSE,No close match found
+bearcat,FALSE,FALSE,No close match found
+bearded dragon,FALSE,FALSE,No close match found
+bearded vulture,FALSE,FALSE,No close match found
+beaver,TRUE,TRUE,"beaver, beavers"
+bedbug,FALSE,FALSE,No close match found
+bee,TRUE,TRUE,bee
+bee eater,FALSE,FALSE,No close match found
+bee moth,FALSE,FALSE,No close match found
+beef cattle,FALSE,FALSE,No close match found
+beefalo,FALSE,FALSE,No close match found
+beet armyworm,FALSE,FALSE,No close match found
+beetle,TRUE,TRUE,"beetle, beetles"
+bellbird,FALSE,FALSE,No close match found
+belted kingfisher,FALSE,FALSE,No close match found
+beluga,FALSE,FALSE,No close match found
+beluga whale,FALSE,FALSE,No close match found
+bengal tiger,FALSE,FALSE,No close match found
+bernese mountain dog,FALSE,FALSE,No close match found
+bessbug,FALSE,FALSE,No close match found
+beta fish,FALSE,FALSE,No close match found
+betta,FALSE,FALSE,No close match found
+betta fish,FALSE,FALSE,No close match found
+bettong,FALSE,FALSE,No close match found
+bichon,FALSE,FALSE,No close match found
+bigeye,FALSE,FALSE,No close match found
+bighorn,FALSE,FALSE,No close match found
+bighorn sheep,FALSE,FALSE,No close match found
+bilbies,FALSE,FALSE,No close match found
+bilby,FALSE,FALSE,No close match found
+billfish,FALSE,FALSE,No close match found
+billy goat,FALSE,FALSE,No close match found
+binturong,FALSE,FALSE,No close match found
+bird,TRUE,TRUE,bird
+bison,TRUE,TRUE,bison
+biting midge,FALSE,FALSE,No close match found
+bittern,TRUE,TRUE,"bittern, bitter, bitten"
+bivalve,FALSE,FALSE,No close match found
+black bear,FALSE,TRUE,blackbeard
+black headed gull,FALSE,FALSE,No close match found
+black lab,FALSE,FALSE,No close match found
+black labrador,FALSE,FALSE,No close match found
+black mamba,FALSE,FALSE,No close match found
+black panther,FALSE,FALSE,No close match found
+black squirrel,FALSE,FALSE,No close match found
+black widow,FALSE,FALSE,No close match found
+black-capped chickadee,FALSE,FALSE,No close match found
+blackbird,TRUE,TRUE,"blackbird, blackbirds"
+blackbuck,FALSE,FALSE,No close match found
+blackcap,FALSE,FALSE,No close match found
+blackfish,FALSE,TRUE,blackish
+blackfly,FALSE,FALSE,No close match found
+blackpoll,FALSE,FALSE,No close match found
+blacktail,FALSE,FALSE,No close match found
+blacktail deer,FALSE,FALSE,No close match found
+blacktip reef shark,FALSE,FALSE,No close match found
+blacktip shark,FALSE,FALSE,No close match found
+blenny,FALSE,TRUE,benny
+blister beetle,FALSE,FALSE,No close match found
+blobfish,FALSE,FALSE,No close match found
+bloodhound,FALSE,TRUE,bloodhounds
+bloodworm,FALSE,FALSE,No close match found
+blowfish,FALSE,FALSE,No close match found
+blowfly,FALSE,FALSE,No close match found
+blubber fish,FALSE,FALSE,No close match found
+blue catfish,FALSE,FALSE,No close match found
+blue heron,FALSE,FALSE,No close match found
+blue jay,FALSE,FALSE,No close match found
+blue marlin,FALSE,FALSE,No close match found
+blue shark,FALSE,FALSE,No close match found
+blue whale,FALSE,FALSE,No close match found
+bluebill,FALSE,FALSE,No close match found
+bluebird,TRUE,TRUE,bluebird
+bluefin,FALSE,FALSE,No close match found
+bluefin tuna,FALSE,FALSE,No close match found
+bluefish,FALSE,FALSE,No close match found
+bluefooted booby,FALSE,FALSE,No close match found
+bluegill,FALSE,FALSE,No close match found
+bluetick,FALSE,FALSE,No close match found
+boa,TRUE,TRUE,boa
+boa constrictor,FALSE,FALSE,No close match found
+boar,TRUE,TRUE,boar
+bobcat,FALSE,FALSE,No close match found
+bobolink,FALSE,FALSE,No close match found
+bobtail,FALSE,FALSE,No close match found
+bobwhite,FALSE,FALSE,No close match found
+bobwhite quail,FALSE,FALSE,No close match found
+boll weevil,FALSE,FALSE,No close match found
+bollworm,FALSE,FALSE,No close match found
+bolognese,FALSE,FALSE,No close match found
+bombardier beetle,FALSE,FALSE,No close match found
+bonefish,FALSE,FALSE,No close match found
+bongo,FALSE,FALSE,No close match found
+bonito,FALSE,FALSE,No close match found
+bonnethead,FALSE,FALSE,No close match found
+bonobo,FALSE,FALSE,No close match found
+bony fish,FALSE,FALSE,No close match found
+booby,TRUE,TRUE,booby
+border collie,FALSE,FALSE,No close match found
+borzoi,FALSE,FALSE,No close match found
+boston terrier,FALSE,FALSE,No close match found
+botfly,FALSE,FALSE,No close match found
+boto,FALSE,FALSE,No close match found
+bottlenose,FALSE,FALSE,No close match found
+bottlenose dolphin,FALSE,FALSE,No close match found
+bottlenose whale,FALSE,FALSE,No close match found
+bovine,FALSE,FALSE,No close match found
+bowerbird,FALSE,FALSE,No close match found
+bowfin,FALSE,FALSE,No close match found
+bowhead,FALSE,FALSE,No close match found
+bowhead whale,FALSE,FALSE,No close match found
+box turtle,FALSE,FALSE,No close match found
+boxelder bug,FALSE,FALSE,No close match found
+boxer,TRUE,TRUE,boxer
+boxfish,FALSE,FALSE,No close match found
+brachiopod,FALSE,FALSE,No close match found
+brachiosaurus,FALSE,FALSE,No close match found
+bream,FALSE,FALSE,No close match found
+brimfish,FALSE,FALSE,No close match found
+brine shrimp,FALSE,FALSE,No close match found
+broadbill,FALSE,FALSE,No close match found
+broadtail,FALSE,FALSE,No close match found
+bronc,FALSE,FALSE,No close match found
+bronco,FALSE,TRUE,broncho
+brontosaurus,FALSE,FALSE,No close match found
+broodmare,FALSE,FALSE,No close match found
+broody hen,FALSE,FALSE,No close match found
+brook trout,FALSE,FALSE,No close match found
+brown bear,FALSE,FALSE,No close match found
+brown bullhead,FALSE,FALSE,No close match found
+brown creeper,FALSE,FALSE,No close match found
+brown hyena,FALSE,FALSE,No close match found
+brown recluse,FALSE,FALSE,No close match found
+brown recluse spider,FALSE,FALSE,No close match found
+brown thrasher,FALSE,FALSE,No close match found
+brown trout,FALSE,FALSE,No close match found
+bruin,TRUE,TRUE,bruin
+bryozoan,FALSE,FALSE,No close match found
+buck,TRUE,TRUE,buck
+bucking bronco,FALSE,FALSE,No close match found
+budgerigar,FALSE,FALSE,No close match found
+budgie,FALSE,TRUE,budge
+buffalo,TRUE,TRUE,buffalo
+bufflehead,FALSE,FALSE,No close match found
+bufo,FALSE,FALSE,No close match found
+bug,TRUE,TRUE,bug
+bulbul,FALSE,FALSE,No close match found
+bull,TRUE,TRUE,bull
+bull mastiff,FALSE,FALSE,No close match found
+bull shark,FALSE,FALSE,No close match found
+bull snake,FALSE,FALSE,No close match found
+bull terrier,FALSE,FALSE,No close match found
+bulldog,TRUE,TRUE,bulldog
+bullfinch,FALSE,FALSE,No close match found
+bullfrog,TRUE,TRUE,bullfrog
+bullhead,FALSE,FALSE,No close match found
+bullhead catfish,FALSE,FALSE,No close match found
+bullmastiff,FALSE,FALSE,No close match found
+bullock,TRUE,TRUE,"bullock, bullocks"
+bullsnake,FALSE,FALSE,No close match found
+bumblebee,TRUE,TRUE,bumblebee
+bunny,TRUE,TRUE,bunny
+bunny rabbit,FALSE,FALSE,No close match found
+bunting,TRUE,TRUE,bunting
+burbot,FALSE,FALSE,No close match found
+burmese mountain dog,FALSE,FALSE,No close match found
+burro,FALSE,TRUE,"burrow, burros"
+bush squirrel,FALSE,FALSE,No close match found
+bushbaby,FALSE,FALSE,No close match found
+bushbuck,FALSE,FALSE,No close match found
+bushmaster,FALSE,FALSE,No close match found
+bustard,FALSE,FALSE,No close match found
+butterfish,FALSE,FALSE,No close match found
+butterflies,TRUE,TRUE,butterflies
+butterfly,TRUE,TRUE,"butterfly, butterfly's"
+butterflyfish,FALSE,FALSE,No close match found
+buzzard,TRUE,TRUE,buzzard
+cactus wren,FALSE,FALSE,No close match found
+caddis fly,FALSE,FALSE,No close match found
+caecilian,FALSE,FALSE,No close match found
+caiman,FALSE,FALSE,No close match found
+cairn terrier,FALSE,FALSE,No close match found
+calf,TRUE,TRUE,calf
+calico cat,FALSE,FALSE,No close match found
+camel,TRUE,TRUE,"camel, camels"
+cameo,TRUE,TRUE,cameo
+canary,TRUE,TRUE,canary
+canebrake rattlesnake,FALSE,FALSE,No close match found
+canine,TRUE,TRUE,canine
+canis lupus,FALSE,FALSE,No close match found
+cankerworm,FALSE,FALSE,No close match found
+canvasback,FALSE,FALSE,No close match found
+canvasback duck,FALSE,FALSE,No close match found
+cape buffalo,FALSE,FALSE,No close match found
+capelin,FALSE,TRUE,caplin
+capercaillie,FALSE,FALSE,No close match found
+capibara,FALSE,FALSE,No close match found
+caplin,TRUE,TRUE,"caplin, chaplin"
+capon,FALSE,TRUE,"capron, capons"
+capuchin,FALSE,FALSE,No close match found
+capuchin monkey,FALSE,FALSE,No close match found
+capybara,FALSE,FALSE,No close match found
+carabao,FALSE,FALSE,No close match found
+caracal,FALSE,FALSE,No close match found
+caracara,FALSE,FALSE,No close match found
+cardinal,TRUE,TRUE,"cardinal, cardinals"
+caribou,TRUE,TRUE,caribou
+carp,TRUE,TRUE,carp
+carpenter ant,FALSE,FALSE,No close match found
+carpenter bee,FALSE,FALSE,No close match found
+carpet beetle,FALSE,FALSE,No close match found
+carrier pigeon,FALSE,FALSE,No close match found
+carrion crow,FALSE,FALSE,No close match found
+carthorse,FALSE,FALSE,No close match found
+cartilaginous fish,FALSE,FALSE,No close match found
+cassowary,FALSE,FALSE,No close match found
+cat,TRUE,TRUE,cat
+catamount,FALSE,FALSE,No close match found
+catbird,FALSE,FALSE,No close match found
+caterpillar,TRUE,TRUE,"caterpillar, caterpillars"
+catfish,FALSE,FALSE,No close match found
+cattle,TRUE,TRUE,cattle
+cattle egret,FALSE,FALSE,No close match found
+cavalier king charles spaniel,FALSE,FALSE,No close match found
+cavy,FALSE,FALSE,No close match found
+cayote,FALSE,FALSE,No close match found
+cedar waxwing,FALSE,FALSE,No close match found
+centipede,TRUE,TRUE,"centipede, centipedes"
+cephalopod,FALSE,FALSE,No close match found
+ceratopsian,FALSE,FALSE,No close match found
+cervid,FALSE,FALSE,No close match found
+cetacean,FALSE,TRUE,cetaceans
+chachalaca,FALSE,FALSE,No close match found
+chaffinch,TRUE,TRUE,chaffinch
+chain pickerel,FALSE,FALSE,No close match found
+chambered nautilus,FALSE,FALSE,No close match found
+chameleon,TRUE,TRUE,chameleon
+chamois,TRUE,TRUE,chamois
+channel catfish,FALSE,FALSE,No close match found
+char,TRUE,TRUE,char
+charolais,FALSE,FALSE,No close match found
+cheep,FALSE,FALSE,No close match found
+cheetah,FALSE,FALSE,No close match found
+chetah,FALSE,FALSE,No close match found
+chewbacca,FALSE,FALSE,No close match found
+chick,TRUE,TRUE,"chick, chicks"
+chickadee,TRUE,TRUE,chickadee
+chicken,TRUE,TRUE,"chicken, chickens"
+chigger,FALSE,FALSE,No close match found
+chihuahua,FALSE,FALSE,No close match found
+chimaera,TRUE,TRUE,"chimaera, chimera"
+chimp,FALSE,FALSE,No close match found
+chimpanzee,FALSE,FALSE,No close match found
+chinch bug,FALSE,FALSE,No close match found
+chinchilla,FALSE,FALSE,No close match found
+chinook,TRUE,TRUE,chinook
+chinook salmon,FALSE,FALSE,No close match found
+chipmunk,TRUE,TRUE,"chipmunk, chipmunks"
+chipping sparrow,FALSE,FALSE,No close match found
+chocolate labrador,FALSE,FALSE,No close match found
+chough,FALSE,TRUE,cough
+chow chow,FALSE,FALSE,No close match found
+christmas tree worm,FALSE,FALSE,No close match found
+chub,FALSE,FALSE,No close match found
+chum salmon,FALSE,FALSE,No close match found
+cicada,FALSE,FALSE,No close match found
+cicada killer,FALSE,FALSE,No close match found
+cichlid,FALSE,FALSE,No close match found
+cichlid fish,FALSE,FALSE,No close match found
+civet,FALSE,FALSE,No close match found
+civet cat,FALSE,FALSE,No close match found
+clam,TRUE,TRUE,clam
+cleaner shrimp,FALSE,FALSE,No close match found
+clown fish,FALSE,FALSE,No close match found
+clownfish,FALSE,FALSE,No close match found
+clydesdale,FALSE,FALSE,No close match found
+coati,FALSE,FALSE,No close match found
+coatimundi,FALSE,FALSE,No close match found
+cobia,FALSE,FALSE,No close match found
+cobra,TRUE,TRUE,cobra
+cochineal,TRUE,TRUE,cochineal
+cock,TRUE,TRUE,cock
+cockatiel,FALSE,FALSE,No close match found
+cockatoo,FALSE,FALSE,No close match found
+cocker,FALSE,TRUE,"crocker, cocke"
+cocker spaniel,FALSE,FALSE,No close match found
+cockerel,FALSE,FALSE,No close match found
+cockle,TRUE,TRUE,"cockle, cocke"
+cockroach,FALSE,FALSE,No close match found
+cockroaches,FALSE,FALSE,No close match found
+cod,TRUE,TRUE,cod
+codfish,TRUE,TRUE,codfish
+codling,FALSE,TRUE,coddling
+codling moth,FALSE,FALSE,No close match found
+coelacanth,FALSE,FALSE,No close match found
+coho,FALSE,FALSE,No close match found
+coho salmon,FALSE,FALSE,No close match found
+collared lizard,FALSE,FALSE,No close match found
+collared peccary,FALSE,FALSE,No close match found
+collie,TRUE,TRUE,collie
+colobus,FALSE,FALSE,No close match found
+colobus monkey,FALSE,FALSE,No close match found
+colt,TRUE,TRUE,colt
+colugo,FALSE,FALSE,No close match found
+comb jelly,FALSE,FALSE,No close match found
+common murre,FALSE,FALSE,No close match found
+common scoter,FALSE,FALSE,No close match found
+common yellowthroat,FALSE,FALSE,No close match found
+conch,FALSE,FALSE,No close match found
+condor,FALSE,FALSE,No close match found
+coney,TRUE,TRUE,"coney, corney, convey"
+conger,FALSE,FALSE,No close match found
+conger eel,FALSE,FALSE,No close match found
+constrictor,FALSE,FALSE,No close match found
+conure,FALSE,TRUE,conjure
+coonhound,FALSE,FALSE,No close match found
+coot,FALSE,FALSE,No close match found
+cooter,FALSE,FALSE,No close match found
+copepod,FALSE,FALSE,No close match found
+copperhead,FALSE,FALSE,No close match found
+copperhead snake,FALSE,FALSE,No close match found
+coq,FALSE,FALSE,No close match found
+coral,TRUE,TRUE,"coral, corral, corals"
+coral reef snake,FALSE,FALSE,No close match found
+coral snake,FALSE,FALSE,No close match found
+corbina,FALSE,FALSE,No close match found
+corgi,FALSE,FALSE,No close match found
+cormorant,FALSE,FALSE,No close match found
+corn borer,FALSE,FALSE,No close match found
+corn borer moth,FALSE,FALSE,No close match found
+corn earworm,FALSE,FALSE,No close match found
+corn snake,FALSE,FALSE,No close match found
+corncrake,FALSE,FALSE,No close match found
+cornish game hen,FALSE,FALSE,No close match found
+corydoras,FALSE,FALSE,No close match found
+cotton bollworm,FALSE,FALSE,No close match found
+cottonmouth,FALSE,FALSE,No close match found
+cottonmouth moccasin,FALSE,FALSE,No close match found
+cottontail,FALSE,FALSE,No close match found
+cottontail rabbit,FALSE,FALSE,No close match found
+cougar,TRUE,TRUE,cougar
+courser,TRUE,TRUE,"courser, coursers, course"
+cow,TRUE,TRUE,cow
+cowbird,FALSE,FALSE,No close match found
+cownose ray,FALSE,FALSE,No close match found
+cowrie,FALSE,FALSE,No close match found
+cowry,FALSE,FALSE,No close match found
+cows,TRUE,TRUE,cows
+coyote,TRUE,TRUE,"coyote, coyotes"
+coypu,FALSE,FALSE,No close match found
+crab,TRUE,TRUE,crab
+crane,TRUE,TRUE,"crane, cranes, craned"
+cranefly,FALSE,FALSE,No close match found
+crappie,FALSE,FALSE,No close match found
+crawdad,FALSE,FALSE,No close match found
+crawfish,TRUE,TRUE,crawfish
+crawler,FALSE,FALSE,No close match found
+crayfish,TRUE,TRUE,crayfish
+crevalle jack,FALSE,FALSE,No close match found
+cricket,TRUE,TRUE,"cricket, crickets"
+crinoid,FALSE,FALSE,No close match found
+croaker,FALSE,FALSE,No close match found
+croc,FALSE,FALSE,No close match found
+crocodile,TRUE,TRUE,"crocodile, crocodiles, crocodile's"
+crossbill,FALSE,FALSE,No close match found
+crow,TRUE,TRUE,crow
+crucian carp,FALSE,FALSE,No close match found
+crustacean,FALSE,TRUE,crustaceans
+cub,TRUE,TRUE,cub
+cuckoo,TRUE,TRUE,cuckoo
+culex pipiens,FALSE,FALSE,No close match found
+curlew,TRUE,TRUE,curlew
+cuscus,FALSE,FALSE,No close match found
+cusk,FALSE,FALSE,No close match found
+cuttlefish,TRUE,TRUE,cuttlefish
+cutworm,FALSE,FALSE,No close match found
+cygnet,FALSE,FALSE,No close match found
+dace,FALSE,FALSE,No close match found
+dachshund,FALSE,FALSE,No close match found
+daddy longlegs,FALSE,FALSE,No close match found
+dairy cattle,FALSE,FALSE,No close match found
+dairy cow,FALSE,FALSE,No close match found
+dall sheep,FALSE,FALSE,No close match found
+dalmatian,FALSE,TRUE,dalmatia
+damsel fish,FALSE,FALSE,No close match found
+damselfish,FALSE,FALSE,No close match found
+damselfly,FALSE,FALSE,No close match found
+daphnia,FALSE,FALSE,No close match found
+darkling beetle,FALSE,FALSE,No close match found
+darning needle,FALSE,FALSE,No close match found
+darter,FALSE,TRUE,"darters, arter"
+darwin frog,FALSE,FALSE,No close match found
+daschund,FALSE,FALSE,No close match found
+dear,TRUE,TRUE,dear
+decapod,FALSE,FALSE,No close match found
+deer,TRUE,TRUE,deer
+deerhound,TRUE,TRUE,deerhound
+degu,FALSE,FALSE,No close match found
+desert tortoise,FALSE,FALSE,No close match found
+devil,TRUE,TRUE,"devil, devils"
+devon rex,FALSE,FALSE,No close match found
+diamondback,FALSE,FALSE,No close match found
+diamondback rattlesnake,FALSE,FALSE,No close match found
+diamondback terrapin,FALSE,FALSE,No close match found
+dik-dik,FALSE,FALSE,No close match found
+dingo,FALSE,FALSE,No close match found
+dinosaur,FALSE,FALSE,No close match found
+dinosaurs,FALSE,FALSE,No close match found
+diplodocus,FALSE,FALSE,No close match found
+doberman,FALSE,FALSE,No close match found
+doberman pinscher,FALSE,FALSE,No close match found
+dodo,TRUE,TRUE,dodo
+dodo bird,FALSE,FALSE,No close match found
+doe,TRUE,TRUE,doe
+dog,TRUE,TRUE,dog
+dogfish,FALSE,FALSE,No close match found
+doggie,FALSE,FALSE,No close match found
+doggy,FALSE,FALSE,No close match found
+dogs,TRUE,TRUE,dogs
+dolphin,TRUE,TRUE,"dolphin, dolphins"
+dolphinfish,FALSE,FALSE,No close match found
+domingo,TRUE,TRUE,"domingo, domino"
+donkey,TRUE,TRUE,"donkey, donkeys"
+doodlebug,FALSE,FALSE,No close match found
+dormouse,TRUE,TRUE,dormouse
+dory,TRUE,TRUE,dory
+dotterel,FALSE,FALSE,No close match found
+double-crested cormorant,FALSE,FALSE,No close match found
+dove,TRUE,TRUE,dove
+downy woodpecker,FALSE,FALSE,No close match found
+dragon,TRUE,TRUE,"dragon, dragoon, dragons"
+dragon lizard,FALSE,FALSE,No close match found
+dragonfly,FALSE,FALSE,No close match found
+drake,TRUE,TRUE,"drake, draken"
+dray horse,FALSE,FALSE,No close match found
+dromedary,TRUE,TRUE,dromedary
+drosophila,FALSE,FALSE,No close match found
+drum fish,FALSE,FALSE,No close match found
+duck,TRUE,TRUE,duck
+duckbill,FALSE,FALSE,No close match found
+duckbilled platypus,FALSE,FALSE,No close match found
+duckling,TRUE,TRUE,"duckling, ducklings, ducking"
+ducks,TRUE,TRUE,ducks
+dugong,FALSE,FALSE,No close match found
+duiker,FALSE,FALSE,No close match found
+dung beetle,FALSE,FALSE,No close match found
+dungeness crab,FALSE,FALSE,No close match found
+dunlin,FALSE,FALSE,No close match found
+dusky shark,FALSE,FALSE,No close match found
+dwarf hamster,FALSE,FALSE,No close match found
+dwarf rabbit,FALSE,FALSE,No close match found
+dwarf sperm whale,FALSE,FALSE,No close match found
+eagle,TRUE,TRUE,"eagle, eagles, beagle"
+eagle ray,FALSE,FALSE,No close match found
+eaglet,FALSE,TRUE,eagle
+eared grebe,FALSE,FALSE,No close match found
+earthworm,FALSE,FALSE,No close match found
+earwig,FALSE,FALSE,No close match found
+eastern cottontail,FALSE,FALSE,No close match found
+eastern indigo snake,FALSE,FALSE,No close match found
+eastern kingbird,FALSE,FALSE,No close match found
+eastern lowland gorilla,FALSE,FALSE,No close match found
+eastern meadowlark,FALSE,FALSE,No close match found
+eastern newt,FALSE,FALSE,No close match found
+eastern toebiter,FALSE,FALSE,No close match found
+echidna,FALSE,FALSE,No close match found
+echinoderm,FALSE,FALSE,No close match found
+eel,TRUE,TRUE,eel
+eelpout,FALSE,FALSE,No close match found
+eels,TRUE,TRUE,eels
+egret,FALSE,TRUE,regret
+eider,TRUE,TRUE,eider
+eider duck,FALSE,FALSE,No close match found
+eland,FALSE,FALSE,No close match found
+electric eel,FALSE,FALSE,No close match found
+elephant,TRUE,TRUE,"elephant, elephants"
+elephant seal,FALSE,FALSE,No close match found
+elk,TRUE,TRUE,elk
+elkhound,FALSE,FALSE,No close match found
+elver,FALSE,FALSE,No close match found
+emerald shiner,FALSE,FALSE,No close match found
+emperor penguin,FALSE,FALSE,No close match found
+emu,FALSE,FALSE,No close match found
+equine,FALSE,FALSE,No close match found
+ermine,TRUE,TRUE,ermine
+escolar,FALSE,FALSE,No close match found
+eugarie,FALSE,FALSE,No close match found
+evening grosbeak,FALSE,FALSE,No close match found
+ewe,TRUE,TRUE,ewe
+fairy shrimp,FALSE,FALSE,No close match found
+fairy tern,FALSE,FALSE,No close match found
+falcon,TRUE,TRUE,"falcon, falcons"
+fall armyworm,FALSE,FALSE,No close match found
+fall webworm,FALSE,FALSE,No close match found
+fallow deer,FALSE,FALSE,No close match found
+fawn,TRUE,TRUE,fawn
+feline,TRUE,TRUE,feline
+fennec fox,FALSE,FALSE,No close match found
+ferret,TRUE,TRUE,ferret
+fiddler crab,FALSE,FALSE,No close match found
+filaria,FALSE,FALSE,No close match found
+filly,TRUE,TRUE,filly
+fin whale,FALSE,FALSE,No close match found
+finback,FALSE,FALSE,No close match found
+finback whale,FALSE,FALSE,No close match found
+finch,TRUE,TRUE,"finch, flinch"
+fire ant,FALSE,FALSE,No close match found
+firebird,FALSE,FALSE,No close match found
+firebug,FALSE,FALSE,No close match found
+firefly,TRUE,TRUE,firefly
+fish,TRUE,TRUE,fish
+fish eagle,FALSE,FALSE,No close match found
+fisher,TRUE,TRUE,"fisher, fishery, fishers"
+fisher cat,FALSE,FALSE,No close match found
+flacon,FALSE,FALSE,No close match found
+flamingo,FALSE,TRUE,flaming
+flatfish,FALSE,FALSE,No close match found
+flathead catfish,FALSE,FALSE,No close match found
+flatworm,FALSE,FALSE,No close match found
+flea,TRUE,TRUE,flea
+flea beetle,FALSE,FALSE,No close match found
+flies,TRUE,TRUE,flies
+flounder,TRUE,TRUE,"flounder, founder"
+fly,TRUE,TRUE,fly
+fly fish,FALSE,FALSE,No close match found
+flycatcher,TRUE,TRUE,flycatcher
+flying fish,FALSE,FALSE,No close match found
+flying monkey,FALSE,FALSE,No close match found
+flying snake,FALSE,FALSE,No close match found
+flying squirrel,FALSE,FALSE,No close match found
+foal,TRUE,TRUE,foal
+forest tent caterpillar,FALSE,FALSE,No close match found
+fossa,FALSE,FALSE,No close match found
+four eye butterfly fish,FALSE,FALSE,No close match found
+foureye butterflyfish,FALSE,FALSE,No close match found
+fowl,TRUE,TRUE,fowl
+fox,TRUE,TRUE,fox
+fox squirrel,FALSE,FALSE,No close match found
+fox terrier,FALSE,FALSE,No close match found
+foxes,TRUE,TRUE,foxes
+foxhound,TRUE,TRUE,foxhound
+french bulldog,FALSE,FALSE,No close match found
+fresh water fish,FALSE,FALSE,No close match found
+freshwater eel,FALSE,FALSE,No close match found
+freshwater fish,FALSE,FALSE,No close match found
+freshwater mussel,FALSE,FALSE,No close match found
+friesian,FALSE,FALSE,No close match found
+frog,TRUE,TRUE,frog
+frogfish,FALSE,FALSE,No close match found
+froghopper,FALSE,FALSE,No close match found
+frogmouth,FALSE,FALSE,No close match found
+fruit bat,FALSE,FALSE,No close match found
+fruit fly,FALSE,FALSE,No close match found
+fulmar,FALSE,FALSE,No close match found
+fungi,TRUE,TRUE,fungi
+fungus gnat,FALSE,FALSE,No close match found
+gaboon viper,FALSE,FALSE,No close match found
+gadfly,FALSE,FALSE,No close match found
+gal,TRUE,TRUE,gal
+gall midge,FALSE,FALSE,No close match found
+gall wasp,FALSE,FALSE,No close match found
+gallinule,FALSE,FALSE,No close match found
+gamecock,TRUE,TRUE,gamecock
+gander,TRUE,TRUE,"gander, grander"
+gannet,FALSE,FALSE,No close match found
+gar,TRUE,TRUE,gar
+garden snake,FALSE,FALSE,No close match found
+garfish,FALSE,TRUE,garish
+garibaldi,FALSE,FALSE,No close match found
+garter snake,FALSE,FALSE,No close match found
+gator,FALSE,FALSE,No close match found
+gaur,FALSE,FALSE,No close match found
+gavial,FALSE,FALSE,No close match found
+gazelle,TRUE,TRUE,gazelle
+gecko,FALSE,FALSE,No close match found
+geese,TRUE,TRUE,geese
+gelding,FALSE,FALSE,No close match found
+gemsbok,FALSE,FALSE,No close match found
+genet,FALSE,FALSE,No close match found
+geoduck,FALSE,FALSE,No close match found
+gerbil,FALSE,FALSE,No close match found
+gerbils,FALSE,FALSE,No close match found
+german shepard,FALSE,FALSE,No close match found
+german shepherd,FALSE,FALSE,No close match found
+gharial,FALSE,FALSE,No close match found
+ghost crab,FALSE,FALSE,No close match found
+giant,TRUE,TRUE,"giant, giants"
+giant anteater,FALSE,FALSE,No close match found
+giant panda,FALSE,FALSE,No close match found
+giant schnauzer,FALSE,FALSE,No close match found
+giant squid,FALSE,FALSE,No close match found
+giant tortoise,FALSE,FALSE,No close match found
+gibbon,TRUE,TRUE,"gibbon, gibbons"
+gila monster,FALSE,FALSE,No close match found
+giraffe,FALSE,FALSE,No close match found
+glaucus,TRUE,TRUE,glaucus
+glider,FALSE,TRUE,glide
+globefish,FALSE,FALSE,No close match found
+glowworm,FALSE,FALSE,No close match found
+gnat,TRUE,TRUE,gnat
+gnatcatcher,FALSE,FALSE,No close match found
+gnu,FALSE,FALSE,No close match found
+goanna,FALSE,FALSE,No close match found
+goat,TRUE,TRUE,goat
+goatfish,FALSE,FALSE,No close match found
+goats,TRUE,TRUE,"goats, goat's"
+goby,TRUE,TRUE,goby
+godwit,FALSE,FALSE,No close match found
+godzilla,FALSE,FALSE,No close match found
+gold fish,FALSE,TRUE,goldfish
+golden eagle,FALSE,FALSE,No close match found
+golden labrador,FALSE,FALSE,No close match found
+golden marmot,FALSE,FALSE,No close match found
+golden plover,FALSE,FALSE,No close match found
+golden retriever,FALSE,FALSE,No close match found
+golden shiner,FALSE,FALSE,No close match found
+goldendoodle,FALSE,FALSE,No close match found
+goldfinch,TRUE,TRUE,goldfinch
+goldfish,TRUE,TRUE,goldfish
+gooney bird,FALSE,FALSE,No close match found
+goose,TRUE,TRUE,"goose, goosey"
+gopher,TRUE,TRUE,"gopher, gophers"
+gopher snake,FALSE,FALSE,No close match found
+gopher tortoise,FALSE,FALSE,No close match found
+gopher turtle,FALSE,FALSE,No close match found
+gorgonian,FALSE,FALSE,No close match found
+gorilla,TRUE,TRUE,gorilla
+goshawk,FALSE,FALSE,No close match found
+gosling,FALSE,FALSE,No close match found
+grackle,FALSE,FALSE,No close match found
+grass snake,FALSE,FALSE,No close match found
+grasshopper,TRUE,TRUE,"grasshopper, grasshoppers"
+grasshopper mouse,FALSE,FALSE,No close match found
+gray catbird,FALSE,FALSE,No close match found
+gray fox,FALSE,FALSE,No close match found
+gray jay,FALSE,FALSE,No close match found
+gray mullet,FALSE,FALSE,No close match found
+gray partridge,FALSE,FALSE,No close match found
+gray treefrog,FALSE,FALSE,No close match found
+gray whale,FALSE,FALSE,No close match found
+gray wolf,FALSE,FALSE,No close match found
+graywolf,FALSE,FALSE,No close match found
+great auk,FALSE,FALSE,No close match found
+great blue heron,FALSE,FALSE,No close match found
+great crested grebe,FALSE,FALSE,No close match found
+great dane,FALSE,FALSE,No close match found
+great horned owl,FALSE,FALSE,No close match found
+great pyrenees,FALSE,FALSE,No close match found
+great white shark,FALSE,FALSE,No close match found
+greater yellowlegs,FALSE,FALSE,No close match found
+grebe,FALSE,FALSE,No close match found
+green lacewing,FALSE,FALSE,No close match found
+green mamba,FALSE,FALSE,No close match found
+green tree frog,FALSE,FALSE,No close match found
+green tree python,FALSE,FALSE,No close match found
+greenfly,FALSE,FALSE,No close match found
+greenling,FALSE,FALSE,No close match found
+greenshank,FALSE,FALSE,No close match found
+grenadier,TRUE,TRUE,"grenadier, grenadiers"
+grey squirrel,FALSE,FALSE,No close match found
+grey whale,FALSE,FALSE,No close match found
+greyhound,TRUE,TRUE,"greyhound, greyhounds"
+greylag goose,FALSE,FALSE,No close match found
+griffon,FALSE,FALSE,No close match found
+griffon vulture,FALSE,FALSE,No close match found
+grizzly,TRUE,TRUE,grizzly
+grizzly bear,FALSE,FALSE,No close match found
+grosbeak,TRUE,TRUE,grosbeak
+ground hog,FALSE,FALSE,No close match found
+ground squirrel,FALSE,FALSE,No close match found
+groundfish,FALSE,FALSE,No close match found
+groundhog,FALSE,FALSE,No close match found
+grouper,FALSE,FALSE,No close match found
+grouse,TRUE,TRUE,"grouse, rouse"
+grub,TRUE,TRUE,grub
+grunt,TRUE,TRUE,"grunt, grunts"
+guan,FALSE,FALSE,No close match found
+guanaco,TRUE,TRUE,guanaco
+gudgeon,FALSE,FALSE,No close match found
+guenon,FALSE,FALSE,No close match found
+guerrilla,TRUE,TRUE,"guerrilla, guerrillas"
+guillemot,FALSE,FALSE,No close match found
+guinea fowl,FALSE,FALSE,No close match found
+guinea hen,FALSE,FALSE,No close match found
+guinea pig,FALSE,FALSE,No close match found
+guinea worm,FALSE,FALSE,No close match found
+guineafowl,FALSE,FALSE,No close match found
+gull,TRUE,TRUE,gull
+gumboot chiton,FALSE,FALSE,No close match found
+gunnel,FALSE,FALSE,No close match found
+guppy,FALSE,FALSE,No close match found
+gurnard,FALSE,FALSE,No close match found
+gypsy moth,FALSE,FALSE,No close match found
+gyrfalcon,FALSE,FALSE,No close match found
+hackney,TRUE,TRUE,hackney
+haddock,TRUE,TRUE,haddock
+hadrosaur,FALSE,FALSE,No close match found
+hagfish,FALSE,FALSE,No close match found
+hairless cat,FALSE,FALSE,No close match found
+hairstreak,FALSE,FALSE,No close match found
+hairstreak butterfly,FALSE,FALSE,No close match found
+hairy woodpecker,FALSE,FALSE,No close match found
+hake,FALSE,FALSE,No close match found
+halcyon,TRUE,TRUE,halcyon
+halibut,FALSE,FALSE,No close match found
+hammerhead,FALSE,FALSE,No close match found
+hammerhead shark,FALSE,FALSE,No close match found
+hamster,FALSE,FALSE,No close match found
+hanover hound,FALSE,FALSE,No close match found
+harambe,FALSE,FALSE,No close match found
+harbor porpoise,FALSE,FALSE,No close match found
+harbor seal,FALSE,FALSE,No close match found
+hare,TRUE,TRUE,hare
+harp seal,FALSE,FALSE,No close match found
+harpy eagle,FALSE,FALSE,No close match found
+harrier,FALSE,FALSE,No close match found
+hart,TRUE,TRUE,hart
+hartebeest,FALSE,FALSE,No close match found
+havanese dog,FALSE,FALSE,No close match found
+hawk,TRUE,TRUE,hawk
+hawk moth,FALSE,FALSE,No close match found
+hawk owl,FALSE,FALSE,No close match found
+hawkmoth,FALSE,FALSE,No close match found
+hawksbill,FALSE,FALSE,No close match found
+hawksbill turtle,FALSE,FALSE,No close match found
+heath hen,FALSE,FALSE,No close match found
+hedgehog,TRUE,TRUE,hedgehog
+heifer,TRUE,TRUE,"heifer, heifers"
+hellbender,FALSE,FALSE,No close match found
+helminth,FALSE,FALSE,No close match found
+hen,TRUE,TRUE,hen
+hen harrier,FALSE,FALSE,No close match found
+hermit,TRUE,TRUE,"hermit, hermits"
+hermit crab,FALSE,FALSE,No close match found
+hermit thrush,FALSE,FALSE,No close match found
+heron,TRUE,TRUE,"heron, herons, hermon"
+herring,TRUE,TRUE,"herring, herrings, erring"
+herring gull,FALSE,FALSE,No close match found
+hexapod,FALSE,FALSE,No close match found
+hinny,FALSE,TRUE,whinny
+hippo,FALSE,FALSE,No close match found
+hippopotamus,TRUE,TRUE,hippopotamus
+hoary marmot,FALSE,FALSE,No close match found
+hoatzin,FALSE,FALSE,No close match found
+hog,TRUE,TRUE,hog
+hogfish,FALSE,FALSE,No close match found
+hogg,FALSE,FALSE,No close match found
+hogget,FALSE,FALSE,No close match found
+hognose snake,FALSE,FALSE,No close match found
+hogs,TRUE,TRUE,hogs
+holstein,FALSE,FALSE,No close match found
+homing pigeon,FALSE,FALSE,No close match found
+hominid,FALSE,FALSE,No close match found
+hominoid,FALSE,FALSE,No close match found
+homo erectus,FALSE,FALSE,No close match found
+homo habilis,FALSE,FALSE,No close match found
+homo sapiens,FALSE,FALSE,No close match found
+honey badger,FALSE,FALSE,No close match found
+honey bee,FALSE,FALSE,No close match found
+honey buzzard,FALSE,FALSE,No close match found
+honeybee,FALSE,FALSE,No close match found
+honeycreeper,FALSE,FALSE,No close match found
+hooded merganser,FALSE,FALSE,No close match found
+hoofed mammal,FALSE,FALSE,No close match found
+hookworm,FALSE,FALSE,No close match found
+hoopoe,TRUE,TRUE,"hoopoe, hoopoes"
+hoot owl,FALSE,FALSE,No close match found
+hornbill,FALSE,FALSE,No close match found
+horned dinosaur,FALSE,FALSE,No close match found
+horned lizard,FALSE,FALSE,No close match found
+horned owl,FALSE,FALSE,No close match found
+horned toad,FALSE,FALSE,No close match found
+hornet,FALSE,TRUE,hornets
+horse,TRUE,TRUE,"horse, horses, horsed"
+horsefly,FALSE,FALSE,No close match found
+horsehead,FALSE,FALSE,No close match found
+horseshoe crab,FALSE,FALSE,No close match found
+hound,TRUE,TRUE,"hound, hounds"
+hound dog,FALSE,FALSE,No close match found
+housefly,FALSE,FALSE,No close match found
+hoverfly,FALSE,FALSE,No close match found
+howler monkey,FALSE,FALSE,No close match found
+howling monkey,FALSE,FALSE,No close match found
+human,TRUE,TRUE,"human, humans, humane"
+human being,FALSE,FALSE,No close match found
+hummingbird,FALSE,FALSE,No close match found
+hummingbird moth,FALSE,FALSE,No close match found
+humpback whale,FALSE,FALSE,No close match found
+humuhumunukunukuapua,FALSE,FALSE,No close match found
+huntsman,TRUE,TRUE,huntsman
+huntsman spider,FALSE,FALSE,No close match found
+huskie,FALSE,FALSE,No close match found
+huskies,FALSE,FALSE,No close match found
+husky,TRUE,TRUE,husky
+hydra,TRUE,TRUE,hydra
+hyena,TRUE,TRUE,"hyena, hyenas, hyaena"
+hyenas,TRUE,TRUE,"hyenas, hyaenas, hyena"
+hyrax,FALSE,FALSE,No close match found
+ibex,TRUE,TRUE,ibex
+ibis,FALSE,FALSE,No close match found
+ichthyosaur,FALSE,FALSE,No close match found
+iguana,FALSE,FALSE,No close match found
+imago,FALSE,FALSE,No close match found
+impala,FALSE,FALSE,No close match found
+inchworm,FALSE,FALSE,No close match found
+indigo bunting,FALSE,FALSE,No close match found
+indigo snake,FALSE,FALSE,No close match found
+indri,FALSE,TRUE,sindri
+insect,TRUE,TRUE,"insect, inspect, insects"
+invertebrate,FALSE,TRUE,inveterate
+isopod,FALSE,FALSE,No close match found
+itch mite,FALSE,FALSE,No close match found
+ivory billed,FALSE,FALSE,No close match found
+ivory gull,FALSE,FALSE,No close match found
+jabiru,FALSE,FALSE,No close match found
+jack,TRUE,TRUE,jack
+jack crevalle,FALSE,FALSE,No close match found
+jack mackerel,FALSE,FALSE,No close match found
+jack rabbit,FALSE,FALSE,No close match found
+jack russell,FALSE,FALSE,No close match found
+jack russell terrier,FALSE,FALSE,No close match found
+jackal,TRUE,TRUE,"jackal, jackals, jacal"
+jackalope,FALSE,FALSE,No close match found
+jackass,TRUE,TRUE,jackass
+jackass penguin,FALSE,FALSE,No close match found
+jackdaw,TRUE,TRUE,"jackdaw, jackdaws"
+jackrabbit,FALSE,FALSE,No close match found
+jaguar,TRUE,TRUE,jaguar
+jaguarundi,FALSE,FALSE,No close match found
+javelina,FALSE,TRUE,javelin
+jawless fish,FALSE,FALSE,No close match found
+jay,TRUE,TRUE,jay
+jaybird,FALSE,FALSE,No close match found
+jellyfish,TRUE,TRUE,jellyfish
+jerboa,FALSE,FALSE,No close match found
+jewfish,FALSE,TRUE,jewish
+jigger,FALSE,FALSE,No close match found
+joey,FALSE,FALSE,No close match found
+junco,FALSE,FALSE,No close match found
+june beetle,FALSE,FALSE,No close match found
+june bug,FALSE,FALSE,No close match found
+jungle fowl,FALSE,FALSE,No close match found
+kangaroo,TRUE,TRUE,"kangaroo, kangaroos"
+kangaroo rat,FALSE,FALSE,No close match found
+karakul,FALSE,FALSE,No close match found
+katydid,FALSE,FALSE,No close match found
+kea,FALSE,FALSE,No close match found
+keeshond,FALSE,FALSE,No close match found
+kelp greenling,FALSE,FALSE,No close match found
+kelpie,TRUE,TRUE,kelpie
+kestrel,FALSE,FALSE,No close match found
+keyhole limpet,FALSE,FALSE,No close match found
+kid,TRUE,TRUE,kid
+killdeer,FALSE,FALSE,No close match found
+killer bee,FALSE,FALSE,No close match found
+killer whale,FALSE,FALSE,No close match found
+killifish,FALSE,FALSE,No close match found
+king cobra,FALSE,FALSE,No close match found
+king crab,FALSE,FALSE,No close match found
+king mackerel,FALSE,FALSE,No close match found
+king salmon,FALSE,FALSE,No close match found
+kingbird,FALSE,FALSE,No close match found
+kingfish,FALSE,FALSE,No close match found
+kingfisher,TRUE,TRUE,kingfisher
+kingsnake,FALSE,FALSE,No close match found
+kinkajou,FALSE,FALSE,No close match found
+kite,TRUE,TRUE,kite
+kitfox,FALSE,FALSE,No close match found
+kitten,TRUE,TRUE,"kitten, kittens"
+kittiwake,FALSE,FALSE,No close match found
+kitty,TRUE,TRUE,kitty
+kitty cat,FALSE,FALSE,No close match found
+kiwi,FALSE,FALSE,No close match found
+koala,FALSE,FALSE,No close match found
+koala bear,FALSE,FALSE,No close match found
+kodiak,FALSE,TRUE,kodak
+kodiak bear,FALSE,FALSE,No close match found
+koi,FALSE,FALSE,No close match found
+koi fish,FALSE,FALSE,No close match found
+komodo dragon,FALSE,FALSE,No close match found
+kongoni,FALSE,FALSE,No close match found
+kookaburra,FALSE,FALSE,No close match found
+krait,FALSE,FALSE,No close match found
+krill,FALSE,FALSE,No close match found
+kuala,FALSE,FALSE,No close match found
+kudu,FALSE,FALSE,No close match found
+lab,TRUE,TRUE,lab
+labrador,TRUE,TRUE,labrador
+labrador retriever,FALSE,FALSE,No close match found
+lacewing,FALSE,FALSE,No close match found
+lady bug,FALSE,TRUE,ladybug
+ladybird,TRUE,TRUE,ladybird
+ladybird beetle,FALSE,FALSE,No close match found
+ladybug,TRUE,TRUE,ladybug
+ladyfish,FALSE,FALSE,No close match found
+lake trout,FALSE,FALSE,No close match found
+lake whitefish,FALSE,FALSE,No close match found
+lamb,TRUE,TRUE,lamb
+lamprey,FALSE,TRUE,lampreys
+lamprey eel,FALSE,FALSE,No close match found
+landlocked salmon,FALSE,FALSE,No close match found
+langur,FALSE,TRUE,languor
+lanternfish,FALSE,FALSE,No close match found
+lapdog,FALSE,FALSE,No close match found
+lapin,FALSE,FALSE,No close match found
+lapwing,FALSE,FALSE,No close match found
+largemouth bass,FALSE,FALSE,No close match found
+lark,TRUE,TRUE,lark
+larva,TRUE,TRUE,"larva, larvae"
+larvae,TRUE,TRUE,"larvae, larva"
+laughing gull,FALSE,FALSE,No close match found
+leach,FALSE,FALSE,No close match found
+leaf beetle,FALSE,FALSE,No close match found
+leaf insect,FALSE,FALSE,No close match found
+leafhopper,FALSE,FALSE,No close match found
+leatherback,FALSE,FALSE,No close match found
+leatherback turtle,FALSE,FALSE,No close match found
+leatherjacket,FALSE,FALSE,No close match found
+lechwe,FALSE,FALSE,No close match found
+leech,TRUE,TRUE,leech
+legless lizard,FALSE,FALSE,No close match found
+lemming,TRUE,TRUE,"lemming, lemmings, clemming"
+lemur,FALSE,FALSE,No close match found
+leopard,TRUE,TRUE,"leopard, leopards"
+leopard frog,FALSE,FALSE,No close match found
+leopard seal,FALSE,FALSE,No close match found
+leopard shark,FALSE,FALSE,No close match found
+leopardess,FALSE,FALSE,No close match found
+lepidopteran,FALSE,TRUE,lepidoptera
+lesser scaup,FALSE,FALSE,No close match found
+lesser yellowlegs,FALSE,FALSE,No close match found
+lhasa apso,FALSE,FALSE,No close match found
+liger,FALSE,TRUE,linger
+limpet,FALSE,FALSE,No close match found
+lingcod,FALSE,FALSE,No close match found
+linnet,TRUE,TRUE,"linnet, linnets"
+lion,TRUE,TRUE,lion
+lion cub,FALSE,FALSE,No close match found
+lioness,TRUE,TRUE,"lioness, lionesse, liones"
+lionfish,FALSE,FALSE,No close match found
+lions,TRUE,TRUE,"lions, liones, lion's"
+little brown myotis,FALSE,FALSE,No close match found
+lizard,TRUE,TRUE,"lizard, lizards"
+llama,TRUE,TRUE,llama
+loach,TRUE,TRUE,loach
+lobster,TRUE,TRUE,"lobster, lobsters"
+locust,TRUE,TRUE,"locust, locusts"
+loggerhead,FALSE,FALSE,No close match found
+loggerhead shrike,FALSE,FALSE,No close match found
+loggerhead turtle,FALSE,FALSE,No close match found
+long tailed lizard,FALSE,FALSE,No close match found
+long tailed salamander,FALSE,FALSE,No close match found
+longhorn,FALSE,FALSE,No close match found
+longneck,FALSE,FALSE,No close match found
+loon,TRUE,TRUE,loon
+lorikeet,FALSE,FALSE,No close match found
+loris,FALSE,TRUE,locris
+louse,TRUE,TRUE,"louse, louise, blouse"
+lovebird,FALSE,FALSE,No close match found
+lugworm,FALSE,FALSE,No close match found
+lumpfish,FALSE,FALSE,No close match found
+luna moth,FALSE,FALSE,No close match found
+lungfish,FALSE,FALSE,No close match found
+lungless salamander,FALSE,FALSE,No close match found
+lynx,TRUE,TRUE,lynx
+lyrebird,FALSE,FALSE,No close match found
+macaque,FALSE,FALSE,No close match found
+macaque monkey,FALSE,FALSE,No close match found
+macaw,FALSE,FALSE,No close match found
+mackerel,TRUE,TRUE,mackerel
+mackerel tuna,FALSE,FALSE,No close match found
+madagascar hissing cockroach,FALSE,FALSE,No close match found
+maggot,TRUE,TRUE,maggot
+magpie,TRUE,TRUE,"magpie, magpies"
+mahi,FALSE,FALSE,No close match found
+mahimahi,FALSE,FALSE,No close match found
+maine coon,FALSE,FALSE,No close match found
+mako shark,FALSE,FALSE,No close match found
+malamute,FALSE,FALSE,No close match found
+malarial mosquito,FALSE,FALSE,No close match found
+maleo,FALSE,FALSE,No close match found
+malinois,FALSE,FALSE,No close match found
+mallard,FALSE,FALSE,No close match found
+mallee fowl,FALSE,FALSE,No close match found
+maltese,TRUE,TRUE,maltese
+maltese terrier,FALSE,FALSE,No close match found
+mamba,FALSE,FALSE,No close match found
+mammal,FALSE,TRUE,"mammals, mamma"
+mammoth,TRUE,TRUE,mammoth
+man,TRUE,TRUE,man
+manakin,FALSE,FALSE,No close match found
+manatee,FALSE,FALSE,No close match found
+mandrill,FALSE,FALSE,No close match found
+maned wolf,FALSE,FALSE,No close match found
+mangabey,FALSE,FALSE,No close match found
+mangrove snapper,FALSE,FALSE,No close match found
+manowar,FALSE,FALSE,No close match found
+manta,FALSE,TRUE,mantua
+manta ray,FALSE,FALSE,No close match found
+mantis,FALSE,FALSE,No close match found
+mantis shrimp,FALSE,FALSE,No close match found
+marabou,FALSE,FALSE,No close match found
+marabou stork,FALSE,FALSE,No close match found
+mare,TRUE,TRUE,mare
+markhor,FALSE,FALSE,No close match found
+marlin,FALSE,TRUE,marline
+marmoset,FALSE,FALSE,No close match found
+marmot,TRUE,TRUE,marmot
+marsh harrier,FALSE,FALSE,No close match found
+marsh wren,FALSE,FALSE,No close match found
+marsupial,FALSE,FALSE,No close match found
+marten,TRUE,TRUE,marten
+mason bee,FALSE,FALSE,No close match found
+massasauga,FALSE,FALSE,No close match found
+mastiff,TRUE,TRUE,mastiff
+mastodon,TRUE,TRUE,mastodon
+maverick,FALSE,FALSE,No close match found
+mayfly,FALSE,FALSE,No close match found
+meadow pipit,FALSE,FALSE,No close match found
+meadow vole,FALSE,FALSE,No close match found
+meadowlark,FALSE,FALSE,No close match found
+mealworm,FALSE,FALSE,No close match found
+mealy bug,FALSE,FALSE,No close match found
+mealybug,FALSE,FALSE,No close match found
+medfly,FALSE,FALSE,No close match found
+medicinal leech,FALSE,FALSE,No close match found
+medusa,TRUE,TRUE,medusa
+meerkat,FALSE,FALSE,No close match found
+megalodon,FALSE,FALSE,No close match found
+menhaden,FALSE,FALSE,No close match found
+merganser,FALSE,FALSE,No close match found
+merino sheep,FALSE,FALSE,No close match found
+merlin,TRUE,TRUE,merlin
+metazoan,FALSE,FALSE,No close match found
+mice,TRUE,TRUE,mice
+microbe,TRUE,TRUE,microbe
+midge,TRUE,TRUE,"midge, midget"
+milch cow,FALSE,FALSE,No close match found
+milkfish,FALSE,FALSE,No close match found
+milking shorthorn,FALSE,FALSE,No close match found
+millipede,FALSE,FALSE,No close match found
+miniature pinscher,FALSE,FALSE,No close match found
+miniature pony,FALSE,FALSE,No close match found
+miniature poodle,FALSE,FALSE,No close match found
+miniature schnauzer,FALSE,FALSE,No close match found
+mink,TRUE,TRUE,mink
+minke whale,FALSE,FALSE,No close match found
+minnow,TRUE,TRUE,"minnow, minnows"
+minnow fish,FALSE,FALSE,No close match found
+minx,TRUE,TRUE,minx
+mirid bug,FALSE,FALSE,No close match found
+mistle thrush,FALSE,FALSE,No close match found
+mite,TRUE,TRUE,mite
+moccasin,TRUE,TRUE,"moccasin, moccasins"
+mockingbird,FALSE,FALSE,No close match found
+mojarra,FALSE,FALSE,No close match found
+mola,FALSE,FALSE,No close match found
+mole,TRUE,TRUE,mole
+mole rat,FALSE,FALSE,No close match found
+mollusk,TRUE,TRUE,"mollusk, mollusks"
+monarch butterfly,FALSE,FALSE,No close match found
+mongoose,TRUE,TRUE,mongoose
+monitor,TRUE,TRUE,monitor
+monitor lizard,FALSE,FALSE,No close match found
+monkey,TRUE,TRUE,"monkey, monkeys, money"
+monkeys,TRUE,TRUE,"monkeys, monkey's, monkey"
+monkfish,FALSE,TRUE,monkish
+monotreme,FALSE,FALSE,No close match found
+monster,TRUE,TRUE,"monster, monsters"
+moonfish,FALSE,FALSE,No close match found
+moonglow boa,FALSE,FALSE,No close match found
+moorhen,FALSE,FALSE,No close match found
+moose,TRUE,TRUE,"moose, morose"
+moray,TRUE,TRUE,moray
+moray eel,FALSE,FALSE,No close match found
+mosquito,TRUE,TRUE,"mosquito, mosquitos"
+mosquitofish,FALSE,FALSE,No close match found
+moth,TRUE,TRUE,moth
+moths,TRUE,TRUE,"moths, mouths, months"
+mouflon,FALSE,FALSE,No close match found
+mountain cat,FALSE,FALSE,No close match found
+mountain goat,FALSE,FALSE,No close match found
+mountain gorilla,FALSE,FALSE,No close match found
+mountain lion,FALSE,FALSE,No close match found
+mourning dove,FALSE,FALSE,No close match found
+mouse,TRUE,TRUE,"mouse, smouse, mouser"
+mud dauber,FALSE,FALSE,No close match found
+mudskipper,FALSE,FALSE,No close match found
+mule,TRUE,TRUE,mule
+mule deer,FALSE,FALSE,No close match found
+mules,TRUE,TRUE,mules
+mullet,TRUE,TRUE,mullet
+mulloway,FALSE,FALSE,No close match found
+muntjac,FALSE,FALSE,No close match found
+murre,FALSE,FALSE,No close match found
+muscovy duck,FALSE,FALSE,No close match found
+musk deer,FALSE,FALSE,No close match found
+musk ox,FALSE,FALSE,No close match found
+musk turtle,FALSE,FALSE,No close match found
+muskellunge,FALSE,FALSE,No close match found
+muskox,FALSE,FALSE,No close match found
+muskrat,TRUE,TRUE,"muskrat, muskrats"
+mussel,TRUE,TRUE,"mussel, mussels"
+mustang,TRUE,TRUE,mustang
+mute swan,FALSE,FALSE,No close match found
+mutton snapper,FALSE,FALSE,No close match found
+myna,FALSE,FALSE,No close match found
+myna bird,FALSE,FALSE,No close match found
+mynah,FALSE,FALSE,No close match found
+mynah bird,FALSE,FALSE,No close match found
+naked mole rat,FALSE,FALSE,No close match found
+narwhal,FALSE,TRUE,narwhale
+nautilus,TRUE,TRUE,nautilus
+neanderthal,FALSE,FALSE,No close match found
+needlefish,FALSE,FALSE,No close match found
+nematode,FALSE,FALSE,No close match found
+nematode worm,FALSE,FALSE,No close match found
+newt,TRUE,TRUE,newt
+nightcrawler,FALSE,FALSE,No close match found
+nightingale,TRUE,TRUE,"nightingale, nightingales, nightingale's"
+nightjar,FALSE,FALSE,No close match found
+nilgai,FALSE,TRUE,nilghai
+northern bobwhite,FALSE,FALSE,No close match found
+northern cricket frog,FALSE,FALSE,No close match found
+northern harrier,FALSE,FALSE,No close match found
+northern parula,FALSE,FALSE,No close match found
+northern pike,FALSE,FALSE,No close match found
+northern pocket gopher,FALSE,FALSE,No close match found
+northern shrike,FALSE,FALSE,No close match found
+northern snakehead,FALSE,FALSE,No close match found
+nudibranch,FALSE,FALSE,No close match found
+nurse shark,FALSE,FALSE,No close match found
+nuthatch,TRUE,TRUE,nuthatch
+nutria,FALSE,FALSE,No close match found
+nyala,FALSE,FALSE,No close match found
+oarfish,FALSE,FALSE,No close match found
+ocean pout,FALSE,FALSE,No close match found
+ocean sunfish,FALSE,FALSE,No close match found
+oceanic whitetip shark,FALSE,FALSE,No close match found
+ocelot,FALSE,FALSE,No close match found
+octopus,FALSE,FALSE,No close match found
+okapi,FALSE,FALSE,No close match found
+olive ridley,FALSE,FALSE,No close match found
+omnivore,FALSE,FALSE,No close match found
+onion thrips,FALSE,FALSE,No close match found
+opah,FALSE,FALSE,No close match found
+opossum,FALSE,TRUE,possum
+opossum shrimp,FALSE,FALSE,No close match found
+orang,TRUE,TRUE,"orang, orange"
+orange roughie,FALSE,FALSE,No close match found
+orangutan,FALSE,FALSE,No close match found
+orangutang,FALSE,FALSE,No close match found
+orca,FALSE,FALSE,No close match found
+orca whale,FALSE,FALSE,No close match found
+orchard oriole,FALSE,FALSE,No close match found
+oriole,TRUE,TRUE,"oriole, orioles"
+ormer,FALSE,TRUE,"former, dormer"
+ornithopod,FALSE,FALSE,No close match found
+ortolan,FALSE,FALSE,No close match found
+oryx,FALSE,FALSE,No close match found
+osprey,FALSE,FALSE,No close match found
+ostrich,TRUE,TRUE,ostrich
+ostriches,TRUE,TRUE,ostriches
+otter,TRUE,TRUE,"otter, totter, potter"
+ovenbird,FALSE,FALSE,No close match found
+owl,TRUE,TRUE,owl
+owlet,FALSE,FALSE,No close match found
+ox,TRUE,TRUE,ox
+oxen,TRUE,TRUE,oxen
+oyster,TRUE,TRUE,"oyster, oysters"
+oystercatcher,FALSE,FALSE,No close match found
+oysters,TRUE,TRUE,"oysters, oyster's, oyster"
+pachyderm,FALSE,FALSE,No close match found
+packhorse,FALSE,FALSE,No close match found
+packrat,FALSE,FALSE,No close match found
+paddlefish,FALSE,FALSE,No close match found
+pajero,FALSE,FALSE,No close match found
+pallass cat,FALSE,FALSE,No close match found
+palm civet,FALSE,FALSE,No close match found
+palo verde borer,FALSE,FALSE,No close match found
+palomino,FALSE,FALSE,No close match found
+panda,FALSE,TRUE,panada
+panda bear,FALSE,FALSE,No close match found
+pangolin,FALSE,FALSE,No close match found
+panther,TRUE,TRUE,"panther, panthers"
+papillon,TRUE,TRUE,papillon
+parakeet,TRUE,TRUE,parakeet
+parasitic worm,FALSE,FALSE,No close match found
+parrot,TRUE,TRUE,"parrot, parrots"
+parrotfish,FALSE,FALSE,No close match found
+partridge,TRUE,TRUE,"partridge, partridges"
+passerine,FALSE,FALSE,No close match found
+peacock,TRUE,TRUE,"peacock, peacocks"
+peafowl,FALSE,FALSE,No close match found
+peahen,FALSE,FALSE,No close match found
+pearl oyster,FALSE,FALSE,No close match found
+peccary,FALSE,FALSE,No close match found
+peckerwood,FALSE,FALSE,No close match found
+pectoral sandpiper,FALSE,FALSE,No close match found
+pelican,TRUE,TRUE,pelican
+pembroke welsh corgi,FALSE,FALSE,No close match found
+penguin,TRUE,TRUE,"penguin, penguins"
+penis worm,FALSE,FALSE,No close match found
+perch,TRUE,TRUE,perch
+peregrine,TRUE,TRUE,peregrine
+peregrine falcon,FALSE,FALSE,No close match found
+periodical cicada,FALSE,FALSE,No close match found
+perro,FALSE,FALSE,No close match found
+persian cat,FALSE,FALSE,No close match found
+person,TRUE,TRUE,"person, pierson, pherson"
+pescador,FALSE,FALSE,No close match found
+petrel,FALSE,TRUE,petre
+pewee,TRUE,TRUE,pewee
+phalarope,FALSE,FALSE,No close match found
+pheasant,TRUE,TRUE,"pheasant, pheasants, peasant"
+phoenix,TRUE,TRUE,phoenix
+pickerel,FALSE,FALSE,No close match found
+piffle,FALSE,FALSE,No close match found
+pig,TRUE,TRUE,pig
+pigeon,TRUE,TRUE,"pigeon, pigeons"
+pigfish,FALSE,FALSE,No close match found
+piggy,TRUE,TRUE,piggy
+piglet,FALSE,FALSE,No close match found
+pika,FALSE,FALSE,No close match found
+pike,TRUE,TRUE,pike
+pike perch,FALSE,FALSE,No close match found
+pilchard,FALSE,FALSE,No close match found
+pileated woodpecker,FALSE,FALSE,No close match found
+pill bug,FALSE,FALSE,No close match found
+pilot whale,FALSE,FALSE,No close match found
+pincher,FALSE,FALSE,No close match found
+pine grosbeak,FALSE,FALSE,No close match found
+pine marten,FALSE,FALSE,No close match found
+pine siskin,FALSE,FALSE,No close match found
+pinfish,FALSE,FALSE,No close match found
+pink bollworm,FALSE,FALSE,No close match found
+pink salmon,FALSE,FALSE,No close match found
+pinniped,FALSE,FALSE,No close match found
+pinscher,FALSE,FALSE,No close match found
+pintail,FALSE,FALSE,No close match found
+pinto horse,FALSE,FALSE,No close match found
+pinworm,FALSE,FALSE,No close match found
+pipefish,FALSE,FALSE,No close match found
+piping plover,FALSE,FALSE,No close match found
+pipistrelle,FALSE,FALSE,No close match found
+pipit,FALSE,FALSE,No close match found
+piranha,FALSE,FALSE,No close match found
+pistol shrimp,FALSE,FALSE,No close match found
+pit bull,FALSE,FALSE,No close match found
+pit bull terrier,FALSE,FALSE,No close match found
+pit viper,FALSE,FALSE,No close match found
+pitbull,FALSE,FALSE,No close match found
+placental mammal,FALSE,FALSE,No close match found
+placoderm,FALSE,FALSE,No close match found
+plaice,FALSE,TRUE,place
+planaria,FALSE,FALSE,No close match found
+plankton,FALSE,FALSE,No close match found
+platypus,FALSE,FALSE,No close match found
+pleco,FALSE,FALSE,No close match found
+plesiosaur,FALSE,FALSE,No close match found
+plover,TRUE,TRUE,"plover, plovers, lover"
+pochard,FALSE,FALSE,No close match found
+pocket gopher,FALSE,FALSE,No close match found
+poison dart frog,FALSE,FALSE,No close match found
+polar,TRUE,TRUE,"polar, poplar"
+polar bear,FALSE,FALSE,No close match found
+polecat,FALSE,FALSE,No close match found
+pollack,FALSE,FALSE,No close match found
+pollock,TRUE,TRUE,pollock
+pollywog,FALSE,FALSE,No close match found
+polo pony,FALSE,FALSE,No close match found
+polychaeta,FALSE,FALSE,No close match found
+pomeranian,FALSE,FALSE,No close match found
+pompano,FALSE,FALSE,No close match found
+pony,TRUE,TRUE,pony
+pooch,FALSE,FALSE,No close match found
+poodle,TRUE,TRUE,poodle
+popinjay,FALSE,FALSE,No close match found
+porbeagle,FALSE,FALSE,No close match found
+porcupine,TRUE,TRUE,"porcupine, porcupines"
+porgy,FALSE,FALSE,No close match found
+pork,TRUE,TRUE,pork
+porpoise,TRUE,TRUE,"porpoise, porpoises"
+portuguese water dog,FALSE,FALSE,No close match found
+possum,TRUE,TRUE,possum
+potato beetle,FALSE,FALSE,No close match found
+potbellied pig,FALSE,FALSE,No close match found
+potoroo,FALSE,FALSE,No close match found
+poultry,TRUE,TRUE,poultry
+pouter,FALSE,TRUE,outer
+prairie cat,FALSE,FALSE,No close match found
+prairie chicken,FALSE,FALSE,No close match found
+prairie dog,FALSE,FALSE,No close match found
+prairie grouse,FALSE,FALSE,No close match found
+prairie rattlesnake,FALSE,FALSE,No close match found
+prairie vole,FALSE,FALSE,No close match found
+prawn,FALSE,TRUE,prawns
+praying mantis,FALSE,FALSE,No close match found
+primate,TRUE,TRUE,primate
+proboscis monkey,FALSE,FALSE,No close match found
+pronghorn,FALSE,FALSE,No close match found
+pronghorn antelope,FALSE,FALSE,No close match found
+protists,FALSE,FALSE,No close match found
+psyllid,FALSE,FALSE,No close match found
+ptarmigan,TRUE,TRUE,ptarmigan
+pterodactyl,FALSE,FALSE,No close match found
+pterosaur,FALSE,FALSE,No close match found
+pubic louse,FALSE,FALSE,No close match found
+puff adder,FALSE,FALSE,No close match found
+puffer,FALSE,FALSE,No close match found
+puffer fish,FALSE,FALSE,No close match found
+pufferfish,FALSE,FALSE,No close match found
+puffin,TRUE,TRUE,"puffin, puffing"
+pug,TRUE,TRUE,pug
+puggle,FALSE,FALSE,No close match found
+pullet,TRUE,TRUE,pullet
+puma,TRUE,TRUE,puma
+pumpkinseed,FALSE,FALSE,No close match found
+pup,TRUE,TRUE,pup
+pupa,FALSE,FALSE,No close match found
+puppy,TRUE,TRUE,puppy
+purple finch,FALSE,FALSE,No close match found
+purple gallinule,FALSE,FALSE,No close match found
+purple marten,FALSE,FALSE,No close match found
+puss,TRUE,TRUE,puss
+pussycat,FALSE,FALSE,No close match found
+pygmy chimpanzee,FALSE,FALSE,No close match found
+pygmy elephant,FALSE,FALSE,No close match found
+pygmy goat,FALSE,FALSE,No close match found
+pygmy marmoset,FALSE,FALSE,No close match found
+pygmy sperm whale,FALSE,FALSE,No close match found
+python,FALSE,FALSE,No close match found
+quagga,FALSE,FALSE,No close match found
+quahog,FALSE,FALSE,No close match found
+quail,TRUE,TRUE,quail
+queen bee,FALSE,FALSE,No close match found
+queenfish,FALSE,FALSE,No close match found
+quetzal,FALSE,FALSE,No close match found
+quokka,FALSE,FALSE,No close match found
+rabbit,TRUE,TRUE,"rabbit, rabbits, rabbi"
+raccoon,FALSE,FALSE,No close match found
+raccoon fox,FALSE,FALSE,No close match found
+racehorse,FALSE,FALSE,No close match found
+racoon,FALSE,FALSE,No close match found
+ragdoll cat,FALSE,FALSE,No close match found
+rainbow lorikeet,FALSE,FALSE,No close match found
+rainbow smelt,FALSE,FALSE,No close match found
+rainbow trout,FALSE,FALSE,No close match found
+rainbowfish,FALSE,FALSE,No close match found
+ram,TRUE,TRUE,ram
+raptor,FALSE,FALSE,No close match found
+rat,TRUE,TRUE,rat
+rat snake,FALSE,FALSE,No close match found
+rat terrier,FALSE,FALSE,No close match found
+ratite,FALSE,FALSE,No close match found
+raton,FALSE,TRUE,ration
+rattler,TRUE,TRUE,"rattler, rattle"
+rattlesnake,TRUE,TRUE,rattlesnake
+raven,TRUE,TRUE,"raven, ravens, graven"
+ray,TRUE,TRUE,ray
+razor clam,FALSE,FALSE,No close match found
+razorback,FALSE,FALSE,No close match found
+razorbill,FALSE,FALSE,No close match found
+red admiral butterfly,FALSE,FALSE,No close match found
+red bellied woodpecker,FALSE,FALSE,No close match found
+red deer,FALSE,FALSE,No close match found
+red drum,FALSE,FALSE,No close match found
+red fox,FALSE,FALSE,No close match found
+red kangaroo,FALSE,FALSE,No close match found
+red panda,FALSE,FALSE,No close match found
+red robin,FALSE,FALSE,No close match found
+red shouldered hawk,FALSE,FALSE,No close match found
+red snapper,FALSE,FALSE,No close match found
+red squirrel,FALSE,FALSE,No close match found
+red tailed hawk,FALSE,FALSE,No close match found
+red winged blackbird,FALSE,FALSE,No close match found
+redbird,TRUE,TRUE,redbird
+redbone,FALSE,FALSE,No close match found
+redbreast,TRUE,TRUE,redbreast
+redbug,FALSE,FALSE,No close match found
+redear,FALSE,FALSE,No close match found
+redfish,FALSE,FALSE,No close match found
+redheaded woodpecker,FALSE,FALSE,No close match found
+redhorse,FALSE,FALSE,No close match found
+redhorse sucker,FALSE,FALSE,No close match found
+redpoll,FALSE,FALSE,No close match found
+redshank,FALSE,FALSE,No close match found
+redstart,FALSE,FALSE,No close match found
+redtail,TRUE,TRUE,"redtail, retail"
+redtail hawk,FALSE,FALSE,No close match found
+redwing,FALSE,FALSE,No close match found
+reed bunting,FALSE,FALSE,No close match found
+reef shark,FALSE,FALSE,No close match found
+reindeer,TRUE,TRUE,reindeer
+remora,FALSE,FALSE,No close match found
+reptile,TRUE,TRUE,"reptile, reptiles"
+reticulated python,FALSE,FALSE,No close match found
+retriever,FALSE,TRUE,retrieve
+rhea,FALSE,FALSE,No close match found
+rhesus macaque,FALSE,FALSE,No close match found
+rhesus monkey,FALSE,FALSE,No close match found
+rhino,FALSE,FALSE,No close match found
+rhinoceros,TRUE,TRUE,rhinoceros
+rhinoceros beetle,FALSE,FALSE,No close match found
+ribbonfish,FALSE,FALSE,No close match found
+right whale,FALSE,FALSE,No close match found
+ring-tailed lemur,FALSE,FALSE,No close match found
+ringtail,FALSE,FALSE,No close match found
+ringtail cat,FALSE,FALSE,No close match found
+river otter,FALSE,FALSE,No close match found
+river rat,FALSE,FALSE,No close match found
+roach,TRUE,TRUE,"roach, broach"
+roadrunner,FALSE,FALSE,No close match found
+robin,TRUE,TRUE,"robin, robins"
+robin redbreast,FALSE,FALSE,No close match found
+rock hyrax,FALSE,FALSE,No close match found
+rockfish,FALSE,FALSE,No close match found
+rockhead,FALSE,FALSE,No close match found
+rodent,FALSE,TRUE,rodents
+roe,TRUE,TRUE,roe
+roe deer,FALSE,FALSE,No close match found
+roly-poly,FALSE,FALSE,No close match found
+rook,TRUE,TRUE,rook
+rooster,TRUE,TRUE,"rooster, roosters"
+roseate spoonbill,FALSE,FALSE,No close match found
+roseate tern,FALSE,FALSE,No close match found
+rotifer,FALSE,FALSE,No close match found
+rottweiler,FALSE,FALSE,No close match found
+roundworm,FALSE,FALSE,No close match found
+rudd,FALSE,FALSE,No close match found
+ruddy duck,FALSE,FALSE,No close match found
+ruddy turnstone,FALSE,FALSE,No close match found
+ruffed grouse,FALSE,FALSE,No close match found
+ruminant,FALSE,FALSE,No close match found
+russian blue,FALSE,FALSE,No close match found
+rusty blackbird,FALSE,FALSE,No close match found
+saber tooth,FALSE,FALSE,No close match found
+sabertoothed cat,FALSE,FALSE,No close match found
+sabertoothed tiger,FALSE,FALSE,No close match found
+sable,TRUE,TRUE,"sable, stable"
+sable antelope,FALSE,FALSE,No close match found
+sacred ibis,FALSE,FALSE,No close match found
+sage grouse,FALSE,FALSE,No close match found
+saiga,FALSE,FALSE,No close match found
+sailfish,FALSE,FALSE,No close match found
+saint bernard,FALSE,FALSE,No close match found
+saki monkey,FALSE,FALSE,No close match found
+salamander,TRUE,TRUE,salamander
+salmon,TRUE,TRUE,"salmon, salmons, salon"
+salmonid,FALSE,FALSE,No close match found
+saltwater crocodile,FALSE,FALSE,No close match found
+saltwater fish,FALSE,FALSE,No close match found
+saluki,FALSE,FALSE,No close match found
+sand cat,FALSE,FALSE,No close match found
+sand crab,FALSE,FALSE,No close match found
+sand dab,FALSE,FALSE,No close match found
+sand dollar,FALSE,FALSE,No close match found
+sand lance,FALSE,FALSE,No close match found
+sand shark,FALSE,FALSE,No close match found
+sand tiger shark,FALSE,FALSE,No close match found
+sandbar shark,FALSE,FALSE,No close match found
+sandfish,FALSE,FALSE,No close match found
+sandfly,FALSE,FALSE,No close match found
+sandhill crane,FALSE,FALSE,No close match found
+sandpiper,FALSE,FALSE,No close match found
+sapsucker,FALSE,FALSE,No close match found
+sardine,TRUE,TRUE,"sardine, sardines"
+sauropod,FALSE,FALSE,No close match found
+sauropod dinosaur,FALSE,FALSE,No close match found
+saury,FALSE,FALSE,No close match found
+savannah cat,FALSE,FALSE,No close match found
+sawfish,FALSE,FALSE,No close match found
+sawfly,FALSE,FALSE,No close match found
+scallop,FALSE,FALSE,No close match found
+scaly anteater,FALSE,FALSE,No close match found
+scarab,FALSE,FALSE,No close match found
+scarlet macaw,FALSE,FALSE,No close match found
+scarlet tanager,FALSE,FALSE,No close match found
+scaup,FALSE,FALSE,No close match found
+schipperke,FALSE,FALSE,No close match found
+schistosome,FALSE,FALSE,No close match found
+schnauzer,FALSE,FALSE,No close match found
+scorpion,TRUE,TRUE,"scorpion, scorpions"
+scorpionfish,FALSE,FALSE,No close match found
+scoter,FALSE,FALSE,No close match found
+scottish fold,FALSE,FALSE,No close match found
+scottish shetland,FALSE,FALSE,No close match found
+screech owl,FALSE,FALSE,No close match found
+scrod,FALSE,FALSE,No close match found
+scrub jay,FALSE,FALSE,No close match found
+sculpin,FALSE,FALSE,No close match found
+scup,FALSE,FALSE,No close match found
+sea anemone,FALSE,FALSE,No close match found
+sea bass,FALSE,FALSE,No close match found
+sea bear,FALSE,FALSE,No close match found
+sea bream,FALSE,FALSE,No close match found
+sea cow,FALSE,FALSE,No close match found
+sea cucumber,FALSE,FALSE,No close match found
+sea lamprey,FALSE,FALSE,No close match found
+sea lion,FALSE,FALSE,No close match found
+sea lions,FALSE,FALSE,No close match found
+sea monkey,FALSE,FALSE,No close match found
+sea otter,FALSE,FALSE,No close match found
+sea otters,FALSE,FALSE,No close match found
+sea ray,FALSE,FALSE,No close match found
+sea scorpion,FALSE,FALSE,No close match found
+sea slug,FALSE,FALSE,No close match found
+sea slug aplysia,FALSE,FALSE,No close match found
+sea snake,FALSE,FALSE,No close match found
+sea sponge,FALSE,FALSE,No close match found
+sea squirt,FALSE,FALSE,No close match found
+sea star,FALSE,FALSE,No close match found
+sea turtle,FALSE,FALSE,No close match found
+sea urchin,FALSE,FALSE,No close match found
+seabird,FALSE,FALSE,No close match found
+seagull,FALSE,FALSE,No close match found
+seahawk,FALSE,FALSE,No close match found
+seahorse,FALSE,FALSE,No close match found
+seal,TRUE,TRUE,seal
+sealion,FALSE,FALSE,No close match found
+sedge wren,FALSE,FALSE,No close match found
+sei whale,FALSE,FALSE,No close match found
+serow,FALSE,FALSE,No close match found
+serpent,TRUE,TRUE,"serpent, serpents"
+serval,FALSE,FALSE,No close match found
+shad,TRUE,TRUE,shad
+shar pei,FALSE,FALSE,No close match found
+shark,TRUE,TRUE,"shark, sharks"
+shearwater,FALSE,FALSE,No close match found
+sheep,TRUE,TRUE,sheep
+sheepdog,FALSE,FALSE,No close match found
+sheepshead,FALSE,FALSE,No close match found
+shelduck,FALSE,FALSE,No close match found
+shellfish,TRUE,TRUE,shellfish
+shepherd,TRUE,TRUE,"shepherd, shepherds"
+shetland pony,FALSE,FALSE,No close match found
+shetland sheepdog,FALSE,FALSE,No close match found
+shih tzu,FALSE,FALSE,No close match found
+shipworm,FALSE,FALSE,No close match found
+shorebird,FALSE,FALSE,No close match found
+shortfin mako,FALSE,FALSE,No close match found
+shorthorn,FALSE,FALSE,No close match found
+shoveler,FALSE,FALSE,No close match found
+shrew,TRUE,TRUE,"shrew, shrewd"
+shrike,FALSE,FALSE,No close match found
+shrimp,TRUE,TRUE,"shrimp, shrimps"
+siamang,FALSE,FALSE,No close match found
+siamese cat,FALSE,FALSE,No close match found
+siberian blue robin,FALSE,FALSE,No close match found
+siberian cat,FALSE,FALSE,No close match found
+siberian husky,FALSE,FALSE,No close match found
+siberian tiger,FALSE,FALSE,No close match found
+sidewinder,FALSE,FALSE,No close match found
+sika,FALSE,FALSE,No close match found
+silkworm,TRUE,TRUE,"silkworm, silkworms"
+silkworm moth,FALSE,FALSE,No close match found
+silky terrier,FALSE,FALSE,No close match found
+silverback,FALSE,FALSE,No close match found
+silverback gorilla,FALSE,FALSE,No close match found
+silverfish,FALSE,FALSE,No close match found
+silvertip,FALSE,FALSE,No close match found
+siphonophore,FALSE,FALSE,No close match found
+siskin,FALSE,FALSE,No close match found
+skate,TRUE,TRUE,"skate, skates"
+skink,FALSE,FALSE,No close match found
+skipjack,FALSE,FALSE,No close match found
+skipjack tuna,FALSE,FALSE,No close match found
+skua,FALSE,FALSE,No close match found
+skunk,TRUE,TRUE,"skunk, skunks"
+skylark,TRUE,TRUE,"skylark, skylarks"
+sled dog,FALSE,FALSE,No close match found
+slender loris,FALSE,FALSE,No close match found
+slime eels,FALSE,FALSE,No close match found
+sloth,TRUE,TRUE,sloth
+sloth bear,FALSE,FALSE,No close match found
+slow loris,FALSE,FALSE,No close match found
+slug,TRUE,TRUE,slug
+smallmouth,FALSE,FALSE,No close match found
+smallmouth bass,FALSE,FALSE,No close match found
+smalltooth sawfish,FALSE,FALSE,No close match found
+smelt,TRUE,TRUE,smelt
+smooth dogfish,FALSE,FALSE,No close match found
+smooth hammerhead,FALSE,FALSE,No close match found
+snail,TRUE,TRUE,"snail, snails"
+snail darter,FALSE,FALSE,No close match found
+snailfish,FALSE,FALSE,No close match found
+snake,TRUE,TRUE,"snake, snakes"
+snapper,TRUE,TRUE,snapper
+snapping turtle,FALSE,FALSE,No close match found
+snipe,TRUE,TRUE,snipe
+snoek,FALSE,FALSE,No close match found
+snook,FALSE,FALSE,No close match found
+snow crab,FALSE,FALSE,No close match found
+snow goose,FALSE,FALSE,No close match found
+snow leopard,FALSE,FALSE,No close match found
+snow lion,FALSE,FALSE,No close match found
+snow monkey,FALSE,FALSE,No close match found
+snowbird,FALSE,FALSE,No close match found
+snowshoe hare,FALSE,FALSE,No close match found
+snowy egret,FALSE,FALSE,No close match found
+snowy owl,FALSE,FALSE,No close match found
+sockeye,FALSE,FALSE,No close match found
+sockeye salmon,FALSE,FALSE,No close match found
+song thrush,FALSE,FALSE,No close match found
+songbird,FALSE,FALSE,No close match found
+soupfin,FALSE,FALSE,No close match found
+sow,TRUE,TRUE,sow
+spadefish,FALSE,FALSE,No close match found
+spadefoot,FALSE,FALSE,No close match found
+spadefoot toad,FALSE,FALSE,No close match found
+spaniel,TRUE,TRUE,"spaniel, spaniels"
+spanish mackerel,FALSE,FALSE,No close match found
+sparrow,TRUE,TRUE,"sparrow, sparrows"
+sparrow hawk,FALSE,FALSE,No close match found
+spearfish,FALSE,FALSE,No close match found
+speckled trout,FALSE,FALSE,No close match found
+spectacled caiman,FALSE,FALSE,No close match found
+sperm whale,FALSE,FALSE,No close match found
+sphinx moth,FALSE,FALSE,No close match found
+sphynx cat,FALSE,FALSE,No close match found
+spider,TRUE,TRUE,"spider, spiders"
+spider crab,FALSE,FALSE,No close match found
+spider mite,FALSE,FALSE,No close match found
+spider monkey,FALSE,FALSE,No close match found
+spiny anteater,FALSE,FALSE,No close match found
+spiny dogfish,FALSE,FALSE,No close match found
+spiny dogfish shark,FALSE,FALSE,No close match found
+spiny lobster,FALSE,FALSE,No close match found
+spitting cobra,FALSE,FALSE,No close match found
+spitz,FALSE,FALSE,No close match found
+sponge,TRUE,TRUE,"sponge, sponges"
+spoonbill,FALSE,FALSE,No close match found
+spotted flycatcher,FALSE,FALSE,No close match found
+spotted hyena,FALSE,FALSE,No close match found
+spotted owl,FALSE,FALSE,No close match found
+spotted salamander,FALSE,FALSE,No close match found
+spotted sandpiper,FALSE,FALSE,No close match found
+sprat,TRUE,TRUE,sprat
+spring peeper,FALSE,FALSE,No close match found
+springbok,FALSE,FALSE,No close match found
+springer spaniel,FALSE,FALSE,No close match found
+spruce bark beetle,FALSE,FALSE,No close match found
+spruce grouse,FALSE,FALSE,No close match found
+squab,TRUE,TRUE,squab
+squid,FALSE,FALSE,No close match found
+squirrel,TRUE,TRUE,"squirrel, squirrels"
+squirrel monkey,FALSE,FALSE,No close match found
+staffordshire bull terrier,FALSE,FALSE,No close match found
+staffordshire terrier,FALSE,FALSE,No close match found
+stag,TRUE,TRUE,stag
+stag beetle,FALSE,FALSE,No close match found
+staghorn coral,FALSE,FALSE,No close match found
+stallion,TRUE,TRUE,"stallion, stallions"
+standard poodle,FALSE,FALSE,No close match found
+star-nosed mole,FALSE,FALSE,No close match found
+starfish,TRUE,TRUE,starfish
+stargazer,FALSE,FALSE,No close match found
+starling,TRUE,TRUE,"starling, startling, tarling"
+steed,TRUE,TRUE,"steed, stewed, steeds"
+steenbok,FALSE,FALSE,No close match found
+steeplechase horse,FALSE,FALSE,No close match found
+steer,TRUE,TRUE,"steer, steers"
+stegosaurus,FALSE,FALSE,No close match found
+steller jay,FALSE,FALSE,No close match found
+stick bug,FALSE,FALSE,No close match found
+stick insect,FALSE,FALSE,No close match found
+stickleback,FALSE,FALSE,No close match found
+stilt,FALSE,TRUE,stilts
+stingray,FALSE,FALSE,No close match found
+stinkbug,FALSE,FALSE,No close match found
+stoat,FALSE,FALSE,No close match found
+stone curlew,FALSE,FALSE,No close match found
+stone marten,FALSE,FALSE,No close match found
+stonefish,FALSE,FALSE,No close match found
+stonefly,FALSE,FALSE,No close match found
+stony coral,FALSE,FALSE,No close match found
+stork,TRUE,TRUE,"stork, storks"
+storm petrel,FALSE,FALSE,No close match found
+stormy petrel,FALSE,FALSE,No close match found
+striped bass,FALSE,FALSE,No close match found
+striped hyena,FALSE,FALSE,No close match found
+striped marlin,FALSE,FALSE,No close match found
+striped mullet,FALSE,FALSE,No close match found
+striped skunk,FALSE,FALSE,No close match found
+striper,FALSE,TRUE,stripe
+sturgeon,TRUE,TRUE,"sturgeon, surgeon"
+suckerfish,FALSE,FALSE,No close match found
+suckermouth catfish,FALSE,FALSE,No close match found
+sugar glider,FALSE,FALSE,No close match found
+summer tanager,FALSE,FALSE,No close match found
+sun bear,FALSE,FALSE,No close match found
+sun conure,FALSE,FALSE,No close match found
+sunfish,TRUE,TRUE,sunfish
+superbug,FALSE,FALSE,No close match found
+surfperch,FALSE,FALSE,No close match found
+surgeon fish,FALSE,FALSE,No close match found
+surgeonfish,FALSE,FALSE,No close match found
+swallow,TRUE,TRUE,"swallow, swallows, wallow"
+swallowtail,FALSE,FALSE,No close match found
+swamp sparrow,FALSE,FALSE,No close match found
+swan,TRUE,TRUE,swan
+swift,TRUE,TRUE,swift
+swiftlet,FALSE,FALSE,No close match found
+swine,TRUE,TRUE,swine
+swordfish,FALSE,FALSE,No close match found
+swordtail,FALSE,FALSE,No close match found
+t rex,FALSE,FALSE,No close match found
+tabby,TRUE,TRUE,tabby
+tabby cat,FALSE,FALSE,No close match found
+tadpole,TRUE,TRUE,"tadpole, tadpoles"
+tadpole shrimp,FALSE,FALSE,No close match found
+taipan,FALSE,FALSE,No close match found
+takahe,FALSE,FALSE,No close match found
+takin,TRUE,TRUE,"takin, talkin, taking"
+tamarin,FALSE,FALSE,No close match found
+tammar wallaby,FALSE,FALSE,No close match found
+tanager,TRUE,TRUE,tanager
+tapeworm,FALSE,FALSE,No close match found
+tapir,FALSE,FALSE,No close match found
+tarantula,FALSE,FALSE,No close match found
+tardigrade,FALSE,FALSE,No close match found
+tarpon,FALSE,FALSE,No close match found
+tarsier,FALSE,FALSE,No close match found
+tasmanian devil,FALSE,FALSE,No close match found
+tautog,FALSE,FALSE,No close match found
+tawny owl,FALSE,FALSE,No close match found
+teacup chihuahua,FALSE,FALSE,No close match found
+teleost,FALSE,FALSE,No close match found
+teleost fish,FALSE,FALSE,No close match found
+tench,FALSE,TRUE,"trench, stench"
+tent caterpillar,FALSE,FALSE,No close match found
+termite,FALSE,FALSE,No close match found
+tern,TRUE,TRUE,tern
+terrapin,FALSE,FALSE,No close match found
+terrier,TRUE,TRUE,"terrier, terriers"
+tetra,FALSE,FALSE,No close match found
+tetrapod,FALSE,FALSE,No close match found
+theropod,FALSE,FALSE,No close match found
+theropod dinosaur,FALSE,FALSE,No close match found
+thorny devil,FALSE,FALSE,No close match found
+thoroughbred,TRUE,TRUE,thoroughbred
+threadfin,FALSE,FALSE,No close match found
+three toed sloth,FALSE,FALSE,No close match found
+thresher shark,FALSE,FALSE,No close match found
+thrip,FALSE,FALSE,No close match found
+thrush,TRUE,TRUE,thrush
+thylacine,FALSE,FALSE,No close match found
+tick,TRUE,TRUE,tick
+tiger,TRUE,TRUE,"tiger, tigers"
+tiger beetle,FALSE,FALSE,No close match found
+tiger cub,FALSE,FALSE,No close match found
+tiger moth,FALSE,FALSE,No close match found
+tiger rattlesnake,FALSE,FALSE,No close match found
+tiger salamander,FALSE,FALSE,No close match found
+tiger shark,FALSE,FALSE,No close match found
+tigon,FALSE,FALSE,No close match found
+tigress,FALSE,FALSE,No close match found
+tilapia,FALSE,FALSE,No close match found
+tilefish,FALSE,FALSE,No close match found
+timber rattlesnake,FALSE,FALSE,No close match found
+timber wolf,FALSE,FALSE,No close match found
+titanosaur,FALSE,FALSE,No close match found
+titi,FALSE,FALSE,No close match found
+titi monkey,FALSE,FALSE,No close match found
+titmouse,TRUE,TRUE,titmouse
+toad,TRUE,TRUE,toad
+toadfish,FALSE,FALSE,No close match found
+tobacco budworm,FALSE,FALSE,No close match found
+tobacco hornworm,FALSE,FALSE,No close match found
+tody,FALSE,FALSE,No close match found
+tom turkey,FALSE,FALSE,No close match found
+tomato hornworm,FALSE,FALSE,No close match found
+tomcat,FALSE,FALSE,No close match found
+toothed whale,FALSE,FALSE,No close match found
+tortes,FALSE,FALSE,No close match found
+tortoise,TRUE,TRUE,tortoise
+tortoiseshell,FALSE,FALSE,No close match found
+tortuga,TRUE,TRUE,tortuga
+toucan,FALSE,FALSE,No close match found
+towhee,FALSE,FALSE,No close match found
+toy poodle,FALSE,FALSE,No close match found
+toy spaniel,FALSE,FALSE,No close match found
+tragopan,FALSE,FALSE,No close match found
+trapdoor spider,FALSE,FALSE,No close match found
+tree shrew,FALSE,FALSE,No close match found
+treefrog,FALSE,FALSE,No close match found
+trematode,FALSE,FALSE,No close match found
+trepang,FALSE,FALSE,No close match found
+triceratops,FALSE,FALSE,No close match found
+triggerfish,TRUE,TRUE,triggerfish
+trilobite,FALSE,FALSE,No close match found
+tripletail,FALSE,FALSE,No close match found
+trogon,FALSE,FALSE,No close match found
+trotter,TRUE,TRUE,"trotter, trotters, totter"
+trout,TRUE,TRUE,"trout, trouts"
+trumpeter,TRUE,TRUE,"trumpeter, trumpeters"
+trumpeter swan,FALSE,FALSE,No close match found
+tsetse,FALSE,FALSE,No close match found
+tsetse fly,FALSE,FALSE,No close match found
+tuatara,FALSE,FALSE,No close match found
+tubeworm,FALSE,FALSE,No close match found
+tufted puffin,FALSE,FALSE,No close match found
+tufted titmouse,FALSE,FALSE,No close match found
+tuna,FALSE,FALSE,No close match found
+tundra swan,FALSE,FALSE,No close match found
+tunicate,FALSE,FALSE,No close match found
+tunny,TRUE,TRUE,tunny
+turbot,TRUE,TRUE,turbot
+turkey,TRUE,TRUE,"turkey, turnkey, turkeys"
+turkey buzzard,FALSE,FALSE,No close match found
+turkey vulture,FALSE,FALSE,No close match found
+turtle,TRUE,TRUE,"turtle, turtles"
+turtle dove,FALSE,FALSE,No close match found
+turtledove,FALSE,FALSE,No close match found
+tusker,FALSE,FALSE,No close match found
+tussock moth,FALSE,FALSE,No close match found
+tyrannosaur,FALSE,FALSE,No close match found
+tyrannosaurus,FALSE,FALSE,No close match found
+tyrannosaurus rex,FALSE,FALSE,No close match found
+ungulate,FALSE,FALSE,No close match found
+unicorn,TRUE,TRUE,unicorn
+upland sandpiper,FALSE,FALSE,No close match found
+urchin,TRUE,TRUE,"urchin, urchins"
+vampire bat,FALSE,FALSE,No close match found
+vaquita,FALSE,FALSE,No close match found
+varmint,FALSE,FALSE,No close match found
+veal,TRUE,TRUE,veal
+veery,FALSE,FALSE,No close match found
+velociraptor,FALSE,FALSE,No close match found
+venomous lizard,FALSE,FALSE,No close match found
+vermin,TRUE,TRUE,vermin
+vertebrate,FALSE,TRUE,vertebrae
+vervet monkey,FALSE,FALSE,No close match found
+vesper sparrow,FALSE,FALSE,No close match found
+vicuna,FALSE,FALSE,No close match found
+vinegarroon,FALSE,FALSE,No close match found
+viper,TRUE,TRUE,viper
+vireo,FALSE,FALSE,No close match found
+vizsla,FALSE,FALSE,No close match found
+vole,FALSE,FALSE,No close match found
+vulture,TRUE,TRUE,"vulture, vultures"
+wagtail,FALSE,FALSE,No close match found
+wahoo,FALSE,FALSE,No close match found
+wallaby,FALSE,FALSE,No close match found
+wallaroo,FALSE,FALSE,No close match found
+walleye,FALSE,FALSE,No close match found
+walleyed pike,FALSE,FALSE,No close match found
+walrus,TRUE,TRUE,walrus
+wandering albatross,FALSE,FALSE,No close match found
+wapiti,FALSE,FALSE,No close match found
+warbler,TRUE,TRUE,"warbler, warble"
+warthog,FALSE,FALSE,No close match found
+wasp,TRUE,TRUE,wasp
+water bear,FALSE,FALSE,No close match found
+water buffalo,FALSE,FALSE,No close match found
+water bug,FALSE,FALSE,No close match found
+water moccasin,FALSE,FALSE,No close match found
+water snake,FALSE,FALSE,No close match found
+waterbird,FALSE,FALSE,No close match found
+waterbuck,FALSE,FALSE,No close match found
+waterfowl,TRUE,TRUE,waterfowl
+waxwing,FALSE,TRUE,waxing
+weakfish,FALSE,FALSE,No close match found
+weasel,TRUE,TRUE,"weasel, weasels, easel"
+webworm,FALSE,FALSE,No close match found
+weevil,FALSE,FALSE,No close match found
+weimaraner,FALSE,FALSE,No close match found
+western lowland gorilla,FALSE,FALSE,No close match found
+western meadowlark,FALSE,FALSE,No close match found
+western tanager,FALSE,FALSE,No close match found
+westie,FALSE,FALSE,No close match found
+whale,TRUE,TRUE,"whale, whales, whaler"
+whale shark,FALSE,FALSE,No close match found
+wheatear,FALSE,FALSE,No close match found
+whelk,FALSE,FALSE,No close match found
+whelp,TRUE,TRUE,"whelp, whelps"
+whiff,TRUE,TRUE,"whiff, whiffs"
+whippet,FALSE,TRUE,whippets
+whippoorwill,FALSE,FALSE,No close match found
+whipsnake,FALSE,FALSE,No close match found
+whiptail,FALSE,FALSE,No close match found
+whirligig beetle,FALSE,FALSE,No close match found
+white marlin,FALSE,FALSE,No close match found
+white tailed deer,FALSE,FALSE,No close match found
+white tiger,FALSE,FALSE,No close match found
+white wolf,FALSE,FALSE,No close match found
+whitebait,FALSE,FALSE,No close match found
+whitefish,TRUE,TRUE,whitefish
+whitefly,FALSE,FALSE,No close match found
+whitetail deer,FALSE,FALSE,No close match found
+whiting,TRUE,TRUE,whiting
+whooper,FALSE,TRUE,hooper
+whooper swan,FALSE,FALSE,No close match found
+whooping crane,FALSE,FALSE,No close match found
+widgeon,FALSE,FALSE,No close match found
+widow spider,FALSE,FALSE,No close match found
+wiener dog,FALSE,FALSE,No close match found
+wigeon,FALSE,FALSE,No close match found
+wiggler,FALSE,TRUE,wiggle
+wild boar,FALSE,FALSE,No close match found
+wild dog,FALSE,FALSE,No close match found
+wildcat,TRUE,TRUE,wildcat
+wildebeest,FALSE,FALSE,No close match found
+willet,FALSE,FALSE,No close match found
+winkle,TRUE,TRUE,"winkle, wrinkle, twinkle"
+winter wren,FALSE,FALSE,No close match found
+wireworm,FALSE,FALSE,No close match found
+wolf,TRUE,TRUE,wolf
+wolf cub,FALSE,FALSE,No close match found
+wolf pup,FALSE,FALSE,No close match found
+wolf spider,FALSE,FALSE,No close match found
+wolffish,FALSE,TRUE,wolfish
+wolfhound,TRUE,TRUE,wolfhound
+wolverine,TRUE,TRUE,wolverine
+wolves,TRUE,TRUE,wolves
+woman,TRUE,TRUE,woman
+wombat,FALSE,FALSE,No close match found
+wood pewee,FALSE,FALSE,No close match found
+wood stork,FALSE,FALSE,No close match found
+wood thrush,FALSE,FALSE,No close match found
+woodchuck,TRUE,TRUE,woodchuck
+woodcock,TRUE,TRUE,woodcock
+woodcock snipe,FALSE,FALSE,No close match found
+woodland caribou,FALSE,FALSE,No close match found
+woodpecker,TRUE,TRUE,"woodpecker, woodpeckers"
+woodworm,FALSE,FALSE,No close match found
+woolly adelgid,FALSE,FALSE,No close match found
+woolly bear,FALSE,FALSE,No close match found
+woolly mammoth,FALSE,FALSE,No close match found
+woolly monkey,FALSE,FALSE,No close match found
+woolly rhinoceros,FALSE,FALSE,No close match found
+worm,TRUE,TRUE,worm
+wrasse,FALSE,FALSE,No close match found
+wren,TRUE,TRUE,wren
+wriggler,FALSE,TRUE,wriggle
+xerus,FALSE,FALSE,No close match found
+yak,TRUE,TRUE,yak
+yearling,FALSE,FALSE,No close match found
+yellow lab,FALSE,FALSE,No close match found
+yellow labrador,FALSE,FALSE,No close match found
+yellow perch,FALSE,FALSE,No close match found
+yellow warbler,FALSE,FALSE,No close match found
+yellowfin,FALSE,FALSE,No close match found
+yellowfin croaker,FALSE,FALSE,No close match found
+yellowfin tuna,FALSE,FALSE,No close match found
+yellowhammer,FALSE,FALSE,No close match found
+yellowjacket,FALSE,FALSE,No close match found
+yellowlegs,TRUE,TRUE,yellowlegs
+yellowtail,FALSE,FALSE,No close match found
+yellowtail flounder,FALSE,FALSE,No close match found
+yellowtail snapper,FALSE,FALSE,No close match found
+yellowthroat,FALSE,FALSE,No close match found
+yorkie,FALSE,TRUE,yorke
+yorkshire terrier,FALSE,FALSE,No close match found
+zebra,TRUE,TRUE,zebra
+zebra finch,FALSE,FALSE,No close match found
+zebra fish,FALSE,FALSE,No close match found
+zebra mussel,FALSE,FALSE,No close match found
+zebrafish,FALSE,FALSE,No close match found
+zebu,FALSE,FALSE,No close match found
+zooplankton,FALSE,FALSE,No close match found
+zorillo,FALSE,FALSE,No close match found
+painted dog,FALSE,FALSE,No close match found
+lightning bug,FALSE,FALSE,No close match found
+flying fox,FALSE,FALSE,No close match found
+tigerfish,FALSE,TRUE,triggerfish
+sifaka,FALSE,FALSE,No close match found
+mockingjay,FALSE,FALSE,No close match found
+sphynx,FALSE,FALSE,No close match found

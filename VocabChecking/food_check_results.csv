@@ -1,0 +1,1070 @@
+Word,Found,Original Found,Close Matches
+alcohol,True,True,"alcohol, cool, malcolm"
+alligator,True,True,"alligator, alligators, navigator"
+almond,True,True,"almond, almonds, salmon"
+almonds,True,True,"almonds, almond, salmons"
+anchovies,True,True,"anchovies, anchises, anchorite"
+anchovy,True,True,"anchovy, sancho, anchor"
+apple,True,True,"apple, dapple, apples"
+apples,True,True,"apples, applies, apple"
+apricot,True,True,"apricot, apricots, barnicot"
+apricots,True,True,"apricots, apricot, capricious"
+asparagus,True,True,"asparagus, sprague's, spartacus"
+bacon,True,True,"bacon, beacon, bracton"
+banana,True,True,"banana, bananas, bandanna"
+bananas,True,True,"bananas, banana, banns"
+bark,True,True,"bark, barks, bar"
+barley,True,True,"barley, bartley, bartleby"
+basil,True,True,"basil, bail, basilio"
+bass,True,True,"bass, brass, bassi"
+bean,True,True,"bean, began, beans"
+beans,True,True,"beans, bean, means"
+beef,True,True,"beef, bee, bereft"
+beer,True,True,"beer, bee, brewer"
+beet,True,True,"beet, beset, beget"
+beets,True,True,"beets, begets, bets"
+berries,True,True,"berries, ferries, terriers"
+beverage,True,True,"beverage, beverages, peerage"
+biscuit,True,True,"biscuit, biscuits, obscurity"
+biscuits,True,True,"biscuits, biscuit, suits"
+bison,True,True,"bison, brion, robinson"
+blackberries,True,True,"blackberries, blackberry, blackie"
+blackberry,True,True,"blackberry, blacker, blackberries"
+bologna,True,True,"bologna, boulogne, bolton"
+bread,True,True,"bread, read, bred"
+breakfast,True,True,"breakfast, breakfasts, breakfasted"
+broth,True,True,"broth, both, brother"
+brownie,True,True,"brownie, brownies, browne"
+brownies,True,True,"brownies, brownie, brownish"
+bun,True,True,"bun, burn, buns"
+buns,True,True,"buns, burns, bunks"
+burger,True,True,"burger, burgher, burge"
+butter,True,True,"butter, buttery, utter"
+cabbage,True,True,"cabbage, cabbages, cage"
+cake,True,True,"cake, cakes, caked"
+cakes,True,True,"cakes, cake, caskets"
+candies,True,True,"candies, dandies, candles"
+candy,True,True,"candy, andy, sandy"
+carrot,True,True,"carrot, carrots, parrot"
+carrots,True,True,"carrots, carrot, parrots"
+casserole,True,True,"casserole, carol, tasseled"
+cat,True,True,"cat, coat, chat"
+cauliflower,True,True,"cauliflower, wallflowers, gilliflower"
+celery,True,True,"celery, celerity, clergy"
+cereals,True,True,"cereals, ceres, cerebral"
+cheddar,True,True,"cheddar, cheddars, cedar"
+cheese,True,True,"cheese, cheeses, cheers"
+cherries,True,True,"cherries, cherrie, cherie"
+cherry,True,True,"cherry, sherry, cheery"
+chew,True,True,"chew, hew, chewed"
+chicken,True,True,"chicken, chickens, thicken"
+chili,True,True,"chili, chill, chile"
+chinese,True,True,"chinese, chins, machines"
+chip,True,True,"chip, chirp, chips"
+chips,True,True,"chips, hips, chip"
+chocolate,True,True,"chocolate, schoolmate, schoolmates"
+cider,True,True,"cider, cinder, cinders"
+cinnamon,True,True,"cinnamon, chinamen, chinaman"
+clam,True,True,"clam, clams, clamp"
+cobbler,True,True,"cobbler, cobble, robber"
+cod,True,True,"cod, cord, cold"
+coffee,True,True,"coffee, coffer, scoffed"
+coke,True,True,"coke, cocke, choke"
+cookie,True,True,"cookie, cookies, coolie"
+cookies,True,True,"cookies, cookie, coolies"
+corn,True,True,"corn, scorn, corny"
+cornmeal,True,True,"cornmeal, coronel, congeal"
+crab,True,True,"crab, crabs, cab"
+cracker,True,True,"cracker, crackers, tracker"
+crackers,True,True,"crackers, cracker, cracks"
+cranberries,True,True,"cranberries, raspberries, cranberry"
+cranberry,True,True,"cranberry, cranberries, raspberry"
+cream,True,True,"cream, scream, creamy"
+cucumber,True,True,"cucumber, cucumbers, encumber"
+cucumbers,True,True,"cucumbers, cucumber, numbers"
+curry,True,True,"curry, scurry, cursory"
+custard,True,True,"custard, custards, mustard"
+cuttlefish,True,True,"cuttlefish, scuttle, cutters"
+dairy,True,True,"dairy, airy, hairy"
+danish,True,True,"danish, vanish, banish"
+date,True,True,"date, dates, dated"
+dates,True,True,"dates, dantes, date"
+desert,True,True,"desert, dessert, deserts"
+dessert,True,True,"dessert, desserts, desert"
+dill,True,True,"dill, drill, ill"
+dip,True,True,"dip, drip, dips"
+dog,True,True,"dog, dong, dogs"
+dolphin,True,True,"dolphin, dolphins, godolphin"
+dough,True,True,"dough, drought, doughty"
+doughnut,True,True,"doughnut, doughnuts, drought"
+doughnuts,True,True,"doughnuts, doughnut, drought"
+dressing,True,True,"dressing, dressings, undressing"
+duck,True,True,"duck, ducks, duc"
+dumpling,True,True,"dumpling, dumplings, dummling"
+dumplings,True,True,"dumplings, dumpling, dummling"
+eel,True,True,"eel, weel, reel"
+egg,True,True,"egg, wegg, eggs"
+eggs,True,True,"eggs, weggs, egg"
+electrolyte,True,True,"electrolyte, electro, electrodes"
+electrolytes,True,False,"electrolyte, electrodes, electro"
+fat,True,True,"fat, flat, feat"
+fig,True,True,"fig, figs, fling"
+fish,True,True,"fish, fishy, ish"
+flour,True,True,"flour, floury, four"
+food,True,True,"food, foods, flood"
+foods,True,True,"foods, floods, food"
+fried,True,True,"fried, friend, frieda"
+fruit,True,True,"fruit, fruits, fritz"
+fruits,True,True,"fruits, fruit, ruts"
+fudge,True,True,"fudge, nudge, judge"
+garlic,True,True,"garlic, gallic, gaelic"
+ginger,True,True,"ginger, gingerly, singer"
+gingerbread,True,True,"gingerbread, lingered, interred"
+gizzard,True,True,"gizzard, blizzard, wizard"
+goldfish,True,True,"goldfish, oldish, goldfinch"
+grain,True,True,"grain, grains, rain"
+grains,True,True,"grains, rains, grins"
+grape,True,True,"grape, grapes, rape"
+grapes,True,True,"grapes, grape, graves"
+gravy,True,True,"gravy, gray, gravity"
+greens,True,True,"greens, green's, green"
+grill,True,True,"grill, grille, gill"
+gum,True,True,"gum, gums, glum"
+ham,True,True,"ham, sham, harm"
+hash,True,True,"hash, harsh, has"
+honey,True,True,"honey, honeyed, honesty"
+ice,True,True,"ice, vice, rice"
+icing,True,True,"icing, wincing, ticking"
+italian,True,True,"italian, italians, talisman"
+jam,True,True,"jam, joam, jamb"
+jelly,True,True,"jelly, elly, welly"
+jerky,True,True,"jerky, jerk, jerry"
+juice,True,True,"juice, juices, justice"
+ketchup,True,True,"ketchup, ketchum, ketch"
+lamb,True,True,"lamb, lambs, lab"
+lemon,True,True,"lemon, lemons, leon"
+lemonade,True,True,"lemonade, leonard, monad"
+lemons,True,True,"lemons, lemon, lemnos"
+lentils,True,True,"lentils, entails, gentiles"
+lettuce,True,True,"lettuce, letter, luce"
+limburger,True,True,"limburger, burger, climber"
+lime,True,True,"lime, slime, limes"
+limes,True,True,"limes, climes, lime"
+liquor,True,True,"liquor, liquors, liqueur"
+liver,True,True,"liver, oliver, livery"
+lobster,True,True,"lobster, lobsters, loser"
+macaroni,True,True,"macaroni, marconi, aaron"
+mackerel,True,True,"mackerel, maker, merely"
+marmalade,True,True,"marmalade, marmaduke, maryland"
+mayonnaise,True,True,"mayonnaise, madonna, monna"
+meal,True,True,"meal, metal, medal"
+meat,True,True,"meat, meats, meant"
+meats,True,True,"meats, meat, mats"
+melon,True,True,"melon, melons, milon"
+mexican,True,True,"mexican, mexicans, american"
+milk,True,True,"milk, milky, milked"
+millet,True,True,"millet, mullet, miller"
+mint,True,True,"mint, minty, minta"
+mocha,True,True,"mocha, moa, mothah"
+monkey,True,True,"monkey, monkeys, money"
+monterey,True,True,"monterey, monastery, montero"
+muffin,True,True,"muffin, muffins, muffling"
+muffins,True,True,"muffins, muffin, ruffians"
+mushroom,True,True,"mushroom, mushrooms, washroom"
+mushrooms,True,True,"mushrooms, mushroom, rooms"
+mussel,True,True,"mussel, mussels, muse"
+mustard,True,True,"mustard, custard, mustered"
+mutton,True,True,"mutton, sutton, hutton"
+napoleon,True,True,"napoleon, napoleons, napoleonic"
+noodle,True,True,"noodle, noodles, poodle"
+noodles,True,True,"noodles, noodle, toodles"
+nuggets,True,True,"nuggets, nugget, suggests"
+nut,True,True,"nut, nutt, nuts"
+nuts,True,True,"nuts, nut, snouts"
+oatmeal,True,True,"oatmeal, teal, meal"
+oats,True,True,"oats, oaths, oates"
+oil,True,True,"oil, toil, soil"
+olive,True,True,"olive, olives, oliver"
+olives,True,True,"olives, olive's, olive"
+omelet,True,True,"omelet, omelette, melt"
+omelette,True,True,"omelette, l'omelette, omelet"
+onion,True,True,"onion, onions, opinion"
+onions,True,True,"onions, onion, opinions"
+orange,True,True,"orange, oranges, range"
+oranges,True,True,"oranges, ranges, orange"
+oyster,True,True,"oyster, oysters, oyster's"
+pancake,True,True,"pancake, pancakes, packet"
+pancakes,True,True,"pancakes, pancake, pancras"
+parmesan,True,True,"parmesan, parkman, armes"
+parsley,True,True,"parsley, parley, paley"
+pastry,True,True,"pastry, pasty, pastor"
+pate,True,True,"pate, prate, plate"
+pea,True,True,"pea, plea, peat"
+peach,True,True,"peach, preach, each"
+peaches,True,True,"peaches, preachers, teaches"
+peanut,True,True,"peanut, peanuts, pedant"
+peanuts,True,True,"peanuts, peanut, pants"
+pear,True,True,"pear, spear, pears"
+pears,True,True,"pears, spears, pearls"
+peas,True,True,"peas, pleas, pease"
+pepper,True,True,"pepper, peppers, peppered"
+peppers,True,True,"peppers, pepper, peers"
+pheasant,True,True,"pheasant, pheasants, peasant"
+pickle,True,True,"pickle, pickles, pickled"
+pickles,True,True,"pickles, prickles, pickle"
+pie,True,True,"pie, pipe, pine"
+pies,True,True,"pies, spies, pipes"
+pig,True,True,"pig, prig, pigs"
+pill,True,True,"pill, spill, pills"
+pineapple,True,True,"pineapple, apple, pinnacle"
+plum,True,True,"plum, plums, plump"
+plums,True,True,"plums, plumes, plus"
+pomegranate,True,True,"pomegranate, pomegranates, pegana"
+pop,True,True,"pop, prop, pops"
+pork,True,True,"pork, porky, york"
+potatloes,True,False,"potatoes, potato, portarles"
+potato,True,True,"potato, potatoes, otto"
+potatoes,True,True,"potatoes, potato, rotates"
+potoes,True,False,"potatoes, toes, pots"
+poultry,True,True,"poultry, sultry, prouty"
+prune,True,True,"prune, prunes, prue"
+pudding,True,True,"pudding, puddings, padding"
+pumpkin,True,True,"pumpkin, pumpkins, pumping"
+quail,True,True,"quail, quailed, quilt"
+rabbit,True,True,"rabbit, rabbits, rabbi"
+radishes,True,True,"radishes, raises, dishes"
+raisin,True,True,"raisin, raisins, raising"
+raisins,True,True,"raisins, raisin, risings"
+raspberries,True,True,"raspberries, cranberries, raspberry"
+raspberry,True,True,"raspberry, sperry, rasper"
+relish,True,True,"relish, relished, relies"
+rib,True,True,"rib, ribs, crib"
+ribs,True,True,"ribs, rib, tribes"
+rice,True,True,"rice, trice, price"
+roast,True,True,"roast, roasted, toast"
+roll,True,True,"roll, troll, rolls"
+rolls,True,True,"rolls, trolls, roll"
+rooster,True,True,"rooster, roosters, roost"
+roots,True,True,"roots, root, ryots"
+rosemary,True,True,"rosemary, rosary, seminary"
+sage,True,True,"sage, usage, stage"
+salad,True,True,"salad, sala, slade"
+salmon,True,True,"salmon, salmons, salon"
+salt,True,True,"salt, shalt, salut"
+sandwich,True,True,"sandwich, sandwiches, sanch"
+sandwiches,True,True,"sandwiches, sandwich, switches"
+sardine,True,True,"sardine, sardines, sadie"
+sardines,True,True,"sardines, sardine, tardiness"
+sauce,True,True,"sauce, sauces, saucer"
+sausage,True,True,"sausage, sausages, usage"
+sausages,True,True,"sausages, sausage, usages"
+seaweed,True,True,"seaweed, seaweeds, sewed"
+seeds,True,True,"seeds, steeds, speeds"
+shark,True,True,"shark, sharks, shar"
+sherbet,True,True,"sherbet, herbert, sheet"
+shrimp,True,True,"shrimp, shrimps, ship"
+snack,True,True,"snack, sack, stack"
+snails,True,True,"snails, snail's, snail"
+sod,True,True,"sod, sold, sods"
+soda,True,True,"soda, sod, soudan"
+souo,True,False,"sou, sous, sour"
+soup,True,True,"soup, soups, sup"
+spice,True,True,"spice, spices, spiced"
+spices,True,True,"spices, spies, spice"
+spinach,True,True,"spinach, pinch, spinal"
+sprinkle,True,True,"sprinkle, sprinkled, wrinkle"
+sprite,True,True,"sprite, sprites, spite"
+sprouts,True,True,"sprouts, sprout, spout"
+squash,True,True,"squash, squashes, squashed"
+steak,True,True,"steak, streak, steaks"
+stew,True,True,"stew, strew, sew"
+strawberries,True,True,"strawberries, strawberry, raspberries"
+strawberry,True,True,"strawberry, strawberries, starry"
+stuffing,True,True,"stuffing, snuffing, sufficing"
+sub,True,True,"sub, stub, snub"
+subway,True,True,"subway, sway, sways"
+sucker,True,True,"sucker, suckers, tucker"
+suckers,True,True,"suckers, sucker, saucers"
+sugar,True,True,"sugar, sugary, sluggard"
+sweets,True,True,"sweets, sweet, sweetest"
+syrup,True,True,"syrup, sup, stirrup"
+tangerines,True,True,"tangerines, strangeness, tragedies"
+tart,True,True,"tart, tarts, start"
+tea,True,True,"tea, thea, teas"
+toast,True,True,"toast, toasts, topmast"
+tomato,True,True,"tomato, tomatoes, toto"
+tomatoes,True,True,"tomatoes, tomato, tombstones"
+tongue,True,True,"tongue, tongues, tongued"
+trout,True,True,"trout, trouts, trot"
+turkey,True,True,"turkey, turnkey, turkeys"
+turnip,True,True,"turnip, turnips, turn"
+union,True,True,"union, unison, unions"
+vanilla,True,True,"vanilla, villa, mantilla"
+veal,True,True,"veal, venal, vel"
+vegetable,True,True,"vegetable, vegetables, regrettable"
+vegetables,True,True,"vegetables, vegetable, eatables"
+venison,True,True,"venison, tenison, vision"
+vinegar,True,True,"vinegar, viner, vineyard"
+walnut,True,True,"walnut, walnuts, want"
+walnuts,True,True,"walnuts, walnut, wants"
+water,True,True,"water, watery, waters"
+watermelon,True,True,"watermelon, waterman, waterloo"
+wheat,True,True,"wheat, what, heat"
+wine,True,True,"wine, wines, wince"
+wings,True,True,"wings, wrings, swings"
+wrap,True,True,"wrap, wrapt, wraps"
+wraps,True,True,"wraps, wrap, raps"
+yeast,True,True,"yeast, east, years"
+albacora leste,False,False,No close match found
+alfredo sauce,True,False,alfred's
+almond cake,True,False,"almond, pancake, almonds"
+almond croissants,False,False,No close match found
+almond flour,True,False,"mondetour, almond"
+amatriciana,True,False,"patrician, patricians, patricia"
+antipasto salad,False,False,No close match found
+anzac biscuits,True,False,"biscuits, biscuit, anarchists"
+apple slices,True,False,"applies, appliances, leslie's"
+apple varieties,True,False,"varieties, proprieties, apprentices"
+apple wedges,True,False,"pledges, appendages, wedges"
+applesauce cake,False,False,No close match found
+arancini,True,False,"prancing, rankin, racing"
+arborio rice,True,False,laboratories
+artichokes,True,False,"articles, riches, chokes"
+artisanal bread,False,False,No close match found
+arugula,True,False,"regular, augusta, angular"
+avocado,True,False,"advocated, volcano, bravado"
+avocados,True,False,"avocations, volcanos, avoids"
+bagged lettuce,True,False,lettuce
+bagged spinach,True,False,spinach
+baguette,True,False,"banquette, babette, butte"
+baguettes,True,False,"banquette, gutters, betters"
+baked apples,True,False,"dapple, apples"
+baked custard,True,False,"custard, bastard, custards"
+baked lasagna,False,False,No close match found
+baked sweet potatoes,False,False,No close match found
+baked ziti,True,False,"banditti, baked"
+baking powder,False,False,No close match found
+baladi bread,True,False,bladed
+banana growers,True,False,"banners, bananas"
+banana slices,True,False,bananas
+barbacoa,True,False,"barboza, barbara, bareback"
+bartlett pear,False,False,No close match found
+bean soups,True,False,"soups, beans"
+beansprouts,True,False,"sprouts, sprout, beasts"
+beaten egg whites,False,False,No close match found
+beef bouillon,False,False,No close match found
+beef broth,True,False,"froth, broth, berth"
+beef noodle soup,False,False,No close match found
+beef stew,True,False,"beefsteak, bestow, bereft"
+beefsteak tomatoes,True,False,beefsteak
+beet greens,True,False,"evergreens, greens, evergreen"
+belgian endive,True,False,"believe, belgian"
+bell pepper strips,False,False,No close match found
+bell peppers,True,False,"peppers, pepper, lepers"
+berry,True,True,"berry, verry, terry"
+bibb lettuce,True,False,lettuce
+bing cherries,True,False,"cherries, cherrie, berries"
+birthday cake,True,False,"birthday, birthdays, birthplace"
+biscuit cake,True,False,"biscuit, suitcase, biscuits"
+blackberry pie,True,False,"blackberries, blackberry, blackie"
+blanched almonds,True,False,"lacedaemon, lacedaemonians, blanched"
+blanched vegetables,True,False,vegetables
+blueberries,True,False,"bleoberis, blackberries, berries"
+blueberries raspberries,False,False,No close match found
+blueberry,True,False,"bluebeard, blubber, blackberry"
+blueberry bagels,False,False,No close match found
+bok choi,True,False,broncho
+bok choy,True,False,broncho
+bolognese sauce,False,False,No close match found
+bowtie pasta,False,False,No close match found
+boysenberries,True,False,"gooseberries, berries, sentries"
+braided challah,False,False,No close match found
+bread buns,True,False,"bureaus, reads, readings"
+bread dough,True,False,"bradlaugh, brought, breadth"
+bread slathered,True,False,"lathered, breathed, breasted"
+breadfruit,True,False,"redruth, recruit, breadth"
+breads,True,False,"reads, bread, beads"
+breakfast burrito,True,False,"breakfast, breakfasting, breakfasts"
+breakfast burritos,True,False,"breakfasts, breakfasting, breakfast"
+breakfast tacos,True,False,"breakfasts, breakfast, breakfasted"
+broccoli,True,False,"morocco, bucolic, broncho"
+broccoli florets,False,False,No close match found
+broccoli soup,False,False,No close match found
+brown sugar,True,False,"browns, browner, brown's"
+brownie sundae,True,False,"brownies, brownie, browned"
+brussel sprouts,True,False,brussels
+brussels sprouts,True,False,brussels
+bucatini,True,False,"education, educating, abduction"
+buckwheat flour,True,False,buckwheat
+bulgur,True,False,"blur, bulge, blurs"
+bulgur wheat,True,False,buckwheat
+bundt,True,False,"burnt, brunt, bound"
+bundt cake,True,False,"undertake, undertakes, undertaker"
+burgers,True,False,"burghers, burger, burners"
+burghul,True,False,"ghul, burg, burglar"
+burrata,True,False,"burr, brat, durrant"
+burrito,True,False,"burton, burrow, burros"
+burritos,True,False,"burros, burrows, britons"
+burritos nachos,False,False,No close match found
+butter cream,True,False,"buttered, butter"
+butter pats,True,False,"buttercups, utters, butter"
+buttercream,True,False,"buttered, butter, uttered"
+buttercream frosting,False,False,No close match found
+buttered baguette,True,False,butteridge
+buttered grits,True,False,"buttered, uttered"
+butterhead lettuce,False,False,No close match found
+buttermilk,True,True,"buttermilk, butter, butterfly"
+butternut pumpkin,False,False,No close match found
+butternut squash,False,False,No close match found
+cabrito,True,False,"cristo, carton, briton"
+cacao pods,True,False,cascades
+cakes cupcakes,False,False,No close match found
+calamansi,True,False,"claimants, clans, clams"
+caldo de res,True,False,"calories, calder, alders"
+callaloo,True,False,"halloo, camilla, callous"
+camote,True,False,"mote, cote, came"
+campbell chicken noodle,False,False,No close match found
+candied apple,True,False,"candidate, candied, candide"
+canned pineapples,True,False,pineapple
+canned soup,True,False,"canned, scanned, candour"
+cannellini beans,True,False,carolinians
+cantaloupe,True,False,"catalogue, catalogues, catalogued"
+cantaloupes,True,False,"catalogues, catalogue, antelopes"
+capellini,True,False,"capellan, caplin, capell"
+carbonara sauce,True,False,carbonate
+carne asada,True,False,"carnes, canada, creased"
+carne asada burrito,False,False,No close match found
+carne asada burritos,False,False,No close match found
+carne asada tacos,False,False,No close match found
+carne guisada,True,False,carnegie
+carnitas,True,False,"critias, anita's, carts"
+carnitas tacos,True,False,carnations
+carrot cake,True,False,"carrot, caretaker, partake"
+carrot cakes,True,False,"carrots, partakes, carcases"
+carrot cucumber,True,False,"cucumber, cucumbers"
+carrot onion,True,False,"carrion, crooning, narration"
+carrot soup,True,False,"carrots, catsup, carrot"
+carrot sticks,True,False,"carrots, chopsticks, artistic"
+cashew,True,False,"cashed, shew, chew"
+cashew nut,True,False,"chesnut, shewn, chestnut"
+cashew nuts,True,False,"chestnuts, casements, chesnut"
+cassava,True,False,"casanova, cassandra, cass"
+cassava flour,False,False,No close match found
+caster sugar,True,False,"castra, castes, canisters"
+cavatappi,True,False,cravat
+cavatelli,True,False,"cavell, savelli, cavalier"
+cavendish,True,True,"cavendish, caverns, candies"
+cavendish bananas,True,False,cavendish
+cereal,True,False,"cereals, cerebral, real"
+ceviche,True,False,"crevice, crevices, evince"
+challah,True,False,"allah, callahan, halloa"
+challah bread,True,False,"collared, callahan"
+chalupa,True,False,"chap, chapman, scalp"
+chapati,True,False,"chamati, chaplain, chaplains"
+chard,True,False,"hard, char, card"
+cheese enchiladas,False,False,No close match found
+cheese fries,True,False,"cheeses, hesperides, cemeteries"
+cheese ravioli,False,False,No close match found
+cheeseburger,True,False,"cheese, cheesacre, burger"
+cheesecake,True,False,"chesapeake, cheese, cheesacre"
+cherimoyas,True,False,"christmas, cherkis, cherish"
+cherry cheesecake,False,False,No close match found
+cherry pie,True,False,"cherrie, cherries, cherry"
+cherry tomatoes,True,False,tomatoes
+chicharrones,True,False,"harmonies, chiron, chicha"
+chicken broth,True,False,"chicken, chickens"
+chicken burrito,False,False,No close match found
+chicken cacciatore,False,False,No close match found
+chicken croquettes,False,False,No close match found
+chicken flautas,True,False,chickens
+chicken lo mein,False,False,No close match found
+chicken noodle,True,False,chicken
+chicken noodle soup,False,False,No close match found
+chicken parmesan,True,False,"parmesan, chinamen, chinaman"
+chicken potpie,True,False,"chickie, chicken"
+chicken salad,True,False,"chickens, chicken"
+chicken sandwich,True,False,"sandwich, chickens"
+chicken soup,True,False,"chickens, chicken, chicks"
+chicken stew,True,False,"chickens, chicken, chichester"
+chicken teriyaki,False,False,No close match found
+chickpea flour,False,False,No close match found
+chiffon cake,True,False,chiffon
+chikoo,True,False,"chinook, chink, chick"
+chilaquiles,True,False,"achilles, chills, childless"
+chile relleno,True,False,"chillen, chiltern, children"
+chilled peaches,True,False,headaches
+chimichanga,True,False,"chiming, chicha, chimerical"
+chimichangas,True,False,"chiming, criminals, chicha"
+chip cookies,True,False,"cookies, chickie, chickens"
+chocolate buttercream,False,False,No close match found
+chocolate cake,True,False,"chocolate, schoolmate"
+chocolate cheesecake,False,False,No close match found
+chocolate cupcake,True,False,chocolate
+chocolate decadence,False,False,No close match found
+chocolate fudge cake,False,False,No close match found
+chocolate mousse cake,False,False,No close match found
+chocolate shavings,True,False,chocolate
+chocolate sprinkles,False,False,No close match found
+chopped almonds,False,False,No close match found
+chopped broccoli,False,False,No close match found
+chopped kale,True,False,"chopped, hopped"
+chunky salsa,True,False,"chunky, chunks, chrysalis"
+churro,True,False,"hurry, huron, curry"
+churros,True,False,"hurons, curios, burros"
+cilantro,True,False,"canto, citron, canton"
+cinnamon raisin bread,False,False,No close match found
+citrus,True,False,"citrinus, coitus, circus"
+citrus fruit,False,False,No close match found
+clementine,True,False,"clement, cemented, cement"
+cling peaches,True,False,"peaches, clinched"
+clove flavors,True,False,clover's
+coco,True,False,"cocoa, coo, coop"
+cocoa,True,True,"cocoa, coca, cocoanut"
+cocoa bean,True,False,"ocean, cocoanut, cocoa"
+cocoa powder,True,False,"powder, cooper"
+coconut,True,False,"cocoanut, cocoanuts, coon"
+coconut cake,True,False,"cocoanut, cocoanuts"
+coconut pecan,True,False,cocoanut
+coconuts,True,False,"cocoanuts, cocoanut, coronets"
+coffee bean,True,False,coffee
+coffee beans,True,False,coffee
+coleslaw,True,False,"collar, olenska, foresaw"
+coleslaw dessert,False,False,No close match found
+comida,True,False,"coma, coda, comical"
+confectioner sugar,True,False,"confectioners, confectioner, confectionery"
+cooked pasta,True,False,cooked
+coriander soup,True,False,"corners, commanders, cinders"
+cornbread,True,False,"cornered, corned, conrad"
+cornflour,True,False,"colour, contour, conform"
+cornmeal flour,True,False,"cornmeal, counsellor"
+cornmeal mixture,True,False,"creature, cornmeal, cornelie"
+cornmeal mush,True,False,"cornmeal, cornelius, conceals"
+cornstarch,True,False,"starch, construct, constancy"
+crab pasta salad,False,False,No close match found
+crab rangoon,True,False,"rangoon, rangon"
+crab rangoons,True,False,"rangoon, rangon's, dragoons"
+cranberry blueberry,False,False,No close match found
+cranberry relish,True,False,"cranberries, cranberry"
+craw,True,False,"crawl, raw, scrawl"
+cream cheese frosting,False,False,No close match found
+croissant dough,False,False,No close match found
+crude,True,True,"crude, rude, crusade"
+crumb cake,True,False,"crumble, crumbles, crumbled"
+crumb pie,True,False,"crumble, crumb, crumpled"
+crunchy celery,True,False,cruncher
+crunchy tacos,False,False,No close match found
+crushed tortilla chips,False,False,No close match found
+crusty baguette,True,False,statuette
+crusty bread,True,False,"crusted, rusted, incrusted"
+crusty breads,True,False,"crusted, sweetbreads, custards"
+cubed bread,True,False,"cumbered, encumbered, cumberland"
+cucumbers radishes,True,False,cucumbers
+cuke,True,False,"cue, luke, duke"
+cukes,True,False,"jukes, dukes, cures"
+cup confectioners sugar,True,False,"confectioners, confectioner, confectionery"
+cupcake,True,False,"cake, pancake, clucked"
+cupcakes,True,False,"cakes, pancakes, quakes"
+curd,True,True,"curd, cured, curds"
+curly endive,True,False,"curled, curdie"
+curly fries,True,False,"hurries, curried, carries"
+cutout cookies,True,False,cookies
+daikon radish,False,False,No close match found
+dangle carrot,True,False,danglars
+dark chocolate ganache,False,False,No close match found
+dasheen,True,False,"sheen, ashen, dashes"
+deepwater,True,False,"deeper, demeter, underwater"
+delicacy shark fin,False,False,No close match found
+delicious apple,True,False,"deliciously, delicious, delirious"
+delicious apples,True,False,"deliciously, delicious"
+desiccated coconut,False,False,No close match found
+diced peaches,True,False,"peaches, dispatches, despatches"
+diced potatoes,True,False,"potatoes, dictates, dictate"
+diced sweet potatoes,False,False,No close match found
+dried chillies,False,False,No close match found
+durian rambutan,False,False,No close match found
+eclair,True,False,"clair, claire, lair"
+eggplant parmesan,False,False,No close match found
+elote,True,False,"elite, eliot, elate"
+elotes,True,False,"helots, lots, relates"
+empanada,True,False,"panada, emanated, panama"
+enchilada,True,False,"hilda, child, pencilled"
+enchiladas,True,False,"childs, pencils, child's"
+enriched flour,True,False,enriched
+enticement,True,False,"sentiment, sentiments, retirement"
+fairy cakes,True,False,"staircases, fairy's, fairies"
+faja del orinoco,False,False,No close match found
+fajita,True,False,"fait, fatal, faria"
+fajitas,True,False,"faiths, faints, fits"
+farfalle,True,False,"frale, parallel, farley"
+farina,True,False,"faria, marina, faring"
+farmhouse cheddar,True,False,"farmhouse, farmhouses"
+farro,True,False,"faro, varro, arrow"
+fettuccine,True,False,"lettuce, fretting, fetching"
+fettuccini alfredo,False,False,No close match found
+finely chopped nuts,False,False,No close match found
+finely chopped onion,False,False,No close match found
+fish tacos,True,False,fists
+fishcakes,True,False,"shakes, fishes, fishers"
+flake cereals,True,False,cereals
+flatbread,True,False,"flared, flattered, flatheads"
+flauta,True,False,"flaunt, flat, plata"
+flavored microwave popcorn,False,False,No close match found
+flours,True,False,"fours, flour, flourish"
+focaccia,True,False,"facial, acacia, octavia"
+fondant,True,False,"defendant, confidant, font"
+fondant cakes,True,False,"pancakes, fondness, finances"
+fondant icing,True,False,"dancing, foundation, noticing"
+french bread,True,False,"wrenched, forehead, drenched"
+french onion soup,False,False,No close match found
+fresh figs,True,False,"refreshing, freshening, furnishings"
+fresh mozzarella cheese,False,False,No close match found
+fresh spinach,True,False,spinach
+freshly baked bread,False,False,No close match found
+freshly baked loaf,False,False,No close match found
+freshly grated cheese,False,False,No close match found
+freshly grated parmesan,False,False,No close match found
+fried haddock,True,False,haddock
+fried onion,True,False,reunion
+fried zucchini,False,False,No close match found
+frita,True,False,"rita, fruit, fritz"
+frittata,True,False,"rita, frigate, fittest"
+frosted cake,True,False,frosted
+frosted cakes,True,False,"frosted, freckles, forsakes"
+frosted cupcakes,False,False,No close match found
+frosting,True,False,"roosting, roasting, frothing"
+fruitcake,True,False,"fruit, suitcase, rickie"
+fudge cake,True,False,fudge
+fudge icing,True,False,"depicting, nudging, judging"
+fuji apple,True,False,apple
+fuji apples,True,False,"apples, ripples, applies"
+fusilli,True,False,"fillip, fusillade, sill"
+garbanzo bean flour,False,False,No close match found
+garlic bread,True,False,"garlic, garbed"
+garlic salt,True,False,garlic
+gas,True,True,"gas, gasp, gash"
+gateau,True,False,"gate, plateau, gateway"
+ghee,True,False,"hee, gee, thee"
+giardiniera,True,False,"gardiner, gardner, sardinia"
+ginger puree,True,False,"interpreter, interpreted, gingerbread"
+gingerbread cookies,True,False,gingerbread
+gnocchi,True,False,"pinocchio, pinocchio's, notch"
+gnocci,True,False,pinocchio
+golden delicious apples,False,False,No close match found
+gordita,True,False,"gordian, gloria, rita"
+gorditas,True,False,"gordian, cordials, rita's"
+graham flour,True,False,graham
+granary bread,True,False,"granary, gingerbread"
+granny smith,True,False,"transmit, ladysmith, granny"
+granny smith apples,False,False,No close match found
+granny smiths,True,False,"grannis, transmit"
+granulated sugar,True,False,granulated
+grape tomato,True,False,"tomato, automaton"
+grape tomatoes,True,False,tomatoes
+grapefruit,True,False,"recruit, refit, recruits"
+grated carrots,True,False,carrots
+grated cheddar,True,False,cheddar
+grated cheese,True,False,grandees
+grated coconut,True,False,grandcourt
+grated parmesan,True,False,"parmesan, grandparents, gendarmes"
+gravenstein apples,False,False,No close match found
+green beans,True,False,"greens, greene, greenness"
+green leaf lettuce,False,False,No close match found
+green onions,True,False,"greenish, pretensions, retention"
+green peppers,True,False,"peppers, greenery, creepers"
+grilled flatbread,False,False,No close match found
+grilled shrimp,True,False,"grilled, friendship"
+grupo bimbo sab,False,False,No close match found
+guac,True,False,"guja, guanaco, sumac"
+guava,True,False,"guiana, lava, java"
+hamburger,True,False,"hamburg, burger, limburger"
+handmade pastas,True,False,"handmaidens, handmaids"
+hardboiled egg,False,False,No close match found
+hazelnut,True,False,"hazel, walnut, walnuts"
+hearty soup,True,False,"hearty, hearts, hearths"
+heirloom tomato,True,False,heirloom
+homemade baked beans,False,False,No close match found
+homemade chicken noodle,False,False,No close match found
+homemade coleslaw,False,False,No close match found
+homemade cookies,False,False,No close match found
+homemade marinara sauce,False,False,No close match found
+homemade meatballs,False,False,No close match found
+homemade soup,False,False,No close match found
+homemade tamales,False,False,No close match found
+homemade tomato sauce,False,False,No close match found
+honey crisp,False,False,No close match found
+honeycrisp,True,False,"nondescript, honey, crisp"
+honeycrisp apples,False,False,No close match found
+honeycrisps,True,False,conscripts
+hotdog,True,False,"outdo, hondo, hodge"
+humous,True,False,"humours, humorous, humour"
+iceberg lettuce,False,False,No close match found
+iceberg romaine,False,False,No close match found
+jalapeño peppers,False,False,No close match found
+jalapenos,True,False,"jalap, lemnos, aspens"
+jalapeños,True,False,"jalap, alamos"
+jonagold,True,False,"ronald, donald, stronghold"
+juicy peach,True,False,impeach
+juicy peaches,True,False,peaches
+jujubes,True,False,"tubes, jules, jukes"
+julienned vegetables,True,False,vegetables
+kale,True,False,"ale, yale, vale"
+kim chee,True,False,"kitchener, okochee, michele"
+kiwi fruit,True,False,fruit
+kumquats,True,False,"quarts, tumults, mats"
+lakatan,True,False,"latian, lackman, blatant"
+lasagna,True,False,"laana, laysan, larsan"
+lasagna noodles,False,False,No close match found
+lasagnas,True,False,"laana, laysan, larsan"
+leaf lettuce,True,False,"lettuce, leaflets, lafayette"
+leafy greens,True,False,"marygreen, learns, lagree"
+leafy vegetable,True,False,"vegetable, vegetables"
+leeks,True,False,"lees, weeks, sleek"
+lemon jell o,False,False,No close match found
+lemon squares,True,False,"squares, mosques, ensures"
+lettuce spinach,False,False,No close match found
+lettuces,True,False,"lettuce, letters, lectures"
+lily bulb,False,False,No close match found
+linguine,True,False,"sanguine, flinging, clinging"
+loaf,True,True,"loaf, loa, loafer"
+loaves,True,True,"loaves, loves, slaves"
+lobster bisque,True,False,"lobsters, obstetrics, lobster"
+longans,True,False,"longs, logan, loans"
+loquat,True,False,"lout, loquacity, lorquas"
+macadamia,True,False,"arcadia, academical, madam"
+macadamia nut,True,False,"adamant, arcadian"
+macadamia nut cookies,False,False,No close match found
+macadamia nuts,True,False,adamant
+macadamias,True,False,"arcadia, academical, maladies"
+machaca,True,False,"mancha, matcham, malacca"
+macouns,True,False,"accounts, mucous, mourns"
+magnate alvaro noboa,False,False,No close match found
+maize flour,False,False,No close match found
+maize meal,True,False,maize
+maizemeal,True,False,"maize, piecemeal, maimed"
+mamey,True,False,"marey, mammy, mamie"
+mandazi,True,False,"ananzi, amanda, mana"
+mangetout,True,False,"manette, mange, ragout"
+mango,True,False,"mungo, manor, manon"
+mango tango,False,False,No close match found
+mangoes,True,False,"mangles, manages, mange"
+mangos,True,False,"mangus, mans, mangles"
+manicotti,True,False,"marriott, fannicot, barnicot"
+marble rye,True,False,"marble, warbler, margery"
+margarine,True,False,"margaret, magazine, marine"
+margarita,True,False,"margaret, margate, marguerite"
+marinade ingredients,True,False,"ingredients, ingredient"
+marzipan,True,False,"marian, martian, maria"
+mash potatoes,True,False,"potatoes, mottoes, magistrates"
+mashed carrots,True,False,carrots
+mashed potatoes,True,False,"potatoes, meditates"
+massaman curry,False,False,No close match found
+matzah meal,True,False,oatmeal
+matzo,True,False,"mat, tomato, matron"
+matzo meal,True,False,"oatmeal, maternal, material"
+matzo unleavened bread,False,False,No close match found
+matzoh balls,True,False,atolls
+matzos,True,False,"mats, matrons, amazons"
+mauby,True,False,"may, aubrey, ruby"
+mealies,True,False,"measles, meals, males"
+mealworm,True,False,"mellor, melodrama, worm"
+meatballs,True,False,"metals, metal, meats"
+meatloaf sandwiches,True,False,sandwiches
+melba toast,False,False,No close match found
+melons,True,True,"melons, melon, mons"
+melted margarine,False,False,No close match found
+menudo,True,False,"menu, mend, mendoza"
+meringue cookies,True,False,emergencies
+mesclun,True,False,"slunk, slung, rescuing"
+mesclun salad,False,False,No close match found
+migas,True,False,"midas, mis, gas"
+milanesa,True,False,"milanese, mines, miles"
+minced shrimp,False,False,No close match found
+minestrone soup,True,False,"minstrels, milestone"
+minister odein ajumogobia,False,False,No close match found
+mint sprig,True,False,"mainspring, inspiring, sprig"
+miso soup,True,False,"missouri, missus"
+molten lava cake,False,False,No close match found
+mostaccioli,True,False,mustachios
+mozzarella cheese,False,False,No close match found
+multigrain bread,False,False,No close match found
+mung bean sprouts,True,False,ungenerous
+mushroom soup,True,False,"mushrooms, mushroom"
+muskmelon,True,False,"melon, skeleton, skeletons"
+mustard greens,True,False,"marygreen, mustard"
+naan,True,False,"nathan, canaan, naxa"
+nacho,True,False,"ach, tatcho, snatch"
+nachos,True,False,"gauchos, anchors, naxos"
+nectarine,True,False,"nectar, sectaries, catharine"
+nonfat dry milk powder,False,False,No close match found
+noodle salad,True,False,"noodles, noodle"
+noodle soup,True,False,"noodles, noodle, toodles"
+oat flour,True,False,"flour, valour, orator"
+oat mixture,True,False,"admixture, mixture, mixtures"
+oatmeal porridge,True,False,"porridge, osterbridge"
+orchard,True,True,"orchard, orchards, richard"
+oreos,True,False,"ores, sores, pores"
+oven roasted vegetables,False,False,No close match found
+oxtail soup,False,False,No close match found
+padd iii,True,False,padding
+paleta,True,False,"pallet, palest, plea"
+panino,True,False,"pani, pain, panting"
+papaya,True,False,"papacy, papa, papal"
+papaya salad,False,False,No close match found
+parboiled rice,True,False,parboil
+parmesan cheese,True,False,"parmesan, preachers"
+parmigiana,True,False,"ptarmigan, parisian, parian"
+parsley sauce,True,False,parsley
+parsnip mash,True,False,parish
+pasta,True,False,"past, rasta, posta"
+pasta dish,True,False,"standish, upstairs, starfish"
+pasta fagioli,False,False,No close match found
+pasta noodles,True,False,"toodles, noodles, standest"
+pasta salad,False,False,No close match found
+pasta salads,False,False,No close match found
+pasta sauce,True,False,"pasture, passage"
+pastas,True,False,"pats, past, pass"
+pavlovas,True,False,"pavlovna's, pavlovna, pallas"
+pawpaw,True,False,"papa, papal, paw"
+peach nectarine,False,False,No close match found
+peach pie,True,False,"peachey, peaches, peach"
+peanut butter frosting,False,False,No close match found
+peanut butter fudge,False,False,No close match found
+pear varieties,True,False,"varieties, rarities, proprieties"
+pecan pie,True,False,"panie, canopies, specie"
+pecans,True,False,"pens, peas, pans"
+peeled banana,False,False,No close match found
+penne,True,False,"penned, penn, pennies"
+penne pasta,True,False,"pennies, pendergast"
+peppermint candies,True,False,peppermint
+peppermint candy,True,False,peppermint
+peppermint ice cream,True,False,peppermint
+peppery arugula,False,False,No close match found
+persimmons,True,False,"simmons, persons, versions"
+pesto,True,False,"presto, pest, preston"
+pesto sauce,True,False,eustace
+petro,True,False,"pietro, petrol, piero"
+pickled cabbage,False,False,No close match found
+pickled cauliflower,True,False,"cauliflower, gilliflower"
+piecrusts,True,False,"crusts, priests, piers"
+pineapples,True,False,"pineapple, naples, apples"
+pistachio,True,False,"mustachios, pitch, pisah"
+pita bread,True,False,"tread, pitiable, pillared"
+pita breads,True,False,"treads, threads, spreads"
+pitta bread,True,False,pitted
+pizza,True,False,"piazza, pizarro, pisa"
+pizza dough,False,False,No close match found
+pizza margherita,False,False,No close match found
+plantain,True,False,"plantation, planting, plantations"
+plantain banana,False,False,No close match found
+polenta,True,False,"potent, pollen, polina"
+pomelo,True,False,"ptomel, pommel, polo"
+porchetta,True,False,"orchestra, porches, loretta"
+pork carnitas,False,False,No close match found
+pork tacos,True,False,"porticoes, portico, porthos"
+porridge,True,True,"porridge, porringer, partridge"
+porridge oats,True,False,"porridge, partridges"
+potato flakes,True,False,"potatoes, partakes"
+potato leek soup,True,False,potatoes
+potato soup,True,False,"potatoes, potato"
+poundcake,True,False,"pounce, pounder, pounded"
+powdered milk,True,False,"powdered, powered, pondered"
+pozole,True,False,"poodle, pool, pole"
+presliced,True,False,"presided, sliced, relied"
+pumpkin pie,True,False,"pumpkin, pumpkins, pumpkinhead"
+pupusa,True,False,"pups, pumps, ups"
+pupusas,True,False,"puss, pups, upstairs"
+pureed cauliflower,True,False,cauliflower
+quesadilla,True,False,"quadrille, quillan, quill"
+quesadillas,True,False,"quills, quadrille, versailles"
+queso,True,False,"quest, question, quo"
+quiche lorraine,True,False,lorraine
+radicchio,True,False,"radio, tradition, radiation"
+radish,True,False,"radishes, rakish, radius"
+raisin bread,True,False,"sinbad, raisin, raised"
+raisin salad,True,False,"raisins, ranald, raisin"
+raspberry jelly,True,False,"raspberry, raspberries"
+raspberry swirl,True,False,"raspberry, raspberries"
+ravioli,True,False,"violin, rail, violins"
+raviolis,True,False,"violins, rails, railings"
+raw cashews,True,False,"washes, reaches, ranches"
+red delicious,True,False,"delicious, deliciously, religious"
+red leaf lettuce,False,False,No close match found
+refined sugar,True,False,refined
+refineries,True,False,"reveries, energies, refinements"
+restive niger delta,False,False,No close match found
+rhubarb,True,True,"rhubarb, barb, hubbard"
+rice flour,True,False,flour
+ricotta,True,False,"cotta, rita, riot"
+rigatoni,True,False,"irrigation, brighton, resignation"
+ripe mangoes,True,False,"triangles, ripens, ranges"
+ripe pears,True,False,"reappears, ripples, repeats"
+ripened fruits,True,False,ripened
+risotto,True,False,"grotto, giotto, cristo"
+rockmelon,True,False,"romeo, melon, rockland"
+rolled fondant,True,False,redundant
+rolled oats,True,False,"rolled, rollers, redcoat"
+roma tomatoes,True,False,"tomatoes, rotates, roommate"
+romaine,True,False,"romayne, romarin, romance"
+romaine hearts,False,False,No close match found
+romaine lettuce,True,False,omelette
+roti bread,True,False,"tread, tired, timbered"
+rotini,True,False,"routine, rotting, rioting"
+rye bread,True,False,"bread, retreated, redbreast"
+rye flour,True,False,"flour, reform, floury"
+rye sourdough,False,False,No close match found
+salad greens,True,False,"savareen's, savareen, salaries"
+salad mixes,True,False,"salamis, salaries, maladies"
+salads,True,False,"salad, sala, lads"
+salmon patties,True,False,"sympathies, salmons"
+salt baking powder,False,False,No close match found
+satsuma,True,False,"statesman, stratum, sanctum"
+sauces,True,True,"sauces, saucers, sauce"
+sautéed veggies,False,False,No close match found
+sautéed zucchini,False,False,No close match found
+scallions,True,False,"stallions, scullions, stallion"
+scones,True,False,"scone, cones, stones"
+seedless watermelon,True,False,watermelon
+semolina,True,False,"selina, seminary, smolny"
+semolina flour,False,False,No close match found
+sesame seeds,True,False,"seaweeds, sesame, seamed"
+shamrock cookies,True,False,shamrock
+shortbread,True,False,"sorted, shorthand, shortened"
+shortbread cookie,False,False,No close match found
+shortbread cookies,False,False,No close match found
+shortcake,True,False,"shortage, shorter, shorten"
+shredded cheddar,True,False,shredded
+shredded mozzarella,False,False,No close match found
+shredded parmesan,False,False,No close match found
+shredded zucchini,False,False,No close match found
+shrimp skewer,True,False,shrimps
+sift flour,True,False,flour
+sifted flour,True,False,sifted
+silverbeet,True,False,"silvered, silver, silverbridge"
+sliced almonds,True,False,"salmons, lacedaemon, almonds"
+sliced carrots,True,False,carrots
+sliced pears,True,False,"slippers, sleepers, spears"
+sliced scallions,False,False,No close match found
+sliced toasted almonds,False,False,No close match found
+slivered almonds,False,False,No close match found
+sopapillas,True,False,"pallas, pillars, spill"
+sopes,True,False,"slopes, stops, spies"
+soups,True,True,"soups, sous, soup"
+sourdough,True,False,"borough, rough, dough"
+sourdough bread,True,False,thoroughbred
+sourdough rye,False,False,No close match found
+sourdough toast,False,False,No close match found
+soursop,True,False,"sous, sour, soup"
+spaghetti,True,False,"paget, pathetic, sympathetic"
+spaghetti alla,True,False,"pathetically, sympathetically"
+spaghetti sauce,False,False,No close match found
+spaghettini,True,False,"settin, gettin, setting"
+specialty breads,True,False,"specialty, speciality, sweetbreads"
+spinach lasagna,False,False,No close match found
+spinach ricotta,False,False,No close match found
+split pea soup,False,False,No close match found
+sponge cake,True,False,"sponge, sponges, spondee"
+sponge cakes,True,False,"sponges, speakest, speakers"
+spread frosting,True,False,"spreading, sprouting, seafaring"
+stale bread,True,False,"stared, stammered, staggered"
+steak burrito,False,False,No close match found
+steak tacos,True,False,"steaks, streaks"
+steamed jasmine rice,False,False,No close match found
+steaming bowl,True,False,"steaming, streaming, stealing"
+sticky buns,True,False,"sticky, sticks"
+sticky dough,True,False,sticky
+strawberry cheesecake,True,False,strawberries
+strawberry cream,True,False,"strawberry, strawberries"
+strawberry sauce,True,False,"strawberry, strawberries"
+strawberry shortcake,True,False,strawberry
+sugar cane,True,False,"surcantine, sugar"
+sugarcane,True,False,"surcantine, sugar, urbane"
+sunchokes,True,False,"chokes, suckers, lunches"
+sundae,True,False,"sunder, sunday, surname"
+superfine sugar,False,False,No close match found
+sweet chili sauce,False,False,No close match found
+sweet chilli sauce,False,False,No close match found
+sweet corn,True,False,"sweeter, sweeten, sworn"
+sweet potato,True,False,"sweetmeat, potato"
+sweet potato cheesecake,False,False,No close match found
+sweetcorn,True,False,"sweeter, sweeten, sworn"
+swiss chard,True,False,"richard, discharged, discard"
+taco,True,False,"tao, tatcho, tact"
+taco salad,True,False,salad
+tacos,True,False,"tacks, tao, cos"
+tacos burritos,False,False,No close match found
+tacos tamales,True,False,"constables, tactless, costumes"
+tagliatelle,True,False,"retaliate, tragically, retaliated"
+tamal,True,False,"amal, tampa, tamar"
+tamale,True,False,"tame, tale, male"
+tamales,True,False,"tales, males, tramples"
+tamarillo,True,False,"marilla, trill, tamar"
+tamarinds,True,False,"marines, margins, tamar"
+taqueria,True,False,"aerial, yaquita, valeria"
+taquería,True,False,"tara, masquerade, lacquer"
+taquerias,True,False,"queries, americas, tuileries"
+taquito,True,False,"quito, acquit, tito"
+taquitos,True,False,"quits, quito, traitors"
+tart apple,True,False,"trapper, trapped, trample"
+tart apples,True,False,"trappers, tramples, apples"
+tartare sauce,True,False,tartarus
+teff flour,True,False,flour
+teriyaki chicken,False,False,No close match found
+thumbprint cookies,False,False,No close match found
+tinned sardines,True,False,"sardines, tardiness"
+toasted bagel,True,False,toasted
+tom kha gai,False,False,No close match found
+tom yum soup,False,False,No close match found
+tomato bisque,True,False,"tortoise, tomatoes"
+tomato lettuce,True,False,lettuce
+tomato paste,True,False,"tomatoes, tomato"
+tomato sauce,True,False,"tomatoes, tomato"
+tomato soup,True,False,"tomatoes, tomato"
+tomatos,True,False,"tomatoes, tomato, thomas"
+torta,True,False,"tortuga, total, porta"
+tortas,True,False,"tortuga, retorts, portals"
+torte,True,False,"tote, tore, torture"
+tortellini,True,False,"tellin, thorstein, trellis"
+tortelloni,True,False,"trellis, othello, tortoise"
+tortilla,True,False,"gorilla, trill, travilla"
+tortilla soup,True,False,portillo
+tortillas,True,False,"thrills, gorilla, trill"
+tropical fruit,True,False,tropical
+tuna noodle casserole,False,False,No close match found
+turkey gravy,True,False,turkey
+uht soup,True,False,soup
+unbleached flour,True,False,"bleached, bachelor"
+unsweetened cocoa powder,False,False,No close match found
+vanilla cupcakes,False,False,No close match found
+vegetable soup,True,False,"vegetables, vegetable"
+vegetable soups,True,False,"vegetables, vegetable"
+vegetable stir fry,True,False,"vegetables, vegetable"
+vegetarian burrito,True,False,vegetarian
+veggie chili,False,False,No close match found
+veggies,True,False,"reggie, eggs, veriest"
+vietnamese pho,False,False,No close match found
+vine ripened tomatoes,False,False,No close match found
+wedding cake,True,False,"wedding, weddings"
+wheat bran,True,False,"whitburn, wheat, waterman"
+wheat bread,True,False,"sweetbreads, heated, hatred"
+wheat flour,True,False,watford
+wheat flours,False,False,No close match found
+wheat penne,True,False,"heartened, cheapened, threatened"
+wheaten bread,True,False,"weathered, heartened, watered"
+wheaten flour,False,False,No close match found
+whipped cream,True,False,whipped
+whole grain flours,False,False,No close match found
+whole wheat,True,False,wholeheartedly
+whole wheat flour,False,False,No close match found
+wholemeal,True,False,"wholesome, wholesale, whole"
+wholemeal flour,False,False,No close match found
+wholemeal toast,False,False,No close match found
+wholewheat,True,False,"wholeheartedly, whole, wheat"
+wondra flour,True,False,"wondrous, wonderful, wond'rous"
+wonton soup,True,False,monotonous
+yam,True,False,"ya, am, yea"
+yams,True,False,"yas, rams, hams"
+yeast dough,False,False,No close match found
+yeasted,True,False,"feasted, yeast, eased"
+ziti,True,False,"zizi, piti, ti"
+zucchini bread,False,False,No close match found
+zucchini tomatoes,False,False,No close match found
