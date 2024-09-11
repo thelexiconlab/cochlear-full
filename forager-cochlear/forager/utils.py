@@ -132,33 +132,6 @@ def prepareData(path, domain):
         
         return data, replacement_df, df
 
-def corrections(raw, domain):
-    # read in the corrections file
-    corrections = pd.read_excel('data/lexical_data/' + domain + '/corrections.xlsx')
-
-    # make a copy of the raw data to work with
-    corrected = raw.copy()
-
-    # iterate over the corrections file
-    for i, row in corrected.iterrows():
-        # for each entry, look up if there is a correction to be made
-        # get the entry name
-        word = row['entry']
-        # remove all special characters and spaces
-        word = ''.join(e for e in word if e.isalnum())
-        # remove all special characters and spaces from corrections file
-        corrections['entry'] = corrections['entry'].apply(lambda x: ''.join(e for e in x if e.isalnum()))
-
-        # see if there is a correction for this entry
-        correction = corrections[corrections['entry'] == word]
-        # if there is a correction, then see if the "final_evaluation" column contains EXCLUDE or REPLACE
-        # if EXCLUDE, then remove the row from the corrected dataframe
-        # if REPLACE, then replace the value in the "response" column with the value in the "final_word" column
-        if correction.shape[0] > 0:
-            corrected.at[i, 'entry'] = correction['replacement'].values[0]
-        
-    return corrected
-
 def prepareDataWithCorrections(path, domain):
     ### LOAD BEHAVIORAL DATA ###
     df = pd.read_csv(path, header=0, engine='python', sep=None, encoding='utf-8-sig')
@@ -170,7 +143,6 @@ def prepareDataWithCorrections(path, domain):
 
     # make corrections based on corrections file
 
-    #corrected_file = corrections(df, domain)
     corrected_file = df.copy()
 
     corrections = pd.read_excel('data/lexical_data/' + domain + '/corrections.xlsx')
