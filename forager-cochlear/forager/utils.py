@@ -171,28 +171,32 @@ def prepareDataWithCorrections(path, domain):
     # make corrections based on corrections file
 
     corrected_file = corrections(df, domain)
+    #corrected_file = df.copy()
 
     # set all replacements to actual word for all words in labels as the default
     replacements = {word: word for word in labels['word'].values}
 
     # get values from df 
     values = corrected_file['entry'].values
-    
-    # loop through values to find which ones are not in file
+    SID = corrected_file['SID'].values
+    # loop through values to find which ones are not in file and store a tuple of the SID and the word
+    #oov = [(SID[i], w) for i, w in enumerate(values) if w not in labels['word'].values]
     oov = [w for w in values if w not in labels['word'].values]
+    #print(oov)
     if len(oov) > 0:
         replacement_df = corrected_file.copy()
         print("We did not find exact matches for " + str(len(oov)) + " items in our vocabulary. Any items for which we find a reasonable match will be automatically replaced. For all other OOV items, you may:")
         for word in set(oov):
+            #print("word: " + str(word))
             # get closest match in vocab and check edit distance
             closest_word = difflib.get_close_matches(word, labels['word'].values,1)
 
             if len(closest_word)>0 and nltk.edit_distance(word, closest_word[0]) <= 2:
                 replacements[word] = closest_word[0]
-            
-            # exclude this word from the list
-            exclude(word, corrected_file)
-            replacements[word] = "EXCLUDE"
+            else:
+                # exclude this word from the list
+                exclude(word, corrected_file)
+                replacements[word] = "EXCLUDE"
 
         corrected_file.replace(replacements, inplace=True)
         
