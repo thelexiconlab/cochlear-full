@@ -170,8 +170,10 @@ def prepareDataWithCorrections(path, domain):
 
     # make corrections based on corrections file
 
-    corrected_file = corrections(df, domain)
-    #corrected_file = df.copy()
+    #corrected_file = corrections(df, domain)
+    corrected_file = df.copy()
+
+    corrections = pd.read_excel('data/lexical_data/' + domain + '/corrections.xlsx')
 
     # set all replacements to actual word for all words in labels as the default
     replacements = {word: word for word in labels['word'].values}
@@ -193,10 +195,17 @@ def prepareDataWithCorrections(path, domain):
 
             if len(closest_word)>0 and nltk.edit_distance(word, closest_word[0]) <= 2:
                 replacements[word] = closest_word[0]
+            # if there is no close match in vocab, then look through corrections file for a replacement with difflib
             else:
-                # exclude this word from the list
-                exclude(word, corrected_file)
-                replacements[word] = "EXCLUDE"
+                # find closest match in corrections file
+                closest_word = difflib.get_close_matches(word, corrections['entry'].values,1)
+                if len(closest_word)>0 and nltk.edit_distance(word, closest_word[0]) <= 2:
+                    # if there is a close match in the corrections file, replace with the final word
+                    replacements[word] = corrections[corrections['entry'] == closest_word[0]]['replacement'].values[0]
+                else:
+                    # exclude this word from the list if not found in corrections file or vocab
+                    exclude(word, corrected_file)
+                    replacements[word] = "EXCLUDE"
 
         corrected_file.replace(replacements, inplace=True)
         
