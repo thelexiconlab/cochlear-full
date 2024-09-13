@@ -31,4 +31,4 @@ def get_frequencies(embeddings,path_for_lexical_data):
     item_counts_df.to_csv(path_for_lexical_data + '/USE_frequencies.csv', index=False, header=None)
     return None
 
-#get_frequencies('data/lexical data/semantic_embeddings.csv')
+get_frequencies('../data/lexical_data/foods/speech2vec_50_embeddings.csv', '../data/lexical_data/foods/')

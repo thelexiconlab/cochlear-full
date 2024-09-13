@@ -184,4 +184,4 @@ class phonology_funcs:
     
 
 ### SAMPLE RUN CODE ###
-#create_semantic_matrix('../data/lexical_data/USE_embeddings.csv')
+create_semantic_matrix('../data/lexical_data/foods/speech2vec_50_embeddings.csv', '../data/lexical_data/foods/')

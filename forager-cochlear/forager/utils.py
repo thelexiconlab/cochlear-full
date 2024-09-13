@@ -159,7 +159,7 @@ def prepareDataWithCorrections(path, domain):
     #print(oov)
     if len(oov) > 0:
         replacement_df = corrected_file.copy()
-        print("We did not find exact matches for " + str(len(oov)) + " items in our vocabulary. Any items for which we find a reasonable match will be automatically replaced. For all other OOV items, you may:")
+        print("We did not find exact matches for " + str(len(oov)) + " items in our vocabulary. Any items for which we find a reasonable match will be automatically replaced. Other items will be excluded.")
         for word in set(oov):
             #print("word: " + str(word))
             # get closest match in vocab and check edit distance
@@ -211,8 +211,18 @@ def prepareDataWithCorrections(path, domain):
         for sub, frame in lists:
             list = frame["entry"].values.tolist()
             subj_data = (sub, list)
-            data.append(subj_data)    
-        return data, replacement_df, df
+            data.append(subj_data)
+
+        # generate a corrected_df where any corrections that were over 2 edit distance are recorded for later use
+        # compute edit distance for each entry in replacement_df
+        corrected_df = replacement_df.copy()
+        corrected_df['edit_distance'] = corrected_df.apply(lambda x: nltk.edit_distance(x['entry'], x['replacement']), axis=1)
+        # filter out any rows where the edit distance is less than 2
+        corrected_df = corrected_df[corrected_df['edit_distance'] > 2]
+        
+
+
+        return data, replacement_df, df, corrected_df
     
     else:
         print("Success! We have found exact matches for all items in your data. \n\n")
