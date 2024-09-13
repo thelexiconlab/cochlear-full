@@ -92,7 +92,7 @@ def get_labels_and_frequencies(path_to_frequencies):
 
     return labels, freq_matrix
 
-def create_semantic_matrix(path_to_embeddings, path_for_lexical_data):
+def create_semantic_matrix(path_to_embeddings):
     '''
         Description:
             Takes in N word embeddings and returns a semantic similarity matrix (NxN np.array)
@@ -103,6 +103,7 @@ def create_semantic_matrix(path_to_embeddings, path_for_lexical_data):
     '''
     embeddings = pd.read_csv(path_to_embeddings, encoding="unicode-escape").transpose().values
     N = len(embeddings)
+    path_for_lexical_data = '/'.join(path_to_embeddings.split('/')[:-1])
     
     semantic_matrix = 1-scipy.spatial.distance.cdist(embeddings, embeddings, 'cosine').reshape(-1)
     semantic_matrix = semantic_matrix.reshape((N,N))
@@ -184,4 +185,4 @@ class phonology_funcs:
     
 
 ### SAMPLE RUN CODE ###
-create_semantic_matrix('../data/lexical_data/foods/speech2vec_50_embeddings.csv', '../data/lexical_data/foods/')
+create_semantic_matrix('../data/lexical_data/animals/word2vec/50_embeddings.csv')

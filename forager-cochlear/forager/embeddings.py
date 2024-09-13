@@ -50,8 +50,8 @@ class Embeddings:
         embeddings_df = embeddings_df.transpose()
     
         # Save the DataFrame as a CSV file
-        self.path = domain_path + model_for_embeddings + '_' + dimension + '_embeddings.csv'
+        self.path = domain_path + model_for_embeddings + '/' + dimension + '_embeddings.csv'
         embeddings_df.to_csv(self.path, index=False)
 
 # SAMPLE RUN CODE
-embeddings_instance = Embeddings('foods', 'speech2vec', '50')
+embeddings_instance = Embeddings('foods', 'word2vec', '50')
