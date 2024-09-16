@@ -28,7 +28,7 @@ def get_frequencies(path_for_lexical_data):
     
     item_counts_df.loc[item_counts_df['log_count'] == 0, 'log_count'] = .0001
     
-    item_counts_df.to_csv(path_for_lexical_data + '/USE_frequencies.csv', index=False, header=None)
+    item_counts_df.to_csv(path_for_lexical_data + '/frequencies.csv', index=False, header=None)
     return None
 
-get_frequencies('../data/lexical_data/animals/')
+#get_frequencies('../data/lexical_data/animals/')

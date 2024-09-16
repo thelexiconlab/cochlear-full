@@ -44,13 +44,13 @@ def retrieve_data(path, domain):
     data = prepareDataWithCorrections(path, domain)
     return data
 
-def get_lexical_data(domain):
+def get_lexical_data(domain, speech):
 
     animalnormspath =  'data/norms/animals_snafu_scheme_vocab.csv'
     foodnormspath =  'data/norms/foods_snafu_scheme_vocab.csv'
-    similaritypath =  'data/lexical_data/' + domain + '/USE_semantic_matrix.csv'
-    frequencypath =  'data/lexical_data/' + domain + '/USE_frequencies.csv'
-    phonpath = 'data/lexical_data/' + domain + '/USE_phonological_matrix.csv'
+    similaritypath =  'data/lexical_data/' + domain + '/' + speech + '/semantic_matrix.csv'
+    frequencypath =  'data/lexical_data/' + domain + '/frequencies.csv'
+    phonpath = 'data/lexical_data/' + domain + '/phonological_matrix.csv'
 
     animalnorms = pd.read_csv(animalnormspath, encoding="unicode-escape")
     foodnorms = pd.read_csv(foodnormspath, encoding="unicode-escape")
@@ -219,9 +219,9 @@ def calculate_switch(switch, fluency_list, semantic_similarity, phon_similarity,
 
     return switch_names, switch_vecs
 
-def run_model(data, model_type, switch_type, domain):
+def run_model(data, model_type, switch_type, domain, speech, history_vars_list, switch_names_list, switch_vecs_list):
     # Get Lexical Data needed for executing methods
-    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain)
+    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech)
     forager_results = []
     # Run through each fluency list in dataset
     for i, (subj, fl_list) in enumerate(tqdm(data)):
@@ -229,10 +229,13 @@ def run_model(data, model_type, switch_type, domain):
         import time
         start_time = time.time()
         # Get History Variables 
-        history_vars = create_history_variables(fl_list, labels, similarity_matrix, frequency_list, phon_matrix)
+        #history_vars = create_history_variables(fl_list, labels, similarity_matrix, frequency_list, phon_matrix)
+        history_vars = history_vars_list[i]
         
         # Calculate Switch Vector(s)
-        switch_names, switch_vecs = calculate_switch(switch_type, fl_list, history_vars[0],   history_vars[4], norms, domain)
+        #switch_names, switch_vecs = calculate_switch(switch_type, fl_list, history_vars[0],   history_vars[4], norms, domain)
+        switch_names = switch_names_list[i]
+        switch_vecs = switch_vecs_list[i]
 
         #Execute Individual Model(s) and get result(s)
         model_names, model_results = calculate_model(model_type,history_vars, switch_names, switch_vecs)
@@ -257,12 +260,14 @@ def run_model(data, model_type, switch_type, domain):
         
     return forager_results
     
-def run_lexical(data, domain):
+def run_lexical(data, domain,speech, corrected_df):
     # Get Lexical Data needed for executing methods
-    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain)
+    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech)
     lexical_results = []
+    history_vars_list = []
     for i, (subj, fl_list) in enumerate(tqdm(data)):
-        history_vars = create_history_variables(fl_list, labels, similarity_matrix, frequency_list, phon_matrix)
+        history_vars = create_history_variables(fl_list, subj, corrected_df, labels, similarity_matrix, frequency_list, phon_matrix)
+        history_vars_list.append(history_vars)
         lexical_df = pd.DataFrame()
         lexical_df['Subject'] = len(fl_list) * [subj]
         lexical_df['Fluency_Item'] = fl_list
@@ -271,14 +276,19 @@ def run_lexical(data, domain):
         lexical_df['Phonological_Similarity'] = history_vars[4]
         lexical_results.append(lexical_df)
     lexical_results = pd.concat(lexical_results,ignore_index=True)
-    return lexical_results
+    return lexical_results, history_vars_list
 
-def run_switches(data,switch_type, domain):
-    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain)
+def run_switches(data,switch_type, domain, speech, history_vars_list):
+    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech)
     switch_results = []
+    switch_names_list = []
+    switch_vecs_list = []
     for i, (subj, fl_list) in enumerate(tqdm(data)):
-        history_vars = create_history_variables(fl_list, labels, similarity_matrix, frequency_list, phon_matrix)
+        #history_vars = create_history_variables(fl_list, labels, similarity_matrix, frequency_list, phon_matrix)
+        history_vars = history_vars_list[i]
         switch_names, switch_vecs = calculate_switch(switch_type, fl_list, history_vars[0], history_vars[4], norms, domain)
+        switch_vecs_list.append(switch_vecs)
+        switch_names_list.append(switch_names)
     
         switch_df = []
         for j, switch in enumerate(switch_vecs):
@@ -292,7 +302,7 @@ def run_switches(data,switch_type, domain):
         switch_df = pd.concat(switch_df, ignore_index=True)
         switch_results.append(switch_df)
     switch_results = pd.concat(switch_results, ignore_index=True)
-    return switch_results
+    return switch_results, switch_names_list, switch_vecs_list
 
 
 def indiv_desc_stats(lexical_results, switch_results = None):
@@ -397,6 +407,7 @@ parser.add_argument('--pipeline',type=str, help='specifies which part of pipelin
 parser.add_argument('--model', type=str, help='specifies foraging model to use')
 parser.add_argument('--switch', type=str, help='specifies switch model to use')
 parser.add_argument('--domain', type=str, help='specifies domain to use')
+parser.add_argument('--speech', type=str, help='specifies whether to use speech2vec or word2vec')
 
 args = parser.parse_args()
 
@@ -413,67 +424,52 @@ args.data = os.path.join(os.getcwd(),args.data)
 #oname = 'output/' + args.data.split('/')[-1].split('.')[0] + '_forager_results.zip'
 
 output_dir = 'output'
-file_name = args.domain + '_forager_results.zip'
-oname = os.path.join(output_dir, file_name)
+#file_name = args.domain + '_forager_results.zip'
+oname = output_dir
+#oname = os.path.join(output_dir, file_name)
 
 
 if args.pipeline == 'evaluate_data':
     data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('evaluation_results.csv', 'w') as csvf:
-            replacement_df.to_csv(csvf, index=False)
-        
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('corrected_df.csv', 'w') as csvf:
-            corrected_df.to_csv(csvf, index=False)
-            
-        # Save the second DataFrame as a CSV file inside the zip
-        with zipf.open('processed_data.csv', 'w') as csvf:
-            processed_df.to_csv(csvf, index=False)
-        
-        # Save vocab as a CSV file inside the zip
-        with zipf.open('forager_vocab.csv', 'w') as csvf:
-            vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
-            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-            vocab.to_csv(csvf, index=False)
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
-        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
+    processed_df.to_csv(oname + '/processed_data.csv', index=False)
+    print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+
+    corrected_df.to_csv(oname + '/corrected_df.csv', index=False)
+    print(f"File 'corrected_df.csv' containing the corrections dataset used in the forager pipeline saved in '{oname}'")
+
+    vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
+    vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+    vocab.to_csv(oname + '/forager_vocab.csv', index=False)
+    print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
 
 elif args.pipeline == 'lexical':
     # Retrieve the Data for Getting Lexical Info
-    data, replacement_df, processed_df = retrieve_data(args.data, args.domain)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
+
+    processed_df.to_csv(oname + '/processed_data.csv', index=False)
+    print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+
+    corrected_df.to_csv(oname + '/corrected_df.csv', index=False)
+    print(f"File 'corrected_df.csv' containing the corrections dataset used in the forager pipeline saved in '{oname}'")
+
+    vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
+    vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+    vocab.to_csv(oname + '/forager_vocab.csv', index=False)
+    print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
     # Run subroutine for getting strictly the similarity & frequency values 
-    lexical_results = run_lexical(data, args.domain)
+    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, corrected_df)
+    lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
+    print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+
     ind_stats = indiv_desc_stats(lexical_results)
-    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('evaluation_results.csv', 'w') as csvf:
-            replacement_df.to_csv(csvf, index=False)
-
-        # Save the second DataFrame as a CSV file inside the zip
-        with zipf.open('processed_data.csv', 'w') as csvf:
-            processed_df.to_csv(csvf, index=False)
-        # Save vocab as a CSV file inside the zip
-        with zipf.open('forager_vocab.csv', 'w') as csvf:
-            vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
-            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-            vocab.to_csv(csvf, index=False)
-        # save lexical results
-        with zipf.open('lexical_results.csv','w') as csvf:
-            lexical_results.to_csv(csvf, index=False) 
-        # save individual descriptive statistics
-        with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
-            ind_stats.to_csv(csvf, index=False)
-
-        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
-        print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
-        print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
-
+    ind_stats.to_csv(oname + '/individual_descriptive_stats.csv', index=False)
+    print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
+    
         
 elif args.pipeline == 'switches':
     # Check if switches, then there is a switch method specified
@@ -484,52 +480,38 @@ elif args.pipeline == 'switches':
     # Run subroutine for getting strictly switch outputs 
     # Run subroutine for getting model outputs
     print("Checking Data ...")
-    data, replacement_df, processed_df = retrieve_data(args.data, args.domain)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
+
+    processed_df.to_csv(oname + '/processed_data.csv', index=False)
+    print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+
+    corrected_df.to_csv(oname + '/corrected_df.csv', index=False)
+    print(f"File 'corrected_df.csv' containing the corrections dataset used in the forager pipeline saved in '{oname}'")
+
+    vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
+    vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+    vocab.to_csv(oname + '/forager_vocab.csv', index=False)
+    print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
+
     print("Retrieving Lexical Data ...")
-    lexical_results = run_lexical(data, args.domain)
+    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, corrected_df)
+    lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
+    print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+
     print("Obtaining Switch Designations ...")
-    switch_results = run_switches(data,args.switch, args.domain)
+    switch_results, switch_names_list, switch_vecs_list = run_switches(data,args.switch, args.domain, args.speech, history_vars_list)
+    switch_results.to_csv(oname + '/switch_results.csv', index=False) 
+    print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
+
     ind_stats = indiv_desc_stats(lexical_results, switch_results)
+    ind_stats.to_csv(oname + '/individual_descriptive_stats.csv', index=False)
+    print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
+    
     agg_stats = agg_desc_stats(switch_results)
-    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('evaluation_results.csv', 'w') as csvf:
-            replacement_df.to_csv(csvf, index=False)
-
-        # Save the second DataFrame as a CSV file inside the zip
-        with zipf.open('processed_data.csv', 'w') as csvf:
-            processed_df.to_csv(csvf, index=False)
-        
-        # Save vocab as a CSV file inside the zip
-        with zipf.open('forager_vocab.csv', 'w') as csvf:
-            vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
-            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-            vocab.to_csv(csvf, index=False)
-
-        # save lexical results
-
-        with zipf.open('lexical_results.csv','w') as csvf:
-            lexical_results.to_csv(csvf, index=False) 
-        
-        # save switch results
-        with zipf.open('switch_results.csv','w') as csvf:
-            switch_results.to_csv(csvf, index=False) 
-
-        # save individual descriptive statistics
-        with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
-            ind_stats.to_csv(csvf, index=False)
-        
-        # save aggregate descriptive statistics
-        with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
-            agg_stats.to_csv(csvf, index=False)
-
-        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
-        print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")        
-        print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
-        print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
-        print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
+    agg_stats.to_csv(oname + '/aggregate_descriptive_stats.csv', index=False)  
+    print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
 
 elif args.pipeline == 'models':
     # Check for model and switch parameters
@@ -543,54 +525,44 @@ elif args.pipeline == 'models':
         parser.error(f"Please specify a proper switch method (e.g. {switch_methods})")
     # Run subroutine for getting model outputs
     print("Checking Data ...")
-    data, replacement_df, processed_df = retrieve_data(args.data, args.domain)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    # save to oname folder
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
+
+    processed_df.to_csv(oname + '/processed_data.csv', index=False)
+    print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+
+    corrected_df.to_csv(oname + '/corrected_df.csv', index=False)
+    print(f"File 'corrected_df.csv' containing the corrections dataset used in the forager pipeline saved in '{oname}'")
+
+    vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
+    vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+    vocab.to_csv(oname + '/forager_vocab.csv', index=False)
+    print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
+
     print("Retrieving Lexical Data ...")
-    lexical_results = run_lexical(data, args.domain)
+    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, corrected_df)
+    lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
+    print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+
     print("Obtaining Switch Designations ...")
-    switch_results = run_switches(data,args.switch, args.domain)
+    switch_results, switch_names_list, switch_vecs_list = run_switches(data,args.switch, args.domain, args.speech, history_vars_list)
+    switch_results.to_csv(oname + '/switch_results.csv', index=False) 
+    print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
+
     print("Running Forager Models...")
-    forager_results = run_model(data, args.model, args.switch, args.domain)
+    model_results = run_model(data, args.model, args.switch, args.domain, args.speech, history_vars_list, switch_names_list, switch_vecs_list)
+    model_results.to_csv(oname + '/model_results.csv', index=False) 
+    print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
 
     ind_stats = indiv_desc_stats(lexical_results, switch_results)
-    agg_stats = agg_desc_stats(switch_results, forager_results)
-    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('evaluation_results.csv', 'w') as csvf:
-            replacement_df.to_csv(csvf, index=False)
-
-        # Save the second DataFrame as a CSV file inside the zip
-        with zipf.open('processed_data.csv', 'w') as csvf:
-            processed_df.to_csv(csvf, index=False)
-        
-        # Save vocab as a CSV file inside the zip
-        with zipf.open('forager_vocab.csv', 'w') as csvf:
-            vocabpath = 'data/lexical_data/' + args.domain + '/vocab.csv'
-            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-            vocab.to_csv(csvf, index=False)
-        # save lexical results
-        with zipf.open('lexical_results.csv','w') as csvf:
-            lexical_results.to_csv(csvf, index=False) 
-        # save switch results
-        with zipf.open('switch_results.csv','w') as csvf:
-            switch_results.to_csv(csvf, index=False) 
-        # save model results
-        with zipf.open('model_results.csv','w') as csvf:
-            forager_results.to_csv(csvf, index=False) 
-        # save individual descriptive statistics
-        with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
-            ind_stats.to_csv(csvf, index=False)
-        # save aggregate descriptive statistics
-        with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
-            agg_stats.to_csv(csvf, index=False)
-
-        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
-        print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
-        print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
-        print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
-        print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
-        print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
+    ind_stats.to_csv(oname + '/individual_descriptive_stats.csv', index=False)
+    print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
+    
+    agg_stats = agg_desc_stats(switch_results, model_results)
+    agg_stats.to_csv(oname + '/aggregate_descriptive_stats.csv', index=False)  
+    print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
 
 else:
     parser.error("Please specify a proper pipeline option (e.g. \'evaluate_data\', \'lexical\', \'switches\',\'models\')")
@@ -598,20 +570,4 @@ else:
 
  
 #### SAMPLE RUN CODE ####
-## Sample execution to evaluate data file ##
-# python run_foraging.py --data data/fluency_lists/psyrev_data.txt --pipeline evaluate_data
-
-## Sample execution to obtain lexical metrics (semantic similarity, phonological similarity, frequency) ##
-# python run_foraging.py --data data/fluency_lists/psyrev_data.txt --pipeline lexical
-
-## Sample execution to obtain switch designations + lexical metrics (semantic similarity, phonological similarity, frequency) ##
-## 'all' switch method will run all switch methods ##
-## other possible arguments for --switch include: 'simdrop', 'multimodal', 'norms_associative','norms_categorical', 'delta' ##
-
-# python run_foraging.py --data data/fluency_lists/psyrev_data.txt --pipeline switches --switch all
-
-## Sample execution to obtain model results ##
-## 'all' model will run all models ##
-## other possible arguments for --model include: 'static', 'dynamic', 'pstatic', 'pdynamic' ##
-
-# python run_foraging.py --data data/fluency_lists/psyrev_data.txt --pipeline models --model all
+# python3 run_foraging.py --data data/fluency_lists/samples/coch-foods-sample.txt --pipeline models --model all --switch all  --domain foods --speech speech2vec

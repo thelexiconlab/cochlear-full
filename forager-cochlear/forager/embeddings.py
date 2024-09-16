@@ -54,4 +54,4 @@ class Embeddings:
         embeddings_df.to_csv(self.path, index=False)
 
 # SAMPLE RUN CODE
-embeddings_instance = Embeddings('foods', 'word2vec', '50')
+#embeddings_instance = Embeddings('foods', 'word2vec', '50')
