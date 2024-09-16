@@ -1,0 +1,4036 @@
+Word,Found,Original Found,Close Matches
+aardvark,True,False,"harvard, dark"
+aardwolf,True,False,"adolf, rudolf, wolf"
+abalone,True,False,"alone, malone, ebalon"
+abeja,True,False,"abeam, abe, habeas"
+addax,True,False,"add, ada, haddan"
+adder,True,True,"adder, sadder, madder"
+adelgid,True,False,"adelaide, adeline, walid"
+adelie penguin,True,False,"deepening, penguin"
+aedes aegypti,False,False,No close match found
+affenpinscher,True,False,fischer
+afghan hound,True,False,afghan
+african dog,True,False,"african, africans, africa"
+agama,True,False,"panama, agatha, agafea"
+agouti,True,False,"ragout, gout, gouty"
+airedale terrier,False,False,No close match found
+akita,True,False,"anita, kit, dakota"
+albacore,True,False,"palace, galore, alcove"
+albatross,True,True,"albatross, albatrosses, baroness"
+albino python,False,False,No close match found
+alga,True,False,"algae, yaga, sala"
+alligator,True,True,"alligator, alligators, navigator"
+alligator lizard,True,False,"alligator, alligators"
+alligator snapping turtle,False,False,No close match found
+allosaurus,True,False,"scaurus, callous, valorous"
+alpaca,True,True,"alpaca, malacca, apace"
+amberjack,True,False,"amber, aback, camera"
+amoeba,True,False,"kamba, rameau, pamela"
+amphibian,True,False,"amphibious, amphilochians, sampan"
+amphioxus,True,False,"amphibious, phrixus, impious"
+amphipod,True,False,"camphor, amphibious, amid"
+anaconda,True,False,"nanda, panada, canada"
+anchovy,True,True,"anchovy, sancho, anchor"
+anemone,True,True,"anemone, daemon, anyone"
+angelfish,True,False,"elfish, angels, unselfish"
+anglerfish,True,False,"angler's, angles, angler"
+angora goat,True,False,angora
+angora rabbit,False,False,No close match found
+anhinga,True,False,"anything, yanina, waning"
+ankylosaur,False,False,No close match found
+annelid,True,False,"tanned, manned, fanned"
+anole,True,False,"anatole, noble, canoe"
+ant,True,True,"ant, want, vant"
+anteater,True,False,"antipater, theater, eater"
+antelope,True,True,"antelope, antelopes, penelope"
+antelope squirrel,True,False,antelopes
+anthropoid,True,False,"anthropomorphic, manhood, fatherhood"
+antlion,True,False,"anton, sanction, antimony"
+apatosaurus,True,False,"taurus, rapturous, vapours"
+ape,True,True,"ape, tape, rape"
+aphid,True,False,"vapid, rapid, phi"
+aplysia,True,False,"apulia, polynesia, asia"
+appaloosa,True,False,"appeals, laploshka, apples"
+apple maggot,True,False,maggot
+arachnid,True,False,"rashid, armand, archie"
+arapaima,True,False,"arabia, tarpeia, rama"
+archaea,True,False,"marchesa, archie, arches"
+archeopteryx,True,False,"archery, barchester, rochester"
+archosaur,True,False,"marchesa, harcourt, armchair"
+arctic char,True,False,"arctic, richard, particular"
+arctic fox,True,False,"arctic, narcotic"
+argali,True,False,"bargain, regal, again"
+armadillo,True,False,"radio, paradiso, barillon"
+armyworm,True,False,"armor, armour, armory"
+arrowhead dogfish,False,False,No close match found
+arrowhead shark,False,False,No close match found
+arthropod,True,False,"fatherhood, bathroom, tripod"
+ascidians,True,False,"sicilians, indians, asian"
+asp,True,True,"asp, wasp, rasp"
+ass,True,True,"ass, sass, pass"
+assassin bug,True,False,"assassin, assassins, amassing"
+auk,True,False,"au, zau, yak"
+auklet,True,False,"anklet, anklets, vault"
+auroch,True,False,"arch, murdoch, roach"
+australopithecine,True,False,"straitened, australian"
+avian,True,False,"tavia, kavin, havin"
+avocet,True,False,"voice, havoc, avert"
+axolotl,True,False,"atoll, aloft, afoot"
+babirusa,True,False,"barsad, bairns, babies"
+baboon,True,True,"baboon, bamboo, boon"
+baby,True,True,"baby, babby, bay"
+baca,True,False,"baa, blanca, brac"
+bacteria,True,False,"materia, material, katerina"
+badger,True,True,"badger, badgers, badge"
+bald eagle,True,False,"beagle, bandage, eagle"
+baleen whale,False,False,No close match found
+banana slug,True,False,"bananas, banana"
+bandicoot,True,False,"barnicot, bandit, bandits"
+bantam,True,True,"bantam, banta, atam"
+bark beetle,True,False,"beetle, bartle, beetles"
+barn owl,True,False,"barnwell, barrow, barold"
+barnacle,True,False,"tabernacle, brace, barne"
+barnacle goose,False,False,No close match found
+barracuda,True,False,"barrack, barracks, braced"
+barramundi,True,False,"bartram, branding, brand"
+barred owl,True,False,"barrow, barrel, barred"
+basenji,True,False,"base, ibsen, genji"
+basilisk,True,True,"basilisk, basilio, basis"
+basking shark,True,False,basking
+bass,True,True,"bass, brass, bassi"
+basset hound,True,False,"astounded, assertion"
+bat,True,True,"bat, brat, boat"
+batfish,True,False,"banish, fish, bats"
+bay scallop,True,False,scalloped
+baya,True,False,"bay, baa, bayham"
+beaded lizard,True,False,blizzard
+beagle,True,True,"beagle, eagle, beale"
+beaked whale,True,False,beadle
+bear,True,True,"bear, blear, bears"
+bear cub,True,False,"beau, bear, barb"
+bearcat,True,False,"brat, bert, beat"
+bearded dragon,True,False,"bearded, arragon"
+bearded vulture,False,False,No close match found
+beaver,True,True,"beaver, beavers, beaver's"
+bedbug,True,False,"edinburgh, dug, bug"
+bee,True,True,"bee, bete, beet"
+bee eater,True,False,"eater, teeter, hereafter"
+bee moth,True,False,"seemeth, moth, both"
+beef cattle,True,False,"cattle, beetle, battle"
+beefalo,True,False,"befal, befall, beef"
+beet armyworm,False,False,No close match found
+beetle,True,True,"beetle, beetles, leetle"
+bellbird,True,False,"bellied, bluebird, belied"
+belted kingfisher,True,False,kingfisher
+beluga,True,False,"bela, belgian, helga"
+beluga whale,True,False,laughable
+bengal tiger,True,False,"wealthier, penalties, healthier"
+bernese mountain dog,False,False,No close match found
+bessbug,True,False,"bess, blessing, bless"
+beta fish,True,False,"starfish, establish, elfish"
+betta,True,False,"bettina, jetta, brett"
+betta fish,True,False,starfish
+bettong,True,False,"betting, abetting, button"
+bichon,True,False,"icon, icons, brion"
+bigeye,True,False,"bingley, oblige, obeyed"
+bighorn,True,False,"brighton, horn, born"
+bighorn sheep,False,False,No close match found
+bilbies,True,False,"lilies, bribes, billie"
+bilby,True,False,"milby, billy, bil"
+billfish,True,False,"bills, billions, willis"
+billy goat,True,False,"billy, bigot"
+binturong,True,False,"turon, insuring, injuring"
+bird,True,True,"bird, birds, bid"
+bison,True,True,"bison, brion, robinson"
+biting midge,True,False,biting
+bittern,True,True,"bittern, bitter, bitten"
+bivalve,True,False,"valve, valves, vale"
+black bear,True,False,"blackbeard, blacker, blackboard"
+black headed gull,False,False,No close match found
+black lab,True,False,"black, blanca, blacky"
+black labrador,True,False,"labrador, blackbird, blackguard"
+black mamba,True,False,"blackmail, lackman, blackboard"
+black panther,True,False,"backwater, panther, blacker"
+black squirrel,True,False,"squirrel, squirrels, blackie"
+black widow,True,False,"blackwood, blackbird, blackie"
+black-capped chickadee,False,False,No close match found
+blackbird,True,True,"blackbird, blackbirds, blackboard"
+blackbuck,True,False,"black, blacky, blacks"
+blackcap,True,False,"black, blanca, blacky"
+blackfish,True,False,"blackish, brackish, blacks"
+blackfly,True,False,"blacky, blankly, black"
+blackpoll,True,False,"blackpool, blackwell, black"
+blacktail,True,False,"blackmail, blackie, black"
+blacktail deer,True,False,"blackmail, blackie, blacker"
+blacktip reef shark,False,False,No close match found
+blacktip shark,True,False,blackish
+blenny,True,False,"benny, penny, lenin"
+blister beetle,True,False,"blistered, obliterate, blister"
+blobfish,True,False,"blois, elfish, boyish"
+bloodhound,True,False,"bloodhounds, bloodshot, bloodshed"
+bloodworm,True,False,"blindworm, bloom, blood"
+blowfish,True,False,"blows, blois, brownish"
+blowfly,True,False,"lowly, slowly, bowl"
+blubber fish,True,False,"blubber, blubbering, lubber"
+blue catfish,True,False,bluish
+blue heron,True,False,"lutheran, luncheon, leathern"
+blue jay,True,False,blue
+blue marlin,True,False,"berlin, marline, learnin"
+blue shark,True,False,"shark, blush, blueskin"
+blue whale,True,False,"whale, bewailed, beale"
+bluebill,True,False,"bluebells, buell, bluebird"
+bluebird,True,True,"bluebird, bluebeard, blustered"
+bluefin,True,False,"blueskin, blueskins, blue"
+bluefin tuna,False,False,No close match found
+bluefish,True,False,"bluish, blemish, blush"
+bluefooted booby,False,False,No close match found
+bluegill,True,False,"buell, luella, bluebells"
+bluetick,True,False,"baltic, guestwick, tick"
+boa,True,True,"boa, boma, boat"
+boa constrictor,True,False,"contractor, contradictory, contributor"
+boar,True,True,"boar, boars, board"
+bobcat,True,False,"boat, boats, boast"
+bobolink,True,False,"blink, goblin, obelisk"
+bobtail,True,False,"obtain, botanical, tail"
+bobwhite,True,False,"white, bowie, whitey"
+bobwhite quail,False,False,No close match found
+boll weevil,False,False,No close match found
+bollworm,True,False,"blindworm, worm, boom"
+bolognese,True,False,"boulogne, cologne, bologna"
+bombardier beetle,False,False,No close match found
+bonefish,True,False,"bones, brownish, bonfires"
+bongo,True,False,"congo, borgo, boo"
+bonito,True,False,"bonita, benito, onto"
+bonnethead,True,False,"bonnet, connected, bonnets"
+bonobo,True,False,"bobo, bonbons, booby"
+bony fish,True,False,"boyish, brownish, bonfires"
+booby,True,True,"booby, booty, bobby"
+border collie,True,False,"borderline, orderlies, orderliness"
+borzoi,True,False,"broil, borri, boris"
+boston terrier,True,False,terrier
+botfly,True,False,"hotly, bothy, booty"
+boto,True,False,"boo, bottom, boston"
+bottlenose,True,False,"bottles, bottle, bottoms"
+bottlenose dolphin,False,False,No close match found
+bottlenose whale,False,False,No close match found
+bovine,True,False,"vine, bone, vines"
+bowerbird,True,False,"weird, bower, bowed"
+bowfin,True,False,"bowing, boffin, bowling"
+bowhead,True,False,"bowed, browed, bowled"
+bowhead whale,False,False,No close match found
+box turtle,True,False,"turtle, bottle, turtles"
+boxelder bug,True,False,"elderbush, bolder"
+boxer,True,True,"boxer, boer, boxes"
+boxfish,True,False,"boyish, fish, bosh"
+brachiopod,True,False,"brood, broached, branched"
+brachiosaurus,True,False,"gracious, graciosa"
+bream,True,False,"beam, reams, realm"
+brimfish,True,False,"british, romish, impish"
+brine shrimp,True,False,shrimp
+broadbill,True,False,"broadly, broil, broad"
+broadtail,True,False,"redtail, broadly, broil"
+bronc,True,False,"broncho, byron, brown"
+bronco,True,False,"broncho, bronson, byron"
+brontosaurus,True,False,"contours, taurus, bounteous"
+broodmare,True,False,"broome, bromar, brooded"
+broody hen,True,False,"brooded, broaden, brooklyn"
+brook trout,True,False,lookout
+brown bear,True,False,"browner, browbeat, browne"
+brown bullhead,True,False,browned
+brown creeper,True,False,"creeper, browner, creepers"
+brown hyena,True,False,"arowhena, rowena, browne"
+brown recluse,True,False,"recluse, brownies, browne's"
+brown recluse spider,False,False,No close match found
+brown thrasher,True,False,"browner, brother"
+brown trout,True,False,browner
+bruin,True,True,"bruin, ruin, ruins"
+bryozoan,True,False,"bryan, ryan, roon"
+buck,True,True,"buck, bucks, buckle"
+bucking bronco,True,False,bucking
+budgerigar,True,False,"burglar, blundering, burglary"
+budgie,True,False,"budge, budget, budge's"
+buffalo,True,True,"buffalo, buffaloes, buff"
+bufflehead,True,False,"bulkhead, buffeted, ruffled"
+bufo,True,False,"buoy, buff, buffoon"
+bug,True,True,"bug, burg, bung"
+bulbul,True,False,"bull, bulb, bully"
+bull,True,True,"bull, bully, bulls"
+bull mastiff,True,False,mastiff
+bull shark,True,False,"bulwark, shark, bulwarks"
+bull snake,True,False,"snake, bulls, blake"
+bull terrier,True,False,"terrier, ulterior, terriers"
+bulldog,True,True,"bulldog, bullfrog, bull"
+bullfinch,True,False,"bullion, finch, bunch"
+bullfrog,True,True,"bullfrog, bulldog, frog"
+bullhead,True,False,"bulkhead, bullied, pulled"
+bullhead catfish,False,False,No close match found
+bullmastiff,True,False,"mastiff, ballast"
+bullock,True,True,"bullock, bullocks, block"
+bullsnake,True,False,"snake, bulls, blake"
+bumblebee,True,True,"bumblebee, bumble, tumble"
+bunny,True,True,"bunny, tunny, sunny"
+bunny rabbit,True,False,rabbit
+bunting,True,True,"bunting, uniting, hunting"
+burbot,True,False,"turbot, bourbon, burst"
+burmese mountain dog,False,False,No close match found
+burro,True,False,"burrow, burros, burr"
+bush squirrel,True,False,"squirrel, squirrels"
+bushbaby,True,False,"bushy, busby, shabby"
+bushbuck,True,False,"shucks, suck, huck"
+bushmaster,True,False,"burgomaster, master, buster"
+bustard,True,False,"mustard, custard, bastard"
+butterfish,True,False,"butterflies, cuttlefish, butterfly's"
+butterflies,True,True,"butterflies, butterfly's, butterfly"
+butterfly,True,True,"butterfly, butterfly's, utterly"
+butterflyfish,True,False,"butterfly's, butterflies, butterfly"
+buzzard,True,True,"buzzard, blizzard, buzzer"
+cactus wren,True,False,"cactus, caricature, capture"
+caddis fly,True,False,"candidly, caddy"
+caecilian,True,False,"cecilia, castilian, ceiling"
+caiman,True,False,"claimant, chairman, campan"
+cairn terrier,True,False,"terrier, caterer, cartier"
+calf,True,True,"calf, alf, calf's"
+calico cat,True,False,calico
+camel,True,True,"camel, camels, came"
+cameo,True,True,"cameo, came, cameron"
+canary,True,True,"canary, cana, january"
+canebrake rattlesnake,True,False,rattlesnake
+canine,True,True,"canine, nanine, canned"
+canis lupus,False,False,No close match found
+cankerworm,True,False,"canker, careworn, anteroom"
+canvasback,True,False,"caneback, canvas, canvass"
+canvasback duck,False,False,No close match found
+cape buffalo,True,False,"buffalo, buffaloes"
+capelin,True,False,"caplin, chaplin, capel"
+capercaillie,True,False,"percivale, pencilled, capell"
+capibara,True,False,"caspar, chapparal, chaparral"
+caplin,True,True,"caplin, chaplin, chaplain"
+capon,True,False,"capron, capons, cap'n"
+capuchin,True,False,"punching, coaching, catching"
+capuchin monkey,False,False,No close match found
+capybara,True,False,"caspar, chapparal, chaparral"
+carabao,True,False,"carbon, arabia, crab"
+caracal,True,False,"charcoal, rascal, racial"
+caracara,True,False,"character, scarcer, cronaca"
+cardinal,True,True,"cardinal, cardinals, cardinal's"
+caribou,True,True,"caribou, cariboo, carbon"
+carp,True,True,"carp, scarp, car"
+carpenter ant,True,False,"carpenter, carpentering, carpenters"
+carpenter bee,True,False,"carpenter, carpenters, carpenter's"
+carpet beetle,True,False,carpeted
+carrier pigeon,True,False,"criterion, carrion, carrington"
+carrion crow,True,False,"carrion, scarecrow"
+carthorse,True,False,"carthoris, harthouse, barthorpe"
+cartilaginous fish,False,False,No close match found
+cassowary,True,False,"cowardly, causeway, castaway"
+cat,True,True,"cat, coat, chat"
+catamount,True,False,"tantamount, altamont, amount"
+catbird,True,False,"card, bird, attired"
+caterpillar,True,True,"caterpillar, caterpillars, pillar"
+catfish,True,False,"crayfish, crawfish, fish"
+cattle,True,True,"cattle, wattle, tattle"
+cattle egret,True,False,"carteret, scattered, cleverest"
+cavalier king charles spaniel,False,False,No close match found
+cavy,True,False,"cavity, wavy, navy"
+cayote,True,False,"coyote, cote, coyotes"
+cedar waxwing,True,False,"drawing, drawling, drawings"
+centipede,True,True,"centipede, centipedes, scented"
+cephalopod,False,False,No close match found
+ceratopsian,True,False,"craftsman, utopian, persian"
+cervid,True,False,"fervid, eridu, cried"
+cetacean,True,False,"cetaceans, crustaceans, cetera"
+chachalaca,True,False,charcoal
+chaffinch,True,True,"chaffinch, chaffing, chafing"
+chain pickerel,True,False,chancel
+chambered nautilus,False,False,No close match found
+chameleon,True,True,"chameleon, cameron, camelot"
+chamois,True,True,"chamois, chaos, hamish"
+channel catfish,True,False,channels
+char,True,True,"char, chart, charm"
+charolais,True,False,"carols, calais, charlie's"
+cheep,True,False,"chee, sheep, creep"
+cheetah,True,False,"uncheedah, chee, heareth"
+chetah,True,False,"chettam, heath, chota"
+chewbacca,False,False,No close match found
+chick,True,True,"chick, chicks, chickie"
+chickadee,True,True,"chickadee, cockade, chickie"
+chicken,True,True,"chicken, chickens, thicken"
+chigger,True,False,"nigger, higher, digger"
+chihuahua,True,False,chicha
+chimaera,True,True,"chimaera, chimera, chimeras"
+chimp,True,False,"chip, chirp, chips"
+chimpanzee,True,False,"champagne, chinese, chimney"
+chinch bug,True,False,cinch
+chinchilla,True,False,"chicha, churchill, cornhill"
+chinook,True,True,"chinook, chink, hindoo"
+chinook salmon,True,False,chinook
+chipmunk,True,True,"chipmunk, chipmunks, chunk"
+chipping sparrow,False,False,No close match found
+chocolate labrador,True,False,chocolate
+chough,True,False,"cough, though, hugh"
+chow chow,False,False,No close match found
+christmas tree worm,True,False,christminster
+chub,True,False,"hub, cub, chu"
+chum salmon,True,False,"salmon, salmons"
+cicada,True,False,"picard, ida, cid"
+cicada killer,False,False,No close match found
+cichlid,True,False,"circled, richland, inclined"
+cichlid fish,True,False,childish
+civet,True,False,"covet, clive, ive"
+civet cat,False,False,No close match found
+clam,True,True,"clam, clams, clamp"
+cleaner shrimp,True,False,"leadership, rangership, cleaner"
+clown fish,True,False,"clowns, cornish, codfish"
+clownfish,True,False,"clowns, cornish, codfish"
+clydesdale,True,False,"dimmesdale, trysdale, clyde"
+coati,True,False,"coat, coating, coats"
+coatimundi,True,False,"coating, compound, communed"
+cobia,True,False,"cogia, cobra, columbia"
+cobra,True,True,"cobra, cora, coral"
+cochineal,True,True,"cochineal, cochin, congeal"
+cock,True,True,"cock, crock, cocks"
+cockatiel,True,False,"cocktail, cocktails, cockade"
+cockatoo,True,False,"cuckoo, cockletop, pocketbook"
+cocker,True,False,"crocker, cocke, crockery"
+cocker spaniel,True,False,spaniel
+cockerel,True,False,"crocker, cochere, cocke"
+cockle,True,True,"cockle, cocke, cocked"
+cockroach,True,False,"roach, corah, cocoa"
+cockroaches,True,False,"coaches, cockades, scratches"
+cod,True,True,"cod, cord, cold"
+codfish,True,True,"codfish, goldfish, oldish"
+codling,True,False,"coddling, cooling, coiling"
+codling moth,True,False,coddling
+coelacanth,True,False,"complacent, covenant, complaisant"
+coho,True,False,"oho, coo, clotho"
+coho salmon,True,False,"salmon, salmons"
+collared lizard,True,False,collared
+collared peccary,True,False,collared
+collie,True,True,"collie, collided, mollie"
+colobus,True,False,"colours, columbus, colossus"
+colobus monkey,False,False,No close match found
+colt,True,True,"colt, colts, cot"
+colugo,True,False,"cough, congo, color"
+comb jelly,True,False,"comely, jelly, cromwell"
+common murre,True,False,"commoner, concurred, composure"
+common scoter,True,False,"commoner, commoners, monster"
+common yellowthroat,False,False,No close match found
+conch,True,False,"couch, coach, cinch"
+condor,True,False,"candor, odor, conductor"
+coney,True,True,"coney, corney, convey"
+conger,True,False,"longer, corner, confer"
+conger eel,True,False,"mongrel, congeal, conversely"
+constrictor,True,False,"contractor, contradictory, contributor"
+conure,True,False,"conjure, conjures, conjured"
+coonhound,True,False,"confound, confounded, hound"
+coot,True,False,"cot, coo, coyote"
+cooter,True,False,"coyote, cooper, cooler"
+copepod,True,False,"copied, cooped, copp"
+copperhead,True,False,"overhead, copperas, copperfield"
+copperhead snake,True,False,copperas
+coq,True,False,"co, lecoq, coy"
+coral,True,True,"coral, corral, corals"
+coral reef snake,True,False,rattlesnake
+coral snake,True,False,"rattlesnake, corals, forsake"
+corbina,True,False,"clorinda, corona, cornua"
+corgi,True,False,"cogia, cog, origin"
+cormorant,True,False,"corporate, moraunt, dormant"
+corn borer,True,False,"corner, forbore, coroner"
+corn borer moth,False,False,No close match found
+corn earworm,True,False,"corner, conqueror"
+corn snake,True,False,"forsake, greensnake, snake"
+corncrake,True,False,"cornick, cornice, concave"
+cornish game hen,False,False,No close match found
+cotton bollworm,False,False,No close match found
+cottonmouth,True,False,"monmouth, cotton, portsmouth"
+cottonmouth moccasin,False,False,No close match found
+cottontail,True,False,"cotton, cottons, contain"
+cottontail rabbit,False,False,No close match found
+cougar,True,True,"cougar, sugar, scour"
+courser,True,True,"courser, coursers, course"
+cow,True,True,"cow, crow, cows"
+cowbird,True,False,"coward, cord, bird"
+cownose ray,True,False,"considerably, conservatory, nosegay"
+cowrie,True,False,"cowardice, core, cowhide"
+cowry,True,False,"dowry, corny, cowardly"
+cows,True,True,"cows, crows, cow's"
+coyote,True,True,"coyote, coyotes, cote"
+coypu,True,False,"coy, cop, cyprus"
+crab,True,True,"crab, crabs, cab"
+crane,True,True,"crane, cranes, craned"
+cranefly,True,False,"crane, caney, urbanely"
+crappie,True,False,"crape, scrappes, scrapper"
+crawdad,True,False,"adad, crowded, crawled"
+crawfish,True,True,"crawfish, crayfish, crash"
+crawler,True,False,"crawley, crawled, rawle"
+crayfish,True,True,"crayfish, crawfish, grayish"
+crevalle jack,False,False,No close match found
+cricket,True,True,"cricket, crickets, cricketer"
+crinoid,True,False,"rind, cringed, carlini"
+croaker,True,False,"crocker, croaked, creaker"
+croc,True,False,"crock, croce, roc"
+crocodile,True,True,"crocodile, crocodiles, crocodile's"
+crossbill,True,False,"crossly, crosbie, cross"
+crow,True,True,"crow, crows, crown"
+crucian carp,False,False,No close match found
+crustacean,True,False,"crustaceans, cetaceans, circumstance"
+cub,True,True,"cub, curb, cubs"
+cuckoo,True,True,"cuckoo, cuzco, cluck"
+culex pipiens,False,False,No close match found
+curlew,True,True,"curlew, curled, curfew"
+cuscus,True,False,"cuss, luscious, sculls"
+cusk,True,False,"tusk, rusk, musk"
+cuttlefish,True,True,"cuttlefish, scuttle, cutters"
+cutworm,True,False,"custom, worm, outworn"
+cygnet,True,False,"clyne, yet, wygant"
+dace,True,False,"dance, ace, deface"
+dachshund,True,False,"dashed, asmund"
+daddy longlegs,False,False,No close match found
+dairy cattle,True,False,"rattle, dartle, cattle"
+dairy cow,True,False,"dairy, darrow"
+dall sheep,True,False,sheep
+dalmatian,True,False,"dalmatia, latian, galatians"
+damsel fish,True,False,"selfish, damsels, damsel's"
+damselfish,True,False,"selfish, damsels, damsel's"
+damselfly,True,False,"damsel, damsels, damosel"
+daphnia,True,False,"daphne, dahlia, dana"
+darkling beetle,True,False,darkling
+darning needle,True,False,darning
+darter,True,False,"darters, arter, garter"
+darwin frog,True,False,"darwin, daring, drawing"
+daschund,True,False,"dashed, asmund, ascend"
+dear,True,True,"dear, idear, drear"
+decapod,True,False,"decoud, decade, dead"
+deer,True,True,"deer, deter, defer"
+deerhound,True,True,"deerhound, deronda, round"
+degu,True,False,"jegu, dieu, tengu"
+desert tortoise,True,False,tortoise
+devil,True,True,"devil, devils, evil"
+diamondback,True,False,"diamond, diamonds, diamond's"
+diamondback rattlesnake,False,False,No close match found
+diamondback terrapin,False,False,No close match found
+dik-dik,False,False,No close match found
+dingo,True,False,"ding, domingo, lingo"
+dinosaur,True,False,"insure, disarm, dinars"
+dinosaurs,True,False,"dinars, disturbs, disclosures"
+diplodocus,False,False,No close match found
+doberman,True,False,"dormant, nobleman, derriman"
+doberman pinscher,False,False,No close match found
+dodo,True,True,"dodo, odo, doo"
+dodo bird,False,False,No close match found
+doe,True,True,"doe, doze, dove"
+dog,True,True,"dog, dong, dogs"
+dogfish,True,False,"gish, fish, dogs"
+doggie,True,False,"dogged, ogier, dodge"
+doggy,True,False,"foggy, boggy, doggedly"
+dogs,True,True,"dogs, dog's, ogs"
+dolphin,True,True,"dolphin, dolphins, godolphin"
+dolphinfish,True,False,"dolphins, dolphin, phinis"
+domingo,True,True,"domingo, domino, doing"
+donkey,True,True,"donkey, donkeys, donkey's"
+doodlebug,True,False,"doodle, poodle, noodle"
+dormouse,True,True,"dormouse, odorous, rouse"
+dory,True,True,"dory, dowry, dorry"
+dotterel,True,False,"dotterine, otter, tottered"
+double-crested cormorant,False,False,No close match found
+dove,True,True,"dove, drove, doves"
+downy woodpecker,True,False,"woodpecker, woodpeckers"
+dragon,True,True,"dragon, dragoon, dragons"
+dragon lizard,True,False,agonized
+dragonfly,True,False,"dragon, dragoon, dragons"
+drake,True,True,"drake, draken, rake"
+dray horse,True,False,horse
+dromedary,True,True,"dromedary, dreary, someday"
+drosophila,True,False,"sophia, rostopchin, hydrophobia"
+drum fish,True,False,"drums, dwarfish, romish"
+duck,True,True,"duck, ducks, duc"
+duckbill,True,False,"luckily, lucille, kill"
+duckbilled platypus,False,False,No close match found
+duckling,True,True,"duckling, ducklings, ducking"
+ducks,True,True,"ducks, duck, tucks"
+dugong,True,False,"gong, dung, dong"
+duiker,True,False,"duke, dike, quicker"
+dung beetle,True,False,"ungentle, beetle, beetles"
+dungeness crab,False,False,No close match found
+dunlin,True,False,"dunlavin, dublin, dunn"
+dusky shark,True,False,skylark
+dwarf hamster,False,False,No close match found
+dwarf rabbit,True,False,rabbit
+dwarf sperm whale,False,False,No close match found
+eagle,True,True,"eagle, eagles, beagle"
+eagle ray,True,False,"eagerly, eagle, eager"
+eaglet,True,False,"eagle, eagles, beagle"
+eared grebe,False,False,No close match found
+earthworm,True,False,"earthwork, earthworks, earthward"
+earwig,True,False,"wearing, tearing, searing"
+eastern cottontail,False,False,No close match found
+eastern indigo snake,False,False,No close match found
+eastern kingbird,False,False,No close match found
+eastern lowland gorilla,False,False,No close match found
+eastern meadowlark,False,False,No close match found
+eastern toebiter,False,False,No close match found
+echidna,True,False,"china, edna, chin"
+echinoderm,True,False,"hinder, cinder, hinders"
+eel,True,True,"eel, weel, reel"
+eelpout,True,False,"pout, lout, spout"
+eels,True,True,"eels, reels, heels"
+egret,True,False,"regret, regrets, greet"
+eider,True,True,"eider, wider, rider"
+eider duck,True,False,eider
+eland,True,False,"land, zeeland, zealand"
+electric eel,True,False,"electrical, electric, electrically"
+elephant,True,True,"elephant, elephants, elephant's"
+elephant seal,True,False,"elephants, elephant's, elephant"
+elk,True,True,"elk, el, welkin"
+elkhound,True,False,"hound, hounds, wolfhound"
+elver,True,False,"ever, deliver, sever"
+emerald shiner,True,False,"emeralds, geraldine, emerald"
+emperor penguin,False,False,No close match found
+emu,True,False,"em, demur, sem"
+equine,True,False,"quiney, quince, euxine"
+ermine,True,True,"ermine, germaine, vermin"
+escolar,True,False,"scholar, solar, scholars"
+eugarie,True,False,"dearie, erie, wearies"
+evening grosbeak,True,False,"grosbeak, evenings"
+ewe,True,True,"ewe, ewes, ewer"
+fairy shrimp,True,False,"airship, airships, shrimp"
+falcon,True,True,"falcon, falcons, falconer"
+fall armyworm,False,False,No close match found
+fall webworm,False,False,No close match found
+fallow deer,True,False,"follower, lowder, flower"
+fawn,True,True,"fawn, fawns, fan"
+feline,True,True,"feline, felice, feelin"
+fennec fox,False,False,No close match found
+ferret,True,True,"ferret, ferreted, fret"
+fiddler crab,True,False,"fiddler, fiddlers, fiddle"
+filaria,True,False,"faria, lariat, filial"
+filly,True,True,"filly, fill, finally"
+fin whale,True,False,"inhale, finale, inhaled"
+finback,True,False,"fink, back, finance"
+finback whale,True,False,narwhale
+finch,True,True,"finch, flinch, inch"
+fire ant,True,False,"fireman, frantz, miscreant"
+firebird,True,False,"redbird, fired, fireside"
+firebug,True,False,"fire, rebuking, fires"
+firefly,True,True,"firefly, freely, firmly"
+fish,True,True,"fish, fishy, ish"
+fish eagle,True,False,"shale, fuselage, eagle"
+fisher,True,True,"fisher, fishery, fishers"
+fisher cat,True,False,"fisher, fisherman, fishery"
+flacon,True,False,"flagon, falcon, laconic"
+flamingo,True,False,"flaming, framing, foaming"
+flatfish,True,False,"flats, flash, lavish"
+flathead catfish,True,False,flatheads
+flatworm,True,False,"platform, flavor, fathom"
+flea,True,True,"flea, fleas, lea"
+flea beetle,True,False,"leetle, beetle, labeled"
+flies,True,True,"flies, lies, follies"
+flounder,True,True,"flounder, founder, floundered"
+fly,True,True,"fly, flay, fully"
+fly fish,True,False,"elfish, jellyfish, wolfish"
+flycatcher,True,True,"flycatcher, catcher, fletcher"
+flying fish,True,False,"flying, flings, finish"
+flying monkey,False,False,No close match found
+flying snake,True,False,"flying, flings"
+flying squirrel,True,False,"squirrel, squirrels"
+foal,True,True,"foal, foals, formal"
+forest tent caterpillar,False,False,No close match found
+fossa,True,False,"frosts, fossil, atossa"
+four eye butterfly fish,False,False,No close match found
+foureye butterflyfish,False,False,No close match found
+fowl,True,True,"fowl, fowls, owl"
+fox,True,True,"fox, foxy, ox"
+fox squirrel,True,False,"squirrel, squirrels, squire"
+fox terrier,True,False,"terrier, ferrier, terriers"
+foxes,True,True,"foxes, foes, fox's"
+foxhound,True,True,"foxhound, hound, found"
+french bulldog,True,False,bulldog
+fresh water fish,False,False,No close match found
+freshwater eel,True,False,fresher
+freshwater fish,True,False,foresters
+freshwater mussel,False,False,No close match found
+friesian,True,False,"friesland, resin, parisian"
+frog,True,True,"frog, frogs, fro"
+frogfish,True,False,"roguish, frogs, romish"
+froghopper,True,False,"hopper, trooper, rougher"
+frogmouth,True,False,"mouth, froth, yarmouth"
+fruit bat,True,False,"fruit, rubato, ribaut"
+fruit fly,True,False,"fruitful, fruit, fitly"
+fulmar,True,False,"lamar, flare, vulgar"
+fungi,True,True,"fungi, flung, fun"
+fungus gnat,True,False,fungus
+gaboon viper,False,False,No close match found
+gadfly,True,False,"gladly, grandly, sadly"
+gal,True,True,"gal, goal, gaul"
+gall midge,True,False,"galling, midge, glide"
+gall wasp,True,False,"gallows, galloway, gallants"
+gallinule,True,False,"galling, galileo, galilee"
+gamecock,True,True,"gamecock, peacock, mock"
+gander,True,True,"gander, grander, grandeur"
+gannet,True,False,"garnet, anne, grannie"
+gar,True,True,"gar, gear, garb"
+garden snake,True,False,"greensnake, gardens, gardener"
+garfish,True,False,"garish, garnish, starfish"
+garibaldi,True,False,"ribald, archibald, geirbald"
+garter snake,True,False,"garters, greensnake, rattlesnake"
+gator,True,False,"astor, actor, agitator"
+gaur,True,False,"gar, maur, gurr"
+gavial,True,False,"vial, glacial, vital"
+gazelle,True,True,"gazelle, gabelle, galley"
+gecko,True,False,"greco, reckon, beckon"
+geese,True,True,"geese, genoese, geeks"
+gelding,True,False,"welding, gliding, gilding"
+gemsbok,True,False,"gems, pembroke, germs"
+genet,True,False,"gent, greet, ghent"
+geoduck,True,False,"duck, gluck, gamecock"
+gerbil,True,False,"goneril, peril, grill"
+gerbils,True,False,"perils, gris, goneril"
+german shepard,True,False,"shepard, germans, gaspard"
+german shepherd,True,False,"shepherd, shepherds"
+gharial,True,False,"harald, gharib, garral"
+ghost crab,True,False,ghost
+giant,True,True,"giant, giants, giant's"
+giant anteater,False,False,No close match found
+giant panda,True,False,granada
+giant schnauzer,False,False,No close match found
+giant squid,True,False,"giants, giant's"
+giant tortoise,True,False,tortoise
+gibbon,True,True,"gibbon, gibbons, ribbon"
+giraffe,True,False,"raffle, raffer, gaffer"
+glaucus,True,True,"glaucus, raucous, glances"
+glia monster,True,False,"monster, monsters, leinster"
+glider,True,False,"glide, uglier, slider"
+globefish,True,False,"globes, globe, goldfish"
+glowworm,True,False,"gloom, gloomy, glooms"
+gnat,True,True,"gnat, ignat, gnats"
+gnatcatcher,True,False,"catcher, thatcher, snatcher"
+gnu,True,False,"nu, genus, nut"
+goanna,True,False,"joanna, anna, hosanna"
+goat,True,True,"goat, groat, goats"
+goatfish,True,False,"goats, goldfish, gratis"
+goats,True,True,"goats, goat's, oats"
+goby,True,True,"goby, toby, roby"
+godwit,True,False,"goodwin, gwilt, gondi"
+godzilla,True,False,"gorilla, goodwill, zillah"
+gold fish,True,False,"goldfish, oldish, goldfinch"
+golden eagle,True,False,golden
+golden labrador,True,False,labrador
+golden marmot,True,False,"glenarm, goldenhair, voldemar"
+golden plover,False,False,No close match found
+golden retriever,True,False,retrieve
+golden shiner,True,False,"goldenhair, densher"
+goldendoodle,True,False,"noodle, gwendolen, golden"
+goldfinch,True,True,"goldfinch, goldfish, finch"
+goldfish,True,True,"goldfish, oldish, goldfinch"
+gooney bird,False,False,No close match found
+goose,True,True,"goose, goosey, noose"
+gopher,True,True,"gopher, gophers, morpher"
+gopher snake,True,False,"gophers, personage, gopher"
+gopher tortoise,True,False,"tortoise, operators"
+gopher turtle,True,False,"overture, aperture"
+gorgonian,True,False,"georgian, georgiana, gordian"
+gorilla,True,True,"gorilla, grill, grille"
+goshawk,True,False,"mohawk, shaw, hawk"
+gosling,True,False,"sling, going, jostling"
+grackle,True,False,"crackle, grace, crackled"
+grass snake,True,False,"greensnake, grasses"
+grasshopper,True,True,"grasshopper, grasshoppers, rasper"
+grasshopper mouse,True,False,"grasshoppers, grasshopper"
+gray catbird,True,False,graveyard
+gray fox,True,False,"gray, grafton, graf"
+gray jay,True,False,"raja, gray, granary"
+gray mullet,True,False,"mullet, gullet"
+gray partridge,True,False,"partridge, partridges, cartridge"
+gray whale,True,False,"whale, rawle, narwhale"
+gray wolf,False,False,No close match found
+graywolf,True,False,"wolf, gray, graf"
+great auk,True,False,"great, gretta, greatcoat"
+great blue heron,False,False,No close match found
+great crested grebe,False,False,No close match found
+great dane,True,False,"greatness, greater, retainer"
+great horned owl,False,False,No close match found
+great pyrenees,True,False,"pyrenees, greatness"
+great white shark,False,False,No close match found
+greater yellowlegs,True,False,yellowlegs
+grebe,True,False,"rebel, greet, green"
+green lacewing,True,False,"renewing, replacing, greenland"
+green mamba,True,False,grandmamma
+greenfly,True,False,"greeley, green, recently"
+greenling,True,False,"reeling, reveling, greeting"
+greenshank,True,False,"greensnake, greenish, greens"
+grenadier,True,True,"grenadier, grenadiers, readier"
+grey squirrel,True,False,"squirrel, squirrels, require"
+grey whale,True,False,"whale, narwhale"
+greyhound,True,True,"greyhound, greyhounds, ground"
+greylag goose,False,False,No close match found
+griffon,True,False,"griffin, trifon, grin"
+griffon vulture,True,False,agriculture
+grizzly,True,True,"grizzly, grizzled, grisly"
+grizzly bear,True,False,"grizzlebeard, grizzly, grizzled"
+grosbeak,True,True,"grosbeak, grouse, rosabella"
+ground hog,True,False,"ground, grounds, aground"
+ground squirrel,True,False,"squirrel, squirrels, grandsire"
+groundfish,True,False,"grounds, goldfish, rounds"
+groundhog,True,False,"ground, grounds, aground"
+grouper,True,False,"grouped, roper, group"
+grouse,True,True,"grouse, rouse, rouses"
+grub,True,True,"grub, grubs, grubb"
+grunt,True,True,"grunt, grunts, grunted"
+guan,True,False,"gun, gan, guzman"
+guanaco,True,True,"guanaco, guiana, guidance"
+gudgeon,True,False,"dudgeon, bludgeon, gulden"
+guenon,True,False,"gunn, guienne, union"
+guerrilla,True,True,"guerrilla, guerrillas, gorilla"
+guillemot,True,False,"gullet, guillotine, guilt"
+guinea fowl,True,False,"guinea, guineas"
+guinea hen,True,False,"guinea, guineas"
+guinea pig,True,False,"guinea, guineas"
+guinea worm,True,False,"guinea, guineas"
+guineafowl,True,False,"guinea, guineas"
+gull,True,True,"gull, gully, gulls"
+gumboot chiton,False,False,No close match found
+gunnel,True,False,"tunnel, gunner, funnel"
+guppy,True,False,"puppy, guy, supply"
+gurnard,True,False,"guard, gunnar, guardy"
+gypsy moth,True,False,"plymouth, gypsy"
+gyrfalcon,True,False,"falcon, falcons, falconer"
+hackney,True,True,"hackney, hackneyed, lackey"
+haddock,True,True,"haddock, paddock, hock"
+hadrosaur,True,False,"harbour, harcourt, harbours"
+hagfish,True,False,"hamish, hish, hash"
+hairless cat,True,False,"hairless, airless, harmless"
+hairstreak,True,False,"streak, streaks, streaked"
+hairstreak butterfly,False,False,No close match found
+hairy woodpecker,True,False,"woodpecker, woodpeckers"
+hake,True,False,"shake, hae, shakes"
+halcyon,True,True,"halcyon, hacon, falcon"
+halibut,True,False,"haut, halt, hurlbut"
+hammerhead,True,False,"hammered, hampered, hammer"
+hammerhead shark,True,False,hammered
+hamster,True,False,"haste, gamester, vaster"
+harambe,True,False,"ramble, harmed, arable"
+harbor porpoise,True,False,"porpoise, porpoises"
+harbor seal,True,False,"arboreal, harbors, harbours"
+hare,True,True,"hare, share, havre"
+harp seal,True,False,"arsenal, harps, hoarsely"
+harpy eagle,True,False,chargeable
+harrier,True,False,"harriet, harried, carrier"
+hart,True,True,"hart, heart, harts"
+hartebeest,True,False,"heartiest, hearest, harvest"
+hawk,True,True,"hawk, hawks, haw"
+hawk moth,True,False,haworth
+hawk owl,True,False,"howl, hawk"
+hawkmoth,True,False,"haworth, moth, mammoth"
+hawksbill,True,False,"hawks, hawksley, handbill"
+hawksbill turtle,False,False,No close match found
+heath hen,True,False,"heathen, heathens, heather"
+hedgehog,True,True,"hedgehog, hedge, hedgerow"
+heifer,True,True,"heifer, heifers, heir"
+hellbender,True,False,"hellenes, lender, helene"
+helminth,True,False,"hermit, helmet, health"
+hen,True,True,"hen, when, then"
+hen harrier,True,False,"thenardier, heartier, hearer"
+hermit,True,True,"hermit, hermits, hermit's"
+hermit crab,True,False,"hermit, hermia, hermitage"
+hermit thrush,True,False,"hermits, hermit's"
+heron,True,True,"heron, herons, hermon"
+herring,True,True,"herring, herrings, erring"
+herring gull,True,False,"herring, herrings, erring"
+hexapod,True,False,"heaped, heap, head"
+hinny,True,False,"whinny, shiny, jinny"
+hippo,True,False,"hippy, hip, tippoo"
+hippopotamus,True,True,"hippopotamus, hippolyta"
+hoary marmot,True,False,marmot
+hoatzin,True,False,"hating, theatin, ovation"
+hog,True,True,"hog, hong, hogs"
+hogfish,True,False,"hogs, hish, gish"
+hogg,True,False,"hog, hong, hogs"
+hogget,True,False,"roget, hodge, hogglestock"
+hognose snake,False,False,No close match found
+hogs,True,True,"hogs, hog's, ogs"
+holstein,True,False,"thorstein, holster, stein"
+homing pigeon,True,False,dominion
+hominid,True,False,"homicide, homicidal, mind"
+hominoid,True,False,"homicide, domino, homicidal"
+homo erectus,True,False,"homogeneous, erects"
+homo habilis,False,False,No close match found
+homo sapiens,False,False,No close match found
+honey badger,True,False,"headgear, badger"
+honey bee,True,False,"honeyed, honey, phoebe"
+honey buzzard,True,False,buzzard
+honeybee,True,False,"honeyed, honey, phoebe"
+honeycreeper,True,False,"creeper, creepers, housekeeper"
+hooded merganser,False,False,No close match found
+hoofed mammal,False,False,No close match found
+hookworm,True,False,"hooker, worm, hook"
+hoopoe,True,True,"hoopoe, hoopoes, hooper"
+hoot owl,True,False,"howl, hoot"
+hornbill,True,False,"longbill, handbill, cornhill"
+horned dinosaur,False,False,No close match found
+horned lizard,True,False,cornelia
+horned owl,True,False,"horned, hondo"
+horned toad,True,False,"horned, hornets"
+hornet,True,False,"hornets, horner, horned"
+horse,True,True,"horse, horses, horsed"
+horsefly,True,False,"hoarsely, horsell, horseflesh"
+horsehead,True,False,"hogshead, forehead, horsed"
+horseshoe crab,True,False,horseshoe
+hound,True,True,"hound, hounds, wound"
+hound dog,True,False,"hound, hondo, hounds"
+housefly,True,False,"house, usefully, hostelry"
+hoverfly,True,False,"overly, hover, hovel"
+howler monkey,False,False,No close match found
+howling monkey,True,False,howling
+human,True,True,"human, humans, humane"
+human being,True,False,"humane, unmeaning, unbending"
+hummingbird,True,False,"humming, summing, hemming"
+hummingbird moth,False,False,No close match found
+humpback whale,True,False,unimpeachable
+humuhumunukunukuapua,False,False,No close match found
+huntsman,True,True,"huntsman, huntsman's, huntsmen"
+huntsman spider,True,False,"huntsman's, huntsman, mountainside"
+huskie,True,False,"husk, hussies, huskily"
+huskies,True,False,"hussies, skies, husks"
+husky,True,True,"husky, husk, huskily"
+hydra,True,True,"hydra, hydrate, heyday"
+hyena,True,True,"hyena, hyenas, hyaena"
+hyenas,True,True,"hyenas, hyaenas, hyena"
+hyrax,True,False,"hydra, myra, lyra"
+ibex,True,True,"ibex, gibe, tribe"
+ibis,True,False,"ribs, nibs, iris"
+ichthyosaur,False,False,No close match found
+iguana,True,False,"guiana, guanaco, wigan"
+imago,True,False,"iago, magog, image"
+impala,True,False,"impaled, impalpable, paula"
+inchworm,True,False,"inform, income, anchor"
+indigo bunting,True,False,"indignation, dismounting, invigorating"
+indigo snake,True,False,"indigo, indignant"
+indri,True,False,"sindri, indra, india"
+insect,True,True,"insect, inspect, insects"
+invertebrate,True,False,"inveterate, vertebrae, inebriate"
+isopod,True,False,"stood, isoud, disposed"
+itch mite,True,False,incite
+ivory billed,False,False,No close match found
+ivory gull,True,False,ivory
+jabiru,True,False,"jar, janius, jailer"
+jack,True,True,"jack, jacky, jacks"
+jack crevalle,False,False,No close match found
+jack mackerel,True,False,mackerel
+jack rabbit,True,False,"rabbit, rabbits"
+jack russell,True,False,"russell, russell's"
+jack russell terrier,False,False,No close match found
+jackal,True,True,"jackal, jackals, jacal"
+jackalope,True,False,"jackal, jackals, jacal"
+jackass,True,True,"jackass, jackals, jacks"
+jackass penguin,False,False,No close match found
+jackdaw,True,True,"jackdaw, jackdaws, jackal"
+jackrabbit,True,False,"rabbit, rabbits, rabbit's"
+jaguar,True,True,"jaguar, january, angular"
+jaguarundi,True,False,"urundi, jaguar, aground"
+javelina,True,False,"javelin, javelins, ravelin"
+jawless fish,False,False,No close match found
+jay,True,True,"jay, ja, ay"
+jaybird,True,False,"ladybird, bird, rabid"
+jellyfish,True,True,"jellyfish, elfish, shellfish"
+jerboa,True,False,"verona, verbal, serbia"
+jewfish,True,False,"jewish, elfish, jellyfish"
+jigger,True,False,"nigger, digger, bigger"
+joey,True,False,"joy, joe, jonesy"
+junco,True,False,"juno, junction, unc"
+june beetle,True,False,"beetle, beetles"
+june bug,True,False,"jung, june"
+jungle fowl,True,False,"jungle, jungles"
+kangaroo,True,True,"kangaroo, kangaroos, kangaroo's"
+kangaroo rat,True,False,"kangaroo, kangaroos, kangaroo's"
+karakul,True,False,"karl, kara, raoul"
+katydid,True,False,"katy, katya, katie"
+kea,True,False,"kreta, knead, kieva"
+keeshond,True,False,"esmond, deerhound, telephoned"
+kelp greenling,True,False,"reeling, preventing, pretending"
+kelpie,True,True,"kelpie, kelp, epine"
+kestrel,True,False,"kernel, keel, vesture"
+keyhole limpet,True,False,keyhole
+kid,True,True,"kid, skid, kind"
+killdeer,True,False,"killer, killers, wilder"
+killer bee,True,False,"killer, killers"
+killer whale,True,False,"killer, illiberal"
+killifish,True,False,"kills, illinois, willis"
+king cobra,True,False,cobra
+king crab,True,False,"ingram, incurable"
+king mackerel,True,False,"kingmaker, mackerel"
+king salmon,True,False,"kingston, salmon, salmons"
+kingbird,True,False,"inbred, lingard, kinraid"
+kingfish,True,False,"kingfisher, kings, kingship"
+kingfisher,True,True,"kingfisher, fisher, fishery"
+kingsnake,True,False,"kingmaker, snake, kings"
+kinkajou,True,False,kink
+kite,True,True,"kite, kites, kit"
+kitfox,True,False,"kit, fox"
+kitten,True,True,"kitten, kittens, kitten's"
+kittiwake,True,False,"whittaker, kitten"
+kitty,True,True,"kitty, kitty's, witty"
+kitty cat,True,False,kitty
+kiwi,True,False,"kwai, wi, ki"
+koala,True,False,"kojata, kailas, sola"
+koala bear,True,False,malabar
+kodiak,True,False,"kodak, klondike, zodiac"
+kodiak bear,True,False,klondiker
+koi,True,False,"oi, ko, ki"
+koi fish,True,False,"wolfish, kingfisher, fish"
+komodo dragon,False,False,No close match found
+kongoni,True,False,"kong, montoni, mongolia"
+kookaburra,False,False,No close match found
+krait,True,False,"trait, kraft, rat"
+krill,True,False,"kill, trill, skill"
+kuala,True,False,"kullak, kublai, kailas"
+kudu,True,False,"undue, ud, ku"
+lab,True,True,"lab, slab, lamb"
+labrador,True,True,"labrador, labor, ardor"
+labrador retriever,False,False,No close match found
+lacewing,True,False,"lacing, placing, lacking"
+lady bug,True,False,"ladybug, lady"
+ladybird,True,True,"ladybird, laird, blackbird"
+ladybird beetle,True,False,ladybird
+ladybug,True,True,"ladybug, lady, laugh"
+ladyfish,True,False,"ladyship, goldfish, crayfish"
+lake trout,True,False,"trout, blackett, aeronaut"
+lake whitefish,True,False,"whitefish, whitish"
+lamb,True,True,"lamb, lambs, lab"
+lamprey,True,False,"lampreys, lamely, prey"
+lamprey eel,True,False,lampreys
+landlocked salmon,True,False,lacedaemon
+langur,True,False,"languor, lang, languid"
+lanternfish,True,False,"lanterns, lantern, planters"
+lapdog,True,False,"log, leaped, lapsed"
+lapin,True,False,"lain, leaping, lapsing"
+lapwing,True,False,"leaping, lapsing, lapping"
+largemouth bass,False,False,No close match found
+lark,True,True,"lark, larks, clark"
+larva,True,True,"larva, larvae, lava"
+larvae,True,True,"larvae, larva, lave"
+laughing gull,True,False,"laughingly, laughing"
+leach,True,False,"each, teach, reach"
+leaf beetle,True,False,"leetle, beetle, labeled"
+leaf insect,True,False,"insect, inspect, insects"
+leafhopper,True,False,"hopper, leather, clapper"
+leatherback,True,False,"leather, leathery, leathers"
+leatherback turtle,False,False,No close match found
+leatherjacket,True,False,"leather, weathercock, leathery"
+lechwe,True,False,"leeches, leech, beche"
+leech,True,True,"leech, leeches, beech"
+legless lizard,False,False,No close match found
+lemming,True,True,"lemming, lemmings, clemming"
+lemur,True,False,"demur, fleury, demure"
+leopard,True,True,"leopard, leopards, leonard"
+leopard frog,True,False,"leopard, leopards, leonardo"
+leopard seal,True,False,"leopards, leopard, leonards"
+leopard shark,True,False,"leopards, leopard, leonards"
+leopardess,True,False,"leopards, leopard, leonards"
+lepidopteran,True,False,"lepidoptera, cleopatra"
+lesser scaup,True,False,lesser
+lesser yellowlegs,True,False,yellowlegs
+lhasa apso,True,False,lasso
+liger,True,False,"linger, lige, lingers"
+limpet,True,False,"limped, limp, lime"
+lingcod,True,False,"lingo, ling, lingard"
+linnet,True,True,"linnet, linnets, lint"
+lion,True,True,"lion, lions, lin"
+lion cub,True,False,lion
+lioness,True,True,"lioness, lionesse, liones"
+lionfish,True,False,"lions, liones, lion's"
+lions,True,True,"lions, liones, lion's"
+little brown myotis,False,False,No close match found
+lizard,True,True,"lizard, lizards, lizard's"
+llama,True,True,"llama, lama, lamar"
+loach,True,True,"loach, loch, roach"
+lobster,True,True,"lobster, lobsters, loser"
+locust,True,True,"locust, locusts, lust"
+loggerhead,True,False,"overhead, logged, overheard"
+loggerhead shrike,False,False,No close match found
+loggerhead turtle,False,False,No close match found
+longhorn,True,False,"longbourn, longshoreman, leghorn"
+longneck,True,False,"lounge, longue, longer"
+loon,True,True,"loon, kloon, loo"
+lorikeet,True,False,"loike, orient, loreen"
+loris,True,False,"locris, lois, glories"
+louse,True,True,"louse, louise, blouse"
+lovebird,True,False,"lover, loved, lovelier"
+lugworm,True,False,"worm, worms, silkworm"
+lumpfish,True,False,"lumps, uppish, impish"
+luna moth,False,False,No close match found
+lungfish,True,False,"sunfish, lungs, youngish"
+lungless salamander,True,False,salamander
+lynx,True,True,"lynx, lyn, lyon"
+lyrebird,True,False,"redbird, ladybird, bluebird"
+macaque,True,False,"masque, mace, marquee"
+macaque monkey,False,False,No close match found
+macaw,True,False,"maw, mac, marcia"
+mackerel,True,True,"mackerel, maker, merely"
+mackerel tuna,True,False,mackerel
+madagascar hissing cockroach,False,False,No close match found
+maggot,True,True,"maggot, margot, faggot"
+magpie,True,True,"magpie, magpies, margie"
+mahi,True,False,"mai, mah, mahina"
+mahimahi,True,False,"mahina, ahimsa, mimi"
+mako shark,True,False,shark
+malamute,True,False,"amalgamated, salute, palate"
+malarial mosquito,False,False,No close match found
+maleo,True,False,"malo, male, maule"
+malinois,True,False,"malins, minos, mains"
+mallard,True,False,"millard, ballard, millward"
+mallee fowl,True,False,mallow
+maltese,True,True,"maltese, mates, males"
+maltese terrier,False,False,No close match found
+mamba,True,False,"mama, mamma, maman"
+mammal,True,False,"mammals, mamma, mammae"
+mammoth,True,True,"mammoth, marmot, mammon"
+man,True,True,"man, oman, moan"
+manakin,True,False,"mankind, makin, mannikin"
+manatee,True,False,"mandate, magnate, emanate"
+mandrill,True,False,"marilla, drill, mantilla"
+maned wolf,True,False,adolf
+mangabey,True,False,"mangy, mange, manley"
+mangrove snapper,False,False,No close match found
+manowar,True,False,"manor, mana, maynard"
+manta,True,False,"mantua, mana, santa"
+manta ray,True,False,"sanitary, monetary, sanctuary"
+mantis,True,False,"antics, mats, mantelish"
+mantis shrimp,False,False,No close match found
+marabou,True,False,"arbour, maracaybo, mara"
+marabou stork,False,False,No close match found
+mare,True,True,"mare, marne, marie"
+markhor,True,False,"marker, mark, markham"
+marlin,True,False,"marline, merlin, marvin"
+marmoset,True,False,"marmot, arose, morose"
+marmot,True,True,"marmot, margot, mart"
+marsh harrier,False,False,No close match found
+marsh wren,True,False,"marshes, marsden, marsh"
+marsupial,True,False,"martial, marshal, maria"
+marten,True,True,"marten, martin, marken"
+mason bee,True,False,"mason, mawson, maston"
+massasauga,True,False,"massa, manassas"
+mastiff,True,True,"mastiff, stiff, tiff"
+mastodon,True,True,"mastodon, maston, marston"
+maverick,True,False,"meyrick, merrick, mavriky"
+mayfly,True,False,"mealy, manly, malay"
+meadow pipit,True,False,meadow
+meadow vole,True,False,"meadow, meadows"
+meadowlark,True,False,"meadow, meadows"
+mealworm,True,False,"mellor, melodrama, worm"
+mealy bug,True,False,"mealyus, mealy, meanly"
+mealybug,True,False,"mealyus, mealy, meanly"
+medfly,True,False,"medley, redly, medal"
+medicinal leech,True,False,"medicinal, medicine, medicines"
+medusa,True,True,"medusa, musa, mesa"
+meerkat,True,False,"meet, meek, meat"
+megalodon,True,False,"maldon, melon, mastodon"
+menhaden,True,False,"mender, mended, menace"
+merganser,True,False,"meaner, eraser, organiser"
+merino sheep,True,False,merino
+merlin,True,True,"merlin, merwin, merino"
+metazoan,True,False,"tarzan, merton, amazon"
+mice,True,True,"mice, mince, ice"
+microbe,True,True,"microbe, robe, mire"
+midge,True,True,"midge, midget, ridge"
+milch cow,True,False,milch
+milkfish,True,False,"elfish, wolfish, wilkins"
+milking shorthorn,False,False,No close match found
+millipede,True,False,"milled, milliner, hillside"
+miniature pinscher,True,False,"miniatures, miniature"
+miniature pony,True,False,"miniature, miniatures"
+miniature poodle,True,False,"miniature, miniatures"
+miniature schnauzer,True,False,miniatures
+mink,True,True,"mink, minks, min"
+minke whale,True,False,"inhale, mineral, inhaled"
+minnow,True,True,"minnow, minnows, minos"
+minnow fish,True,False,"minnows, minnow"
+minx,True,True,"minx, mix, min"
+mirid bug,False,False,No close match found
+mistle thrush,True,False,mistrust
+mite,True,True,"mite, smite, mitre"
+moccasin,True,True,"moccasin, moccasins, moccasined"
+mockingbird,True,False,"mocking, mockingly, smoking"
+mojarra,True,False,"mara, morlvera, moray"
+mola,True,False,"molas, imola, moa"
+mole,True,True,"mole, moles, ole"
+mole rat,True,False,"tolerate, tolerant, morlvera"
+mollusk,True,True,"mollusk, mollusks, mollusca"
+monarch butterfly,True,False,butterfly
+mongoose,True,True,"mongoose, noose, moose"
+monitor,True,True,"monitor, motor, montfort"
+monitor lizard,True,False,monitor
+monkey,True,True,"monkey, monkeys, money"
+monkeys,True,True,"monkeys, monkey's, monkey"
+monkfish,True,False,"monkish, monks, admonish"
+monotreme,True,False,"moore, monte, norsemen"
+monster,True,True,"monster, monsters, monster's"
+moonfish,True,False,"moorish, monkish, moons"
+moorhen,True,False,"moore, morven, more'n"
+moose,True,True,"moose, morose, noose"
+moray,True,True,"moray, mowbray, morally"
+moray eel,True,False,"moray, moral, mortal"
+mosquito,True,True,"mosquito, mosquitos, mosquitoes"
+mosquitofish,True,False,"mosquitos, mosquitoes, mosquito"
+moth,True,True,"moth, mouth, moths"
+moths,True,True,"moths, mouths, months"
+mouflon,True,False,"toulon, foulon, moon"
+mountain cat,True,False,"mountain, mountains, montana"
+mountain goat,True,False,"mounting, mountain, mountainous"
+mountain gorilla,True,False,"mounting, mountainous, mountaineer"
+mountain lion,True,False,"mountain, mountainous, mountains"
+mourning dove,True,False,"ringdove, mourning, morning"
+mouse,True,True,"mouse, smouse, mouser"
+mud dauber,False,False,No close match found
+mudskipper,True,False,"skipper, kipper, dipper"
+mule,True,True,"mule, mules, maule"
+mule deer,True,False,"moulder, murderer, smoulders"
+mules,True,True,"mules, mule, muzzles"
+mullet,True,True,"mullet, pullet, mulled"
+mulloway,True,False,"mulla, holloway, galloway"
+muntjac,True,False,"munt, mustache, mountjoy"
+murre,True,False,"murmured, murderer, murdered"
+muscovy duck,False,False,No close match found
+musk deer,True,False,"musketeer, musketeers, musketry"
+musk ox,True,False,"muso, musk, musky"
+musk turtle,True,False,"turtle, turtles, startle"
+muskellunge,True,False,"selling, mueller"
+muskox,True,False,"muso, musk, musky"
+muskrat,True,True,"muskrat, muskrats, murat"
+mussel,True,True,"mussel, mussels, muse"
+mustang,True,True,"mustang, mustanger, usanga"
+mute swan,True,False,mutes
+mutton snapper,True,False,snapper
+myna,True,False,"smyrna, ynar, mysa"
+myna bird,True,False,maynard
+mynah,True,False,"yah, mah, smyrna"
+mynah bird,True,False,maynard
+naked mole rat,False,False,No close match found
+narwhal,True,False,"narwhale, norhala, natural"
+nautilus,True,True,"nautilus, nautilus's, incautious"
+neanderthal,True,False,"unearthly, sendeth, needeth"
+needlefish,True,False,"needles, needless, needle"
+nematode,True,False,"inmate, tode, newgate"
+nematode worm,False,False,No close match found
+newt,True,True,"newt, new, net"
+nightcrawler,True,False,"nightcap, nightingale, nightmare"
+nightingale,True,True,"nightingale, nightingales, nightingale's"
+nightjar,True,False,"nightmare, nightmares, night"
+nilgai,True,False,"nilghai, nil, miladi"
+northern bobwhite,True,False,northernmost
+northern harrier,True,False,"thenardier, northern"
+northern parula,True,False,"northern, northerly"
+northern pike,True,False,"northern, norther, turnpike"
+northern pocket gopher,False,False,No close match found
+northern shrike,True,False,"northern, northernmost"
+northern snakehead,False,False,No close match found
+nudibranch,True,False,"branch, ranch, nuisance"
+nurse shark,True,False,"nurses, nursery, nurse's"
+nuthatch,True,True,"nuthatch, thatch, hatch"
+nutria,True,False,"nuptial, neutral, austria"
+nyala,True,False,"yale, yaga, sala"
+oarfish,True,False,"starfish, dwarfish, parish"
+ocean pout,True,False,"ocean, cocoanut"
+ocean sunfish,True,False,sunfish
+oceanic whitetip shark,False,False,No close match found
+ocelot,True,False,"celt, camelot, eliot"
+octopus,True,False,"corpus, tops, opus"
+okapi,True,False,"oki, kai, soap"
+olive ridley,True,False,"override, liveries, liveried"
+omnivore,True,False,"honore, omnipotent, more"
+onion thrips,True,False,onions
+opah,True,False,"pah, path, ovah"
+opossum,True,False,"possum, potassium, colosseum"
+opossum shrimp,False,False,No close match found
+orang,True,True,"orang, orange, rang"
+orange roughie,True,False,rangership
+orangutan,True,False,"orang, rangon, ragout"
+orangutang,True,False,"ranging, overhanging, orang"
+orca,True,False,"dorcas, nora, lora"
+orca whale,True,False,"whale, rawle, narwhale"
+orchard oriole,True,False,orchard
+oriole,True,True,"oriole, orioles, role"
+ormer,True,False,"former, dormer, omer"
+ornithopod,True,False,"ornithology, priesthood, knighthood"
+ortolan,True,False,"portland, roland, norton"
+oryx,True,False,"tory, orgy, onyx"
+osprey,True,False,"spry, prey, spree"
+ostrich,True,True,"ostrich, ostriches, strict"
+ostriches,True,True,"ostriches, ostrich, stitches"
+otter,True,True,"otter, totter, potter"
+ovenbird,True,False,"souvenir, souvenirs, overboard"
+owl,True,True,"owl, owls, jowl"
+owlet,True,False,"lowliest, wet, owl"
+ox,True,True,"ox, pox, fox"
+oxen,True,True,"oxen, oxygen, owen"
+oyster,True,True,"oyster, oysters, oyster's"
+oystercatcher,True,False,"stretcher, teacher, catcher"
+oysters,True,True,"oysters, oyster's, oyster"
+pachyderm,True,False,"poacher, preacher, poachers"
+packhorse,True,False,"anchors, packs, horse"
+packrat,True,False,"packet, part, para"
+paddlefish,True,False,"paddles, paddlers, paddle"
+pajero,True,False,"palermo, piero, pedro"
+palm civet,True,False,"palmetto, alive"
+palo verde borer,False,False,No close match found
+palomino,True,False,"paling, domino, palomides"
+panda,True,False,"panada, pandora, panza"
+panda bear,True,False,"panacea, anear"
+pangolin,True,False,"angling, jangling, dangling"
+panther,True,True,"panther, panthers, planter"
+papillon,True,True,"papillon, pillion, pavilion"
+parakeet,True,True,"parakeet, partake, parapet"
+parasitic worm,True,False,parasitic
+parrot,True,True,"parrot, parrots, carrot"
+parrotfish,True,False,"parrots, parrish, parrot"
+partridge,True,True,"partridge, partridges, cartridge"
+passerine,True,False,"passer, passenger, assertive"
+peacock,True,True,"peacock, peacocks, peacock's"
+peafowl,True,False,"peal, fowl, prowl"
+peahen,True,False,"peachey, peaches, heathen"
+pearl oyster,True,False,"poyser, poster, pester"
+peccary,True,False,"pearly, pecuniary, pear"
+peckerwood,True,False,"pecked, cowperwood, speckled"
+pectoral sandpiper,False,False,No close match found
+pelican,True,True,"pelican, publican, pemmican"
+pembroke welsh corgi,False,False,No close match found
+penguin,True,True,"penguin, penguins, engine"
+perch,True,True,"perch, perches, perched"
+peregrine,True,True,"peregrine, peering, perverting"
+peregrine falcon,True,False,"peregrinations, peregrine"
+periodical cicada,True,False,"periodical, periodicals, periodically"
+perro,True,False,"pierrot, piero, perry"
+persian cat,True,False,"persian, persians, persia"
+person,True,True,"person, pierson, pherson"
+pescador,True,False,"escort, candor, spectator"
+petrel,True,False,"petre, petrol, petrie"
+pewee,True,True,"pewee, pelee, wee"
+phalarope,True,False,"proper, philanthropy, parole"
+pheasant,True,True,"pheasant, pheasants, peasant"
+phoenix,True,True,"phoenix, phoenix's, phoenicia"
+pickerel,True,False,"puckered, picketed, mackerel"
+piffle,True,False,"pile, sniffle, rifle"
+pig,True,True,"pig, prig, pigs"
+pigeon,True,True,"pigeon, pigeons, pierson"
+pigfish,True,False,"pigs, gish, fish"
+piggy,True,True,"piggy, pigmy, peggy"
+piglet,True,False,"pile, spilett, picolet"
+pika,True,False,"pisa, pink, pike"
+pike,True,True,"pike, spike, pikes"
+pike perch,True,False,"piper, perch"
+pilchard,True,False,"picard, richard, placard"
+pileated woodpecker,True,False,"woodpecker, woodpeckers"
+pill bug,True,False,"plug, pillage, pill"
+pilot whale,True,False,piloted
+pincher,True,False,"pitcher, pinches, pinched"
+pine grosbeak,True,False,grosbeak
+pine marten,True,False,"marten, inmate, primate"
+pine siskin,True,False,"insisting, pizness, persisting"
+pinfish,True,False,"pinkish, punish, phinis"
+pink bollworm,False,False,No close match found
+pink salmon,True,False,"salmon, salmons, instalment"
+pinniped,True,False,"pinned, piped, pined"
+pinscher,True,False,"pitcher, pinches, pinched"
+pintail,True,False,"spinal, entail, tail"
+pinto horse,True,False,"pitchforks, pianoforte, indoors"
+pinworm,True,False,"inform, blindworm, worm"
+pipefish,True,False,"pipes, uppish, popish"
+piping plover,False,False,No close match found
+pipistrelle,True,False,"epistle, apparelled"
+pipit,True,False,"pit, pip, spirit"
+piranha,True,False,"nirvana, miranda, speranza"
+pistol shrimp,True,False,"pistols, pistoles"
+pit bull,True,False,"pitifully, spitefully, pull"
+pit bull terrier,False,False,No close match found
+pit viper,True,False,"viper, piper, poitiers"
+pitbull,True,False,"pitifully, pull, pill"
+placental mammal,False,False,No close match found
+placoderm,True,False,"pleader, place, loder"
+plaice,True,False,"place, police, places"
+planaria,True,False,"planetara, lunarian, parian"
+plankton,True,False,"platoon, flanton, plantation"
+platypus,True,False,"plays, typhus, polyps"
+plesiosaur,True,False,"leisure, pensionary, pressure"
+plover,True,True,"plover, plovers, lover"
+pochard,True,False,"orchard, postcard, orchards"
+pocket gopher,True,False,pocketed
+poison dart frog,False,False,No close match found
+polar,True,True,"polar, poplar, popular"
+polar bear,True,False,"forbear, polar, larboard"
+polecat,True,False,"pole, poet, plea"
+pollack,True,False,"pollock, poll, polk"
+pollock,True,True,"pollock, pocock, apollo"
+pollywog,True,False,"polly, apollo, prolong"
+polo pony,True,False,"polton, colony"
+polychaeta,True,False,"polychrome, plata, planchet"
+pomeranian,True,False,"pomegranate, pomegranates, persian"
+pompano,True,False,"pompadour, companion, pomp"
+pony,True,True,"pony, peony, pon"
+pooch,True,False,"pooh, pouch, porch"
+poodle,True,True,"poodle, noodle, doodle"
+popinjay,True,False,"popenjoy, poplin, polina"
+porbeagle,True,False,"beagle, presage, portage"
+porcupine,True,True,"porcupine, porcupines, prune"
+porgy,True,False,"orgy, porky, pry"
+pork,True,True,"pork, porky, york"
+porpoise,True,True,"porpoise, porpoises, purpose"
+portuguese water dog,True,False,portuguese
+possum,True,True,"possum, potassium, pross"
+potato beetle,True,False,"potatoes, portable"
+potbellied pig,True,False,"pontellier, bellied"
+potoroo,True,False,"octoroon, poor, toronto"
+poultry,True,True,"poultry, sultry, prouty"
+pouter,True,False,"outer, pouted, potter"
+prairie cat,True,False,"prairie, prairies"
+prairie chicken,False,False,No close match found
+prairie dog,True,False,"prairie, prairies, paired"
+prairie grouse,True,False,"prairies, uproarious, precarious"
+prairie rattlesnake,True,False,rattlesnake
+prairie vole,True,False,"prairie, prairies, parole"
+prawn,True,False,"prawns, pawn, spawn"
+praying mantis,True,False,praying
+primate,True,True,"primate, proximate, private"
+proboscis monkey,True,False,proboscis
+pronghorn,True,False,"pronoun, rondon, rangon"
+pronghorn antelope,False,False,No close match found
+protists,True,False,"protests, protest, profits"
+psyllid,True,False,"pallid, slid, sullied"
+ptarmigan,True,True,"ptarmigan, parian, parkman"
+pterodactyl,True,False,"periodicity, product, periodical"
+pterosaur,True,False,"petersburg, petersburgh, uproar"
+pubic louse,True,False,"blouse, inclose, dubious"
+puff adder,True,False,"paddlers, adder"
+puffer,True,False,"suffer, puffed, duffer"
+puffer fish,True,False,"perish, suffers, sufferings"
+pufferfish,True,False,"perish, suffers, buffers"
+puffin,True,True,"puffin, puffing, puffin's"
+pug,True,True,"pug, plug, purge"
+puggle,True,False,"smuggle, ruggles, plugged"
+pullet,True,True,"pullet, pulley, pulled"
+puma,True,True,"puma, puna, pump"
+pumpkinseed,True,False,"pumpkins, pumpkinhead, pumpkin"
+pup,True,True,"pup, pups, pump"
+pupa,True,False,"pup, pups, puna"
+puppy,True,True,"puppy, poppy, pup"
+purple finch,True,False,"purplish, purple"
+purple gallinule,False,False,No close match found
+purple marten,False,False,No close match found
+puss,True,True,"puss, pussy, pus"
+pussycat,True,False,"pussy, puissant, pussy's"
+pygmy chimpanzee,False,False,No close match found
+pygmy elephant,True,False,"elephant, elephants, elephant's"
+pygmy goat,False,False,No close match found
+pygmy marmoset,False,False,No close match found
+pygmy sperm whale,False,False,No close match found
+python,True,False,"peyton, upton, thorn"
+quagga,True,False,"quigg, usanga, quadra"
+quahog,True,False,"squash, quo, quarto"
+quail,True,True,"quail, quailed, quilt"
+queen bee,True,False,"queen, queens, quebec"
+queenfish,True,False,"queens, sunfish, queen's"
+quetzal,True,False,"squeal, squeals, quietly"
+rabbit,True,True,"rabbit, rabbits, rabbi"
+raccoon,True,False,"accordion, roon, coon"
+raccoon fox,False,False,No close match found
+racehorse,True,False,"remorse, anchors, races"
+racoon,True,False,"roon, coon, rangoon"
+ragdoll cat,False,False,No close match found
+rainbow lorikeet,False,False,No close match found
+rainbow smelt,True,False,"rainbows, rainbow's, rainbow"
+rainbow trout,True,False,"rainbow, rainbows"
+rainbowfish,True,False,"rainbows, rainbow's, rainbow"
+ram,True,True,"ram, tram, roam"
+raptor,True,False,"orator, captor, rapt"
+rat,True,True,"rat, rats, rate"
+rat snake,True,False,"rattlesnake, snake, snakes"
+rat terrier,True,False,"terrier, terriers, chatterer"
+ratite,True,False,"rattle, rite, rate"
+raton,True,False,"ration, rations, ralston"
+rattler,True,True,"rattler, rattle, rattles"
+rattlesnake,True,True,"rattlesnake, rattles, rattle"
+raven,True,True,"raven, ravens, graven"
+ray,True,True,"ray, tray, rays"
+razor clam,True,False,"razor, proclaim"
+razorback,True,False,"razor, aback, drawback"
+razorbill,True,False,"razor, razors, proverbially"
+red admiral butterfly,False,False,No close match found
+red bellied woodpecker,False,False,No close match found
+red drum,True,False,"redder, redruth, drum"
+red fox,True,False,credo
+red kangaroo,True,False,"kangaroo, kangaroos, kangaroo's"
+red panda,True,False,"reprimand, repaid, redundant"
+red robin,True,False,"redoubling, robin, reprobation"
+red shouldered hawk,True,False,shouldered
+red snapper,True,False,"snapper, reappear, reaper"
+red squirrel,True,False,"squirrel, squirrels, require"
+red tailed hawk,True,False,retailed
+red winged blackbird,False,False,No close match found
+redbird,True,True,"redbird, reid, bird"
+redbone,True,False,"rebounded, rene, rede"
+redbreast,True,True,"redbreast, rosebreast, breast"
+redbug,True,False,"reducing, rebuking, rug"
+redear,True,False,"render, redder, reader"
+redfish,True,False,"reddish, relish, elfish"
+redheaded woodpecker,True,False,woodpecker
+redhorse,True,False,"remorse, horse, rehearse"
+redhorse sucker,False,False,No close match found
+redpoll,True,False,"roll, poll, doll"
+redshank,True,False,"shank, freshman, shrank"
+redstart,True,False,"restaurant, start, restrict"
+redtail,True,True,"redtail, retail, retailed"
+redtail hawk,True,False,"redtail, retail"
+redwing,True,False,"rending, reading, brewing"
+reed bunting,True,False,"resenting, repenting, relenting"
+reef shark,True,False,"shark, reefs"
+reindeer,True,True,"reindeer, reminder, render"
+remora,True,False,"tremor, tremors, removal"
+reptile,True,True,"reptile, reptiles, reticule"
+reticulated python,True,False,"articulated, gesticulated, articulation"
+retriever,True,False,"retrieve, reprieve, restive"
+rhea,True,False,"thea, rhes, rear"
+rhesus macaque,False,False,No close match found
+rhesus monkey,False,False,No close match found
+rhino,True,False,"rhine, rhiannon, rio"
+rhinoceros,True,True,"rhinoceros, princes, pincers"
+rhinoceros beetle,True,False,rhinoceros
+ribbonfish,True,False,"ribbons, ribbon, rubbish"
+right whale,True,False,"rightly, righted"
+ring-tailed lemur,True,False,ringleader
+ringtail,True,False,"oriental, ritual, retail"
+ringtail cat,True,False,"intricate, intact"
+river otter,True,False,"riverboro, trotter, riviere"
+river rat,True,False,"river, tierra, sierra"
+roach,True,True,"roach, broach, reach"
+roadrunner,True,False,"runner, runners, rounder"
+robin,True,True,"robin, robins, robin's"
+robin redbreast,True,False,"redbreast, rosebreast"
+rock hyrax,True,False,rocky
+rockfish,True,False,"rockies, rocks, brackish"
+rockhead,True,False,"rocked, blockhead, rockland"
+rodent,True,False,"rodents, ardent, rode"
+roe,True,True,"roe, rove, rote"
+roe deer,True,False,"reindeer, redeemer, render"
+roly-poly,False,False,No close match found
+rook,True,True,"rook, rooks, krook"
+rooster,True,True,"rooster, roosters, roost"
+roseate spoonbill,False,False,No close match found
+roseate tern,True,False,"roseate, setter"
+rotifer,True,False,"frontier, rosier, rogier"
+rottweiler,True,False,"trotter, rattler, prowler"
+roundworm,True,False,"groundwork, rounder, round"
+rudd,True,False,"ruddy, rudder, rude"
+ruddy duck,True,False,ruddy
+ruddy turnstone,False,False,No close match found
+ruffed grouse,False,False,No close match found
+ruminant,True,False,"ruminate, ruminated, remnant"
+russian blue,True,False,"russian, russians, prussian"
+rusty blackbird,True,False,"blackbird, blackbirds"
+saber tooth,False,False,No close match found
+sabertoothed cat,False,False,No close match found
+sabertoothed tiger,False,False,No close match found
+sable,True,True,"sable, stable, sale"
+sable antelope,True,False,"antelope, antelopes"
+sacred ibis,True,False,"sacred, scribes, sacrifices"
+sage grouse,True,False,"grouse, arouse, dangerous"
+saiga,True,False,"singa, sigma, sag"
+sailfish,True,False,"selfish, salih, sails"
+saint bernard,True,False,"sainted, bernard, interred"
+saki monkey,True,False,"monkey, stationery, monkeys"
+salamander,True,True,"salamander, slander, islander"
+salmon,True,True,"salmon, salmons, salon"
+salmonid,True,False,"salmon, almond, salmons"
+saltwater crocodile,False,False,No close match found
+saltwater fish,True,False,starfish
+saluki,True,False,"saki, stalk, slunk"
+sand cat,True,False,"sandal, syndicate, scandal"
+sand crab,True,False,"sandal, cassandra, andrea"
+sand dab,True,False,"sanded, sandal, scandal"
+sand dollar,True,False,"dollar, saddler, dollars"
+sand lance,True,False,"abundance, balance, andante"
+sand shark,True,False,"handshake, standish, standard"
+sandbar shark,False,False,No close match found
+sandfish,True,False,"standish, sunfish, spanish"
+sandfly,True,False,"sandy, sadly, shandy"
+sandhill crane,False,False,No close match found
+sandpiper,True,False,"stander, snapper, slander"
+sapsucker,True,False,"sucker, saucer, pucker"
+sardine,True,True,"sardine, sardines, sadie"
+sauropod,True,False,"usurped, rood, arnwood"
+sauropod dinosaur,False,False,No close match found
+saury,True,False,"savoury, usury, surly"
+sawfish,True,False,"swish, starfish, crawfish"
+sawfly,True,False,"safely, swiftly, awfully"
+scallop,True,False,"scalloped, scalp, scollops"
+scaly anteater,True,False,"slatter, scatter, clatter"
+scarab,True,False,"scar, sara, crab"
+scarlet macaw,True,False,scarlet
+scarlet tanager,True,False,caretaker
+scaup,True,False,"scrap, scarp, scape"
+schipperke,True,False,"slipper, skipper, shirked"
+schistosome,True,False,"schists, schist, schism"
+schnauzer,True,False,"schopenhauer, chaucer, schubert"
+scorpion,True,True,"scorpion, scorpions, scoring"
+scorpionfish,True,False,"scorpions, scorpion, cornish"
+scoter,True,False,"softer, scot, cote"
+scottish fold,True,False,scottish
+scottish shetland,False,False,No close match found
+screech owl,True,False,"screech, screecher, screeched"
+scrod,True,False,"scold, crowd, sod"
+scrub jay,True,False,"scrubby, scrub, subway"
+sculpin,True,False,"scullion, scalping, supine"
+scup,True,False,"sup, cup, soup"
+sea anemone,True,False,anemone
+sea bass,True,False,"steamboats, seasons, seas"
+sea bear,True,False,"saber, seaboard, sabers"
+sea bream,True,False,"sabre, abeam, stream"
+sea cow,True,False,scowl
+sea cucumber,True,False,"cucumber, cucumbers, encumber"
+sea lamprey,True,False,"lampreys, salary"
+sea lion,True,False,"sealing, salon, stealing"
+sea lions,True,False,"salons, stallions, seasons"
+sea monkey,True,False,"monkey, monkeys, smoky"
+sea otter,True,False,"setter, slatter, shatter"
+sea otters,True,False,"setters, settlers, scatters"
+sea ray,True,False,"sleary, sear, sara"
+sea scorpion,True,False,"scorpion, scorpions, segastrion"
+sea slug,True,False,"slug, seas, sealing"
+sea slug aplysia,False,False,No close match found
+sea snake,True,False,"seasonable, snake, seasoned"
+sea sponge,True,False,"seasoned, sponge, season"
+sea squirt,True,False,"esquire, quirt, mesquite"
+sea star,True,False,"eastward, siesta, shasta"
+sea turtle,True,False,"seattle, saturate, turtle"
+sea urchin,True,False,"searching, searchingly, urchin"
+seabird,True,False,"seaboard, seward, seared"
+seagull,True,False,"sell, seal, saul"
+seahawk,True,False,"shaw, hawk, tomahawk"
+seahorse,True,False,"seashore, semaphore, shore"
+seal,True,True,"seal, steal, seals"
+sealion,True,False,"sealing, salon, stealing"
+sedge wren,True,False,sedge
+sei whale,True,False,"whale, swale, shale"
+serow,True,False,"sow, sew, row"
+serpent,True,True,"serpent, serpents, serpent's"
+serval,True,False,"serial, seal, several"
+shad,True,True,"shad, shand, shady"
+shar pei,True,False,"sharper, sharpen, sharpening"
+shark,True,True,"shark, sharks, shar"
+shearwater,True,False,"shearer, headwaters, shearers"
+sheep,True,True,"sheep, shee, seep"
+sheepdog,True,False,"sheep, shewed, ushered"
+sheepshead,True,False,"shepherd, sheepish, shepherds"
+shelduck,True,False,"sherlock, shucks, shield"
+shellfish,True,True,"shellfish, selfish, hellish"
+shepherd,True,True,"shepherd, shepherds, shepherd's"
+shetland pony,True,False,"shetlands, standpoint"
+shetland sheepdog,True,False,shetlands
+shih tzu,False,False,No close match found
+shipworm,True,False,"silkworm, silkworms, shopwoman"
+shorebird,True,False,"shoreward, shorter, redbird"
+shortfin mako,False,False,No close match found
+shorthorn,True,False,"horton, shorthand, shorter"
+shoveler,True,False,"shovel, shovels, shelter"
+shrew,True,True,"shrew, shrewd, shew"
+shrike,True,False,"shrieked, strike, shrink"
+shrimp,True,True,"shrimp, shrimps, ship"
+siamang,True,False,"simian, seaman, sampan"
+siamese cat,True,False,siamese
+siberian blue robin,False,False,No close match found
+siberian husky,True,False,"siberian, iberians, siberia"
+siberian tiger,True,False,"siberian, siberia, liberating"
+sidewinder,True,False,"swindler, sidewise, winder"
+sika,True,False,"siva, sita, sink"
+silkworm,True,True,"silkworm, silkworms, sailor"
+silkworm moth,True,False,"silkworm, silkworms, dilworth"
+silky terrier,True,False,"terrier, terriers"
+silverback,True,False,"silver, silverfax, silvery"
+silverback gorilla,False,False,No close match found
+silverfish,True,False,"silver's, silver, silverfax"
+silvertip,True,False,"silver, silvery, silvered"
+siphonophore,True,False,"sophomore, hoopoe, honore"
+siskin,True,False,"miskin, skin, sinking"
+skate,True,True,"skate, skates, sate"
+skink,True,False,"skin, sink, kink"
+skipjack,True,False,"skip, sick, sack"
+skipjack tuna,False,False,No close match found
+skua,True,False,"ziska, usual, sutra"
+skunk,True,True,"skunk, skunks, sunk"
+skylark,True,True,"skylark, skylarks, lark"
+sled dog,True,False,"sledge, sledges, sled"
+slender loris,True,False,"splendors, slender, lenders"
+slime eels,True,False,"slime, nimbleheels, limes"
+sloth,True,True,"sloth, loth, south"
+sloth bear,True,False,"smother, southern, southard"
+slow loris,True,False,"lowliest, lolonois"
+slug,True,True,"slug, slung, slugs"
+smallmouth,True,False,"mammoth, yarmouth, south"
+smallmouth bass,False,False,No close match found
+smalltooth sawfish,False,False,No close match found
+smelt,True,True,"smelt, smet, melt"
+smooth dogfish,False,False,No close match found
+smooth hammerhead,True,False,"stammered, smothered"
+snail,True,True,"snail, snails, sail"
+snail darter,True,False,"slater, sailer"
+snailfish,True,False,"snails, sunfish, snail's"
+snake,True,True,"snake, snakes, sake"
+snapper,True,True,"snapper, snapped, scrapper"
+snapping turtle,True,False,snapping
+snipe,True,True,"snipe, snip, snipped"
+snoek,True,False,"snore, sneak, snowed"
+snook,True,False,"nook, spook, shook"
+snow crab,True,False,senora
+snow leopard,True,False,"leopard, leopards, snowed"
+snow lion,True,False,"snowing, snowdon, solon"
+snow monkey,True,False,"monkey, someone, snowdon"
+snowbird,True,False,"snowed, snored, snowfield"
+snowshoe hare,True,False,nowhere
+snowy egret,True,False,nowhere
+snowy owl,True,False,snowy
+sockeye,True,False,"stocky, socket, jockey"
+sockeye salmon,False,False,No close match found
+song thrush,True,False,"thrush, onrush, toothbrush"
+songbird,True,False,"song, sobered, poniard"
+soupfin,True,False,"supine, spin, soup"
+sow,True,True,"sow, stow, sows"
+spadefish,True,False,"spades, spanish, selfish"
+spadefoot,True,False,"spade, afoot, barefoot"
+spadefoot toad,False,False,No close match found
+spaniel,True,True,"spaniel, spaniels, panie"
+spanish mackerel,True,False,mackerel
+sparrow,True,True,"sparrow, sparrows, arrow"
+sparrow hawk,True,False,"sparrow, sparrows"
+spearfish,True,False,"starfish, spears, perish"
+speckled trout,True,False,"speckled, speckle"
+spectacled caiman,True,False,"spectacled, spectacle, spectacles"
+sperm whale,True,False,perishable
+sphinx moth,True,False,sphinx
+spider,True,True,"spider, spiders, stupider"
+spider crab,True,False,"spider, sierra, spiders"
+spider mite,True,False,"spirited, sprite, spirit"
+spider monkey,False,False,No close match found
+spiny anteater,False,False,No close match found
+spiny dogfish,False,False,No close match found
+spiny dogfish shark,False,False,No close match found
+spiny lobster,True,False,"spinster, spinsters, lobster"
+spitting cobra,True,False,"spitting, splitting, sitting"
+spitz,True,False,"spit, split, spits"
+sponge,True,True,"sponge, sponges, spongy"
+spoonbill,True,False,"spoon, spoil, spill"
+spotted flycatcher,True,False,flycatcher
+spotted hyena,True,False,spotted
+spotted owl,True,False,"spotted, potted, spouted"
+spotted salamander,True,False,salamander
+spotted sandpiper,False,False,No close match found
+sprat,True,True,"sprat, spat, spurt"
+spring peeper,True,False,"springer, springer's"
+springbok,True,False,"spring, springy, springs"
+springer spaniel,True,False,"springer's, springfield, springer"
+spruce bark beetle,False,False,No close match found
+spruce grouse,True,False,"spruces, spurious"
+squab,True,True,"squab, squaw, squat"
+squid,True,False,"quid, squalid, squad"
+squirrel,True,True,"squirrel, squirrels, squire"
+squirrel monkey,True,False,"squirrel, squirrels"
+staffordshire bull terrier,False,False,No close match found
+staffordshire terrier,False,False,No close match found
+stag,True,True,"stag, stags, stage"
+stag beetle,True,False,"steele, stable, beetle"
+staghorn coral,False,False,No close match found
+stallion,True,True,"stallion, stallions, stallings"
+standard poodle,True,False,"standard, standards, standardized"
+star-nosed mole,False,False,No close match found
+starfish,True,True,"starfish, tarnish, stars"
+stargazer,True,False,"starter, stagger, starr"
+starling,True,True,"starling, startling, tarling"
+steed,True,True,"steed, stewed, steeds"
+steenbok,True,False,"steventon, stevenson, semenovsk"
+steeplechase horse,False,False,No close match found
+steer,True,True,"steer, steers, seer"
+stegosaurus,True,False,"taurus, scaurus"
+steller jay,True,False,"teller, stella, seller"
+stick bug,True,False,"stick, sticking, vicksburg"
+stick insect,True,False,"sticking, ticket, stockings"
+stickleback,True,False,"tickle, sickle, trickle"
+stilt,True,False,"stilts, tilt, silt"
+stingray,True,False,"stingy, stringy, stray"
+stinkbug,True,False,"stink, sting, stinking"
+stoat,True,False,"stat, toast, stout"
+stone curlew,True,False,"sinecure, secure, curlew"
+stone marten,True,False,"staten, postponement, marten"
+stonefish,True,False,"astonish, stones, sunfish"
+stonefly,True,False,"stoney, stonily, stony"
+stony coral,True,False,stoical
+stork,True,True,"stork, storks, stork's"
+storm petrel,True,False,"strumpet, trumpeter, trumpeted"
+stormy petrel,True,False,strumpet
+striped bass,True,False,"stripes, striped, stripped"
+striped hyena,True,False,"striped, stripped, strident"
+striped marlin,True,False,"stripling, striped, redmain"
+striped mullet,True,False,"streamlet, striped"
+striped skunk,True,False,"stripes, striped, stripped"
+striper,True,False,"stripe, stripes, striped"
+sturgeon,True,True,"sturgeon, surgeon, surgeons"
+suckerfish,True,False,"suckers, sucker, sunfish"
+sugar glider,True,False,"smuggler, uglier, smugglers"
+summer tanager,True,False,"tanager, manager"
+sun bear,True,False,"sunbeam, sunbeams, sunder"
+sun conure,True,False,"unconquered, succour, scourge"
+sunfish,True,True,"sunfish, punish, unselfish"
+superbug,True,False,"superb, super, superbly"
+surfperch,True,False,"usurper, surer, super"
+surgeon fish,True,False,"surgeons, surgeon's, surgeon"
+surgeonfish,True,False,"surgeons, surgeon's, surgeon"
+swallow,True,True,"swallow, swallows, wallow"
+swallowtail,True,False,"swallow, swallowing, swallows"
+swamp sparrow,True,False,"sparrow, sparrows"
+swan,True,True,"swan, swans, swain"
+swift,True,True,"swift, sift, swiftly"
+swiftlet,True,False,"swiftest, swiftly, swifter"
+swine,True,True,"swine, wine, sine"
+swordfish,True,False,"swords, wolfish, swedish"
+swordtail,True,False,"redtail, sword, worthily"
+t rex,True,False,"rex, tyre, true"
+tabby,True,True,"tabby, tubby, tibby"
+tabby cat,True,False,tabby
+tadpole,True,True,"tadpole, tadpoles, staple"
+tadpole shrimp,True,False,"tadpoles, tadpole"
+taipan,True,False,"tain, italian, twain"
+takahe,True,False,"take, thakane, takes"
+takin,True,True,"takin, talkin, taking"
+tamarin,True,False,"tamar, tartarin, ultramarine"
+tammar wallaby,False,False,No close match found
+tanager,True,True,"tanager, manager, anger"
+tapeworm,True,False,"taper, tapers, worm"
+tapir,True,False,"taper, stair, tar"
+tarantula,True,False,"gargantua, tarrant, triangular"
+tardigrade,True,False,"tirade, degrade, brigade"
+tarpon,True,False,"tarn, harpoon, turon"
+tarsier,True,False,"rosier, easier, tier"
+tasmanian devil,False,False,No close match found
+tautog,True,False,"taut, auto, taunton"
+tawny owl,True,False,"tawny, anyhow"
+teacup chihuahua,False,False,No close match found
+teleost,True,False,"tellest, eldest, test"
+teleost fish,True,False,elfish
+tench,True,False,"trench, stench, wench"
+tent caterpillar,True,False,"caterpillar, caterpillars"
+termite,True,False,"terminate, trite, terminates"
+tern,True,True,"tern, terns, stern"
+terrapin,True,False,"terran, train, terra"
+terrier,True,True,"terrier, terriers, merrier"
+tetra,True,False,"terra, extra, estra"
+tetrapod,True,False,"tripod, teapot, entrapped"
+theropod,True,False,"motherhood, fatherhood, herod"
+theropod dinosaur,False,False,No close match found
+thorny devil,True,False,"thorny, thorndyke"
+thoroughbred,True,True,"thoroughbred, thoroughfare, thoroughfares"
+threadfin,True,False,"threading, treading, thread"
+thresher shark,False,False,No close match found
+thrip,True,False,"trip, trips, tripp"
+thrush,True,True,"thrush, thrushes, thrust"
+thylacine,True,False,"thine, thane, thracian"
+tick,True,True,"tick, trick, ticks"
+tiger,True,True,"tiger, tigers, tier"
+tiger beetle,True,False,beetle
+tiger cub,True,False,"tiger, tigers"
+tiger moth,True,False,"timothy, rivermouth, troth"
+tiger rattlesnake,True,False,rattlesnake
+tiger salamander,True,False,"salamander, islander"
+tiger shark,True,False,"tigers, tishnar, tiger's"
+tigon,True,False,"antigone, ton, tin"
+tigress,True,False,"ingress, digress, tress"
+tilapia,True,False,"titania, tarpeia, tapioca"
+tilefish,True,False,"cuttlefish, tiles, ticklish"
+timber rattlesnake,True,False,rattlesnake
+timber wolf,True,False,"timber, timbers"
+titanosaur,True,False,"titans, titania, titan"
+titi,True,False,"tit, titian, tahiti"
+titi monkey,True,False,"monkey, tuition, petitioned"
+titmouse,True,True,"titmouse, titus, mouse"
+toad,True,True,"toad, toads, tod"
+toadfish,True,False,"codfish, toads, starfish"
+tobacco budworm,False,False,No close match found
+tobacco hornworm,False,False,No close match found
+tody,True,False,"toddy, today, toy"
+tom turkey,True,False,"turkey, turnkey, turkeys"
+tomato hornworm,False,False,No close match found
+tomcat,True,False,"tomato, topmast, toast"
+toothed whale,True,False,toothed
+tortes,True,False,"tortures, torres, tories"
+tortoise,True,True,"tortoise, treatise, tortuous"
+tortoiseshell,True,False,tortoise
+tortuga,True,True,"tortuga, portugal, torturing"
+toucan,True,False,"tuscan, tuan, tuscany"
+towhee,True,False,"thee, towered, nowhere"
+toy poodle,True,False,"poodle, toodles"
+toy spaniel,True,False,"spaniel, spaniels, topsail"
+tragopan,True,False,"trojan, rangon, dragon"
+trapdoor spider,True,False,trapdoor
+tree shrew,True,False,"trees, treasure, threw"
+treefrog,True,False,"threefold, therefrom, trefoil"
+trematode,True,False,"treated, treat, tread"
+trepang,True,False,"treating, treading, repaying"
+triceratops,True,False,"treats, tickets, tickers"
+triggerfish,True,True,"triggerfish, trigger, tigris"
+trilobite,True,False,"tribute, trite, tribe"
+tripletail,True,False,"centripetal, triple, retail"
+trogon,True,False,"roon, trogool, grognon"
+trotter,True,True,"trotter, trotters, totter"
+trout,True,True,"trout, trouts, trot"
+trumpeter,True,True,"trumpeter, trumpeters, trumpeted"
+trumpeter swan,True,False,"trumpeters, trumpeter, trumpets"
+tsetse,True,False,"tete, sets, taste"
+tsetse fly,True,False,"tastefully, tasteful, sedately"
+tuatara,True,False,"tara, ultra, tutor"
+tubeworm,True,False,"worm, tube, term"
+tufted puffin,False,False,No close match found
+tufted titmouse,True,False,titmouse
+tuna,True,False,"una, tun, tundra"
+tundra swan,True,False,"undrawn, tundra, understand"
+tunicate,True,False,"truncated, unite, tunic"
+tunny,True,True,"tunny, sunny, funny"
+turbot,True,True,"turbot, trot, turon"
+turkey,True,True,"turkey, turnkey, turkeys"
+turkey buzzard,True,False,buzzard
+turkey vulture,True,False,vulture
+turtle,True,True,"turtle, turtles, turtle's"
+turtle dove,True,False,"turtle, turtles, hurtled"
+turtledove,True,False,"turtle, turtles, hurtled"
+tusker,True,False,"tusher, tucker, user"
+tussock moth,True,False,tussock
+tyrannosaur,True,False,"tyrannies, tyrants, tyranny"
+tyrannosaurus,True,False,translators
+tyrannosaurus rex,False,False,No close match found
+ungulate,True,False,"undulated, regulate, jungle"
+unicorn,True,True,"unicorn, union, unison"
+upland sandpiper,False,False,No close match found
+urchin,True,True,"urchin, urchins, murchison"
+vampire bat,True,False,"vampire, vampires"
+vaquita,True,False,"yaquita, acquit, acquittal"
+varmint,True,False,"variant, vermin, evarin"
+veal,True,True,"veal, venal, vel"
+veery,True,False,"very, vesey, verry"
+velociraptor,True,False,"velocity, vibratory, orator"
+venomous lizard,True,False,venomous
+vermin,True,True,"vermin, ermine, vermilion"
+vertebrate,True,False,"vertebrae, inveterate, venerate"
+vervet monkey,True,False,ceremony
+vesper sparrow,True,False,"vespers, sparrow"
+vicuna,True,False,"victual, vicar, viscount"
+vinegarroon,True,False,"vinegar, inertron, interrogation"
+viper,True,True,"viper, wiper, viner"
+vireo,True,False,"vie, ire, virtue"
+vizsla,True,False,"vista, viola, villa"
+vole,True,False,"ole, volume, volley"
+vulture,True,True,"vulture, vultures, culture"
+wagtail,True,False,"wail, tail, abigail"
+wahoo,True,False,"whoso, whoop, washroom"
+wallaby,True,False,"wally, allay, waylay"
+wallaroo,True,False,"ballroom, wallow, wallop"
+walleye,True,False,"alleyne, wally, alley"
+walleyed pike,False,False,No close match found
+walrus,True,True,"walrus, wars, whalers"
+wandering albatross,True,False,wanderings
+wapiti,True,False,"waitin, wait, piti"
+warbler,True,True,"warbler, warble, arler"
+warthog,True,False,"watchdog, warmth, wart"
+wasp,True,True,"wasp, wasps, was"
+water bear,True,False,"waterbury, watered, caterer"
+water buffalo,True,False,"waterfall, buffalo, waterfalls"
+water bug,True,False,"waterbury, water, watering"
+water moccasin,True,False,"waterman, moccasin, moccasins"
+water snake,True,False,"rattlesnake, waters, waterside"
+waterbird,True,False,"whitebird, waterside, waterford"
+waterbuck,True,False,"waterbury, water, truck"
+waterfowl,True,True,"waterfowl, waterford, waterfall"
+waxwing,True,False,"waxing, waving, waning"
+weakfish,True,False,"dwarfish, rakish, elfish"
+weasel,True,True,"weasel, weasels, easel"
+webworm,True,False,"worm, worms, weber"
+weevil,True,False,"weel, evil, wheel"
+weimaraner,True,False,"werner, wearer, warner"
+western lowland gorilla,False,False,No close match found
+western meadowlark,True,False,westerner
+western tanager,True,False,"westerner, stranger, entertainer"
+westie,True,False,"west, wrestle, wrested"
+whale,True,True,"whale, whales, whaler"
+whale shark,True,False,"whales, whaler, whalers"
+wheatear,True,False,"whether, weather, theater"
+whelk,True,False,"whelp, wheel, elk"
+whelp,True,True,"whelp, whelps, help"
+whiff,True,True,"whiff, whiffs, wuff"
+whippet,True,False,"whippets, whipped, wipe"
+whippoorwill,True,False,whirlpool
+whipsnake,True,False,"whiskey, whisker, whisked"
+whiptail,True,False,"withal, whitehall, whitman"
+whirligig beetle,True,False,whirligigs
+white marlin,True,False,"whitman, whirling, withering"
+white tailed deer,False,False,No close match found
+white tiger,True,False,"whittier, whiter, whittaker"
+white wolf,True,False,white
+whitebait,True,False,"whitebird, whitest, white"
+whitefish,True,True,"whitefish, whitish, whites"
+whitefly,True,False,"whitey, whitney, whitley"
+whitetail deer,True,False,"whittier, whittaker, whiteside"
+whiting,True,True,"whiting, whistling, writing"
+whooper,True,False,"hooper, whooped, whoop"
+whooper swan,True,False,"whoops, hooper"
+whooping crane,True,False,"whooping, hoopington"
+widgeon,True,False,"widen, widens, pigeon"
+widow spider,True,False,"widower, widows, spider"
+wiener dog,True,False,"wizened, widened, wintered"
+wigeon,True,False,"pigeon, pigeons, woodpigeon"
+wiggler,True,False,"wiggle, wriggle, wiggled"
+wild boar,True,False,"wilder, sideboard"
+wild dog,True,False,"wild, wielded"
+wildcat,True,True,"wildcat, wilt, wild"
+wildebeest,True,False,"wildest, widest, mildest"
+willet,True,False,"willie, willed, wallet"
+winkle,True,True,"winkle, wrinkle, twinkle"
+winter wren,True,False,"interwoven, wintered, interred"
+wireworm,True,False,"reform, fireworks, worm"
+wolf,True,True,"wolf, wolfe, wolf's"
+wolf cub,True,False,wolf
+wolf pup,True,False,wolf
+wolf spider,True,False,"spider, spiders"
+wolffish,True,False,"wolfish, wolfings, goldfish"
+wolfhound,True,True,"wolfhound, wound, hound"
+wolverine,True,True,"wolverine, wolverstone, woven"
+wolves,True,True,"wolves, olives, wove"
+woman,True,True,"woman, oman, workman"
+wombat,True,False,"combat, womb, combats"
+wood pewee,True,False,"woodpecker, woodpile, woodpeckers"
+wood stork,True,False,"woodwork, woodston, woods"
+wood thrush,True,False,"toothbrush, thrush, woodhouse"
+woodchuck,True,True,"woodchuck, woodcock, chuck"
+woodcock,True,True,"woodcock, woodchuck, woodwork"
+woodcock snipe,True,False,woodcock
+woodland caribou,True,False,woodland
+woodpecker,True,True,"woodpecker, woodpeckers, woodcutter"
+woodworm,True,False,"woodwork, woodward, worm"
+woolly adelgid,False,False,No close match found
+woolly bear,True,False,"woolly, woollen"
+woolly mammoth,True,False,mammoth
+woolly monkey,False,False,No close match found
+woolly rhinoceros,True,False,rhinoceros
+worm,True,True,"worm, worms, wor"
+wrasse,True,False,"grasses, wraye, wraps"
+wren,True,True,"wren, wrent, wen"
+wriggler,True,False,"wriggle, wriggles, wriggled"
+xerus,True,False,"versus, uterus, peruse"
+yak,True,True,"yak, yank, ya"
+yearling,True,False,"yearning, yearnings, yelping"
+yellow lab,True,False,"yellow, yellows, yellowlegs"
+yellow labrador,True,False,labrador
+yellow perch,True,False,"yellower, yellowish, yellow"
+yellow warbler,True,False,"yellower, allowable, yellowlegs"
+yellowfin,True,False,"yellow, yellowish, bellowing"
+yellowfin croaker,False,False,No close match found
+yellowfin tuna,False,False,No close match found
+yellowhammer,True,False,"yellower, yellowish, yellow"
+yellowjacket,True,False,"yellower, yellow, locket"
+yellowlegs,True,True,"yellowlegs, yellows, yellower"
+yellowtail,True,False,"yellow, yellowish, yellows"
+yellowtail flounder,True,False,yellowstone
+yellowtail snapper,False,False,No close match found
+yellowthroat,True,False,"yellower, yellowstone, yellowish"
+yorkie,True,False,"yorke, yorker, yorkshire"
+yorkshire terrier,True,False,yorkshire
+zebra,True,True,"zebra, zeb, era"
+zebra finch,True,False,branch
+zebra fish,True,False,"zebra, crayfish, crawfish"
+zebra mussel,True,False,"brussels, mussel"
+zebrafish,True,False,"zebra, crayfish, crawfish"
+zebu,True,False,"zeb, zeus, zu"
+zooplankton,True,False,"population, platoon, plantation"
+zorillo,True,False,"portillo, orville, gorilla"
+abyssinian,True,False,"abyssinia, assigning, babylonian"
+abyssinian guinea pig,False,False,No close match found
+acadian flycatcher,True,False,flycatcher
+achrioptera manga,False,False,No close match found
+ackie monitor,True,False,"monitor, premonitory"
+adélie penguin,True,False,penguin
+admiral butterfly,True,False,"butterfly, admiralty, admirably"
+aesculapian snake,True,False,esculapius
+african bullfrog,True,False,bullfrog
+african bush elephant,False,False,No close match found
+african civet,True,False,"african, variance, africans"
+african clawed frog,False,False,No close match found
+african fish eagle,False,False,No close match found
+african forest elephant,False,False,No close match found
+african golden cat,False,False,No close match found
+african grey parrot,False,False,No close match found
+african jacana,True,False,african
+african palm civet,False,False,No close match found
+african penguin,False,False,No close match found
+african sugarcane borer,False,False,No close match found
+african tree toad,False,False,No close match found
+africanized bee (killer bee),False,False,No close match found
+agama lizard,True,False,"galliard, lizard"
+agkistrodon contortrix,False,False,No close match found
+aidi,True,False,"aid, aiding, wadi"
+ainu,True,False,"ain, wain, vain"
+airedoodle,True,False,"doodle, aureole, redouble"
+akbash,True,False,"wabash, akashi, abashed"
+akita shepherd,True,False,"shepherd, shepherds, shepherd's"
+alabai (central asian shepherd),False,False,No close match found
+alaskan husky,False,False,No close match found
+alaskan klee kai,False,False,No close match found
+alaskan malamute,False,False,No close match found
+alaskan pollock,False,False,No close match found
+alaskan shepherd,True,False,shepherd
+albacore tuna,False,False,No close match found
+albertonectes,True,False,"alertness, baronets, albert's"
+albino (amelanistic) corn snake,False,False,No close match found
+aldabra giant tortoise,False,False,No close match found
+alligator gar,True,False,"alligator, alligators"
+alpine dachsbracke,False,False,No close match found
+alpine goat,True,False,"alpine, scapegoat"
+alusky,True,False,"talus, palsy, musky"
+amano shrimp,True,False,"seamanship, shrimp"
+amargasaurus,True,False,marauders
+amazon parrot,False,False,No close match found
+amazon river dolphin (pink dolphin),False,False,No close match found
+amazon tree boa,False,False,No close match found
+amazonian royal flycatcher,False,False,No close match found
+ambrosia beetle,True,False,"ambrosial, ambrosia"
+american alligator,True,False,alligator
+american alsatian,True,False,"americans, american's"
+american bulldog,True,False,american
+american bully,True,False,"diametrically, amicably, american"
+american cocker spaniel,False,False,No close match found
+american cockroach,False,False,No close match found
+american coonhound,False,False,No close match found
+american dog tick,False,False,No close match found
+american eel,True,False,"american, americans, america"
+american eskimo dog,False,False,No close match found
+american foxhound,False,False,No close match found
+american hairless terrier,False,False,No close match found
+american leopard hound,False,False,No close match found
+american paddlefish,False,False,No close match found
+american pit bull terrier,False,False,No close match found
+american pugabull,False,False,No close match found
+american pygmy goat,False,False,No close match found
+american robin,True,False,"american, americans, american's"
+american staffordshire terrier,False,False,No close match found
+american water spaniel,False,False,No close match found
+american wirehair,False,False,No close match found
+amethystine python (scrub python),False,False,No close match found
+amphicoelias fragillimus,False,False,No close match found
+amur leopard,True,False,"leopard, leopards"
+anatolian shepherd dog,False,False,No close match found
+anchovies,True,True,"anchovies, anchises, anchorite"
+andrewsarchus,True,False,"andrews, researches, research"
+angelshark,True,False,"angels, angela, angular"
+angled sunbeam caterpillar,False,False,No close match found
+angora ferret,False,False,No close match found
+annas hummingbird,False,False,No close match found
+anole lizard,True,False,"galliard, lizard, halliards"
+anomalocaris,True,False,"anomalous, locris, analogies"
+antarctic scale worm,False,False,No close match found
+anteosaurus,True,False,"taurus, scaurus, caesars"
+antiguan racer snake,False,False,No close match found
+apennine wolf,True,False,apennines
+appenzeller dog,False,False,No close match found
+apple head chihuahua,False,False,No close match found
+apple moth,True,False,"plymouth, appleton, apple"
+arabian cobra,True,False,"arabian, arabians"
+arabian wolf,True,False,"arabian, arabians, arabin"
+arafura file snake,False,False,No close match found
+arambourgiania,True,False,"morgiana, harbouring, arabian"
+archaeoindris,True,False,"armchairs, archers, merchandise"
+archaeopteryx,True,False,"chapter, archery, barchester"
+archaeotherium,True,False,barchester
+archelon turtle,True,False,architecture
+archerfish,True,False,"cherish, archers, archer's"
+arctic hare,True,False,"arctic, richard, particular"
+arctic wolf,True,False,"arctic, article"
+arctodus,True,False,"arcadius, marcus, cactus"
+arctotherium,True,False,"gatherum, factotum, archer"
+argentavis magnificens,False,False,No close match found
+argentine black and white tegu,False,False,No close match found
+argentine horned frog,False,False,No close match found
+argentinosaurus,True,False,"antinous, argentine"
+arizona bark scorpion,False,False,No close match found
+arizona black rattlesnake,False,False,No close match found
+arizona blonde tarantula,False,False,No close match found
+arizona coral snake,False,False,No close match found
+armadillo lizard,False,False,No close match found
+armenian gampr,True,False,"armenian, armenians, armenia"
+armored catfish,False,False,No close match found
+arsinoitherium,True,False,"sanitarium, interim, another"
+arthropleura,True,False,arthur
+aruba rattlesnake,True,False,rattlesnake
+ashy mining bee,False,False,No close match found
+asian arowana,True,False,savarona
+asian carp,True,False,"sinclair, scarp, asian"
+asian cockroach,False,False,No close match found
+asian giant hornet,False,False,No close match found
+asian lady beetle,False,False,No close match found
+asian longhorn beetle,False,False,No close match found
+asian palm civet,False,False,No close match found
+asian vine snake,False,False,No close match found
+asian water monitor,False,False,No close match found
+asiatic black bear,False,False,No close match found
+asp caterpillar,True,False,"caterpillar, caterpillars"
+assassin snail,True,False,"assassins, assassination, assassin"
+atlantic cod,True,False,"atlantic, atlantis"
+atlantic salmon,True,False,"atlantis, atlantic"
+atlantic sturgeon,False,False,No close match found
+atlas beetle,True,False,"leetle, beetle"
+atlas moth,True,False,"atlas, altamont"
+aurochs,True,False,"arches, arch, urchins"
+aussiedoodle,True,False,"doodle, casserole"
+aussiedor,True,False,"blausser, assisted, assigned"
+aussiepom,True,False,"lassie, cassio, cassim"
+australian bulldog,True,False,"australian, australians, australia"
+australian cattle dog,False,False,No close match found
+australian cockroach,True,False,australian
+australian firehawk,True,False,"australian, australians"
+australian flathead perch,False,False,No close match found
+australian gecko,True,False,"australian, australians, australia"
+australian kelpie dog,False,False,No close match found
+australian labradoodle,False,False,No close match found
+australian mist,True,False,"australians, australian, austrians"
+australian retriever,True,False,australian
+australian shepherd,True,False,"australians, australian"
+australian shepherd mix,False,False,No close match found
+australian terrier,True,False,"australian, australians, australia"
+australopithecus,True,False,australians
+australorp chicken,False,False,No close match found
+axanthic ball python,False,False,No close match found
+ayam cemani,False,False,No close match found
+aye-aye,False,False,No close match found
+azawakh,True,False,"marzawan, awake"
+bactrian camel,False,False,No close match found
+bagle  basset hound mix,False,False,No close match found
+bagworm moth,False,False,No close match found
+bagworm moth caterpillar,False,False,No close match found
+bairds rat snake,False,False,No close match found
+balinese,True,False,"lines, balin, bales"
+balkan lynx,True,False,"balkan, blankly, blandly"
+ball python,True,False,"brayton, balloon"
+bamboo shark,True,False,"bamboos, bamboo"
+bamboo worms,True,False,"bamboos, bamboo"
+banana ball python,False,False,No close match found
+banana cinnamon ball python,False,False,No close match found
+banana eel,True,False,"banana, bananas, annabel"
+banana spider,True,False,bananas
+banded krait,True,False,"bandit, banded"
+banded palm civet,False,False,No close match found
+banded water snake,False,False,No close match found
+banjo catfish,False,False,No close match found
+barb,True,True,"barb, bar, bab"
+barbet,True,False,"babet, barnet, barest"
+barbuts cuckoo bumblebee,False,False,No close match found
+barinasuchus,True,False,"inasmuch, parnassus"
+bark scorpion,True,False,"scorpion, scorpions, absorption"
+barn spider,True,False,"spider, bartender, spiders"
+barn swallow,True,False,"swallow, swallows, barnwell"
+barnevelder,True,False,"breeder, breeders, revellers"
+barosaurus,True,False,"scaurus, arbours, tartarus"
+barramundi fish,False,False,No close match found
+barreleye fish (barrel eye),False,False,No close match found
+barylambda,True,False,"maryland, barnyard"
+basenji dog,False,False,No close match found
+basenji mix,False,False,No close match found
+basilisk lizard,True,False,"billiard, basilisk, billiards"
+basilosaurus,False,False,No close match found
+bassador,True,False,"ambassador, ambassadors, ambassador's"
+basset fauve de bretagne,False,False,No close match found
+bassetoodle,True,False,"boodle, casserole, toodles"
+bat-eared fox,True,False,"battered, bartered, bantered"
+bavarian mountain hound,False,False,No close match found
+bea-tzu,True,False,"beau, beat, bleat"
+beabull,True,False,"befall, bull, bell"
+beagador,True,False,"beggar, bagdad, bravado"
+beagle mix,True,False,"beagle, eagle, beale"
+beagle shepherd,True,False,"shepherd, shepherds"
+beaglier,True,False,"beagle, earlier, eagle"
+beago,True,False,"begot, bargo, ego"
+bearded collie,True,False,"bearded, bardell"
+bearded fireworm,False,False,No close match found
+beaski,True,False,"beak, bask, breakin"
+beauceron,True,False,"beacon, baron, bacon"
+beauty rat snake,False,False,No close match found
+bed bugs,True,False,"bugs, begs, beds"
+bedlington terrier,False,False,No close match found
+bee-eater,True,False,"eater, teeter, hereafter"
+beewolf wasp,False,False,No close match found
+belgian canary,True,False,belgian
+belgian laekenois,False,False,No close match found
+belgian malinois,True,False,belgians
+belgian malinois mix,False,False,No close match found
+belgian sheepdog,True,False,belgians
+belgian shepherd,True,False,"shepherd, belgians"
+belgian tervuren,False,False,No close match found
+beluga sturgeon,True,False,sturgeon
+beluga sturgeon,True,False,sturgeon
+bergamasco,True,False,"bergamot, ramas, bergs"
+berger blanc suisse,False,False,No close match found
+berger picard,False,False,No close match found
+bernedoodle,True,False,"noodle, doodle, boodle"
+bernese mountain dog mix,False,False,No close match found
+bernese shepherd,True,False,shepherd
+betta fish (siamese fighting fish),False,False,No close match found
+bhutan takin,True,False,humanitarian
+bichir,True,False,"choir, chirp, chair"
+bichon frise,False,False,No close match found
+bichpoo,True,False,"bitch, birch"
+biewer terrier,True,False,terrier
+bigfin reef squid ,False,False,No close match found
+bird of paradise,True,False,paradise
+bird snake,True,False,"snake, brake, birds"
+birman,True,False,"bran, fireman, brahman"
+biscuit beetle,True,False,"scuttle, biscuit"
+bismarck ringed python,False,False,No close match found
+black and tan coonhound,False,False,No close match found
+black and white warbler,False,False,No close match found
+black aphids,True,False,"blackbirds, blackish, blackguards"
+black bass,True,False,"blacks, blackness, jackass"
+black crappie,True,False,blackie
+black dragon lizard,False,False,No close match found
+black german shepherd,False,False,No close match found
+black marlin,True,False,"blackmail, lackman, blacking"
+black mouth cur,True,False,blackmore
+black pastel ball python,False,False,No close match found
+black rat snake,False,False,No close match found
+black rhinoceros,True,False,rhinoceros
+black russian terrier,False,False,No close match found
+black sea bass,True,False,blackness
+black swallowtail,False,False,No close match found
+black swallowtail caterpillar,False,False,No close match found
+black tarantula,False,False,No close match found
+black throat monitor,False,False,No close match found
+black wasp,True,False,"blacks, backwards, black's"
+black widow spider,False,False,No close match found
+black witch moth,False,False,No close match found
+black-bellied whistling duck,False,False,No close match found
+black-footed ferret,False,False,No close match found
+black-headed python,False,False,No close match found
+black-tailed rattlesnake,False,False,No close match found
+blackburnian warbler,False,False,No close match found
+blackfin tuna,True,False,"lackington, blacking"
+blacknose shark,True,False,blackness
+blackpoll warbler,False,False,No close match found
+blacktip shark ,True,False,blackish
+bladefin basslet,False,False,No close match found
+blanket octopus,True,False,blankets
+blind snake,True,False,"blinds, blindness, lindsey"
+blood python,True,False,"bloodhounds, bloody, bloodshot"
+blue andalusian,False,False,No close match found
+blue belly lizard,True,False,bluebeard
+blue death feigning beetle,False,False,No close match found
+blue dragon sea slug,False,False,No close match found
+blue eyed pleco,False,False,No close match found
+blue german shepherd,False,False,No close match found
+blue gray gnatcatcher,False,False,No close match found
+blue grosbeak,True,False,grosbeak
+blue iguana,False,False,No close match found
+blue lacy dog,False,False,No close match found
+blue nose pit bull,False,False,No close match found
+blue picardy spaniel,False,False,No close match found
+blue racer,True,False,"blacker, racer, laurance"
+blue tanager (blue-grey tanager),False,False,No close match found
+blue tang,True,False,"bleating, buffeting, bleaching"
+blue tit,True,False,"butt, blue, blewett"
+blue-ringed octopus,False,False,No close match found
+bluetick coonhound,False,False,No close match found
+boas,True,False,"boats, boast, boars"
+boelens python,False,False,No close match found
+boer goat,True,False,"borgo, begot, begat"
+boerboel,True,False,"boreal, berber, overborne"
+boggle,True,False,"woggle, bogged, bole"
+boglen terrier,True,False,"enterpriser, terrier, enterpriser's"
+boiga,True,False,"bog, boa, big"
+bolivian anaconda,False,False,No close match found
+bolognese dog,True,False,boulogne
+bombay,True,True,"bombay, bomb, boma"
+bonito fish,True,False,"bronchitis, british"
+bonnethead shark,False,False,No close match found
+boomslang,True,False,"boomerang, oolanga, booming"
+booted bantam,False,False,No close match found
+borador,True,False,"labrador, orator, dorado"
+border collie mix,True,False,borderline
+border terrier,True,False,"borderers, terrier, borderline"
+bordoodle,True,False,"doodle, boodle, brooded"
+borkie,True,False,"bore, yorke, oriel"
+bornean orangutan,False,False,No close match found
+borneo elephant,True,False,"elephant, elephants"
+boskimo,True,False,"eskimo, skim, eskimos"
+bouvier des flandres,False,False,No close match found
+box jellyfish,True,False,jellyfish
+box tree moth,True,False,bournemouth
+box-headed blood bee,False,False,No close match found
+boxachi,True,False,"broach, bach, roach"
+boxador,True,False,"odor, boar, badr"
+boxer dog,True,False,"boxer, boxed, overdoing"
+boxer mix,True,False,boxer
+boxerdoodle,True,False,"doodle, boodle, brooded"
+boxsky,True,False,"boxes, bossy, sky"
+boxweiler,True,False,"boiler, boilers, boxer"
+boykin spaniel,True,False,spaniel
+bracco italiano,True,False,"brazilian, bacchanalian"
+brahma chicken,True,False,"chicken, brahman, bracken"
+brahminy blindsnake,False,False,No close match found
+braque du bourbonnais,False,False,No close match found
+braque francais,False,False,No close match found
+brazilian black tarantula,False,False,No close match found
+brazilian terrier,True,False,brazilian
+brazilian treehopper,False,False,No close match found
+bredls python,False,False,No close match found
+briard,True,False,"briar, briars, briarwood"
+british timber,True,False,british
+brittany,True,True,"brittany, britain, briny"
+bronze whaler shark,False,False,No close match found
+bronze-winged jacana,False,False,No close match found
+brookesia micra,False,False,No close match found
+brown dog tick,False,False,No close match found
+brown headed cowbird,False,False,No close match found
+brown snake,True,False,"browse, browns, browne"
+brown tree snake,False,False,No close match found
+brown water snake,False,False,No close match found
+brown-banded cockroach,False,False,No close match found
+brug,True,False,"brung, rug, bug"
+brussels griffon,True,False,brussels
+buff orpington chicken,False,False,No close match found
+buffalo fish,True,False,"buffaloes, buffalo"
+bull and terrier,False,False,No close match found
+bull trout,True,False,"trout, bullfrog"
+bullboxer,True,False,"uller, boxer, buller's"
+bulldog mix,True,False,bulldog
+burmese,True,False,"buries, burlesque, burgesses"
+burmese python,False,False,No close match found
+burrowing frog,True,False,"burrowing, borrowing"
+burrowing owl,True,False,"burrowing, borrowing, browsing"
+bush baby,True,False,"bushy, busby, shabby"
+bush viper,True,False,"busier, viper, usher"
+bushmaster snake,False,False,No close match found
+butterfly fish,True,False,"butterfly's, butterflies, butterfly"
+cabbage moth,True,False,"cabbage, cabbages"
+cactus moth,True,False,cactus
+cactus mouse,True,False,"smouse, cactus"
+caiman lizard,True,False,campania
+california condor,True,False,"californian, california"
+california kingsnake,True,False,"californian, california"
+california tarantula,True,False,"californian, california"
+camel cricket,True,False,"cricket, crickets"
+camel spider,True,False,"spider, casper, camels"
+campine chicken,False,False,No close match found
+canaan dog,True,False,"canaan, canadian"
+canada lynx,True,False,"canadian, canada, canaan"
+canada warbler,True,False,warbler
+canadian eskimo dog,False,False,No close match found
+canadian horse,True,False,"canadians, canadian"
+cane corso,True,False,"anchors, corso, chancellors"
+cane rat,True,False,"canker, cancer, camera"
+cane spider,True,False,"consider, spider, casper"
+cantil,True,False,"scantily, cant, anti"
+cape lion,True,False,"caplin, chaplin, capel"
+caribbean reef shark,False,False,No close match found
+carolina dog,True,False,"carolina, carling, caroline"
+carolina parakeet,False,False,No close match found
+carpet python,True,False,carleton
+carpet viper,True,False,"carpenter, cartier, carpenters"
+carrion beetle,True,False,"marionette, carrion"
+cascabel,True,False,"cascade, cascades, rascal"
+cashmere goat,True,False,cashmere
+cat snake,True,False,"snake, carslake, rattlesnake"
+cat-eyed snake,False,False,No close match found
+cat-faced spider,False,False,No close match found
+catahoula bulldog,False,False,No close match found
+catahoula leopard,False,False,No close match found
+catalan sheepdog,True,False,catalans
+caucasian mountain dog (shepherd),False,False,No close match found
+caucasian shepherd,True,False,caucasian
+cava tzu,True,False,"cravat, cravats"
+cavador,True,False,"salvador, candor, vavasor"
+cavapoo,True,False,"vaporous, vapor"
+cave bear,True,False,"cavern, carver, caesar"
+cave lion,True,False,"chauvelin, ravelin, javelin"
+cecropia moth,False,False,No close match found
+central ranges taipan,False,False,No close match found
+cephalaspis,True,False,"emphasis, palais, clasps"
+ceratosaurus,True,False,"creators, centaurs, taurus"
+cervalces latifrons (broad-fronted moose),False,False,No close match found
+cesky fousek,False,False,No close match found
+cesky terrier,True,False,"terrier, terriers, enterpriser"
+chartreux,True,False,"chartered, chateau, charter"
+cheagle,True,False,"eagle, healed, eagles"
+checkered garter snake,False,False,No close match found
+chesapeake bay retriever,False,False,No close match found
+chestnut-sided warbler,False,False,No close match found
+chi chi,True,False,"chicha, chichikov, chickie"
+chicken snake,True,False,"chickens, chicken"
+chihuahua mix,False,False,No close match found
+childrens python,True,False,children's
+chilean recluse spider,False,False,No close match found
+chilean rose tarantula,False,False,No close match found
+chilesaurus,True,False,"clears, hilarious, childless"
+chinese alligator,True,False,"alligator, investigator, investigators"
+chinese cobra,True,False,chinese
+chinese crested dog,False,False,No close match found
+chinese geese,True,False,chinese
+chinese paddlefish,False,False,No close match found
+chinese shar-pei,False,False,No close match found
+chinese water deer,False,False,No close match found
+chinstrap penguin,False,False,No close match found
+chipit,True,False,"chit, chip, chirp"
+chipoo,True,False,"chip, chinook, chirp"
+chiton,True,False,"chilton, hilton, citron"
+chiweenie,True,False,"weened, helene, coherence"
+chorkie,True,False,"choke, chloride, corked"
+chow pom,True,False,"chow, chop"
+chow shepherd,True,False,"shepherd, shepherds, shepherd's"
+christmas beetle,True,False,"christmas, charitable, christminster"
+christmas island red crab,False,False,No close match found
+chromodoris willani,False,False,No close match found
+chusky,True,False,"husky, chunky, husk"
+cinereous vulture,False,False,No close match found
+cinnamon ball python,False,False,No close match found
+cinnamon bear,True,False,cinnamon
+cinnamon ferret,True,False,"cinnamon, conferred"
+clarks grebe,False,False,No close match found
+clearnose skate,True,False,"clearest, cleanest, clearness"
+click beetle,True,False,"leetle, cricketer, beetle"
+clock spider,True,False,"consider, spider, locker"
+clothes moth,True,False,"clothes, cloths, clotho"
+clouded leopard,False,False,No close match found
+clumber spaniel,True,False,lumberman
+coachwhip snake,False,False,No close match found
+coastal taipan,True,False,"coastline, australian"
+cobalt blue tarantula,False,False,No close match found
+cobia fish,True,False,"codfish, crayfish, crawfish"
+cobras,True,False,"cobra, corals, cora"
+cochin chicken,True,False,"coincident, chicken"
+cockalier,True,False,"cockle, crocker, coralie"
+cockapoo,True,False,"cuckoo, cockade, cock"
+coconut crab ,True,False,cocoanut
+colletts snake,False,False,No close match found
+collie mix,True,False,"collie, collided"
+colossal squid,True,False,colossal
+comb jellyfish,True,False,"jellyfish, embellish"
+comb-crested jacana,False,False,No close match found
+comet moth,True,False,"cometh, commemorate, comet"
+comfort retriever,True,False,"comforter, corrective, comforters"
+common buzzard,True,False,buzzard
+common carp,True,False,"commoner, common, commoners"
+common european adder,False,False,No close match found
+common frog,True,False,"commoner, common, commoners"
+common furniture beetle,False,False,No close match found
+common goldeneye,True,False,commonly
+common grackle,True,False,"commonplace, commonplaces, crackle"
+common green magpie,False,False,No close match found
+common house spider,False,False,No close match found
+common loon,True,False,"commonly, common, commotion"
+common raven,True,False,"commoner, commonplace, commemorate"
+common spotted cuscus,False,False,No close match found
+common toad,True,False,"common, commotion, commonest"
+compsognathus,True,False,"consonants, components, compassionate"
+cone snail,True,False,"congenial, conseil, congeal"
+congo snake,True,False,cognate
+cookiecutter shark,False,False,No close match found
+coopers hawk,True,False,cooper's
+corella,True,False,"cornelia, cordelia, collar"
+corgidor,True,False,"corridor, corridors, cordon"
+corgipoo,True,False,"orinoco, giorgio, cariboo"
+corkie,True,False,"corked, cookie, cork"
+corman shepherd,True,False,"shepherd, shepherds"
+corn rex cat (cornish rex),False,False,No close match found
+cory catfish,True,False,"crayfish, crawfish"
+coryphodon,True,False,"cordon, typhoon, gryphon"
+costas hummingbird,False,False,No close match found
+coton de tulear,False,False,No close match found
+cotton-top tamarin,False,False,No close match found
+coues deer,True,False,"courser, overseer, outsider"
+cow reticulated python,False,False,No close match found
+crab spider,True,False,"spider, rasper, rapier"
+crab-eating fox,True,False,creating
+crab-eating macaque,False,False,No close match found
+crabeater seal,True,False,"creates, craters"
+crappie fish,True,False,"scrappes, crayfish, crawfish"
+crested gecko,True,False,crested
+crested penguin,False,False,No close match found
+croatian sheepdog,False,False,No close match found
+crocodile monitor,True,False,"crocodile, crocodiles"
+crocodile shark,True,False,"crocodiles, crocodile's, crocodile"
+crocodylomorph,False,False,No close match found
+cross fox,True,False,"cross, crossbow, across"
+cross river gorilla,False,False,No close match found
+cryolophosaurus,False,False,No close match found
+cuban boa,True,False,"cuban, cunora, cubans"
+cuban cockroach,False,False,No close match found
+cubera snapper,True,False,snapper
+cucumber beetle,True,False,"cucumber, cucumbers"
+curly coated retriever,False,False,No close match found
+curly hair tarantula,False,False,No close match found
+czechoslovakian wolfdog,False,False,No close match found
+dachsador,True,False,"chando, candor, anchor"
+dachshund mix,False,False,No close match found
+daeodon,True,False,"daemon, dodo, dragoon"
+dalmadoodle,True,False,doodle
+dalmador,True,False,"salvador, damaso, waldorf"
+dalmatian mix,True,False,dalmatia
+dandie dinmont terrier,False,False,No close match found
+daniff,True,False,"sniff, tariff, dorani"
+danios,True,False,"danish, dais, dandies"
+danish swedish farmdog,False,False,No close match found
+dapple dachshund,False,False,No close match found
+dark-eyed junco,False,False,No close match found
+dark-eyed junco,False,False,No close match found
+darwins fox,True,False,"darwinism, darwin"
+darwins frog,False,False,No close match found
+daug,True,False,"dug, dung, drug"
+de brazzas monkey,False,False,No close match found
+de kays brown snake,False,False,No close match found
+death adder,True,False,"weather, leather, heather"
+deaths head cockroach,False,False,No close match found
+deathwatch beetle,False,False,No close match found
+decorator crab,True,False,"oratorical, decoration"
+deer head chihuahua,False,False,No close match found
+deer mouse,True,False,"dormouse, dexterous, caderousse"
+deer tick,True,False,"derrick, roderick, heartsick"
+deinocheirus,True,False,"inches, diners, delicious"
+deinosuchus,True,False,"heinous, eunuchs, discuss"
+desert ghost ball python,False,False,No close match found
+desert kingsnake,True,False,deserting
+desert locust,True,False,"deserts, desserts, desirous"
+desert rain frog,True,False,deserting
+desert wolf,True,False,"desert, desertion, dessert"
+desmostylus,True,False,despots
+deutsche bracke,False,False,No close match found
+devils coach horse beetle,False,False,No close match found
+dhole,True,False,"hole, dole, whole"
+diamond python,True,False,diamond
+diamondback moth,False,False,No close match found
+dickcissel,True,False,dickie
+dickinsonia,True,False,"dickinson, dickon, mackinson"
+dilophosaurus,True,False,disclosures
+dimetrodon,True,False,"mastodon, inertron, diameter"
+diminutive woodrat,True,False,diminutive
+dinocrocuta,True,False,"minorca, dorincourt"
+dinofelis,True,False,"dines, novelist, infidels"
+dinopithecus,True,False,dignities
+dinosaur shrimp,False,False,No close match found
+diprotodon,True,False,"disproportion, protocol, disposition"
+dire wolf,False,False,No close match found
+disco clam,True,False,"disclaim, disclaimed, islam"
+discus,True,False,"discuss, discs, disuse"
+diving bell spider (water spider),False,False,No close match found
+diving duck,True,False,"diving, driving, divined"
+dobsonfly,True,False,"dobson, softly, robson"
+doedicurus,True,False,"epicurus, oedipus, epicures"
+dog tick,True,False,"dogmatic, tick, idiotic"
+dogo argentino,True,False,argentine
+dogue de bordeaux,False,False,No close match found
+dorgi,True,False,"doris, doric, dor"
+dorkie,True,False,"dore, dormice, yorke"
+dorking chicken,False,False,No close match found
+double doodle,True,False,doubled
+douc,True,False,"duc, doc, ouch"
+doxiepoo,True,False,dioxide
+doxle,True,False,"dole, doyle, ole"
+draco volans lizard,False,False,No close match found
+dragon eel,True,False,"dragon, dragoon, dragons"
+"dragon snake (javan tubercle snake, javan mudsnake)",False,False,No close match found
+dragonfish,True,False,"dragons, dragoons, dragon's"
+dreadnoughtus,True,False,"draughts, drought, draught"
+drever,True,False,"revery, revert, revere"
+dried fruit moth,False,False,No close match found
+dromornis stirtoni,False,False,No close match found
+dubia cockroach,False,False,No close match found
+dumerils boa,False,False,No close match found
+dunker,True,False,"bunker, dunk, duke"
+dunkleosteus,True,False,"unless, dauntless"
+dunnock,True,False,"dunno, unlock, dunnot"
+dusky dolphin,True,False,"dolphin, dolphins"
+dutch rabbit,True,False,rabbit
+dutch shepherd,True,False,"shepherd, shepherds, shepherd's"
+dwarf boa,True,False,"dwarf, dwarfs"
+dwarf crocodile,True,False,"crocodile, crocodiles, crocodile's"
+dwarf gourami,False,False,No close match found
+earless monitor lizard,False,False,No close match found
+east siberian laika,False,False,No close match found
+eastern barred bandicoot,False,False,No close match found
+eastern bluebird,True,False,bluebird
+eastern box turtle,False,False,No close match found
+eastern brown snake,False,False,No close match found
+eastern chipmunk,True,False,chipmunk
+eastern coral snake,False,False,No close match found
+eastern diamondback rattlesnake,False,False,No close match found
+eastern dobsonfly,False,False,No close match found
+eastern fence lizard,False,False,No close match found
+eastern glass lizard,False,False,No close match found
+eastern gorilla,False,False,No close match found
+eastern gray squirrel,False,False,No close match found
+eastern green mamba,False,False,No close match found
+eastern hognose snake,False,False,No close match found
+eastern phoebe,True,False,eastern
+eastern racer,True,False,"westerner, terrace, sterner"
+eastern rat snake,False,False,No close match found
+eastern tiger snake,False,False,No close match found
+eastern turkey (wild turkey),False,False,No close match found
+eastern woodrat,False,False,No close match found
+eclectus parrot,False,False,No close match found
+edible frog,True,False,edible
+eel catfish,True,False,"elfish, selfish, eyelash"
+egyptian cobra (egyptian asp),False,False,No close match found
+egyptian goose,True,False,"egyptians, egyptian"
+egyptian mau,True,False,"egyptian, egyptians"
+egyptian tortoise,True,False,egyptians
+egyptian vulture,True,False,egyptian
+elasmosaurus,True,False,"clamours, peasmarsh, clamorous"
+elasmotherium,True,False,"smother, smothering, smoother"
+electric catfish,True,False,"electrical, electrified, electricity"
+elegant tern,True,False,"lantern, elegant, leathern"
+elephant beetle,True,False,"elephant, elephants"
+elephant bird,True,False,"elephant, elephants, elephant's"
+elephant fish,True,False,"elephants, elephant's, elephant"
+elephant shrew,True,False,"elephants, elephant's, elephant"
+elf owl,True,False,"fowl, lowly, fowls"
+ember tetra,True,False,bertram
+embolotherium,True,False,"smoother, emporium"
+emerald toucanet,False,False,No close match found
+emerald tree boa,False,False,No close match found
+emerald tree monitor,False,False,No close match found
+emperor angelfish,False,False,No close match found
+emperor goose,True,False,"emperors, emperor's, emperor"
+emperor tamarin,False,False,No close match found
+enchi ball python,False,False,No close match found
+english bulldog,False,False,No close match found
+english cocker spaniel,False,False,No close match found
+english cream golden retriever,False,False,No close match found
+english crested guinea pig,False,False,No close match found
+english foxhound,True,False,foxhound
+english longhorn cattle,False,False,No close match found
+english pointer,True,False,englishwoman
+english setter,True,False,"glitter, englishmen, english"
+english shepherd,True,False,shepherd
+english springer spaniel,False,False,No close match found
+english toy terrier,False,False,No close match found
+entlebucher mountain dog,False,False,No close match found
+epagneul pont audemer,False,False,No close match found
+epicyon haydeni,False,False,No close match found
+epidexipteryx,True,False,"poindexter, lepidoptera"
+equatorial spitting cobra,False,False,No close match found
+equus giganteus,False,False,No close match found
+eryops,True,False,"ryots, ropes, riyos"
+eskimo dog,True,False,"eskimo, eskimos"
+eskipoo,True,False,"eskimo, skip, eskimos"
+estrela mountain dog,False,False,No close match found
+euoplocephalus,True,False,eurylochus
+eurasian beaver,False,False,No close match found
+eurasian bullfinch,False,False,No close match found
+eurasian collared dove,False,False,No close match found
+eurasian eagle-owl,False,False,No close match found
+eurasian jay,False,False,No close match found
+eurasian lynx,False,False,No close match found
+eurasian nuthatch,False,False,No close match found
+eurasian sparrowhawk,False,False,No close match found
+eurasian wolf,False,False,No close match found
+eurasier,True,False,"eraser, easier, cuirassiers"
+european bee-eater,False,False,No close match found
+european corn borer,False,False,No close match found
+european goldfinch,True,False,goldfinch
+european polecat,True,False,european
+european robin,True,False,"european, europeans"
+european starling,True,False,europeans
+european wildcat,True,False,european
+eurypterus,True,False,"eurystheus, uterus, eucalyptus"
+evening bat,True,False,"evening, evenings, evenin"
+executioner wasp ,True,False,"executioners, executioner's, executioner"
+eyelash viper,True,False,"eyelashes, eyelash"
+fainting goat,True,False,"fainting, painting, fascinating"
+fairy-wren,True,False,"fairy, faire"
+false cobra,True,False,algebra
+false coral snake,False,False,No close match found
+false killer whale,False,False,No close match found
+false water cobra,False,False,No close match found
+false widow spider,False,False,No close match found
+fancy mouse,True,False,"famous, farmhouse, anonymous"
+fangtooth,True,False,"tooth, fagot, fitzooth"
+feather star,True,False,"feathers, featherstone, feather"
+feist,True,False,"fist, fists, first"
+fer-de-lance snake,False,False,No close match found
+ferruginous hawk,False,False,No close match found
+field cuckoo bumblebee,False,False,No close match found
+field spaniel,True,False,"spaniel, spaniels, feldspar"
+fierce snake,True,False,"fierceness, fiercest, fierce"
+figeater beetle,False,False,No close match found
+fila brasileiro,False,False,No close match found
+finnish lapphund,False,False,No close match found
+finnish spitz,True,False,finishes
+fire ball python,False,False,No close match found
+fire eel,True,False,"freeze, freely, reel"
+fire salamander,True,False,"salamander, islander, falander"
+fire-bellied toad,False,False,No close match found
+firefly ball python,False,False,No close match found
+fishing cat,True,False,"fishing, fishin, finishing"
+fishing spiders,False,False,No close match found
+flat-coated retriever,False,False,No close match found
+fleckvieh cattle,False,False,No close match found
+florida gar,True,False,"florida, florid, florina"
+florida mouse,True,False,"florida, glorious, dormouse"
+florida panther,False,False,No close match found
+florida woods cockroach,False,False,No close match found
+flounder fish,True,False,"founders, flourish, flounder"
+flour beetle,True,False,"leetle, beetle"
+flowerhorn fish,False,False,No close match found
+fluke fish (summer flounder),False,False,No close match found
+flying lemur,True,False,"linger, flying, finger"
+football fish,True,False,"football, footfalls, foolish"
+forest cobra,True,False,"forester, orchestra, fresco"
+forest cuckoo bumblebee,False,False,No close match found
+formosan mountain dog,False,False,No close match found
+fox snakes,True,False,"forsakes, snakes, snake's"
+freeway ball python,False,False,No close match found
+french bulldog mix,False,False,No close match found
+french lop,True,False,"french, frenchwoman"
+frenchton,True,False,"frenchwoman, french, fenton"
+frengle,True,False,"regale, fringe, rectangle"
+freshwater crocodile,False,False,No close match found
+freshwater drum,False,False,No close match found
+freshwater jellyfish,False,False,No close match found
+freshwater sunfish,False,False,No close match found
+frigatebird,True,False,"frigate, frighted, frigates"
+frilled lizard,True,False,frilled
+frilled shark,True,False,frilled
+fritillary butterfly,False,False,No close match found
+frizzle chicken,False,False,No close match found
+frug,True,False,"rug, frugal, rung"
+fulvous whistling duck,False,False,No close match found
+fur seal,True,False,"funereal, ursela, unreal"
+furrow bee,True,False,"furrowed, furrow, furrows"
+gadwall,True,False,"gradually, wall, gall"
+galapagos penguin,False,False,No close match found
+galapagos shark,False,False,No close match found
+galapagos tortoise,False,False,No close match found
+garden eel,True,False,"gardener, garden, gardeners"
+garden spider,True,False,"gardener, gardeners, gardner"
+gargoyle gecko,False,False,No close match found
+gastornis,True,False,"astonish, gaston, stories"
+gentoo penguin,True,False,penguin
+geoffroys tamarin,False,False,No close match found
+gerberian shepsky,False,False,No close match found
+german cockroach,True,False,encroach
+german longhaired pointer,False,False,No close match found
+german pinscher,True,False,"germanic, germains, germaine"
+german shepherd guide,False,False,No close match found
+german shepherd mix,False,False,No close match found
+german sheppit,True,False,germans
+german sheprador,False,False,No close match found
+german shorthaired pointer,False,False,No close match found
+german spitz,True,False,"germans, germanic, german's"
+german wirehaired pointer,False,False,No close match found
+ghost catfish,True,False,starfish
+giant african land snail,False,False,No close match found
+giant armadillo,False,False,No close match found
+giant beaver,True,False,beaver
+giant clam,True,False,"gigantic, giant"
+giant desert centipede,False,False,No close match found
+giant golden mole,False,False,No close match found
+giant house spider,False,False,No close match found
+giant isopod,True,False,giants
+giant leopard moth,False,False,No close match found
+giant panda bear,False,False,No close match found
+giant salamander,True,False,"salamander, islander"
+giant schnoodle,False,False,No close match found
+giant siphonophore,False,False,No close match found
+giant trevally,True,False,internally
+giant weta,True,False,"giantess, giant, gauntlet"
+giant wood moth,False,False,No close match found
+gigantopithecus,True,False,gigantic
+glass frog,True,False,"lasso, glassful, glass"
+glass lizard,True,False,"galliard, lizard, glassware"
+glechon,True,False,"leon, glen, echo"
+glen of imaal terrier,False,False,No close match found
+goberian,True,False,"iberian, gordian, brian"
+goblin shark,True,False,"goblins, goblin's, goblin"
+goby fish,True,False,"goldfish, boyish"
+goldador,True,False,"gladiator, oldacre, odor"
+goldcrest,True,False,"oldest, oldacre, coldest"
+golden dox,True,False,"golden, olden"
+golden irish,True,False,"goldenhair, goldfish, oldish"
+golden jackal,False,False,No close match found
+golden lancehead,False,False,No close match found
+golden lion tamarin,False,False,No close match found
+golden masked owl,False,False,No close match found
+golden mole,True,False,golden
+golden newfie,True,False,glennie
+golden oriole,False,False,No close match found
+golden pyrenees,True,False,pyrenees
+golden retriever mix,False,False,No close match found
+golden saint,True,False,"goldenhair, olenin, oldest"
+golden shepherd,True,False,"shepherd, shepherds"
+golden tortoise beetle,False,False,No close match found
+golden trout,True,False,golden
+golden-crowned flying fox,False,False,No close match found
+golden-crowned kinglet,False,False,No close match found
+goliath beetle,True,False,goliath
+goliath frog,True,False,goliath
+goliath grouper,False,False,No close match found
+goliath tigerfish,False,False,No close match found
+gollie,True,False,"mollie, collie, jollier"
+gomphotherium,True,False,"godmother, gatherum, emporium"
+goonch catfish,False,False,No close match found
+gooty sapphire tarantula,False,False,No close match found
+goral,True,False,"goal, moral, goals"
+gordon setter,True,False,"rosette, gordons, rosettes"
+gorgosaurus,True,False,"gorgeous, scaurus, gregarious"
+gouldian finch,True,False,goldfinch
+gourami,True,False,"gourbi, gouvernail, horai"
+grapevine beetle,False,False,No close match found
+grass carp,True,False,"scarp, grass, grasp"
+grass spider,True,False,"grasshopper, spider, rasper"
+gray tree frog,False,False,No close match found
+great crested flycatcher,False,False,No close match found
+great dane mix,False,False,No close match found
+great danoodle,False,False,No close match found
+great egret,True,False,"greater, greatest, regret"
+great hammerhead shark,False,False,No close match found
+great kiskadee,False,False,No close match found
+great plains rat snake,False,False,No close match found
+great potoo bird,False,False,No close match found
+great pyrenees mix,False,False,No close match found
+greater swiss mountain dog,False,False,No close match found
+green anaconda,True,False,"greenland, granada"
+green anole,True,False,"greene, greenness, greenland"
+green aphids,True,False,"grenades, greenish, rapids"
+green bee-eater,True,False,greenwater
+green bottle blue tarantula,False,False,No close match found
+green frog,True,False,"greenow, greeting, greenery"
+green heron,True,False,"greenery, greene, regeneration"
+green june beetle,False,False,No close match found
+green rat snake,True,False,greensnake
+green snake,True,False,"greensnake, greens, greene"
+green sunfish,True,False,"greenish, sunfish"
+greenland dog,True,False,greenland
+greenland shark,True,False,greenland
+grey heron,True,False,"greyhound, gryphon, greyhounds"
+grey mouse lemur,False,False,No close match found
+grey reef shark,False,False,No close match found
+grey seal,True,False,"greys, reveal, repeal"
+griffonshire,True,False,"lincolnshire, grandsire"
+groenendael,True,False,"renewal, groaned, grenade"
+ground snake,True,False,"grounds, greensnake, grounded"
+groundhog (woodchuck),False,False,No close match found
+groundhog tick,True,False,groundwork
+grunion,True,False,"reunion, union, grunting"
+guadalupe bass,False,False,No close match found
+gulper catfish ,False,False,No close match found
+gulper eel ,False,False,No close match found
+gypsy cuckoo bumblebee,False,False,No close match found
+gypsy moth caterpillar,True,False,caterpillar
+haasts eagle,False,False,No close match found
+habu snake,True,False,"snake, abuse"
+haikouichthys,False,False,No close match found
+hainosaurus,True,False,"scaurus, honours, heinous"
+hairy frogfish,False,False,No close match found
+hairy-footed flower bee,False,False,No close match found
+hallucigenia,True,False,"hallucination, hacienda, hallucinations"
+hamburg chicken,False,False,No close match found
+hammerhead worm,True,False,hammered
+hammonds flycatcher,True,False,flycatcher
+hardhead catfish,False,False,No close match found
+harlequin coral snake,False,False,No close match found
+harlequin rabbit,True,False,harlequin
+harriss hawk,True,False,harris's
+hatzegopteryx,True,False,category
+havamalt,True,False,"havana, hamlet, malt"
+havanese,True,False,"vanes, japanese, advances"
+havapoo,True,False,"harpoon, vaporous, vapor"
+havashire,True,False,"hampshire, lancashire, shire"
+havashu,True,False,"hash, havisham, harsh"
+hawaiian crow,True,False,hawaiian
+hawaiian goose (nene),False,False,No close match found
+hawaiian monk seal,False,False,No close match found
+hawk moth caterpillar,True,False,"caterpillar, caterpillars"
+helicoprion,True,False,"amelioration, horizon, helping"
+hepatic tanager (red tanager),False,False,No close match found
+hercules beetle,True,False,hercules
+hercules moth,True,False,"hercules, herculaneum, heracles"
+herrerasaurus,False,False,No close match found
+highland cattle,True,False,"highlander, highland, highlanders"
+himalayan,True,False,"himalayas, malay, maleagans"
+hippopotamus gorgops,True,False,hippopotamus
+hoary bat,True,False,"hoary, hayat, hobart"
+hobo spider,True,False,"hoosier, spider, hooper"
+hokkaido,True,False,horatio
+holy cross frog,False,False,No close match found
+honduran white bat,False,False,No close match found
+hooded oriole,False,False,No close match found
+hooded seal,True,False,"hooded, homosexual"
+hook-nosed sea snake,False,False,No close match found
+horgi,True,False,"horai, hor, hog"
+horn shark,True,False,"horsehair, shark, horns"
+horned adder,True,False,"redder, reader, horner"
+horned beetle,False,False,No close match found
+horned grebe,True,False,"horner, horned"
+horned viper,True,False,"horner, horned"
+horse mackerel,True,False,"mackerel, shoemaker, horseback"
+houdan chicken,True,False,chicken
+house finch,True,False,housing
+house sparrow (english sparrow),False,False,No close match found
+house wren,True,False,"housework, housewife, housewives"
+hovasaurus,True,False,"scaurus, hours"
+hovawart,True,False,"thwart, powart, howard"
+humboldt penguin,True,False,humboldt
+humboldt squid,True,False,humboldt
+hummingbird hawk-moth,False,False,No close match found
+huntaway,True,False,"runaway, runaways, hathaway"
+huskador,True,False,"hussar, husbandry, hussars"
+huskita,True,False,"sita, husk, huskily"
+husky jack,True,False,husky
+huskydoodle,True,False,"huddle, doodle, huddled"
+hyacinth macaw,True,False,"hyacinthia, hyacinth, hyacinths"
+hyaenodon,True,False,"herndon, phaenomenon, hyaena"
+ibizan hound,False,False,No close match found
+icadyptes,True,False,"capes, dictates, chapters"
+icelandic sheepdog,True,False,icelandic
+ichthyosaurus,False,False,No close match found
+ichthyostega,False,False,No close match found
+iguanodon,True,False,"grandson, undone, mignon"
+img boa constrictor,False,False,No close match found
+immortal jellyfish,True,False,"jellyfish, immortals"
+imperial moth,True,False,"imperial, imperialist, imperialism"
+indian cobra,True,False,"indiana, indian"
+indian elephant,True,False,"elephant, indignant, elephants"
+indian giant squirrel,False,False,No close match found
+indian palm squirrel,False,False,No close match found
+indian python,True,False,"indication, vindication, indignation"
+indian rhinoceros,True,False,rhinoceros
+indian star tortoise,False,False,No close match found
+indianmeal moth,False,False,No close match found
+indochinese tiger,True,False,"winchester, dorchester"
+inland taipan,True,False,incantation
+insects,True,True,"insects, insect, inspect"
+io moth,True,False,"moth, timothy, tooth"
+irish doodle,True,False,"riddle, doodle"
+irish elk,True,False,"irish, irishmen"
+irish setter,True,False,"setter, dissenter"
+irish terrier,True,False,"terrier, terriers"
+irish water spaniel,False,False,No close match found
+irish wolfhound,True,False,wolfhound
+irukandji jellyfish,False,False,No close match found
+italian greyhound,True,False,"greyhound, greyhounds"
+ivory-billed woodpecker,False,False,No close match found
+ivy bee,False,False,No close match found
+jacana,True,False,"cana, laana, japan"
+jack russells,True,False,"russell's, russell, brussels"
+jack-chi,True,False,"jackie, jack"
+jackabee,True,False,"jackie, jacket, jackal"
+jacksons chameleon,False,False,No close match found
+jagdterrier,True,False,"terrier, terriers, merrier"
+jaguarundi cat,False,False,No close match found
+jamaican boa,True,False,jamaica
+jamaican iguana,False,False,No close match found
+japanese bantam chicken,False,False,No close match found
+japanese beetle,True,False,japanese
+japanese chin,True,False,japanese
+japanese macaque,True,False,japanese
+japanese rat snake,False,False,No close match found
+japanese spitz,True,False,japanese
+japanese squirrel,False,False,No close match found
+japanese terrier,True,False,japanese
+javan leopard,True,False,"leopard, leopards, jeopardy"
+javan rhinoceros,True,False,rhinoceros
+javanese,True,False,"japanese, vanes, advances"
+jewel beetle ,True,False,"jeweller, jewelled"
+john dory,True,False,johnny
+jonah crab,True,False,"jonathan, jonah"
+joro spider,True,False,"spider, rosier, spiders"
+josephoartigasia monesi,False,False,No close match found
+jumping spider,True,False,jumping
+jungle carpet python,False,False,No close match found
+junglefowl,True,False,"jungle, jungles, bungalow"
+kagu,True,False,"kauf, vague, magus"
+kai ken,True,False,"waken, taken, oaken"
+kakapo,True,False,"krakatoa, kanaka, kaliko"
+kaluga sturgeon,True,False,sturgeon
+kamehameha butterfly,False,False,No close match found
+kangal shepherd dog,False,False,No close match found
+kangaroo mouse,True,False,"kangaroos, kangaroo's, kangaroo"
+kauai ??,False,False,No close match found
+keagle,True,False,"eagle, eagles, beagle"
+keel-billed toucan,False,False,No close match found
+keelback,True,False,"keeluk, lack, keel"
+kentucky warbler,True,False,kentucky
+kenyan sand boa,False,False,No close match found
+kermode bear (spirit bear),False,False,No close match found
+kerry blue terrier,False,False,No close match found
+keta salmon,True,False,"salmon, salmons"
+key deer,True,False,"keeper, keener, skeeter"
+keyhole cichlid,False,False,No close match found
+khao manee,True,False,"shalmaneser, koane"
+khapra beetle,False,False,No close match found
+kiang,True,True,"kiang, king, kings"
+kiko goat,False,False,No close match found
+killer clown ball python,False,False,No close match found
+kinabalu giant red leech,False,False,No close match found
+kinder goat,True,False,"kinder, undergo, pendergast"
+king eider,True,False,"kinder, ringleader, kingfisher"
+king penguin,True,False,"penguin, penguins, ingenuity"
+king quail,True,False,quail
+king rat snake,True,False,"ingratiate, ingrate"
+king shepherd,True,False,"shepherd, shepherds, shepherd's"
+king snake,True,False,"kingmaker, snake, kingston"
+king vulture,True,False,"vulture, vultures"
+kingklip,True,False,"kingship, kingly, kinship"
+kirtlands snake,False,False,No close match found
+kishu,True,False,"ish, rakish, wishful"
+kissing bugs,True,False,kissing
+kissing gourami,False,False,No close match found
+kit fox,False,False,No close match found
+kitefin shark,False,False,No close match found
+klipspringer,True,False,"springer, lisping, springer's"
+knifefish,True,False,"knife, whitefish, unselfish"
+knight anole,True,False,"knightley, knightly, knighted"
+kodkod,True,False,"kodak, odo, odd"
+kokanee salmon,False,False,No close match found
+komondor,True,False,"osmond, ormond, koodoo"
+kooikerhondje,False,False,No close match found
+koolie,True,False,"coolie, coolies, olive"
+korean jindo,False,False,No close match found
+kori bustard,True,False,tributary
+kouprey,True,False,"prey, kory, tourney"
+kowari,True,False,"kwai, owain, warily"
+kudzu bug,False,False,No close match found
+kuvasz,True,False,vas
+labahoula,True,False,"laboulaye, labour"
+labmaraner,True,False,"mariner, laborer, labarre"
+labouts fairy wrasse,False,False,No close match found
+labrabull,True,False,"clarabella, arabella, liberally"
+labradane,True,False,"ariadne, laban, ardan"
+labradoodle,True,False,"labrador, raddle, doodle"
+labraheeler,True,False,"wheeler, laborer, labeled"
+labrottie,True,False,"lottie, lattice, lamotte"
+lace bug,True,False,"ladybug, lace"
+lace monitor,True,False,"monitor, premonitory"
+lagotto romagnolo,False,False,No close match found
+lake sturgeon,True,False,"sturgeon, surgeon, surgeons"
+lakeland terrier,True,False,enterpriser
+lamancha goat,False,False,No close match found
+lancashire heeler,True,False,lancashire
+lancetfish,True,False,"lancet, lances, planets"
+landseer newfoundland,True,False,newfoundland
+lappet-faced vulture,False,False,No close match found
+lapponian herder,False,False,No close match found
+larder beetle,False,False,No close match found
+large munsterlander,False,False,No close match found
+laughing kookaburra,False,False,No close match found
+lavender albino ball python,False,False,No close match found
+lawnmower blenny,False,False,No close match found
+lazarus lizard,True,False,lazarus
+leaf-tailed gecko,False,False,No close match found
+leafcutter ant,True,False,lieutenant
+leafcutter bee,False,False,No close match found
+least flycatcher,True,False,flycatcher
+leatherback sea turtle,False,False,No close match found
+leedsichthys,True,False,edicts
+leghorn chicken,False,False,No close match found
+leichhardts grasshopper,False,False,No close match found
+lemon blast ball python,False,False,No close match found
+lemon cuckoo bumblebee,False,False,No close match found
+lemon shark,True,False,"lemons, leonard"
+leonberger,True,False,"longer, lounger, tenderer"
+leopard cat,True,False,"leopard, leopards, leonard"
+leopard gecko,True,False,"leopard, leopards, leonardo"
+leopard lizard,True,False,leopard
+leopard tortoise,True,False,"tortoise, leopards"
+leptocephalus,False,False,No close match found
+lesser jacana,False,False,No close match found
+lhasapoo,True,False,harpoon
+lineback cattle,False,False,No close match found
+lions mane jellyfish,False,False,No close match found
+liopleurodon,False,False,No close match found
+liopleurodon,False,False,No close match found
+lipstick albino boa,False,False,No close match found
+little brown bat,False,False,No close match found
+little penguin,True,False,"penguin, littlepage"
+livyatan,True,False,"litany, libyan, latian"
+lizardfish,True,False,"lizards, lizard's, lizard"
+lone star tick,False,False,No close match found
+long-eared owl,False,False,No close match found
+long-haired rottweiler,False,False,No close match found
+long-tailed tit,False,False,No close match found
+long-winged kite spider,False,False,No close match found
+longfin mako shark,False,False,No close match found
+longnose gar,True,False,"longears, looser, longer"
+lowchen,True,False,"lowten, lichen, when"
+luna moth caterpillar,True,False,"caterpillar, caterpillars"
+lurcher,True,False,"lurched, lurch, richer"
+lykoi cat,True,False,locate
+lystrosaurus,True,False,"lustrous, taurus"
+macaroni penguin,True,False,macaroni
+macgillivrays warbler,False,False,No close match found
+machaeroides,True,False,"machines, macaroni, heroines"
+mackenzie valley wolf,False,False,No close match found
+macrauchenia,True,False,"marchesa, rancheria, marcia"
+madagascar jacana,True,False,madagascar
+madagascar tree boa,True,False,madagascar
+madora moth,True,False,"marmot, mammoth, dorothy"
+magellanic penguin,False,False,No close match found
+magnolia warbler,False,False,No close match found
+magyarosaurus,True,False,magyars
+mahi mahi (dolphin fish),False,False,No close match found
+maiasaura,True,False,"mangasarian, mansur, maia's"
+mal shi,True,False,"mash, walsh, smashing"
+malayan civet,False,False,No close match found
+malayan krait,False,False,No close match found
+malayan tiger,False,False,No close match found
+malchi,True,False,"malchus, machine, milch"
+malteagle,True,False,"maltese, malta, eagle"
+maltese mix,True,False,maltese
+maltese shih tzu,False,False,No close match found
+maltipom,True,False,"multiform, maelstrom, maltboy"
+maltipoo,True,False,"tippoo, maltboy, malt"
+mamushi snake,False,False,No close match found
+man of war jellyfish,False,False,No close match found
+manchester terrier,True,False,manchester
+mandarin rat snake,False,False,No close match found
+mangrove snake,True,False,greensnake
+mantella frog,True,False,mantilla
+marans chicken,True,False,chicken
+marble fox,True,False,"marble, marbles, marrable"
+maremma sheepdog,False,False,No close match found
+margay,True,False,"mary, mara, margery"
+marine iguana,True,False,marianna
+marine toad,True,False,"marine, marina, martineau"
+marsh frog,True,False,marsh
+marsican brown bear,False,False,No close match found
+masiakasaurus,False,False,No close match found
+masked angelfish,False,False,No close match found
+masked palm civet,False,False,No close match found
+mastador,True,False,"ambassador, astor, mastodon"
+mastiff mix,True,False,mastiff
+mauzer,True,False,"maze, maur, maturer"
+may beetle,True,False,"beetle, beetles, maybe"
+mayan cichlid,False,False,No close match found
+meagle,True,False,"eagle, meagre, meager"
+mealworm beetle,False,False,No close match found
+megalania,True,False,"melancolia, mania, galvanic"
+megalochelys,True,False,"galoshes, maloney's"
+megamouth shark,False,False,No close match found
+meganeura,True,False,"megara, meaner, meander"
+megatherium,True,False,"gatherum, gather, gathering"
+meiolania,True,False,"melancolia, milan, mania"
+mekong giant catfish,False,False,No close match found
+mexican alligator lizard,False,False,No close match found
+mexican black kingsnake,False,False,No close match found
+mexican eagle (northern crested caracara),False,False,No close match found
+mexican fireleg tarantula,False,False,No close match found
+mexican free-tailed bat,False,False,No close match found
+mexican mole lizard,False,False,No close match found
+microraptor,True,False,"orator, captor, migratory"
+midget faded rattlesnake,False,False,No close match found
+miki,True,False,"miskin, mink, mimi"
+milk snake,True,False,"mistake, snake, mistakes"
+milkweed aphids,False,False,No close match found
+mini labradoodle,False,False,No close match found
+mini lop,True,False,"minion, minions"
+miniature bull terrier,False,False,No close match found
+miniature husky,True,False,"miniatures, miniature"
+mississippi kite,True,False,mississippi
+moccasin snake,True,False,"moccasins, moccasined, moccasin"
+modern game chicken,False,False,No close match found
+mojave ball python,False,False,No close match found
+mojave rattlesnake,True,False,rattlesnake
+mola mola (ocean sunfish),False,False,No close match found
+mole crab (sand flea),False,False,No close match found
+mole cricket,True,False,"cricket, crickets, cricketer"
+mole snake,True,False,"snake, smolensk, rattlesnake"
+molly,True,True,"molly, moll, morally"
+mongrel,True,True,"mongrel, montreal, morsel"
+monocled cobra,False,False,No close match found
+monte iberia eleuth,False,False,No close match found
+moon jellyfish,True,False,jellyfish
+morkie,True,False,"more, moraine, yorke"
+morpho butterfly,True,False,"butterfly, butterfly's"
+mosasaurus,True,False,"scaurus, measures"
+moscow watchdog,True,False,watchdog
+mountain beaver,True,False,"mountaineer, mountaineers, mountaineer's"
+mountain bluebird,True,False,"mountaineer, mountainside, mountaineers"
+mountain cur,True,False,"mountain, mountainous, mountaineer"
+mountain feist,True,False,"mountains, mountaineers, mountain's"
+mourning gecko,True,False,"mourning, morning"
+mourning warbler,True,False,mourning
+mouse spider,True,False,"outsider, spider, outsiders"
+mouse-deer (chevrotain),False,False,No close match found
+mozambique spitting cobra,False,False,No close match found
+mud snake,True,False,"snake, unmake, snakes"
+mudi,True,False,"mud, maud, maudlin"
+mudpuppy,True,False,puppy
+mulga snake,True,False,mulgars
+mullet fish,True,False,"mullet, mullins, cuttlefish"
+muskellunge (muskie),False,False,No close match found
+mussurana snake,False,False,No close match found
+muttaburrasaurus,False,False,No close match found
+muttaburrasaurus,False,False,No close match found
+nabarlek,True,False,"abrek, unable, enable"
+naegleria,True,False,"valeria, algeria, managerial"
+natterjack,True,False,"attack, attract, attacks"
+neapolitan mastiff,True,False,neapolitan
+nebelung,True,False,"kneeling, belong, rebelling"
+nelore cattle,True,False,forecastle
+neon tetra,True,False,"frontera, enter"
+neptune grouper,False,False,No close match found
+netherland dwarf rabbit,False,False,No close match found
+new hampshire red chicken,False,False,No close match found
+newfoundland,True,True,"newfoundland, newland, wonderland"
+newfypoo,True,False,newport
+nguni cattle,True,False,cattle
+nicobar pigeon,False,False,No close match found
+nigerian goat,False,False,No close match found
+night adder,True,False,"nightmare, tighter, nightmares"
+night heron,True,False,"nighthound, nightgown, enlighten"
+night snake,True,False,"nightingale, nights, nightmare"
+nile crocodile,True,False,"crocodile, crocodiles, crocodile's"
+nile monitor,True,False,"monitor, premonitory"
+nile perch,True,False,"perch, leper, leech"
+no see ums,True,False,"seems, noses"
+norfolk terrier,False,False,No close match found
+norrbottenspets,False,False,No close match found
+north american black bear,False,False,No close match found
+northern alligator lizard,False,False,No close match found
+northern cardinal,True,False,international
+northern flicker,True,False,northern
+northern fur seal,False,False,No close match found
+northern inuit dog,False,False,No close match found
+northern jacana,True,False,northern
+northern pintail,True,False,northern
+northern potoo,True,False,"northernmost, northern, norther"
+northern screamer,False,False,No close match found
+northern water snake,True,False,northeastern
+norway rat,True,False,norway
+norwegian buhund,True,False,"norwegian, norwegians"
+norwegian elkhound,True,False,norwegian
+norwegian forest,True,False,"norwegians, norwegian"
+norwegian lundehund,False,False,No close match found
+norwich terrier,False,False,No close match found
+nose-horned viper,False,False,No close match found
+nova scotia duck tolling retriever,False,False,No close match found
+nubian goat,True,False,"nubian, nubians"
+numbat,True,False,"numb, numa, rubato"
+nuralagus,True,False,"euryalus, uranus, analogous"
+nut weevil,False,False,No close match found
+oak toad,True,False,toad
+ocean perch,True,False,"cleaner, cheaper"
+ocean whitefish,True,False,whitefish
+ocellated turkey,False,False,No close match found
+oenpelli python,False,False,No close match found
+oilfish,True,False,"wolfish, goldfish, polish"
+old english sheepdog,False,False,No close match found
+old house borer,True,False,housebreaker
+oleander hawk moth,False,False,No close match found
+olingo,True,False,"lingo, ogling, ling"
+olive baboon,True,False,baboon
+olive python,True,False,liveth
+olive sea snake,False,False,No close match found
+olm,True,False,"ol, volume, tom"
+olympic marmot,True,False,"olympic, olympia"
+onagadori chicken,False,False,No close match found
+onager,True,False,"longer, younger, voyager"
+opabinia,True,False,"abyssinia, pani, pain"
+opaleye (rudderfish),False,False,No close match found
+oranda goldfish,True,False,goldfish
+orange baboon tarantula,False,False,No close match found
+orange dream ball python,False,False,No close match found
+orange roughy ,False,False,No close match found
+orange spider,True,False,"oranges, consider"
+orange tanager (orange-headed tanager),False,False,No close match found
+orange-crowned warbler,False,False,No close match found
+orb weaver,True,False,"weaver, beaver, weavers"
+orchid dottyback,False,False,No close match found
+oregon spotted frog,False,False,No close match found
+ori-pei,True,False,"ripe, tripe, riper"
+oribi,True,False,"orbit, rib, orb"
+oriental cockroach,False,False,No close match found
+oriental dwarf kingfisher,False,False,No close match found
+orinoco crocodile,True,False,"crocodile, crocodiles"
+ornate bichir,False,False,No close match found
+ornate black-tailed rattlesnake,False,False,No close match found
+ornate box turtle,False,False,No close match found
+ornithocheirus,False,False,No close match found
+ornithomimus,True,False,"thomisus, anthemius"
+ortolan bunting,True,False,"taunting, flaunting"
+oscar fish,True,False,"starfish, scarfs, scars"
+ostracod,True,False,"traced, strode, strand"
+otterhound,True,False,"deerhound, motherhood, tottered"
+oviraptor,True,False,"orator, vibratory, oratory"
+owl butterfly,True,False,"butterfly, butterfly's, utterly"
+owlfly (ascalaphidae),False,False,No close match found
+oxpecker,True,False,"woodpecker, woodpeckers, rocker"
+oyster toadfish,False,False,No close match found
+ozark bass,False,False,No close match found
+pachycephalosaurus,False,False,No close match found
+pacific coast tick,False,False,No close match found
+pacific sleeper shark,False,False,No close match found
+pacific spaghetti eel,False,False,No close match found
+pademelon,True,False,"penelon, watermelon, melon"
+painted bunting,True,False,"painting, paintings, inventing"
+painted turtle,True,False,"painter, painted"
+palaeoloxodon namadicus,False,False,No close match found
+palaeophis,True,False,"palais, palaces, pales"
+paleoparadoxia,True,False,"paradoxical, paradox, leopard"
+palm rat,True,False,"palmer, palate, part"
+palo verde beetle,False,False,No close match found
+panda pied ball python,False,False,No close match found
+pantaloon bee,True,False,"pantaloon, pantaloons"
+panthera atrox (american lion),False,False,No close match found
+papillon mix,True,False,papillon
+paradise flying snake,False,False,No close match found
+parasaurolophus,True,False,parasols
+parrot snake,True,False,"partake, parrots, partakes"
+parrotlet,True,False,"partlet, parrot, parole"
+parson russell terrier,False,False,No close match found
+parti schnauzer,True,False,"parishioner, parishioners"
+patagonian mara,True,False,"patagonian, patagonians, patagonia"
+patagotitan,True,False,"patagonian, patagonians, patagonia"
+patas monkey,True,False,"patrimony, parsimony, monkey"
+patterdale terrier,False,False,No close match found
+pea puffer,False,False,No close match found
+peacock bass,True,False,"peacocks, peacock's, peacock"
+peacock butterfly,True,False,butterfly
+peacock spider,True,False,"peacocks, peacock's, reconsider"
+peagle,True,False,"eagle, pegler, pealed"
+peekapoo,True,False,"peep, peek, papoose"
+pekingese,True,False,"pekinese, peking, perkins"
+pelagornis,True,False,"peonies, pelagia, agonies"
+pelagornithidae,False,False,No close match found
+pelycosaurs,True,False,"enclosures, delacour's, belcour"
+pennsylvania wood cockroach,False,False,No close match found
+peppered moth,True,False,"peppered, peppermint"
+peppermint angelfish,True,False,peppermint
+perch fish,True,False,"perish, perches, perishes"
+père davids deer,False,False,No close match found
+peringueys adder,True,False,ringleader
+perro de presa canario,False,False,No close match found
+persian,True,True,"persian, persians, persia"
+peruvian guinea pig,False,False,No close match found
+peruvian inca orchid,False,False,No close match found
+pesquets parrot (dracula parrot),False,False,No close match found
+petit basset griffon vendéen,False,False,No close match found
+petite goldendoodle,False,False,No close match found
+pharaoh hound,True,False,"pharaoh, profound, pharaohs"
+pheasant-tailed jacana,False,False,No close match found
+philippine cobra,True,False,"philippine, philippines, philippe"
+phoenix chicken,True,False,"phoenician, phoenicians, phoenicia"
+phorusrhacos,False,False,No close match found
+phytosaurs,True,False,"yours, tours, pours"
+picardy spaniel,False,False,No close match found
+pictus catfish,False,False,No close match found
+piebald dachshund,False,False,No close match found
+pied ball python,False,False,No close match found
+pied tamarin,True,False,pitman
+pied-billed grebe,False,False,No close match found
+pig-nosed turtle,False,False,No close match found
+pike fish,True,False,"pinkish, pikes, whitefish"
+pinacate beetle,False,False,No close match found
+pine beetle,True,False,"beetle, beetles"
+pine snake,True,False,"pinnace, snake, pinnacle"
+pine snake,True,False,"pinnace, snake, pinnacle"
+pink fairy armadillo,False,False,No close match found
+pink toed tarantula,False,False,No close match found
+pink-necked green pigeon,False,False,No close match found
+pipe snake,True,False,"snake, pipes"
+pitador,True,False,"pandora, tudor, trapdoor"
+pitsky,True,False,"pity, pits, spits"
+plains hognose snake,False,False,No close match found
+platinum arowana,True,False,platinum
+platybelodon,True,False,"platoon, played, plated"
+pliosaur,True,False,"pour, posture, pisa"
+plott hound mix,False,False,No close match found
+plott hounds,True,False,"bloodhounds, thousands, pounds"
+plymouth rock chicken,False,False,No close match found
+pocket beagle,True,False,pocketed
+pocket pitbull,True,False,pocketful
+podenco canario,False,False,No close match found
+pointer,True,True,"pointer, pointers, printer"
+pointer mix,True,False,"pointer, intermixed, pointers"
+polacanthus,True,False,"pontus, plants, planets"
+polish chicken,True,False,"polishing, chicken"
+polish lowland sheepdog,False,False,No close match found
+polish tatra sheepdog,False,False,No close match found
+polka dot stingray,False,False,No close match found
+pollock fish,True,False,"pollock, polish"
+polyphemus moth,True,False,polyphemus
+pomapoo,True,False,"popopo, popolo, pomp"
+pomchi,True,False,"pouch, porch, epoch"
+pomeagle,True,False,"eagle, ptomel, pommel"
+pomeranian mix,False,False,No close match found
+pompano fish,True,False,"womanish, popish, companies"
+pomsky,True,False,"posy, poky, prosy"
+pond skater,True,False,"poster, ponder, pounder"
+poochon,True,False,"poncho, pooh, procyon"
+poogle,True,False,"poodle, pool, pole"
+pool frog,True,False,popolo
+porbeagle shark,False,False,No close match found
+porcupinefish,True,False,"porcupines, porcupine, occupies"
+portuguese podengo,True,False,portuguese
+potoo,True,False,"pontoon, porto, protocol"
+powderpost beetle,False,False,No close match found
+procoptodon,True,False,"promotion, proscription, proportion"
+psittacosaurus,True,False,scaurus
+psittacosaurus,True,False,scaurus
+pteranodon,True,False,"afternoon, tendons, rangoon"
+pudelpointer,True,False,"pointer, splinter, pointers"
+puertasaurus,True,False,"taurus, pleasures, peasmarsh"
+pug mix,False,False,No close match found
+pugapoo,True,False,"papoose, bugaboo"
+pugshire,True,False,"shire, ploughshare, pushmi"
+puli,True,False,"pulpit, public, apulia"
+pumi,True,False,"pushmi, pumice, pump"
+pumpkin patch tarantula,False,False,No close match found
+purple emperor butterfly,False,False,No close match found
+purple tarantula,True,False,"proletariat, proletarian"
+purussaurus,True,False,"pursuers, prussians, pressures"
+puss caterpillar,True,False,"caterpillar, caterpillars"
+puss moth,True,False,"smooth, psmith"
+pygmy hippopotamus,True,False,hippopotamus
+pygmy marmoset (finger monkey),False,False,No close match found
+pygmy python,False,False,No close match found
+pygmy rattlesnake,True,False,rattlesnake
+pygmy shark,False,False,No close match found
+pygora goat,False,False,No close match found
+pyjama shark,True,False,pyjamas
+pyrador,True,False,"pyramid, praetor, paradox"
+pyredoodle,True,False,"poodle, doodle, peddler"
+pyrenean mastiff,False,False,No close match found
+pyrenean shepherd,False,False,No close match found
+pyrosome,True,False,"prose, uprose, roscoe"
+quahog clam,False,False,No close match found
+queen snake,True,False,"greensnake, queens, quesnel"
+quetzalcoatlus northropi,False,False,No close match found
+quoll,True,False,"quill, quell, ull"
+raccoon dog,False,False,No close match found
+racer snake,True,False,"rattlesnake, greensnake"
+radiated tortoise,False,False,No close match found
+ragamuffin,True,True,"ragamuffin, ragamuffins, muffin"
+ragdoll,True,False,"roll, doll, randall"
+raggle,True,False,"draggled, wragge, ragged"
+rainbow boa,True,False,"rainbow, rainbows, rainbow's"
+rainbow grasshopper (dactylotum bicolor),False,False,No close match found
+rainbow kribs (kribensis),False,False,No close match found
+rainbow shark,True,False,"rainbows, rainbow's, rainbow"
+rat snakes,True,False,"rattlesnake, snakes, snake's"
+red ackie monitor,False,False,No close match found
+red aphids,True,False,"rapids, reads, rapid"
+red diamondback rattlesnake,False,False,No close match found
+red drum fish,True,False,reddish
+red finch,True,False,"finch, wrench, trench"
+red kite,True,False,"credited, recite, edited"
+red knee tarantula,False,False,No close match found
+red nose pit bull,False,False,No close match found
+red paper wasp,True,False,reapers
+red racer snake,False,False,No close match found
+red spitting cobra,False,False,No close match found
+red star chicken,True,False,stricken
+red tail boa (common boa),False,False,No close match found
+red wolf,True,False,"rudolf, wolf, rodolfo"
+red-bellied black snake,False,False,No close match found
+red-bellied woodpecker,False,False,No close match found
+red-billed quelea bird,False,False,No close match found
+red-eared slider,False,False,No close match found
+red-eyed tree frog,False,False,No close match found
+red-footed tortoise,False,False,No close match found
+red-handed tamarin,False,False,No close match found
+red-headed vulture,False,False,No close match found
+red-lipped batfish,False,False,No close match found
+red-shouldered hawk,True,False,shouldered
+red-tailed cuckoo bumblebee,False,False,No close match found
+red-winged blackbird,False,False,No close match found
+redback spider,True,False,reconsider
+redbone coonhound,False,False,No close match found
+redcap chicken,True,False,chicken
+redear sunfish,True,False,sunfish
+redhump eartheater,False,False,No close match found
+redtail catfish,False,False,No close match found
+regal jumping spider,False,False,No close match found
+repenomamus,True,False,"tremendous, repents, repeats"
+rex rabbit,True,False,"rabbit, rabbits, rabbit's"
+rhamphosuchus,False,False,No close match found
+rhino beetle,True,False,beetle
+rhino viper,True,False,"riviere, rhinoceros, hanover"
+rhode island red chicken,False,False,No close match found
+rhodesian ridgeback,False,False,No close match found
+rhombic egg-eater snake,False,False,No close match found
+ribbon eel,True,False,"ribbon, ribbons"
+ribbon snake,True,False,"ribbons, ribbon"
+rim rock crowned snake,False,False,No close match found
+ring-billed gull,False,False,No close match found
+ringed kingfisher,True,False,kingfisher
+rinkhals snake,False,False,No close match found
+river turtle,True,False,"overture, turtle, overtures"
+robber flies,True,False,"robberies, robbers, shrubberies"
+rock bass,True,False,"rocks, frocks"
+rock crab,True,False,"rocca, rocker"
+rock python,True,False,procyon
+rockhopper penguin,False,False,No close match found
+rodents,True,True,"rodents, rents, rhodes"
+root aphids,True,False,rapids
+rose-breasted grosbeak,False,False,No close match found
+rosy boa,True,False,"rowboat, rosy, rostova"
+rotterman,True,False,"rotten, rotterdam, trotter"
+rottle,True,False,"throttle, rotten, rotted"
+rottsky,True,False,"rosy, vronsky, trotzky"
+rottweiler mix,False,False,No close match found
+rough earth snake,False,False,No close match found
+rough green snake,True,False,greensnake
+rough-legged hawk (rough-legged buzzard),False,False,No close match found
+rove beetle,True,False,"beetle, beetles"
+royal penguin,True,False,"penguin, penguins"
+rubber boa,True,False,"rubber, rubbers"
+ruby-crowned kinglet,False,False,No close match found
+ruby-throated hummingbird,False,False,No close match found
+rufous hummingbird,False,False,No close match found
+russels viper,False,False,No close match found
+russell terrier,False,False,No close match found
+russian bear dog,False,False,No close match found
+russian tortoise,True,False,"tortoise, russians"
+saanen goat,True,False,scapegoat
+saarloos wolfdog,False,False,No close match found
+saber-toothed tiger,False,False,No close match found
+sable black german shepherd,False,False,No close match found
+sable ferret,True,False,ferret
+sable german shepherd,False,False,No close match found
+saddleback caterpillar,True,False,caterpillar
+saint berdoodle,False,False,No close match found
+saint shepherd,True,False,"shepherd, swineherd, shepherds"
+salmon shark,True,False,"salmons, salons, salmon"
+sambar,True,False,"saba, samovar, samaria"
+samoyed,True,False,"sayed, swayed, stayed"
+san francisco garter snake,False,False,No close match found
+sand lizard,True,False,"standard, spaniard, scandalized"
+sand viper,True,False,"stander, slander, sanders"
+sandworm,True,False,"sandford, random, candor"
+saola,True,False,"sola, sala, spatola"
+sapsali,True,False,"saps, sapling, staal"
+sarcosuchus,True,False,"couches, bacchus"
+sardines,True,True,"sardines, sardine, tardiness"
+sarkastodon,True,False,"mastodon, separation, ralston"
+sarplaninac,True,False,"scarlatina, spinach, sharpening"
+sarus crane,True,False,"sausage, ascagne, arrange"
+satanic leaf-tailed gecko,False,False,No close match found
+saturniidae moth,False,False,No close match found
+sauropoda,True,False,"saturday, saturdays, aurora"
+sauropoda,True,False,"saturday, saturdays, aurora"
+savanna goat,True,False,"savannah, savant"
+savannah monitor,True,False,savannah
+savannah sparrow,True,False,savannah
+savu python,False,False,No close match found
+saw-scaled viper,False,False,No close match found
+scale-crested pygmy tyrant,False,False,No close match found
+scaleless ball python,False,False,No close match found
+scallops,True,False,"scollops, scalps, scalloped"
+scarab beetle,True,False,"scribble, scramble"
+scarlet kingsnake,True,False,scarlatina
+schapendoes,True,False,"spends, shapes, shaped"
+schneagle,True,False,"snagley, shingle, changeable"
+schnoodle,True,False,"schooled, school, noodle"
+scimitar-horned oryx,False,False,No close match found
+scissor-tailed flycatcher,False,False,No close match found
+scorpion fish,True,False,"scorpions, scorpion, cornish"
+scotch collie,False,False,No close match found
+scottish deerhound,True,False,deerhound
+scottish fold cat,False,False,No close match found
+scottish terrier,True,False,scottish
+scrotum frog,False,False,No close match found
+scutosaurus,True,False,"scaurus, taurus, sculptors"
+sea dragon,True,False,"dragon, aragon, pendragon"
+sea eagle,True,False,"eagle, steerage, steele"
+sea roach,True,False,"search, sarah, roach"
+sea spider,True,False,"seaside, spider, easier"
+sea trout,True,False,"trout, strut, stout"
+sealyham terrier,False,False,No close match found
+sedge warbler,True,False,warbler
+sehuencas water frog,False,False,No close match found
+senegal parrot,False,False,No close match found
+senepol cattle,True,False,seattle
+sequined spider,False,False,No close match found
+seymouria,True,False,"seymour, syria, senorita"
+shantungosaurus,False,False,No close match found
+sharp-shinned hawk,False,False,No close match found
+sharp-tailed snake,False,False,No close match found
+shastasaurus,True,False,"taurus, shasta"
+sheepadoodle,True,False,"saddle, poodle, paddle"
+sheepshead fish,True,False,"sheepish, shepherds"
+shepadoodle,True,False,"saddle, poodle, paddle"
+shepkita,True,False,"sepia, sheila, sheepskin"
+shepweiler,True,False,"wheeler, shelter, shelfer"
+shiba inu,False,False,No close match found
+shiba inu mix,False,False,No close match found
+shichi,True,False,"sich, which, hitch"
+shih poo,True,False,ship
+shih tzu mix,False,False,No close match found
+shikoku,True,False,"sioux, shout, shook"
+shiloh shepherd,True,False,"shepherd, philosopher, shepherds"
+shiranian,True,False,"shining, thracian, siberian"
+shoebill stork,False,False,No close match found
+shollie,True,False,"sallie, mollie, hollis"
+short-eared owl,True,False,"shortened, shoreward"
+short-faced bear,False,False,No close match found
+shortfin mako shark,False,False,No close match found
+siamese,True,True,"siamese, soames, shames"
+siberian,True,True,"siberian, siberia, iberian"
+siberian ibex,True,False,"siberian, siberia, iberian"
+siberian retriever,False,False,No close match found
+siberpoo,True,False,"liverpool, sisterhood, siberia"
+sichuan takin (tibetan takin),False,False,No close match found
+sika deer,True,False,"spider, slider, skewer"
+silken windhound,False,False,No close match found
+silkie chicken,True,False,chicken
+silky shark,True,False,skylark
+silver dollar,True,False,"silverware, silvered"
+silver labrador,True,False,"labrador, silverbridge"
+simbakubwa,True,False,simba
+sinosauropteryx,False,False,No close match found
+sivatherium,True,False,"gatherum, sanitarium, interim"
+six-eyed sand spiders,False,False,No close match found
+sixgill shark,False,False,No close match found
+skate fish,True,False,"skates, selfish, starfish"
+skeleton tarantula,False,False,No close match found
+skink lizard,True,False,lizard
+skye terrier,True,False,"terrier, terriers, enterpriser"
+sleeper shark,True,False,"sleepers, sleeper's, sleeper"
+slovak cuvac,False,False,No close match found
+slow worm,True,False,"silkworm, snowstorm, slower"
+smilosuchus,True,False,"slouch, malchus"
+smokybrown cockroach,False,False,No close match found
+smooth earth snake,False,False,No close match found
+smooth fox terrier,False,False,No close match found
+smooth green snake,True,False,greensnake
+smooth hammerhead shark,False,False,No close match found
+smooth snake,True,False,"soothsayer, smoothness, smoother"
+snook fish,True,False,"sunfish, snobbish, nooks"
+snorkie,True,False,"snore, sortie, snores"
+snouted cobra,False,False,No close match found
+snow bunting,True,False,"snowing, bunting, spouting"
+snowberry clearwing moth,False,False,No close match found
+snowflake eel,True,False,"snowflakes, snowfall"
+snowshoe,True,False,"snows, snowed, snooze"
+soldier beetle,True,False,"soldierly, soldier"
+somali,True,False,"solid, small, shoal"
+song sparrow,True,False,"sparrow, sparrows, sorrow"
+south china tiger,True,False,southminster
+southeastern blueberry bee,True,False,southeasterly
+southern black racer,True,False,southerner
+southern flannel moth,True,False,southernmost
+southern hognose snake,False,False,No close match found
+southern house spider,False,False,No close match found
+southern pacific rattlesnake,False,False,No close match found
+spanador,True,False,"pandora, splendor, spaniard"
+spanish goat,True,False,spanish
+spanish mastiff,False,False,No close match found
+spanish water dog,False,False,No close match found
+sparrowhawk,True,False,"sparrow, sparrows"
+speckled kingsnake,False,False,No close match found
+spectacled bear,True,False,"spectacled, spectacular, spectacle"
+spider ball python,False,False,No close match found
+spider beetle,False,False,No close match found
+spider wasp,True,False,"spiders, spider's, sideways"
+spider-tailed horned viper,False,False,No close match found
+spinner shark,True,False,sinners
+spinone italiano,False,False,No close match found
+spinosaurus,True,False,"spinsters, splendours, sinuous"
+spiny bush viper,False,False,No close match found
+spiny hill turtle,False,False,No close match found
+spixs macaw,False,False,No close match found
+spongy moth,True,False,spongy
+spongy moth,True,False,spongy
+spotted bass,True,False,"spotted, spotless, potted"
+spotted gar,True,False,"spotted, potter, potted"
+spotted garden eel,False,False,No close match found
+spotted lanternfly,False,False,No close match found
+spotted python,True,False,spotted
+spotted skunk,True,False,spotted
+springador,True,False,"springer, spring, syringa"
+springerdoodle,True,False,"springer, springer's, spindle"
+squash bee,True,False,"squashes, squashed, squash"
+squash beetle,True,False,"squashes, squashed, squabble"
+squirrelfish,True,False,"squirrels, squirrel, squires"
+sri lankan elephant,False,False,No close match found
+stabyhoun,True,False,"stamboul, strabo, abound"
+standard schnauzer,True,False,"standards, standardized"
+stargazer fish,True,False,"starfish, triggerfish"
+steelhead salmon,False,False,No close match found
+stellers sea cow,False,False,No close match found
+stiletto snake,True,False,"stiletto, stilton"
+stone crab,True,False,"stronger, stone"
+stonechat,True,False,"stone, somewhat, trenchant"
+stoplight loosejaw,False,False,No close match found
+strawberry hermit crab,False,False,No close match found
+striped rocket frog,False,False,No close match found
+stromatolite,True,False,"tomatoes, tomato, strait"
+stupendemys,True,False,"suspenders, stupendous, suspends"
+styracosaurus,True,False,"scaurus, syracuse"
+suchomimus,True,False,"thomisus, succours, comus"
+sulcata tortoise,True,False,tortoise
+sultan chicken,True,False,"thicken, slacken, chicken"
+sumatran elephant,False,False,No close match found
+sumatran orangutan,False,False,No close match found
+sumatran rhinoceros,True,False,rhinoceros
+sumatran tiger,True,False,"stranger, strangers, surcantine"
+sunbeam snake,True,False,"sunbeams, sunbeam, namesake"
+sunset ball python,False,False,No close match found
+super pastel ball python,False,False,No close match found
+supersaurus,True,False,"superfluous, superiors, supernatural"
+superworm,True,False,"superior, superiors, perform"
+sussex chicken,True,False,chicken
+swai fish,True,False,"waifs, swish, starfish"
+swainsons hawk,True,False,swainson
+swallowtail butterfly,False,False,No close match found
+swallowtail caterpillar,False,False,No close match found
+swedish elkhound,False,False,No close match found
+swedish lapphund,False,False,No close match found
+swedish vallhund,False,False,No close match found
+syrian hamster,True,False,syrians
+taco terrier,True,False,"terrier, coterie, terriers"
+tailless whip scorpion,False,False,No close match found
+taimen fish,True,False,"tarnish, stamens"
+tamaskan,True,False,"makan, damask, alaska"
+tang,True,True,"tang, twang, tangs"
+tangerine leopard gecko,False,False,No close match found
+tapanuli orangutan,False,False,No close match found
+tarantula hawk,False,False,No close match found
+tarbosaurus,True,False,"arbours, tartarus, harbours"
+tasmanian tiger,False,False,No close match found
+tasmanian tiger snake,False,False,No close match found
+tawny frogmouth,False,False,No close match found
+tawny mining bee,False,False,No close match found
+teacup maltese,True,False,"teacups, maltese"
+teacup miniature horse,False,False,No close match found
+teacup poodle,False,False,No close match found
+teddy bear hamster,False,False,No close match found
+teddy guinea pig,False,False,No close match found
+teddy roosevelt terrier,False,False,No close match found
+telescope fish,True,False,"telescopes, telescope, telescopic"
+ten-lined june beetle,False,False,No close match found
+tennessee walking horse,False,False,No close match found
+tenrec,True,False,"tenure, erec, terence"
+tentacled snake,True,False,"tentacles, tentacle"
+tenterfield terrier,False,False,No close match found
+terror bird,True,False,"terror, terrors, terrier"
+texas blind snake,False,False,No close match found
+texas brown tarantula,False,False,No close match found
+texas coral snake,False,False,No close match found
+texas garter snake,False,False,No close match found
+texas heeler,False,False,No close match found
+texas indigo snake,False,False,No close match found
+texas night snake,False,False,No close match found
+texas rat snake,False,False,No close match found
+texas spiny lizard,False,False,No close match found
+thai ridgeback,False,False,No close match found
+thalassomedon,True,False,harassed
+thanatosdrakon,False,False,No close match found
+the only wild jaguar in the united states has a taste for bears,False,False,No close match found
+therizinosaurus,False,False,No close match found
+thornback ray,True,False,thackeray
+thylacoleo,False,False,No close match found
+thylacoleo carnifex,False,False,No close match found
+thylacosmilus,True,False,thomisus
+tibetan fox,False,False,No close match found
+tibetan mastiff,False,False,No close match found
+tibetan spaniel,False,False,No close match found
+tibetan terrier,True,False,enterpriser
+tiffany,True,False,"tiny, tiff, stiffly"
+tiger muskellunge (muskie),False,False,No close match found
+tiger snake,True,False,"tigers, tiger's, greensnake"
+tiger swallowtail,False,False,No close match found
+tiger swallowtail caterpillar,False,False,No close match found
+tiger trout,True,False,"stertorous, pierrot"
+tiktaalik,True,False,kaliko
+timber rattlesnake (canebrake rattlesnake),False,False,No close match found
+timor python,True,False,morton
+tire track eel,True,False,retrace
+titan beetle,True,False,"tittle, beetle"
+titanoboa,True,False,"titania, titan, chattanooga"
+tokay gecko,False,False,No close match found
+torkie,True,False,"tories, tore, thorkel"
+tornjak,True,False,"torn, tournay, tornado"
+tosa,True,False,"atossa, twos, tsay"
+toxodon,True,False,"woodston, stood, octoroon"
+toy fox terrier,False,False,No close match found
+transylvanian hound,True,False,translation
+tree cricket,True,False,"cricket, crickets, ticket"
+tree frog,True,False,"threefold, therefrom"
+tree kangaroo,True,False,"kangaroo, kangaroos, kangaroo's"
+tree snake,True,False,"greensnake, treherne, trees"
+tree swallow,True,False,"swallow, swallows, wallow"
+tree viper (bamboo viper),False,False,No close match found
+treecreeper,True,False,"creeper, creepers, storekeeper"
+treehopper,True,False,"topper, hopper, trooper"
+treeing tennessee brindle,False,False,No close match found
+treeing walker coonhound,False,False,No close match found
+troodon,True,False,"rondon, rodion, trod"
+tropicbird,True,False,"tropic, tropics, tropical"
+tufted coquette,True,False,coquette
+tully monster,True,False,"monster, monsters"
+turaco,True,False,"tractor, turon, turan"
+turkish angora,True,False,turkish
+turnspit,True,False,"transit, turns, turnpike"
+turtle frog,True,False,"turtle, turtles"
+turtles,True,True,"turtles, turtle's, turtle"
+tusoteuthis,True,False,south's
+tussock moth caterpillar,False,False,No close match found
+twig snake,True,False,"twinkle, twinkled, twine"
+tylosaurus,True,False,"taurus, scaurus, yours"
+uakari,True,False,"zakhar, quaker, karain"
+uaru cichlid,False,False,No close match found
+uguisu,True,False,"guise, augustus, guides"
+uinta ground squirrel,False,False,No close match found
+uintatherium,True,False,"interim, gatherum"
+umbrellabird,True,False,"umbrella, umbrellas, umbrel"
+unau (linnaeuss two-toed sloth),False,False,No close match found
+underwing moth,True,False,"undergrowth, underwent, underneath"
+ural owl,False,False,No close match found
+urechis unicinctus (penis fish),False,False,No close match found
+urial,True,False,"burial, trial, rural"
+uromastyx (spiny-tailed lizard),False,False,No close match found
+urutu snake,False,False,No close match found
+utonagan,True,False,"utopian, tonnage, toga"
+valley bulldog,True,False,bulldog
+vampire crab ,True,False,"vampire, vampires"
+vampire squid,True,False,"vampires, vampire"
+vegavis,True,False,"engravings, vesuvius, veins"
+venus flytrap,False,False,No close match found
+vermilion flycatcher,True,False,flycatcher
+vestal cuckoo bumblebee,False,False,No close match found
+vicuña,True,False,"victual, vicar, victuals"
+vine snake,True,False,"vines, snake, namesake"
+vinegaroon,True,False,"vinegar, vineyard, viner"
+viper boa,True,False,"viper, verona, verbal"
+viper shark (dogfish),False,False,No close match found
+viperfish,True,False,"perish, viper, irish"
+virgin islands dwarf gecko,False,False,No close match found
+volcano snail,True,False,"volcanos, volcanoes, volcano"
+volpino italiano,False,False,No close match found
+wahoo fish,True,False,"wolfish, hoofs, dwarfish"
+waimanu,True,False,"wadman, wain, manu"
+walking catfish,False,False,No close match found
+walleye fish,True,False,"jellyfish, alleys"
+water beetle,True,False,"wattle, waterless, warble"
+water dragon,True,False,"arragon, waterman, terran"
+water vole,True,False,"waterless, waterfowl, watered"
+wattled jacana,False,False,No close match found
+wax moth,True,False,"warmth, moth, mammoth"
+weaver bird,True,False,"weaver, weavers, wearied"
+weimardoodle,True,False,"waddle, doodle"
+wels catfish,True,False,elfish
+welsh black cattle,False,False,No close match found
+welsh corgi,False,False,No close match found
+welsh springer spaniel,False,False,No close match found
+welsh terrier,True,False,"westerner, terrier, westerfield"
+west highland terrier,False,False,No close match found
+west siberian laika,False,False,No close match found
+western blacklegged tick,False,False,No close match found
+western blind snake,False,False,No close match found
+western diamondback rattlesnake,False,False,No close match found
+western gorilla,True,False,westerner
+western green mamba,False,False,No close match found
+western hognose snake,False,False,No close match found
+western kingbird,True,False,westering
+western rat snake,False,False,No close match found
+western rattlesnake (northern pacific rattlesnake),False,False,No close match found
+westiepoo,True,False,"weston, tippoo"
+wheaten terrier,True,False,"enterpriser, chatterer"
+whimbrel,True,False,"whirl, umbrel, timbre"
+whinchat,True,False,"which, chicha, witchcraft"
+whiptail lizard,True,False,halliards
+white bass,True,False,"whites, whitewash, whiteness"
+white butterfly,True,False,"butterfly, butterfly's"
+white catfish,True,False,"whitefish, whitewash, whitish"
+white crappie,True,False,whitechapel
+white ferret / albino ferrets,False,False,No close match found
+white german shepherd,False,False,No close match found
+white rhinoceros,True,False,rhinoceros
+white shark,True,False,"whites, whiter, whitewash"
+white sturgeon ,True,False,sturgeon
+white-crowned sparrow,False,False,No close match found
+white-eyed vireo,False,False,No close match found
+white-faced capuchin,False,False,No close match found
+white-shouldered house moth,False,False,No close match found
+white-tail deer,True,False,"whittier, whittaker, whiteside"
+white-tailed eagle,False,False,No close match found
+whoodle,True,False,"woodley, whole, woodpile"
+willow flycatcher,True,False,flycatcher
+willow warbler,True,False,"allowable, warbler"
+winter moth,True,False,"winter, interment, innermost"
+wire fox terrier,False,False,No close match found
+wirehaired pointing griffon,False,False,No close match found
+wirehaired vizsla,False,False,No close match found
+wiwaxia,True,False,wistaria
+wolf eel,True,False,"wolfe, wolfkettle, wolfe's"
+wolf snake,True,False,"wolfe, snake"
+woma python,True,False,compton
+wood bison,True,False,"woodston, woodbine, woodpigeon"
+wood duck,True,False,"woodchuck, woodcock, wooded"
+wood frog,True,False,woodroof
+wood tick,True,False,"woodcock, woodchuck, toothpick"
+wood turtle,True,False,"turtle, wootten, woodley"
+woodlouse,True,False,"woodhouse, woodhouse's, woodley"
+woodlouse spider,True,False,woodhouse's
+woodrat,True,False,"woodcraft, wood, drat"
+wool carder bee,False,False,No close match found
+woolly aphids,False,False,No close match found
+woolly bear caterpillar,False,False,No close match found
+worm snake,True,False,"forsake, worse, worms"
+writing spider,True,False,"writings, writing"
+wrought iron butterflyfish,False,False,No close match found
+wryneck,True,False,"wreck, wrecks, neck"
+wyandotte chicken,False,False,No close match found
+wyoming toad,True,False,"wyoming, lymington"
+x-ray tetra,True,False,rayther
+xeme (sabines gull),False,False,No close match found
+xenacanthus,True,False,"tenants, mendicants, enchanters"
+xenoceratops,True,False,"generations, execrations, operators"
+xenoposeidon,True,False,"poseidon, xenophon, extension"
+xenotarsosaurus,False,False,No close match found
+xiaosaurus,True,False,scaurus
+xiaotingia,True,False,"rioting, extricating, expatiating"
+xingu river ray,False,False,No close match found
+xiongguanlong,False,False,No close match found
+xiphactinus,True,False,"exactions, phaeacians, actions"
+xoloitzcuintli,False,False,No close match found
+yabby,True,False,"tabby, cabby, babby"
+yakutian laika,False,False,No close match found
+yarara,True,False,"array, arras, tartar"
+yellow anaconda,False,False,No close match found
+yellow aphids,True,False,"yellowish, yellows, fellowships"
+yellow bass,True,False,"yellows, yellow, yellowish"
+yellow bellied sapsucker,False,False,No close match found
+yellow belly ball python,False,False,No close match found
+yellow bullhead catfish,False,False,No close match found
+yellow cobra,True,False,"yellower, yellow"
+yellow crazy ant,False,False,No close match found
+yellow sac spider,False,False,No close match found
+yellow spotted lizard,False,False,No close match found
+yellow tanager (black-and-yellow tanager),False,False,No close match found
+yellow tang,True,False,"yellowstone, yellow, bellowing"
+yellow-bellied sea snake,False,False,No close match found
+yellow-eyed penguin,False,False,No close match found
+yellow-faced bee,False,False,No close match found
+yellowish cuckoo bumblebee (formerly fernalds cuckoo bumblebee),False,False,No close match found
+yellowjacket (yellow jacket),False,False,No close match found
+yeti crab,False,False,No close match found
+yokohama chicken,True,False,yokohama
+yoranian,True,False,"hyrcania, yanina, urania"
+yorkie bichon,False,False,No close match found
+yorkiepoo,True,False,"yorke, yoritomo, yorkshire"
+zebra mussels,True,False,"brussels, mussels"
+zebra pleco,False,False,No close match found
+zebra shark,False,False,No close match found
+zebra snake,False,False,No close match found
+zebra spitting cobra,False,False,No close match found
+zebra tarantula,False,False,No close match found
+zebrafish (zebra fish),False,False,No close match found
+zokor,True,False,"zoo, kor, zyobor"
+zonkey,True,False,"monkey, donkey, zone"
+zorse,True,False,"orse, worse, norse"
+zuchon,True,False,"luncheon, zurich, urchin"
+amur leopard,True,False,"leopard, leopards"
+mourning gecko,True,False,"mourning, morning"
+cobalt blue tarantula,False,False,No close match found
+dried fruit moth,False,False,No close match found
+nile monitor,True,False,"monitor, premonitory"
+raccoon dog,False,False,No close match found
+silver dollar,True,False,"silverware, silvered"
+woodlouse,True,False,"woodhouse, woodhouse's, woodley"
