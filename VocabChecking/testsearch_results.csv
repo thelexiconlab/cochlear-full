@@ -1,9 +1,0 @@
-Word,Found,Original Found,Close Matches
-cat,True,True,cat
-frog,True,True,frog
-salamanders,True,False,salamander
-snake,True,True,"snake, snakes"
-turtle,True,True,"turtle, turtles"
-horse,True,True,"horse, horses, horsed"
-axolotl,False,False,No close match found
-hamster,False,False,No close match found
