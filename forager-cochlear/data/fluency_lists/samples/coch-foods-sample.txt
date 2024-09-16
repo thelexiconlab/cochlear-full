@@ -1,0 +1,14 @@
+ID	Word
+CAJ-663	pork
+CAJ-663	broccoli
+CAJ-663	grilledcheesesandwich
+CAJ-663	hamburgers
+CAJ-663	hotdogs
+CAJ-663	meatloaf
+CAJ-663	pizza
+CAJ-663	popcorn
+CAM-666	strawberries
+CAM-666	raspberries
+CAM-666	apricots
+CAM-666	bread
+CAM-666	jam

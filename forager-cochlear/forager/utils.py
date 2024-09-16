@@ -222,7 +222,7 @@ def prepareDataWithCorrections(path, domain):
         
 
 
-        return data, replacement_df, df, corrected_df
+        return data, replacement_df, corrected_file, corrected_df
     
     else:
         print("Success! We have found exact matches for all items in your data. \n\n")
@@ -230,13 +230,13 @@ def prepareDataWithCorrections(path, domain):
         replacement_df['evaluation'] = "FOUND"
         # Add the column corresponding to the replacement column , set it all to the same value   
         data = []
-        lists = df.groupby("SID")
+        lists = corrected_file.groupby("SID")
         
         for sub, frame in lists:
             list = frame["entry"].values.tolist()
             subj_data = (sub, list)
             data.append(subj_data)
         
-        return data, replacement_df, df
+        return data, replacement_df, corrected_file
 
 
