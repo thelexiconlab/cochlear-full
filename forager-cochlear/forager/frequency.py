@@ -7,17 +7,17 @@ import numpy as np
 import re
 from wordfreq import zipf_frequency
 
-def get_frequencies(embeddings,path_for_lexical_data):
+def get_frequencies(path_for_lexical_data):
     '''
         Description:
             Creates a CSV file of frequencies for each word in the vocabulary, obtained from the wordfreq package.
             The first column is the word, the second is the log count, and the third is the raw count.
             The resulting file is saved in the data/lexical data folder.
         Args:
-            (1) embeddings: path to the CSV file of semantic embeddings
+            (1) embeddings: path to vocab
     '''
-    data = pd.read_csv(embeddings) 
-    items = data.columns.to_list()
+    data = pd.read_csv(path_for_lexical_data + 'vocab.csv') 
+    items = data['word'].values.tolist()
 
     items_and_counts = []
     for item in tqdm(items):
@@ -31,4 +31,4 @@ def get_frequencies(embeddings,path_for_lexical_data):
     item_counts_df.to_csv(path_for_lexical_data + '/USE_frequencies.csv', index=False, header=None)
     return None
 
-#get_frequencies('data/lexical data/semantic_embeddings.csv')
+get_frequencies('../data/lexical_data/animals/')

@@ -418,12 +418,16 @@ oname = os.path.join(output_dir, file_name)
 
 
 if args.pipeline == 'evaluate_data':
-    data, replacement_df, processed_df = retrieve_data(args.data, args.domain)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
     with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
         # Save the first DataFrame as a CSV file inside the zip
         with zipf.open('evaluation_results.csv', 'w') as csvf:
             replacement_df.to_csv(csvf, index=False)
-
+        
+        # Save the first DataFrame as a CSV file inside the zip
+        with zipf.open('corrected_df.csv', 'w') as csvf:
+            corrected_df.to_csv(csvf, index=False)
+            
         # Save the second DataFrame as a CSV file inside the zip
         with zipf.open('processed_data.csv', 'w') as csvf:
             processed_df.to_csv(csvf, index=False)
