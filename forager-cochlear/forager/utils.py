@@ -204,6 +204,11 @@ def prepareDataWithCorrections(path, domain):
         elif trunc_count>0:
             print("Lists were truncated at " + str(trunc_count) + " items across all lists.\n")
         
+        # remove consecutive duplicates from the corrected file for the same SID and entry
+        # for example, if zebra is repeated twice consecutively, remove the second instance
+        # but if zebra is repeated twice with another word in between, keep both instances
+        corrected_file = corrected_file.loc[(corrected_file['SID'] != corrected_file['SID'].shift()) | (corrected_file['entry'] != corrected_file['entry'].shift())]
+
         # Stratify data into fluency lists
         data = []
         lists = corrected_file.groupby("SID")

@@ -1,0 +1,12 @@
+ID	Word
+CAJ-663	peacock
+CAJ-663	giraffe
+CAJ-663	elephant
+CAJ-663	zebra
+CAN-667	cat
+CAN-667	lion
+CAN-667	tiger
+CAN-667	dog
+CAN-667	hamster
+CAN-667	gerbil
+CAN-667	sheep
