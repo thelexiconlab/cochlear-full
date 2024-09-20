@@ -278,7 +278,7 @@ class phonology_funcs:
     
 
 ### SAMPLE RUN CODE ###
-create_semantic_matrix('../data/lexical_data/foods/word2vec/100/embeddings.csv')
+#create_semantic_matrix('../data/lexical_data/foods/word2vec/100/embeddings.csv')
 
 ## phonological similarity is calcualted for the original utterances
 #phonology_funcs.get_phonological_similarity('meatloaf', 'pizza')
