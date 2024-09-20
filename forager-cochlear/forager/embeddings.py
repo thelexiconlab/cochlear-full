@@ -1,4 +1,5 @@
 import pandas as pd 
+import os
 
 class embeddings:
     '''
@@ -50,8 +51,18 @@ class Embeddings:
         embeddings_df = embeddings_df.transpose()
     
         # Save the DataFrame as a CSV file
-        self.path = domain_path + model_for_embeddings + '/' + dimension + '_embeddings.csv'
-        embeddings_df.to_csv(self.path, index=False)
+        #self.path = domain_path + model_for_embeddings + '/' + dimension + '/' + 'embeddings.csv'
+        # create directory if it doesn't exist
+        # Construct the output path
+        # Define the path components
+        oname = os.path.join(domain_path, model_for_embeddings, dimension)
+        file_path = os.path.join(oname, 'embeddings.csv')
+
+        # Create the directory if it does not exist
+        os.makedirs(oname, exist_ok=True)
+
+        # Save the DataFrame to a CSV file
+        embeddings_df.to_csv(file_path, index=False)
 
 # SAMPLE RUN CODE
-#embeddings_instance = Embeddings('foods', 'word2vec', '50')
+embeddings_instance = Embeddings('animals', 'word2vec', '300')

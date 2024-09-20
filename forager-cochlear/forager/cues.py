@@ -172,7 +172,7 @@ def create_semantic_matrix(path_to_embeddings):
     semantic_matrix_df.to_csv(path_for_lexical_data + '/semantic_matrix.csv', header=False, index=False)
     return semantic_matrix
 
-def get_semantic_similarity(word1, word2, domain, model):
+def get_semantic_similarity(word1, word2, domain, model, dimension):
     '''
         Description:
             Takes in two words and returns their semantic similarity
@@ -183,7 +183,7 @@ def get_semantic_similarity(word1, word2, domain, model):
             (1) semantic_similarity (float): semantic similarity between word1 and word2
     '''
     print(f"word1={word1}, word2={word2}")
-    semantic_matrix = pd.read_csv('../data/lexical_data/' + domain + '/' + model + '/semantic_matrix.csv', header=None).values
+    semantic_matrix = pd.read_csv('../data/lexical_data/' + domain + '/' + model + '/' + dimension+  '/' + 'semantic_matrix.csv', header=None).values
     labels = pd.read_csv('../data/lexical_data/' + domain + '/vocab.csv')['word'].values.tolist()
     print(f"semantic similarity={semantic_matrix[labels.index(word1), labels.index(word2)]}")
 
@@ -278,7 +278,7 @@ class phonology_funcs:
     
 
 ### SAMPLE RUN CODE ###
-#create_semantic_matrix('../data/lexical_data/animals/word2vec/50_embeddings.csv')
+create_semantic_matrix('../data/lexical_data/foods/word2vec/100/embeddings.csv')
 
 ## phonological similarity is calcualted for the original utterances
 #phonology_funcs.get_phonological_similarity('meatloaf', 'pizza')
