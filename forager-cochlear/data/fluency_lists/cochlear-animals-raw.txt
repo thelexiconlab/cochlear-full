@@ -197,7 +197,7 @@ CAU-667	koala
 CAU-667	bear
 CAU-667	bear
 CAU-667	lemur
-CAU-667	ring_tailed
+CAU-667	ringtailed
 CAU-667	lemur
 CAU-667	lion
 CAU-667	elephant
@@ -365,7 +365,7 @@ CBL-698	parakeet
 CBL-698	pelican
 CBL-698	parrot
 CBL-698	pelican
-CBL-698	t_rex
+CBL-698	trex
 CBL-698	koala
 CBL-698	kangaroo
 CBL-698	giraffe
@@ -387,7 +387,7 @@ CBM-702	woodpecker
 CBM-702	iguana
 CBM-702	snake
 CBM-702	snail
-CBM-702	not_snails
+CBM-702	notsnails
 CBM-702	goldfish
 CBM-702	clownfish
 CBM-702	dog
@@ -640,7 +640,7 @@ CDG-753	eagle
 CDG-753	hawk
 CDH-754	wolf
 CDH-754	bear
-CDH-754	t_rex
+CDH-754	trex
 CDH-754	dragon
 CDH-754	pegasus
 CDH-754	stegosaurus
@@ -1129,7 +1129,7 @@ SRF-483	pig
 SRF-483	horse
 SRF-483	chicken
 SRF-483	hog
-SRF-483	saber_tooth_cat
+SRF-483	sabertoothcat
 SRF-483	duck
 SRR-498	dog
 SRR-498	cat

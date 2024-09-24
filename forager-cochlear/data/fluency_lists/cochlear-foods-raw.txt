@@ -185,7 +185,7 @@ CBD-686	chocolatecoveredstrawberries
 CBD-686	cocacola
 CBD-686	hersheys
 CBD-686	kiwis
-CBD-686	m&ms
+CBD-686	mms
 CBD-686	marblecake
 CBD-686	marshmallows
 CBD-686	nastycake
