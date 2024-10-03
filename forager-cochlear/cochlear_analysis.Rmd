@@ -1,0 +1,444 @@
+---
+title: "Cochlear Analysis"
+author: "Channing Hambric"
+date: "2024-09-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Libraries
+```{r}
+library(tidyverse)
+library(ggthemes)
+library(purrr)
+library(ggpubr)
+library(lubridate)
+library(dplyr)
+library(ggplot2)
+library(hrbrthemes)
+library(tidyboot)
+library(gridExtra)
+library(lme4)
+library(emmeans)
+library(data.table)
+library(Hmisc)
+library(paletteer)
+```
+
+#Importing Fluency/Clustering Data
+
+```{r}
+participant_groupings <- read.csv("participant_groupings.csv")
+
+#Animals
+#Animals - W2V 50 dim
+animals_50_w2v_fluency <- read.csv("output/animals/word2vec/50/individual_descriptive_stats.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+#Animals - W2V 100 dim
+animals_100_w2v_fluency <- read.csv("output/animals/word2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+#Animals - W2V 200 dim
+animals_200_w2v_fluency <- read.csv("output/animals/word2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+#Animals - W2V 300 dim
+animals_300_w2v_fluency <- read.csv("output/animals/word2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+#Animals - S2V 50 dim
+animals_50_s2v_fluency <- read.csv("output/animals/speech2vec/50/individual_descriptive_stats.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+#Animals - S2V 100 dim
+animals_100_s2v_fluency <- read.csv("output/animals/speech2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+#Animals - S2V 200 dim
+animals_200_s2v_fluency <- read.csv("output/animals/speech2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+#Animals - S2V 300 dim
+animals_300_s2v_fluency <- read.csv("output/animals/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+
+full_animals_fluency = rbind(animals_50_w2v_fluency,animals_100_w2v_fluency,animals_200_w2v_fluency,animals_300_w2v_fluency,animals_50_s2v_fluency,animals_100_s2v_fluency,animals_200_s2v_fluency,animals_300_s2v_fluency)
+
+#Linking participant groupings
+full_animals_fluency = full_animals_fluency %>%
+   mutate("domain"="animals") %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))%>%
+  rename("Numb_of_Items"="X._of_Items")
+#Foods
+#Foods - W2V 50 dim
+foods_50_w2v_fluency <- read.csv("output/foods/word2vec/50/individual_descriptive_stats.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+#Foods - W2V 100 dim
+foods_100_w2v_fluency <- read.csv("output/foods/word2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+#Foods - W2V 200 dim
+foods_200_w2v_fluency <- read.csv("output/foods/word2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+#Foods - W2V 300 dim
+foods_300_w2v_fluency <- read.csv("output/foods/word2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+#Foods - S2V 50 dim
+foods_50_s2v_fluency <- read.csv("output/foods/speech2vec/50/individual_descriptive_stats.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+#Foods - S2V 100 dim
+foods_100_s2v_fluency <- read.csv("output/foods/speech2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+#Foods - S2V 200 dim
+foods_200_s2v_fluency <- read.csv("output/foods/speech2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+#Foods - S2V 300 dim
+foods_300_s2v_fluency <- read.csv("output/foods/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+
+full_foods_fluency = rbind(foods_50_w2v_fluency,foods_100_w2v_fluency,foods_200_w2v_fluency,foods_300_w2v_fluency,foods_50_s2v_fluency,foods_100_s2v_fluency,foods_200_s2v_fluency,foods_300_s2v_fluency)
+
+#Linking participant groupings
+full_foods_fluency = full_foods_fluency%>%
+    mutate("domain"="foods") %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant")) %>%
+  rename("Numb_of_Items"="X._of_Items")
+```
+
+#Importing Lexical Data
+```{r}
+#Animals
+#Animals - W2V 50 dim
+animals_50_w2v_lexical <- read.csv("output/animals/word2vec/50/lexical_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+#Animals - W2V 100 dim
+animals_100_w2v_lexical <- read.csv("output/animals/word2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+#Animals - W2V 200 dim
+animals_200_w2v_lexical <- read.csv("output/animals/word2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+#Animals - W2V 300 dim
+animals_300_w2v_lexical <- read.csv("output/animals/word2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+#Animals - S2V 50 dim
+animals_50_s2v_lexical <- read.csv("output/animals/speech2vec/50/lexical_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+#Animals - S2V 100 dim
+animals_100_s2v_lexical <- read.csv("output/animals/speech2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+#Animals - S2V 200 dim
+animals_200_s2v_lexical <- read.csv("output/animals/speech2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+#Animals - S2V 300 dim
+animals_300_s2v_lexical <- read.csv("output/animals/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+
+full_animals_lexical = rbind(animals_50_w2v_lexical,animals_100_w2v_lexical,animals_200_w2v_lexical,animals_300_w2v_lexical,animals_50_s2v_lexical,animals_100_s2v_lexical,animals_200_s2v_lexical,animals_300_s2v_lexical)
+
+#Linking participant groupings
+full_animals_lexical = full_animals_lexical %>%
+   mutate("domain"="animals") %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+#Foods
+#Foods - W2V 50 dim
+foods_50_w2v_lexical <- read.csv("output/foods/word2vec/50/lexical_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+#Foods - W2V 100 dim
+foods_100_w2v_lexical <- read.csv("output/foods/word2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+#Foods - W2V 200 dim
+foods_200_w2v_lexical <- read.csv("output/foods/word2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+#Foods - W2V 300 dim
+foods_300_w2v_lexical <- read.csv("output/foods/word2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+#Foods - S2V 50 dim
+foods_50_s2v_lexical <- read.csv("output/foods/speech2vec/50/lexical_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+#Foods - S2V 100 dim
+foods_100_s2v_lexical <- read.csv("output/foods/speech2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+#Foods - S2V 200 dim
+foods_200_s2v_lexical <- read.csv("output/foods/speech2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+#Foods - S2V 300 dim
+foods_300_s2v_lexical <- read.csv("output/foods/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+
+full_foods_lexical = rbind(foods_50_w2v_lexical,foods_100_w2v_lexical,foods_200_w2v_lexical,foods_300_w2v_lexical,foods_50_s2v_lexical,foods_100_s2v_lexical,foods_200_s2v_lexical,foods_300_s2v_lexical)
+
+#Linking participant groupings
+full_foods_lexical = full_foods_lexical %>%
+  mutate("domain"="foods") %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant")) 
+```
+Fluency Analyses
+```{r}
+#ANIMALS 
+animals_fluency<- full_animals_fluency%>% drop_na()
+
+average_animals_fluency = animals_fluency %>% group_by(Subject,Group) %>%
+  summarise(average_animals_fluency_count= mean(Numb_of_Items))
+
+#Average fluency 
+animals_group_fluency = average_animals_fluency %>%
+  group_by(Group) %>%
+  summarise(
+    fluency_mean = mean(average_animals_fluency_count),
+    fluency_sd = sd(average_animals_fluency_count))
+#View(animals_group_fluency)
+
+#Does fluency score differ by Group 
+animals_group_lm = lmer(data = animals_fluency, Numb_of_Items~ Group + (1|Subject))
+summary(animals_group_lm)
+car::Anova(animals_group_lm)
+
+animals_numb<-animals_fluency  %>%
+  group_by(Group) %>% tidyboot_mean(Numb_of_Items, nboot = 1000, na.rm = T) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity',color="black") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
+    geom_point(data = animals_fluency, aes(x= Group, y = Numb_of_Items, group = Group),
+               position = position_jitterdodge(0.1),alpha = 0.3)+
+    labs(y = 'number of items produced', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = 'none')+ annotate("text", x = 2.1, y = 50, label = "animals", 
+           hjust = 2, size = 4, fontface = "bold", color = "black") +  scale_y_continuous(limits = c(0, 50))+ 
+  scale_colour_paletteer_d("nationalparkcolors::Acadia")+
+  scale_color_paletteer_d("nationalparkcolors::Acadia")+
+  scale_fill_paletteer_d("nationalparkcolors::Acadia")
+
+
+#Foods
+foods_fluency<- full_foods_fluency%>% drop_na()
+
+average_foods_fluency = foods_fluency %>% group_by(Subject,Group) %>%
+  summarise(average_foods_fluency_count= mean(Numb_of_Items))
+
+#Average fluency 
+foods_group_fluency = average_foods_fluency %>%
+  group_by(Group) %>%
+  summarise(
+    fluency_mean = mean(average_foods_fluency_count),
+    fluency_sd = sd(average_foods_fluency_count))
+#View(foods_group_fluency)
+
+#Does fluency score differ by Group 
+foods_group_lm = lmer(data = foods_fluency, Numb_of_Items~ Group + (1|Subject))
+summary(foods_group_lm)
+car::Anova(foods_group_lm)
+
+
+#Combining across animals and foods
+comb_fluency <- rbind(animals_fluency,foods_fluency)
+#Average comb fluency 
+average_comb_fluency = comb_fluency %>% group_by(Subject,Group,domain) %>%
+  summarise(average_fluency_count= mean(Numb_of_Items))
+
+#Does fluency differ by group & domain 
+comb_group_lm = lmer(data = comb_fluency, Numb_of_Items~ Group*domain + (1|Subject))
+summary(comb_group_lm)
+car::Anova(comb_group_lm)
+
+
+foods_numb<-foods_fluency  %>%
+  group_by(Group) %>% tidyboot_mean(Numb_of_Items, nboot = 1000, na.rm = T) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity',color="black") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
+    geom_point(data = foods_fluency, aes(x= Group, y = Numb_of_Items, group = Group),
+               position = position_jitterdodge(0.1),alpha = 0.3)+
+    labs(y = 'number of items produced', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = 'none')+ annotate("text", x = 2, y = 50, label = "foods", 
+           hjust = 2, size = 4, fontface = "bold", color = "black") +
+  scale_colour_paletteer_d("nationalparkcolors::Acadia")+
+  scale_color_paletteer_d("nationalparkcolors::Acadia")+
+  scale_fill_paletteer_d("nationalparkcolors::Acadia")
+
+
+
+
+gridExtra::grid.arrange(animals_numb, foods_numb, ncol=2)
+
+
+```
+#Lexical Analyses
+```{r}
+#ANIMALS
+
+#avg semantic similarity by Group x dim x struct
+animals_sem_sim_comparison = full_animals_lexical %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_sem_sim = mean(Semantic_Similarity),
+            items = n())
+
+#Does avg semantic similarity differ by group x struct x dim
+animals_sem_sim_lm = lmer(data = animals_sem_sim_comparison, avg_sem_sim ~ Group*dimension*struct+ (1|Subject))
+summary(animals_sem_sim_lm)
+car::Anova(animals_sem_sim_lm)
+emmeans(animals_sem_sim_lm,pairwise~dimension*struct,simple="struct")
+
+#avg phonological similarity 
+animals_phon_sim_comparison = full_animals_lexical %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_phon_sim = mean(Phonological_Similarity),
+            items = n())
+
+#Does avg semantic similarity differ by group 
+animals_phon_sim_lm = lmer(data = animals_phon_sim_comparison, avg_phon_sim ~ Group + (1|Subject))
+summary(animals_phon_sim_lm)
+car::Anova(animals_phon_sim_lm)
+
+
+#avg frequency by Group x dim x struct
+animals_freq_comparison = full_animals_lexical %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_freq = mean(Frequency_Value),
+            items = n())
+
+#Does avg frequency differ by group 
+animals_freq_lm = lmer(data = animals_freq_comparison, avg_freq ~ Group+ (1|Subject))
+summary(animals_freq_lm)
+car::Anova(animals_freq_lm)
+
+#FOODS
+
+#avg semantic similarity by Group x dim x struct
+foods_sem_sim_comparison = full_foods_lexical %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_sem_sim = mean(Semantic_Similarity),
+            items = n())
+
+#Does avg semantic similarity differ by group x struct x dim
+foods_sem_sim_lm = lmer(data = foods_sem_sim_comparison, avg_sem_sim ~ Group*struct*dimension+(1|Subject))
+summary(foods_sem_sim_lm)
+car::Anova(foods_sem_sim_lm)
+
+
+#avg phonological similarity by Group x dim x struct
+foods_phon_sim_comparison = full_foods_lexical %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_phon_sim = mean(Phonological_Similarity),
+            items = n())
+
+#Does avg semantic similarity differ by group 
+foods_phon_sim_lm = lmer(data = foods_phon_sim_comparison, avg_phon_sim ~ Group+(1|Subject))
+summary(foods_phon_sim_lm)
+car::Anova(foods_phon_sim_lm)
+
+
+#avg frequency by Group x dim x struct
+foods_freq_comparison = full_foods_lexical %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_freq = mean(Frequency_Value),
+            items = n())
+
+#Does avg frequency differ by group 
+foods_freq_lm = lmer(data = foods_freq_comparison, avg_freq ~ Group+ (1|Subject))
+summary(foods_freq_lm)
+car::Anova(foods_freq_lm)
+
+#Combined
+
+#avg semantic similarity by Group x dim x struct
+full_comb_lexical<-rbind(full_animals_lexical,full_foods_lexical)
+
+comb_sem_sim_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,dimension,struct) %>%
+  summarise(avg_sem_sim = mean(Semantic_Similarity),
+            items = n())
+
+#Does avg semantic similarity differ by group x domain x struct x dim
+comb_sem_sim_lm = lmer(data = comb_sem_sim_comparison, avg_sem_sim ~ Group*dimension*struct*domain+(1|Subject))
+summary(comb_sem_sim_lm)
+car::Anova(comb_sem_sim_lm)
+emmeans(comb_sem_sim_lm,pairwise~dimension*struct,simple="struct")
+
+#avg phonological similarity 
+comb_phon_sim_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,dimension,struct) %>%
+  summarise(avg_phon_sim = mean(Phonological_Similarity),
+            items = n())
+
+#Does phonological similarity differ by group 
+comb_phon_sim_lm = lmer(data = comb_phon_sim_comparison, avg_phon_sim ~ Group*domain + (1|Subject))
+summary(comb_phon_sim_lm)
+car::Anova(comb_phon_sim_lm)
+
+
+#avg frequency by Group x dim x struct
+comb_freq_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,dimension,struct) %>%
+  summarise(avg_freq = mean(Frequency_Value),
+            items = n())
+
+#Does avg frequency differ by group 
+comb_freq_lm = lmer(data = comb_freq_comparison, avg_freq ~ Group*domain+(1|Subject))
+summary(comb_freq_lm)
+car::Anova(comb_freq_lm)
+emmeans(comb_freq_lm, pairwise~Group*domain, simple="Group")
+
+comb_sem_sim_comparison %>%
+  group_by(Group, domain) %>% 
+  tidyboot_mean(avg_sem_sim, nboot = 1000, na.rm = TRUE) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 1)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05, position = position_dodge(width = 1)) +
+    labs(y = 'Mean Semantic Similarity', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, 
+          legend.position = 'none', 
+          axis.text.x = element_text(angle = 45, hjust = 1)) + 
+    facet_wrap(~domain) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+comb_phon_sim_comparison  %>%
+  group_by(Group,domain) %>% tidyboot_mean(avg_phon_sim, nboot = 1000, na.rm = T) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity',color="black", position = position_dodge(width = 1)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
+    labs(y = 'mean phonological similarity', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = 'none',axis.text.x = element_text(angle = 45, hjust = 1))+ 
+    facet_wrap(~domain) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+comb_freq_comparison  %>%
+  group_by(Group,domain) %>% tidyboot_mean(avg_freq, nboot = 1000, na.rm = T) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity',color="black", position = position_dodge(width =1)) + scale_y_continuous(limits = c(0, 5))+
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
+    labs(y = 'mean frequency', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = 'none',axis.text.x = element_text(angle = 45, hjust = 1)) +
+    facet_wrap(~domain) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+
+
+
+
+```
+
+
+```{r}
+#Similarity by items produced
+comb_fluency %>%
+  group_by(Group, domain) %>%
+  ggplot(aes(y = Phonological_Similarity_mean, x = Numb_of_Items, group = Group, color = Group)) +
+    geom_point(alpha = 0.5,size=5) +
+    labs(x = "Number of Items", y = "Mean Phonological Similarity") +
+    theme_few() +
+    geom_smooth(method = "lm", se = FALSE)+
+    theme(aspect.ratio = 1, legend.position = c(0.38, 0.85)) +
+    facet_wrap(~domain) +
+    scale_color_paletteer_d("nationalparkcolors::Acadia")
+
+comb_fluency%>%group_by(Group,domain)  %>%
+  ggplot(aes(y= Semantic_Similarity_mean, x = Numb_of_Items, group = Group, color = Group )) +
+  geom_point(alpha = 0.5,size=5)+
+  labs(x = "number of items", y = "mean semantic similarity") +
+    theme_few() +
+    geom_smooth(method = "lm", se = FALSE) +
+    theme(aspect.ratio = 1, legend.position = c(.38,0.85)) +
+    facet_wrap(~domain) +
+    scale_color_paletteer_d("nationalparkcolors::Acadia")
+
+
+comb_fluency%>%group_by(Group,domain)  %>%
+  ggplot(aes(y= Frequency_Value_mean, x = Numb_of_Items, group = Group, color = Group )) +
+  geom_point(alpha = 0.5,size=5)+
+  labs(x = "number of items", y = "mean frequency") +
+    theme_few() +
+   geom_smooth(method = "lm", se = FALSE) +
+    facet_wrap(~domain) +
+    scale_color_paletteer_d("nationalparkcolors::Acadia")
+
+
+#Does mean phonological similarity x domain type predict numb items produced
+comb_psim_model = lmer(data = comb_fluency, 
+                Numb_of_Items ~ Phonological_Similarity_mean*Group*domain + (1|Subject))
+summary(comb_psim_model)
+car::Anova(comb_psim_model)
+
+#Does mean semantic similarity x domain type predict numb items produced
+comb_semsim_model = lmer(data = comb_fluency, 
+                Numb_of_Items ~ Semantic_Similarity_mean*Group*domain + (1|Subject))
+summary(comb_semsim_model)
+car::Anova(comb_semsim_model)
+
+
+#Does mean phonological similarity x domain type predict numb items produced
+comb_freq_model = lmer(data = comb_fluency, 
+                Numb_of_Items ~ Frequency_Value_mean*Group*domain + (1|Subject))
+summary(comb_freq_model)
+car::Anova(comb_freq_model)
+
+
+
+```
+
+
+
+
