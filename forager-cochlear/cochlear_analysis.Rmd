@@ -24,8 +24,8 @@ library(gridExtra)
 library(lme4)
 library(emmeans)
 library(data.table)
-library(Hmisc)
 library(paletteer)
+library(forcats)
 ```
 
 #Importing Fluency/Clustering Data
@@ -144,7 +144,65 @@ full_foods_lexical = full_foods_lexical %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
          Group = fct_relevel(Group, "normal hearing", "cochlear implant")) 
 ```
-Fluency Analyses
+
+#Importing Model Results
+```{r}
+#Animals
+#Animals - W2V 50 dim
+animals_50_w2v_model <- read.csv("output/animals/word2vec/50/model_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+#Animals - W2V 100 dim
+animals_100_w2v_model <- read.csv("output/animals/word2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+#Animals - W2V 200 dim
+animals_200_w2v_model <- read.csv("output/animals/word2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+#Animals - W2V 300 dim
+animals_300_w2v_model <- read.csv("output/animals/word2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+#Animals - S2V 50 dim
+animals_50_s2v_model <- read.csv("output/animals/speech2vec/50/model_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+#Animals - S2V 100 dim
+animals_100_s2v_model <- read.csv("output/animals/speech2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+#Animals - S2V 200 dim
+animals_200_s2v_model <- read.csv("output/animals/speech2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+#Animals - S2V 300 dim
+animals_300_s2v_model <- read.csv("output/animals/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+
+full_animals_model = rbind(animals_50_w2v_model,animals_100_w2v_model,animals_200_w2v_model,animals_300_w2v_model,animals_50_s2v_model,animals_100_s2v_model,animals_200_s2v_model,animals_300_s2v_model)
+
+#Linking participant groupings
+full_animals_model = full_animals_model %>%
+   mutate("domain"="animals") %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+#Foods
+#Foods - W2V 50 dim
+foods_50_w2v_model <- read.csv("output/foods/word2vec/50/model_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+#Foods - W2V 100 dim
+foods_100_w2v_model <- read.csv("output/foods/word2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+#Foods - W2V 200 dim
+foods_200_w2v_model <- read.csv("output/foods/word2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+#Foods - W2V 300 dim
+foods_300_w2v_model <- read.csv("output/foods/word2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+#Foods - S2V 50 dim
+foods_50_s2v_model <- read.csv("output/foods/speech2vec/50/model_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+#Foods - S2V 100 dim
+foods_100_s2v_model <- read.csv("output/foods/speech2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+#Foods - S2V 200 dim
+foods_200_s2v_model <- read.csv("output/foods/speech2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+#Foods - S2V 300 dim
+foods_300_s2v_model <- read.csv("output/foods/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+
+full_foods_model = rbind(foods_50_w2v_model,foods_100_w2v_model,foods_200_w2v_model,foods_300_w2v_model,foods_50_s2v_model,foods_100_s2v_model,foods_200_s2v_model,foods_300_s2v_model)
+
+#Linking participant groupings
+full_foods_model = full_foods_model %>%
+  mutate("domain"="foods") %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+```
+
+
+#Fluency Analyses
 ```{r}
 #ANIMALS 
 animals_fluency<- full_animals_fluency%>% drop_na()
@@ -377,11 +435,26 @@ comb_freq_comparison  %>%
     scale_fill_paletteer_d("nationalparkcolors::Acadia")
 
 
+#Looking at similarity across structures/dims
+desired_order <- c("50", "100", "200","300")  # Replace with your actual group names
 
+comp_sem_sim_across <- comb_sem_sim_comparison %>%
+  mutate(dimension = factor(dimension, levels = desired_order)) %>%  # Convert to factor with specified order
+  ggplot(aes(x = struct, y = dimension, fill = avg_sem_sim)) +
+  geom_tile() +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4", name = "Avg Semantic Similarity") +
+  labs(x = "structure", y = "dimensions", title = "domain") +
+  theme(
+    aspect.ratio = 1,
+    plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) +
+  facet_grid(Group ~ domain)
+comp_sem_sim_across
 
 ```
 
-
+#Lexical x Fluency Analyses
 ```{r}
 #Similarity by items produced
 comb_fluency %>%
@@ -436,8 +509,261 @@ summary(comb_freq_model)
 car::Anova(comb_freq_model)
 
 
+```
+
+#Clustering Analyses
+
+```{r}
+comb_clustering<-rbind(full_animals_fluency,full_foods_fluency)
+
+comb_clusters<- comb_clustering %>%  mutate(fullswitchmethod=Switch_Method)%>%
+  separate(Switch_Method, 
+           into = c("method", "param1", "param2","param3"), sep = "_",fill = "right")
+
+#Average cluster sizes across switch methods 
+comb_cluster_size = comb_clusters %>%
+  group_by(Group,method,param1,param2,struct,dimension,domain) %>%
+  summarise(
+    cluster_mean = mean(Cluster_Size_mean),
+    cluster_sd = sd(Cluster_Size_std),
+    num_switches = mean(Number_of_Switches),
+    sd_switches = mean(Number_of_Switches))
+  
+#Across Switch Method params
+coll_cluster_size = comb_clusters %>%
+  group_by(Group,method,struct,dimension,domain) %>%
+  summarise(
+    cluster_mean = mean(Cluster_Size_mean),
+    cluster_sd = sd(Cluster_Size_std),
+    num_switches = mean(Number_of_Switches),
+    sd_switches = mean(Number_of_Switches))
+
+#cluster size
+#animals
+desired_order <- c("50", "100", "200","300")  
+coll_cluster_size <- coll_cluster_size %>%
+  mutate(dimension = factor(dimension, levels = desired_order))  
+coll_cluster_size %>% filter(domain=="animals")%>%
+  ggplot(aes(dimension, method,fill = cluster_mean)) + 
+  geom_tile() +
+  facet_grid(~ Group * struct) +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
+  labs(title="animals",fill = "Avg Cluster Size")+
+  theme(
+    plot.title = element_text(hjust = 0.5)  
+  )
+
+#foods
+coll_cluster_size <- coll_cluster_size %>%
+  mutate(dimension = factor(dimension, levels = desired_order))  
+coll_cluster_size %>% filter(domain=="foods")%>%
+  ggplot(aes(dimension, method,fill = cluster_mean)) + 
+  geom_tile() +
+  facet_grid(~ Group * struct) +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
+  labs(title="foods",fill = "Avg Cluster Size")+
+  theme(
+    plot.title = element_text(hjust = 0.5)  
+  )
+
+#Number of switches across methods, structures, and dimensions
+#animals
+coll_cluster_size <- coll_cluster_size %>%
+  mutate(dimension = factor(dimension, levels = desired_order))  
+coll_cluster_size %>% filter(domain=="animals")%>%
+  ggplot(aes(dimension, method,fill = num_switches)) + 
+  geom_tile() +
+  facet_grid(~ Group * struct) +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
+  labs(title="animals",fill = "Avg Number of Switches")+
+  theme(
+    plot.title = element_text(hjust = 0.5)  
+  )
+
+#foods
+coll_cluster_size <- coll_cluster_size %>%
+  mutate(dimension = factor(dimension, levels = desired_order))  
+coll_cluster_size %>% filter(domain=="foods")%>%
+  ggplot(aes(dimension, method,fill = num_switches)) + 
+  geom_tile() +
+  facet_grid(~ Group * struct) +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
+  labs(title="foods",fill = "Avg Number of Switches")+
+  theme(
+    plot.title = element_text(hjust = 0.5)  
+  )
+
+#Does method determining numb of switches sig differ for each Group x domain
+comp_switch_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*method*domain+ (1|Subject))
+summary(comp_switch_lm)
+car::Anova(comp_switch_lm)
+emmeans(comp_switch_lm,pairwise~Group*method,simple="method")
+
+#Across switch methods, does avg number of switches differ by Group, domain, struct, & domain
+switch_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*domain*struct*dimension + (1|Subject))
+summary(switch_lm)
+car::Anova(switch_lm)
+emmeans(switch_lm,pairwise~Group*struct,simple="struct")
+
+#Does cluster size mean sig differ for each method for each Group x domain
+comp_clustersize_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*method*domain+ (1|Subject))
+summary(comp_clustersize_lm)
+car::Anova(comp_clustersize_lm)
+emmeans(comp_clustersize_lm,pairwise~Group*method,simple="method")
+
+#Does cluster size mean differ by Group x domain x struct x dimension
+cluster_size_lm = lmer(data = comb_clusters, Cluster_Size_mean ~ Group*domain*struct*dimension + (1|Subject))
+summary(cluster_size_lm)
+car::Anova(cluster_size_lm)
+emmeans(cluster_size_lm,pairwise~Group*struct,simple="struct")
+
+#Does cluster size x Group predict # of switches
+switch_clustsize_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*Cluster_Size_mean + (1|Subject))
+summary(switch_clustsize_lm)
+car::Anova(switch_clustsize_lm)
+
+
+comb_clusters %>%
+  group_by(Subject,Group,domain) %>%
+  summarise(
+    cluster_mean = mean(Cluster_Size_mean),
+    cluster_sd = sd(Cluster_Size_std),
+    num_switches = mean(Number_of_Switches),
+    sd_switches = mean(Number_of_Switches)) %>%
+  ggplot(aes(x= num_switches, y = cluster_mean, group = Group, color = Group )) +
+  geom_point(alpha = 0.5,size=3)+
+  labs(y = "mean cluster size", x = "number of switches") +
+    theme_few() +
+   geom_smooth(method = "lm", se = FALSE) +
+    facet_wrap(~domain) +
+    scale_color_paletteer_d("nationalparkcolors::Acadia")
+
+
+
 
 ```
+#Model Analyses
+
+```{r}
+
+agg_model_results = rbind(full_animals_model,full_foods_model) %>% 
+  mutate(fullname=Model)%>%
+  separate(Model, 
+           into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_",fill = "right")
+agg_model_results_clean <- agg_model_results %>%
+  filter(!is.na(Negative_Log_Likelihood_Optimized) & 
+         is.finite(Negative_Log_Likelihood_Optimized))
+
+#Summing nLL
+agg_model_sum_nLL <- agg_model_results_clean %>% group_by(fullname,foraging_type,method,param1,param2,param3,Group,domain,struct,dimension) %>%
+  summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
+  arrange(sum_nLL)
+
+
+#Does avg nLL differ across Groups x foraging_type
+avg_nLL_model = lm(data = agg_model_sum_nLL,sum_nLL ~ Group*foraging_type)
+summary(avg_nLL_model)
+car::Anova(avg_nLL_model)
+emmeans(avg_nLL_model,pairwise~Group*foraging_type, simple="foraging_type")
+
+#best models for each Group x domain
+best_models <- agg_model_sum_nLL %>%
+  group_by(Group, domain) %>%
+  slice_min(order_by = sum_nLL, n = 1) %>%
+  ungroup() %>%
+   select(-fullname) %>% 
+  select(Group,domain,struct,dimension,foraging_type,method,param1,param2,param3,sum_nLL) 
+kable(best_models)
+
+#Getting betas
+subject_best_models = agg_model_results_clean %>% 
+  group_by(Group, domain,Subject) %>%
+  slice_min(Negative_Log_Likelihood_Optimized)
+
+betas  = subject_best_models %>%
+  pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
+
+beta_semantic_model = lmer(data = betas %>% filter(beta == "Beta_Semantic"), value ~ Group*domain +(1|Subject))
+summary(beta_semantic_model)
+car::Anova(beta_semantic_model)
+emmeans(beta_semantic_model,pairwise~Group*domain, simple="Group")
+
+beta_freq_model = lmer(data = betas %>% filter(beta == "Beta_Frequency"), value ~ Group*domain +(1|Subject))
+summary(beta_freq_model)
+car::Anova(beta_freq_model)
+emmeans(beta_freq_model,pairwise~Group*domain, simple="Group")
+
+beta_phon_model = lmer(data = betas %>% filter(beta == "Beta_Phonological"), value ~ Group*domain+(1|Subject))
+summary(beta_phon_model)
+car::Anova(beta_phon_model)
+emmeans(beta_phon_model,pairwise~Group*domain, simple="Group")
+
+betas %>% 
+  group_by(Group, beta,domain) %>%
+  tidyboot_mean(value, nboot = 1000, na.rm = T) %>%
+  separate(beta, into = c("b", "beta"))%>%
+  mutate(beta = tolower(beta),
+         beta = fct_recode(beta, 
+                    `semantic\nsimilarity`="semantic", `phonological\nsimilarity` = "phonological",
+                           `frequency` = "frequency"))%>%
+  mutate(beta = fct_relevel(beta, "semantic\nsimilarity", "frequency", "phonological\nsimilarity")) %>%
+  ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) +
+    geom_bar(stat = 'identity', position = "dodge") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0, position =  position_dodge(0.9)) +
+    labs(y = bquote(beta ~ "(parameter salience)"), x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = c(0.87,0.86))+ facet_wrap(~domain)+
+    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+
+#Looking across methods
+agg_model_sum_nLL_lab <- agg_model_sum_nLL %>%
+  mutate(foraging_type = as.factor(foraging_type),  
+         model_type = fct_recode(foraging_type, 
+                                  `pstatic` = "phonologicalstatic", 
+                                  `plocal` = "phonologicaldynamiclocal",
+                                  `pglobal` = "phonologicaldynamicglobal",
+                                  `pswitch` = "phonologicaldynamicswitch",
+                                  `static` = "static", 
+                                  `dynamic` = "dynamic", 
+                                  `random` = "random"))
+
+models <-c("dynamic","pswitch","pglobal","plocal")
+methods <- c("norms", "simdrop", "delta", "multimodal", "multimodaldelta")
+coll_agg_model_sum_nLL <- agg_model_sum_nLL_lab %>%
+  filter(model_type %in% models) %>%  
+  filter(method %in% methods) 
+  
+coll_agg_model_sum_nLL %>% ggplot(aes(x = method, y = model_type, fill = `sum_nLL`)) +
+  geom_tile()+
+  scale_fill_gradient2(midpoint =3450) +
+  labs(x = "", y = "foraging model", title = "domain") +
+  theme(aspect.ratio = 1,
+        plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+        axis.text.x = element_text(angle = 45, hjust = 1))+ facet_grid(Group~domain)+scale_fill_gradient(low = "lightgoldenrod2", high =     "aquamarine4")
+
+
+#Best models across p's
+subject_best_models = subject_best_models %>%
+  mutate(model_type = fct_recode(foraging_type, 
+                                    `pstatic` = "phonologicalstatic", 
+                                    `plocal` = "phonologicaldynamiclocal",
+                                    `pglobal` = "phonologicaldynamicglobal",
+                                    `pswitch` = "phonologicaldynamicswitch",
+                                    `static` = "static", `dynamic` = "dynamic", `random` = "random"))
+  
+subject_best_models %>%
+    group_by(Group, domain,model_type) %>%
+    count() %>%
+    ggplot(aes(x = Group, y = n, group = model_type, fill = model_type)) +
+    geom_col() +
+    labs(y = "Number of Participants", x = "", fill = "Best Model Type") +  
+    theme_few() +
+    scale_fill_calc() +
+    theme(aspect.ratio = 1, legend.position = "right") +facet_wrap(~domain)+
+    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+subject_best_models
+```
+
 
 
 
