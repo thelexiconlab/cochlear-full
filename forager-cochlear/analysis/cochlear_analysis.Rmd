@@ -2,7 +2,9 @@
 title: "Cochlear Analysis"
 author: "Channing Hambric"
 date: "2024-09-30"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -26,30 +28,32 @@ library(emmeans)
 library(data.table)
 library(paletteer)
 library(forcats)
+library(knitr)
 ```
 
 #Importing Fluency/Clustering Data
 
 ```{r}
-participant_groupings <- read.csv("participant_groupings.csv")
+#For assigning CI/NH status
+participant_groupings <- read.csv("../participant_groupings.csv")
 
 #Animals
 #Animals - W2V 50 dim
-animals_50_w2v_fluency <- read.csv("output/animals/word2vec/50/individual_descriptive_stats.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+animals_50_w2v_fluency <- read.csv("../output/animals/word2vec/50/individual_descriptive_stats.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
 #Animals - W2V 100 dim
-animals_100_w2v_fluency <- read.csv("output/animals/word2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+animals_100_w2v_fluency <- read.csv("../output/animals/word2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
 #Animals - W2V 200 dim
-animals_200_w2v_fluency <- read.csv("output/animals/word2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+animals_200_w2v_fluency <- read.csv("../output/animals/word2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
 #Animals - W2V 300 dim
-animals_300_w2v_fluency <- read.csv("output/animals/word2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+animals_300_w2v_fluency <- read.csv("../output/animals/word2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
 #Animals - S2V 50 dim
-animals_50_s2v_fluency <- read.csv("output/animals/speech2vec/50/individual_descriptive_stats.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+animals_50_s2v_fluency <- read.csv("../output/animals/speech2vec/50/individual_descriptive_stats.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
 #Animals - S2V 100 dim
-animals_100_s2v_fluency <- read.csv("output/animals/speech2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+animals_100_s2v_fluency <- read.csv("../output/animals/speech2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
 #Animals - S2V 200 dim
-animals_200_s2v_fluency <- read.csv("output/animals/speech2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+animals_200_s2v_fluency <- read.csv("../output/animals/speech2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
 #Animals - S2V 300 dim
-animals_300_s2v_fluency <- read.csv("output/animals/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+animals_300_s2v_fluency <- read.csv("../output/animals/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
 full_animals_fluency = rbind(animals_50_w2v_fluency,animals_100_w2v_fluency,animals_200_w2v_fluency,animals_300_w2v_fluency,animals_50_s2v_fluency,animals_100_s2v_fluency,animals_200_s2v_fluency,animals_300_s2v_fluency)
 
@@ -60,23 +64,24 @@ full_animals_fluency = full_animals_fluency %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
          Group = fct_relevel(Group, "normal hearing", "cochlear implant"))%>%
   rename("Numb_of_Items"="X._of_Items")
+
 #Foods
 #Foods - W2V 50 dim
-foods_50_w2v_fluency <- read.csv("output/foods/word2vec/50/individual_descriptive_stats.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+foods_50_w2v_fluency <- read.csv("../output/foods/word2vec/50/individual_descriptive_stats.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
 #Foods - W2V 100 dim
-foods_100_w2v_fluency <- read.csv("output/foods/word2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+foods_100_w2v_fluency <- read.csv("../output/foods/word2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
 #Foods - W2V 200 dim
-foods_200_w2v_fluency <- read.csv("output/foods/word2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+foods_200_w2v_fluency <- read.csv("../output/foods/word2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
 #Foods - W2V 300 dim
-foods_300_w2v_fluency <- read.csv("output/foods/word2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+foods_300_w2v_fluency <- read.csv("../output/foods/word2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
 #Foods - S2V 50 dim
-foods_50_s2v_fluency <- read.csv("output/foods/speech2vec/50/individual_descriptive_stats.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+foods_50_s2v_fluency <- read.csv("../output/foods/speech2vec/50/individual_descriptive_stats.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
 #Foods - S2V 100 dim
-foods_100_s2v_fluency <- read.csv("output/foods/speech2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+foods_100_s2v_fluency <- read.csv("../output/foods/speech2vec/100/individual_descriptive_stats.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
 #Foods - S2V 200 dim
-foods_200_s2v_fluency <- read.csv("output/foods/speech2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+foods_200_s2v_fluency <- read.csv("../output/foods/speech2vec/200/individual_descriptive_stats.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
 #Foods - S2V 300 dim
-foods_300_s2v_fluency <- read.csv("output/foods/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+foods_300_s2v_fluency <- read.csv("../output/foods/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
 full_foods_fluency = rbind(foods_50_w2v_fluency,foods_100_w2v_fluency,foods_200_w2v_fluency,foods_300_w2v_fluency,foods_50_s2v_fluency,foods_100_s2v_fluency,foods_200_s2v_fluency,foods_300_s2v_fluency)
 
@@ -93,21 +98,21 @@ full_foods_fluency = full_foods_fluency%>%
 ```{r}
 #Animals
 #Animals - W2V 50 dim
-animals_50_w2v_lexical <- read.csv("output/animals/word2vec/50/lexical_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+animals_50_w2v_lexical <- read.csv("../output/animals/word2vec/50/lexical_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
 #Animals - W2V 100 dim
-animals_100_w2v_lexical <- read.csv("output/animals/word2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+animals_100_w2v_lexical <- read.csv("../output/animals/word2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
 #Animals - W2V 200 dim
-animals_200_w2v_lexical <- read.csv("output/animals/word2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+animals_200_w2v_lexical <- read.csv("../output/animals/word2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
 #Animals - W2V 300 dim
-animals_300_w2v_lexical <- read.csv("output/animals/word2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+animals_300_w2v_lexical <- read.csv("../output/animals/word2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
 #Animals - S2V 50 dim
-animals_50_s2v_lexical <- read.csv("output/animals/speech2vec/50/lexical_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+animals_50_s2v_lexical <- read.csv("../output/animals/speech2vec/50/lexical_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
 #Animals - S2V 100 dim
-animals_100_s2v_lexical <- read.csv("output/animals/speech2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+animals_100_s2v_lexical <- read.csv("../output/animals/speech2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
 #Animals - S2V 200 dim
-animals_200_s2v_lexical <- read.csv("output/animals/speech2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+animals_200_s2v_lexical <- read.csv("../output/animals/speech2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
 #Animals - S2V 300 dim
-animals_300_s2v_lexical <- read.csv("output/animals/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+animals_300_s2v_lexical <- read.csv("../output/animals/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
 full_animals_lexical = rbind(animals_50_w2v_lexical,animals_100_w2v_lexical,animals_200_w2v_lexical,animals_300_w2v_lexical,animals_50_s2v_lexical,animals_100_s2v_lexical,animals_200_s2v_lexical,animals_300_s2v_lexical)
 
@@ -119,21 +124,21 @@ full_animals_lexical = full_animals_lexical %>%
          Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
 #Foods
 #Foods - W2V 50 dim
-foods_50_w2v_lexical <- read.csv("output/foods/word2vec/50/lexical_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+foods_50_w2v_lexical <- read.csv("../output/foods/word2vec/50/lexical_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
 #Foods - W2V 100 dim
-foods_100_w2v_lexical <- read.csv("output/foods/word2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+foods_100_w2v_lexical <- read.csv("../output/foods/word2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
 #Foods - W2V 200 dim
-foods_200_w2v_lexical <- read.csv("output/foods/word2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+foods_200_w2v_lexical <- read.csv("../output/foods/word2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
 #Foods - W2V 300 dim
-foods_300_w2v_lexical <- read.csv("output/foods/word2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+foods_300_w2v_lexical <- read.csv("../output/foods/word2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
 #Foods - S2V 50 dim
-foods_50_s2v_lexical <- read.csv("output/foods/speech2vec/50/lexical_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+foods_50_s2v_lexical <- read.csv("../output/foods/speech2vec/50/lexical_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
 #Foods - S2V 100 dim
-foods_100_s2v_lexical <- read.csv("output/foods/speech2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+foods_100_s2v_lexical <- read.csv("../output/foods/speech2vec/100/lexical_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
 #Foods - S2V 200 dim
-foods_200_s2v_lexical <- read.csv("output/foods/speech2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+foods_200_s2v_lexical <- read.csv("../output/foods/speech2vec/200/lexical_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
 #Foods - S2V 300 dim
-foods_300_s2v_lexical <- read.csv("output/foods/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+foods_300_s2v_lexical <- read.csv("../output/foods/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
 full_foods_lexical = rbind(foods_50_w2v_lexical,foods_100_w2v_lexical,foods_200_w2v_lexical,foods_300_w2v_lexical,foods_50_s2v_lexical,foods_100_s2v_lexical,foods_200_s2v_lexical,foods_300_s2v_lexical)
 
@@ -144,26 +149,39 @@ full_foods_lexical = full_foods_lexical %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
          Group = fct_relevel(Group, "normal hearing", "cochlear implant")) 
 ```
+#Importing USE lexical data
+```{r}
+animals_USE_lexical <- read.csv("../output/animals/USE/lexical_results.csv") %>%mutate("dimension"="512") %>% mutate("struct" = "USE")%>% mutate("domain" = "animals")
+#Foods - W2V 100 dim
+foods_USE_lexical <- read.csv("../output/foods/USE/lexical_results.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")%>% mutate("domain" = "foods")
 
-#Importing Model Results
+full_USE_lexical<-rbind(animals_USE_lexical,foods_USE_lexical)
+full_USE_lexical = full_USE_lexical %>%
+    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant")) 
+```
+
+
+#Importing Model Results - S2V & W2V Only for now
 ```{r}
 #Animals
 #Animals - W2V 50 dim
-animals_50_w2v_model <- read.csv("output/animals/word2vec/50/model_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+animals_50_w2v_model <- read.csv("../output/animals/word2vec/50/model_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
 #Animals - W2V 100 dim
-animals_100_w2v_model <- read.csv("output/animals/word2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+animals_100_w2v_model <- read.csv("../output/animals/word2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
 #Animals - W2V 200 dim
-animals_200_w2v_model <- read.csv("output/animals/word2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+animals_200_w2v_model <- read.csv("../output/animals/word2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
 #Animals - W2V 300 dim
-animals_300_w2v_model <- read.csv("output/animals/word2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+animals_300_w2v_model <- read.csv("../output/animals/word2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
 #Animals - S2V 50 dim
-animals_50_s2v_model <- read.csv("output/animals/speech2vec/50/model_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+animals_50_s2v_model <- read.csv("../output/animals/speech2vec/50/model_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
 #Animals - S2V 100 dim
-animals_100_s2v_model <- read.csv("output/animals/speech2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+animals_100_s2v_model <- read.csv("../output/animals/speech2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
 #Animals - S2V 200 dim
-animals_200_s2v_model <- read.csv("output/animals/speech2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+animals_200_s2v_model <- read.csv("../output/animals/speech2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
 #Animals - S2V 300 dim
-animals_300_s2v_model <- read.csv("output/animals/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+animals_300_s2v_model <- read.csv("../output/animals/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
 full_animals_model = rbind(animals_50_w2v_model,animals_100_w2v_model,animals_200_w2v_model,animals_300_w2v_model,animals_50_s2v_model,animals_100_s2v_model,animals_200_s2v_model,animals_300_s2v_model)
 
@@ -175,21 +193,21 @@ full_animals_model = full_animals_model %>%
          Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
 #Foods
 #Foods - W2V 50 dim
-foods_50_w2v_model <- read.csv("output/foods/word2vec/50/model_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
+foods_50_w2v_model <- read.csv("../output/foods/word2vec/50/model_results.csv") %>%mutate("dimension"="50") %>% mutate("struct" = "w2v")
 #Foods - W2V 100 dim
-foods_100_w2v_model <- read.csv("output/foods/word2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
+foods_100_w2v_model <- read.csv("../output/foods/word2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "w2v")
 #Foods - W2V 200 dim
-foods_200_w2v_model <- read.csv("output/foods/word2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
+foods_200_w2v_model <- read.csv("../output/foods/word2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "w2v")
 #Foods - W2V 300 dim
-foods_300_w2v_model <- read.csv("output/foods/word2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
+foods_300_w2v_model <- read.csv("../output/foods/word2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "w2v")
 #Foods - S2V 50 dim
-foods_50_s2v_model <- read.csv("output/foods/speech2vec/50/model_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
+foods_50_s2v_model <- read.csv("../output/foods/speech2vec/50/model_results.csv")%>%mutate("dimension"="50") %>% mutate("struct" = "s2v")
 #Foods - S2V 100 dim
-foods_100_s2v_model <- read.csv("output/foods/speech2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
+foods_100_s2v_model <- read.csv("../output/foods/speech2vec/100/model_results.csv")%>%mutate("dimension"="100") %>% mutate("struct" = "s2v")
 #Foods - S2V 200 dim
-foods_200_s2v_model <- read.csv("output/foods/speech2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
+foods_200_s2v_model <- read.csv("../output/foods/speech2vec/200/model_results.csv")%>%mutate("dimension"="200") %>% mutate("struct" = "s2v")
 #Foods - S2V 300 dim
-foods_300_s2v_model <- read.csv("output/foods/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
+foods_300_s2v_model <- read.csv("../output/foods/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
 full_foods_model = rbind(foods_50_w2v_model,foods_100_w2v_model,foods_200_w2v_model,foods_300_w2v_model,foods_50_s2v_model,foods_100_s2v_model,foods_200_s2v_model,foods_300_s2v_model)
 
@@ -207,16 +225,17 @@ full_foods_model = full_foods_model %>%
 #ANIMALS 
 animals_fluency<- full_animals_fluency%>% drop_na()
 
+#Getting average fluency per participant
 average_animals_fluency = animals_fluency %>% group_by(Subject,Group) %>%
   summarise(average_animals_fluency_count= mean(Numb_of_Items))
 
-#Average fluency 
+#Getting average fluency per group
 animals_group_fluency = average_animals_fluency %>%
   group_by(Group) %>%
   summarise(
     fluency_mean = mean(average_animals_fluency_count),
     fluency_sd = sd(average_animals_fluency_count))
-#View(animals_group_fluency)
+kable(animals_group_fluency)
 
 #Does fluency score differ by Group 
 animals_group_lm = lmer(data = animals_fluency, Numb_of_Items~ Group + (1|Subject))
@@ -242,16 +261,17 @@ animals_numb<-animals_fluency  %>%
 #Foods
 foods_fluency<- full_foods_fluency%>% drop_na()
 
+#Getting average fluencies per participant
 average_foods_fluency = foods_fluency %>% group_by(Subject,Group) %>%
   summarise(average_foods_fluency_count= mean(Numb_of_Items))
 
-#Average fluency 
+#Average fluency per group
 foods_group_fluency = average_foods_fluency %>%
   group_by(Group) %>%
   summarise(
     fluency_mean = mean(average_foods_fluency_count),
     fluency_sd = sd(average_foods_fluency_count))
-#View(foods_group_fluency)
+kable(foods_group_fluency)
 
 #Does fluency score differ by Group 
 foods_group_lm = lmer(data = foods_fluency, Numb_of_Items~ Group + (1|Subject))
@@ -261,7 +281,8 @@ car::Anova(foods_group_lm)
 
 #Combining across animals and foods
 comb_fluency <- rbind(animals_fluency,foods_fluency)
-#Average comb fluency 
+
+#Getting average fluencies per participant
 average_comb_fluency = comb_fluency %>% group_by(Subject,Group,domain) %>%
   summarise(average_fluency_count= mean(Numb_of_Items))
 
@@ -297,18 +318,32 @@ gridExtra::grid.arrange(animals_numb, foods_numb, ncol=2)
 ```{r}
 #ANIMALS
 
-#avg semantic similarity by Group x dim x struct
+#getting avg semantic similarity - w2v & s2v
 animals_sem_sim_comparison = full_animals_lexical %>% group_by(Subject,Group,dimension,struct) %>%
   summarise(avg_sem_sim = mean(Semantic_Similarity),
             items = n())
 
-#Does avg semantic similarity differ by group x struct x dim
+#USE similarity
+all_struct_animals<-rbind(full_animals_lexical,full_USE_lexical %>% filter(domain=="animals"))
+
+#Avg semantic similarity for each method by participant
+animals_USE_sem_sim_comparison <-all_struct_animals %>%group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_sem_sim = mean(Semantic_Similarity),
+            items = n())
+
+#JUST W2V/S2V: Does avg semantic similarity differ by group x struct x dim
 animals_sem_sim_lm = lmer(data = animals_sem_sim_comparison, avg_sem_sim ~ Group*dimension*struct+ (1|Subject))
 summary(animals_sem_sim_lm)
 car::Anova(animals_sem_sim_lm)
 emmeans(animals_sem_sim_lm,pairwise~dimension*struct,simple="struct")
 
-#avg phonological similarity 
+#Icl USE: Does semantic similarity differ by group x struct
+animals_USE_sem_sim_lm = lmer(data = animals_USE_sem_sim_comparison, avg_sem_sim ~ Group*struct+ (1|Subject))
+summary(animals_USE_sem_sim_lm)
+car::Anova(animals_USE_sem_sim_lm)
+emmeans(animals_USE_sem_sim_lm,pairwise~Group*struct,simple="struct")
+
+#getting avg phonological similarity 
 animals_phon_sim_comparison = full_animals_lexical %>% group_by(Subject,Group,dimension,struct) %>%
   summarise(avg_phon_sim = mean(Phonological_Similarity),
             items = n())
@@ -319,7 +354,7 @@ summary(animals_phon_sim_lm)
 car::Anova(animals_phon_sim_lm)
 
 
-#avg frequency by Group x dim x struct
+#getting avg frequency by Group x dim x struct
 animals_freq_comparison = full_animals_lexical %>% group_by(Subject,Group,dimension,struct) %>%
   summarise(avg_freq = mean(Frequency_Value),
             items = n())
@@ -329,25 +364,39 @@ animals_freq_lm = lmer(data = animals_freq_comparison, avg_freq ~ Group+ (1|Subj
 summary(animals_freq_lm)
 car::Anova(animals_freq_lm)
 
+
 #FOODS
 
-#avg semantic similarity by Group x dim x struct
+#USE
+all_struct_foods<-rbind(full_foods_lexical,full_USE_lexical %>% filter(domain=="foods"))
+
+#JUST W2V & S2V: avg semantic similarity by Group x dim x struct
 foods_sem_sim_comparison = full_foods_lexical %>% group_by(Subject,Group,dimension,struct) %>%
   summarise(avg_sem_sim = mean(Semantic_Similarity),
             items = n())
 
-#Does avg semantic similarity differ by group x struct x dim
+#Incl USE: avg semantic similarity by Group x dim x struct
+foods_USE_sem_sim_comparison = all_struct_foods %>% group_by(Subject,Group,dimension,struct) %>%
+  summarise(avg_sem_sim = mean(Semantic_Similarity),
+            items = n())
+
+#JUST W2V & S2V: Does avg semantic similarity differ by group x struct x dim
 foods_sem_sim_lm = lmer(data = foods_sem_sim_comparison, avg_sem_sim ~ Group*struct*dimension+(1|Subject))
 summary(foods_sem_sim_lm)
 car::Anova(foods_sem_sim_lm)
 
+#INCL USE: Does avg semantic similarity differ by group x struct
+foods_USE_sem_sim_lm = lmer(data = foods_USE_sem_sim_comparison, avg_sem_sim ~ Group*struct+(1|Subject))
+summary(foods_USE_sem_sim_lm)
+car::Anova(foods_USE_sem_sim_lm)
+emmeans(foods_USE_sem_sim_lm,pairwise~Group*struct,simple="struct")
 
 #avg phonological similarity by Group x dim x struct
 foods_phon_sim_comparison = full_foods_lexical %>% group_by(Subject,Group,dimension,struct) %>%
   summarise(avg_phon_sim = mean(Phonological_Similarity),
             items = n())
 
-#Does avg semantic similarity differ by group 
+#Does avg phon similarity differ by group 
 foods_phon_sim_lm = lmer(data = foods_phon_sim_comparison, avg_phon_sim ~ Group+(1|Subject))
 summary(foods_phon_sim_lm)
 car::Anova(foods_phon_sim_lm)
@@ -363,20 +412,31 @@ foods_freq_lm = lmer(data = foods_freq_comparison, avg_freq ~ Group+ (1|Subject)
 summary(foods_freq_lm)
 car::Anova(foods_freq_lm)
 
-#Combined
+#COMBINED DOMAINS
+full_comb_lexical<-rbind(full_animals_lexical,full_foods_lexical,full_USE_lexical)
 
-#avg semantic similarity by Group x dim x struct
-full_comb_lexical<-rbind(full_animals_lexical,full_foods_lexical)
-
-comb_sem_sim_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,dimension,struct) %>%
+#Just S2V & W2V
+comb_sem_sim_comparison <- full_comb_lexical %>% filter(!struct=="USE")%>%group_by(Subject,Group,domain,dimension,struct) %>%
   summarise(avg_sem_sim = mean(Semantic_Similarity),
             items = n())
 
-#Does avg semantic similarity differ by group x domain x struct x dim
+#Incl USE
+comb_USE_sem_sim_comparison <- full_comb_lexical%>%group_by(Subject,Group,domain,dimension,struct) %>%
+  summarise(avg_sem_sim = mean(Semantic_Similarity),
+            items = n())
+
+
+#JUST W2V/S2V:Does avg semantic similarity differ by group x domain x struct x dim
 comb_sem_sim_lm = lmer(data = comb_sem_sim_comparison, avg_sem_sim ~ Group*dimension*struct*domain+(1|Subject))
 summary(comb_sem_sim_lm)
 car::Anova(comb_sem_sim_lm)
 emmeans(comb_sem_sim_lm,pairwise~dimension*struct,simple="struct")
+
+#INCL USE: Does avg semantic similarity differ by group x domain x struct 
+comb_USE_sem_sim_lm = lmer(data = comb_USE_sem_sim_comparison, avg_sem_sim ~ Group*struct*domain+(1|Subject))
+summary(comb_USE_sem_sim_lm)
+car::Anova(comb_USE_sem_sim_lm)
+emmeans(comb_USE_sem_sim_lm,pairwise~Group*struct,simple="struct")
 
 #avg phonological similarity 
 comb_phon_sim_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,dimension,struct) %>%
@@ -400,19 +460,20 @@ summary(comb_freq_lm)
 car::Anova(comb_freq_lm)
 emmeans(comb_freq_lm, pairwise~Group*domain, simple="Group")
 
-comb_sem_sim_comparison %>%
-  group_by(Group, domain) %>% 
+comb_USE_sem_sim_comparison %>%
+  group_by(Group, domain, struct) %>% 
   tidyboot_mean(avg_sem_sim, nboot = 1000, na.rm = TRUE) %>% 
-  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
-    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 1)) +
-    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05, position = position_dodge(width = 1)) +
+  mutate(struct = factor(struct, levels = c("w2v", "s2v", "USE"))) %>%  # Set the order of 'struct'
+  ggplot(aes(x = Group, y = empirical_stat, fill = struct)) +
+    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 0.9)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2, position = position_dodge(width = 0.9)) +
     labs(y = 'Mean Semantic Similarity', x = "") +
     theme_few() +
     theme(aspect.ratio = 1, 
-          legend.position = 'none', 
-          axis.text.x = element_text(angle = 45, hjust = 1)) + 
-    facet_wrap(~domain) +
-    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+          legend.position = 'right', 
+          axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia") +
+    facet_wrap(~ domain) 
 comb_phon_sim_comparison  %>%
   group_by(Group,domain) %>% tidyboot_mean(avg_phon_sim, nboot = 1000, na.rm = T) %>% 
   ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
@@ -436,27 +497,32 @@ comb_freq_comparison  %>%
 
 
 #Looking at similarity across structures/dims
-desired_order <- c("50", "100", "200","300")  # Replace with your actual group names
-
-comp_sem_sim_across <- comb_sem_sim_comparison %>%
-  mutate(dimension = factor(dimension, levels = desired_order)) %>%  # Convert to factor with specified order
+desired_order_dim <- c("50", "100", "200","300","512")  # Replace with your actual group names
+desired_order_struct <- c("w2v", "s2v", "USE")
+comp_USE_sem_sim_across <- comb_USE_sem_sim_comparison %>%
+  mutate(
+    dimension = factor(dimension, levels = desired_order_dim),  # Ensure this is correctly set
+    struct = factor(struct, levels = desired_order_struct)        # Set the structure order
+  ) %>%
   ggplot(aes(x = struct, y = dimension, fill = avg_sem_sim)) +
   geom_tile() +
   scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4", name = "Avg Semantic Similarity") +
-  labs(x = "structure", y = "dimensions", title = "domain") +
+  labs(x = "Structure", y = "Dimensions", title = "Domain") +
   theme(
     aspect.ratio = 1,
     plot.title = element_text(hjust = 0.5, size = rel(1.2)),
     axis.text.x = element_text(angle = 45, hjust = 1)
   ) +
   facet_grid(Group ~ domain)
-comp_sem_sim_across
+comp_USE_sem_sim_across
+
+
 
 ```
 
 #Lexical x Fluency Analyses
 ```{r}
-#Similarity by items produced
+#Similarity by items produced, collapsed across structures and dimensions
 comb_fluency %>%
   group_by(Group, domain) %>%
   ggplot(aes(y = Phonological_Similarity_mean, x = Numb_of_Items, group = Group, color = Group)) +
@@ -645,11 +711,13 @@ comb_clusters %>%
 #Model Analyses
 
 ```{r}
-
+#combining model results
 agg_model_results = rbind(full_animals_model,full_foods_model) %>% 
   mutate(fullname=Model)%>%
   separate(Model, 
            into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_",fill = "right")
+
+#Dropping inf values
 agg_model_results_clean <- agg_model_results %>%
   filter(!is.na(Negative_Log_Likelihood_Optimized) & 
          is.finite(Negative_Log_Likelihood_Optimized))
@@ -671,8 +739,17 @@ best_models <- agg_model_sum_nLL %>%
   group_by(Group, domain) %>%
   slice_min(order_by = sum_nLL, n = 1) %>%
   ungroup() %>%
-   select(-fullname) %>% 
-  select(Group,domain,struct,dimension,foraging_type,method,param1,param2,param3,sum_nLL) 
+   select(-fullname) %>%
+  mutate(foraging_type = as.factor(foraging_type),  
+         model_type = fct_recode(foraging_type, 
+                                  `pstatic` = "phonologicalstatic", 
+                                  `plocal` = "phonologicaldynamiclocal",
+                                  `pglobal` = "phonologicaldynamicglobal",
+                                  `pswitch` = "phonologicaldynamicswitch",
+                                  `static` = "static", 
+                                  `dynamic` = "dynamic", 
+                                  `random` = "random")) %>%
+  select(Group,domain,struct,dimension,model_type,method,param1,param2,param3,sum_nLL) 
 kable(best_models)
 
 #Getting betas
@@ -683,16 +760,19 @@ subject_best_models = agg_model_results_clean %>%
 betas  = subject_best_models %>%
   pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
 
+#Does use of semantic similarity differ across Groups x domains
 beta_semantic_model = lmer(data = betas %>% filter(beta == "Beta_Semantic"), value ~ Group*domain +(1|Subject))
 summary(beta_semantic_model)
 car::Anova(beta_semantic_model)
 emmeans(beta_semantic_model,pairwise~Group*domain, simple="Group")
 
+#Does use of frequency differ across Groups x domains
 beta_freq_model = lmer(data = betas %>% filter(beta == "Beta_Frequency"), value ~ Group*domain +(1|Subject))
 summary(beta_freq_model)
 car::Anova(beta_freq_model)
 emmeans(beta_freq_model,pairwise~Group*domain, simple="Group")
 
+#Does use of phonological similarity differ across Groups x domains
 beta_phon_model = lmer(data = betas %>% filter(beta == "Beta_Phonological"), value ~ Group*domain+(1|Subject))
 summary(beta_phon_model)
 car::Anova(beta_phon_model)
@@ -715,7 +795,7 @@ betas %>%
     theme(aspect.ratio = 1, legend.position = c(0.87,0.86))+ facet_wrap(~domain)+
     scale_fill_paletteer_d("nationalparkcolors::Acadia")
 
-#Looking across methods
+#Looking at nLL's across methods
 agg_model_sum_nLL_lab <- agg_model_sum_nLL %>%
   mutate(foraging_type = as.factor(foraging_type),  
          model_type = fct_recode(foraging_type, 
@@ -742,7 +822,7 @@ coll_agg_model_sum_nLL %>% ggplot(aes(x = method, y = model_type, fill = `sum_nL
         axis.text.x = element_text(angle = 45, hjust = 1))+ facet_grid(Group~domain)+scale_fill_gradient(low = "lightgoldenrod2", high =     "aquamarine4")
 
 
-#Best models across p's
+#Best models across particpants
 subject_best_models = subject_best_models %>%
   mutate(model_type = fct_recode(foraging_type, 
                                     `pstatic` = "phonologicalstatic", 
@@ -761,7 +841,6 @@ subject_best_models %>%
     scale_fill_calc() +
     theme(aspect.ratio = 1, legend.position = "right") +facet_wrap(~domain)+
     scale_fill_paletteer_d("nationalparkcolors::Acadia")
-subject_best_models
 ```
 
 
