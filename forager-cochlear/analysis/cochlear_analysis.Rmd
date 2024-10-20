@@ -718,7 +718,14 @@ agg_model_results = rbind(full_animals_model,full_foods_model) %>%
   separate(Model, 
            into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_",fill = "right")
 
+
 #Dropping inf values
+#A ton are being dropped here- normal?
+dropped_values <- agg_model_results %>%
+  filter(is.na(Negative_Log_Likelihood_Optimized) | 
+         !is.finite(Negative_Log_Likelihood_Optimized))
+
+#Filter the original data as before
 agg_model_results_clean <- agg_model_results %>%
   filter(!is.na(Negative_Log_Likelihood_Optimized) & 
          is.finite(Negative_Log_Likelihood_Optimized))
@@ -735,29 +742,13 @@ summary(avg_nLL_model)
 car::Anova(avg_nLL_model)
 emmeans(avg_nLL_model,pairwise~Group*foraging_type, simple="foraging_type")
 
-#best models for each Group x domain
-best_models <- agg_model_sum_nLL %>%
-  group_by(Group, domain) %>%
-  slice_min(order_by = sum_nLL, n = 1) %>%
-  ungroup() %>%
-   select(-fullname) %>%
-  mutate(foraging_type = as.factor(foraging_type),  
-         model_type = fct_recode(foraging_type, 
-                                  `pstatic` = "phonologicalstatic", 
-                                  `plocal` = "phonologicaldynamiclocal",
-                                  `pglobal` = "phonologicaldynamicglobal",
-                                  `pswitch` = "phonologicaldynamicswitch",
-                                  `static` = "static", 
-                                  `dynamic` = "dynamic", 
-                                  `random` = "random")) %>%
-  select(Group,domain,struct,dimension,model_type,method,param1,param2,param3,sum_nLL) 
-kable(best_models)
 
-#Getting betas
+#Best model for each subject
 subject_best_models = agg_model_results_clean %>% 
   group_by(Group, domain,Subject) %>%
   slice_min(Negative_Log_Likelihood_Optimized)
 
+#Betas for each subjects best model
 betas  = subject_best_models %>%
   pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
 
@@ -843,8 +834,8 @@ subject_best_models %>%
     theme(aspect.ratio = 1, legend.position = "right") +facet_wrap(~domain)+
     scale_fill_paletteer_d("nationalparkcolors::Acadia")
 ```
-#Exploring Best Models
 
+#Exploring Best Models
 ```{r}
 #overall best model
 overall_best_model <- agg_model_sum_nLL %>% ungroup() %>%
@@ -860,13 +851,14 @@ overall_best_model <- agg_model_sum_nLL %>% ungroup() %>%
                                   `dynamic` = "dynamic", 
                                   `random` = "random")) %>%
   mutate(full_method=paste(method,param1,param2,param3,sep="_"))%>%
-  select(model_type, full_method,struct, dimension,  sum_nLL)
+  mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%
+  select(model_type, full_method,struct, dimension,  sum_nLL,full_model)
 
 kable(overall_best_model)
 
 #Avg cluster size and num switches for best switch method
 best_method<- overall_best_model$full_method
-best_clusters = comb_clustering %>% filter(Switch_Method==best_method) %>%filter(Switch_Method==best_type)
+best_clusters = comb_clustering %>% filter(Switch_Method==best_method) %>%
   summarise(
     cluster_mean = mean(Cluster_Size_mean),
     cluster_sd = sd(Cluster_Size_std),
@@ -874,10 +866,51 @@ best_clusters = comb_clustering %>% filter(Switch_Method==best_method) %>%filter
     sd_switches = sd(Number_of_Switches))
 kable(best_clusters)
 
+#Full participant data
+all_best_clusters = comb_clustering %>% filter(Switch_Method==best_method)
 
-#Betas for overall best model
-best_type <- as.character(overall_best_model$model_type)
+#When using the overall best method, does avg cluster mean differ by Group x domain
+all_best_cluster_size_lm = lmer(data = all_best_clusters, Cluster_Size_mean ~ Group*domain + (1|Subject))
+summary(all_best_cluster_size_lm)
+car::Anova(all_best_cluster_size_lm)
 
+#When using the best method, does avg numb switches differ by Group x domain
+all_switch_numb_lm = lmer(data = all_best_clusters, Number_of_Switches ~ Group*domain + (1|Subject))
+summary(all_best_switch_numb_lm)
+car::Anova(all_best_switch_numb_lm)
+
+
+all_best_cluster<-all_best_clusters %>%
+  group_by(Group, domain) %>% 
+  tidyboot_mean(Cluster_Size_mean, nboot = 1000, na.rm = TRUE) %>% 
+  ggplot(aes(x = domain, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 0.9)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2, position = position_dodge(width = 0.9)) +
+    labs(y = 'Avg Cluster Size', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, 
+          legend.position = 'right', 
+          axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia") 
+
+all_best_switches<-all_best_clusters %>%
+  group_by(Group, domain) %>% 
+  tidyboot_mean(Number_of_Switches, nboot = 1000, na.rm = TRUE) %>% 
+  ggplot(aes(x = domain, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 0.9)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2, position = position_dodge(width = 0.9)) +
+    labs(y = 'Avg Number of Switches', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, 
+          legend.position = 'right', 
+          axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia") 
+
+gridExtra::grid.arrange(all_best_cluster, all_best_switches, ncol=2)
+
+
+#By subject betas for overall best model
+best_type <- as.character(overall_best_model$full_model)
 best_model_betas <- agg_model_results_clean %>%
   mutate(full_method = paste(method, param1, param2, param3, sep = "_")) %>%
   mutate(foraging_type = as.factor(foraging_type),  
@@ -889,8 +922,9 @@ best_model_betas <- agg_model_results_clean %>%
                                  `static` = "static", 
                                  `dynamic` = "dynamic", 
                                  `random` = "random")) %>%
+  mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%
   filter(full_method == best_method) %>%
-  filter(as.character(model_type) == best_type)
+  filter(as.character(full_model) == best_type)
 
 #Betas for each participant for best model
 best_beta_values  = best_model_betas %>% 
@@ -915,24 +949,167 @@ best_beta_values  %>%
     scale_fill_paletteer_d("nationalparkcolors::Acadia")
 
 
-#Beta testing
+#Beta testing - Best overall model
 #Does use of semantic similarity differ across Groups x domains
-best_beta_semantic_model = lmer(data = best_beta_values %>% filter(beta == "Beta_Semantic"), value ~ Group*domain +(1|Subject))
+best_beta_semantic_model = lm(data = best_beta_values %>% filter(beta == "Beta_Semantic"), value ~ Group*domain)
 summary(best_beta_semantic_model)
 car::Anova(best_beta_semantic_model)
 emmeans(best_beta_semantic_model,pairwise~Group*domain, simple="domain")
 
 #Does use of frequency differ across Groups x domains
-best_beta_freq_model = lmer(data = best_beta_values %>% filter(beta == "Beta_Frequency"), value ~ Group*domain +(1|Subject))
+best_beta_freq_model = lm(data = best_beta_values %>% filter(beta == "Beta_Frequency"), value ~ Group*domain)
 summary(best_beta_freq_model)
 car::Anova(best_beta_freq_model)
-emmeans(best_beta_freq_model,pairwise~Group*domain, simple="domain")
+emmeans(best_beta_freq_model,pairwise~Group*domain, simple="Group")
 
 #Does use of phonological similarity differ across Groups x domains
-best_beta_phon_model = lmer(data = best_beta_values %>% filter(beta == "Beta_Phonological"), value ~ Group*domain+(1|Subject))
+best_beta_phon_model = lm(data = best_beta_values %>% filter(beta == "Beta_Phonological"), value ~ Group*domain)
 summary(best_beta_phon_model)
 car::Anova(best_beta_phon_model)
 ```
+
+#Best models for each Group
+```{r}
+
+diff_best_models <- agg_model_sum_nLL %>%
+  group_by(Group) %>%
+  slice_min(order_by = sum_nLL, n = 1) %>%
+  mutate(foraging_type = as.factor(foraging_type),  
+         model_type = fct_recode(foraging_type, 
+                                  `pstatic` = "phonologicalstatic", 
+                                  `plocal` = "phonologicaldynamiclocal",
+                                  `pglobal` = "phonologicaldynamicglobal",
+                                  `pswitch` = "phonologicaldynamicswitch",
+                                  `static` = "static", 
+                                  `dynamic` = "dynamic", 
+                                  `random` = "random")) %>%
+  mutate(full_method=paste(method,param1,param2,param3,sep="_"))%>%
+  mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%
+  select(Group,model_type, full_method,struct, dimension,  sum_nLL,fullname,full_model)
+kable(diff_best_models)
+
+best_model_nh <- diff_best_models$full_model[1]
+best_model_ci <- diff_best_models$full_model[2]
+
+nh_best_model = agg_model_results_clean %>% filter(Group=="normal hearing") %>%  mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%filter(full_model==best_model_nh) 
+
+ci_best_model = agg_model_results_clean %>% filter(Group=="cochlear implant") %>% mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>% filter(full_model==best_model_ci) 
+
+comb_group_best_models<-rbind(nh_best_model,ci_best_model) 
+
+#Clustering behavior for best switch method for each group 
+nh_best_method<- diff_best_models$full_method[1]
+ci_best_method<-diff_best_models$full_method[2]
+best_nh_clusters = comb_clustering %>% filter(Group=="normal hearing") %>%filter(Switch_Method==nh_best_method) %>%
+  summarise(
+    cluster_mean = mean(Cluster_Size_mean),
+    cluster_sd = sd(Cluster_Size_std),
+    num_switches = mean(Number_of_Switches),
+    sd_switches = sd(Number_of_Switches)) %>%
+  mutate(Group="NH") 
+best_ci_clusters = comb_clustering %>% filter(Group=="cochlear implant") %>%filter(Switch_Method==ci_best_method) %>% 
+  summarise(
+    cluster_mean = mean(Cluster_Size_mean),
+    cluster_sd = sd(Cluster_Size_std),
+    num_switches = mean(Number_of_Switches),
+    sd_switches = sd(Number_of_Switches))%>%
+  mutate(Group="CI") 
+
+comb_best_group_clusters<-rbind(best_nh_clusters,best_ci_clusters) %>%select(Group, cluster_mean,cluster_sd,num_switches,sd_switches,Group)
+kable(comb_best_group_clusters)
+
+#Full participant data
+full_nh_clusters = comb_clustering %>% filter(Group=="normal hearing")%>% filter(Switch_Method==nh_best_method)
+
+full_ci_clusters = comb_clustering %>% filter(Group=="cochlear implant") %>%filter(Switch_Method==ci_best_method) 
+
+full_grp_comb_best_clusters<-rbind(full_nh_clusters,full_ci_clusters) 
+
+#When using the best method, does avg cluster mean differ by Group x domain
+diff_best_cluster_size_lm = lmer(data = full_grp_comb_best_clusters, Cluster_Size_mean ~ Group*domain + (1|Subject))
+summary(diff_best_cluster_size_lm)
+car::Anova(diff_best_cluster_size_lm)
+
+#When using the best method, does avg numb switches differ by Group x domain
+best_switch_numb_lm = lmer(data = full_grp_comb_best_clusters, Number_of_Switches ~ Group*domain + (1|Subject))
+summary(best_switch_numb_lm)
+car::Anova(best_switch_numb_lm)
+emmeans(best_switch_numb_lm,pairwise~domain)
+
+
+best_cluster<-full_grp_comb_best_clusters %>%
+  group_by(Group, domain) %>% 
+  tidyboot_mean(Cluster_Size_mean, nboot = 1000, na.rm = TRUE) %>% 
+  ggplot(aes(x = domain, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 0.9)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2, position = position_dodge(width = 0.9)) +
+    labs(y = 'Avg Cluster Size', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, 
+          legend.position = 'right', 
+          axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia") 
+
+best_switches<-full_grp_comb_best_clusters %>%
+  group_by(Group, domain) %>% 
+  tidyboot_mean(Number_of_Switches, nboot = 1000, na.rm = TRUE) %>% 
+  ggplot(aes(x = domain, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity', color = "black", position = position_dodge(width = 0.9)) +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.2, position = position_dodge(width = 0.9)) +
+    labs(y = 'Avg Number of Switches', x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, 
+          legend.position = 'right', 
+          axis.text.x = element_text(angle = 45, hjust = 1)) +
+    scale_fill_paletteer_d("nationalparkcolors::Acadia") 
+
+gridExtra::grid.arrange(best_cluster, best_switches, ncol=2)
+
+
+#By participant betas for best model for that group 
+diff_grp_best_beta_values  = comb_group_best_models %>% 
+  pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
+
+#Best group model betas across participants
+diff_grp_best_beta_values %>%
+  group_by(Group, domain,beta) %>%
+  tidyboot_mean(value, nboot = 1000, na.rm = TRUE) %>%
+  separate(beta, into = c("b", "beta")) %>%
+  mutate(beta = tolower(beta),
+         beta = fct_recode(beta, 
+                           `semantic\nsimilarity` = "semantic", 
+                           `phonological\nsimilarity` = "phonological",
+                           `frequency` = "frequency")) %>%
+  mutate(beta = fct_relevel(beta, "semantic\nsimilarity", "frequency", "phonological\nsimilarity")) %>%
+  ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) +
+  geom_bar(stat = 'identity', position = "dodge") +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0, position = position_dodge(0.9)) +
+  labs(y = bquote(beta ~ "(parameter salience)"), x = "") +
+  theme_few() +
+  theme(aspect.ratio = 1, legend.position = "right", legend.title = element_blank()) + facet_wrap(~domain) +
+  scale_fill_paletteer_d("nationalparkcolors::Acadia")
+
+
+#Beta testing - Best model for that group 
+#Does use of semantic similarity differ across Groups x domains
+diff_grp_best_beta_semantic_model = lm(data =diff_grp_best_beta_values  %>% filter(beta == "Beta_Semantic"), value ~ Group*domain)
+summary(diff_grp_best_beta_semantic_model)
+car::Anova(diff_grp_best_beta_semantic_model)
+
+
+#Does use of frequency differ across Groups x domains
+diff_grp_best_beta_freq_model = lm(data = diff_grp_best_beta_values  %>% filter(beta == "Beta_Frequency"), value ~ Group*domain)
+summary(diff_grp_best_beta_freq_model)
+car::Anova(diff_grp_best_beta_freq_model)
+
+
+#Does use of phonological similarity differ across Groups x domains
+diff_grp_best_beta_phon_model = lm(data = diff_grp_best_beta_values  %>% filter(beta == "Beta_Phonological"), value ~ Group*domain)
+summary(diff_grp_best_beta_phon_model)
+car::Anova(diff_grp_best_beta_phon_model)
+
+```
+
 
 #Best models for each Group x domain
 ```{r}
@@ -950,7 +1127,8 @@ best_models <- agg_model_sum_nLL %>%
                                   `dynamic` = "dynamic", 
                                   `random` = "random")) %>%
   mutate(full_method=paste(method,param1,param2,param3,sep="_"))%>%
-  select(Group, domain,model_type, full_method,struct, dimension,  sum_nLL)
+  mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%
+  select(Group, domain,model_type, full_method,struct, dimension,  sum_nLL,fullname,full_model)
 kable(best_models)
 
 
@@ -1053,7 +1231,63 @@ best_switches<-full_comb_best_clusters %>%
 gridExtra::grid.arrange(best_cluster, best_switches, ncol=2)
 
 
-####CHECK ABOVE AND THEN ADD BETA ANALYSES HERE
+#Betas for best Group x domain model
+best_model_nh_a <- best_models$full_model[1]
+best_model_nh_f <- best_models$full_model[2]
+best_model_ci_a <- best_models$full_model[3]
+best_model_ci_f <- best_models$full_model[4]
+
+nh_a_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>% filter(Group=="normal hearing")%>% filter(domain=="animals") %>% filter(full_model==best_model_nh_a) 
+
+nh_f_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="normal hearing")%>% filter(domain=="foods") %>%filter(full_model==best_model_nh_f) 
+
+ci_a_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="cochlear implant")%>% filter(domain=="animals") %>% filter(full_model==best_model_ci_a)
+
+ci_f_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="cochlear implant")%>% filter(domain=="foods") %>% filter(full_model==best_model_ci_f) 
+
+comb_best_models<-rbind(nh_a_best_model,nh_f_best_model,ci_a_best_model,ci_f_best_model) 
+
+
+#By participant betas for best model for that group x domain
+grp_best_beta_values  = comb_best_models %>% 
+  pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
+
+#Best group x domain model betas across participants
+grp_best_beta_values  %>% 
+  group_by(Group, beta,domain) %>%
+  tidyboot_mean(value, nboot = 1000, na.rm = T) %>%
+  separate(beta, into = c("b", "beta"))%>%
+  mutate(beta = tolower(beta),
+         beta = fct_recode(beta, 
+                    `semantic\nsimilarity`="semantic", `phonological\nsimilarity` = "phonological",
+                           `frequency` = "frequency"))%>%
+  mutate(beta = fct_relevel(beta, "semantic\nsimilarity", "frequency", "phonological\nsimilarity")) %>%
+  ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) +
+    geom_bar(stat = 'identity', position = "dodge") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0, position =  position_dodge(0.9)) +
+    labs(y = bquote(beta ~ "(parameter salience)"), x = "") +
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = c(0.62,0.86))+ facet_wrap(~domain)+
+    scale_fill_paletteer_d("nationalparkcolors::Acadia")
+
+
+#Beta testing - Best model for that group x domain
+#Does use of semantic similarity differ across Groups x domains
+grp_best_beta_semantic_model = lmer(data = grp_best_beta_values %>% filter(beta == "Beta_Semantic"), value ~ Group*domain +(1|Subject))
+summary(grp_best_beta_semantic_model)
+car::Anova(grp_best_beta_semantic_model)
+emmeans(grp_best_beta_semantic_model,pairwise~Group*domain, simple="domain")
+
+#Does use of frequency differ across Groups x domains
+grp_best_beta_freq_model = lmer(data = grp_best_beta_values %>% filter(beta == "Beta_Frequency"), value ~ Group*domain +(1|Subject))
+summary(grp_best_beta_freq_model)
+car::Anova(grp_best_beta_freq_model)
+emmeans(grp_best_beta_freq_model,pairwise~Group*domain, simple="Group")
+
+#Does use of phonological similarity differ across Groups x domains
+grp_best_beta_phon_model = lmer(data = grp_best_beta_values %>% filter(beta == "Beta_Phonological"), value ~ Group*domain+(1|Subject))
+summary(grp_best_beta_phon_model)
+car::Anova(grp_best_beta_phon_model)
 ```
 
 
