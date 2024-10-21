@@ -29,6 +29,7 @@ library(data.table)
 library(paletteer)
 library(forcats)
 library(knitr)
+library(kableExtra)
 ```
 
 #Importing Fluency/Clustering Data
@@ -313,6 +314,10 @@ foods_numb<-foods_fluency  %>%
 gridExtra::grid.arrange(animals_numb, foods_numb, ncol=2)
 
 
+comb_table<-rbind(animals_group_fluency %>% mutate(domain="animals"),foods_group_fluency %>%mutate(domain="foods"))
+kable(comb_table %>% select(Group, domain, fluency_mean, fluency_sd)) %>%
+  kable_styling()
+
 ```
 #Lexical Analyses
 ```{r}
@@ -337,7 +342,7 @@ summary(animals_sem_sim_lm)
 car::Anova(animals_sem_sim_lm)
 emmeans(animals_sem_sim_lm,pairwise~dimension*struct,simple="struct")
 
-#Icl USE: Does semantic similarity differ by group x struct
+#Incl USE: Does semantic similarity differ by group x struct
 animals_USE_sem_sim_lm = lmer(data = animals_USE_sem_sim_comparison, avg_sem_sim ~ Group*struct+ (1|Subject))
 summary(animals_USE_sem_sim_lm)
 car::Anova(animals_USE_sem_sim_lm)
@@ -432,6 +437,7 @@ comb_sem_sim_lm = lmer(data = comb_sem_sim_comparison, avg_sem_sim ~ Group*dimen
 summary(comb_sem_sim_lm)
 car::Anova(comb_sem_sim_lm)
 emmeans(comb_sem_sim_lm,pairwise~dimension*struct,simple="struct")
+emmeans(comb_sem_sim_lm,pairwise~Group*domain,simple="Group")
 
 #INCL USE: Does avg semantic similarity differ by group x domain x struct 
 comb_USE_sem_sim_lm = lmer(data = comb_USE_sem_sim_comparison, avg_sem_sim ~ Group*struct*domain+(1|Subject))
@@ -557,16 +563,18 @@ comb_fluency%>%group_by(Group,domain)  %>%
 
 
 #Does mean phonological similarity x domain type predict numb items produced
-comb_psim_model = lmer(data = comb_fluency, 
-                Numb_of_Items ~ Phonological_Similarity_mean*Group*domain + (1|Subject))
+comb_psim_model = lm(data = comb_fluency, 
+                Numb_of_Items ~ Phonological_Similarity_mean*Group*domain)
 summary(comb_psim_model)
 car::Anova(comb_psim_model)
+emmeans(comb_psim_model,pairwise~Group*domain*Phonological_Similarity_mean,simple="Group")
 
 #Does mean semantic similarity x domain type predict numb items produced
 comb_semsim_model = lmer(data = comb_fluency, 
                 Numb_of_Items ~ Semantic_Similarity_mean*Group*domain + (1|Subject))
 summary(comb_semsim_model)
 car::Anova(comb_semsim_model)
+emmeans(comb_semsim_model,pairwise~Group*Semantic_Similarity_mean,simple="Group")
 
 
 #Does mean phonological similarity x domain type predict numb items produced
@@ -574,6 +582,7 @@ comb_freq_model = lmer(data = comb_fluency,
                 Numb_of_Items ~ Frequency_Value_mean*Group*domain + (1|Subject))
 summary(comb_freq_model)
 car::Anova(comb_freq_model)
+emmeans(comb_freq_model,pairwise~Group*Frequency_Value_mean,simple="Group")
 
 
 ```
@@ -598,96 +607,64 @@ comb_cluster_size = comb_clusters %>%
   
 #Across Switch Method params
 coll_cluster_size = comb_clusters %>%
-  group_by(Group,method,struct,dimension,domain) %>%
+  group_by(Group,method,domain) %>%
   summarise(
     cluster_mean = mean(Cluster_Size_mean),
     cluster_sd = sd(Cluster_Size_std),
     num_switches = mean(Number_of_Switches),
     sd_switches = mean(Number_of_Switches))
+kable(coll_cluster_size)
 
 #cluster size
-#animals
-desired_order <- c("50", "100", "200","300")  
-coll_cluster_size <- coll_cluster_size %>%
-  mutate(dimension = factor(dimension, levels = desired_order))  
-coll_cluster_size %>% filter(domain=="animals")%>%
-  ggplot(aes(dimension, method,fill = cluster_mean)) + 
-  geom_tile() +
-  facet_grid(~ Group * struct) +
-  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
-  labs(title="animals",fill = "Avg Cluster Size")+
+coll_cluster_size %>%
+  ggplot(aes(x = Group, y = cluster_mean, fill = method)) +  # Group on x-axis
+  geom_col(position = position_dodge()) + 
+  facet_wrap(~ domain) +  # Facet by domain
+  scale_fill_paletteer_d("nationalparkcolors::Acadia") +  # Apply color palette
+  labs(title = "", fill = "Method", y = "Avg Cluster Size") +
   theme(
-    plot.title = element_text(hjust = 0.5)  
+    plot.title = element_text(hjust = 0.5),
+    axis.text.x = element_text(angle = 45, hjust = 1)
   )
 
-#foods
-coll_cluster_size <- coll_cluster_size %>%
-  mutate(dimension = factor(dimension, levels = desired_order))  
-coll_cluster_size %>% filter(domain=="foods")%>%
-  ggplot(aes(dimension, method,fill = cluster_mean)) + 
-  geom_tile() +
-  facet_grid(~ Group * struct) +
-  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
-  labs(title="foods",fill = "Avg Cluster Size")+
+#Number of switches 
+coll_cluster_size %>%
+  ggplot(aes(x = Group, y = num_switches, fill = method)) +  # Group on x-axis
+  geom_col(position = position_dodge()) + 
+  facet_wrap(~ domain) +  # Facet by domain
+  scale_fill_paletteer_d("nationalparkcolors::Acadia") +  # Apply color palette
+  labs(title = "", fill = "Method", y = "Avg Number of Switches") +
   theme(
-    plot.title = element_text(hjust = 0.5)  
+    plot.title = element_text(hjust = 0.5),
+    axis.text.x = element_text(angle = 45, hjust = 1)
   )
 
-#Number of switches across methods, structures, and dimensions
-#animals
-coll_cluster_size <- coll_cluster_size %>%
-  mutate(dimension = factor(dimension, levels = desired_order))  
-coll_cluster_size %>% filter(domain=="animals")%>%
-  ggplot(aes(dimension, method,fill = num_switches)) + 
-  geom_tile() +
-  facet_grid(~ Group * struct) +
-  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
-  labs(title="animals",fill = "Avg Number of Switches")+
-  theme(
-    plot.title = element_text(hjust = 0.5)  
-  )
-
-#foods
-coll_cluster_size <- coll_cluster_size %>%
-  mutate(dimension = factor(dimension, levels = desired_order))  
-coll_cluster_size %>% filter(domain=="foods")%>%
-  ggplot(aes(dimension, method,fill = num_switches)) + 
-  geom_tile() +
-  facet_grid(~ Group * struct) +
-  scale_fill_gradient(low = "lightgoldenrod2", high = "aquamarine4") +
-  labs(title="foods",fill = "Avg Number of Switches")+
-  theme(
-    plot.title = element_text(hjust = 0.5)  
-  )
 
 #Does method determining numb of switches sig differ for each Group x domain
 comp_switch_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*method*domain+ (1|Subject))
 summary(comp_switch_lm)
 car::Anova(comp_switch_lm)
-emmeans(comp_switch_lm,pairwise~Group*method,simple="method")
+emmeans(comp_switch_lm,pairwise~Group*method,simple="Group")
 
-#Across switch methods, does avg number of switches differ by Group, domain, struct, & domain
-switch_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*domain*struct*dimension + (1|Subject))
-summary(switch_lm)
-car::Anova(switch_lm)
-emmeans(switch_lm,pairwise~Group*struct,simple="struct")
-
-#Does cluster size mean sig differ for each method for each Group x domain
-comp_clustersize_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*method*domain+ (1|Subject))
-summary(comp_clustersize_lm)
-car::Anova(comp_clustersize_lm)
-emmeans(comp_clustersize_lm,pairwise~Group*method,simple="method")
-
-#Does cluster size mean differ by Group x domain x struct x dimension
-cluster_size_lm = lmer(data = comb_clusters, Cluster_Size_mean ~ Group*domain*struct*dimension + (1|Subject))
+#Across switch methods, does cluster size mean differ by Group x domain 
+cluster_size_lm = lmer(data = comb_clusters, Cluster_Size_mean ~ Group*domain + (1|Subject))
 summary(cluster_size_lm)
 car::Anova(cluster_size_lm)
-emmeans(cluster_size_lm,pairwise~Group*struct,simple="struct")
+emmeans(cluster_size_lm,pairwise~domain)
+
+#Across switch methods, does avg number of switches differ by Group, domain, struct, & domain
+switch_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*domain + (1|Subject))
+summary(switch_lm)
+car::Anova(switch_lm)
+emmeans(switch_lm,pairwise~domain)
+
+
 
 #Does cluster size x Group predict # of switches
 switch_clustsize_lm = lmer(data = comb_clusters, Number_of_Switches ~ Group*Cluster_Size_mean + (1|Subject))
 summary(switch_clustsize_lm)
 car::Anova(switch_clustsize_lm)
+emmeans(switch_clustsize_lm,pairwise~Group*Cluster_Size_mean,simple="Group")
 
 
 comb_clusters %>%
@@ -725,7 +702,7 @@ dropped_values <- agg_model_results %>%
   filter(is.na(Negative_Log_Likelihood_Optimized) | 
          !is.finite(Negative_Log_Likelihood_Optimized))
 
-#Filter the original data as before
+#Filter out inf
 agg_model_results_clean <- agg_model_results %>%
   filter(!is.na(Negative_Log_Likelihood_Optimized) & 
          is.finite(Negative_Log_Likelihood_Optimized))
@@ -854,7 +831,7 @@ overall_best_model <- agg_model_sum_nLL %>% ungroup() %>%
   mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%
   select(model_type, full_method,struct, dimension,  sum_nLL,full_model)
 
-kable(overall_best_model)
+kable(overall_best_model) %>% kable_styling()
 
 #Avg cluster size and num switches for best switch method
 best_method<- overall_best_model$full_method
@@ -876,8 +853,8 @@ car::Anova(all_best_cluster_size_lm)
 
 #When using the best method, does avg numb switches differ by Group x domain
 all_switch_numb_lm = lmer(data = all_best_clusters, Number_of_Switches ~ Group*domain + (1|Subject))
-summary(all_best_switch_numb_lm)
-car::Anova(all_best_switch_numb_lm)
+summary(all_switch_numb_lm)
+car::Anova(all_switch_numb_lm)
 
 
 all_best_cluster<-all_best_clusters %>%
