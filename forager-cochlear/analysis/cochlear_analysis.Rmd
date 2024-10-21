@@ -689,6 +689,9 @@ comb_clusters %>%
 #Model Analyses
 
 ```{r}
+#check for reps in og and in processed data
+#Try just running 657 
+
 #combining model results
 agg_model_results = rbind(full_animals_model,full_foods_model) %>% 
   mutate(fullname=Model)%>%
