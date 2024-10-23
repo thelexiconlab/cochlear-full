@@ -433,8 +433,8 @@ oname = os.path.join(output_dir, args.domain, args.speech, args.dimension)
 os.makedirs(oname, exist_ok=True)
 
 if args.pipeline == 'evaluate_data':
-    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    data, evaluation_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    evaluation_df.to_csv(oname + '/evaluation_results.csv', index=False)
     print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
     processed_df.to_csv(oname + '/processed_data.csv', index=False)
@@ -450,8 +450,8 @@ if args.pipeline == 'evaluate_data':
 
 elif args.pipeline == 'lexical':
     # Retrieve the Data for Getting Lexical Info
-    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    data, evaluation_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    evaluation_df.to_csv(oname + '/evaluation_results.csv', index=False)
     print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
     processed_df.to_csv(oname + '/processed_data.csv', index=False)
@@ -468,6 +468,10 @@ elif args.pipeline == 'lexical':
     lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df)
     lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
     print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+    # convert history_vars_list to a DataFrame, history_vars_list is a list of lists
+    history_vars_df = pd.DataFrame(history_vars_list)
+    history_vars_df.to_csv(oname + '/history_vars.csv', index=False)
+
 
     ind_stats = indiv_desc_stats(lexical_results)
     ind_stats.to_csv(oname + '/individual_descriptive_stats.csv', index=False)
@@ -483,8 +487,8 @@ elif args.pipeline == 'switches':
     # Run subroutine for getting strictly switch outputs 
     # Run subroutine for getting model outputs
     print("Checking Data ...")
-    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    data, evaluation_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    evaluation_df.to_csv(oname + '/evaluation_results.csv', index=False)
     print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
     processed_df.to_csv(oname + '/processed_data.csv', index=False)
@@ -573,4 +577,5 @@ else:
 
  
 #### SAMPLE RUN CODE ####
-# python3 run_foraging.py --data data/fluency_lists/samples/coch-foods-sample.txt --pipeline models --model all --switch all  --domain foods --speech speech2vec --dimension 50
+# python3 run_foraging.py --data data/fluency_lists/657-copy.txt --pipeline lexical --domain animals --speech speech2vec --dimension 50
+# python3 run_foraging.py --data data/fluency_lists/cochlear-animals-657.txt --pipeline models --switch all --model all --domain animals --speech speech2vec --dimension 50

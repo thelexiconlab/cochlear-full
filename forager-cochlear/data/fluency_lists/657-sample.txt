@@ -1,0 +1,6 @@
+ID	Word
+CAF-657	rat
+CAF-657	mouse
+CAF-657	gerbil
+CAF-657	groundhog
+CAF-657	fox
