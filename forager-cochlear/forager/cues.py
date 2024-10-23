@@ -282,8 +282,8 @@ class phonology_funcs:
 #create_semantic_matrix('../data/lexical_data/foods/word2vec/100/embeddings.csv')
 
 ## phonological similarity is calcualted for the original utterances
-phonology_funcs.get_phonological_similarity('rabbit', 'bluejay')
-phonology_funcs.get_phonological_similarity('rabbit', 'bluebird')
+#phonology_funcs.get_phonological_similarity('rabbit', 'bluejay')
+# phonology_funcs.get_phonological_similarity('rabbit', 'bluebird')
 # phonology_funcs.get_phonological_similarity('groundhog', 'mouse')
 # phonology_funcs.get_phonological_similarity('groundhog', 'fox')
 
