@@ -52,88 +52,89 @@ def create_history_variables(fluency_list, subject, corrections_df, labels, sim_
     phon_list = []
     phon_history = []
 
-    # obtain that specific IDs list, after exclusions
-
-    subject_replacement_df = corrections_df[corrections_df['SID'] == subject]
-    original_words = subject_replacement_df['entry'].tolist()
-    replaced_words = subject_replacement_df['replacement'].tolist()
-    
     print("fluency_list", fluency_list)
 
-    for i in range(0,len(fluency_list)):
-        word = fluency_list[i]
-        currentwordindex = labels.index(word)
+    # check if there are any corrections for this subject, if not then the corrections_df will be empty
+    # in that case, proceed with the original fluency_list method
+    subject_replacement_df = corrections_df[corrections_df['SID'] == subject]
 
-        freq_list.append(freq_matrix[currentwordindex])
-        freq_history.append(freq_matrix)
+    if len(subject_replacement_df) == 0:
+        print("no corrections made for this subject")
+        for i in range(0,len(fluency_list)):
+            word = fluency_list[i]
+            currentwordindex = labels.index(word)
 
-        if i > 0: # get similarity between this word and preceding word
-            prevword = fluency_list[i-1]
-            prevwordindex = labels.index(prevword)
-            sim_list.append(sim_matrix[prevwordindex, currentwordindex] )
-            sim_history.append(sim_matrix[prevwordindex,:])
-            if phon_matrix is not None:
-                ## check if the word is in the corrections file at all 
-                if word in replaced_words:
-                    index_of_word = replaced_words.index(word)
-                    original_current_word = original_words[index_of_word]
+            freq_list.append(freq_matrix[currentwordindex])
+            freq_history.append(freq_matrix)
 
-                    # also find if the previous word was corrected
-                    if prevword in replaced_words:
-                        index_of_prevword = replaced_words.index(prevword)
-                        original_prevword = original_words[index_of_prevword]
-                        phon_sim = phonology_funcs.normalized_edit_distance(phonology_funcs.wordbreak(original_prevword)[0], phonology_funcs.wordbreak(original_current_word)[0])
-                        print(f"phon sim between {original_prevword} and {original_current_word}={phon_sim}")
-                        phon_list.append(phon_sim)
-                        # also compute similarity of prev_word to every other word in vocab to add to history term
-                        phon_sim_history = [phonology_funcs.normalized_edit_distance(
-                                            phonology_funcs.wordbreak(original_prevword)[0], 
-                                            phonology_funcs.wordbreak(labels[i])[0]
-                                        ) for i in range(len(labels))]
-                         
-                        # convert to numpy array
-                        phon_sim_history = np.array(phon_sim_history)
-
-                        phon_history.append(phon_sim_history)
-                    else:
-                        phon_sim = phonology_funcs.normalized_edit_distance(phonology_funcs.wordbreak(prevword)[0], phonology_funcs.wordbreak(original_current_word)[0])
-                        print(f"phon sim between {prevword} and {original_current_word}={phon_sim}")
-                        phon_list.append(phon_sim)
-                        # also compute similarity of prev_word to every other word in vocab to add to history term
-                        phon_sim_history = [phonology_funcs.normalized_edit_distance(
-                                            phonology_funcs.wordbreak(prevword)[0], 
-                                            phonology_funcs.wordbreak(labels[i])[0]
-                                        ) for i in range(len(labels))]
-                        # convert to numpy array
-                        phon_sim_history = np.array(phon_sim_history)
-
-                        phon_history.append(phon_sim_history)
-                else:
-                    # no corrections
+            if i > 0: # get similarity between this word and preceding word
+                prevwordindex = labels.index(fluency_list[i-1])
+                sim_list.append(sim_matrix[prevwordindex, currentwordindex] )
+                sim_history.append(sim_matrix[prevwordindex,:])
+                if phon_matrix is not None:
                     phon_list.append(phon_matrix[prevwordindex, currentwordindex] )
                     phon_history.append(phon_matrix[prevwordindex,:])
-                    
-
-        else: # first word
-            sim_list.append(0.0001)
-            sim_history.append(sim_matrix[currentwordindex,:])
-            if phon_matrix is not None:
-                phon_list.append(0.0001) # first word has no phonological similarity to anything
-                if word in replaced_words:
-                    index_of_word = replaced_words.index(word)
-                    original_current_word = original_words[index_of_word]
-                    phon_sim_history = [phonology_funcs.normalized_edit_distance(
-                                            phonology_funcs.wordbreak(original_current_word)[0], 
-                                            phonology_funcs.wordbreak(labels[i])[0]
-                                        ) for i in range(len(labels))]
-                    # convert to numpy array
-                    phon_sim_history = np.array(phon_sim_history)
-                    phon_history.append(phon_sim_history)
-                else:
+            else: # first word
+                sim_list.append(0.0001)
+                sim_history.append(sim_matrix[currentwordindex,:])
+                if phon_matrix is not None:
+                    phon_list.append(0.0001)
                     phon_history.append(phon_matrix[currentwordindex,:])
 
-    return sim_list, sim_history, freq_list, freq_history, phon_list, phon_history
-    
+        return sim_list, sim_history, freq_list, freq_history,phon_list, phon_history
+
+    else:
+        print("corrections made for this subject")
+        original_words = subject_replacement_df['entry'].tolist()
+        replaced_words = subject_replacement_df['replacement'].tolist()
+        print("changing phon_matrix for the following words: ", original_words)
+
+        # get index of replaced words in labels
+        replaced_word_indices = [labels.index(word) for word in replaced_words]
+        # create new labels list with original words
+        new_labels = [original_words[replaced_word_indices.index(i)] if i in replaced_word_indices else labels[i] for i in range(len(labels))]
+        # now compute the phonological similarity of each original word to every other word in new_labels
+        phon_sim_list = []
+        for word in original_words:
+            phon_sim = [phonology_funcs.normalized_edit_distance(
+                                                phonology_funcs.wordbreak(word)[0],
+                                                phonology_funcs.wordbreak(new_labels[i])[0]
+                                            ) for i in range(len(new_labels))]
+            phon_sim_list.append(phon_sim)
+        # convert to numpy array
+        phon_sim_list = np.array(phon_sim_list)   
+        
+        # now we replace specific rows and columns of the phon_matrix only for the replaced_word_indices
+        for i in range(len(replaced_word_indices)):
+            phon_matrix[replaced_word_indices[i],:] = phon_sim_list[i]
+            phon_matrix[:,replaced_word_indices[i]] = phon_sim_list[i]
+
+        # now that the phonological matrix itself has been updated, we can proceed with the rest of the method as before
+        phon_matrix[phon_matrix <= 0] = .0001
+        print("phonological matrix updated")
+
+        for i in range(0,len(fluency_list)):
+            word = fluency_list[i]
+            currentwordindex = labels.index(word)
+
+            freq_list.append(freq_matrix[currentwordindex])
+            freq_history.append(freq_matrix)
+
+            if i > 0: # get similarity between this word and preceding word
+                prevwordindex = labels.index(fluency_list[i-1])
+                sim_list.append(sim_matrix[prevwordindex, currentwordindex] )
+                sim_history.append(sim_matrix[prevwordindex,:])
+                if phon_matrix is not None:
+                    phon_list.append(phon_matrix[prevwordindex, currentwordindex] )
+                    phon_history.append(phon_matrix[prevwordindex,:])
+            else: # first word
+                sim_list.append(0.0001)
+                sim_history.append(sim_matrix[currentwordindex,:])
+                if phon_matrix is not None:
+                    phon_list.append(0.0001)
+                    phon_history.append(phon_matrix[currentwordindex,:])
+
+        return sim_list, sim_history, freq_list, freq_history,phon_list, phon_history
 
 def get_labels_and_frequencies(path_to_frequencies):
     '''
@@ -281,7 +282,10 @@ class phonology_funcs:
 #create_semantic_matrix('../data/lexical_data/foods/word2vec/100/embeddings.csv')
 
 ## phonological similarity is calcualted for the original utterances
-#phonology_funcs.get_phonological_similarity('meatloaf', 'pizza')
+phonology_funcs.get_phonological_similarity('rabbit', 'bluejay')
+phonology_funcs.get_phonological_similarity('rabbit', 'bluebird')
+# phonology_funcs.get_phonological_similarity('groundhog', 'mouse')
+# phonology_funcs.get_phonological_similarity('groundhog', 'fox')
 
 ## semantic similarity is calculated for the processed/corrected utterances
 # get_semantic_similarity('meat', 'pie', 'foods','speech2vec')
