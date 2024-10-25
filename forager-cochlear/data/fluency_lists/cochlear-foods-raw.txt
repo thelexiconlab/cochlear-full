@@ -170,7 +170,7 @@ CAY-681	quesadillas
 CAY-681	sierramist
 CAY-681	sourcream
 CAY-681	tacos
-CAY-681	v8juice
+CAY-681	juice
 CAY-681	waffles
 CBD-686	cakethathassugaronit
 CBD-686	candy
@@ -1040,7 +1040,7 @@ SZA-781	applejuice
 SZA-781	cranberryjuice
 SZA-781	spaghetti
 SZA-781	tunafish
-SZA-781	v8
+SZA-781	juice
 SZA-781	tomatoes
 SZA-781	vegetables
 SZA-781	asparagus
