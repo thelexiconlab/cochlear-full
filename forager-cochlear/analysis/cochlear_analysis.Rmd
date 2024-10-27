@@ -56,7 +56,11 @@ animals_200_s2v_fluency <- read.csv("../output/animals/speech2vec/200/individual
 #Animals - S2V 300 dim
 animals_300_s2v_fluency <- read.csv("../output/animals/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
-full_animals_fluency = rbind(animals_50_w2v_fluency,animals_100_w2v_fluency,animals_200_w2v_fluency,animals_300_w2v_fluency,animals_50_s2v_fluency,animals_100_s2v_fluency,animals_200_s2v_fluency,animals_300_s2v_fluency)
+
+#Animals - USE
+animals_USE_fluency <- read.csv("../output/animals/USE/512/individual_descriptive_stats.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")
+
+full_animals_fluency = rbind(animals_50_w2v_fluency,animals_100_w2v_fluency,animals_200_w2v_fluency,animals_300_w2v_fluency,animals_50_s2v_fluency,animals_100_s2v_fluency,animals_200_s2v_fluency,animals_300_s2v_fluency,animals_USE_fluency)
 
 #Linking participant groupings
 full_animals_fluency = full_animals_fluency %>%
@@ -84,7 +88,11 @@ foods_200_s2v_fluency <- read.csv("../output/foods/speech2vec/200/individual_des
 #Foods - S2V 300 dim
 foods_300_s2v_fluency <- read.csv("../output/foods/speech2vec/300/individual_descriptive_stats.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
-full_foods_fluency = rbind(foods_50_w2v_fluency,foods_100_w2v_fluency,foods_200_w2v_fluency,foods_300_w2v_fluency,foods_50_s2v_fluency,foods_100_s2v_fluency,foods_200_s2v_fluency,foods_300_s2v_fluency)
+#Foods-USE
+
+foods_USE_fluency <- read.csv("../output/foods/USE/512/individual_descriptive_stats.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")
+
+full_foods_fluency = rbind(foods_50_w2v_fluency,foods_100_w2v_fluency,foods_200_w2v_fluency,foods_300_w2v_fluency,foods_50_s2v_fluency,foods_100_s2v_fluency,foods_200_s2v_fluency,foods_300_s2v_fluency,foods_USE_fluency)
 
 #Linking participant groupings
 full_foods_fluency = full_foods_fluency%>%
@@ -115,7 +123,11 @@ animals_200_s2v_lexical <- read.csv("../output/animals/speech2vec/200/lexical_re
 #Animals - S2V 300 dim
 animals_300_s2v_lexical <- read.csv("../output/animals/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
-full_animals_lexical = rbind(animals_50_w2v_lexical,animals_100_w2v_lexical,animals_200_w2v_lexical,animals_300_w2v_lexical,animals_50_s2v_lexical,animals_100_s2v_lexical,animals_200_s2v_lexical,animals_300_s2v_lexical)
+#Animals - USE
+animals_USE_lexical <- read.csv("../output/animals/USE/512/lexical_results.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")
+
+
+full_animals_lexical = rbind(animals_50_w2v_lexical,animals_100_w2v_lexical,animals_200_w2v_lexical,animals_300_w2v_lexical,animals_50_s2v_lexical,animals_100_s2v_lexical,animals_200_s2v_lexical,animals_300_s2v_lexical,animals_USE_lexical)
 
 #Linking participant groupings
 full_animals_lexical = full_animals_lexical %>%
@@ -141,7 +153,11 @@ foods_200_s2v_lexical <- read.csv("../output/foods/speech2vec/200/lexical_result
 #Foods - S2V 300 dim
 foods_300_s2v_lexical <- read.csv("../output/foods/speech2vec/300/lexical_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
-full_foods_lexical = rbind(foods_50_w2v_lexical,foods_100_w2v_lexical,foods_200_w2v_lexical,foods_300_w2v_lexical,foods_50_s2v_lexical,foods_100_s2v_lexical,foods_200_s2v_lexical,foods_300_s2v_lexical)
+#Foods - USE
+foods_USE_lexical <- read.csv("../output/foods/USE/512/lexical_results.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")
+
+
+full_foods_lexical = rbind(foods_50_w2v_lexical,foods_100_w2v_lexical,foods_200_w2v_lexical,foods_300_w2v_lexical,foods_50_s2v_lexical,foods_100_s2v_lexical,foods_200_s2v_lexical,foods_300_s2v_lexical,foods_USE_lexical)
 
 #Linking participant groupings
 full_foods_lexical = full_foods_lexical %>%
@@ -150,21 +166,8 @@ full_foods_lexical = full_foods_lexical %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
          Group = fct_relevel(Group, "normal hearing", "cochlear implant")) 
 ```
-#Importing USE lexical data
-```{r}
-animals_USE_lexical <- read.csv("../output/animals/USE/lexical_results.csv") %>%mutate("dimension"="512") %>% mutate("struct" = "USE")%>% mutate("domain" = "animals")
-#Foods - W2V 100 dim
-foods_USE_lexical <- read.csv("../output/foods/USE/lexical_results.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")%>% mutate("domain" = "foods")
 
-full_USE_lexical<-rbind(animals_USE_lexical,foods_USE_lexical)
-full_USE_lexical = full_USE_lexical %>%
-    left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
-  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
-         Group = fct_relevel(Group, "normal hearing", "cochlear implant")) 
-```
-
-
-#Importing Model Results - S2V & W2V Only for now
+#Importing Model Results 
 ```{r}
 #Animals
 #Animals - W2V 50 dim
@@ -184,7 +187,11 @@ animals_200_s2v_model <- read.csv("../output/animals/speech2vec/200/model_result
 #Animals - S2V 300 dim
 animals_300_s2v_model <- read.csv("../output/animals/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
-full_animals_model = rbind(animals_50_w2v_model,animals_100_w2v_model,animals_200_w2v_model,animals_300_w2v_model,animals_50_s2v_model,animals_100_s2v_model,animals_200_s2v_model,animals_300_s2v_model)
+#Animals-USE
+animals_USE_model <- read.csv("../output/animals/USE/512/model_results.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")
+
+
+full_animals_model = rbind(animals_50_w2v_model,animals_100_w2v_model,animals_200_w2v_model,animals_300_w2v_model,animals_50_s2v_model,animals_100_s2v_model,animals_200_s2v_model,animals_300_s2v_model,animals_USE_model)
 
 #Linking participant groupings
 full_animals_model = full_animals_model %>%
@@ -210,7 +217,11 @@ foods_200_s2v_model <- read.csv("../output/foods/speech2vec/200/model_results.cs
 #Foods - S2V 300 dim
 foods_300_s2v_model <- read.csv("../output/foods/speech2vec/300/model_results.csv")%>%mutate("dimension"="300") %>% mutate("struct" = "s2v")
 
-full_foods_model = rbind(foods_50_w2v_model,foods_100_w2v_model,foods_200_w2v_model,foods_300_w2v_model,foods_50_s2v_model,foods_100_s2v_model,foods_200_s2v_model,foods_300_s2v_model)
+#Foods - USE
+foods_USE_model <- read.csv("../output/foods/USE/512/model_results.csv")%>%mutate("dimension"="512") %>% mutate("struct" = "USE")
+
+
+full_foods_model = rbind(foods_50_w2v_model,foods_100_w2v_model,foods_200_w2v_model,foods_300_w2v_model,foods_50_s2v_model,foods_100_s2v_model,foods_200_s2v_model,foods_300_s2v_model,foods_USE_model)
 
 #Linking participant groupings
 full_foods_model = full_foods_model %>%
