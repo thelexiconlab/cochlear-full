@@ -250,7 +250,7 @@ car::Anova(comb_group_lm)
 emmeans(comb_group_lm,pairwise~Group*domain)
 
 animals_numb<-full_animals_fluency  %>%
-  group_by(Group) %>% tidyboot_mean(Numb_of_Items, nboot = 1000, na.rm = T) %>% 
+  group_by(Group) %>% tidyboot_mean(Numb_of_Items, nboot = 100, na.rm = T) %>% 
   ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
     geom_bar(stat = 'identity',color="black") +
     geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
@@ -258,13 +258,11 @@ animals_numb<-full_animals_fluency  %>%
     theme_few() +
     theme(aspect.ratio = 1, legend.position = 'none')+ annotate("text", x = 2.1, y = 50, label = "animals", 
            hjust = 2, size = 4, fontface = "bold", color = "black") +  scale_y_continuous(limits = c(0, 50))+ 
-  scale_colour_paletteer_d("nationalparkcolors::Acadia")+
-  scale_color_paletteer_d("nationalparkcolors::Acadia")+
   scale_fill_paletteer_d("nationalparkcolors::Acadia")
 
 
 foods_numb<-full_foods_fluency  %>%
-  group_by(Group) %>% tidyboot_mean(Numb_of_Items, nboot = 1000, na.rm = T) %>% 
+  group_by(Group) %>% tidyboot_mean(Numb_of_Items, nboot = 100, na.rm = T) %>% 
   ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
     geom_bar(stat = 'identity',color="black") +
     geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
@@ -272,8 +270,6 @@ foods_numb<-full_foods_fluency  %>%
     theme_few() +
     theme(aspect.ratio = 1, legend.position = 'none')+ annotate("text", x = 2, y = 50, label = "foods", 
            hjust = 2, size = 4, fontface = "bold", color = "black") +
-  scale_colour_paletteer_d("nationalparkcolors::Acadia")+
-  scale_color_paletteer_d("nationalparkcolors::Acadia")+
   scale_fill_paletteer_d("nationalparkcolors::Acadia")
 
 
