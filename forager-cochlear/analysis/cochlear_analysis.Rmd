@@ -553,7 +553,7 @@ agg_model_results = rbind(full_animals_model,full_foods_model) %>%
            into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_",fill = "right") %>%na.omit()
 
 #Summing nLL
-agg_model_sum_nLL <- agg_model_results_clean %>% group_by(fullname,foraging_type,method,param1,param2,param3,Group,struct,dimension) %>%
+agg_model_sum_nLL <- agg_model_results %>% group_by(fullname,foraging_type,method,param1,param2,param3,Group,struct,dimension) %>%
   summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
   arrange(sum_nLL)
 
@@ -565,7 +565,7 @@ car::Anova(avg_nLL_model)
 emmeans(avg_nLL_model,pairwise~Group)
 
 #Best model for each subject
-subject_best_models = agg_model_results_clean %>% 
+subject_best_models = agg_model_results %>% 
   group_by(Group, domain,Subject) %>%
   slice_min(Negative_Log_Likelihood_Optimized)
 #Best models across particpants
@@ -594,7 +594,7 @@ subject_best_models %>%
 #Exploring Best Models
 ```{r}
 #overall best model
-agg_model_sum_nLL_all <- agg_model_results_clean %>% group_by(fullname,foraging_type,method,param1,param2,param3,struct,dimension) %>%
+agg_model_sum_nLL_all <- agg_model_results %>% group_by(fullname,foraging_type,method,param1,param2,param3,struct,dimension) %>%
   summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
   arrange(sum_nLL)
 
@@ -668,7 +668,7 @@ full_grp_comb_best_clusters<-rbind(full_nh_clusters,full_ci_clusters)
 diff_best_cluster_size_lm = lmer(data = full_grp_comb_best_clusters, Cluster_Size_mean ~ Group*domain + (1|Subject))
 summary(diff_best_cluster_size_lm)
 car::Anova(diff_best_cluster_size_lm)
-emmeans(best_switch_numb_lm,pairwise~domain,simple="domain")
+
 
 
 #When using the best method, does avg numb switches differ by Group x domain
@@ -714,9 +714,9 @@ gridExtra::grid.arrange(best_cluster, best_switches, ncol=2)
 best_model_nh <- diff_best_models$full_model[1]
 best_model_ci <- diff_best_models$full_model[2]
 
-nh_best_model = agg_model_results_clean %>% filter(Group=="normal hearing") %>%  mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%filter(full_model==best_model_nh) 
+nh_best_model = agg_model_results %>% filter(Group=="normal hearing") %>%  mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>%filter(full_model==best_model_nh) 
 
-ci_best_model = agg_model_results_clean %>% filter(Group=="cochlear implant") %>% mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>% filter(full_model==best_model_ci) 
+ci_best_model = agg_model_results %>% filter(Group=="cochlear implant") %>% mutate(full_model=paste(fullname,struct,dimension,sep="_"))%>% filter(full_model==best_model_ci) 
 
 comb_group_best_models<-rbind(nh_best_model,ci_best_model) 
 
@@ -766,7 +766,7 @@ emmeans(diff_grp_best_beta_phon_model,pairwise~domain)
 #Best Model for each Group x domain combo
 ```{r}
 #best models for each Group x domain
-agg_model_sum_nLL_dom <- agg_model_results_clean %>% group_by(fullname,foraging_type,method,param1,param2,param3,Group,domain,struct,dimension) %>%
+agg_model_sum_nLL_dom <- agg_model_results %>% group_by(fullname,foraging_type,method,param1,param2,param3,Group,domain,struct,dimension) %>%
   summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
   arrange(sum_nLL)
 
@@ -893,13 +893,13 @@ best_model_nh_f <- best_models$full_model[2]
 best_model_ci_a <- best_models$full_model[3]
 best_model_ci_f <- best_models$full_model[4]
 
-nh_a_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>% filter(Group=="normal hearing")%>% filter(domain=="animals") %>% filter(full_model==best_model_nh_a) 
+nh_a_best_model = agg_model_results %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>% filter(Group=="normal hearing")%>% filter(domain=="animals") %>% filter(full_model==best_model_nh_a) 
 
-nh_f_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="normal hearing")%>% filter(domain=="foods") %>%filter(full_model==best_model_nh_f) 
+nh_f_best_model = agg_model_results %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="normal hearing")%>% filter(domain=="foods") %>%filter(full_model==best_model_nh_f) 
 
-ci_a_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="cochlear implant")%>% filter(domain=="animals") %>% filter(full_model==best_model_ci_a)
+ci_a_best_model = agg_model_results %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="cochlear implant")%>% filter(domain=="animals") %>% filter(full_model==best_model_ci_a)
 
-ci_f_best_model = agg_model_results_clean %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="cochlear implant")%>% filter(domain=="foods") %>% filter(full_model==best_model_ci_f) 
+ci_f_best_model = agg_model_results %>% mutate(full_model=paste(fullname,struct,dimension,sep="_")) %>%filter(Group=="cochlear implant")%>% filter(domain=="foods") %>% filter(full_model==best_model_ci_f) 
 
 comb_best_models<-rbind(nh_a_best_model,nh_f_best_model,ci_a_best_model,ci_f_best_model) 
 
