@@ -302,7 +302,7 @@ emmeans(comb_sem_sim_lm,pairwise~dimension*struct,simple="struct")
 emmeans(comb_sem_sim_lm,pairwise~Group*domain,simple="Group")
 
 #INCL USE: Does avg semantic similarity differ by group x domain x struct 
-comb_USE_sem_sim_lm = lmer(data = comb_USE_sem_sim_comparison, avg_sem_sim ~ Group*struct*domain+(1|Subject))
+comb_USE_sem_sim_lm = lmer(data = comb_fluency, Semantic_Similarity_mean ~ Group*struct*domain+(1|Subject))
 summary(comb_USE_sem_sim_lm)
 car::Anova(comb_USE_sem_sim_lm)
 emmeans(comb_USE_sem_sim_lm,pairwise~struct)
@@ -314,7 +314,7 @@ comb_phon_sim_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,d
             items = n())
 
 #Does phonological similarity differ by group 
-comb_phon_sim_lm = lmer(data = comb_phon_sim_comparison, avg_phon_sim ~ Group*domain + (1|Subject))
+comb_phon_sim_lm = lmer(data = comb_fluency, Phonological_Similarity_mean~ Group*domain + Numb_of_Items+ (1|Subject))
 summary(comb_phon_sim_lm)
 car::Anova(comb_phon_sim_lm)
 emmeans(comb_phon_sim_lm,pairwise~domain)
@@ -325,7 +325,7 @@ comb_freq_comparison = full_comb_lexical %>% group_by(Subject,Group,domain,dimen
             items = n())
 
 #Does avg frequency differ by group 
-comb_freq_lm = lmer(data = comb_freq_comparison, avg_freq ~ Group*domain+(1|Subject))
+comb_freq_lm = lmer(data = comb_fluency, Frequency_Value_mean ~ Group*domain+Numb_of_Items+(1|Subject))
 summary(comb_freq_lm)
 car::Anova(comb_freq_lm)
 emmeans(comb_freq_lm, pairwise~Group*domain, simple="Group")
@@ -662,13 +662,16 @@ full_nh_clusters = comb_clusters %>% filter(Group=="normal hearing")%>% filter(f
 
 full_ci_clusters = comb_clusters %>% filter(Group=="cochlear implant") %>%filter(full_method==ci_best_method) 
 
-full_grp_comb_best_clusters<-rbind(full_nh_clusters,full_ci_clusters) 
+num_items<- comb_fluency %>% select(Subject,Group,domain,Numb_of_Items) %>%na.omit() %>%rename(num_items=Numb_of_Items) %>% unique()
+
+full_grp_comb_best_clusters<-rbind(full_nh_clusters,full_ci_clusters) %>%
+  left_join(num_items, by = c("Subject" = "Subject", "domain" = "domain", "Group" = "Group"))
 
 #When using the best method, does avg cluster mean differ by Group x domain
-diff_best_cluster_size_lm = lmer(data = full_grp_comb_best_clusters, Cluster_Size_mean ~ Group*domain + (1|Subject))
+diff_best_cluster_size_lm = lmer(data = full_grp_comb_best_clusters, Cluster_Size_mean ~ Group*domain +(1|Subject))
 summary(diff_best_cluster_size_lm)
 car::Anova(diff_best_cluster_size_lm)
-
+emmeans(diff_best_cluster_size_lm,pairwise~domain)
 
 
 #When using the best method, does avg numb switches differ by Group x domain
@@ -843,19 +846,25 @@ full_ci_a_clusters = comb_clusters %>% filter(Group=="cochlear implant")%>% filt
 
 full_ci_f_clusters = comb_clusters %>% filter(Group=="cochlear implant")%>% filter(domain=="foods") %>% filter(full_method==best_method_ci_f)
 
-full_comb_best_clusters<-rbind(full_nh_a_clusters,full_nh_f_clusters,full_ci_a_clusters,full_ci_f_clusters) %>% arrange(Group,domain)
+
+num_items<- comb_fluency %>% select(Subject,Group,domain,Numb_of_Items) %>%na.omit() %>%rename(num_items=Numb_of_Items) %>% unique()
+
+full_comb_best_clusters<-rbind(full_nh_a_clusters,full_nh_f_clusters,full_ci_a_clusters,full_ci_f_clusters) %>%
+  left_join(num_items, by = c("Subject" = "Subject", "domain" = "domain", "Group" = "Group"))
+
 
 #When using the best method, does avg cluster mean differ by Group x domain
-best_cluster_size_lm = lmer(data = full_comb_best_clusters, Cluster_Size_mean ~ Group*domain + (1|Subject))
+best_cluster_size_lm = lmer(data = full_comb_best_clusters, Cluster_Size_mean ~ Group*domain + num_items+(1|Subject))
 summary(best_cluster_size_lm)
 car::Anova(best_cluster_size_lm)
 emmeans(best_cluster_size_lm,pairwise~domain)
 
 #When using the best method, does avg numb switches differ by Group x domain
-best_switch_numb_lm = lmer(data = full_comb_best_clusters, Number_of_Switches ~ Group*domain + (1|Subject))
+best_switch_numb_lm = lmer(data = full_comb_best_clusters, Number_of_Switches ~ Group*domain + num_items+(1|Subject))
 summary(best_switch_numb_lm)
 car::Anova(best_switch_numb_lm)
-emmeans(best_switch_numb_lm,pairwise~Group*domain)
+emmeans(best_switch_numb_lm,pairwise~Group*domain,simple="Group")
+emmeans(best_switch_numb_lm,pairwise~domain)
 
 
 best_cluster<-full_comb_best_clusters %>%
@@ -932,7 +941,7 @@ grp_best_beta_values  %>%
 grp_best_beta_semantic_model = lmer(data = grp_best_beta_values %>% filter(beta == "Beta_Semantic"), value ~ Group*domain +(1|Subject))
 summary(grp_best_beta_semantic_model)
 car::Anova(grp_best_beta_semantic_model)
-emmeans(grp_best_beta_semantic_model,pairwise~Group*domain, simple="domain")
+emmeans(grp_best_beta_semantic_model,pairwise~domain)
 
 #Does use of frequency differ across Groups x domains
 grp_best_beta_freq_model = lmer(data = grp_best_beta_values %>% filter(beta == "Beta_Frequency"), value ~ Group*domain +(1|Subject))
