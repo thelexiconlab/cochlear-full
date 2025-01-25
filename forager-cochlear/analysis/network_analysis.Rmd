@@ -1,0 +1,109 @@
+---
+title: "Cochlear Analysis"
+author: "Channing Hambric"
+date: "2024-09-30"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Libraries
+```{r}
+library(tidyverse)
+library(ggthemes)
+library(igraph)
+```
+# import data
+```{r}
+
+#For assigning CI/NH status
+participant_groupings <- read.csv("../participant_groupings.csv")
+
+word2vec = read.csv("../output/animals/word2vec/50/lexical_results.csv") %>%
+  rename(word2vec = Semantic_Similarity) %>% select(Subject,word2vec) %>%
+  group_by(Subject) %>% mutate(item = row_number()) 
+  
+
+combined = read.csv("../output/animals/speech2vec/50/lexical_results.csv") %>% 
+  rename(speech2vec = Semantic_Similarity) %>% 
+  group_by(Subject) %>% mutate(item = row_number()) %>%
+  left_join(word2vec) %>%
+  left_join(participant_groupings) %>%
+  mutate(Frequency_Value = Frequency_Value/100,
+         Phonological_Similarity = ifelse(Phonological_Similarity == 0.0001, 0, Phonological_Similarity))
+  
+```
+# create edges
+
+```{r}
+library(igraph)
+library(dplyr)
+
+# Function to create a well-formatted network graph
+create_graph <- function(df, group_label, similarity_metric) {
+  
+   # Filter for the given group
+  edges <- df %>%
+    filter(Group == group_label) %>%
+    group_by(Subject) %>%
+    mutate(Next_Word = lag(Fluency_Item)) %>%
+    na.omit() %>%
+    ungroup() %>%
+    transmute(From = Fluency_Item, 
+              To = Next_Word, 
+              Weight = .data[[similarity_metric]]) %>%
+    filter(Weight > 0) %>% distinct()
+  
+  # Create graph
+  g <- graph_from_data_frame(edges, directed = FALSE)
+  
+  # Compute network metrics
+  avg_path_length <- mean_distance(g, directed = FALSE, unconnected = TRUE)  # Handle disconnected components
+  clustering_coeff <- transitivity(g, type = "global")  # Global clustering coefficient
+  graph_density <- edge_density(g)  # Density of the graph
+  degree_centrality <- degree(g)  # Number of connections per node
+  
+  # Print network metrics
+  cat("\nNetwork Metrics for Group:", group_label, "(", similarity_metric, ")\n")
+  cat("---------------------------------------------------\n")
+  cat("Average Shortest Path Length:", round(avg_path_length, 3), "\n")
+  cat("Clustering Coefficient:", round(clustering_coeff, 3), "\n")
+  cat("Graph Density:", round(graph_density, 3), "\n")
+  cat("Top 5 Most Central Nodes (by Degree):\n")
+  print(sort(degree_centrality, decreasing = TRUE)[1:5])
+
+  # Improve layout
+  set.seed(42)  # Ensure consistent layout
+  layout <- layout_with_fr(g)  # Force-directed layout
+
+  # Plot graph with improved aesthetics
+  plot(g, 
+       layout = layout,
+       edge.width = E(g)$Weight * 3,  # Scale edge width
+       vertex.label.cex = 0.7,  # Reduce label size
+       vertex.label.dist = 1,  # Push labels away from nodes
+       vertex.color = ifelse(group_label == "NH", "skyblue", "lightcoral"),  # Color nodes by group
+       vertex.frame.color = "gray30",
+       edge.color = "gray70",
+       vertex.size = 2,
+       main = paste("Network - Group", group_label, "(", similarity_metric, ")"))
+}
+
+# Example usage:
+
+
+create_graph(combined, "NH", "word2vec")
+create_graph(combined, "CI", "word2vec")
+
+create_graph(combined, "NH", "speech2vec")
+create_graph(combined, "CI", "speech2vec")
+
+create_graph(combined, "NH", "Phonological_Similarity")
+create_graph(combined, "CI", "Phonological_Similarity")
+```
+
+
