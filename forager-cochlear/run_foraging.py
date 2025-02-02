@@ -343,16 +343,19 @@ def indiv_desc_stats(lexical_results, switch_results = None):
                 ct += 1
                 if x == 1:
                     num_switches += 1
+                    ct = ct-1
                     cluster_lengths.append(ct)
-                    ct = 0
+                    ct = 1
             if ct != 0:
                 cluster_lengths.append(ct)
+            
             avg = sum(cluster_lengths) / len(cluster_lengths)
             sd = np.std(cluster_lengths)
             switch_methods.append(switch_method)
             num_switches_arr.append(num_switches)
             cluster_size_mean.append(avg)
             cluster_size_sd.append(sd)
+
 
         new_df['Switch_Method'] = switch_methods
         new_df['Number_of_Switches'] = num_switches_arr
