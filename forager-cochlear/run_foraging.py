@@ -433,8 +433,10 @@ args.data = os.path.join(os.getcwd(),args.data)
 
 output_dir = 'output'
 file_name = 'forager_results.zip'
+
+alpha_str = f"{args.alpha:.1f}" #convert float to str
 # Construct the output path
-oname = os.path.join(output_dir, args.domain, args.speech, args.dimension)
+oname = os.path.join(output_dir, args.domain, args.speech, args.dimension, alpha_str)
 
 # Create the directory if it does not exist
 os.makedirs(oname, exist_ok=True)
