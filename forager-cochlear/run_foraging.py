@@ -25,8 +25,6 @@ Workflow:
     b. Switches: returns switch values for each word in fluency list + lexical values
     c. Models: returns model outputs for each word in fluency list + lexical values + switch values
 """
-# Global Path Variables
-fp = "/".join(sys.argv[0].split('/')[:-1])
 
 # Global Variables
 models = ['static','dynamic','pstatic','pdynamic','all']
@@ -44,11 +42,16 @@ def retrieve_data(path, domain):
     data = prepareDataWithCorrections(path, domain)
     return data
 
-def get_lexical_data(domain, speech, dimension):
+def get_lexical_data(domain, speech, dimension, alpha=None):
+    print(domain, speech, dimension, alpha)
 
     animalnormspath =  'data/norms/animals_snafu_scheme_vocab.csv'
     foodnormspath =  'data/norms/foods_snafu_scheme_vocab.csv'
-    similaritypath =  'data/lexical_data/' + domain + '/' + speech + '/' + dimension + '/semantic_matrix.csv'
+    if alpha is None:
+        similaritypath =  'data/lexical_data/' + domain + '/' + speech + '/' + dimension + '/semantic_matrix.csv'
+    else:
+        similaritypath =  'data/lexical_data/' + domain + '/' + speech + '/' + dimension + '/' + str(alpha) + '/semantic_matrix.csv'
+
     frequencypath =  'data/lexical_data/' + domain + '/frequencies.csv'
     phonpath = 'data/lexical_data/' + domain + '/phonological_matrix.csv'
 
@@ -59,7 +62,6 @@ def get_lexical_data(domain, speech, dimension):
     frequency_list = np.array(pd.read_csv(frequencypath,header=None,encoding="unicode-escape")[1])
     phon_matrix = np.loadtxt(phonpath,delimiter=',')
     labels = pd.read_csv(frequencypath,header=None)[0].values.tolist()
-    
     
     return norms, similarity_matrix, phon_matrix, frequency_list,labels
 
@@ -219,9 +221,9 @@ def calculate_switch(switch, fluency_list, semantic_similarity, phon_similarity,
 
     return switch_names, switch_vecs
 
-def run_model(data, model_type, switch_type, domain, speech, dimension, history_vars_list, switch_names_list, switch_vecs_list):
+def run_model(data, model_type, switch_type, domain, speech, dimension, history_vars_list, switch_names_list, switch_vecs_list, alpha=None):
     # Get Lexical Data needed for executing methods
-    norms, similarity_matrix, phon_matrix, frequency_list, labels =get_lexical_data(domain, speech, dimension)
+    norms, similarity_matrix, phon_matrix, frequency_list, labels =get_lexical_data(domain, speech, dimension, alpha)
     forager_results = []
     # Run through each fluency list in dataset
     for i, (subj, fl_list) in enumerate(tqdm(data)):
@@ -260,9 +262,9 @@ def run_model(data, model_type, switch_type, domain, speech, dimension, history_
         
     return forager_results
     
-def run_lexical(data, domain,speech, dimension, corrected_df):
+def run_lexical(data, domain,speech, dimension, corrected_df, alpha=None):
     # Get Lexical Data needed for executing methods
-    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech, dimension)
+    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech, dimension, alpha)
     lexical_results = []
     history_vars_list = []
     for i, (subj, fl_list) in enumerate(tqdm(data)):
@@ -278,8 +280,8 @@ def run_lexical(data, domain,speech, dimension, corrected_df):
     lexical_results = pd.concat(lexical_results,ignore_index=True)
     return lexical_results, history_vars_list
 
-def run_switches(data,switch_type, domain, speech, dimension, history_vars_list):
-    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech, dimension)
+def run_switches(data,switch_type, domain, speech, dimension, history_vars_list,alpha=None):
+    norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data(domain, speech, dimension, alpha)
     switch_results = []
     switch_names_list = []
     switch_vecs_list = []
@@ -341,16 +343,19 @@ def indiv_desc_stats(lexical_results, switch_results = None):
                 ct += 1
                 if x == 1:
                     num_switches += 1
+                    ct = ct-1
                     cluster_lengths.append(ct)
-                    ct = 0
+                    ct = 1
             if ct != 0:
                 cluster_lengths.append(ct)
+            
             avg = sum(cluster_lengths) / len(cluster_lengths)
             sd = np.std(cluster_lengths)
             switch_methods.append(switch_method)
             num_switches_arr.append(num_switches)
             cluster_size_mean.append(avg)
             cluster_size_sd.append(sd)
+
 
         new_df['Switch_Method'] = switch_methods
         new_df['Number_of_Switches'] = num_switches_arr
@@ -407,8 +412,10 @@ parser.add_argument('--pipeline',type=str, help='specifies which part of pipelin
 parser.add_argument('--model', type=str, help='specifies foraging model to use')
 parser.add_argument('--switch', type=str, help='specifies switch model to use')
 parser.add_argument('--domain', type=str, help='specifies domain to use')
-parser.add_argument('--speech', type=str, help='specifies whether to use speech2vec or word2vec')
+parser.add_argument('--speech', type=str, help='specifies whether to use speech2vec or word2vec or blended')
 parser.add_argument('--dimension', type=str, help='specifies which dimension embedding to use: 50/100/200/300')
+parser.add_argument('--alpha', type=float, help='specifies which alpha to use for blended models (0 to 1)')
+
 
 args = parser.parse_args()
 
@@ -432,9 +439,14 @@ oname = os.path.join(output_dir, args.domain, args.speech, args.dimension)
 # Create the directory if it does not exist
 os.makedirs(oname, exist_ok=True)
 
+# Complete path with file name
+file_path = os.path.join(oname, file_name)
+
+
+
 if args.pipeline == 'evaluate_data':
-    data, evaluation_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    evaluation_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
     print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
     processed_df.to_csv(oname + '/processed_data.csv', index=False)
@@ -450,8 +462,8 @@ if args.pipeline == 'evaluate_data':
 
 elif args.pipeline == 'lexical':
     # Retrieve the Data for Getting Lexical Info
-    data, evaluation_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    evaluation_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
     print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
     processed_df.to_csv(oname + '/processed_data.csv', index=False)
@@ -465,13 +477,9 @@ elif args.pipeline == 'lexical':
     vocab.to_csv(oname + '/forager_vocab.csv', index=False)
     print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
     # Run subroutine for getting strictly the similarity & frequency values 
-    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df)
+    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df, args.alpha)
     lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
     print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
-    # convert history_vars_list to a DataFrame, history_vars_list is a list of lists
-    history_vars_df = pd.DataFrame(history_vars_list)
-    history_vars_df.to_csv(oname + '/history_vars.csv', index=False)
-
 
     ind_stats = indiv_desc_stats(lexical_results)
     ind_stats.to_csv(oname + '/individual_descriptive_stats.csv', index=False)
@@ -487,8 +495,8 @@ elif args.pipeline == 'switches':
     # Run subroutine for getting strictly switch outputs 
     # Run subroutine for getting model outputs
     print("Checking Data ...")
-    data, evaluation_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
-    evaluation_df.to_csv(oname + '/evaluation_results.csv', index=False)
+    data, replacement_df, processed_df, corrected_df = retrieve_data(args.data, args.domain)
+    replacement_df.to_csv(oname + '/evaluation_results.csv', index=False)
     print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
 
     processed_df.to_csv(oname + '/processed_data.csv', index=False)
@@ -503,12 +511,12 @@ elif args.pipeline == 'switches':
     print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
 
     print("Retrieving Lexical Data ...")
-    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df)
+    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df, args.alpha)
     lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
     print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
 
     print("Obtaining Switch Designations ...")
-    switch_results, switch_names_list, switch_vecs_list = run_switches(data,args.switch, args.domain, args.speech,args.dimension, history_vars_list)
+    switch_results, switch_names_list, switch_vecs_list = run_switches(data,args.switch, args.domain, args.speech,args.dimension, history_vars_list, args.alpha)
     switch_results.to_csv(oname + '/switch_results.csv', index=False) 
     print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
 
@@ -549,17 +557,17 @@ elif args.pipeline == 'models':
     print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
 
     print("Retrieving Lexical Data ...")
-    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df)
+    lexical_results, history_vars_list = run_lexical(data, args.domain, args.speech, args.dimension, corrected_df, args.alpha)
     lexical_results.to_csv(oname + '/lexical_results.csv', index=False) 
     print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
 
     print("Obtaining Switch Designations ...")
-    switch_results, switch_names_list, switch_vecs_list = run_switches(data,args.switch, args.domain, args.speech, args.dimension, history_vars_list)
+    switch_results, switch_names_list, switch_vecs_list = run_switches(data,args.switch, args.domain, args.speech, args.dimension, history_vars_list, args.alpha)
     switch_results.to_csv(oname + '/switch_results.csv', index=False) 
     print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
 
     print("Running Forager Models...")
-    model_results = run_model(data, args.model, args.switch, args.domain, args.speech, args.dimension, history_vars_list, switch_names_list, switch_vecs_list)
+    model_results = run_model(data, args.model, args.switch, args.domain, args.speech, args.dimension, history_vars_list, switch_names_list, switch_vecs_list,args.alpha)
     model_results.to_csv(oname + '/model_results.csv', index=False) 
     print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
 
@@ -577,5 +585,9 @@ else:
 
  
 #### SAMPLE RUN CODE ####
-# python3 run_foraging.py --data data/fluency_lists/657-copy.txt --pipeline lexical --domain animals --speech speech2vec --dimension 50
-# python3 run_foraging.py --data data/fluency_lists/cochlear-animals-657.txt --pipeline models --switch all --model all --domain animals --speech speech2vec --dimension 50
+## regular models
+# python3 run_foraging.py --data data/fluency_lists/samples/coch-foods-sample.txt --pipeline models --model all --switch all  --domain foods --speech speech2vec
+
+## blended models
+# python3 run_foraging.py --data data/fluency_lists/samples/coch-no-corrections.txt --pipeline models --model all --switch all  --domain foods --speech blended --dimension 50 --alpha 0.2
+# python3 run_foraging.py --data data/fluency_lists/samples/coch-no-corrections.txt --pipeline models --model dynamic --switch simdrop  --domain foods --speech blended --dimension 50 --alpha 0.2

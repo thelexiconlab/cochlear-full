@@ -1,0 +1,7 @@
+ID	Word
+CAJ-663	pork
+CAJ-663	sprouts
+CAJ-663	chicken
+CAM-666	beer
+CAM-666	buns
+CAM-666	crab
