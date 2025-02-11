@@ -258,6 +258,37 @@ plots_lexical$emmip_plot[[2]]
 plots_lexical$emmip_plot[[3]]
 
 ```
+### Semantic Similarity Across Structures
+```{r}
+plot_data<-full_indv_data %>%select(Subject, Group, Semantic_Similarity_mean, Phonological_Similarity_mean, Frequency_Value_mean, structure, dimension,alpha,
+         fluency_score, domain) %>% na.omit() %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%mutate(dimension = factor(dimension, levels = c("50","100","200","300","512")))%>%mutate(structure = factor(structure, levels = c("word2vec","speech2vec","blended","USE")))
+
+
+single<-plot_data %>% filter(structure!="blended") %>%
+  ggplot(aes(x = structure, y = dimension, fill = Semantic_Similarity_mean)) +
+  geom_tile() +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "red", name = "Avg Semantic Similarity") +
+  labs(x = "", y = "Dimensions", title = "Single Model Stucture") +
+  theme(legend.position="bottom",
+    aspect.ratio = 1,
+    plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) +
+  facet_grid(Group ~ domain)
+
+blended<-plot_data %>% filter(structure=="blended") %>%
+  ggplot(aes(x = alpha, y = dimension, fill = Semantic_Similarity_mean)) +
+  geom_tile() +
+  scale_fill_gradient(low = "lightgoldenrod2", high = "red", name = "Avg Semantic Similarity") +
+  labs(x = "alpha", y = "Dimensions", title = "Hybrid Model Stucture") +
+  theme(legend.position="none",
+    aspect.ratio = 1,
+    plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) +
+  facet_grid(Group ~ domain)
+single+blended
+```
 
 
 ## Model Analyses
@@ -268,9 +299,7 @@ plots_lexical$emmip_plot[[3]]
 model_results = full_model_data %>%
   group_by(Group,domain,full_method,full_model,full_speech,everything) %>%
   summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
-  arrange(sum_nLL) %>%ungroup()%>%
-  group_by(Group,domain) %>%
-  arrange(sum_nLL) %>%       
+  arrange(sum_nLL) %>% 
   slice(1) %>% #best fit combo 
   ungroup() %>%
   select(Group,domain,full_method,full_model,full_speech,everything,sum_nLL)
@@ -278,7 +307,7 @@ model_results = full_model_data %>%
 kable(model_results)
 
 #Excluding USE
-no_USE_model_results = full_model_data %>% filter(structure!="USE")%>%
+no_USE_model_results = full_model_data %>%filter(structure!="USE") %>%
   group_by(Group,domain,full_method,full_model,full_speech,everything) %>%
   summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
   arrange(sum_nLL) %>%ungroup()%>%
