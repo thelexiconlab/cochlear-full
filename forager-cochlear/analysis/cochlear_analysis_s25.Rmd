@@ -467,13 +467,11 @@ clusters+switches+ plot_layout(ncol = 1)
 
 ## Within Cluster vs Switch Analyses
 ```{r}
-##SOMETHING WERID WITH JOINING - FIX - I THINK I JUST NEED TO ADD/DEL STRUCTURE DIM AND ALPHA
 #filtering to only include best method for each domain
 best_switches <- full_switch_data %>% select(-structure,-dimension,-alpha)%>%
   filter(paste(Group,domain,full_method) %in% paste(best_models$Group, best_models$domain, best_models$full_method)) %>%
   mutate(Switch_Value = if_else(Switch_Value == 2, 1, Switch_Value))
 
-test<-best_switches%>%filter(domain=="animals")%>%filter(Group=="CI")
 #Calculate item_no consistently in all_lexical to use in joining
 items_lexical_data <- full_lexical_data %>%select(-structure,-dimension,-alpha)%>%
   group_by(Subject, Group, domain) %>%
@@ -503,9 +501,9 @@ switches_recoded <- best_switches %>%
     "phonological" = "Phonological_Similarity",
     "frequency" = "Frequency_Value"
   ) %>% filter(row_id!=0)%>% #dropping first word of each list
-  pivot_longer(names_to = "cue", cols = c(semantic, phonological, frequency))
-
-
+  pivot_longer(names_to = "cue", cols = c(semantic, phonological, frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI")))
+                                                                                       
+                                                                                       
 ## does cluster/switch designation predict semantic similarity, phonological similarity, and frequency for each Group x Domain
 # Run lmer() for each cue type and extract results
 
@@ -532,6 +530,7 @@ emmeans(switch_results$model[[2]],pairwise~Group*domain*Switch,simple="Switch",p
 
 ### Within/Across Cluster plots
 ```{r}
+
 # Takes a long time w dyplr, converting to data.table
 setDT(switches_recoded)
 
