@@ -339,7 +339,7 @@ kable(no_USE_model_results)
 ```{r}
 #Getting N
 just_fluency<-full_indv_data %>%select(Subject,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()
-# Extract random model's NLL for each Subject x domain
+# Extract random model's nLL for each Subject x domain x structure x dim x alpha
 random_nLL_lookup <- full_model_data %>%
   group_by(Subject,domain,Group,structure,dimension,alpha)%>%
   filter(model_type == "random") %>%
@@ -353,8 +353,7 @@ bic <- full_model_data %>%
     k = case_when(
       str_detect(full_model, "static|dynamic_norms|dynamic_simdrop|pstatic|plocal_norms|plocal_simdrop|pglobal_norms|pglobal_simdrop|pswitch_norms|pswitch_simdrop") ~ 5,
       str_detect(full_model, "dynamic_delta|plocal_delta|pglobal_delta|pswitch_delta") ~ 6,
-      TRUE ~ 7  # multimodal delta
-    ),
+      TRUE ~ 7),  # multimodal delta
     optimalBIC = k * log(N) - 2 * Negative_Log_Likelihood_Optimized,
     randomBIC = k * log(N) - 2 * (-random_nLLs))
 
@@ -367,7 +366,7 @@ median_bic = bic %>%
   ungroup() 
 kable(median_bic)
 ```
-
+# UPDATE BELOW TO USE BIC BEST MODELS
 
 ## Salience Parameter (Beta) Analyses
 ```{r}
