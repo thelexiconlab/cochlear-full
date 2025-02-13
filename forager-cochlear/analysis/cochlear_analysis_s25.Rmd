@@ -582,51 +582,6 @@ wiac_cluster_plots[[1]]
 wiac_cluster_plots[[2]]  
 wiac_cluster_plots[[3]]
 
-
-#NOT TIDYBOOT
-# Generate plots
-wiac_cluster_plots <- map(plot_configs, ~ {
-  data_subset <- switches_recoded[cue == .x$cue]
-  
-  data_subset[, Switch := fifelse(.x$cue == "frequency" & is.na(Switch), 
-                                  "Cluster Transition", Switch)]
-  
-  data_subset[, Switch := factor(Switch, levels = c("Within Cluster Transition", "Switch Trial"))]
-  
-  # Compute means and standard errors (SE) instead of bootstrapped CIs
-  summary_data <- data_subset[, .(
-    mean_value = mean(get(.x$value_col), na.rm = TRUE),
-    se = sd(get(.x$value_col), na.rm = TRUE) / sqrt(.N)
-  ), by = .(domain, Switch, Group)]
-  
-  # Compute confidence intervals (assuming normal approximation)
-  summary_data[, `:=`(ci_lower = mean_value - 1.96 * se,
-                      ci_upper = mean_value + 1.96 * se)]
-
-  # Plot 
-  ggplot(summary_data, aes(fill = Switch, y = mean_value, x = Group)) +
-    facet_wrap(~domain) +
-    geom_bar(stat = "identity", position = "dodge") +
-    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05, position = position_dodge(0.9)) +
-    labs(
-      title = .x$plot_title,
-      y = .x$y_label,
-      x = "",
-      color = ""
-    ) +
-    theme_few() +
-    theme(
-      aspect.ratio = 1.5,
-      legend.position = "top",
-      axis.text.x = element_text(hjust = 1)
-    ) +
-    scale_fill_manual(values = c("cadetblue3", "orchid"))
-})
-
-wiac_cluster_plots[[1]]
-wiac_cluster_plots[[2]] 
-wiac_cluster_plots[[3]]
-
 ```
 
 
