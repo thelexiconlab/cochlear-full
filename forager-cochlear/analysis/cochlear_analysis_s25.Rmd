@@ -38,6 +38,7 @@ library(patchwork)
 library(ggridges)
 library(forcats)
 library(broom)
+library(data.table)
 ```
 
 ## Define Data Import & Validation Functions
@@ -160,7 +161,9 @@ full_model_data <- combine_model_data("model_results.csv") %>%select(-file_type)
     method = factor(method),
     param1 = factor(param1),
     param2 = factor(param2),
-    param3 = factor(param3))%>%
+    param3 = factor(param3),
+    dimension = factor(dimension),
+    alpha = factor(alpha))%>%
   mutate(model_type = fct_recode(foraging_type, 
                                   `pstatic` = "phonologicalstatic", #renaming models
                                   `plocal` = "phonologicaldynamiclocal",
@@ -178,9 +181,18 @@ full_model_data <- combine_model_data("model_results.csv") %>%select(-file_type)
 validate_combined_data(full_model_data, "model_results.csv")
 
 #switch designations
-#A LOT OF DATA - TAKES ~2hr TO RUN
-full_switch_data <- combine_model_data("switch_results.csv") %>%select(-file_type)%>%left_join(participant_groupings)%>% separate(Switch_Method, into = c("method", "param1", "param2", "param3"), sep = "_", fill = "right")%>%mutate(full_method=paste(method,param1,param2,param3,sep="_"))
-
+#A LOT OF DATA - using data.table
+full_switch_data <- combine_model_data("switch_results.csv")%>%select(-file_type)
+#Convert to data.table
+setDT(full_switch_data)
+setDT(participant_groupings)
+#join with labels
+full_switch_data <- participant_groupings[full_switch_data, on = "Subject"]  
+#separate params
+full_switch_data[, c("method", "param1", "param2", "param3") := tstrsplit(Switch_Method, "_", fixed = TRUE, fill = "NA")]
+full_switch_data[, full_method := paste(method, param1, param2, param3, sep = "_")]
+#convert back
+full_switch_data<-as.data.frame(full_switch_data)
 #check data
 validate_combined_data(full_switch_data, "switch_results.csv")
 
@@ -251,11 +263,10 @@ plots_lexical <- lexical_results %>%
       labs(title = "", x = "Fluency score", y = paste("Linear prediction", "(", unique(cue), ")")) +facet_wrap(~ domain) 
       +scale_colour_paletteer_d("LaCroixColoR::Mango") +
       theme_few() + 
-      theme(aspect.ratio = 1, legend.position = "right")))
+      theme(aspect.ratio = 1.5, legend.position = "top")))
 
-plots_lexical$emmip_plot[[1]]
-plots_lexical$emmip_plot[[2]]
-plots_lexical$emmip_plot[[3]]
+
+plots_lexical$emmip_plot[[1]]+plots_lexical$emmip_plot[[2]]+plots_lexical$emmip_plot[[3]]
 
 ```
 ### Semantic Similarity Across Structures
@@ -293,18 +304,21 @@ single+blended
 
 ## Model Analyses
 
-## Best Model for Each Specific Group x Domain
+## Best Model for Each Specific Group x Domain - nLL
 ```{r}
 #Aggregate sum_nLLs across participants for each model variation for each Group in each domain
 model_results = full_model_data %>%
   group_by(Group,domain,full_method,full_model,full_speech,everything) %>%
   summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
-  arrange(sum_nLL) %>% 
-  slice(1) %>% #best fit combo 
+  arrange(sum_nLL) %>%ungroup()%>%
+  group_by(Group,domain) %>%
+  arrange(sum_nLL) %>%       
+  slice(1) %>% 
   ungroup() %>%
-  select(Group,domain,full_method,full_model,full_speech,everything,sum_nLL)
+  select(Group,domain,sum_nLL,full_method,full_model,full_speech,everything)
 #print best models
 kable(model_results)
+
 
 #Excluding USE
 no_USE_model_results = full_model_data %>%filter(structure!="USE") %>%
@@ -320,6 +334,40 @@ no_USE_model_results = full_model_data %>%filter(structure!="USE") %>%
 kable(no_USE_model_results)
 
 ```
+
+## Best Model for Each Specific Group x Domain - BIC
+```{r}
+#Getting N
+just_fluency<-full_indv_data %>%select(Subject,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()
+# Extract random model's NLL for each Subject x domain
+random_nLL_lookup <- full_model_data %>%
+  group_by(Subject,domain,Group,structure,dimension,alpha)%>%
+  filter(model_type == "random") %>%
+  select(Subject,domain,Group,structure,dimension,alpha, random_nLLs = Negative_Log_Likelihood_Optimized)
+
+
+bic <- full_model_data %>%
+  left_join(just_fluency, by = c("Subject", "Group", "domain")) %>%
+  left_join(random_nLL_lookup, by = c("Subject","domain","Group","structure","dimension","alpha")) %>%  
+  mutate(
+    k = case_when(
+      str_detect(full_model, "static|dynamic_norms|dynamic_simdrop|pstatic|plocal_norms|plocal_simdrop|pglobal_norms|pglobal_simdrop|pswitch_norms|pswitch_simdrop") ~ 5,
+      str_detect(full_model, "dynamic_delta|plocal_delta|pglobal_delta|pswitch_delta") ~ 6,
+      TRUE ~ 7  # multimodal delta
+    ),
+    optimalBIC = k * log(N) - 2 * Negative_Log_Likelihood_Optimized,
+    randomBIC = k * log(N) - 2 * (-random_nLLs))
+
+median_bic = bic %>% 
+  mutate(deltaBIC  = randomBIC - optimalBIC) %>%
+  group_by(Group,domain,everything) %>%
+  summarise(medianBIC = median(deltaBIC)) %>%
+  arrange(medianBIC) %>%
+  slice(1) %>% 
+  ungroup() 
+kable(median_bic)
+```
+
 
 ## Salience Parameter (Beta) Analyses
 ```{r}
@@ -420,20 +468,22 @@ clusters+switches+ plot_layout(ncol = 1)
 
 ## Within Cluster vs Switch Analyses
 ```{r}
-#filtering to only include best switch method for each domain
-best_switches <- all_switches %>%
-  filter(paste(Group,domain, full_method) %in% paste(best_models$Group,best_models$domain, best_models$full_method)) %>%
+##SOMETHING WERID WITH JOINING - FIX - I THINK I JUST NEED TO ADD/DEL STRUCTURE DIM AND ALPHA
+#filtering to only include best method for each domain
+best_switches <- full_switch_data %>% select(-structure,-dimension,-alpha)%>%
+  filter(paste(Group,domain,full_method) %in% paste(best_models$Group, best_models$domain, best_models$full_method)) %>%
   mutate(Switch_Value = if_else(Switch_Value == 2, 1, Switch_Value))
 
+test<-best_switches%>%filter(domain=="animals")%>%filter(Group=="CI")
 #Calculate item_no consistently in all_lexical to use in joining
-items_lexical_data <- all_lexical %>%
-  group_by(Subject, domain) %>%
+items_lexical_data <- full_lexical_data %>%select(-structure,-dimension,-alpha)%>%
+  group_by(Subject, Group, domain) %>%
   mutate(row_id = row_number() - 1)  # Adjust row_id to start at 0 to account for first item
 
 #this code drops the first item from each list, and if switch_value = 1, marked as a switch trial, if switch_value=1, marked as within cluster transition, also labels clusters and switches by ordinal position
 #new first item only marked as within cluster if original switch_value==0
 switches_recoded <- best_switches %>%
-  group_by(Subject, domain) %>%
+  group_by(Subject,Group,domain) %>%
   mutate(
     Cluster_Number = cumsum(Switch_Value == 1),
     Switch = case_when(
@@ -446,9 +496,9 @@ switches_recoded <- best_switches %>%
     Switch == "Switch Trial" ~ Cluster_Number - 1,  # Adding switch number
     TRUE ~ NA_real_
   )) %>%
-  group_by(Subject, domain) %>%
+  group_by(Subject,Group, domain) %>%
   mutate(row_id = row_number() - 1) %>%  # Adjusting row_id to start at 0 to be able to drop first item
-  left_join(items_lexical_data, by = c("Subject", "Fluency_Item", "domain", "cattype", "row_id")) %>%
+  left_join(items_lexical_data, by = c("Subject","Group", "Fluency_Item", "domain","row_id")) %>%
   rename(
     "semantic" = "Semantic_Similarity",
     "phonological" = "Phonological_Similarity",
@@ -459,11 +509,12 @@ switches_recoded <- best_switches %>%
 
 ## does cluster/switch designation predict semantic similarity, phonological similarity, and frequency for each Group x Domain
 # Run lmer() for each cue type and extract results
+
 switch_results <- switches_recoded  %>%
   group_by(cue) %>%                                   
   nest() %>%                                         
  mutate(
-    model = map(data, ~ lmer(value ~ Group*domain*Switch+(1|Subject), data = .)) 
+    model = map(data, ~ lm(value ~ Group*domain*Switch, data = .)) 
   )
 
 #View results
@@ -476,13 +527,16 @@ print("Frequency")
 switch_results$model[[3]] %>% summary()
 
 #phonology
-#emmeans(switch_results$model[[2]],pairwise~domain*Switch,simple="Switch",pbkrtest.limit = 35657)
+emmeans(switch_results$model[[2]],pairwise~Group*domain*Switch,simple="Switch",pbkrtest.limit = 35657)
 ```
 
 
 ### Within/Across Cluster plots
 ```{r}
-#configure plots
+# Takes a long time w dyplr, converting to data.table
+setDT(switches_recoded)
+
+# Configure plots
 plot_configs <- list(
   list(cue = "semantic", value_col = "value", y_label = "Semantic similarity", plot_title = ""),
   list(cue = "phonological", value_col = "value", y_label = "Phonological similarity", plot_title = ""),
@@ -491,15 +545,68 @@ plot_configs <- list(
 
 # Generate plots
 wiac_cluster_plots <- map(plot_configs, ~ {
-  switches_recoded %>%
-    filter(cue == .x$cue) %>%
-    mutate(
-      Switch = ifelse(.x$cue == "frequency" & is.na(Switch), "Cluster Transition", Switch),
-      Switch = factor(Switch, levels = c("Within Cluster Transition", "Switch Trial"))
-    ) %>%
-    group_by(domain, Switch) %>%
-    tidyboot_mean(get(.x$value_col), nboot = 1000, na.rm = TRUE) %>%
-    ggplot(aes(fill = Switch, y = empirical_stat, x = Group)) + facet_wrap(~domain)+
+  data_subset <- switches_recoded[cue == .x$cue]
+  
+  data_subset[, Switch := fifelse(.x$cue == "frequency" & is.na(Switch), 
+                                  "Cluster Transition", Switch)]
+  
+ data_subset[, Switch := factor(Switch, levels = c("Within Cluster Transition", "Switch Trial"))]
+  
+  # Convert back to tibble for tidyboot
+  data_subset_tibble <- as_tibble(data_subset)
+  
+  boot_summary <- data_subset_tibble %>%
+    group_by(domain, Switch, Group) %>%
+    tidyboot_mean(!!sym(.x$value_col), nboot = 1000, na.rm = TRUE)
+
+  # Plot 
+  ggplot(boot_summary, aes(fill = Switch, y = empirical_stat, x = Group)) +
+    facet_wrap(~domain) +
+    geom_bar(stat = "identity", position = "dodge") +
+   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05, position = position_dodge(0.9)) +
+   labs(
+      title = .x$plot_title,
+      y = .x$y_label,
+      x = "",
+      color = ""
+  ) +
+    theme_few() +
+    theme(
+      aspect.ratio = 1.5,
+      legend.position = "top",
+      axis.text.x = element_text(hjust = 1)
+    ) +
+   scale_fill_manual(values = c("cadetblue3", "orchid"))
+})
+
+wiac_cluster_plots[[1]] 
+wiac_cluster_plots[[2]]  
+wiac_cluster_plots[[3]]
+
+
+#NOT TIDYBOOT
+# Generate plots
+wiac_cluster_plots <- map(plot_configs, ~ {
+  data_subset <- switches_recoded[cue == .x$cue]
+  
+  data_subset[, Switch := fifelse(.x$cue == "frequency" & is.na(Switch), 
+                                  "Cluster Transition", Switch)]
+  
+  data_subset[, Switch := factor(Switch, levels = c("Within Cluster Transition", "Switch Trial"))]
+  
+  # Compute means and standard errors (SE) instead of bootstrapped CIs
+  summary_data <- data_subset[, .(
+    mean_value = mean(get(.x$value_col), na.rm = TRUE),
+    se = sd(get(.x$value_col), na.rm = TRUE) / sqrt(.N)
+  ), by = .(domain, Switch, Group)]
+  
+  # Compute confidence intervals (assuming normal approximation)
+  summary_data[, `:=`(ci_lower = mean_value - 1.96 * se,
+                      ci_upper = mean_value + 1.96 * se)]
+
+  # Plot 
+  ggplot(summary_data, aes(fill = Switch, y = mean_value, x = Group)) +
+    facet_wrap(~domain) +
     geom_bar(stat = "identity", position = "dodge") +
     geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05, position = position_dodge(0.9)) +
     labs(
@@ -512,12 +619,14 @@ wiac_cluster_plots <- map(plot_configs, ~ {
     theme(
       aspect.ratio = 1.5,
       legend.position = "top",
-      axis.text.x = element_text(angle = 45, hjust = 1)
+      axis.text.x = element_text(hjust = 1)
     ) +
     scale_fill_manual(values = c("cadetblue3", "orchid"))
 })
 
-wiac_cluster_plots[[1]] + wiac_cluster_plots[[2]] + wiac_cluster_plots[[3]]
+wiac_cluster_plots[[1]]
+wiac_cluster_plots[[2]] 
+wiac_cluster_plots[[3]]
 
 ```
 
