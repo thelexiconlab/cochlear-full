@@ -345,15 +345,17 @@ random_nLL_lookup <- full_model_data %>%
   filter(model_type == "random") %>%
   select(Subject,domain,Group,structure,dimension,alpha, random_nLLs = Negative_Log_Likelihood_Optimized)
 
+#setting up parameter matching
+full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,structure,sep="_"))
 
-bic <- full_model_data %>%
+#importing parameter counts
+parameters<-read.csv("Cochlear_BIC_Parameters.csv") %>%select(parameter_link,k)
+
+bic <- full_model_data_parameters %>%
   left_join(just_fluency, by = c("Subject", "Group", "domain")) %>%
   left_join(random_nLL_lookup, by = c("Subject","domain","Group","structure","dimension","alpha")) %>%  
+  left_join(parameters, by="parameter_link") %>%
   mutate(
-    k = case_when(
-      str_detect(full_model, "static|dynamic_norms|dynamic_simdrop|pstatic|plocal_norms|plocal_simdrop|pglobal_norms|pglobal_simdrop|pswitch_norms|pswitch_simdrop") ~ 5,
-      str_detect(full_model, "dynamic_delta|plocal_delta|pglobal_delta|pswitch_delta") ~ 6,
-      TRUE ~ 7),  # multimodal delta
     optimalBIC = k * log(N) - 2 * Negative_Log_Likelihood_Optimized,
     randomBIC = k * log(N) - 2 * (-random_nLLs))
 
