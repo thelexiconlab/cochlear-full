@@ -201,14 +201,20 @@ validate_combined_data(full_switch_data, "switch_results.csv")
 
 ## Lexical Analyses
 ```{r}
-#note these values are the same across model variations
-#setting up the df
-lexical_analysis_data<-full_indv_data %>% select(Subject, Group, Semantic_Similarity_mean, Phonological_Similarity_mean, Frequency_Value_mean, 
+#set up overall df
+lexical_analysis_data <-full_indv_data %>% select(Subject, Group, Semantic_Similarity_mean, Phonological_Similarity_mean, Frequency_Value_mean, 
          fluency_score, domain) %>% na.omit() %>%
   rename("semantic" = "Semantic_Similarity_mean", 
          "phonological" = "Phonological_Similarity_mean",
          "frequency" = "Frequency_Value_mean")%>%
-  pivot_longer(names_to = "cue", cols=c(semantic,phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI")))
+  pivot_longer(names_to = "cue", cols=c(semantic,phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI"))) 
+#setting up the semantic df
+lexical_analysis_data_semantic<-full_indv_data %>% select(Subject, Group, Semantic_Similarity_mean, Phonological_Similarity_mean, Frequency_Value_mean, 
+         fluency_score, domain,structure,dimension,alpha) %>% na.omit() %>%
+  rename("semantic" = "Semantic_Similarity_mean", 
+         "phonological" = "Phonological_Similarity_mean",
+         "frequency" = "Frequency_Value_mean")%>%
+  pivot_longer(names_to = "cue", cols=c(semantic,phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI"))) %>%mutate(dimension = factor(dimension, levels = c(50, 100, 200, 300))) %>%mutate(structure = factor(structure, levels = c("word2vec","speech2vec","blended","USE")))
 
 
 #Does fluency score differ by Group and domain
@@ -217,10 +223,27 @@ summary(fluency_lm)
 car::Anova(fluency_lm)
 emmeans(fluency_lm, pairwise~Group*domain, pbkrtest.limit = 38553)
 
+#semantic similarity - does it vary across Group x domain x structure x dimension x alpha x fluency, fluency_score as a covariate
+#looking at structure
+semantic_model_overall_structure<- lm(value ~ Group * domain * structure * fluency_score, data = lexical_analysis_data_semantic%>%filter(cue=="semantic"))
+summary(semantic_model_overall_structure)
+car::Anova(semantic_model_overall_structure)
+#looking at dimensions for those with variable dimensions (ie excluding USE)
+semantic_model_dimensions<- lm(value ~ Group * domain * structure * dimension *fluency_score, data = lexical_analysis_data_semantic%>%filter(cue=="semantic",structure!="USE"))
+summary(semantic_model_dimensions)
+car::Anova(semantic_model_dimensions)
+#looking at dimension and alpha for blended models
+semantic_model_alpha<- lm(value ~ Group * domain * dimension * alpha * fluency_score, data = lexical_analysis_data_semantic%>%filter(cue=="semantic",structure=="blended"))
+summary(semantic_model_alpha)
+car::Anova(semantic_model_alpha)
 
-#Does semantic similarity, phonological similarity, and frequency differ across Group x domain, fluency score as covariate
+
+
+#Phonological similarity & word frequency
+#note these values are the same across model variations
+#Does phonological similarity and frequency differ across Group x domain, fluency score as covariate
 # Run lm() for each cue and extract results
-lexical_results <- lexical_analysis_data  %>%
+lexical_results <- lexical_analysis_data  %>% filter(cue!="semantic")%>%
   group_by(cue) %>%                                   # Group by cue
   nest() %>%                                         # Nest data by cue
  mutate(
@@ -254,26 +277,32 @@ fluency_plot
 
 ### Lexical plots
 ```{r}
-#plots
-plots_lexical <- lexical_results %>% 
-  mutate(
-    emmip_plot = map(model, ~ 
-      emmip(.x, Group ~ fluency_score | domain,  # Use Group for color, domain for facetting
-            cov.reduce = range, CI = TRUE) +
-      labs(title = "", x = "Fluency score", y = paste("Linear prediction", "(", unique(cue), ")")) +facet_wrap(~ domain) 
-      +scale_colour_paletteer_d("LaCroixColoR::Mango") +
-      theme_few() + 
-      theme(aspect.ratio = 1.5, legend.position = "top")))
+#semantic plots
+#structure plot
+structure<-emmip(semantic_model_overall_structure, structure ~ Group | domain,  
+      cov.reduce = range, CI = TRUE) +
+  labs(title = "Predicted Values by Group and Structure",
+       x = "Group", 
+       y = "Estimated Semantic Similarity") +
+  scale_colour_paletteer_d("LaCroixColoR::Mango") +
+  theme_few() +
+  theme(aspect.ratio = 1.5, legend.position = "top")
+structure
 
+#alpha plot
+alpha<-emmip(semantic_model_alpha, Group ~ alpha | domain,  
+      cov.reduce = range, CI = TRUE) +
+  labs(title = "Predicted Similarity Across Hybrid Model Alphas",
+       x = expression(alpha), 
+       y = "Estimated Semantic Similarity") +
+  scale_colour_paletteer_d("LaCroixColoR::Mango") +
+  theme_few() +
+  theme(aspect.ratio = 1.5, legend.position = "top")
+alpha
 
-plots_lexical$emmip_plot[[1]]+plots_lexical$emmip_plot[[2]]+plots_lexical$emmip_plot[[3]]
-
-```
-### Semantic Similarity Across Structures
-```{r}
+#grid plot w/ Group x domain x structure x dimension x alpha
 plot_data<-full_indv_data %>%select(Subject, Group, Semantic_Similarity_mean, Phonological_Similarity_mean, Frequency_Value_mean, structure, dimension,alpha,
          fluency_score, domain) %>% na.omit() %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%mutate(dimension = factor(dimension, levels = c("50","100","200","300","512")))%>%mutate(structure = factor(structure, levels = c("word2vec","speech2vec","blended","USE")))
-
 
 single<-plot_data %>% filter(structure!="blended") %>%
   ggplot(aes(x = structure, y = dimension, fill = Semantic_Similarity_mean)) +
@@ -299,41 +328,23 @@ blended<-plot_data %>% filter(structure=="blended") %>%
   ) +
   facet_grid(Group ~ domain)
 single+blended
+
+#phonological and frequency plots
+plots_lexical <- lexical_results %>% 
+  mutate(
+    emmip_plot = map(model, ~ 
+      emmip(.x, Group ~ fluency_score | domain,  # Use Group for color, domain for facetting
+            cov.reduce = range, CI = TRUE) +
+      labs(title = "", x = "Fluency score", y = paste("Linear prediction", "(", unique(cue), ")")) +facet_wrap(~ domain) 
+      +scale_colour_paletteer_d("LaCroixColoR::Mango") +
+      theme_few() + 
+      theme(aspect.ratio = 1.5, legend.position = "top")))
+
+
+plots_lexical$emmip_plot[[1]]+plots_lexical$emmip_plot[[2]]
+
 ```
-
-
 ## Model Analyses
-
-## Best Model for Each Specific Group x Domain - nLL
-```{r}
-#Aggregate sum_nLLs across participants for each model variation for each Group in each domain
-model_results = full_model_data %>%
-  group_by(Group,domain,full_method,full_model,full_speech,everything) %>%
-  summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
-  arrange(sum_nLL) %>%ungroup()%>%
-  group_by(Group,domain) %>%
-  arrange(sum_nLL) %>%       
-  slice(1) %>% 
-  ungroup() %>%
-  select(Group,domain,sum_nLL,full_method,full_model,full_speech,everything)
-#print best models
-kable(model_results)
-
-
-#Excluding USE
-no_USE_model_results = full_model_data %>%filter(structure!="USE") %>%
-  group_by(Group,domain,full_method,full_model,full_speech,everything) %>%
-  summarise(sum_nLL = sum(Negative_Log_Likelihood_Optimized)) %>%
-  arrange(sum_nLL) %>%ungroup()%>%
-  group_by(Group,domain) %>%
-  arrange(sum_nLL) %>%       
-  slice(1) %>% 
-  ungroup() %>%
-  select(Group,domain,full_method,full_model,full_speech,everything,sum_nLL)
-#print best models
-kable(no_USE_model_results)
-
-```
 
 ## Best Model for Each Specific Group x Domain - BIC
 ```{r}
@@ -341,10 +352,11 @@ kable(no_USE_model_results)
 just_fluency<-full_indv_data %>%select(Subject,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()
 # Extract random model's nLL for each Subject x domain x structure x dim x alpha
 random_nLL_lookup <- full_model_data %>%
-  group_by(Subject,domain,Group,structure,dimension,alpha)%>%
+  group_by(Subject, domain, Group, structure, dimension, alpha) %>%
   filter(model_type == "random") %>%
-  select(Subject,domain,Group,structure,dimension,alpha, random_nLLs = Negative_Log_Likelihood_Optimized)
-
+  mutate(random_k = ifelse(structure == "blended", 2, 1)) %>% #setting random model k's
+  select(Subject, domain, Group, structure, dimension, alpha, random_k, 
+         random_nLLs = Negative_Log_Likelihood_Optimized)
 #setting up parameter matching
 full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,structure,sep="_"))
 
@@ -357,7 +369,7 @@ bic <- full_model_data_parameters %>%
   left_join(parameters, by="parameter_link") %>%
   mutate(
     optimalBIC = k * log(N) - 2 * Negative_Log_Likelihood_Optimized,
-    randomBIC = k * log(N) - 2 * (-random_nLLs))
+    randomBIC = random_k * log(N) - 2 * (-random_nLLs))
 
 median_bic = bic %>% 
   mutate(deltaBIC  = randomBIC - optimalBIC) %>%
@@ -368,13 +380,13 @@ median_bic = bic %>%
   ungroup() 
 kable(median_bic)
 ```
-# UPDATE BELOW TO USE BIC BEST MODELS
+
 
 ## Salience Parameter (Beta) Analyses
 ```{r}
 #Filtering full data to only include best model for each domain type
 best_models <- full_model_data %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%
-  filter(paste(Group,domain,everything) %in% paste(model_results$Group, model_results$domain, model_results$everything)) %>%
+  filter(paste(Group,domain,everything) %in% paste(median_bic$Group, median_bic$domain, median_bic$everything)) %>%
   group_by(Group,domain)
 
 #Separating out betas
