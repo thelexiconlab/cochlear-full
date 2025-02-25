@@ -357,6 +357,8 @@ random_nLL_lookup <- full_model_data %>%
   mutate(random_k = ifelse(structure == "blended", 2, 1)) %>% #setting random model k's
   select(Subject, domain, Group, structure, dimension, alpha, random_k, 
          random_nLLs = Negative_Log_Likelihood_Optimized)
+
+
 #setting up parameter matching
 full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,structure,sep="_"))
 
@@ -371,14 +373,43 @@ bic <- full_model_data_parameters %>%
     optimalBIC = k * log(N) - 2 * Negative_Log_Likelihood_Optimized,
     randomBIC = random_k * log(N) - 2 * (-random_nLLs))
 
-median_bic = bic %>% 
+
+#EXPLORATORY
+#looking at distribution
+#negatively skewed 
+bic %>%
+  ggplot( aes(x=optimalBIC, fill=domain)) +
+    geom_density(fill="#69b3a2", color="#e9ecef", alpha=0.8)+facet_wrap(~domain)
+
+#sum BIC
+sum_bic = bic %>%
+  group_by(Group,domain,everything) %>%
+  summarise(sumBIC = sum(optimalBIC)) %>%
+  arrange(sumBIC) %>%
+  slice(1) %>% 
+  ungroup() 
+kable(sum_bic)
+
+#the phonological models better when looking at delta BIC
+#median delta BIC
+median_delta_bic = bic %>% 
   mutate(deltaBIC  = randomBIC - optimalBIC) %>%
   group_by(Group,domain,everything) %>%
   summarise(medianBIC = median(deltaBIC)) %>%
   arrange(medianBIC) %>%
   slice(1) %>% 
   ungroup() 
-kable(median_bic)
+kable(median_delta_bic)
+
+#mean delta BIC
+mean_delta_bic = bic %>% 
+  mutate(deltaBIC  = randomBIC - optimalBIC) %>%
+  group_by(Group,domain,everything) %>%
+  summarise(meanBIC = mean(deltaBIC)) %>%
+  arrange(meanBIC) %>%
+  slice(1) %>% 
+  ungroup() 
+kable(mean_delta_bic)
 ```
 
 
