@@ -372,7 +372,8 @@ class forage:
                 else:
                     numrat = pow(freql[k],beta[0]) * pow(siml[k],beta[1])
                     denrat = sum(pow(freqh[k],beta[0]) * pow(simh[k],beta[1]))
-                
+
+              
             ct += - np.log(numrat/denrat)
             nll_vec.append(- np.log(numrat/denrat))
 
