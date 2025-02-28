@@ -379,14 +379,15 @@ lowest_bic = bic %>%
   group_by(Subject) %>%
   slice_min(optimalBIC)
 
+#look at distribution
 lowest_bic %>%
   ggplot(aes(x = optimalBIC, fill = domain)) +
   geom_density(fill = "#69b3a2", color = "#e9ecef", alpha = 0.8) +
-  facet_grid(domain ~ Group) +  # Correct facet_grid syntax
+  facet_grid(domain ~ Group) +  
   xlim(-600, 0)
 
 
-#the phonological models better when looking at delta BIC
+#Best models per Group x domain
 #median delta BIC
 median_delta_bic = bic %>% 
   mutate(deltaBIC  = randomBIC - optimalBIC) %>%
@@ -398,16 +399,6 @@ median_delta_bic = bic %>%
 kable(median_delta_bic)
 
 
-
-#mean delta BIC
-mean_delta_bic = bic %>% 
-  mutate(deltaBIC  = randomBIC - optimalBIC) %>%
-  group_by(Group,domain,everything) %>%
-  summarise(meanBIC = mean(deltaBIC)) %>%
-  arrange(meanBIC) %>%
-  slice(1) %>% 
-  ungroup() 
-kable(mean_delta_bic)
 ```
 
 
@@ -415,7 +406,7 @@ kable(mean_delta_bic)
 ```{r}
 #Filtering full data to only include best model for each domain type
 best_models <- full_model_data %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%
-  filter(paste(Group,domain,everything) %in% paste(median_bic$Group, median_bic$domain, median_bic$everything)) %>%
+  filter(paste(Group,domain,everything) %in% paste(median_delta_bic$Group, median_delta_bic$domain, median_delta_bic$everything)) %>%
   group_by(Group,domain)
 
 #Separating out betas
