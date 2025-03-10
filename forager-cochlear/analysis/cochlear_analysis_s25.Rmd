@@ -417,7 +417,7 @@ beta_values  = best_models  %>%
 
 
 # Run lm() for each beta type and extract results
-beta_results <- beta_values  %>%
+beta_results <- beta_values  %>% filter(beta!="Beta_Phonological")%>%
   group_by(beta) %>%                                   
   nest() %>%                                         
  mutate(
@@ -435,7 +435,7 @@ View(beta_summaries)
 ### Beta plot
 
 ```{r}
-beta_values %>%
+beta_values %>%mutate(value = replace_na(value, 0))%>%
   group_by(Group, domain, beta) %>%
   tidyboot_mean(value, nboot = 1000, na.rm = TRUE) %>%
   separate(beta, into = c("b", "beta")) %>%
