@@ -228,16 +228,17 @@ emmeans(fluency_lm, pairwise~Group*domain, pbkrtest.limit = 38553)
 semantic_model_overall_structure<- lm(value ~ Group * domain * structure * fluency_score, data = lexical_analysis_data_semantic%>%filter(cue=="semantic"))
 summary(semantic_model_overall_structure)
 car::Anova(semantic_model_overall_structure)
+
 #looking at dimensions for those with variable dimensions (ie excluding USE)
 semantic_model_dimensions<- lm(value ~ Group * domain * structure * dimension *fluency_score, data = lexical_analysis_data_semantic%>%filter(cue=="semantic",structure!="USE"))
 summary(semantic_model_dimensions)
 car::Anova(semantic_model_dimensions)
+
 #looking at dimension and alpha for blended models
 semantic_model_alpha<- lm(value ~ Group * domain * dimension * alpha * fluency_score, data = lexical_analysis_data_semantic%>%filter(cue=="semantic",structure=="blended"))
 summary(semantic_model_alpha)
 car::Anova(semantic_model_alpha)
-
-
+emmeans(semantic_model_alpha,pairwise~alpha*dimension,simple="alpha")
 
 #Phonological similarity & word frequency
 #note these values are the same across model variations
@@ -370,7 +371,7 @@ bic <- full_model_data_parameters %>%
   left_join(random_nLL_lookup, by = c("Subject","domain","Group","structure","dimension","alpha")) %>%  
   left_join(parameters, by="parameter_link") %>%
   mutate(
-    optimalBIC = k * log(N) - 2 * Negative_Log_Likelihood_Optimized,
+    optimalBIC = k * log(N) - 2 * (-Negative_Log_Likelihood_Optimized),
     randomBIC = random_k * log(N) - 2 * (-random_nLLs))
 
 
@@ -384,16 +385,17 @@ lowest_bic %>%
   ggplot(aes(x = optimalBIC, fill = domain)) +
   geom_density(fill = "#69b3a2", color = "#e9ecef", alpha = 0.8) +
   facet_grid(domain ~ Group) +  
-  xlim(-600, 0)
+  xlim(0,400)
 
 
 #Best models per Group x domain
 #median delta BIC
-median_delta_bic = bic %>% 
+#excluding USE
+median_delta_bic = bic %>% filter(structure!="USE")%>%
   mutate(deltaBIC  = randomBIC - optimalBIC) %>%
   group_by(Group,domain,everything) %>%
   summarise(medianBIC = median(deltaBIC)) %>%
-  arrange(medianBIC) %>%
+  arrange(desc(medianBIC)) %>%
   slice(1) %>% 
   ungroup() 
 kable(median_delta_bic)
@@ -446,7 +448,7 @@ beta_values %>%
   ) %>%
   mutate(beta = fct_relevel(beta, "Semantic\nSimilarity", "Phonological\nSimilarity", "Word\nFrequency")) %>%
   ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) + facet_wrap(~domain)+
-  geom_bar(stat = 'identity', position = "dodge") +
+  geom_bar(stat = 'identity', position = "dodge",color="black") +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0, position = position_dodge(0.9)) +
   labs(y = bquote(beta ~ "(Parameter Salience)"), x = "") +
   theme_few() +
@@ -594,7 +596,7 @@ wiac_cluster_plots <- map(plot_configs, ~ {
   # Plot 
   ggplot(boot_summary, aes(fill = Switch, y = empirical_stat, x = Group)) +
     facet_wrap(~domain) +
-    geom_bar(stat = "identity", position = "dodge") +
+    geom_bar(stat = "identity", position = "dodge",color="black") +
    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05, position = position_dodge(0.9)) +
    labs(
       title = .x$plot_title,
@@ -608,7 +610,7 @@ wiac_cluster_plots <- map(plot_configs, ~ {
       legend.position = "top",
       axis.text.x = element_text(hjust = 1)
     ) +
-   scale_fill_manual(values = c("cadetblue3", "orchid"))
+   scale_fill_manual(values = c("cadetblue3", "gold"))
 })
 
 wiac_cluster_plots[[1]] 
