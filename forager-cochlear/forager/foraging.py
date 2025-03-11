@@ -94,7 +94,7 @@ class forage:
             elif switchvals[k]==1: ## "dip" based on sim-drop
                 # If similarity dips, P of item is based on frequency 
                 numrat = pow(freql[k],beta[0]) 
-                denrat = sum(pow(freqh[k],beta[0]))
+                denrat = sum(pow(freqh[k],beta[0]))   
 
             else:    
                 # if not first item then its probability is based on its similarity to prev item AND frequency

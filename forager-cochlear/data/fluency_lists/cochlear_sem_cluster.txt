@@ -1,0 +1,16 @@
+ID	Word
+CAF-657	lizard
+CAF-657	snake
+CAF-657	frog
+CAF-657	turtle
+CAF-657	cat
+CAF-657	leopard
+CAF-657	panther
+CAF-657	jaguar
+CAF-657	dog
+CAF-657	wolf
+CAF-657	fox
+CAF-657	fish
+CAF-657	shark
+CAF-657	dolphin
+

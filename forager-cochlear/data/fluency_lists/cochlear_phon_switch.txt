@@ -1,0 +1,9 @@
+ID	Word
+CAF-657	cat
+CAF-657	rat
+CAF-657	mouse
+CAF-657	moose
+CAF-657	deer
+CAF-657	horse
+CAF-657	boar
+CAF-657	pig
