@@ -1,0 +1,7 @@
+ID	Word
+CAF-657	dog
+CAF-657	kitten
+CAF-657	tabby
+CAF-657	squab
+CAF-657	pigeon
+CAF-657	robin

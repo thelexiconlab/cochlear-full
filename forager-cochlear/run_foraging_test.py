@@ -27,7 +27,7 @@ Workflow:
 """
 
 # Global Variables
-models = ['static','dynamic','pstatic','pdynamic','all']
+models = ['static','dynamic','pstatic','pdynamic','all', 'dynamicsep']
 switch_methods = ['simdrop','multimodal','norms_associative','norms_categorical', 'delta', 'multimodaldelta', 'all']
 
 #Methods
@@ -369,6 +369,24 @@ def calculate_model(model, history_vars, switch_names, switch_vecs):
                 beta_df_switch, beta_ds_switch, beta_dp_cluster, beta_dp_switch,  
                 nll, nll_vec))
     
+    if model == models[5]: # DYNAMICSEP
+        for i, switch_vec in enumerate(switch_vecs):
+            r = np.random.rand(4)
+            
+            v = minimize(forage.model_dynamic_separated, r, args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1], switch_vec))
+            # beta_freq_first = float(v[0]) 
+            # beta_freq_cluster = float(v[1]) 
+            # beta_sem_cluster = float(v[2]) 
+            # beta_freq_switch = float(v[3]) 
+
+            optimized_params = v.x  # Optimized parameters
+            optimized_NLL = v.fun   # Minimum function value (i.e., optimized NLL)
+
+            print("optimized_params", optimized_params)
+            print("optimized_NLL", optimized_NLL)
+
+            
+            
     # Unoptimized Model
     model_name.append('forage_random_baseline')
     nll_baseline, nll_baseline_vec = forage.model_static_report(beta = [0,0], freql = history_vars[2], freqh = history_vars[3], siml = history_vars[0], simh = history_vars[1])
@@ -662,9 +680,12 @@ args.data = os.path.join(os.getcwd(),args.data)
 output_dir = 'output'
 file_name = 'forager_results.zip'
 
-alpha_str = f"{args.alpha:.1f}" #convert float to str
-# Construct the output path
-oname = os.path.join(output_dir, args.domain, args.speech, args.dimension, alpha_str)
+# Check if alpha is provided
+if hasattr(args, "alpha") and args.alpha is not None:
+    alpha_str = f"{args.alpha:.1f}"
+    oname = os.path.join(output_dir, args.domain, args.speech, args.dimension, alpha_str)
+else:
+    oname = os.path.join(output_dir, args.domain, args.speech, args.dimension)
 
 # Create the directory if it does not exist
 os.makedirs(oname, exist_ok=True)
@@ -821,3 +842,5 @@ else:
 ## blended models
 # python3 run_foraging.py --data data/fluency_lists/samples/coch-no-corrections.txt --pipeline models --model all --switch all  --domain foods --speech blended --dimension 50 --alpha 0.2
 # python3 run_foraging.py --data data/fluency_lists/samples/coch-no-corrections.txt --pipeline models --model dynamic --switch simdrop  --domain foods --speech blended --dimension 50 --alpha 0.2
+
+# python3 run_foraging_test.py --data data/fluency_lists/freq_switch.txt --pipeline models --model dynamicsep --switch simdrop  --domain animals --speech speech2vec

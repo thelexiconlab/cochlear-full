@@ -1,0 +1,7 @@
+ID	Word
+CAF-657	dog
+CAF-657	cat
+CAF-657	kitten
+CAF-657	horse
+CAF-657	mule
+CAF-657	ox

@@ -106,6 +106,53 @@ class forage:
 
         return ct
 
+    def model_dynamic_separated(beta, freql, freqh, siml, simh, switchvals):
+        ''' 
+        Dynamic Foraging Model based on Hills, T. T., Jones, M. N., & Todd, P. M. (2012).
+            Optimal Foraging in Semantic Memory.
+
+            Description: This model computes the likelihood of each given item in the fluency list based 
+            on two cues: semantic similarity (local)  and frequency (global). The likelihood is computed
+            based on the product of semantic similarity and frequency until a switch is detected, at which 
+            point the likelihood is computed based on frequency (with the exception of the first item, whose 
+            likelihood is computed based on frequency).
+
+            Args: 
+                beta (tuple, size: 2): saliency parameter(s) encoding (beta_frequency, beta_semantic).
+                freql (list, size: L): frequency list obtained via create_history_variables
+                freqh (list, size: L arrays of size N): frequency history list obtained via create_history_variables
+                siml (list, size: L ): semantic similarity list obtained via create_history_variables
+                simh (list, size: L arrays of size N ): similarity history list obtained via create_history_variables
+                switchvals (list, size: L ): list of switch values for each item in the fluency list.
+            Returns: 
+                ct (np.float): negative log-likelihood to be minimized in parameter fit 
+        '''
+        ## beta contains
+        ## beta_freq_first, beta_freq_cluster, beta_sem_cluster, beta_freq_switch
+
+        ct = 0
+
+        for k in range(0, len(freql)):
+            if k == 0:
+                # P of item based on frequency alone (freq of this item / freq of all items)
+                numrat = pow(freql[k],beta[0])
+                denrat = sum(pow(freqh[k],beta[0]))
+            
+            elif switchvals[k]==1: ## "dip" based on sim-drop: SWITCH EVENT
+                # If similarity dips, P of item is based on frequency 
+                numrat = pow(freql[k],beta[3]) 
+                denrat = sum(pow(freqh[k],beta[3]))   
+
+            else:    # CLUSTER EVENT
+                # if not first item then its probability is based on its similarity to prev item AND frequency
+                # P of item based on frequency and similarity
+                numrat = pow(freql[k],beta[1]) * pow(siml[k],beta[2])
+                denrat = sum(pow(freqh[k],beta[1]) * pow(simh[k],beta[2]))
+                
+            ct += - np.log(numrat/denrat)
+
+        return ct
+        
     def model_static_phon(beta, freql, freqh, siml, simh, phonl, phonh):
         '''
             Description: 
