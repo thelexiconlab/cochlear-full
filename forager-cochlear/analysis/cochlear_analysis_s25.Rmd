@@ -277,8 +277,6 @@ best_blended_delta_bic_analysis <- best_blended_delta_bic %>%
     alpha = as.numeric(as.character(alpha)),
     method = as.character(method),model_type = as.character(model_type))
 
-#CHI SQUARE ANALYSES
-
 #chi square for models
 model_table <- table(best_blended_delta_bic_analysis$Group, best_blended_delta_bic_analysis$model_type)
 model_table_subset_pswitch <- model_table[,"pswitch"]
@@ -644,6 +642,21 @@ plots_switch$emmip_plot[[2]]
 plots_switch$emmip_plot[[3]]
 
 #looking at intx of group x switch x fluency score for phonological similarity
+#emmip plot
+plots_switch_phon<-switch_results %>% 
+  mutate(
+    emmip_plot = map(model, ~ 
+      emmip(.x, Switch ~ fluency_score | Group,  
+            cov.reduce = range, CI = TRUE) +
+      labs(title = "", x = "cluster vs. switch", y = paste("Estimated", unique(cue))) 
+      +scale_colour_paletteer_d("nationalparkcolors::CraterLake")  +
+      scale_fill_paletteer_d("nationalparkcolors::CraterLake") +
+      theme_few() + 
+      theme(legend.position = "top")))
+plots_switch_phon$emmip_plot[[2]]
+
+
+#raw values
 ggplot(data=switches_recoded%>%filter(cue=="phonological")%>%mutate(Group = factor(Group, levels = c("NH","CI"))),aes(y = value, x = fluency_score, group = Switch, color = Switch)) + facet_wrap(~Group)+
   theme_few() +  
   geom_smooth(method = "lm", se = TRUE,size=1) +
