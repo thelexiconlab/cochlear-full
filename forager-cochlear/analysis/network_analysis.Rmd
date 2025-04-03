@@ -35,46 +35,15 @@ semantics_overall<-semantics%>%
   mutate(Frequency_Value = frequency/100,
          Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological),alpha_recoded = ifelse(alpha > 0.4, "high alpha", "low alpha"))
 
-word2vec_nh_animals<-semantics %>%filter(Group=="NH",structure=="word2vec",domain=="animals")%>%
-  rename(word2vec = semantic) %>% 
-  group_by(Subject) %>% mutate(item = row_number()) %>%
-  left_join(participant_groupings) %>%
-  mutate(Frequency_Value = frequency/100,
-         Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological))
 
-word2vec_ci_animals<-semantics %>%filter(Group=="CI",structure=="word2vec",domain=="animals")%>%
-  rename(word2vec = semantic) %>% 
-  group_by(Subject) %>% mutate(item = row_number()) %>%
-  left_join(participant_groupings) %>%
-  mutate(Frequency_Value = frequency/100,
-         Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological))
-
-
-
-speech2vec_nh_animals<-semantics %>%filter(Group=="NH",structure=="speech2vec",domain=="animals")%>%
-  rename(speech2vec = semantic) %>% 
-  group_by(Subject) %>% mutate(item = row_number()) %>%
-  left_join(participant_groupings) %>%
-  mutate(Frequency_Value = frequency/100,
-         Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological)) 
-
-speech2vec_ci_animals<-semantics %>%filter(Group=="CI",structure=="speech2vec",domain=="animals")%>%
-  rename(speech2vec = semantic) %>% 
-  group_by(Subject) %>% mutate(item = row_number()) %>%
-  left_join(participant_groupings) %>%
-  mutate(Frequency_Value = frequency/100,
-         Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological))
-
-
-
-blended_nh_animals<-semantics %>%filter(Group=="NH",structure=="blended",domain=="animals")%>%
+blended_nh_animals<-semantics %>%filter(Group=="NH",domain=="animals")%>%
   rename(blended = semantic) %>% 
   group_by(Subject) %>% mutate(item = row_number()) %>%
   left_join(participant_groupings) %>%
   mutate(Frequency_Value = frequency/100,
          Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological),alpha_recoded = ifelse(alpha > 0.4, "high alpha", "low alpha"))
 
-blended_ci_animals<-semantics %>%filter(Group=="CI",structure=="blended",domain=="animals")%>%
+blended_ci_animals<-semantics %>%filter(Group=="CI",domain=="animals")%>%
   rename(blended = semantic) %>% 
   group_by(Subject) %>% mutate(item = row_number()) %>%
   left_join(participant_groupings) %>%
@@ -83,14 +52,14 @@ blended_ci_animals<-semantics %>%filter(Group=="CI",structure=="blended",domain=
 
 
 
-blended_nh_foods<-semantics %>%filter(Group=="NH",structure=="blended",domain=="foods")%>%
+blended_nh_foods<-semantics %>%filter(Group=="NH",domain=="foods")%>%
   rename(blended = semantic) %>% 
   group_by(Subject) %>% mutate(item = row_number()) %>%
   left_join(participant_groupings) %>%
   mutate(Frequency_Value = frequency/100,
          Phonological_Similarity = ifelse(phonological == 0.0001, 0, phonological),alpha_recoded = ifelse(alpha > 0.4, "high alpha", "low alpha"))
 
-blended_ci_foods<-semantics %>%filter(Group=="CI",structure=="blended",domain=="foods")%>%
+blended_ci_foods<-semantics %>%filter(Group=="CI",domain=="foods")%>%
   rename(blended = semantic) %>% 
   group_by(Subject) %>% mutate(item = row_number()) %>%
   left_join(participant_groupings) %>%
@@ -162,83 +131,77 @@ create_graph <- function(df, group_label, similarity_metric) {
 
 ```{r}
 
-#across all structural models
-#animals
-create_graph(semantics_overall%>%filter(Group=="NH",domain=="animals"), "NH", "semantic")
-create_graph(semantics_overall%>%filter(Group=="CI",domain=="animals"), "CI", "semantic")
-#longer ASPL for CI, also slightly more dense
-
-#foods
-create_graph(semantics_overall%>%filter(Group=="NH",domain=="foods"), "NH", "semantic")
-create_graph(semantics_overall%>%filter(Group=="CI",domain=="foods"), "CI", "semantic")
-#longer ASPL for CI, higher clustering coefficient and density for NH
-
-#phonsim
-#animals
-create_graph(semantics_overall%>%filter(Group=="NH",domain=="animals"), "NH", "Phonological_Similarity")
-create_graph(semantics_overall%>%filter(Group=="CI",domain=="animals"), "CI", "Phonological_Similarity")
-#longer ASPL for CI, higher clustering coefficient NH, density about the same
-
-#foods
-create_graph(semantics_overall%>%filter(Group=="NH",domain=="foods"), "NH", "Phonological_Similarity")
-create_graph(semantics_overall%>%filter(Group=="CI",domain=="foods"), "CI", "Phonological_Similarity")
-#higher clustering coefficient for NH, everything else about the same
-
-
 #alpha group counts
-semantics_overall %>% filter(structure=="blended")%>%
+semantics_overall %>%
   group_by(Group,domain,alpha_recoded) %>%
   summarise(Unique_Subjects = n_distinct(Subject))
 
 
-
-#looking at graph density by alpha - is weighting more s2v assc with a more or less connected network
+#overall semantic networks for NH vs CI for each domain
 #animals
-create_graph(blended_nh_animals %>%filter(alpha_recoded=="low alpha"), "NH", "blended")
-create_graph(blended_nh_animals %>%filter(alpha_recoded=="high alpha"), "NH", "blended")
-#for NHs, longer ASPL for low alphas, higher clustering coefficient and density for higher alphas (more s2v)
-
-create_graph(blended_ci_animals %>%filter(alpha_recoded=="low alpha"), "CI", "blended")
-create_graph(blended_ci_animals %>%filter(alpha_recoded=="high alpha"), "CI", "blended")
-#for CIs,  longer ASPL for low alphas, higher clustering coefficient for higher alphas, density about the same
+create_graph(blended_nh_animals, "NH", "blended")
+create_graph(blended_ci_animals, "CI", "blended")
+#higher CC for CIs? idk if sig
 
 #foods
-create_graph(blended_nh_foods %>%filter(alpha_recoded=="low alpha"), "NH", "blended")
-create_graph(blended_nh_foods %>%filter(alpha_recoded=="high alpha"), "NH", "blended")
-#for NHs, larger ASPL, less clustered and less dense for high alphas
-
-create_graph(blended_ci_foods %>%filter(alpha_recoded=="low alpha"), "CI", "blended")
-create_graph(blended_ci_foods %>%filter(alpha_recoded=="high alpha"), "CI", "blended")
-#for CIs, larger ASPL and density for low alphas
+create_graph(blended_nh_foods, "NH", "blended")
+create_graph(blended_ci_foods, "CI", "blended")
+#higher CC for NHs
 
 
-
-#looking at phon sim
-
+#overall phonological networks for NH vs CI for each domain
 #animals
 create_graph(blended_nh_animals, "NH", "Phonological_Similarity")
 create_graph(blended_ci_animals, "CI", "Phonological_Similarity")
-#larger ASPL for CIs, higher clustering coefficient for NH, density about the same
+#much higher CC for NH
 
 #foods
 create_graph(blended_nh_foods, "NH", "Phonological_Similarity")
 create_graph(blended_ci_foods, "CI", "Phonological_Similarity")
-#larger ASPL for CIs, much higher clustering coefficient for NH, CIs slightly more dense
+#much higher CC for NH
 
-#comparing alphas separately
+
+
+
+
+#looking at semantic graph density by alpha - is weighting more s2v assc with a more or less connected network
+#data a bit sparse though
+#animals
+create_graph(blended_nh_animals %>%filter(alpha_recoded=="low alpha"), "NH", "blended")
+create_graph(blended_nh_animals %>%filter(alpha_recoded=="high alpha"), "NH", "blended")
+#higher clustering coefficient and density for higher alphas (more s2v)
+
+create_graph(blended_ci_animals %>%filter(alpha_recoded=="low alpha"), "CI", "blended")
+create_graph(blended_ci_animals %>%filter(alpha_recoded=="high alpha"), "CI", "blended")
+#higher clustering coefficient for higher alphas
+
+#foods
+create_graph(blended_nh_foods %>%filter(alpha_recoded=="low alpha"), "NH", "blended")
+create_graph(blended_nh_foods %>%filter(alpha_recoded=="high alpha"), "NH", "blended")
+#less clustered and less dense for high alphas
+#maybe using more single item cues?
+
+create_graph(blended_ci_foods %>%filter(alpha_recoded=="low alpha"), "CI", "blended")
+create_graph(blended_ci_foods %>%filter(alpha_recoded=="high alpha"), "CI", "blended")
+#slightly higher CC for high alphas
+
+
+
+#looking at phonology
+
 #animals
 create_graph(blended_nh_animals %>%filter(alpha_recoded=="low alpha"), "NH", "Phonological_Similarity")
 create_graph(blended_nh_animals %>%filter(alpha_recoded=="high alpha"), "NH", "Phonological_Similarity")
-#larger clustering coefficient and ASPL for high alpha, but low alpha slightly more dense
+#slightly  larger clustering coefficient for high alpha
 
 create_graph(blended_ci_animals %>%filter(alpha_recoded=="low alpha"), "CI", "Phonological_Similarity")
 create_graph(blended_ci_animals %>%filter(alpha_recoded=="high alpha"), "CI", "Phonological_Similarity")
-#larger ASPL for high alpha, much higher CC, but low alpha more dense
+#not much going on
 
 #foods
 create_graph(blended_nh_foods %>%filter(alpha_recoded=="low alpha"), "NH", "Phonological_Similarity")
 create_graph(blended_nh_foods %>%filter(alpha_recoded=="high alpha"), "NH", "Phonological_Similarity")
-#larger ASPL for high alphas, but less clustered and less dense than low alphas
+#larger ASPL for high alphas, slightly higher CC
 
 create_graph(blended_ci_foods %>%filter(alpha_recoded=="low alpha"), "CI", "Phonological_Similarity")
 create_graph(blended_ci_foods %>%filter(alpha_recoded=="high alpha"), "CI", "Phonological_Similarity")
