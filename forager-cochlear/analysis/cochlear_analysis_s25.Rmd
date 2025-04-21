@@ -238,7 +238,7 @@ bic <- full_model_data_parameters %>%
 bic_clean<-bic %>%filter(structure == "blended", method =="multimodaldelta",dimension=="50", model_type!="random")
 
 
-#best delta BIC model per participant 
+#best delta BIC model per participant - Use
 best_blended_delta_bic = bic_clean%>% 
   group_by(Subject,Group,domain) %>%
   mutate(deltaBIC  = randomBIC - optimalBIC)%>%
@@ -277,11 +277,48 @@ best_blended_delta_bic_analysis <- best_blended_delta_bic %>%
     alpha = as.numeric(as.character(alpha)),
     method = as.character(method),model_type = as.character(model_type))
 
-#chi square for models
-model_table <- table(best_blended_delta_bic_analysis$Group, best_blended_delta_bic_analysis$model_type)
-model_table_subset_pswitch <- model_table[,"pswitch"]
-model_result_pswitch <- chisq.test(model_table_subset_pswitch)
-print(model_result_pswitch)
+#structural alpha counts
+#just for foods
+foods_alpha_test <- best_blended_delta_bic_analysis %>% mutate(alpha_recoded)
+  filter(domain == "foods")
+alpha_table <- table(foods_alpha_test$Group, foods_alpha_test$alpha)
+
+# Number with alpha = 0.9
+nh_0.9 <- 2    
+ci_0.9 <- 7   
+
+# Number with alpha = 0.0
+nh_0.0 <- 6    
+ci_0.0 <- 6   
+
+# Total in each group
+nh_total <- 24  
+ci_total <- 17  
+
+#2 proportion z test - 0.9
+prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_total, ci_total), correct = FALSE)
+#sig more for CI
+
+#2 proportion z test - 0.0
+prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_total, ci_total), correct = FALSE)
+#ns
+
+
+#for models
+#looking at pswitch
+model_test =best_blended_delta_bic_analysis%>%filter(model_type=="pswitch")
+model_table <- table(model_test$Group, model_test$model_type)
+
+# Number with alpha = 0.9
+nh_phon <- 12    
+ci_phon <- 2   
+
+# Total in each group
+nh_total <- 24  
+ci_total <- 17  
+
+# Run 2 proportion z test
+prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_total, ci_total), correct = FALSE)
 
 #NHs sig more likely to have pswitch model
 
@@ -306,11 +343,14 @@ best_blended_delta_bic_analysis %>%
   geom_text(aes(label = scales::percent(prop, accuracy = 0.1)), 
             position = position_fill(vjust = 0.5)) + 
   facet_wrap(~domain) +  
-  labs(y = "proportion", fill = "weight of speech2vec", 
+  labs(y = "proportion", x = "group", fill = "weight of speech2vec", 
        title = "Structural Alpha") +
   theme_few() +
-  scale_fill_paletteer_d("colorBlindness::Blue2Orange12Steps") +
-  theme(plot.title = element_text(hjust = 0.5)) 
+  scale_fill_paletteer_d("MetBrewer::Hiroshige") +
+  theme(
+    plot.title = element_text(hjust = 0.5),
+    axis.text.x = element_text(face = "bold"))
+
  
 
 #PROCESS
@@ -325,7 +365,7 @@ best_blended_delta_bic_analysis%>%mutate(param1=as.character(param1))%>%
   geom_text(aes(label = percent(prop, accuracy = 0.1)), 
             position = position_fill(vjust = 0.5)) + 
   facet_wrap(~domain) +  
-  labs(y = "proportion", fill = "weight of semantics", 
+  labs(y = "proportion",x="", fill = "weight of semantics", 
        title = "Multimodal Switch Alpha") +
   theme_few()+scale_fill_paletteer_d("colorBlindness::Blue2Green14Steps")+
   theme(plot.title = element_text(hjust = 0.5))
@@ -369,11 +409,12 @@ summary(fluency_lm)
 car::Anova(fluency_lm)
 
 #SEMANTIC ANALYSES 
-#Using everyones best-fit structure, does avg semantic similarity differ by Group x domain x structural alpha, fluency score as covariate
-semantic_model<- lm(Semantic_Similarity_mean ~ Group * domain * N * alpha, data = lexical_analysis_data_semantic)
+#removed alpha as a factor - not enough data across levels
+#Using everyones best-fit structure, does avg semantic similarity differ by Group x domain, fluency score as covariate
+semantic_model<- lm(Semantic_Similarity_mean ~ Group * domain * N, data = lexical_analysis_data_semantic)
 summary(semantic_model)
 car::Anova(semantic_model)
-#everything ns
+#all ns
 
 #PHONOLOGY & FREQUENCY ANALYSES
 
@@ -502,7 +543,7 @@ beta_values %>%mutate(value = replace_na(value, 0))%>%
 
 ## Clustering Analyses
 ```{r}
-#filtering to only include indv best from above
+#filtering to only include indv best model from above
 best_clusters <- full_indv_data %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%
   filter(paste(Subject,Group,domain,full_method,dimension,structure,alpha) %in% paste(best_blended_delta_bic$Subject,best_blended_delta_bic$Group,best_blended_delta_bic$domain, best_blended_delta_bic$full_method,best_blended_delta_bic$dimension,best_blended_delta_bic$structure,best_blended_delta_bic$alpha)) %>%select(-fluency_score)%>% #this is full of NAs & produces mismatch .x/.y error, so dropping
   group_by(Subject,Group,domain) %>%left_join(lexical_analysis_data%>%select(Subject,Group,domain,fluency_score)%>%unique(), by = c("Subject", "Group","domain")) #adding fluency_score back in
@@ -585,7 +626,7 @@ switches_recoded <- best_switches %>%
 
 #save indv best model lexical values for network analysis
 switches_wide<-switches_recoded %>%pivot_wider(names_from = cue, values_from = value)
-write.csv(switches_wide,"best_indv_model_lexical.csv")             
+#write.csv(switches_wide,"best_indv_model_lexical.csv")             
 
 
 ##Analysis
@@ -626,6 +667,7 @@ emmeans(switch_results$model[[3]],pairwise~Group*domain*Switch,simple="Switch",p
 
 ### Within/Across Cluster plots
 ```{r}
+#lexical metrics within vs across clusters
 plots_switch<-switch_results %>% 
   mutate(
     emmip_plot = map(model, ~ 
@@ -657,8 +699,8 @@ plots_switch_phon$emmip_plot[[2]]
 
 
 #raw values
-ggplot(data=switches_recoded%>%filter(cue=="phonological")%>%mutate(Group = factor(Group, levels = c("NH","CI"))),aes(y = value, x = fluency_score, group = Switch, color = Switch)) + facet_wrap(~Group)+
-  theme_few() +  
+ggplot(data=switches_recoded%>%filter(cue=="phonological",Subject=="CAJ-663")%>%mutate(Group = factor(Group, levels = c("NH","CI"))),aes(y = value, x = Switch, group = Switch, color = Switch)) + facet_wrap(~domain)+
+  theme_few() +  geom_point()+
   geom_smooth(method = "lm", se = TRUE,size=1) +
   theme(
     aspect.ratio = 1,  
@@ -720,4 +762,7 @@ switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values
     axis.text.x = element_text( hjust = 1, face = "bold"))+scale_colour_paletteer_d("nationalparkcolors::CraterLake")+labs(y = "phonological similarity", x = "semantic similarity")
 
 ```
+
+
+
 
