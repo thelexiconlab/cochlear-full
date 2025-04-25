@@ -1,0 +1,1047 @@
+ID,Word,Phonemes,Shared_Cont_Phonemes
+CAJ-663,cheese,CH IY1 Z,0
+CAJ-663,coffee,K AA1 F IY0,0
+CAJ-663,tea,T IY1,0
+CAJ-663,soda,S OW1 D AH0,0
+CAJ-663,water,W AO1 T ER0,0
+CAJ-663,asparagus,AH0 S P EH1 R AH0 G AH0 S,1
+CAJ-663,cauliflower,K AA1 L AH0 F L AW2 ER0,1
+CAJ-663,carrots,K AE1 R AH0 T S,1
+CAJ-663,salad,S AE1 L AH0 D,1
+CAJ-663,chicken,CH IH1 K AH0 N,2
+CAJ-663,lemonade,L EH1 M AH0 N EY1 D,2
+CAJ-663,bananas,B AH0 N AE1 N AH0 Z,2
+CAJ-663,apples,AE1 P AH0 L Z,1
+CAJ-663,peaches,P IY1 CH AH0 Z,1
+CAJ-663,corn,K AO1 R N,1
+CAJ-663,rice,R AY1 S,1
+CAJ-663,pork,P AO1 R K,1
+CAJ-663,broccoli,B R AA1 K AH0 L IY0,1
+CAJ-663,grilledcheesesandwich,G R IH1 L D CH IY1 Z IH0 Z AH0 N D W IH1 CH,1
+CAJ-663,hamburgers,HH AE1 M B ER0 G ER0 Z,1
+CAJ-663,hotdogs,HH AA1 T D AO2 G Z,1
+CAJ-663,meatloaf,M IY1 T L OW0 F,2
+CAJ-663,pizza,P IY1 T S AH0,2
+CAJ-663,popcorn,P AA1 P K AO2 R N,1
+CAM-666,strawberries,S T R AO1 B EH2 R IY0 Z,5
+CAM-666,raspberries,R AE1 Z B EH2 R IY0 Z,5
+CAM-666,apricots,AE1 P R AH0 K AA2 T S,1
+CAM-666,bread,B R EH1 D,1
+CAM-666,jam,JH AE1 M,0
+CAM-666,butter,B AH1 T ER0,1
+CAM-666,toast,T OW1 S T,1
+CAM-666,burger,B ER1 G ER0,0
+CAM-666,cheese,CH IY1 Z,0
+CAM-666,soda,S OW1 D AH0,0
+CAM-666,water,W AO1 T ER0,0
+CAM-666,milk,M IH1 L K,1
+CAM-666,cucumbers,K Y UW1 K AH0 M ER0 Z,2
+CAM-666,pickles,P IH1 K AH0 L Z,2
+CAM-666,chocolate,CH AO1 K L AH0 T,2
+CAM-666,vanilla,V AH0 N IH1 L AH0,2
+CAM-666,cinnamon,S IH1 N AH0 M AH0 N,2
+CAM-666,sugar,SH UH1 G ER0,0
+CAM-666,rosemary,R OW1 Z M EH2 R IY0,3
+CAM-666,blueberries,B L UW1 B EH2 R IY0 Z,4
+CAM-666,cranberryjucie,K R AE1 N B EH2 R IY0 JH UW1 S IY1,4
+CAM-666,grapejuice,G R EY1 P JH UW1 S,3
+CAM-666,icecream,AY1 S K R IY1 M,1
+CAM-666,lemonjuice,L EH1 M AH0 N JH UW1 S,3
+CAM-666,orangejuice,AO1 R AH0 N JH JH UW1 S,3
+CAM-666,oregano,AO2 R EH1 G AH0 N OW2,2
+CAM-666,peanutbutter,P IY1 N AH0 T B AH1 T ER0,2
+CAM-666,pizza,P IY1 T S AH0,2
+CAM-666,popcorn,P AA1 P K AO2 R N,1
+CAM-666,raspberryjuice,R AE1 Z B EH2 R IY0 JH UW1 S,7
+CAM-666,strawberryjuice,S T R AO1 B EH2 R IY0 JH UW1 S,7
+CAP-671,grapes,G R EY1 P S,0
+CAP-671,water,W AO1 T ER0,0
+CAP-671,chips,CH IH1 P S,0
+CAP-671,cookies,K UH1 K IY0 Z,1
+CAP-671,carrot,K AE1 R AH0 T,1
+CAP-671,soda,S OW1 D AH0,1
+CAP-671,apple,AE1 P AH0 L,1
+CAP-671,watermelon,W AO1 T ER0 M EH2 L AH0 N,1
+CAP-671,pear,P EH1 R,1
+CAP-671,orange,AO1 R AH0 N JH,1
+CAP-671,pepper,P EH1 P ER0,0
+CAP-671,tomato,T AH0 M EY1 T OW2,0
+CAP-671,juice,JH UW1 S,0
+CAP-671,corn,K AO1 R N,0
+CAP-671,potatoes,P AH0 T EY1 T OW0 Z,0
+CAP-671,brocolli,B R AA1 K OW1 EH1 L L IY1,1
+CAP-671,grapefruit,G R EY1 P F R UW2 T,1
+CAP-671,hamburger,HH AE1 M B ER0 G ER0,1
+CAP-671,icecream,AY1 S K R IY1 M,1
+CAP-671,pizza,P IY1 T S AH0,1
+CAS-674,bagels,B EY1 G AH0 L Z,0
+CAS-674,water,W AO1 T ER0,1
+CAS-674,steak,S T EY1 K,1
+CAS-674,apple,AE1 P AH0 L,1
+CAS-674,orange,AO1 R AH0 N JH,1
+CAS-674,pear,P EH1 R,1
+CAS-674,strawberries,S T R AO1 B EH2 R IY0 Z,1
+CAS-674,grapes,G R EY1 P S,1
+CAS-674,salad,S AE1 L AH0 D,1
+CAS-674,tomato,T AH0 M EY1 T OW2,1
+CAS-674,soda,S OW1 D AH0,1
+CAS-674,rolls,R OW1 L Z,1
+CAS-674,pancakes,P AE1 N K EY2 K S,1
+CAS-674,bacon,B EY1 K AH0 N,1
+CAS-674,eggs,EH1 G Z,0
+CAS-674,sausage,S AO1 S AH0 JH,1
+CAS-674,lobster,L AA1 B S T ER0,1
+CAS-674,crab,K R AE1 B,1
+CAS-674,burgers,B ER1 G ER0 Z,1
+CAS-674,cereal,S IH1 R IY0 AH0 L,1
+CAS-674,chewybar,CH UW1 W AY1 B AA1 R,1
+CAS-674,chocolatemilk,CH AA1 K L AH0 T EH1 M IH1 L K,1
+CAS-674,fettuccini,F EH1 T UW1 CH IY0 N IY1,1
+CAS-674,gatorade,G AE1 T ER0 EY2 D,1
+CAS-674,hotdogs,HH AA1 T D AO2 G Z,1
+CAS-674,icecream,AY1 S K R IY1 M,1
+CAS-674,pizza,P IY1 T S AH0,1
+CAS-674,proteinbar,P R OW1 T IY2 N B AA1 R,1
+CAS-674,skimmilk,S K IH1 M M IH1 L K,1
+CAS-674,spaghetti,S P AH0 G EH1 T IY0,1
+CAS-674,waffles,W AA1 F AH0 L Z,1
+CAS-674,whitemilk,W AY1 T M IH1 L K,1
+CAV-678,apple,AE1 P AH0 L,1
+CAV-678,orange,AO1 R AH0 N JH,1
+CAV-678,water,W AO1 T ER0,1
+CAV-678,beer,B IH1 R,1
+CAV-678,chicken,CH IH1 K AH0 N,2
+CAV-678,watermelon,W AO1 T ER0 M EH2 L AH0 N,2
+CAV-678,orange,AO1 R AH0 N JH,2
+CAV-678,grapes,G R EY1 P S,1
+CAV-678,steak,S T EY1 K,1
+CAV-678,ribs,R IH1 B Z,1
+CAV-678,broccoli,B R AA1 K AH0 L IY0,1
+CAV-678,sprite,S P R AY1 T,2
+CAV-678,rice,R AY1 S,2
+CAV-678,noodles,N UW1 D AH0 L Z,1
+CAV-678,dietrite,D AY1 AH0 T R AY1 T,2
+CAV-678,drpepper,D R AY1 V P EH1 P ER0,2
+CAV-678,hotdogs,HH AA1 T D AO2 G Z,1
+CAV-678,icecream,AY1 S K R IY1 M,1
+CAV-678,lasagna,L AA0 S AA1 N Y AH0,1
+CAV-678,lunchmeats,L AH1 N CH M IY1 T S,1
+CAV-678,mountaindew,M AW1 N T AY1 EH1 N D UW1,1
+CAV-678,porkchops,P AO1 R K CH AA1 P S,4
+CAV-678,porktenderloin,P AO1 R K T EH1 N D ER0 L OY2 N,4
+CAV-678,roastbeef,R OW1 S T B IY1 F,1
+CAV-678,sauercraut,S AW1 ER0 S IY1 R AW1 T,1
+CAV-678,spaghetti,S P AH0 G EH1 T IY0,1
+CAY-681,applejuice,AE1 P AH0 L JH UW1 S,4
+CAY-681,apples,AE1 P AH0 L Z,4
+CAY-681,bananas,B AH0 N AE1 N AH0 Z,2
+CAY-681,peaches,P IY1 CH AH0 Z,2
+CAY-681,oranges,AO1 R AH0 N JH AH0 Z,2
+CAY-681,sprite,S P R AY1 T,1
+CAY-681,burritos,B ER0 IY1 T OW0 S,1
+CAY-681,milk,M IH1 L K,0
+CAY-681,water,W AO1 T ER0,0
+CAY-681,juice,JH UW1 S,0
+CAY-681,bread,B R EH1 D,1
+CAY-681,sandwiches,S AE1 N D W IH0 CH IH0 Z,1
+CAY-681,bologna,B AH0 L OW1 N IY0,1
+CAY-681,turkey,T ER1 K IY0,1
+CAY-681,chicken,CH IH1 K AH0 N,1
+CAY-681,beef,B IY1 F,0
+CAY-681,cereal,S IH1 R IY0 AH0 L,1
+CAY-681,chocolatesyrup,CH AA1 K L AH0 T EH1 S W AY1 R UW1 P IY1,2
+CAY-681,cranapplejuice,S IY1 R AE1 N AH0 P IY1 P IY1 L AH0 JH UW1 S,3
+CAY-681,cranberryjuice,K R AE1 N B EH2 R IY0 JH UW1 S,3
+CAY-681,drpepper,D R AY1 V P EH1 P ER0,8
+CAY-681,drpepper,D R AY1 V P EH1 P ER0,8
+CAY-681,empanadas,EH1 M P AE1 N EY1 D AH0 Z,5
+CAY-681,empanidas,EH1 M P AE1 N IH1 D AE1 Z,5
+CAY-681,frenchfries,F R EH1 N CH F R AY1 Z,2
+CAY-681,granolabars,G R AA1 N OW0 L AE1 B AA1 R EH1 S,2
+CAY-681,grapejuice,G R EY1 P JH UW1 S,2
+CAY-681,hashbrowns,HH AE1 SH B R AW1 N Z,1
+CAY-681,hotwings,HH AA1 T W IH1 NG Z,1
+CAY-681,mountaindew,M AW1 N T AY1 EH1 N D UW1,1
+CAY-681,pepsi,P EH1 P S IY0,1
+CAY-681,pizza,P IY1 T S AH0,2
+CAY-681,poptarts,P AA1 P T AA1 R T S,2
+CAY-681,potatoskins,P AH0 T EY1 T OW2 S K IH1 N Z,1
+CAY-681,quesadillas,K Y UW1 Z AE1 D IH1 L AE1 Z,1
+CAY-681,sierramist,S IY0 EH1 R AH0 M IH1 S T,1
+CAY-681,sourcream,S AW1 ER0 K R IY1 M,1
+CAY-681,tacos,T AA1 K OW0 Z,1
+CAY-681,juice,JH UW1 S,0
+CAY-681,waffles,W AA1 F AH0 L Z,0
+CBD-686,cakethathassugaronit,K EY1 K DH AE1 T HH AE1 S Y UW1 G EH1 R OW0 N IH1 T,1
+CBD-686,candy,K AE1 N D IY0,1
+CBD-686,chocolate,CH AO1 K L AH0 T,1
+CBD-686,strawberries,S T R AO1 B EH2 R IY0 Z,1
+CBD-686,pop,P AA1 P,0
+CBD-686,cake,K EY1 K,4
+CBD-686,chocolatecake,CH AA1 K L AH0 T IY1 K EY1 K,4
+CBD-686,chocolatecoveredbrownies,CH AO1 K L AH0 T K AH1 V ER0 D B R AW1 N IY0 Z,11
+CBD-686,chocolatecoveredmarshmallows,CH AO1 K L AH0 T K AH1 V ER0 D M AA1 R SH M EH2 L OW0 Z,11
+CBD-686,chocolatecoveredstrawberries,CH AO1 K L AH0 T K AH1 V ER0 D S T R AO1 B EH2 R IY0 Z,11
+CBD-686,cocacola,K OW1 K AH0 K OW1 L AH0,2
+CBD-686,hersheys,HH ER0 Z HH EY1 Z,1
+CBD-686,kiwis,K IY1 W IY0 Z,1
+CBD-686,mms,EH1 M M IH1 Z,1
+CBD-686,marblecake,M AA1 R B AH0 L K EY1 K,3
+CBD-686,marshmallows,M AA1 R SH M EH2 L OW0 Z,3
+CBD-686,nastycake,N AE1 S T IY0 K EY1 K,1
+CBD-686,pepsis,P EH1 P S IH1 S,1
+CBD-686,pizza,P IY1 T S AH0,1
+CBD-686,salsberrysteak,S AO1 L S B EH0 R IY0 S T EY1 K,2
+CBD-686,vanillacake,V AH0 N IH1 L AH0 K EY1 K,2
+CBF-691,broccoli,B R AA1 K AH0 L IY0,2
+CBF-691,brusselsprouts,B R AH1 S AH0 L S P R AW1 T S,2
+CBF-691,chicken,CH IH1 K AH0 N,1
+CBF-691,milk,M IH1 L K,1
+CBF-691,lemon,L EH1 M AH0 N,2
+CBF-691,orange,AO1 R AH0 N JH,2
+CBF-691,cheese,CH IY1 Z,0
+CBF-691,sprite,S P R AY1 T,0
+CBF-691,coke,K OW1 K,1
+CBF-691,macaroni,M AE2 K ER0 OW1 N IY0,1
+CBF-691,celery,S EH1 L ER0 IY0,1
+CBF-691,carrots,K AE1 R AH0 T S,1
+CBF-691,tomatoes,T AH0 M EY1 T OW0 Z,1
+CBF-691,bread,B R EH1 D,1
+CBF-691,peppers,P EH1 P ER0 Z,1
+CBF-691,onions,AH1 N Y AH0 N Z,2
+CBF-691,bacon,B EY1 K AH0 N,2
+CBF-691,eggs,EH1 G Z,0
+CBF-691,icing,AY1 S IH0 NG,0
+CBF-691,cake,K EY1 K,0
+CBF-691,pie,P AY1,0
+CBF-691,cherries,CH EH1 R IY0 Z,1
+CBF-691,grapes,G R EY1 P S,1
+CBF-691,bananas,B AH0 N AE1 N AH0 Z,0
+CBF-691,drpepper,D R AY1 V P EH1 P ER0,1
+CBF-691,gingerale,JH IH1 NG EH1 R AH0 L AH0,1
+CBF-691,grapejuice,G R EY1 P JH UW1 S,1
+CBF-691,mountaindew,M AW1 N T AY1 EH1 N D UW1,1
+CBF-691,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CBF-691,pepsi,P EH1 P S IY0,1
+CBH-693,applejuice,AE1 P AH0 L JH UW1 S,2
+CBH-693,broccoli,B R AA1 K AH0 L IY0,2
+CBH-693,water,W AO1 T ER0,0
+CBH-693,apple,AE1 P AH0 L,1
+CBH-693,oranges,AO1 R AH0 N JH AH0 Z,1
+CBH-693,soda,S OW1 D AH0,1
+CBH-693,grapes,G R EY1 P S,1
+CBH-693,candy,K AE1 N D IY0,1
+CBH-693,steak,S T EY1 K,1
+CBH-693,chicken,CH IH1 K AH0 N,1
+CBH-693,pomegranate,P AO1 M IY1 G R AE1 N EY1 T,1
+CBH-693,carrots,K AE1 R AH0 T S,1
+CBH-693,turkey,T ER1 K IY0,1
+CBH-693,ham,HH AE1 M,1
+CBH-693,wraps,R AE1 P S,1
+CBH-693,lettuce,L EH1 T AH0 S,2
+CBH-693,tomatoes,T AH0 M EY1 T OW0 Z,2
+CBH-693,spinach,S P IH1 N AH0 CH,1
+CBH-693,jelly,JH EH1 L IY0,1
+CBH-693,bread,B R EH1 D,1
+CBH-693,butter,B AH1 T ER0,1
+CBH-693,fastfood,F AE1 S T F UW2 D,1
+CBH-693,gatorade,G AE1 T ER0 EY2 D,1
+CBH-693,granolabars,G R AA1 N OW0 L AE1 B AA1 R EH1 S,2
+CBH-693,grapefruits,G R EY1 P F R UW2 T S,4
+CBH-693,grapejuice,G R EY1 P JH UW1 S,4
+CBH-693,hotpockets,HH AA1 T P AA1 K AH0 T S,1
+CBH-693,icecream,AY1 S K R IY1 M,1
+CBH-693,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CBH-693,peanutbutter,P IY1 N AH0 T B AH1 T ER0,1
+CBH-693,powerade,P AW1 R AA1 D IY1,1
+CBH-693,tacos,T AA1 K OW0 Z,1
+CBJ-697,apple,AE1 P AH0 L,1
+CBJ-697,banana,B AH0 N AE1 N AH0,2
+CBJ-697,orange,AO1 R AH0 N JH,2
+CBJ-697,chicken,CH IH1 K AH0 N,2
+CBJ-697,milk,M IH1 L K,1
+CBJ-697,soda,S OW1 D AH0,1
+CBJ-697,lemonade,L EH1 M AH0 N EY1 D,1
+CBJ-697,meat,M IY1 T,1
+CBJ-697,eggs,EH1 G Z,0
+CBJ-697,sausage,S AO1 S AH0 JH,1
+CBJ-697,salad,S AE1 L AH0 D,1
+CBJ-697,milk,M IH1 L K,1
+CBJ-697,bread,B R EH1 D,1
+CBJ-697,candy,K AE1 N D IY0,1
+CBJ-697,ham,HH AE1 M,1
+CBJ-697,fish,F IH1 SH,0
+CBJ-697,hamburger,HH AE1 M B ER0 G ER0,0
+CBJ-697,icedtea,AY1 S T T IY1,1
+CBJ-697,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CBJ-697,spaghetti,S P AH0 G EH1 T IY0,1
+CBL-698,baklava,B AE1 K L AA1 V AH0,1
+CBL-698,chickenpotpie,CH IH1 K AH0 N P AA1 T P AY2,5
+CBL-698,chickensandwich,CH IH1 K AH0 N Z AH0 N D W IH1 CH,5
+CBL-698,chips,CH IH1 P S,2
+CBL-698,soda,S OW1 D AH0,1
+CBL-698,sprite,S P R AY1 T,1
+CBL-698,coke,K OW1 K,1
+CBL-698,turkey,T ER1 K IY0,1
+CBL-698,gravy,G R EY1 V IY0,1
+CBL-698,beans,B IY1 N Z,1
+CBL-698,bacon,B EY1 K AH0 N,1
+CBL-698,water,W AO1 T ER0,1
+CBL-698,sugar,SH UH1 G ER0,1
+CBL-698,salt,S AO1 L T,0
+CBL-698,pepper,P EH1 P ER0,0
+CBL-698,chicken,CH IH1 K AH0 N,1
+CBL-698,cranberrysauce,K R AE1 N B EH2 R IY0 S AO1 S,1
+CBL-698,donuts,D OW1 N AH2 T S,1
+CBL-698,koolaid,K UW1 L EY1 D,1
+CBL-698,mashedpotatoes,M AE1 SH T P AH0 T EY1 T OW0 Z,1
+CBL-698,pizza,P IY1 T S AH0,1
+CBM-702,allfoods,AO1 L F UW1 D Z,1
+CBM-702,cereal,S IH1 R IY0 AH0 L,1
+CBM-702,chocolates,CH AO1 K L AH0 T S,1
+CBM-702,apples,AE1 P AH0 L Z,1
+CBM-702,candy,K AE1 N D IY0,1
+CBM-702,soda,S OW1 D AH0,1
+CBM-702,water,W AO1 T ER0,0
+CBM-702,juice,JH UW1 S,1
+CBM-702,sweets,S W IY1 T S,3
+CBM-702,meats,M IY1 T S,3
+CBM-702,dairy,D EH1 R IY0,1
+CBM-702,fruits,F R UW1 T S,1
+CBM-702,apples,AE1 P AH0 L Z,1
+CBM-702,bananas,B AH0 N AE1 N AH0 Z,2
+CBM-702,onions,AH1 N Y AH0 N Z,2
+CBM-702,oatmeal,OW1 T M IY2 L,0
+CBM-702,corn,K AO1 R N,0
+CBM-702,celery,S EH1 L ER0 IY0,0
+CBM-702,onions,AH1 N Y AH0 N Z,0
+CBM-702,milk,M IH1 L K,0
+CBM-702,cheese,CH IY1 Z,1
+CBM-702,frenchtoast,F R EH1 N CH T OW1 S T,2
+CBM-702,granolabars,G R AA1 N OW0 L AE1 B AA1 R EH1 S,2
+CBM-702,greenbeans,G R IY1 N B IY1 N Z,4
+CBM-702,greenpeppers,G R IY1 N P EH1 P ER0 Z,4
+CBM-702,pizza,P IY1 T S AH0,1
+CBM-702,seasonings,S IY1 Z AH0 N IH0 NG Z,1
+CBM-702,veggie,V EH1 JH IY0,4
+CBM-702,veggies,V EH1 JH IY0 Z,4
+CBM-702,waffles,W AA1 F AH0 L Z,1
+CBP-707,applejuice,AE1 P AH0 L JH UW1 S,2
+CBP-707,bakedpotato,B EY1 K T P AH0 T EY1 T OW2,2
+CBP-707,burrito,B ER0 IY1 T OW0,1
+CBP-707,cheesestick,CH IY1 Z S T IH1 K,2
+CBP-707,pickles,P IH1 K AH0 L Z,2
+CBP-707,cheese,CH IY1 Z,1
+CBP-707,water,W AO1 T ER0,1
+CBP-707,tea,T IY1,1
+CBP-707,cake,K EY1 K,0
+CBP-707,apples,AE1 P AH0 L Z,1
+CBP-707,bananas,B AH0 N AE1 N AH0 Z,2
+CBP-707,oranges,AO1 R AH0 N JH AH0 Z,2
+CBP-707,eggplant,EH1 G P L AE2 N T,1
+CBP-707,beef,B IY1 F,0
+CBP-707,ham,HH AE1 M,0
+CBP-707,turkey,T ER1 K IY0,0
+CBP-707,peas,P IY1 Z,0
+CBP-707,carrots,K AE1 R AH0 T S,1
+CBP-707,corn,K AO1 R N,1
+CBP-707,chicken,CH IH1 K AH0 N,2
+CBP-707,biscuits,B IH1 S K AH0 T S,2
+CBP-707,coke,K OW1 K,1
+CBP-707,sprite,S P R AY1 T,2
+CBP-707,fries,F R AY1 Z,2
+CBP-707,hamburgers,HH AE1 M B ER0 G ER0 Z,1
+CBP-707,koolaid,K UW1 L EY1 D,1
+CBP-707,macaroniandcheese,M AE2 K ER0 OW1 N IY0 AH0 N D CH IY1 Z,1
+CBP-707,mashedpotatoes,M AE1 SH T P AH0 T EY1 T OW0 Z,1
+CBP-707,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CBP-707,pepsi,P EH1 P S IY0,1
+CBP-707,pizza,P IY1 T S AH0,1
+CBP-707,quesadilla,K Y UW1 Z AE1 D IH1 L L AA1,0
+CBS-711,applejuice,AE1 P AH0 L JH UW1 S,2
+CBS-711,bagel,B EY1 G AH0 L,2
+CBS-711,cheeseburger,CH IY1 Z B ER0 G ER0,1
+CBS-711,chickennuggetsoup,CH IH1 K AH0 N N AH1 G IH0 T S UW1 P,1
+CBS-711,fanta,F AA1 N T AH0,1
+CBS-711,water,W AO1 T ER0,1
+CBS-711,pop,P AA1 P,1
+CBS-711,soup,S UW1 P,1
+CBS-711,coke,K OW1 K,0
+CBS-711,water,W AO1 T ER0,1
+CBS-711,toast,T OW1 S T,4
+CBS-711,frenchtoast,F R EH1 N CH T OW1 S T,4
+CBS-711,pancakes,P AE1 N K EY2 K S,1
+CBS-711,grapejuice,G R EY1 P JH UW1 S,1
+CBS-711,hamburgers,HH AE1 M B ER0 G ER0 Z,1
+CBS-711,peanutbutterandjelly,P IY1 N AH0 T B AH1 T ER0 AH0 N D JH EH1 L IY0,2
+CBS-711,pizza,P IY1 T S AH0,2
+CBS-711,waffles,W AA1 F AH0 L Z,1
+CBW-715,blackbeans,B L AE1 K B IY1 N Z,1
+CBW-715,broccoli,B R AA1 K AH0 L IY0,1
+CBW-715,candycanes,K AE1 N D IY0 K EY1 N Z,1
+CBW-715,cauliflour,K AA1 L IH1 F L AW1 R,1
+CBW-715,toast,T OW1 S T,1
+CBW-715,butter,B AH1 T ER0,1
+CBW-715,cheese,CH IY1 Z,1
+CBW-715,crackers,K R AE1 K ER0 Z,1
+CBW-715,fish,F IH1 SH,0
+CBW-715,lobster,L AA1 B S T ER0,1
+CBW-715,crab,K R AE1 B,1
+CBW-715,bread,B R EH1 D,1
+CBW-715,shrimp,SH R IH1 M P,1
+CBW-715,lettuce,L EH1 T AH0 S,1
+CBW-715,carrots,K AE1 R AH0 T S,1
+CBW-715,beans,B IY1 N Z,4
+CBW-715,greenbeans,G R IY1 N B IY1 N Z,4
+CBW-715,macandcheese,M AE1 K AH0 N D CH IY1 Z,1
+CBW-715,marshmallows,M AA1 R SH M EH2 L OW0 Z,1
+CBW-715,pepperoni,P EH2 P ER0 OW1 N IY0,1
+CBW-715,pizza,P IY1 T S AH0,1
+CBW-715,tuna,T UW1 N AH0,1
+CCB-720,bananabread,B AH0 N AE1 N AH0 B R EH1 D,1
+CCB-720,blueberries,B L UW1 B EH2 R IY0 Z,1
+CCB-720,broccoli,B R AA1 K AH0 L IY0,2
+CCB-720,cocacola,K OW1 K AH0 K OW1 L AH0,2
+CCB-720,strawberries,S T R AO1 B EH2 R IY0 Z,1
+CCB-720,bananas,B AH0 N AE1 N AH0 Z,1
+CCB-720,grapes,G R EY1 P S,1
+CCB-720,icecream,AY1 S K R IY1 M,1
+CCB-720,kiwi,K IY1 W IY0,1
+CCB-720,macaroniandcheese,M AE2 K ER0 OW1 N IY0 AH0 N D CH IY1 Z,1
+CCB-720,pepsi,P EH1 P S IY0,1
+CCB-720,pizza,P IY1 T S AH0,1
+CCB-720,popsicles,P AA1 P S AY1 S IY1 L EH1 S,1
+CCB-720,rootbeer,R UW1 T B IH1 R,2
+CCB-720,smoothies,S M UW1 T HH AY1 EH1 S,2
+CCB-720,zucchinibread,Z UW0 K IY1 N IY0 B R EH1 D,1
+CCD-722,bananapeppers,B AH0 N AE1 N AH0 P EH1 P ER0 Z,1
+CCD-722,blackolives,B L AE1 K AA1 L IH0 V Z,1
+CCD-722,burgers,B ER1 G ER0 Z,1
+CCD-722,cereal,S IH1 R IY0 AH0 L,3
+CCD-722,cheerios,CH IH1 R IY0 OW0 S,3
+CCD-722,fries,F R AY1 Z,1
+CCD-722,ketchup,K EH1 CH AH0 P,0
+CCD-722,mustard,M AH1 S T ER0 D,1
+CCD-722,lettuce,L EH1 T AH0 S,1
+CCD-722,onions,AH1 N Y AH0 N Z,1
+CCD-722,pickles,P IH1 K AH0 L Z,1
+CCD-722,tomatoes,T AH0 M EY1 T OW0 Z,1
+CCD-722,buns,B AH1 N Z,1
+CCD-722,beer,B IH1 R,1
+CCD-722,wine,W AY1 N,0
+CCD-722,bread,B R EH1 D,0
+CCD-722,cheese,CH IY1 Z,0
+CCD-722,ham,HH AE1 M,0
+CCD-722,turkey,T ER1 K IY0,1
+CCD-722,steak,S T EY1 K,2
+CCD-722,lobster,L AA1 B S T ER0,2
+CCD-722,crab,K R AE1 B,1
+CCD-722,shrimp,SH R IH1 M P,1
+CCD-722,biscuits,B IH1 S K AH0 T S,2
+CCD-722,cucumbers,K Y UW1 K AH0 M ER0 Z,2
+CCD-722,graxy,JH IY1 R AA1 EH1 K S W AY1,1
+CCD-722,sausage,S AO1 S AH0 JH,1
+CCD-722,beef,B IY1 F,0
+CCD-722,ham,HH AE1 M,1
+CCD-722,mushrooms,M AH1 SH R UW0 M Z,1
+CCD-722,onions,AH1 N Y AH0 N Z,1
+CCD-722,greenpeppers,G R IY1 N P EH1 P ER0 Z,1
+CCD-722,water,W AO1 T ER0,1
+CCD-722,sprite,S P R AY1 T,1
+CCD-722,macandcheese,M AE1 K AH0 N D CH IY1 Z,2
+CCD-722,mashedpotatoes,M AE1 SH T P AH0 T EY1 T OW0 Z,2
+CCD-722,mayo,M EY1 OW0,1
+CCD-722,pasta,P AA1 S T AH0,5
+CCD-722,pastasauce,P AA1 S T AH0 S AO1 S,5
+CCD-722,pepperoni,P EH2 P ER0 OW1 N IY0,1
+CCD-722,pesto,P EH1 S T OW1,1
+CCD-722,potatochips,P AH0 T EY1 T OW2 CH IH1 P S,1
+CCD-722,redpeppers,R EH1 D P EH1 P ER0 Z,1
+CCD-722,ricecakes,R AY1 S K EY1 K S,1
+CCF-724,applejuice,AE1 P AH0 L JH UW1 S,2
+CCF-724,broccoli,B R AA1 K AH0 L IY0,2
+CCF-724,drpepper,D R AY1 V P EH1 P ER0,1
+CCF-724,macaroni,M AE2 K ER0 OW1 N IY0,1
+CCF-724,water,W AO1 T ER0,1
+CCF-724,chicken,CH IH1 K AH0 N,0
+CCF-724,sprite,S P R AY1 T,1
+CCF-724,ribs,R IH1 B Z,1
+CCF-724,lemonade,L EH1 M AH0 N EY1 D,0
+CCF-724,cheese,CH IY1 Z,0
+CCF-724,milk,M IH1 L K,0
+CCF-724,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CCF-724,pizza,P IY1 T S AH0,1
+CCF-724,rootbeer,R UW1 T B IH1 R,1
+CCF-724,sunkist,S AH1 N K IH2 S T,1
+CCF-724,sweettea,S W IY1 T T IY1,6
+CCF-724,sweettea,S W IY1 T T IY1,6
+CCH-726,fruitjuice,F R UW1 T JH UW1 S,1
+CCH-726,coffee,K AA1 F IY0,1
+CCH-726,milk,M IH1 L K,1
+CCH-726,apple,AE1 P AH0 L,1
+CCH-726,pie,P AY1,1
+CCH-726,cake,K EY1 K,0
+CCH-726,banana,B AH0 N AE1 N AH0,0
+CCH-726,water,W AO1 T ER0,1
+CCH-726,chocolate,CH AO1 K L AH0 T,1
+CCH-726,crackers,K R AE1 K ER0 Z,1
+CCH-726,onions,AH1 N Y AH0 N Z,1
+CCH-726,garlic,G AA1 R L IH0 K,1
+CCH-726,strawberries,S T R AO1 B EH2 R IY0 Z,1
+CCH-726,cheese,CH IY1 Z,1
+CCH-726,pancakes,P AE1 N K EY2 K S,1
+CCH-726,bacon,B EY1 K AH0 N,1
+CCH-726,eggs,EH1 G Z,0
+CCH-726,beef,B IY1 F,0
+CCH-726,pig,P IH1 G,0
+CCH-726,kiwi,K IY1 W IY0,0
+CCH-726,pretzels,P R EH1 T Z AH0 L Z,2
+CCH-726,spaghetti,S P AH0 G EH1 T IY0,2
+CCH-726,waffles,W AA1 F AH0 L Z,1
+CCX-744,broccoli,B R AA1 K AH0 L IY0,1
+CCX-744,frenchfries,F R EH1 N CH F R AY1 Z,1
+CCX-744,soda,S OW1 D AH0,1
+CCX-744,grapes,G R EY1 P S,1
+CCX-744,fish,F IH1 SH,1
+CCX-744,chicken,CH IH1 K AH0 N,1
+CCX-744,pears,P EH1 R Z,1
+CCX-744,apples,AE1 P AH0 L Z,1
+CCX-744,bananas,B AH0 N AE1 N AH0 Z,1
+CCX-744,turkey,T ER1 K IY0,0
+CCX-744,dressing,D R EH1 S IH0 NG,0
+CCX-744,ham,HH AE1 M,1
+CCX-744,salad,S AE1 L AH0 D,1
+CCX-744,candy,K AE1 N D IY0,1
+CCX-744,lemons,L EH1 M AH0 N Z,2
+CCX-744,oranges,AO1 R AH0 N JH AH0 Z,2
+CCX-744,icecream,AY1 S K R IY1 M,1
+CCX-744,mangoes,M AE1 NG G OW0 Z,2
+CCX-744,mashedpotatoes,M AE1 SH T P AH0 T EY1 T OW0 Z,2
+CCX-744,pizza,P IY1 T S AH0,2
+CCX-744,sweetpotatoes,S W IY1 T P AH0 T EY1 T OW0 Z,2
+CCX-744,yogurt,Y OW1 G ER0 T,1
+CDG-753,cashews,K AE1 SH UW2 Z,0
+CDG-753,drpepper,D R AY1 V P EH1 P ER0,1
+CDG-753,grapefruit,G R EY1 P F R UW2 T,1
+CDG-753,guava,G W AA1 V AH0,1
+CDG-753,peanuts,P IY1 N AH0 T S,1
+CDG-753,bread,B R EH1 D,1
+CDG-753,bark,B AA1 R K,1
+CDG-753,soda,S OW1 D AH0,0
+CDG-753,water,W AO1 T ER0,0
+CDG-753,brownies,B R AW1 N IY0 Z,2
+CDG-753,cookies,K UH1 K IY0 Z,2
+CDG-753,chocolate,CH AO1 K L AH0 T,1
+CDG-753,milk,M IH1 L K,1
+CDG-753,lemonade,L EH1 M AH0 N EY1 D,1
+CDG-753,noodles,N UW1 D AH0 L Z,1
+CDG-753,tomatoes,T AH0 M EY1 T OW0 Z,1
+CDG-753,peppers,P EH1 P ER0 Z,1
+CDG-753,celery,S EH1 L ER0 IY0,2
+CDG-753,jelly,JH EH1 L IY0,2
+CDG-753,plums,P L AH1 M Z,5
+CDG-753,plums,P L AH1 M Z,5
+CDG-753,limes,L AY1 M Z,2
+CDG-753,lemons,L EH1 M AH0 N Z,1
+CDG-753,jello,JH EH1 L OW0,1
+CDG-753,limejuice,L AY1 M JH UW1 S,1
+CDG-753,macandcheese,M AE1 K AH0 N D CH IY1 Z,2
+CDG-753,mangoes,M AE1 NG G OW0 Z,2
+CDG-753,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CDG-753,pasta,P AA1 S T AH0,1
+CDG-753,peanutbutter,P IY1 N AH0 T B AH1 T ER0,2
+CDG-753,rootbeer,R UW1 T B IH1 R,2
+CDG-753,spaghetti,S P AH0 G EH1 T IY0,1
+CDG-753,starfruit,S T AA1 R F R UW1 T,1
+CDH-754,cherrycocacola,CH EH1 R IY0 K OW1 K AH0 K OW1 L AH0,8
+CDH-754,cocacola,K OW1 K AH0 K OW1 L AH0,8
+CDH-754,danimalscrunchers,D AA1 N IY0 M AE1 L S K R AH1 N CH ER1 Z,7
+CDH-754,danimalssmoothies,D AA1 N IY0 M AE1 L EH1 S S M UW1 T HH AY1 EH1 S,7
+CDH-754,fantagrape,F AA1 N T AH0 G R EY1 P,5
+CDH-754,fantaorange,F AA1 N T AH0 AO1 R AH0 N JH,5
+CDH-754,fantapineapple,F AA1 N T AH0 P AY1 N AE2 P AH0 L,5
+CDH-754,fantastrawberry,F AA1 N T AH0 S T R AO1 B EH2 R IY0,5
+CDH-754,friedrice,F R AY1 D R AY1 S,1
+CDH-754,chicken,CH IH1 K AH0 N,1
+CDH-754,turkey,T ER1 K IY0,1
+CDH-754,sprite,S P R AY1 T,5
+CDH-754,spritezero,S P R AY1 T Z IH1 R OW0,5
+CDH-754,sreamedrice,S IY1 N Y ER0 IY1 EY1 M D R AY1 V AY1 S,2
+CDH-754,yogurt,Y OW1 G ER0 T,1
+CDM-759,applecider,AE1 P AH0 L S AY1 D ER0,4
+CDM-759,applepie,AE1 P AH0 L P AY1,4
+CDM-759,breadsticks,B R EH1 D Z T IH1 K S,1
+CDM-759,cantaloupe,K AE1 N T AH0 L OW2 P,1
+CDM-759,cheesesause,CH IY1 Z S AO1 Z,1
+CDM-759,chocolateballs,CH AA1 K L AH0 T IY1 B AH0 EH1 L EH1 L EH1 S,4
+CDM-759,chocolateicecream,CH AO1 K L AH0 T AY1 S K R IY1 M,4
+CDM-759,chocolatepie,CH AA1 K L AH0 T IY1 P AY1,4
+CDM-759,coconutcreampie,K OW1 K AH0 N AH2 T K R IY1 EH1 M P AY1,3
+CDM-759,coconutpie,K OW1 K OW2 N AH1 T P AY1,3
+CDM-759,coolranchdoritos,K UW1 L R AE1 N CH D AO2 R IY1 T OW0 Z,7
+CDM-759,doritos,D AO2 R IY1 T OW0 Z,7
+CDM-759,hotdogs,HH AA1 T D AO2 G Z,2
+CDM-759,icecream,AY1 S K R IY1 M,1
+CDM-759,soda,S OW1 D AH0,1
+CDM-759,cake,K EY1 K,0
+CDM-759,rolls,R OW1 L Z,1
+CDM-759,cranberries,K R AE1 N B EH2 R IY0 Z,5
+CDM-759,raspberries,R AE1 Z B EH2 R IY0 Z,5
+CDM-759,watermelon,W AO1 T ER0 M EH2 L AH0 N,1
+CDM-759,strawberries,S T R AO1 B EH2 R IY0 Z,1
+CDM-759,peaches,P IY1 CH AH0 Z,1
+CDM-759,water,W AO1 T ER0,0
+CDM-759,juice,JH UW1 S,0
+CDM-759,wine,W AY1 N,0
+CDM-759,chips,CH IH1 P S,1
+CDM-759,macaroniandcheese,M AE2 K ER0 OW1 N IY0 AH0 N D CH IY1 Z,1
+CDM-759,maggianosalads,M AE1 JH IY0 AE1 N OW0 S AE1 L AH0 D Z,1
+CDM-759,pizza,P IY1 T S AH0,1
+CDM-759,pumpkinpie,P AH1 M P K IH1 N P AY1,1
+CDM-759,ravioli,R AE2 V IY0 OW1 L IY0,1
+CDM-759,redvelvetcake,R EH1 D V EH1 L V AH0 T K EY1 K,1
+CDM-759,salsa,S AO1 L S AH0,1
+CDM-759,spaghetti,S P AH0 G EH1 T IY0,1
+CDM-759,vanillaicecream,V AH0 N IH1 L AH0 AY1 S K R IY1 M,1
+CDR-764,applejuice,AE1 P AH0 L JH UW1 S,4
+CDR-764,applesauce,AE1 P AH0 L S AO2 S,4
+CDR-764,blueberries,B L UW1 B EH2 R IY0 Z,1
+CDR-764,cocacola,K OW1 K AH0 K OW1 L AH0,1
+CDR-764,fanta,F AA1 N T AH0,1
+CDR-764,grapejuice,G R EY1 P JH UW1 S,1
+CDR-764,icecream,AY1 S K R IY1 M,6
+CDR-764,icecream,AY1 S K R IY1 M,6
+CDR-764,koolaid,K UW1 L EY1 D,1
+CDR-764,chicken,CH IH1 K AH0 N,5
+CDR-764,chicken,CH IH1 K AH0 N,5
+CDR-764,ketchup,K EH1 CH AH0 P,1
+CDR-764,steak,S T EY1 K,1
+CDR-764,shrimp,SH R IH1 M P,2
+CDR-764,ribs,R IH1 B Z,2
+CDR-764,cookies,K UH1 K IY0 Z,1
+CDR-764,mango,M AE1 NG G OW0,0
+CDR-764,cake,K EY1 K,0
+CDR-764,water,W AO1 T ER0,0
+CDR-764,cherry,CH EH1 R IY0,0
+CDR-764,apple,AE1 P AH0 L,0
+CDR-764,strawberry,S T R AO1 B EH2 R IY0,1
+CDR-764,banana,B AH0 N AE1 N AH0,1
+CDR-764,milk,M IH1 L K,0
+CDR-764,pop,P AA1 P,0
+CDR-764,milkshake,M IH1 L K SH EY2 K,0
+CDR-764,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+CDR-764,pizza,P IY1 T S AH0,1
+CDR-764,popcorn,P AA1 P K AO2 R N,1
+CDR-764,slushie,S L AH1 SH AY1 IY1,2
+CDR-764,smoothie,S M UW1 T HH AY1 IY1,2
+CDR-764,tangerine,T AE2 N JH ER0 IY1 N,1
+CDU-767,applejuice,AE1 P AH0 L JH UW1 S,2
+CDU-767,bagels,B EY1 G AH0 L Z,2
+CDU-767,cereal,S IH1 R IY0 AH0 L,2
+CDU-767,cheesenips,CH IY1 Z N IH1 P S,1
+CDU-767,cranberryjuice,K R AE1 N B EH2 R IY0 JH UW1 S,1
+CDU-767,fruitsnacks,F R UW1 T S N AA1 S IY1 K EY1 EH1 S,1
+CDU-767,gatorade,G AE1 T ER0 EY2 D,1
+CDU-767,jambalaya,JH AE1 M EY1 L AH0 Y AA1,1
+CDU-767,sprite,S P R AY1 T,0
+CDU-767,lemonade,L EH1 M AH0 N EY1 D,0
+CDU-767,coke,K OW1 K,1
+CDU-767,chicken,CH IH1 K AH0 N,1
+CDU-767,macaroni,M AE2 K ER0 OW1 N IY0,1
+CDU-767,greens,G R IY1 N Z,1
+CDU-767,fish,F IH1 SH,0
+CDU-767,pop,P AA1 P,0
+CDU-767,water,W AO1 T ER0,1
+CDU-767,meats,M IY1 T S,1
+CDU-767,sausages,S AO1 S IH0 JH IH0 Z,1
+CDU-767,bacon,B EY1 K AH0 N,0
+CDU-767,eggs,EH1 G Z,0
+CDU-767,biscuits,B IH1 S K AH0 T S,1
+CDU-767,bananas,B AH0 N AE1 N AH0 Z,2
+CDU-767,orangejuice,AO1 R AH0 N JH JH UW1 S,2
+CDU-767,pepsi,P EH1 P S IY0,1
+CDU-767,powerade,P AW1 R AA1 D IY1,1
+CDU-767,ricekrispietreats,R AY1 S K R IH1 S P AY1 IH0 T R EY1 T IY1 EH1 S,2
+CDU-767,spaghetti,S P AH0 G EH1 T IY0,2
+SGO-159,broccoli,B R AA1 K AH0 L IY0,1
+SGO-159,corndog,K AO1 R N D AO1 G,1
+SGO-159,dietcoke,D AY1 AH0 T K OW1 K,1
+SGO-159,drpepper,D R AY1 V P EH1 P ER0,1
+SGO-159,grahamcrackers,G R EY1 AH0 M K R AE1 K ER0 Z,2
+SGO-159,granolabars,G R AA1 N OW0 L AE1 B AA1 R EH1 S,2
+SGO-159,icecream,AY1 S K R IY1 M,1
+SGO-159,langus,L AE1 N G AH1 S,1
+SGO-159,macaroniandcheese,M AE2 K ER0 OW1 N IY0 AH0 N D CH IY1 Z,2
+SGO-159,mountaindew,M AW1 N T AY1 EH1 N D UW1,2
+SGO-159,grape,G R EY1 P,0
+SGO-159,cheese,CH IY1 Z,1
+SGO-159,meat,M IY1 T,1
+SGO-159,coke,K OW1 K,0
+SGO-159,orange,AO1 R AH0 N JH,1
+SGO-159,sprite,S P R AY1 T,1
+SGO-159,grape,G R EY1 P,1
+SGO-159,cherry,CH EH1 R IY0,1
+SGO-159,chips,CH IH1 P S,1
+SGO-159,cookies,K UH1 K IY0 Z,1
+SGO-159,corn,K AO1 R N,1
+SGO-159,apple,AE1 P AH0 L,4
+SGO-159,pineapple,P AY1 N AE2 P AH0 L,4
+SGO-159,strawberries,S T R AO1 B EH2 R IY0 Z,0
+SGO-159,ham,HH AE1 M,0
+SGO-159,chicken,CH IH1 K AH0 N,1
+SGO-159,pork,P AO1 R K,1
+SGO-159,pasta,P AA1 S T AH0,1
+SGO-159,pepsi,P EH1 P S IY0,1
+SGO-159,pizza,P IY1 T S AH0,5
+SGO-159,pizzarolls,P IY1 T S AH0 R OW1 L Z,5
+SGO-159,popcorn,P AA1 P K AO2 R N,1
+SGO-159,rootbeer,R UW1 T B IH1 R,1
+SGO-159,seacrackers,S IY1 K R AE1 K ER0 Z,1
+SGO-159,sierramist,S IY0 EH1 R AH0 M IH1 S T,1
+SGO-159,vanillacoke,V AH0 N IH1 L AH0 K OW1 K,1
+SKE-234,applejuice,AE1 P AH0 L JH UW1 S,1
+SKE-234,breadsticks,B R EH1 D Z T IH1 K S,1
+SKE-234,buffalowings,B AH1 F AH0 L OW2 W IH1 NG Z,2
+SKE-234,cereal,S IH1 R IY0 AH0 L,2
+SKE-234,gingerale,JH IH1 NG EH1 R AH0 L AH0,2
+SKE-234,orangejuice,AO1 R AH0 N JH JH UW1 S,2
+SKE-234,water,W AO1 T ER0,1
+SKE-234,soda,S OW1 D AH0,1
+SKE-234,pasta,P AA1 S T AH0,1
+SKE-234,milk,M IH1 L K,1
+SKE-234,apples,AE1 P AH0 L Z,1
+SKE-234,fruit,F R UW1 T,1
+SKE-234,grapes,G R EY1 P S,1
+SKE-234,coffee,K AA1 F IY0,0
+SKE-234,pizza,P IY1 T S AH0,0
+SKE-234,ravioli,R AE2 V IY0 OW1 L IY0,1
+SKE-234,spaghetti,S P AH0 G EH1 T IY0,1
+SMK-401,breadsticks,B R EH1 D Z T IH1 K S,1
+SMK-401,cheesepizza,CH IY1 Z P IY1 T S AH0,1
+SMK-401,dietcoke,D AY1 AH0 T K OW1 K,1
+SMK-401,frenchfries,F R EH1 N CH F R AY1 Z,2
+SMK-401,frozenpizzas,F R OW1 Z AH0 N P IY1 T S AH0 Z,2
+SMK-401,granolabars,G R AA1 N OW0 L AE1 B AA1 R EH1 S,1
+SMK-401,guacamole,G W AA2 K AH0 M OW1 L IY0,1
+SMK-401,hamburger,HH AE1 M B ER0 G ER0,1
+SMK-401,hershey,HH ER1 SH IY0,1
+SMK-401,hotdog,HH AA1 T D AO2 G,6
+SMK-401,hotdogs,HH AA1 T D AO2 G Z,6
+SMK-401,lasagna,L AA0 S AA1 N Y AH0,1
+SMK-401,mashedpotatoes,M AE1 SH T P AH0 T EY1 T OW0 Z,1
+SMK-401,pepperjackcheese,P EH1 P ER0 JH AE1 K CH IY1 Z,1
+SMK-401,chips,CH IH1 P S,2
+SMK-401,pepperonipizza,P EH1 P ER0 AA1 N IH1 P AY1 Z IY1 Z IY1 AH0,2
+SMK-401,sausage,S AO1 S AH0 JH,1
+SMK-401,milk,M IH1 L K,1
+SMK-401,coke,K OW1 K,1
+SMK-401,sprite,S P R AY1 T,1
+SMK-401,corn,K AO1 R N,1
+SMK-401,peas,P IY1 Z,1
+SMK-401,grapes,G R EY1 P S,1
+SMK-401,apple,AE1 P AH0 L,1
+SMK-401,bananas,B AH0 N AE1 N AH0 Z,1
+SMK-401,cheese,CH IY1 Z,1
+SMK-401,bread,B R EH1 D,1
+SMK-401,popsicles,P AA1 P S AY1 S IY1 L EH1 S,3
+SMK-401,pringles,P R IH1 NG L EH1 S,3
+SMK-401,quakerbars,K W EY1 K AA1 R B IY1 AA1 R EH1 S,2
+SMK-401,sausagepizza,S AO1 S AH0 JH P IY1 T S AH0,1
+SMK-401,skittles,S K IH1 T AH0 L Z,1
+SMK-401,spaghetti,S P AH0 G EH1 T IY0,1
+SMK-401,sunkist,S AH1 N K IH2 S T,1
+SMK-401,tatertots,T EY1 T ER0 T AA1 T S,1
+SNI-300,barbecue,B AA1 R B IH0 K Y UW2,1
+SNI-300,macaroniandcheese,M AE2 K ER0 OW1 N IY0 AH0 N D CH IY1 Z,1
+SNI-300,soda,S OW1 D AH0,1
+SNI-300,water,W AO1 T ER0,0
+SNI-300,chicken,CH IH1 K AH0 N,0
+SNI-300,burger,B ER1 G ER0,0
+SNI-300,rice,R AY1 S,1
+SNI-300,steak,S T EY1 K,1
+SNI-300,chinese,CH AY0 N IY1 Z,0
+SNI-300,rice,R AY1 S,1
+SNI-300,juice,JH UW1 S,1
+SNI-300,orange,AO1 R AH0 N JH,2
+SNI-300,lemon,L EH1 M AH0 N,2
+SNI-300,apple,AE1 P AH0 L,1
+SNI-300,pear,P EH1 R,1
+SNI-300,lemon,L EH1 M AH0 N,1
+SNI-300,pizza,P IY1 T S AH0,1
+SNI-300,spaghetti,S P AH0 G EH1 T IY0,1
+SNR-308,cereal,S IH1 R IY0 AH0 L,1
+SNR-308,dietcoke,D AY1 AH0 T K OW1 K,2
+SNR-308,peanutbutter,P IY1 N AH0 T B AH1 T ER0,2
+SNR-308,chips,CH IH1 P S,1
+SNR-308,candies,K AE1 N D IY0 Z,0
+SNR-308,pop,P AA1 P,0
+SNR-308,lemonade,L EH1 M AH0 N EY1 D,0
+SNR-308,pies,P AY1 Z,0
+SNR-308,cakes,K EY1 K S,0
+SNR-308,brownies,B R AW1 N IY0 Z,1
+SNR-308,sandwich,S AE1 N D W IH0 CH,1
+SNR-308,fish,F IH1 SH,1
+SNR-308,chicken,CH IH1 K AH0 N,1
+SNR-308,pizza,P IY1 T S AH0,5
+SNR-308,pizza,P IY1 T S AH0,5
+SNR-308,tunafish,T UW1 N AH0 F IH0 SH,1
+SNT-310,broccoli,B R AA1 K AH0 L IY0,1
+SNT-310,kiwi,K IY1 W IY0,1
+SNT-310,mayo,M EY1 OW0,0
+SNT-310,soda,S OW1 D AH0,0
+SNT-310,corn,K AO1 R N,0
+SNT-310,potatoes,P AH0 T EY1 T OW0 Z,2
+SNT-310,tomato,T AH0 M EY1 T OW2,2
+SNT-310,steak,S T EY1 K,1
+SNT-310,apple,AE1 P AH0 L,1
+SNT-310,oranges,AO1 R AH0 N JH AH0 Z,2
+SNT-310,banana,B AH0 N AE1 N AH0,2
+SNT-310,plums,P L AH1 M Z,0
+SNT-310,water,W AO1 T ER0,0
+SNT-310,bread,B R EH1 D,0
+SNT-310,turkey,T ER1 K IY0,1
+SNT-310,mustard,M AH1 S T ER0 D,1
+SNT-310,lettuce,L EH1 T AH0 S,1
+SNT-310,carrots,K AE1 R AH0 T S,1
+SNT-310,radishes,R AE1 D IH0 SH IH0 Z,1
+SNT-310,beets,B IY1 T S,0
+SNT-310,cauliflower,K AA1 L AH0 F L AW2 ER0,0
+SNT-310,beans,B IY1 N Z,1
+SNT-310,sweetpotatoes,S W IY1 T P AH0 T EY1 T OW0 Z,1
+SNV-312,2%milk,,0
+SNV-312,applejuice,AE1 P AH0 L JH UW1 S,1
+SNV-312,blueberries,B L UW1 B EH2 R IY0 Z,7
+SNV-312,blueberrymuffins,B L UW1 B EH2 R IY0 M AH1 F AH0 N Z,7
+SNV-312,breadsticks,B R EH1 D Z T IH1 K S,1
+SNV-312,burrito,B ER0 IY1 T OW0,1
+SNV-312,chickennoodles,CH IH1 K AH0 N N UW1 D AH0 L Z,5
+SNV-312,chickenpasta,CH IH1 K AH0 N P AA1 S T AH0,5
+SNV-312,chocolatemilk,CH AA1 K L AH0 T EH1 M IH1 L K,1
+SNV-312,cornbread,K AO1 R N B R EH2 D,1
+SNV-312,gatorade,G AE1 T ER0 EY2 D,1
+SNV-312,granolabars,G R AA1 N OW0 L AE1 B AA1 R EH1 S,1
+SNV-312,hamburger,HH AE1 M B ER0 G ER0,1
+SNV-312,hotdog,HH AA1 T D AO2 G,1
+SNV-312,lasagna,L AA0 S AA1 N Y AH0,1
+SNV-312,mashedpotatoes,M AE1 SH T P AH0 T EY1 T OW0 Z,1
+SNV-312,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+SNV-312,peanutbutter,P IY1 N AH0 T B AH1 T ER0,1
+SNV-312,chicken,CH IH1 K AH0 N,1
+SNV-312,rice,R AY1 S,1
+SNV-312,corn,K AO1 R N,1
+SNV-312,celery,S EH1 L ER0 IY0,1
+SNV-312,water,W AO1 T ER0,1
+SNV-312,turkey,T ER1 K IY0,1
+SNV-312,ham,HH AE1 M,0
+SNV-312,wings,W IH1 NG Z,0
+SNV-312,powerade,P AW1 R AA1 D IY1,1
+SNV-312,apples,AE1 P AH0 L Z,1
+SNV-312,oranges,AO1 R AH0 N JH AH0 Z,1
+SNV-312,strawberry,S T R AO1 B EH2 R IY0,4
+SNV-312,raspberries,R AE1 Z B EH2 R IY0 Z,4
+SNV-312,spaghetti,S P AH0 G EH1 T IY0,1
+SNV-312,waffles,W AA1 F AH0 L Z,1
+SNY-315,applejuice,AE1 P AH0 L JH UW1 S,2
+SNY-315,cereal,S IH1 R IY0 AH0 L,2
+SNY-315,cheezits,CH IY1 Z IY1 T IY1 EH1 S,1
+SNY-315,chickennoodlesoup,CH IH1 K AH0 N N UW1 D AH0 L S UW1 P,1
+SNY-315,cranberryjuice,K R AE1 N B EH2 R IY0 JH UW1 S,3
+SNY-315,grapejuice,G R EY1 P JH UW1 S,3
+SNY-315,hotchocolate,HH AA1 T CH AO1 K L AH0 T,1
+SNY-315,macaroniandcheese,M AE2 K ER0 OW1 N IY0 AH0 N D CH IY1 Z,2
+SNY-315,orangejuice,AO1 R AH0 N JH JH UW1 S,2
+SNY-315,chicken,CH IH1 K AH0 N,2
+SNY-315,water,W AO1 T ER0,0
+SNY-315,pop,P AA1 P,0
+SNY-315,steak,S T EY1 K,0
+SNY-315,bread,B R EH1 D,0
+SNY-315,milk,M IH1 L K,0
+SNY-315,bananas,B AH0 N AE1 N AH0 Z,1
+SNY-315,apples,AE1 P AH0 L Z,1
+SNY-315,oranges,AO1 R AH0 N JH AH0 Z,1
+SNY-315,grapes,G R EY1 P S,1
+SNY-315,lettuce,L EH1 T AH0 S,1
+SNY-315,crackers,K R AE1 K ER0 Z,0
+SNY-315,tea,T IY1,1
+SNY-315,tomatojuice,T AH0 M EY1 T OW2 JH UW1 S,6
+SNY-315,tomatosoup,T AH0 M EY1 T OW2 S UW1 P,6
+SOA-317,applejuice,AE1 P AH0 L JH UW1 S,1
+SOA-317,pop,P AA1 P,1
+SOA-317,food,F UW1 D,0
+SOA-317,water,W AO1 T ER0,0
+SOA-317,chew,CH UW1,0
+SOA-317,orange,AO1 R AH0 N JH,1
+SOA-317,rootbeer,R UW1 T B IH1 R,1
+SOQ-329,blueberries,B L UW1 B EH2 R IY0 Z,1
+SOQ-329,broccoli,B R AA1 K AH0 L IY0,1
+SOQ-329,greenbeans,G R IY1 N B IY1 N Z,1
+SOQ-329,hamburger,HH AE1 M B ER0 G ER0,1
+SOQ-329,icecream,AY1 S K R IY1 M,1
+SOQ-329,kiwi,K IY1 W IY0,1
+SOQ-329,meatloaf,M IY1 T L OW0 F,2
+SOQ-329,pizza,P IY1 T S AH0,2
+SOQ-329,banana,B AH0 N AE1 N AH0,1
+SOQ-329,apple,AE1 P AH0 L,1
+SOQ-329,water,W AO1 T ER0,0
+SOQ-329,soda,S OW1 D AH0,1
+SOQ-329,orange,AO1 R AH0 N JH,1
+SOQ-329,strawberry,S T R AO1 B EH2 R IY0,1
+SOQ-329,chocolate,CH AO1 K L AH0 T,1
+SOQ-329,beer,B IH1 R,1
+SOQ-329,chips,CH IH1 P S,2
+SOQ-329,chicken,CH IH1 K AH0 N,2
+SOQ-329,beef,B IY1 F,1
+SOQ-329,bacon,B EY1 K AH0 N,2
+SOQ-329,steak,S T EY1 K,2
+SOQ-329,peas,P IY1 Z,0
+SOQ-329,carrots,K AE1 R AH0 T S,1
+SOQ-329,spinach,S P IH1 N AH0 CH,1
+SOQ-329,corn,K AO1 R N,1
+SOQ-329,cherries,CH EH1 R IY0 Z,1
+SPL-436,cottagecheese,K AA1 T AH0 JH CH IY1 Z,1
+SPL-436,frenchtoast,F R EH1 N CH T OW1 S T,1
+SPL-436,gatorade,G AE1 T ER0 EY2 D,1
+SPL-436,icecream,AY1 S K R IY1 M,1
+SPL-436,propel,P R AH0 P EH1 L,1
+SPL-436,lemonade,L EH1 M AH0 N EY1 D,1
+SPL-436,chips,CH IH1 P S,1
+SPL-436,gingerbread,JH IH1 N JH ER0 B R EH2 D,1
+SPL-436,cake,K EY1 K,1
+SPL-436,cookies,K UH1 K IY0 Z,2
+SPL-436,turkey,T ER1 K IY0,2
+SPL-436,ham,HH AE1 M,0
+SPL-436,eggs,EH1 G Z,0
+SPL-436,peanuts,P IY1 N AH0 T S,0
+SPV-450,frenchfries,F R EH1 N CH F R AY1 Z,2
+SPV-450,garlicbread,G AA1 R L IH0 K B R EH1 D,2
+SPV-450,greenpeppers,G R IY1 N P EH1 P ER0 Z,2
+SPV-450,hamburgers,HH AE1 M B ER0 G ER0 Z,2
+SPV-450,hotdogs,HH AA1 T D AO2 G Z,1
+SPV-450,icecream,AY1 S K R IY1 M,1
+SPV-450,lasagna,L AA0 S AA1 N Y AH0,1
+SPV-450,pizza,P IY1 T S AH0,1
+SPV-450,water,W AO1 T ER0,4
+SPV-450,watermelon,W AO1 T ER0 M EH2 L AH0 N,4
+SPV-450,candy,K AE1 N D IY0,1
+SPV-450,liquor,L IH1 K ER0,1
+SPV-450,mustard,M AH1 S T ER0 D,1
+SPV-450,tomatoes,T AH0 M EY1 T OW0 Z,1
+SPV-450,onions,AH1 N Y AH0 N Z,1
+SPV-450,sodapop,S OW1 D AH0 P AA1 P,1
+SPV-450,corn,K AO1 R N,1
+SPV-450,strawberries,S T R AO1 B EH2 R IY0 Z,1
+SPV-450,lettuce,L EH1 T AH0 S,1
+SPV-450,cheese,CH IY1 Z,0
+SPV-450,spaghetti,S P AH0 G EH1 T IY0,1
+SPV-450,tacos,T AA1 K OW0 Z,1
+SRF-483,chickenlegs,CH IH1 K EH1 N L EH1 G Z,3
+SRF-483,chickentenders,CH IH1 K AH0 N T EH1 N D ER0 Z,5
+SRF-483,chickenwings,CH IH1 K AH0 N W IH1 NG Z,5
+SRF-483,hamburgers,HH AE1 M B ER0 G ER0 Z,1
+SRF-483,macandcheese,M AE1 K AH0 N D CH IY1 Z,3
+SRF-483,parmesancheese,P AA1 R M AH0 Z AA2 N CH IY1 Z,3
+SRF-483,ribs,R IH1 B Z,1
+SRF-483,wings,W IH1 NG Z,1
+SRF-483,soda,S OW1 D AH0,0
+SRF-483,water,W AO1 T ER0,0
+SRF-483,pickles,P IH1 K AH0 L Z,1
+SRF-483,peppers,P EH1 P ER0 Z,1
+SRF-483,cheese,CH IY1 Z,1
+SRF-483,noodles,N UW1 D AH0 L Z,1
+SRR-498,cheeseburgers,CH IY1 Z B ER0 G ER0 Z,1
+SRR-498,chocolatefudge,CH AA1 K L AH0 T IY1 F AH1 JH,6
+SRR-498,chocolatemilk,CH AA1 K L AH0 T EH1 M IH1 L K,6
+SRR-498,fries,F R AY1 Z,1
+SRR-498,hamburgers,HH AE1 M B ER0 G ER0 Z,1
+SRR-498,mcdonalds,M AH0 K D AA1 N AH0 L D Z,1
+SRR-498,omelets,AA1 M L AH0 T S,2
+SRR-498,peanutbutterandjelly,P IY1 N AH0 T B AH1 T ER0 AH0 N D JH EH1 L IY0,2
+SRR-498,pizza,P IY1 T S AH0,2
+SRR-498,ravioli,R AE2 V IY0 OW1 L IY0,1
+SRR-498,romannoodles,R OW1 M AH0 N UW1 D AH0 L Z,1
+SRR-498,milk,M IH1 L K,1
+SRR-498,soda,S OW1 D AH0,0
+SRR-498,eggs,EH1 G Z,0
+SRR-498,bacon,B EY1 K AH0 N,0
+SRR-498,toast,T OW1 S T,0
+SRR-498,pudding,P UH1 D IH0 NG,0
+SRR-498,cake,K EY1 K,0
+SRR-498,spaghetti,S P AH0 G EH1 T IY0,1
+SRR-498,water,W AO1 T ER0,1
+SRR-498,strawberrymilk,S T R AO1 B EH1 R IY0 M IH1 L K,1
+SRR-498,tacos,T AA1 K OW0 Z,1
+SSG-520,beefandnoodles,B IY1 F AH0 N D N UW1 D AH0 L Z,1
+SSG-520,calamari,K AA0 L AA0 M AA1 R IY0,1
+SSG-520,chickennuggets,CH IH1 K AH0 N N AH1 G AH0 T S,1
+SSG-520,koolaid,K UW1 L EY1 D,1
+SSG-520,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+SSG-520,spaghetti,S P AH0 G EH1 T IY0,1
+SSG-520,water,W AO1 T ER0,1
+SSG-520,milk,M IH1 L K,1
+SSG-520,fish,F IH1 SH,1
+SSG-520,shrimp,SH R IH1 M P,1
+SSG-520,lemonade,L EH1 M AH0 N EY1 D,1
+SSG-520,candy,K AE1 N D IY0,1
+SSG-520,juice,JH UW1 S,0
+SUG-544,cherrypepsi,CH EH1 R IY0 P EH1 P S IY0,3
+SUG-544,drpepper,D R AY1 V P EH1 P ER0,3
+SUG-544,icee,AY1 S IY1,1
+SUG-544,pepsi,P EH1 P S IY0,1
+SUG-544,pizza,P IY1 T S AH0,1
+SUG-544,pumpkinpie,P AH1 M P K IH1 N P AY1,1
+SUG-544,potato,P AH0 T EY1 T OW2,1
+SUG-544,corn,K AO1 R N,1
+SUG-544,beans,B IY1 N Z,1
+SUG-544,soup,S UW1 P,0
+SUG-544,tea,T IY1,0
+SUG-544,lemonade,L EH1 M AH0 N EY1 D,2
+SUG-544,watermelon,W AO1 T ER0 M EH2 L AH0 N,2
+SUG-544,pumpkin,P AH1 M P K IH0 N,1
+SUG-544,cherry,CH EH1 R IY0,0
+SUG-544,apple,AE1 P AH0 L,1
+SUG-544,orange,AO1 R AH0 N JH,1
+SVH-570,applejuice,AE1 P AH0 L JH UW1 S,1
+SVH-570,barbecueribs,B AA1 R B K Y UW1 R IH1 B Z,1
+SVH-570,broccoli,B R AA1 K AH0 L IY0,1
+SVH-570,dietcoke,D AY1 AH0 T K OW1 K,2
+SVH-570,icedcream,AY1 S T K R IY1 M,2
+SVH-570,meatloaf,M IY1 T L OW0 F,1
+SVH-570,orangejuice,AO1 R AH0 N JH JH UW1 S,1
+SVH-570,popsicles,P AA1 P S AY1 S IY1 L EH1 S,1
+SVH-570,cake,K EY1 K,0
+SVH-570,fruit,F R UW1 T,0
+SVH-570,milk,M IH1 L K,0
+SVH-570,water,W AO1 T ER0,1
+SVH-570,steak,S T EY1 K,1
+SVH-570,lettuce,L EH1 T AH0 S,1
+SVH-570,salad,S AE1 L AH0 D,1
+SVH-570,sprite,S P R AY1 T,1
+SVY-587,breadsticks,B R EH1 D Z T IH1 K S,2
+SVY-587,chickennuggets,CH IH1 K AH0 N N AH1 G AH0 T S,2
+SVY-587,frenchfries,F R EH1 N CH F R AY1 Z,1
+SVY-587,hamburgers,HH AE1 M B ER0 G ER0 Z,1
+SVY-587,hotdogs,HH AA1 T D AO2 G Z,1
+SVY-587,marinarasauce,M ER0 IY1 N AH0 R AE1 S OW1 S IY1 IY1,3
+SVY-587,peanutbutter,P IY1 N AH0 T B AH1 T ER0,3
+SVY-587,pizza,P IY1 T S AH0,2
+SVY-587,squid,S K W IH1 D,1
+SVY-587,peaches,P IY1 CH AH0 Z,1
+SVY-587,apples,AE1 P AH0 L Z,1
+SVY-587,soda,S OW1 D AH0,1
+SVY-587,chicken,CH IH1 K AH0 N,1
+SVY-587,carrots,K AE1 R AH0 T S,2
+SVY-587,cabbage,K AE1 B AH0 JH,2
+SVY-587,lettuce,L EH1 T AH0 S,1
+SVY-587,cheese,CH IY1 Z,0
+SVY-587,soup,S UW1 P,0
+SVY-587,yogurt,Y OW1 G ER0 T,0
+SZA-781,applecider,AE1 P AH0 L S AY1 D ER0,4
+SZA-781,applejuice,AE1 P AH0 L JH UW1 S,4
+SZA-781,cranberryjuice,K R AE1 N B EH2 R IY0 JH UW1 S,3
+SZA-781,spaghetti,S P AH0 G EH1 T IY0,1
+SZA-781,tunafish,T UW1 N AH0 F IH0 SH,1
+SZA-781,juice,JH UW1 S,1
+SZA-781,tomatoes,T AH0 M EY1 T OW0 Z,2
+SZA-781,vegetables,V EH1 JH T AH0 B AH0 L Z,2
+SZA-781,asparagus,AH0 S P EH1 R AH0 G AH0 S,1
+SZA-781,salmon,S AE1 M AH0 N,1

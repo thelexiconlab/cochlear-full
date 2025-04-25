@@ -279,7 +279,7 @@ best_blended_delta_bic_analysis <- best_blended_delta_bic %>%
 
 #structural alpha counts
 #just for foods
-foods_alpha_test <- best_blended_delta_bic_analysis %>% mutate(alpha_recoded)
+foods_alpha_test <- best_blended_delta_bic_analysis %>%
   filter(domain == "foods")
 alpha_table <- table(foods_alpha_test$Group, foods_alpha_test$alpha)
 
@@ -329,6 +329,9 @@ prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_total, ci_total), correct = FALSE)
  
 ## Individual Differences Plots
 ```{r}
+palette <- paletteer::paletteer_d("colorBlindness::Blue2Green14Steps")
+switch_palette <- palette[-1]
+scale_fill_custom <- scale_fill_manual(values = switch_palette)
 
 #STRUCTURE
 #Looking at structural alphas
@@ -355,7 +358,7 @@ best_blended_delta_bic_analysis %>%
 
 #PROCESS
 #multimodaldelta alphas 
-best_blended_delta_bic_analysis%>%mutate(param1=as.character(param1))%>%
+switch_alpha_plot<-best_blended_delta_bic_analysis%>%mutate(param1=as.character(param1))%>%
   group_by(Group, domain, param1) %>%
   count() %>%
   group_by(Group, domain) %>%  #calculate within each group x domain
@@ -365,13 +368,13 @@ best_blended_delta_bic_analysis%>%mutate(param1=as.character(param1))%>%
   geom_text(aes(label = percent(prop, accuracy = 0.1)), 
             position = position_fill(vjust = 0.5)) + 
   facet_wrap(~domain) +  
-  labs(y = "proportion",x="", fill = "weight of semantics", 
+  labs(y = "proportion",x="group", fill = "semantic weight", 
        title = "Multimodal Switch Alpha") +
-  theme_few()+scale_fill_paletteer_d("colorBlindness::Blue2Green14Steps")+
+  theme_few()+scale_fill_custom+
   theme(plot.title = element_text(hjust = 0.5))
   
 #best model
-best_blended_delta_bic_analysis%>%
+model_plot<-best_blended_delta_bic_analysis%>%
     group_by(Group,domain,model_type) %>%
   count() %>%
   group_by(Group, domain) %>%  #calculate within each group x domain
@@ -381,10 +384,12 @@ best_blended_delta_bic_analysis%>%
   geom_text(aes(label = percent(prop, accuracy = 0.1)), 
             position = position_fill(vjust = 0.5)) + 
   facet_wrap(~domain) +  
-  labs(y = "proportion", fill = "model", 
+  labs(y = "proportion", x="group",fill = "model", 
        title = "Best-fit Model") +
   theme_few()+scale_fill_paletteer_d("rcartocolor::DarkMint")+
    theme(plot.title = element_text(hjust = 0.5))
+
+switch_alpha_plot+model_plot
 ```
 
 ## Lexical Analyses
@@ -699,12 +704,12 @@ plots_switch_phon$emmip_plot[[2]]
 
 
 #raw values
-ggplot(data=switches_recoded%>%filter(cue=="phonological",Subject=="CAJ-663")%>%mutate(Group = factor(Group, levels = c("NH","CI"))),aes(y = value, x = Switch, group = Switch, color = Switch)) + facet_wrap(~domain)+
-  theme_few() +  geom_point()+
+ggplot(data=switches_recoded%>%filter(cue=="phonological")%>%mutate(Group = factor(Group, levels = c("NH","CI"))),aes(y = value, x = fluency_score, group = Switch, color = Switch)) + facet_wrap(~Group)+
+  theme_few() +
   geom_smooth(method = "lm", se = TRUE,size=1) +
-  theme(
+  theme(legend.position="top",
     aspect.ratio = 1,  
-    axis.text.x = element_text( hjust = 1, face = "bold"))+scale_colour_paletteer_d("ggthemes::Classic_10")+labs(y = "phonological similarity", x = "fluency score")
+    axis.text.x = element_text( hjust = 1, face = "bold"))+scale_colour_paletteer_d("Manu::Kereru")+labs(y = "phonological similarity", x = "fluency score")
 
 #looking at intx of group x domain x switch x fluency score for frequency
 animals_freq <- ggplot(data = switches_recoded %>%
@@ -762,6 +767,35 @@ switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values
     axis.text.x = element_text( hjust = 1, face = "bold"))+scale_colour_paletteer_d("nationalparkcolors::CraterLake")+labs(y = "phonological similarity", x = "semantic similarity")
 
 ```
+
+## Looking at Word Stems
+
+
+```{r}
+
+#note these are raw entries
+#read in phoneme data
+
+animals_phonemes<-read.csv("../animals_phonemes_with_stems.csv") %>%rename("Subject"="ID") %>%mutate(domain="animals")
+foods_phonemes<-read.csv("../foods_phonemes_with_stems.csv") %>%rename("Subject"="ID")%>%mutate(domain="foods")
+phonemes<- rbind(animals_phonemes,foods_phonemes) %>% left_join(participant_groupings) %>%left_join(just_fluency)
+
+#Looking at words with 4 shared continuous phonemes
+phonemes_stem <- phonemes %>%
+  group_by(Group, domain) %>%
+  summarise(
+    proportion_4plus = sum(Shared_Cont_Phonemes > 3, na.rm = TRUE) / n(),
+    avg_shared_cont = mean(Shared_Cont_Phonemes, na.rm = TRUE),
+    .groups = "drop")
+phonemes_stem
+
+#put into wide format, look at individual pairs?
+#some kind of chart reflecting proportion? also need to do proportion testing probs
+#think about way to break out into clusters vs switches, dealing w/ replacements, removed repetitions, etc
+```
+
+
+
 
 
 

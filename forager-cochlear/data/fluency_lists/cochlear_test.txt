@@ -1,0 +1,15 @@
+ID	Word
+CAF-657	raspberry
+CAF-657	blueberry
+CAF-657	cat
+CAF-657	capybara
+CAF-657	fish
+CAF-657	jellyfish
+CAF-657	snake
+CAF-657	rattlesnake
+CAF-677	snake
+CAF-677	rattlesnake
+CAF-677	orange 
+CAF-677	chickennoodles
+CAF-677	chickenpasta
+
