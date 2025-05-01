@@ -1,0 +1,1003 @@
+ID,Word1,Word2,Phonemes1,Phonemes2,Shared_Cont_Phonemes
+CAJ-663,cheese,coffee,"[['CH', 'IY1', 'Z']]","[['K', 'AA1', 'F', 'IY0'], ['K', 'AO1', 'F', 'IY0']]",1
+CAJ-663,coffee,tea,"[['K', 'AA1', 'F', 'IY0'], ['K', 'AO1', 'F', 'IY0']]","[['T', 'IY1']]",1
+CAJ-663,tea,soda,"[['T', 'IY1']]","[['S', 'OW1', 'D', 'AH0']]",0
+CAJ-663,soda,water,"[['S', 'OW1', 'D', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+CAJ-663,water,asparagus,"[['W', 'AO1', 'T', 'ER0']]","[['AH0', 'S', 'P', 'EH1', 'R', 'AH0', 'G', 'AH0', 'S']]",0
+CAJ-663,asparagus,cauliflower,"[['AH0', 'S', 'P', 'EH1', 'R', 'AH0', 'G', 'AH0', 'S']]","[['K', 'AA1', 'L', 'AH0', 'F', 'L', 'AW2', 'ER0']]",1
+CAJ-663,cauliflower,carrots,"[['K', 'AA1', 'L', 'AH0', 'F', 'L', 'AW2', 'ER0']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",1
+CAJ-663,carrots,salad,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['S', 'AE1', 'L', 'AH0', 'D']]",1
+CAJ-663,salad,chicken,"[['S', 'AE1', 'L', 'AH0', 'D']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CAJ-663,chicken,lemonade,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",2
+CAJ-663,lemonade,bananas,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",2
+CAJ-663,bananas,apples,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+CAJ-663,apples,peaches,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]",1
+CAJ-663,peaches,corn,"[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]","[['K', 'AO1', 'R', 'N']]",0
+CAJ-663,corn,rice,"[['K', 'AO1', 'R', 'N']]","[['R', 'AY1', 'S']]",1
+CAJ-663,rice,pork,"[['R', 'AY1', 'S']]","[['P', 'AO1', 'R', 'K']]",1
+CAJ-663,pork,broccoli,"[['P', 'AO1', 'R', 'K']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",1
+CAJ-663,broccoli,grilledcheesesandwich,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['G', 'R', 'IH1', 'L', 'D', 'CH', 'IY1', 'Z', 'IH0', 'Z', 'AH0', 'N', 'D', 'W', 'IH1', 'CH'], ['G', 'R', 'IH1', 'L', 'D', 'CH', 'IY1', 'Z', 'IH0', 'Z', 'AE1', 'N', 'D', 'W', 'IH1', 'CH']]",1
+CAJ-663,grilledcheesesandwich,hamburgers,"[['G', 'R', 'IH1', 'L', 'D', 'CH', 'IY1', 'Z', 'IH0', 'Z', 'AH0', 'N', 'D', 'W', 'IH1', 'CH'], ['G', 'R', 'IH1', 'L', 'D', 'CH', 'IY1', 'Z', 'IH0', 'Z', 'AE1', 'N', 'D', 'W', 'IH1', 'CH']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",1
+CAJ-663,hamburgers,hotdogs,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",1
+CAJ-663,hotdogs,meatloaf,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['M', 'IY1', 'T', 'L', 'OW0', 'F']]",1
+CAJ-663,meatloaf,pizza,"[['M', 'IY1', 'T', 'L', 'OW0', 'F']]","[['P', 'IY1', 'T', 'S', 'AH0']]",2
+CAJ-663,pizza,popcorn,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]",1
+CAM-666,strawberries,raspberries,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'Z']]",5
+CAM-666,raspberries,apricots,"[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['AE1', 'P', 'R', 'AH0', 'K', 'AA2', 'T', 'S']]",1
+CAM-666,apricots,bread,"[['AE1', 'P', 'R', 'AH0', 'K', 'AA2', 'T', 'S']]","[['B', 'R', 'EH1', 'D']]",1
+CAM-666,bread,jam,"[['B', 'R', 'EH1', 'D']]","[['JH', 'AE1', 'M']]",0
+CAM-666,jam,butter,"[['JH', 'AE1', 'M']]","[['B', 'AH1', 'T', 'ER0']]",0
+CAM-666,butter,toast,"[['B', 'AH1', 'T', 'ER0']]","[['T', 'OW1', 'S', 'T']]",1
+CAM-666,toast,burger,"[['T', 'OW1', 'S', 'T']]","[['B', 'ER1', 'G', 'ER0']]",0
+CAM-666,burger,cheese,"[['B', 'ER1', 'G', 'ER0']]","[['CH', 'IY1', 'Z']]",0
+CAM-666,cheese,soda,"[['CH', 'IY1', 'Z']]","[['S', 'OW1', 'D', 'AH0']]",0
+CAM-666,soda,water,"[['S', 'OW1', 'D', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+CAM-666,water,milk,"[['W', 'AO1', 'T', 'ER0']]","[['M', 'IH1', 'L', 'K']]",0
+CAM-666,milk,cucumbers,"[['M', 'IH1', 'L', 'K']]","[['K', 'Y', 'UW1', 'K', 'AH0', 'M', 'ER0', 'Z']]",1
+CAM-666,cucumbers,pickles,"[['K', 'Y', 'UW1', 'K', 'AH0', 'M', 'ER0', 'Z']]","[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]",2
+CAM-666,pickles,chocolate,"[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]",1
+CAM-666,chocolate,vanilla,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]","[['V', 'AH0', 'N', 'IH1', 'L', 'AH0']]",2
+CAM-666,vanilla,cinnamon,"[['V', 'AH0', 'N', 'IH1', 'L', 'AH0']]","[['S', 'IH1', 'N', 'AH0', 'M', 'AH0', 'N']]",2
+CAM-666,cinnamon,sugar,"[['S', 'IH1', 'N', 'AH0', 'M', 'AH0', 'N']]","[['SH', 'UH1', 'G', 'ER0']]",0
+CAM-666,sugar,rosemary,"[['SH', 'UH1', 'G', 'ER0']]","[['R', 'OW1', 'Z', 'M', 'EH2', 'R', 'IY0']]",0
+CAM-666,rosemary,blueberries,"[['R', 'OW1', 'Z', 'M', 'EH2', 'R', 'IY0']]","[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]",3
+CAM-666,blueberries,cranberryjucie,"[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S', 'IY1'], ['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S', 'IY1', 'AY1', 'IY1']]",4
+CAM-666,cranberryjucie,grapejuice,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S', 'IY1'], ['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S', 'IY1', 'AY1', 'IY1']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",3
+CAM-666,grapejuice,icecream,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CAM-666,icecream,lemonjuice,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['L', 'EH1', 'M', 'AH0', 'N', 'JH', 'UW1', 'S']]",1
+CAM-666,lemonjuice,orangejuice,"[['L', 'EH1', 'M', 'AH0', 'N', 'JH', 'UW1', 'S']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",3
+CAM-666,orangejuice,oregano,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['AO2', 'R', 'EH1', 'G', 'AH0', 'N', 'OW2'], ['ER0', 'EH1', 'G', 'AH0', 'N', 'OW2']]",2
+CAM-666,oregano,peanutbutter,"[['AO2', 'R', 'EH1', 'G', 'AH0', 'N', 'OW2'], ['ER0', 'EH1', 'G', 'AH0', 'N', 'OW2']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]",1
+CAM-666,peanutbutter,pizza,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",2
+CAM-666,pizza,popcorn,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]",1
+CAM-666,popcorn,raspberryjuice,"[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]","[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]",1
+CAM-666,raspberryjuice,strawberryjuice,"[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]",7
+CAP-671,grapes,water,"[['G', 'R', 'EY1', 'P', 'S']]","[['W', 'AO1', 'T', 'ER0']]",0
+CAP-671,water,chips,"[['W', 'AO1', 'T', 'ER0']]","[['CH', 'IH1', 'P', 'S']]",0
+CAP-671,chips,cookies,"[['CH', 'IH1', 'P', 'S']]","[['K', 'UH1', 'K', 'IY0', 'Z']]",0
+CAP-671,cookies,carrot,"[['K', 'UH1', 'K', 'IY0', 'Z']]","[['K', 'AE1', 'R', 'AH0', 'T'], ['K', 'EH1', 'R', 'AH0', 'T']]",1
+CAP-671,carrot,soda,"[['K', 'AE1', 'R', 'AH0', 'T'], ['K', 'EH1', 'R', 'AH0', 'T']]","[['S', 'OW1', 'D', 'AH0']]",1
+CAP-671,soda,apple,"[['S', 'OW1', 'D', 'AH0']]","[['AE1', 'P', 'AH0', 'L']]",1
+CAP-671,apple,watermelon,"[['AE1', 'P', 'AH0', 'L']]","[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]",1
+CAP-671,watermelon,pear,"[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]","[['P', 'EH1', 'R']]",1
+CAP-671,pear,orange,"[['P', 'EH1', 'R']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",1
+CAP-671,orange,pepper,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['P', 'EH1', 'P', 'ER0']]",0
+CAP-671,pepper,tomato,"[['P', 'EH1', 'P', 'ER0']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW2'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2']]",0
+CAP-671,tomato,juice,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW2'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2']]","[['JH', 'UW1', 'S']]",0
+CAP-671,juice,corn,"[['JH', 'UW1', 'S']]","[['K', 'AO1', 'R', 'N']]",0
+CAP-671,corn,potatoes,"[['K', 'AO1', 'R', 'N']]","[['P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",0
+CAP-671,potatoes,brocolli,"[['P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['B', 'R', 'AA1', 'K', 'OW1', 'EH1', 'L', 'L', 'IY1']]",1
+CAP-671,brocolli,grapefruit,"[['B', 'R', 'AA1', 'K', 'OW1', 'EH1', 'L', 'L', 'IY1']]","[['G', 'R', 'EY1', 'P', 'F', 'R', 'UW2', 'T']]",1
+CAP-671,grapefruit,hamburger,"[['G', 'R', 'EY1', 'P', 'F', 'R', 'UW2', 'T']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]",1
+CAP-671,hamburger,icecream,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CAP-671,icecream,pizza,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CAS-674,bagels,water,"[['B', 'EY1', 'G', 'AH0', 'L', 'Z']]","[['W', 'AO1', 'T', 'ER0']]",0
+CAS-674,water,steak,"[['W', 'AO1', 'T', 'ER0']]","[['S', 'T', 'EY1', 'K']]",1
+CAS-674,steak,apple,"[['S', 'T', 'EY1', 'K']]","[['AE1', 'P', 'AH0', 'L']]",0
+CAS-674,apple,orange,"[['AE1', 'P', 'AH0', 'L']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",1
+CAS-674,orange,pear,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['P', 'EH1', 'R']]",1
+CAS-674,pear,strawberries,"[['P', 'EH1', 'R']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",2
+CAS-674,strawberries,grapes,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+CAS-674,grapes,salad,"[['G', 'R', 'EY1', 'P', 'S']]","[['S', 'AE1', 'L', 'AH0', 'D']]",1
+CAS-674,salad,tomato,"[['S', 'AE1', 'L', 'AH0', 'D']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW2'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2']]",1
+CAS-674,tomato,soda,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW2'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2']]","[['S', 'OW1', 'D', 'AH0']]",1
+CAS-674,soda,rolls,"[['S', 'OW1', 'D', 'AH0']]","[['R', 'OW1', 'L', 'Z']]",1
+CAS-674,rolls,pancakes,"[['R', 'OW1', 'L', 'Z']]","[['P', 'AE1', 'N', 'K', 'EY2', 'K', 'S']]",0
+CAS-674,pancakes,bacon,"[['P', 'AE1', 'N', 'K', 'EY2', 'K', 'S']]","[['B', 'EY1', 'K', 'AH0', 'N']]",2
+CAS-674,bacon,eggs,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['EH1', 'G', 'Z']]",0
+CAS-674,eggs,sausage,"[['EH1', 'G', 'Z']]","[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]",0
+CAS-674,sausage,lobster,"[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]","[['L', 'AA1', 'B', 'S', 'T', 'ER0']]",1
+CAS-674,lobster,crab,"[['L', 'AA1', 'B', 'S', 'T', 'ER0']]","[['K', 'R', 'AE1', 'B']]",1
+CAS-674,crab,burgers,"[['K', 'R', 'AE1', 'B']]","[['B', 'ER1', 'G', 'ER0', 'Z']]",1
+CAS-674,burgers,cereal,"[['B', 'ER1', 'G', 'ER0', 'Z']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",0
+CAS-674,cereal,chewybar,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['CH', 'UW1', 'W', 'AY1', 'B', 'AA1', 'R']]",1
+CAS-674,chewybar,chocolatemilk,"[['CH', 'UW1', 'W', 'AY1', 'B', 'AA1', 'R']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'M', 'IH1', 'L', 'K']]",1
+CAS-674,chocolatemilk,fettuccini,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'M', 'IH1', 'L', 'K']]","[['F', 'EH1', 'T', 'UW1', 'CH', 'IY0', 'N', 'IY1']]",1
+CAS-674,fettuccini,gatorade,"[['F', 'EH1', 'T', 'UW1', 'CH', 'IY0', 'N', 'IY1']]","[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]",1
+CAS-674,gatorade,hotdogs,"[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",1
+CAS-674,hotdogs,icecream,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",0
+CAS-674,icecream,pizza,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CAS-674,pizza,proteinbar,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'R', 'OW1', 'T', 'IY2', 'N', 'B', 'AA1', 'R']]",1
+CAS-674,proteinbar,skimmilk,"[['P', 'R', 'OW1', 'T', 'IY2', 'N', 'B', 'AA1', 'R']]","[['S', 'K', 'IH1', 'M', 'M', 'IH1', 'L', 'K']]",0
+CAS-674,skimmilk,spaghetti,"[['S', 'K', 'IH1', 'M', 'M', 'IH1', 'L', 'K']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+CAS-674,spaghetti,waffles,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]",1
+CAS-674,waffles,whitemilk,"[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]","[['W', 'AY1', 'T', 'M', 'IH1', 'L', 'K'], ['HH', 'W', 'AY1', 'T', 'M', 'IH1', 'L', 'K']]",1
+CAV-678,apple,orange,"[['AE1', 'P', 'AH0', 'L']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",1
+CAV-678,orange,water,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['W', 'AO1', 'T', 'ER0']]",1
+CAV-678,water,beer,"[['W', 'AO1', 'T', 'ER0']]","[['B', 'IH1', 'R']]",0
+CAV-678,beer,chicken,"[['B', 'IH1', 'R']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CAV-678,chicken,watermelon,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]",2
+CAV-678,watermelon,orange,"[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",2
+CAV-678,orange,grapes,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+CAV-678,grapes,steak,"[['G', 'R', 'EY1', 'P', 'S']]","[['S', 'T', 'EY1', 'K']]",1
+CAV-678,steak,ribs,"[['S', 'T', 'EY1', 'K']]","[['R', 'IH1', 'B', 'Z']]",0
+CAV-678,ribs,broccoli,"[['R', 'IH1', 'B', 'Z']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",1
+CAV-678,broccoli,sprite,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+CAV-678,sprite,rice,"[['S', 'P', 'R', 'AY1', 'T']]","[['R', 'AY1', 'S']]",2
+CAV-678,rice,noodles,"[['R', 'AY1', 'S']]","[['N', 'UW1', 'D', 'AH0', 'L', 'Z']]",0
+CAV-678,noodles,dietrite,"[['N', 'UW1', 'D', 'AH0', 'L', 'Z']]","[['D', 'AY1', 'AH0', 'T', 'R', 'AY1', 'T']]",1
+CAV-678,dietrite,drpepper,"[['D', 'AY1', 'AH0', 'T', 'R', 'AY1', 'T']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",2
+CAV-678,drpepper,hotdogs,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",1
+CAV-678,hotdogs,icecream,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",0
+CAV-678,icecream,lasagna,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]",1
+CAV-678,lasagna,lunchmeats,"[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]","[['L', 'AH1', 'N', 'CH', 'M', 'IY1', 'T', 'S']]",1
+CAV-678,lunchmeats,mountaindew,"[['L', 'AH1', 'N', 'CH', 'M', 'IY1', 'T', 'S']]","[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]",1
+CAV-678,mountaindew,porkchops,"[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]","[['P', 'AO1', 'R', 'K', 'CH', 'AA1', 'P', 'S']]",0
+CAV-678,porkchops,porktenderloin,"[['P', 'AO1', 'R', 'K', 'CH', 'AA1', 'P', 'S']]","[['P', 'AO1', 'R', 'K', 'T', 'EH1', 'N', 'D', 'ER0', 'L', 'OY2', 'N']]",4
+CAV-678,porktenderloin,roastbeef,"[['P', 'AO1', 'R', 'K', 'T', 'EH1', 'N', 'D', 'ER0', 'L', 'OY2', 'N']]","[['R', 'OW1', 'S', 'T', 'B', 'IY1', 'F']]",1
+CAV-678,roastbeef,sauercraut,"[['R', 'OW1', 'S', 'T', 'B', 'IY1', 'F']]","[['S', 'AW1', 'ER0', 'S', 'IY1', 'R', 'AW1', 'T']]",1
+CAV-678,sauercraut,spaghetti,"[['S', 'AW1', 'ER0', 'S', 'IY1', 'R', 'AW1', 'T']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+CAY-681,applejuice,apples,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",4
+CAY-681,apples,bananas,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+CAY-681,bananas,peaches,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]",2
+CAY-681,peaches,oranges,"[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",2
+CAY-681,oranges,sprite,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+CAY-681,sprite,burritos,"[['S', 'P', 'R', 'AY1', 'T']]","[['B', 'ER0', 'IY1', 'T', 'OW0', 'S']]",1
+CAY-681,burritos,milk,"[['B', 'ER0', 'IY1', 'T', 'OW0', 'S']]","[['M', 'IH1', 'L', 'K']]",0
+CAY-681,milk,water,"[['M', 'IH1', 'L', 'K']]","[['W', 'AO1', 'T', 'ER0']]",0
+CAY-681,water,juice,"[['W', 'AO1', 'T', 'ER0']]","[['JH', 'UW1', 'S']]",0
+CAY-681,juice,bread,"[['JH', 'UW1', 'S']]","[['B', 'R', 'EH1', 'D']]",0
+CAY-681,bread,sandwiches,"[['B', 'R', 'EH1', 'D']]","[['S', 'AE1', 'N', 'D', 'W', 'IH0', 'CH', 'IH0', 'Z'], ['S', 'AE1', 'N', 'W', 'IH0', 'CH', 'IH0', 'Z'], ['S', 'AE1', 'M', 'W', 'IH0', 'CH', 'IH0', 'Z']]",1
+CAY-681,sandwiches,bologna,"[['S', 'AE1', 'N', 'D', 'W', 'IH0', 'CH', 'IH0', 'Z'], ['S', 'AE1', 'N', 'W', 'IH0', 'CH', 'IH0', 'Z'], ['S', 'AE1', 'M', 'W', 'IH0', 'CH', 'IH0', 'Z']]","[['B', 'AH0', 'L', 'OW1', 'N', 'IY0']]",1
+CAY-681,bologna,turkey,"[['B', 'AH0', 'L', 'OW1', 'N', 'IY0']]","[['T', 'ER1', 'K', 'IY0']]",1
+CAY-681,turkey,chicken,"[['T', 'ER1', 'K', 'IY0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CAY-681,chicken,beef,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['B', 'IY1', 'F']]",0
+CAY-681,beef,cereal,"[['B', 'IY1', 'F']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",1
+CAY-681,cereal,chocolatesyrup,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'S', 'W', 'AY1', 'R', 'UW1', 'P', 'IY1'], ['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'S', 'W', 'AY1', 'AA1', 'R', 'Y', 'UW1', 'P', 'IY1']]",1
+CAY-681,chocolatesyrup,cranapplejuice,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'S', 'W', 'AY1', 'R', 'UW1', 'P', 'IY1'], ['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'S', 'W', 'AY1', 'AA1', 'R', 'Y', 'UW1', 'P', 'IY1']]","[['S', 'IY1', 'R', 'AE1', 'N', 'AH0', 'P', 'IY1', 'P', 'IY1', 'L', 'AH0', 'JH', 'UW1', 'S']]",2
+CAY-681,cranapplejuice,cranberryjuice,"[['S', 'IY1', 'R', 'AE1', 'N', 'AH0', 'P', 'IY1', 'P', 'IY1', 'L', 'AH0', 'JH', 'UW1', 'S']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]",3
+CAY-681,cranberryjuice,drpepper,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",1
+CAY-681,drpepper,drpepper,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",8
+CAY-681,drpepper,empanadas,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['EH1', 'M', 'P', 'AE1', 'N', 'EY1', 'D', 'AH0', 'Z']]",1
+CAY-681,empanadas,empanidas,"[['EH1', 'M', 'P', 'AE1', 'N', 'EY1', 'D', 'AH0', 'Z']]","[['EH1', 'M', 'P', 'AE1', 'N', 'IH1', 'D', 'AE1', 'Z'], ['EH1', 'M', 'P', 'AE1', 'N', 'IH1', 'D', 'EH1', 'Z'], ['EH1', 'M', 'P', 'AE1', 'N', 'AY1', 'D', 'IY1', 'AE1', 'Z'], ['EH1', 'M', 'P', 'AE1', 'N', 'AY1', 'D', 'IY1', 'EH1', 'Z']]",5
+CAY-681,empanidas,frenchfries,"[['EH1', 'M', 'P', 'AE1', 'N', 'IH1', 'D', 'AE1', 'Z'], ['EH1', 'M', 'P', 'AE1', 'N', 'IH1', 'D', 'EH1', 'Z'], ['EH1', 'M', 'P', 'AE1', 'N', 'AY1', 'D', 'IY1', 'AE1', 'Z'], ['EH1', 'M', 'P', 'AE1', 'N', 'AY1', 'D', 'IY1', 'EH1', 'Z']]","[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]",1
+CAY-681,frenchfries,granolabars,"[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]","[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]",2
+CAY-681,granolabars,grapejuice,"[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",2
+CAY-681,grapejuice,hashbrowns,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['HH', 'AE1', 'SH', 'B', 'R', 'AW1', 'N', 'Z']]",1
+CAY-681,hashbrowns,hotwings,"[['HH', 'AE1', 'SH', 'B', 'R', 'AW1', 'N', 'Z']]","[['HH', 'AA1', 'T', 'W', 'IH1', 'NG', 'Z']]",1
+CAY-681,hotwings,mountaindew,"[['HH', 'AA1', 'T', 'W', 'IH1', 'NG', 'Z']]","[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]",1
+CAY-681,mountaindew,pepsi,"[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]","[['P', 'EH1', 'P', 'S', 'IY0']]",1
+CAY-681,pepsi,pizza,"[['P', 'EH1', 'P', 'S', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CAY-681,pizza,poptarts,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AA1', 'P', 'T', 'AA1', 'R', 'T', 'S']]",2
+CAY-681,poptarts,potatoskins,"[['P', 'AA1', 'P', 'T', 'AA1', 'R', 'T', 'S']]","[['P', 'AH0', 'T', 'EY1', 'T', 'OW2', 'S', 'K', 'IH1', 'N', 'Z']]",1
+CAY-681,potatoskins,quesadillas,"[['P', 'AH0', 'T', 'EY1', 'T', 'OW2', 'S', 'K', 'IH1', 'N', 'Z']]","[['K', 'Y', 'UW1', 'Z', 'AE1', 'D', 'IH1', 'L', 'AE1', 'Z'], ['K', 'Y', 'UW1', 'Z', 'AE1', 'D', 'IH1', 'L', 'EH1', 'Z'], ['K', 'W', 'EH1', 'S', 'AE1', 'D', 'IH1', 'L', 'AE1', 'Z'], ['K', 'W', 'EH1', 'S', 'AE1', 'D', 'IH1', 'L', 'EH1', 'Z']]",1
+CAY-681,quesadillas,sierramist,"[['K', 'Y', 'UW1', 'Z', 'AE1', 'D', 'IH1', 'L', 'AE1', 'Z'], ['K', 'Y', 'UW1', 'Z', 'AE1', 'D', 'IH1', 'L', 'EH1', 'Z'], ['K', 'W', 'EH1', 'S', 'AE1', 'D', 'IH1', 'L', 'AE1', 'Z'], ['K', 'W', 'EH1', 'S', 'AE1', 'D', 'IH1', 'L', 'EH1', 'Z']]","[['S', 'IY0', 'EH1', 'R', 'AH0', 'M', 'IH1', 'S', 'T']]",1
+CAY-681,sierramist,sourcream,"[['S', 'IY0', 'EH1', 'R', 'AH0', 'M', 'IH1', 'S', 'T']]","[['S', 'AW1', 'ER0', 'K', 'R', 'IY1', 'M'], ['S', 'AW1', 'R', 'K', 'R', 'IY1', 'M']]",1
+CAY-681,sourcream,tacos,"[['S', 'AW1', 'ER0', 'K', 'R', 'IY1', 'M'], ['S', 'AW1', 'R', 'K', 'R', 'IY1', 'M']]","[['T', 'AA1', 'K', 'OW0', 'Z']]",1
+CAY-681,tacos,juice,"[['T', 'AA1', 'K', 'OW0', 'Z']]","[['JH', 'UW1', 'S']]",0
+CAY-681,juice,waffles,"[['JH', 'UW1', 'S']]","[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]",0
+CBD-686,cakethathassugaronit,candy,"[['K', 'EY1', 'K', 'DH', 'AE1', 'T', 'HH', 'AE1', 'S', 'Y', 'UW1', 'G', 'EH1', 'R', 'OW0', 'N', 'IH1', 'T'], ['K', 'EY1', 'K', 'DH', 'AH0', 'T', 'HH', 'AE1', 'S', 'Y', 'UW1', 'G', 'EH1', 'R', 'OW0', 'N', 'IH1', 'T']]","[['K', 'AE1', 'N', 'D', 'IY0']]",1
+CBD-686,candy,chocolate,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]",1
+CBD-686,chocolate,strawberries,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+CBD-686,strawberries,pop,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['P', 'AA1', 'P']]",0
+CBD-686,pop,cake,"[['P', 'AA1', 'P']]","[['K', 'EY1', 'K']]",0
+CBD-686,cake,chocolatecake,"[['K', 'EY1', 'K']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'K', 'EY1', 'K']]",3
+CBD-686,chocolatecake,chocolatecoveredbrownies,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'K', 'EY1', 'K']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'K', 'AH1', 'V', 'ER0', 'D', 'B', 'R', 'AW1', 'N', 'IY0', 'Z']]",4
+CBD-686,chocolatecoveredbrownies,chocolatecoveredmarshmallows,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'K', 'AH1', 'V', 'ER0', 'D', 'B', 'R', 'AW1', 'N', 'IY0', 'Z']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'K', 'AH1', 'V', 'ER0', 'D', 'M', 'AA1', 'R', 'SH', 'M', 'EH2', 'L', 'OW0', 'Z']]",11
+CBD-686,chocolatecoveredmarshmallows,chocolatecoveredstrawberries,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'K', 'AH1', 'V', 'ER0', 'D', 'M', 'AA1', 'R', 'SH', 'M', 'EH2', 'L', 'OW0', 'Z']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'K', 'AH1', 'V', 'ER0', 'D', 'S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",11
+CBD-686,chocolatecoveredstrawberries,cocacola,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'K', 'AH1', 'V', 'ER0', 'D', 'S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]",2
+CBD-686,cocacola,hersheys,"[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]","[['HH', 'ER0', 'Z', 'HH', 'EY1', 'Z'], ['HH', 'ER1', 'Z', 'HH', 'EY1', 'Z']]",0
+CBD-686,hersheys,kiwis,"[['HH', 'ER0', 'Z', 'HH', 'EY1', 'Z'], ['HH', 'ER1', 'Z', 'HH', 'EY1', 'Z']]","[['K', 'IY1', 'W', 'IY0', 'Z']]",1
+CBD-686,kiwis,mms,"[['K', 'IY1', 'W', 'IY0', 'Z']]","[['EH1', 'M', 'M', 'IH1', 'Z']]",1
+CBD-686,mms,marblecake,"[['EH1', 'M', 'M', 'IH1', 'Z']]","[['M', 'AA1', 'R', 'B', 'AH0', 'L', 'K', 'EY1', 'K']]",1
+CBD-686,marblecake,marshmallows,"[['M', 'AA1', 'R', 'B', 'AH0', 'L', 'K', 'EY1', 'K']]","[['M', 'AA1', 'R', 'SH', 'M', 'EH2', 'L', 'OW0', 'Z']]",3
+CBD-686,marshmallows,nastycake,"[['M', 'AA1', 'R', 'SH', 'M', 'EH2', 'L', 'OW0', 'Z']]","[['N', 'AE1', 'S', 'T', 'IY0', 'K', 'EY1', 'K']]",0
+CBD-686,nastycake,pepsis,"[['N', 'AE1', 'S', 'T', 'IY0', 'K', 'EY1', 'K']]","[['P', 'EH1', 'P', 'S', 'IH1', 'S']]",1
+CBD-686,pepsis,pizza,"[['P', 'EH1', 'P', 'S', 'IH1', 'S']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CBD-686,pizza,salsberrysteak,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['S', 'AO1', 'L', 'S', 'B', 'EH0', 'R', 'IY0', 'S', 'T', 'EY1', 'K']]",1
+CBD-686,salsberrysteak,vanillacake,"[['S', 'AO1', 'L', 'S', 'B', 'EH0', 'R', 'IY0', 'S', 'T', 'EY1', 'K']]","[['V', 'AH0', 'N', 'IH1', 'L', 'AH0', 'K', 'EY1', 'K']]",2
+CBF-691,broccoli,brusselsprouts,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['B', 'R', 'AH1', 'S', 'AH0', 'L', 'S', 'P', 'R', 'AW1', 'T', 'S']]",2
+CBF-691,brusselsprouts,chicken,"[['B', 'R', 'AH1', 'S', 'AH0', 'L', 'S', 'P', 'R', 'AW1', 'T', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CBF-691,chicken,milk,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['M', 'IH1', 'L', 'K']]",1
+CBF-691,milk,lemon,"[['M', 'IH1', 'L', 'K']]","[['L', 'EH1', 'M', 'AH0', 'N']]",1
+CBF-691,lemon,orange,"[['L', 'EH1', 'M', 'AH0', 'N']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",2
+CBF-691,orange,cheese,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['CH', 'IY1', 'Z']]",0
+CBF-691,cheese,sprite,"[['CH', 'IY1', 'Z']]","[['S', 'P', 'R', 'AY1', 'T']]",0
+CBF-691,sprite,coke,"[['S', 'P', 'R', 'AY1', 'T']]","[['K', 'OW1', 'K']]",0
+CBF-691,coke,macaroni,"[['K', 'OW1', 'K']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0']]",1
+CBF-691,macaroni,celery,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0']]","[['S', 'EH1', 'L', 'ER0', 'IY0']]",1
+CBF-691,celery,carrots,"[['S', 'EH1', 'L', 'ER0', 'IY0']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",1
+CBF-691,carrots,tomatoes,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]",1
+CBF-691,tomatoes,bread,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]","[['B', 'R', 'EH1', 'D']]",0
+CBF-691,bread,peppers,"[['B', 'R', 'EH1', 'D']]","[['P', 'EH1', 'P', 'ER0', 'Z']]",1
+CBF-691,peppers,onions,"[['P', 'EH1', 'P', 'ER0', 'Z']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",1
+CBF-691,onions,bacon,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['B', 'EY1', 'K', 'AH0', 'N']]",2
+CBF-691,bacon,eggs,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['EH1', 'G', 'Z']]",0
+CBF-691,eggs,icing,"[['EH1', 'G', 'Z']]","[['AY1', 'S', 'IH0', 'NG']]",0
+CBF-691,icing,cake,"[['AY1', 'S', 'IH0', 'NG']]","[['K', 'EY1', 'K']]",0
+CBF-691,cake,pie,"[['K', 'EY1', 'K']]","[['P', 'AY1']]",0
+CBF-691,pie,cherries,"[['P', 'AY1']]","[['CH', 'EH1', 'R', 'IY0', 'Z']]",0
+CBF-691,cherries,grapes,"[['CH', 'EH1', 'R', 'IY0', 'Z']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+CBF-691,grapes,bananas,"[['G', 'R', 'EY1', 'P', 'S']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",0
+CBF-691,bananas,drpepper,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",0
+CBF-691,drpepper,gingerale,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['JH', 'IH1', 'NG', 'EH1', 'R', 'AH0', 'L', 'AH0'], ['JH', 'IH1', 'NG', 'IH1', 'R', 'AH0', 'L', 'AH0']]",1
+CBF-691,gingerale,grapejuice,"[['JH', 'IH1', 'NG', 'EH1', 'R', 'AH0', 'L', 'AH0'], ['JH', 'IH1', 'NG', 'IH1', 'R', 'AH0', 'L', 'AH0']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",1
+CBF-691,grapejuice,mountaindew,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]",1
+CBF-691,mountaindew,orangejuice,"[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",1
+CBF-691,orangejuice,pepsi,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'EH1', 'P', 'S', 'IY0']]",1
+CBH-693,applejuice,broccoli,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",2
+CBH-693,broccoli,water,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['W', 'AO1', 'T', 'ER0']]",0
+CBH-693,water,apple,"[['W', 'AO1', 'T', 'ER0']]","[['AE1', 'P', 'AH0', 'L']]",0
+CBH-693,apple,oranges,"[['AE1', 'P', 'AH0', 'L']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",1
+CBH-693,oranges,soda,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['S', 'OW1', 'D', 'AH0']]",1
+CBH-693,soda,grapes,"[['S', 'OW1', 'D', 'AH0']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+CBH-693,grapes,candy,"[['G', 'R', 'EY1', 'P', 'S']]","[['K', 'AE1', 'N', 'D', 'IY0']]",0
+CBH-693,candy,steak,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['S', 'T', 'EY1', 'K']]",1
+CBH-693,steak,chicken,"[['S', 'T', 'EY1', 'K']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CBH-693,chicken,pomegranate,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['P', 'AO1', 'M', 'IY1', 'G', 'R', 'AE1', 'N', 'EY1', 'T']]",1
+CBH-693,pomegranate,carrots,"[['P', 'AO1', 'M', 'IY1', 'G', 'R', 'AE1', 'N', 'EY1', 'T']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",1
+CBH-693,carrots,turkey,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['T', 'ER1', 'K', 'IY0']]",1
+CBH-693,turkey,ham,"[['T', 'ER1', 'K', 'IY0']]","[['HH', 'AE1', 'M']]",0
+CBH-693,ham,wraps,"[['HH', 'AE1', 'M']]","[['R', 'AE1', 'P', 'S']]",1
+CBH-693,wraps,lettuce,"[['R', 'AE1', 'P', 'S']]","[['L', 'EH1', 'T', 'AH0', 'S']]",1
+CBH-693,lettuce,tomatoes,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]",2
+CBH-693,tomatoes,spinach,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]","[['S', 'P', 'IH1', 'N', 'AH0', 'CH']]",1
+CBH-693,spinach,jelly,"[['S', 'P', 'IH1', 'N', 'AH0', 'CH']]","[['JH', 'EH1', 'L', 'IY0']]",0
+CBH-693,jelly,bread,"[['JH', 'EH1', 'L', 'IY0']]","[['B', 'R', 'EH1', 'D']]",1
+CBH-693,bread,butter,"[['B', 'R', 'EH1', 'D']]","[['B', 'AH1', 'T', 'ER0']]",1
+CBH-693,butter,fastfood,"[['B', 'AH1', 'T', 'ER0']]","[['F', 'AE1', 'S', 'T', 'F', 'UW2', 'D']]",1
+CBH-693,fastfood,gatorade,"[['F', 'AE1', 'S', 'T', 'F', 'UW2', 'D']]","[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]",1
+CBH-693,gatorade,granolabars,"[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]","[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]",1
+CBH-693,granolabars,grapefruits,"[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]","[['G', 'R', 'EY1', 'P', 'F', 'R', 'UW2', 'T', 'S']]",2
+CBH-693,grapefruits,grapejuice,"[['G', 'R', 'EY1', 'P', 'F', 'R', 'UW2', 'T', 'S']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",4
+CBH-693,grapejuice,hotpockets,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['HH', 'AA1', 'T', 'P', 'AA1', 'K', 'AH0', 'T', 'S']]",1
+CBH-693,hotpockets,icecream,"[['HH', 'AA1', 'T', 'P', 'AA1', 'K', 'AH0', 'T', 'S']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CBH-693,icecream,orangejuice,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",1
+CBH-693,orangejuice,peanutbutter,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]",1
+CBH-693,peanutbutter,powerade,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]","[['P', 'AW1', 'R', 'AA1', 'D', 'IY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'EY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'AH0']]",1
+CBH-693,powerade,tacos,"[['P', 'AW1', 'R', 'AA1', 'D', 'IY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'EY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'AH0']]","[['T', 'AA1', 'K', 'OW0', 'Z']]",1
+CBJ-697,apple,banana,"[['AE1', 'P', 'AH0', 'L']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]",1
+CBJ-697,banana,orange,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",2
+CBJ-697,orange,chicken,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",2
+CBJ-697,chicken,milk,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['M', 'IH1', 'L', 'K']]",1
+CBJ-697,milk,soda,"[['M', 'IH1', 'L', 'K']]","[['S', 'OW1', 'D', 'AH0']]",0
+CBJ-697,soda,lemonade,"[['S', 'OW1', 'D', 'AH0']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",1
+CBJ-697,lemonade,meat,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['M', 'IY1', 'T']]",1
+CBJ-697,meat,eggs,"[['M', 'IY1', 'T']]","[['EH1', 'G', 'Z']]",0
+CBJ-697,eggs,sausage,"[['EH1', 'G', 'Z']]","[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]",0
+CBJ-697,sausage,salad,"[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]","[['S', 'AE1', 'L', 'AH0', 'D']]",1
+CBJ-697,salad,milk,"[['S', 'AE1', 'L', 'AH0', 'D']]","[['M', 'IH1', 'L', 'K']]",1
+CBJ-697,milk,bread,"[['M', 'IH1', 'L', 'K']]","[['B', 'R', 'EH1', 'D']]",0
+CBJ-697,bread,candy,"[['B', 'R', 'EH1', 'D']]","[['K', 'AE1', 'N', 'D', 'IY0']]",1
+CBJ-697,candy,ham,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['HH', 'AE1', 'M']]",1
+CBJ-697,ham,fish,"[['HH', 'AE1', 'M']]","[['F', 'IH1', 'SH']]",0
+CBJ-697,fish,hamburger,"[['F', 'IH1', 'SH']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]",0
+CBJ-697,hamburger,icedtea,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]","[['AY1', 'S', 'T', 'T', 'IY1']]",0
+CBJ-697,icedtea,orangejuice,"[['AY1', 'S', 'T', 'T', 'IY1']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",1
+CBJ-697,orangejuice,spaghetti,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+CBL-698,baklava,chickenpotpie,"[['B', 'AE1', 'K', 'L', 'AA1', 'V', 'AH0']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'P', 'AA1', 'T', 'P', 'AY2']]",1
+CBL-698,chickenpotpie,chickensandwich,"[['CH', 'IH1', 'K', 'AH0', 'N', 'P', 'AA1', 'T', 'P', 'AY2']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'Z', 'AH0', 'N', 'D', 'W', 'IH1', 'CH'], ['CH', 'IH1', 'K', 'AH0', 'N', 'Z', 'AE1', 'N', 'D', 'W', 'IH1', 'CH']]",5
+CBL-698,chickensandwich,chips,"[['CH', 'IH1', 'K', 'AH0', 'N', 'Z', 'AH0', 'N', 'D', 'W', 'IH1', 'CH'], ['CH', 'IH1', 'K', 'AH0', 'N', 'Z', 'AE1', 'N', 'D', 'W', 'IH1', 'CH']]","[['CH', 'IH1', 'P', 'S']]",2
+CBL-698,chips,soda,"[['CH', 'IH1', 'P', 'S']]","[['S', 'OW1', 'D', 'AH0']]",1
+CBL-698,soda,sprite,"[['S', 'OW1', 'D', 'AH0']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+CBL-698,sprite,coke,"[['S', 'P', 'R', 'AY1', 'T']]","[['K', 'OW1', 'K']]",0
+CBL-698,coke,turkey,"[['K', 'OW1', 'K']]","[['T', 'ER1', 'K', 'IY0']]",1
+CBL-698,turkey,gravy,"[['T', 'ER1', 'K', 'IY0']]","[['G', 'R', 'EY1', 'V', 'IY0']]",1
+CBL-698,gravy,beans,"[['G', 'R', 'EY1', 'V', 'IY0']]","[['B', 'IY1', 'N', 'Z']]",1
+CBL-698,beans,bacon,"[['B', 'IY1', 'N', 'Z']]","[['B', 'EY1', 'K', 'AH0', 'N']]",1
+CBL-698,bacon,water,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['W', 'AO1', 'T', 'ER0']]",0
+CBL-698,water,sugar,"[['W', 'AO1', 'T', 'ER0']]","[['SH', 'UH1', 'G', 'ER0']]",1
+CBL-698,sugar,salt,"[['SH', 'UH1', 'G', 'ER0']]","[['S', 'AO1', 'L', 'T']]",0
+CBL-698,salt,pepper,"[['S', 'AO1', 'L', 'T']]","[['P', 'EH1', 'P', 'ER0']]",0
+CBL-698,pepper,chicken,"[['P', 'EH1', 'P', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+CBL-698,chicken,cranberrysauce,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'S', 'AO1', 'S']]",1
+CBL-698,cranberrysauce,donuts,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'S', 'AO1', 'S']]","[['D', 'OW1', 'N', 'AH2', 'T', 'S']]",1
+CBL-698,donuts,koolaid,"[['D', 'OW1', 'N', 'AH2', 'T', 'S']]","[['K', 'UW1', 'L', 'EY1', 'D']]",1
+CBL-698,koolaid,mashedpotatoes,"[['K', 'UW1', 'L', 'EY1', 'D']]","[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",1
+CBL-698,mashedpotatoes,pizza,"[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CBM-702,allfoods,cereal,"[['AO1', 'L', 'F', 'UW1', 'D', 'Z']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",1
+CBM-702,cereal,chocolates,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'S']]",1
+CBM-702,chocolates,apples,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'S']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+CBM-702,apples,candy,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['K', 'AE1', 'N', 'D', 'IY0']]",1
+CBM-702,candy,soda,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['S', 'OW1', 'D', 'AH0']]",1
+CBM-702,soda,water,"[['S', 'OW1', 'D', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+CBM-702,water,juice,"[['W', 'AO1', 'T', 'ER0']]","[['JH', 'UW1', 'S']]",0
+CBM-702,juice,sweets,"[['JH', 'UW1', 'S']]","[['S', 'W', 'IY1', 'T', 'S']]",1
+CBM-702,sweets,meats,"[['S', 'W', 'IY1', 'T', 'S']]","[['M', 'IY1', 'T', 'S']]",3
+CBM-702,meats,dairy,"[['M', 'IY1', 'T', 'S']]","[['D', 'EH1', 'R', 'IY0']]",1
+CBM-702,dairy,fruits,"[['D', 'EH1', 'R', 'IY0']]","[['F', 'R', 'UW1', 'T', 'S']]",1
+CBM-702,fruits,apples,"[['F', 'R', 'UW1', 'T', 'S']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",0
+CBM-702,apples,bananas,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+CBM-702,bananas,onions,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",2
+CBM-702,onions,oatmeal,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['OW1', 'T', 'M', 'IY2', 'L']]",0
+CBM-702,oatmeal,corn,"[['OW1', 'T', 'M', 'IY2', 'L']]","[['K', 'AO1', 'R', 'N']]",0
+CBM-702,corn,celery,"[['K', 'AO1', 'R', 'N']]","[['S', 'EH1', 'L', 'ER0', 'IY0']]",0
+CBM-702,celery,onions,"[['S', 'EH1', 'L', 'ER0', 'IY0']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",0
+CBM-702,onions,milk,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['M', 'IH1', 'L', 'K']]",0
+CBM-702,milk,cheese,"[['M', 'IH1', 'L', 'K']]","[['CH', 'IY1', 'Z']]",0
+CBM-702,cheese,frenchtoast,"[['CH', 'IY1', 'Z']]","[['F', 'R', 'EH1', 'N', 'CH', 'T', 'OW1', 'S', 'T']]",1
+CBM-702,frenchtoast,granolabars,"[['F', 'R', 'EH1', 'N', 'CH', 'T', 'OW1', 'S', 'T']]","[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]",2
+CBM-702,granolabars,greenbeans,"[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]","[['G', 'R', 'IY1', 'N', 'B', 'IY1', 'N', 'Z']]",2
+CBM-702,greenbeans,greenpeppers,"[['G', 'R', 'IY1', 'N', 'B', 'IY1', 'N', 'Z']]","[['G', 'R', 'IY1', 'N', 'P', 'EH1', 'P', 'ER0', 'Z']]",4
+CBM-702,greenpeppers,pizza,"[['G', 'R', 'IY1', 'N', 'P', 'EH1', 'P', 'ER0', 'Z']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CBM-702,pizza,seasonings,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['S', 'IY1', 'Z', 'AH0', 'N', 'IH0', 'NG', 'Z']]",1
+CBM-702,seasonings,veggie,"[['S', 'IY1', 'Z', 'AH0', 'N', 'IH0', 'NG', 'Z']]","[['V', 'EH1', 'JH', 'IY0']]",1
+CBM-702,veggie,veggies,"[['V', 'EH1', 'JH', 'IY0']]","[['V', 'EH1', 'JH', 'IY0', 'Z']]",4
+CBM-702,veggies,waffles,"[['V', 'EH1', 'JH', 'IY0', 'Z']]","[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]",1
+CBP-707,applejuice,bakedpotato,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'EY1', 'K', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW2']]",2
+CBP-707,bakedpotato,burrito,"[['B', 'EY1', 'K', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW2']]","[['B', 'ER0', 'IY1', 'T', 'OW0']]",2
+CBP-707,burrito,cheesestick,"[['B', 'ER0', 'IY1', 'T', 'OW0']]","[['CH', 'IY1', 'Z', 'S', 'T', 'IH1', 'K']]",1
+CBP-707,cheesestick,pickles,"[['CH', 'IY1', 'Z', 'S', 'T', 'IH1', 'K']]","[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]",2
+CBP-707,pickles,cheese,"[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]","[['CH', 'IY1', 'Z']]",1
+CBP-707,cheese,water,"[['CH', 'IY1', 'Z']]","[['W', 'AO1', 'T', 'ER0']]",0
+CBP-707,water,tea,"[['W', 'AO1', 'T', 'ER0']]","[['T', 'IY1']]",1
+CBP-707,tea,cake,"[['T', 'IY1']]","[['K', 'EY1', 'K']]",0
+CBP-707,cake,apples,"[['K', 'EY1', 'K']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",0
+CBP-707,apples,bananas,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+CBP-707,bananas,oranges,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",2
+CBP-707,oranges,eggplant,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['EH1', 'G', 'P', 'L', 'AE2', 'N', 'T']]",1
+CBP-707,eggplant,beef,"[['EH1', 'G', 'P', 'L', 'AE2', 'N', 'T']]","[['B', 'IY1', 'F']]",0
+CBP-707,beef,ham,"[['B', 'IY1', 'F']]","[['HH', 'AE1', 'M']]",0
+CBP-707,ham,turkey,"[['HH', 'AE1', 'M']]","[['T', 'ER1', 'K', 'IY0']]",0
+CBP-707,turkey,peas,"[['T', 'ER1', 'K', 'IY0']]","[['P', 'IY1', 'Z']]",1
+CBP-707,peas,carrots,"[['P', 'IY1', 'Z']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",0
+CBP-707,carrots,corn,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['K', 'AO1', 'R', 'N']]",1
+CBP-707,corn,chicken,"[['K', 'AO1', 'R', 'N']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CBP-707,chicken,biscuits,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['B', 'IH1', 'S', 'K', 'AH0', 'T', 'S']]",2
+CBP-707,biscuits,coke,"[['B', 'IH1', 'S', 'K', 'AH0', 'T', 'S']]","[['K', 'OW1', 'K']]",1
+CBP-707,coke,sprite,"[['K', 'OW1', 'K']]","[['S', 'P', 'R', 'AY1', 'T']]",0
+CBP-707,sprite,fries,"[['S', 'P', 'R', 'AY1', 'T']]","[['F', 'R', 'AY1', 'Z']]",2
+CBP-707,fries,hamburgers,"[['F', 'R', 'AY1', 'Z']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",1
+CBP-707,hamburgers,koolaid,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['K', 'UW1', 'L', 'EY1', 'D']]",0
+CBP-707,koolaid,macaroniandcheese,"[['K', 'UW1', 'L', 'EY1', 'D']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+CBP-707,macaroniandcheese,mashedpotatoes,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",2
+CBP-707,mashedpotatoes,orangejuice,"[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",1
+CBP-707,orangejuice,pepsi,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'EH1', 'P', 'S', 'IY0']]",1
+CBP-707,pepsi,pizza,"[['P', 'EH1', 'P', 'S', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CBP-707,pizza,quesadilla,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['K', 'Y', 'UW1', 'Z', 'AE1', 'D', 'IH1', 'L', 'L', 'AA1'], ['K', 'W', 'EH1', 'S', 'AE1', 'D', 'IH1', 'L', 'L', 'AA1']]",0
+CBS-711,applejuice,bagel,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'EY1', 'G', 'AH0', 'L']]",2
+CBS-711,bagel,cheeseburger,"[['B', 'EY1', 'G', 'AH0', 'L']]","[['CH', 'IY1', 'Z', 'B', 'ER0', 'G', 'ER0']]",1
+CBS-711,cheeseburger,chickennuggetsoup,"[['CH', 'IY1', 'Z', 'B', 'ER0', 'G', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'AH1', 'G', 'IH0', 'T', 'S', 'UW1', 'P']]",1
+CBS-711,chickennuggetsoup,fanta,"[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'AH1', 'G', 'IH0', 'T', 'S', 'UW1', 'P']]","[['F', 'AA1', 'N', 'T', 'AH0']]",1
+CBS-711,fanta,water,"[['F', 'AA1', 'N', 'T', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",1
+CBS-711,water,pop,"[['W', 'AO1', 'T', 'ER0']]","[['P', 'AA1', 'P']]",0
+CBS-711,pop,soup,"[['P', 'AA1', 'P']]","[['S', 'UW1', 'P']]",1
+CBS-711,soup,coke,"[['S', 'UW1', 'P']]","[['K', 'OW1', 'K']]",0
+CBS-711,coke,water,"[['K', 'OW1', 'K']]","[['W', 'AO1', 'T', 'ER0']]",0
+CBS-711,water,toast,"[['W', 'AO1', 'T', 'ER0']]","[['T', 'OW1', 'S', 'T']]",1
+CBS-711,toast,frenchtoast,"[['T', 'OW1', 'S', 'T']]","[['F', 'R', 'EH1', 'N', 'CH', 'T', 'OW1', 'S', 'T']]",4
+CBS-711,frenchtoast,pancakes,"[['F', 'R', 'EH1', 'N', 'CH', 'T', 'OW1', 'S', 'T']]","[['P', 'AE1', 'N', 'K', 'EY2', 'K', 'S']]",1
+CBS-711,pancakes,grapejuice,"[['P', 'AE1', 'N', 'K', 'EY2', 'K', 'S']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",1
+CBS-711,grapejuice,hamburgers,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",1
+CBS-711,hamburgers,peanutbutterandjelly,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0']]",1
+CBS-711,peanutbutterandjelly,pizza,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",2
+CBS-711,pizza,waffles,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]",1
+CBW-715,blackbeans,broccoli,"[['B', 'L', 'AE1', 'K', 'B', 'IY1', 'N', 'Z']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",1
+CBW-715,broccoli,candycanes,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['K', 'AE1', 'N', 'D', 'IY0', 'K', 'EY1', 'N', 'Z']]",1
+CBW-715,candycanes,cauliflour,"[['K', 'AE1', 'N', 'D', 'IY0', 'K', 'EY1', 'N', 'Z']]","[['K', 'AA1', 'L', 'IH1', 'F', 'L', 'AW1', 'R'], ['K', 'AA1', 'L', 'IH0', 'F', 'L', 'AW1', 'R'], ['K', 'AO1', 'L', 'IH1', 'F', 'L', 'AW1', 'R'], ['K', 'AO1', 'L', 'IH0', 'F', 'L', 'AW1', 'R']]",1
+CBW-715,cauliflour,toast,"[['K', 'AA1', 'L', 'IH1', 'F', 'L', 'AW1', 'R'], ['K', 'AA1', 'L', 'IH0', 'F', 'L', 'AW1', 'R'], ['K', 'AO1', 'L', 'IH1', 'F', 'L', 'AW1', 'R'], ['K', 'AO1', 'L', 'IH0', 'F', 'L', 'AW1', 'R']]","[['T', 'OW1', 'S', 'T']]",0
+CBW-715,toast,butter,"[['T', 'OW1', 'S', 'T']]","[['B', 'AH1', 'T', 'ER0']]",1
+CBW-715,butter,cheese,"[['B', 'AH1', 'T', 'ER0']]","[['CH', 'IY1', 'Z']]",0
+CBW-715,cheese,crackers,"[['CH', 'IY1', 'Z']]","[['K', 'R', 'AE1', 'K', 'ER0', 'Z']]",1
+CBW-715,crackers,fish,"[['K', 'R', 'AE1', 'K', 'ER0', 'Z']]","[['F', 'IH1', 'SH']]",0
+CBW-715,fish,lobster,"[['F', 'IH1', 'SH']]","[['L', 'AA1', 'B', 'S', 'T', 'ER0']]",0
+CBW-715,lobster,crab,"[['L', 'AA1', 'B', 'S', 'T', 'ER0']]","[['K', 'R', 'AE1', 'B']]",1
+CBW-715,crab,bread,"[['K', 'R', 'AE1', 'B']]","[['B', 'R', 'EH1', 'D']]",1
+CBW-715,bread,shrimp,"[['B', 'R', 'EH1', 'D']]","[['SH', 'R', 'IH1', 'M', 'P']]",1
+CBW-715,shrimp,lettuce,"[['SH', 'R', 'IH1', 'M', 'P']]","[['L', 'EH1', 'T', 'AH0', 'S']]",0
+CBW-715,lettuce,carrots,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",1
+CBW-715,carrots,beans,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['B', 'IY1', 'N', 'Z']]",0
+CBW-715,beans,greenbeans,"[['B', 'IY1', 'N', 'Z']]","[['G', 'R', 'IY1', 'N', 'B', 'IY1', 'N', 'Z']]",4
+CBW-715,greenbeans,macandcheese,"[['G', 'R', 'IY1', 'N', 'B', 'IY1', 'N', 'Z']]","[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+CBW-715,macandcheese,marshmallows,"[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['M', 'AA1', 'R', 'SH', 'M', 'EH2', 'L', 'OW0', 'Z']]",1
+CBW-715,marshmallows,pepperoni,"[['M', 'AA1', 'R', 'SH', 'M', 'EH2', 'L', 'OW0', 'Z']]","[['P', 'EH2', 'P', 'ER0', 'OW1', 'N', 'IY0']]",1
+CBW-715,pepperoni,pizza,"[['P', 'EH2', 'P', 'ER0', 'OW1', 'N', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CBW-715,pizza,tuna,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['T', 'UW1', 'N', 'AH0'], ['T', 'Y', 'UW1', 'N', 'AH0']]",1
+CCB-720,bananabread,blueberries,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'B', 'R', 'EH1', 'D']]","[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+CCB-720,blueberries,broccoli,"[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",1
+CCB-720,broccoli,cocacola,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]",2
+CCB-720,cocacola,strawberries,"[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",0
+CCB-720,strawberries,bananas,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+CCB-720,bananas,grapes,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['G', 'R', 'EY1', 'P', 'S']]",0
+CCB-720,grapes,icecream,"[['G', 'R', 'EY1', 'P', 'S']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CCB-720,icecream,kiwi,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['K', 'IY1', 'W', 'IY0']]",1
+CCB-720,kiwi,macaroniandcheese,"[['K', 'IY1', 'W', 'IY0']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+CCB-720,macaroniandcheese,pepsi,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['P', 'EH1', 'P', 'S', 'IY0']]",1
+CCB-720,pepsi,pizza,"[['P', 'EH1', 'P', 'S', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CCB-720,pizza,popsicles,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EH1', 'S'], ['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EY1']]",1
+CCB-720,popsicles,rootbeer,"[['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EH1', 'S'], ['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EY1']]","[['R', 'UW1', 'T', 'B', 'IH1', 'R']]",0
+CCB-720,rootbeer,smoothies,"[['R', 'UW1', 'T', 'B', 'IH1', 'R']]","[['S', 'M', 'UW1', 'T', 'HH', 'AY1', 'EH1', 'S']]",2
+CCB-720,smoothies,zucchinibread,"[['S', 'M', 'UW1', 'T', 'HH', 'AY1', 'EH1', 'S']]","[['Z', 'UW0', 'K', 'IY1', 'N', 'IY0', 'B', 'R', 'EH1', 'D']]",1
+CCD-722,bananapeppers,blackolives,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'P', 'EH1', 'P', 'ER0', 'Z']]","[['B', 'L', 'AE1', 'K', 'AA1', 'L', 'IH0', 'V', 'Z']]",1
+CCD-722,blackolives,burgers,"[['B', 'L', 'AE1', 'K', 'AA1', 'L', 'IH0', 'V', 'Z']]","[['B', 'ER1', 'G', 'ER0', 'Z']]",1
+CCD-722,burgers,cereal,"[['B', 'ER1', 'G', 'ER0', 'Z']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",0
+CCD-722,cereal,cheerios,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['CH', 'IH1', 'R', 'IY0', 'OW0', 'S']]",3
+CCD-722,cheerios,fries,"[['CH', 'IH1', 'R', 'IY0', 'OW0', 'S']]","[['F', 'R', 'AY1', 'Z']]",1
+CCD-722,fries,ketchup,"[['F', 'R', 'AY1', 'Z']]","[['K', 'EH1', 'CH', 'AH0', 'P']]",0
+CCD-722,ketchup,mustard,"[['K', 'EH1', 'CH', 'AH0', 'P']]","[['M', 'AH1', 'S', 'T', 'ER0', 'D']]",1
+CCD-722,mustard,lettuce,"[['M', 'AH1', 'S', 'T', 'ER0', 'D']]","[['L', 'EH1', 'T', 'AH0', 'S']]",2
+CCD-722,lettuce,onions,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",1
+CCD-722,onions,pickles,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]",1
+CCD-722,pickles,tomatoes,"[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]",1
+CCD-722,tomatoes,buns,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]","[['B', 'AH1', 'N', 'Z']]",1
+CCD-722,buns,beer,"[['B', 'AH1', 'N', 'Z']]","[['B', 'IH1', 'R']]",1
+CCD-722,beer,wine,"[['B', 'IH1', 'R']]","[['W', 'AY1', 'N']]",0
+CCD-722,wine,bread,"[['W', 'AY1', 'N']]","[['B', 'R', 'EH1', 'D']]",0
+CCD-722,bread,cheese,"[['B', 'R', 'EH1', 'D']]","[['CH', 'IY1', 'Z']]",0
+CCD-722,cheese,ham,"[['CH', 'IY1', 'Z']]","[['HH', 'AE1', 'M']]",0
+CCD-722,ham,turkey,"[['HH', 'AE1', 'M']]","[['T', 'ER1', 'K', 'IY0']]",0
+CCD-722,turkey,steak,"[['T', 'ER1', 'K', 'IY0']]","[['S', 'T', 'EY1', 'K']]",1
+CCD-722,steak,lobster,"[['S', 'T', 'EY1', 'K']]","[['L', 'AA1', 'B', 'S', 'T', 'ER0']]",2
+CCD-722,lobster,crab,"[['L', 'AA1', 'B', 'S', 'T', 'ER0']]","[['K', 'R', 'AE1', 'B']]",1
+CCD-722,crab,shrimp,"[['K', 'R', 'AE1', 'B']]","[['SH', 'R', 'IH1', 'M', 'P']]",1
+CCD-722,shrimp,biscuits,"[['SH', 'R', 'IH1', 'M', 'P']]","[['B', 'IH1', 'S', 'K', 'AH0', 'T', 'S']]",1
+CCD-722,biscuits,cucumbers,"[['B', 'IH1', 'S', 'K', 'AH0', 'T', 'S']]","[['K', 'Y', 'UW1', 'K', 'AH0', 'M', 'ER0', 'Z']]",2
+CCD-722,cucumbers,graxy,"[['K', 'Y', 'UW1', 'K', 'AH0', 'M', 'ER0', 'Z']]","[['JH', 'IY1', 'R', 'AA1', 'EH1', 'K', 'S', 'W', 'AY1']]",1
+CCD-722,graxy,sausage,"[['JH', 'IY1', 'R', 'AA1', 'EH1', 'K', 'S', 'W', 'AY1']]","[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]",1
+CCD-722,sausage,beef,"[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]","[['B', 'IY1', 'F']]",0
+CCD-722,beef,ham,"[['B', 'IY1', 'F']]","[['HH', 'AE1', 'M']]",0
+CCD-722,ham,mushrooms,"[['HH', 'AE1', 'M']]","[['M', 'AH1', 'SH', 'R', 'UW0', 'M', 'Z']]",1
+CCD-722,mushrooms,onions,"[['M', 'AH1', 'SH', 'R', 'UW0', 'M', 'Z']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",1
+CCD-722,onions,greenpeppers,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['G', 'R', 'IY1', 'N', 'P', 'EH1', 'P', 'ER0', 'Z']]",1
+CCD-722,greenpeppers,water,"[['G', 'R', 'IY1', 'N', 'P', 'EH1', 'P', 'ER0', 'Z']]","[['W', 'AO1', 'T', 'ER0']]",1
+CCD-722,water,sprite,"[['W', 'AO1', 'T', 'ER0']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+CCD-722,sprite,macandcheese,"[['S', 'P', 'R', 'AY1', 'T']]","[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",0
+CCD-722,macandcheese,mashedpotatoes,"[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",2
+CCD-722,mashedpotatoes,mayo,"[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['M', 'EY1', 'OW0']]",1
+CCD-722,mayo,pasta,"[['M', 'EY1', 'OW0']]","[['P', 'AA1', 'S', 'T', 'AH0']]",0
+CCD-722,pasta,pastasauce,"[['P', 'AA1', 'S', 'T', 'AH0']]","[['P', 'AA1', 'S', 'T', 'AH0', 'S', 'AO1', 'S']]",5
+CCD-722,pastasauce,pepperoni,"[['P', 'AA1', 'S', 'T', 'AH0', 'S', 'AO1', 'S']]","[['P', 'EH2', 'P', 'ER0', 'OW1', 'N', 'IY0']]",1
+CCD-722,pepperoni,pesto,"[['P', 'EH2', 'P', 'ER0', 'OW1', 'N', 'IY0']]","[['P', 'EH1', 'S', 'T', 'OW1']]",2
+CCD-722,pesto,potatochips,"[['P', 'EH1', 'S', 'T', 'OW1']]","[['P', 'AH0', 'T', 'EY1', 'T', 'OW2', 'CH', 'IH1', 'P', 'S']]",2
+CCD-722,potatochips,redpeppers,"[['P', 'AH0', 'T', 'EY1', 'T', 'OW2', 'CH', 'IH1', 'P', 'S']]","[['R', 'EH1', 'D', 'P', 'EH1', 'P', 'ER0', 'Z']]",1
+CCD-722,redpeppers,ricecakes,"[['R', 'EH1', 'D', 'P', 'EH1', 'P', 'ER0', 'Z']]","[['R', 'AY1', 'S', 'K', 'EY1', 'K', 'S']]",1
+CCF-724,applejuice,broccoli,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",2
+CCF-724,broccoli,drpepper,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",1
+CCF-724,drpepper,macaroni,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0']]",1
+CCF-724,macaroni,water,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0']]","[['W', 'AO1', 'T', 'ER0']]",1
+CCF-724,water,chicken,"[['W', 'AO1', 'T', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+CCF-724,chicken,sprite,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['S', 'P', 'R', 'AY1', 'T']]",0
+CCF-724,sprite,ribs,"[['S', 'P', 'R', 'AY1', 'T']]","[['R', 'IH1', 'B', 'Z']]",1
+CCF-724,ribs,lemonade,"[['R', 'IH1', 'B', 'Z']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",0
+CCF-724,lemonade,cheese,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['CH', 'IY1', 'Z']]",0
+CCF-724,cheese,milk,"[['CH', 'IY1', 'Z']]","[['M', 'IH1', 'L', 'K']]",0
+CCF-724,milk,orangejuice,"[['M', 'IH1', 'L', 'K']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",0
+CCF-724,orangejuice,pizza,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CCF-724,pizza,rootbeer,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['R', 'UW1', 'T', 'B', 'IH1', 'R']]",1
+CCF-724,rootbeer,sunkist,"[['R', 'UW1', 'T', 'B', 'IH1', 'R']]","[['S', 'AH1', 'N', 'K', 'IH2', 'S', 'T']]",1
+CCF-724,sunkist,sweettea,"[['S', 'AH1', 'N', 'K', 'IH2', 'S', 'T']]","[['S', 'W', 'IY1', 'T', 'T', 'IY1']]",1
+CCF-724,sweettea,sweettea,"[['S', 'W', 'IY1', 'T', 'T', 'IY1']]","[['S', 'W', 'IY1', 'T', 'T', 'IY1']]",6
+CCH-726,fruitjuice,coffee,"[['F', 'R', 'UW1', 'T', 'JH', 'UW1', 'S']]","[['K', 'AA1', 'F', 'IY0'], ['K', 'AO1', 'F', 'IY0']]",1
+CCH-726,coffee,milk,"[['K', 'AA1', 'F', 'IY0'], ['K', 'AO1', 'F', 'IY0']]","[['M', 'IH1', 'L', 'K']]",1
+CCH-726,milk,apple,"[['M', 'IH1', 'L', 'K']]","[['AE1', 'P', 'AH0', 'L']]",1
+CCH-726,apple,pie,"[['AE1', 'P', 'AH0', 'L']]","[['P', 'AY1']]",1
+CCH-726,pie,cake,"[['P', 'AY1']]","[['K', 'EY1', 'K']]",0
+CCH-726,cake,banana,"[['K', 'EY1', 'K']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]",0
+CCH-726,banana,water,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+CCH-726,water,chocolate,"[['W', 'AO1', 'T', 'ER0']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]",1
+CCH-726,chocolate,crackers,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]","[['K', 'R', 'AE1', 'K', 'ER0', 'Z']]",1
+CCH-726,crackers,onions,"[['K', 'R', 'AE1', 'K', 'ER0', 'Z']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",1
+CCH-726,onions,garlic,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['G', 'AA1', 'R', 'L', 'IH0', 'K']]",0
+CCH-726,garlic,strawberries,"[['G', 'AA1', 'R', 'L', 'IH0', 'K']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+CCH-726,strawberries,cheese,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['CH', 'IY1', 'Z']]",2
+CCH-726,cheese,pancakes,"[['CH', 'IY1', 'Z']]","[['P', 'AE1', 'N', 'K', 'EY2', 'K', 'S']]",0
+CCH-726,pancakes,bacon,"[['P', 'AE1', 'N', 'K', 'EY2', 'K', 'S']]","[['B', 'EY1', 'K', 'AH0', 'N']]",2
+CCH-726,bacon,eggs,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['EH1', 'G', 'Z']]",0
+CCH-726,eggs,beef,"[['EH1', 'G', 'Z']]","[['B', 'IY1', 'F']]",0
+CCH-726,beef,pig,"[['B', 'IY1', 'F']]","[['P', 'IH1', 'G']]",0
+CCH-726,pig,kiwi,"[['P', 'IH1', 'G']]","[['K', 'IY1', 'W', 'IY0']]",0
+CCH-726,kiwi,pretzels,"[['K', 'IY1', 'W', 'IY0']]","[['P', 'R', 'EH1', 'T', 'Z', 'AH0', 'L', 'Z']]",0
+CCH-726,pretzels,spaghetti,"[['P', 'R', 'EH1', 'T', 'Z', 'AH0', 'L', 'Z']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",2
+CCH-726,spaghetti,waffles,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]",1
+CCX-744,broccoli,frenchfries,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]",1
+CCX-744,frenchfries,soda,"[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]","[['S', 'OW1', 'D', 'AH0']]",0
+CCX-744,soda,grapes,"[['S', 'OW1', 'D', 'AH0']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+CCX-744,grapes,fish,"[['G', 'R', 'EY1', 'P', 'S']]","[['F', 'IH1', 'SH']]",0
+CCX-744,fish,chicken,"[['F', 'IH1', 'SH']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CCX-744,chicken,pears,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['P', 'EH1', 'R', 'Z']]",0
+CCX-744,pears,apples,"[['P', 'EH1', 'R', 'Z']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+CCX-744,apples,bananas,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+CCX-744,bananas,turkey,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['T', 'ER1', 'K', 'IY0']]",0
+CCX-744,turkey,dressing,"[['T', 'ER1', 'K', 'IY0']]","[['D', 'R', 'EH1', 'S', 'IH0', 'NG']]",0
+CCX-744,dressing,ham,"[['D', 'R', 'EH1', 'S', 'IH0', 'NG']]","[['HH', 'AE1', 'M']]",0
+CCX-744,ham,salad,"[['HH', 'AE1', 'M']]","[['S', 'AE1', 'L', 'AH0', 'D']]",1
+CCX-744,salad,candy,"[['S', 'AE1', 'L', 'AH0', 'D']]","[['K', 'AE1', 'N', 'D', 'IY0']]",1
+CCX-744,candy,lemons,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['L', 'EH1', 'M', 'AH0', 'N', 'Z']]",1
+CCX-744,lemons,oranges,"[['L', 'EH1', 'M', 'AH0', 'N', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",2
+CCX-744,oranges,icecream,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CCX-744,icecream,mangoes,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['M', 'AE1', 'NG', 'G', 'OW0', 'Z']]",1
+CCX-744,mangoes,mashedpotatoes,"[['M', 'AE1', 'NG', 'G', 'OW0', 'Z']]","[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",2
+CCX-744,mashedpotatoes,pizza,"[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CCX-744,pizza,sweetpotatoes,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['S', 'W', 'IY1', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",2
+CCX-744,sweetpotatoes,yogurt,"[['S', 'W', 'IY1', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['Y', 'OW1', 'G', 'ER0', 'T']]",1
+CDG-753,cashews,drpepper,"[['K', 'AE1', 'SH', 'UW2', 'Z']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",0
+CDG-753,drpepper,grapefruit,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['G', 'R', 'EY1', 'P', 'F', 'R', 'UW2', 'T']]",1
+CDG-753,grapefruit,guava,"[['G', 'R', 'EY1', 'P', 'F', 'R', 'UW2', 'T']]","[['G', 'W', 'AA1', 'V', 'AH0']]",1
+CDG-753,guava,peanuts,"[['G', 'W', 'AA1', 'V', 'AH0']]","[['P', 'IY1', 'N', 'AH0', 'T', 'S'], ['P', 'IY1', 'N', 'AH2', 'T', 'S']]",1
+CDG-753,peanuts,bread,"[['P', 'IY1', 'N', 'AH0', 'T', 'S'], ['P', 'IY1', 'N', 'AH2', 'T', 'S']]","[['B', 'R', 'EH1', 'D']]",0
+CDG-753,bread,bark,"[['B', 'R', 'EH1', 'D']]","[['B', 'AA1', 'R', 'K']]",1
+CDG-753,bark,soda,"[['B', 'AA1', 'R', 'K']]","[['S', 'OW1', 'D', 'AH0']]",0
+CDG-753,soda,water,"[['S', 'OW1', 'D', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+CDG-753,water,brownies,"[['W', 'AO1', 'T', 'ER0']]","[['B', 'R', 'AW1', 'N', 'IY0', 'Z']]",0
+CDG-753,brownies,cookies,"[['B', 'R', 'AW1', 'N', 'IY0', 'Z']]","[['K', 'UH1', 'K', 'IY0', 'Z']]",2
+CDG-753,cookies,chocolate,"[['K', 'UH1', 'K', 'IY0', 'Z']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]",1
+CDG-753,chocolate,milk,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]","[['M', 'IH1', 'L', 'K']]",1
+CDG-753,milk,lemonade,"[['M', 'IH1', 'L', 'K']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",1
+CDG-753,lemonade,noodles,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['N', 'UW1', 'D', 'AH0', 'L', 'Z']]",1
+CDG-753,noodles,tomatoes,"[['N', 'UW1', 'D', 'AH0', 'L', 'Z']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]",1
+CDG-753,tomatoes,peppers,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]","[['P', 'EH1', 'P', 'ER0', 'Z']]",1
+CDG-753,peppers,celery,"[['P', 'EH1', 'P', 'ER0', 'Z']]","[['S', 'EH1', 'L', 'ER0', 'IY0']]",1
+CDG-753,celery,jelly,"[['S', 'EH1', 'L', 'ER0', 'IY0']]","[['JH', 'EH1', 'L', 'IY0']]",2
+CDG-753,jelly,plums,"[['JH', 'EH1', 'L', 'IY0']]","[['P', 'L', 'AH1', 'M', 'Z']]",1
+CDG-753,plums,plums,"[['P', 'L', 'AH1', 'M', 'Z']]","[['P', 'L', 'AH1', 'M', 'Z']]",5
+CDG-753,plums,limes,"[['P', 'L', 'AH1', 'M', 'Z']]","[['L', 'AY1', 'M', 'Z']]",2
+CDG-753,limes,lemons,"[['L', 'AY1', 'M', 'Z']]","[['L', 'EH1', 'M', 'AH0', 'N', 'Z']]",1
+CDG-753,lemons,jello,"[['L', 'EH1', 'M', 'AH0', 'N', 'Z']]","[['JH', 'EH1', 'L', 'OW0']]",1
+CDG-753,jello,limejuice,"[['JH', 'EH1', 'L', 'OW0']]","[['L', 'AY1', 'M', 'JH', 'UW1', 'S']]",1
+CDG-753,limejuice,macandcheese,"[['L', 'AY1', 'M', 'JH', 'UW1', 'S']]","[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+CDG-753,macandcheese,mangoes,"[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['M', 'AE1', 'NG', 'G', 'OW0', 'Z']]",2
+CDG-753,mangoes,orangejuice,"[['M', 'AE1', 'NG', 'G', 'OW0', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",0
+CDG-753,orangejuice,pasta,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'AA1', 'S', 'T', 'AH0']]",1
+CDG-753,pasta,peanutbutter,"[['P', 'AA1', 'S', 'T', 'AH0']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]",1
+CDG-753,peanutbutter,rootbeer,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]","[['R', 'UW1', 'T', 'B', 'IH1', 'R']]",2
+CDG-753,rootbeer,spaghetti,"[['R', 'UW1', 'T', 'B', 'IH1', 'R']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+CDG-753,spaghetti,starfruit,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['S', 'T', 'AA1', 'R', 'F', 'R', 'UW1', 'T']]",1
+CDH-754,cherrycocacola,cocacola,"[['CH', 'EH1', 'R', 'IY0', 'K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]","[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]",8
+CDH-754,cocacola,danimalscrunchers,"[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]","[['D', 'AA1', 'N', 'IY0', 'M', 'AE1', 'L', 'S', 'K', 'R', 'AH1', 'N', 'CH', 'ER1', 'Z'], ['D', 'AA1', 'N', 'IY0', 'M', 'AE1', 'L', 'S', 'K', 'R', 'AH1', 'N', 'CH', 'IY1', 'AA1', 'R', 'EH1', 'S']]",1
+CDH-754,danimalscrunchers,danimalssmoothies,"[['D', 'AA1', 'N', 'IY0', 'M', 'AE1', 'L', 'S', 'K', 'R', 'AH1', 'N', 'CH', 'ER1', 'Z'], ['D', 'AA1', 'N', 'IY0', 'M', 'AE1', 'L', 'S', 'K', 'R', 'AH1', 'N', 'CH', 'IY1', 'AA1', 'R', 'EH1', 'S']]","[['D', 'AA1', 'N', 'IY0', 'M', 'AE1', 'L', 'EH1', 'S', 'S', 'M', 'UW1', 'T', 'HH', 'AY1', 'EH1', 'S']]",7
+CDH-754,danimalssmoothies,fantagrape,"[['D', 'AA1', 'N', 'IY0', 'M', 'AE1', 'L', 'EH1', 'S', 'S', 'M', 'UW1', 'T', 'HH', 'AY1', 'EH1', 'S']]","[['F', 'AA1', 'N', 'T', 'AH0', 'G', 'R', 'EY1', 'P']]",2
+CDH-754,fantagrape,fantaorange,"[['F', 'AA1', 'N', 'T', 'AH0', 'G', 'R', 'EY1', 'P']]","[['F', 'AA1', 'N', 'T', 'AH0', 'AO1', 'R', 'AH0', 'N', 'JH'], ['F', 'AA1', 'N', 'T', 'AH0', 'AO1', 'R', 'IH0', 'N', 'JH']]",5
+CDH-754,fantaorange,fantapineapple,"[['F', 'AA1', 'N', 'T', 'AH0', 'AO1', 'R', 'AH0', 'N', 'JH'], ['F', 'AA1', 'N', 'T', 'AH0', 'AO1', 'R', 'IH0', 'N', 'JH']]","[['F', 'AA1', 'N', 'T', 'AH0', 'P', 'AY1', 'N', 'AE2', 'P', 'AH0', 'L']]",5
+CDH-754,fantapineapple,fantastrawberry,"[['F', 'AA1', 'N', 'T', 'AH0', 'P', 'AY1', 'N', 'AE2', 'P', 'AH0', 'L']]","[['F', 'AA1', 'N', 'T', 'AH0', 'S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]",5
+CDH-754,fantastrawberry,friedrice,"[['F', 'AA1', 'N', 'T', 'AH0', 'S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]","[['F', 'R', 'AY1', 'D', 'R', 'AY1', 'S'], ['F', 'R', 'IY1', 'D', 'R', 'AY1', 'S']]",1
+CDH-754,friedrice,chicken,"[['F', 'R', 'AY1', 'D', 'R', 'AY1', 'S'], ['F', 'R', 'IY1', 'D', 'R', 'AY1', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+CDH-754,chicken,turkey,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['T', 'ER1', 'K', 'IY0']]",1
+CDH-754,turkey,sprite,"[['T', 'ER1', 'K', 'IY0']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+CDH-754,sprite,spritezero,"[['S', 'P', 'R', 'AY1', 'T']]","[['S', 'P', 'R', 'AY1', 'T', 'Z', 'IH1', 'R', 'OW0'], ['S', 'P', 'R', 'AY1', 'T', 'Z', 'IY1', 'R', 'OW0']]",5
+CDH-754,spritezero,sreamedrice,"[['S', 'P', 'R', 'AY1', 'T', 'Z', 'IH1', 'R', 'OW0'], ['S', 'P', 'R', 'AY1', 'T', 'Z', 'IY1', 'R', 'OW0']]","[['S', 'IY1', 'N', 'Y', 'ER0', 'IY1', 'EY1', 'M', 'D', 'R', 'AY1', 'V', 'AY1', 'S'], ['S', 'IY1', 'N', 'Y', 'ER0', 'IY1', 'EY1', 'M', 'D', 'AA1', 'K', 'T', 'ER0', 'AY1', 'S'], ['S', 'IH1', 'S', 'T', 'ER0', 'IY1', 'EY1', 'M', 'D', 'R', 'AY1', 'V', 'AY1', 'S'], ['S', 'IH1', 'S', 'T', 'ER0', 'IY1', 'EY1', 'M', 'D', 'AA1', 'K', 'T', 'ER0', 'AY1', 'S']]",2
+CDH-754,sreamedrice,yogurt,"[['S', 'IY1', 'N', 'Y', 'ER0', 'IY1', 'EY1', 'M', 'D', 'R', 'AY1', 'V', 'AY1', 'S'], ['S', 'IY1', 'N', 'Y', 'ER0', 'IY1', 'EY1', 'M', 'D', 'AA1', 'K', 'T', 'ER0', 'AY1', 'S'], ['S', 'IH1', 'S', 'T', 'ER0', 'IY1', 'EY1', 'M', 'D', 'R', 'AY1', 'V', 'AY1', 'S'], ['S', 'IH1', 'S', 'T', 'ER0', 'IY1', 'EY1', 'M', 'D', 'AA1', 'K', 'T', 'ER0', 'AY1', 'S']]","[['Y', 'OW1', 'G', 'ER0', 'T']]",1
+CDM-759,applecider,applepie,"[['AE1', 'P', 'AH0', 'L', 'S', 'AY1', 'D', 'ER0']]","[['AE1', 'P', 'AH0', 'L', 'P', 'AY1']]",4
+CDM-759,applepie,breadsticks,"[['AE1', 'P', 'AH0', 'L', 'P', 'AY1']]","[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]",0
+CDM-759,breadsticks,cantaloupe,"[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]","[['K', 'AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]",1
+CDM-759,cantaloupe,cheesesause,"[['K', 'AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]","[['CH', 'IY1', 'Z', 'S', 'AO1', 'Z']]",0
+CDM-759,cheesesause,chocolateballs,"[['CH', 'IY1', 'Z', 'S', 'AO1', 'Z']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'B', 'AH0', 'EH1', 'L', 'EH1', 'L', 'EH1', 'S']]",1
+CDM-759,chocolateballs,chocolateicecream,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'B', 'AH0', 'EH1', 'L', 'EH1', 'L', 'EH1', 'S']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'AY1', 'S', 'K', 'R', 'IY1', 'M']]",4
+CDM-759,chocolateicecream,chocolatepie,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T', 'AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'P', 'AY1']]",4
+CDM-759,chocolatepie,coconutcreampie,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'P', 'AY1']]","[['K', 'OW1', 'K', 'AH0', 'N', 'AH2', 'T', 'K', 'R', 'IY1', 'EH1', 'M', 'P', 'AY1']]",2
+CDM-759,coconutcreampie,coconutpie,"[['K', 'OW1', 'K', 'AH0', 'N', 'AH2', 'T', 'K', 'R', 'IY1', 'EH1', 'M', 'P', 'AY1']]","[['K', 'OW1', 'K', 'OW2', 'N', 'AH1', 'T', 'P', 'AY1']]",3
+CDM-759,coconutpie,coolranchdoritos,"[['K', 'OW1', 'K', 'OW2', 'N', 'AH1', 'T', 'P', 'AY1']]","[['K', 'UW1', 'L', 'R', 'AE1', 'N', 'CH', 'D', 'AO2', 'R', 'IY1', 'T', 'OW0', 'Z']]",1
+CDM-759,coolranchdoritos,doritos,"[['K', 'UW1', 'L', 'R', 'AE1', 'N', 'CH', 'D', 'AO2', 'R', 'IY1', 'T', 'OW0', 'Z']]","[['D', 'AO2', 'R', 'IY1', 'T', 'OW0', 'Z']]",7
+CDM-759,doritos,hotdogs,"[['D', 'AO2', 'R', 'IY1', 'T', 'OW0', 'Z']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",2
+CDM-759,hotdogs,icecream,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",0
+CDM-759,icecream,soda,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['S', 'OW1', 'D', 'AH0']]",1
+CDM-759,soda,cake,"[['S', 'OW1', 'D', 'AH0']]","[['K', 'EY1', 'K']]",0
+CDM-759,cake,rolls,"[['K', 'EY1', 'K']]","[['R', 'OW1', 'L', 'Z']]",0
+CDM-759,rolls,cranberries,"[['R', 'OW1', 'L', 'Z']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+CDM-759,cranberries,raspberries,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'Z']]",5
+CDM-759,raspberries,watermelon,"[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]",1
+CDM-759,watermelon,strawberries,"[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+CDM-759,strawberries,peaches,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]",1
+CDM-759,peaches,water,"[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]","[['W', 'AO1', 'T', 'ER0']]",0
+CDM-759,water,juice,"[['W', 'AO1', 'T', 'ER0']]","[['JH', 'UW1', 'S']]",0
+CDM-759,juice,wine,"[['JH', 'UW1', 'S']]","[['W', 'AY1', 'N']]",0
+CDM-759,wine,chips,"[['W', 'AY1', 'N']]","[['CH', 'IH1', 'P', 'S']]",0
+CDM-759,chips,macaroniandcheese,"[['CH', 'IH1', 'P', 'S']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+CDM-759,macaroniandcheese,maggianosalads,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['M', 'AE1', 'JH', 'IY0', 'AE1', 'N', 'OW0', 'S', 'AE1', 'L', 'AH0', 'D', 'Z'], ['M', 'AE1', 'JH', 'IY0', 'AE1', 'N', 'Y', 'OW0', 'S', 'AE1', 'L', 'AH0', 'D', 'Z']]",2
+CDM-759,maggianosalads,pizza,"[['M', 'AE1', 'JH', 'IY0', 'AE1', 'N', 'OW0', 'S', 'AE1', 'L', 'AH0', 'D', 'Z'], ['M', 'AE1', 'JH', 'IY0', 'AE1', 'N', 'Y', 'OW0', 'S', 'AE1', 'L', 'AH0', 'D', 'Z']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CDM-759,pizza,pumpkinpie,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AH1', 'M', 'P', 'K', 'IH1', 'N', 'P', 'AY1']]",1
+CDM-759,pumpkinpie,ravioli,"[['P', 'AH1', 'M', 'P', 'K', 'IH1', 'N', 'P', 'AY1']]","[['R', 'AE2', 'V', 'IY0', 'OW1', 'L', 'IY0']]",0
+CDM-759,ravioli,redvelvetcake,"[['R', 'AE2', 'V', 'IY0', 'OW1', 'L', 'IY0']]","[['R', 'EH1', 'D', 'V', 'EH1', 'L', 'V', 'AH0', 'T', 'K', 'EY1', 'K']]",1
+CDM-759,redvelvetcake,salsa,"[['R', 'EH1', 'D', 'V', 'EH1', 'L', 'V', 'AH0', 'T', 'K', 'EY1', 'K']]","[['S', 'AO1', 'L', 'S', 'AH0']]",1
+CDM-759,salsa,spaghetti,"[['S', 'AO1', 'L', 'S', 'AH0']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+CDM-759,spaghetti,vanillaicecream,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['V', 'AH0', 'N', 'IH1', 'L', 'AH0', 'AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CDR-764,applejuice,applesauce,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['AE1', 'P', 'AH0', 'L', 'S', 'AO2', 'S']]",4
+CDR-764,applesauce,blueberries,"[['AE1', 'P', 'AH0', 'L', 'S', 'AO2', 'S']]","[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+CDR-764,blueberries,cocacola,"[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]",1
+CDR-764,cocacola,fanta,"[['K', 'OW1', 'K', 'AH0', 'K', 'OW1', 'L', 'AH0']]","[['F', 'AA1', 'N', 'T', 'AH0']]",1
+CDR-764,fanta,grapejuice,"[['F', 'AA1', 'N', 'T', 'AH0']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",0
+CDR-764,grapejuice,icecream,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+CDR-764,icecream,icecream,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",6
+CDR-764,icecream,koolaid,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['K', 'UW1', 'L', 'EY1', 'D']]",1
+CDR-764,koolaid,chicken,"[['K', 'UW1', 'L', 'EY1', 'D']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CDR-764,chicken,chicken,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",5
+CDR-764,chicken,ketchup,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['K', 'EH1', 'CH', 'AH0', 'P']]",1
+CDR-764,ketchup,steak,"[['K', 'EH1', 'CH', 'AH0', 'P']]","[['S', 'T', 'EY1', 'K']]",1
+CDR-764,steak,shrimp,"[['S', 'T', 'EY1', 'K']]","[['SH', 'R', 'IH1', 'M', 'P']]",0
+CDR-764,shrimp,ribs,"[['SH', 'R', 'IH1', 'M', 'P']]","[['R', 'IH1', 'B', 'Z']]",2
+CDR-764,ribs,cookies,"[['R', 'IH1', 'B', 'Z']]","[['K', 'UH1', 'K', 'IY0', 'Z']]",1
+CDR-764,cookies,mango,"[['K', 'UH1', 'K', 'IY0', 'Z']]","[['M', 'AE1', 'NG', 'G', 'OW0']]",0
+CDR-764,mango,cake,"[['M', 'AE1', 'NG', 'G', 'OW0']]","[['K', 'EY1', 'K']]",0
+CDR-764,cake,water,"[['K', 'EY1', 'K']]","[['W', 'AO1', 'T', 'ER0']]",0
+CDR-764,water,cherry,"[['W', 'AO1', 'T', 'ER0']]","[['CH', 'EH1', 'R', 'IY0']]",0
+CDR-764,cherry,apple,"[['CH', 'EH1', 'R', 'IY0']]","[['AE1', 'P', 'AH0', 'L']]",0
+CDR-764,apple,strawberry,"[['AE1', 'P', 'AH0', 'L']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]",0
+CDR-764,strawberry,banana,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]",1
+CDR-764,banana,milk,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]","[['M', 'IH1', 'L', 'K']]",0
+CDR-764,milk,pop,"[['M', 'IH1', 'L', 'K']]","[['P', 'AA1', 'P']]",0
+CDR-764,pop,milkshake,"[['P', 'AA1', 'P']]","[['M', 'IH1', 'L', 'K', 'SH', 'EY2', 'K']]",0
+CDR-764,milkshake,orangejuice,"[['M', 'IH1', 'L', 'K', 'SH', 'EY2', 'K']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",0
+CDR-764,orangejuice,pizza,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+CDR-764,pizza,popcorn,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]",1
+CDR-764,popcorn,slushie,"[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]","[['S', 'L', 'AH1', 'SH', 'AY1', 'IY1']]",0
+CDR-764,slushie,smoothie,"[['S', 'L', 'AH1', 'SH', 'AY1', 'IY1']]","[['S', 'M', 'UW1', 'T', 'HH', 'AY1', 'IY1']]",2
+CDR-764,smoothie,tangerine,"[['S', 'M', 'UW1', 'T', 'HH', 'AY1', 'IY1']]","[['T', 'AE2', 'N', 'JH', 'ER0', 'IY1', 'N']]",1
+CDU-767,applejuice,bagels,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'EY1', 'G', 'AH0', 'L', 'Z']]",2
+CDU-767,bagels,cereal,"[['B', 'EY1', 'G', 'AH0', 'L', 'Z']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",2
+CDU-767,cereal,cheesenips,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['CH', 'IY1', 'Z', 'N', 'IH1', 'P', 'S']]",1
+CDU-767,cheesenips,cranberryjuice,"[['CH', 'IY1', 'Z', 'N', 'IH1', 'P', 'S']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]",1
+CDU-767,cranberryjuice,fruitsnacks,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]","[['F', 'R', 'UW1', 'T', 'S', 'N', 'AA1', 'S', 'IY1', 'K', 'EY1', 'EH1', 'S']]",1
+CDU-767,fruitsnacks,gatorade,"[['F', 'R', 'UW1', 'T', 'S', 'N', 'AA1', 'S', 'IY1', 'K', 'EY1', 'EH1', 'S']]","[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]",1
+CDU-767,gatorade,jambalaya,"[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]","[['JH', 'AE1', 'M', 'EY1', 'L', 'AH0', 'Y', 'AA1']]",1
+CDU-767,jambalaya,sprite,"[['JH', 'AE1', 'M', 'EY1', 'L', 'AH0', 'Y', 'AA1']]","[['S', 'P', 'R', 'AY1', 'T']]",0
+CDU-767,sprite,lemonade,"[['S', 'P', 'R', 'AY1', 'T']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",0
+CDU-767,lemonade,coke,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['K', 'OW1', 'K']]",0
+CDU-767,coke,chicken,"[['K', 'OW1', 'K']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CDU-767,chicken,macaroni,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0']]",1
+CDU-767,macaroni,greens,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0']]","[['G', 'R', 'IY1', 'N', 'Z']]",1
+CDU-767,greens,fish,"[['G', 'R', 'IY1', 'N', 'Z']]","[['F', 'IH1', 'SH']]",0
+CDU-767,fish,pop,"[['F', 'IH1', 'SH']]","[['P', 'AA1', 'P']]",0
+CDU-767,pop,water,"[['P', 'AA1', 'P']]","[['W', 'AO1', 'T', 'ER0']]",0
+CDU-767,water,meats,"[['W', 'AO1', 'T', 'ER0']]","[['M', 'IY1', 'T', 'S']]",1
+CDU-767,meats,sausages,"[['M', 'IY1', 'T', 'S']]","[['S', 'AO1', 'S', 'IH0', 'JH', 'IH0', 'Z']]",1
+CDU-767,sausages,bacon,"[['S', 'AO1', 'S', 'IH0', 'JH', 'IH0', 'Z']]","[['B', 'EY1', 'K', 'AH0', 'N']]",0
+CDU-767,bacon,eggs,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['EH1', 'G', 'Z']]",0
+CDU-767,eggs,biscuits,"[['EH1', 'G', 'Z']]","[['B', 'IH1', 'S', 'K', 'AH0', 'T', 'S']]",0
+CDU-767,biscuits,bananas,"[['B', 'IH1', 'S', 'K', 'AH0', 'T', 'S']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+CDU-767,bananas,orangejuice,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",2
+CDU-767,orangejuice,pepsi,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'EH1', 'P', 'S', 'IY0']]",1
+CDU-767,pepsi,powerade,"[['P', 'EH1', 'P', 'S', 'IY0']]","[['P', 'AW1', 'R', 'AA1', 'D', 'IY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'EY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'AH0']]",1
+CDU-767,powerade,ricekrispietreats,"[['P', 'AW1', 'R', 'AA1', 'D', 'IY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'EY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'AH0']]","[['R', 'AY1', 'S', 'K', 'R', 'IH1', 'S', 'P', 'AY1', 'IH0', 'T', 'R', 'EY1', 'T', 'IY1', 'EH1', 'S'], ['R', 'AY1', 'S', 'K', 'R', 'IH1', 'S', 'P', 'Y', 'EH1', 'T', 'R', 'EY1', 'T', 'IY1', 'EH1', 'S'], ['R', 'AY1', 'S', 'K', 'R', 'IH1', 'S', 'P', 'IY1', 'T', 'R', 'EY1', 'T', 'IY1', 'EH1', 'S']]",1
+CDU-767,ricekrispietreats,spaghetti,"[['R', 'AY1', 'S', 'K', 'R', 'IH1', 'S', 'P', 'AY1', 'IH0', 'T', 'R', 'EY1', 'T', 'IY1', 'EH1', 'S'], ['R', 'AY1', 'S', 'K', 'R', 'IH1', 'S', 'P', 'Y', 'EH1', 'T', 'R', 'EY1', 'T', 'IY1', 'EH1', 'S'], ['R', 'AY1', 'S', 'K', 'R', 'IH1', 'S', 'P', 'IY1', 'T', 'R', 'EY1', 'T', 'IY1', 'EH1', 'S']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",2
+SGO-159,broccoli,corndog,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['K', 'AO1', 'R', 'N', 'D', 'AO1', 'G']]",1
+SGO-159,corndog,dietcoke,"[['K', 'AO1', 'R', 'N', 'D', 'AO1', 'G']]","[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]",1
+SGO-159,dietcoke,drpepper,"[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",1
+SGO-159,drpepper,grahamcrackers,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['G', 'R', 'EY1', 'AH0', 'M', 'K', 'R', 'AE1', 'K', 'ER0', 'Z'], ['G', 'R', 'AE1', 'M', 'K', 'R', 'AE1', 'K', 'ER0', 'Z']]",1
+SGO-159,grahamcrackers,granolabars,"[['G', 'R', 'EY1', 'AH0', 'M', 'K', 'R', 'AE1', 'K', 'ER0', 'Z'], ['G', 'R', 'AE1', 'M', 'K', 'R', 'AE1', 'K', 'ER0', 'Z']]","[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]",2
+SGO-159,granolabars,icecream,"[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+SGO-159,icecream,langus,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['L', 'AE1', 'N', 'G', 'AH1', 'S']]",1
+SGO-159,langus,macaroniandcheese,"[['L', 'AE1', 'N', 'G', 'AH1', 'S']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+SGO-159,macaroniandcheese,mountaindew,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]",2
+SGO-159,mountaindew,grape,"[['M', 'AW1', 'N', 'T', 'AY1', 'EH1', 'N', 'D', 'UW1'], ['M', 'AW1', 'N', 'T', 'EY1', 'AY1', 'EH1', 'N', 'D', 'UW1']]","[['G', 'R', 'EY1', 'P']]",0
+SGO-159,grape,cheese,"[['G', 'R', 'EY1', 'P']]","[['CH', 'IY1', 'Z']]",0
+SGO-159,cheese,meat,"[['CH', 'IY1', 'Z']]","[['M', 'IY1', 'T']]",1
+SGO-159,meat,coke,"[['M', 'IY1', 'T']]","[['K', 'OW1', 'K']]",0
+SGO-159,coke,orange,"[['K', 'OW1', 'K']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",0
+SGO-159,orange,sprite,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+SGO-159,sprite,grape,"[['S', 'P', 'R', 'AY1', 'T']]","[['G', 'R', 'EY1', 'P']]",1
+SGO-159,grape,cherry,"[['G', 'R', 'EY1', 'P']]","[['CH', 'EH1', 'R', 'IY0']]",1
+SGO-159,cherry,chips,"[['CH', 'EH1', 'R', 'IY0']]","[['CH', 'IH1', 'P', 'S']]",1
+SGO-159,chips,cookies,"[['CH', 'IH1', 'P', 'S']]","[['K', 'UH1', 'K', 'IY0', 'Z']]",0
+SGO-159,cookies,corn,"[['K', 'UH1', 'K', 'IY0', 'Z']]","[['K', 'AO1', 'R', 'N']]",1
+SGO-159,corn,apple,"[['K', 'AO1', 'R', 'N']]","[['AE1', 'P', 'AH0', 'L']]",0
+SGO-159,apple,pineapple,"[['AE1', 'P', 'AH0', 'L']]","[['P', 'AY1', 'N', 'AE2', 'P', 'AH0', 'L']]",4
+SGO-159,pineapple,strawberries,"[['P', 'AY1', 'N', 'AE2', 'P', 'AH0', 'L']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",0
+SGO-159,strawberries,ham,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['HH', 'AE1', 'M']]",0
+SGO-159,ham,chicken,"[['HH', 'AE1', 'M']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+SGO-159,chicken,pork,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['P', 'AO1', 'R', 'K']]",1
+SGO-159,pork,pasta,"[['P', 'AO1', 'R', 'K']]","[['P', 'AA1', 'S', 'T', 'AH0']]",1
+SGO-159,pasta,pepsi,"[['P', 'AA1', 'S', 'T', 'AH0']]","[['P', 'EH1', 'P', 'S', 'IY0']]",1
+SGO-159,pepsi,pizza,"[['P', 'EH1', 'P', 'S', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+SGO-159,pizza,pizzarolls,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'IY1', 'T', 'S', 'AH0', 'R', 'OW1', 'L', 'Z']]",5
+SGO-159,pizzarolls,popcorn,"[['P', 'IY1', 'T', 'S', 'AH0', 'R', 'OW1', 'L', 'Z']]","[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]",1
+SGO-159,popcorn,rootbeer,"[['P', 'AA1', 'P', 'K', 'AO2', 'R', 'N']]","[['R', 'UW1', 'T', 'B', 'IH1', 'R']]",1
+SGO-159,rootbeer,seacrackers,"[['R', 'UW1', 'T', 'B', 'IH1', 'R']]","[['S', 'IY1', 'K', 'R', 'AE1', 'K', 'ER0', 'Z']]",1
+SGO-159,seacrackers,sierramist,"[['S', 'IY1', 'K', 'R', 'AE1', 'K', 'ER0', 'Z']]","[['S', 'IY0', 'EH1', 'R', 'AH0', 'M', 'IH1', 'S', 'T']]",2
+SGO-159,sierramist,vanillacoke,"[['S', 'IY0', 'EH1', 'R', 'AH0', 'M', 'IH1', 'S', 'T']]","[['V', 'AH0', 'N', 'IH1', 'L', 'AH0', 'K', 'OW1', 'K']]",1
+SKE-234,applejuice,breadsticks,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]",1
+SKE-234,breadsticks,buffalowings,"[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]","[['B', 'AH1', 'F', 'AH0', 'L', 'OW2', 'W', 'IH1', 'NG', 'Z']]",1
+SKE-234,buffalowings,cereal,"[['B', 'AH1', 'F', 'AH0', 'L', 'OW2', 'W', 'IH1', 'NG', 'Z']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",2
+SKE-234,cereal,gingerale,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['JH', 'IH1', 'NG', 'EH1', 'R', 'AH0', 'L', 'AH0'], ['JH', 'IH1', 'NG', 'IH1', 'R', 'AH0', 'L', 'AH0']]",2
+SKE-234,gingerale,orangejuice,"[['JH', 'IH1', 'NG', 'EH1', 'R', 'AH0', 'L', 'AH0'], ['JH', 'IH1', 'NG', 'IH1', 'R', 'AH0', 'L', 'AH0']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",2
+SKE-234,orangejuice,water,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['W', 'AO1', 'T', 'ER0']]",1
+SKE-234,water,soda,"[['W', 'AO1', 'T', 'ER0']]","[['S', 'OW1', 'D', 'AH0']]",0
+SKE-234,soda,pasta,"[['S', 'OW1', 'D', 'AH0']]","[['P', 'AA1', 'S', 'T', 'AH0']]",1
+SKE-234,pasta,milk,"[['P', 'AA1', 'S', 'T', 'AH0']]","[['M', 'IH1', 'L', 'K']]",0
+SKE-234,milk,apples,"[['M', 'IH1', 'L', 'K']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+SKE-234,apples,fruit,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['F', 'R', 'UW1', 'T']]",0
+SKE-234,fruit,grapes,"[['F', 'R', 'UW1', 'T']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+SKE-234,grapes,coffee,"[['G', 'R', 'EY1', 'P', 'S']]","[['K', 'AA1', 'F', 'IY0'], ['K', 'AO1', 'F', 'IY0']]",0
+SKE-234,coffee,pizza,"[['K', 'AA1', 'F', 'IY0'], ['K', 'AO1', 'F', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+SKE-234,pizza,ravioli,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['R', 'AE2', 'V', 'IY0', 'OW1', 'L', 'IY0']]",1
+SKE-234,ravioli,spaghetti,"[['R', 'AE2', 'V', 'IY0', 'OW1', 'L', 'IY0']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SMK-401,breadsticks,cheesepizza,"[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]","[['CH', 'IY1', 'Z', 'P', 'IY1', 'T', 'S', 'AH0']]",1
+SMK-401,cheesepizza,dietcoke,"[['CH', 'IY1', 'Z', 'P', 'IY1', 'T', 'S', 'AH0']]","[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]",1
+SMK-401,dietcoke,frenchfries,"[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]","[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]",1
+SMK-401,frenchfries,frozenpizzas,"[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]","[['F', 'R', 'OW1', 'Z', 'AH0', 'N', 'P', 'IY1', 'T', 'S', 'AH0', 'Z']]",2
+SMK-401,frozenpizzas,granolabars,"[['F', 'R', 'OW1', 'Z', 'AH0', 'N', 'P', 'IY1', 'T', 'S', 'AH0', 'Z']]","[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]",1
+SMK-401,granolabars,guacamole,"[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]","[['G', 'W', 'AA2', 'K', 'AH0', 'M', 'OW1', 'L', 'IY0']]",2
+SMK-401,guacamole,hamburger,"[['G', 'W', 'AA2', 'K', 'AH0', 'M', 'OW1', 'L', 'IY0']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]",1
+SMK-401,hamburger,hershey,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]","[['HH', 'ER1', 'SH', 'IY0']]",1
+SMK-401,hershey,hotdog,"[['HH', 'ER1', 'SH', 'IY0']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G']]",1
+SMK-401,hotdog,hotdogs,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",6
+SMK-401,hotdogs,lasagna,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]",1
+SMK-401,lasagna,mashedpotatoes,"[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]","[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",1
+SMK-401,mashedpotatoes,pepperjackcheese,"[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['P', 'EH1', 'P', 'ER0', 'JH', 'AE1', 'K', 'CH', 'IY1', 'Z']]",1
+SMK-401,pepperjackcheese,chips,"[['P', 'EH1', 'P', 'ER0', 'JH', 'AE1', 'K', 'CH', 'IY1', 'Z']]","[['CH', 'IH1', 'P', 'S']]",1
+SMK-401,chips,pepperonipizza,"[['CH', 'IH1', 'P', 'S']]","[['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1'], ['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1']]",2
+SMK-401,pepperonipizza,sausage,"[['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1'], ['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AA1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'IH1', 'P', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'AH0'], ['P', 'EH1', 'P', 'ER0', 'AO1', 'N', 'AY1', 'P', 'IY1', 'AY1', 'Z', 'IY1', 'Z', 'IY1', 'EY1']]","[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]",1
+SMK-401,sausage,milk,"[['S', 'AO1', 'S', 'AH0', 'JH'], ['S', 'AO1', 'S', 'IH0', 'JH']]","[['M', 'IH1', 'L', 'K']]",0
+SMK-401,milk,coke,"[['M', 'IH1', 'L', 'K']]","[['K', 'OW1', 'K']]",1
+SMK-401,coke,sprite,"[['K', 'OW1', 'K']]","[['S', 'P', 'R', 'AY1', 'T']]",0
+SMK-401,sprite,corn,"[['S', 'P', 'R', 'AY1', 'T']]","[['K', 'AO1', 'R', 'N']]",1
+SMK-401,corn,peas,"[['K', 'AO1', 'R', 'N']]","[['P', 'IY1', 'Z']]",0
+SMK-401,peas,grapes,"[['P', 'IY1', 'Z']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+SMK-401,grapes,apple,"[['G', 'R', 'EY1', 'P', 'S']]","[['AE1', 'P', 'AH0', 'L']]",1
+SMK-401,apple,bananas,"[['AE1', 'P', 'AH0', 'L']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",1
+SMK-401,bananas,cheese,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['CH', 'IY1', 'Z']]",1
+SMK-401,cheese,bread,"[['CH', 'IY1', 'Z']]","[['B', 'R', 'EH1', 'D']]",0
+SMK-401,bread,popsicles,"[['B', 'R', 'EH1', 'D']]","[['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EH1', 'S'], ['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EY1']]",1
+SMK-401,popsicles,pringles,"[['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EH1', 'S'], ['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EY1']]","[['P', 'R', 'IH1', 'NG', 'L', 'EH1', 'S'], ['P', 'R', 'IH1', 'NG', 'L', 'EY1']]",3
+SMK-401,pringles,quakerbars,"[['P', 'R', 'IH1', 'NG', 'L', 'EH1', 'S'], ['P', 'R', 'IH1', 'NG', 'L', 'EY1']]","[['K', 'W', 'EY1', 'K', 'AA1', 'R', 'B', 'IY1', 'AA1', 'R', 'EH1', 'S']]",2
+SMK-401,quakerbars,sausagepizza,"[['K', 'W', 'EY1', 'K', 'AA1', 'R', 'B', 'IY1', 'AA1', 'R', 'EH1', 'S']]","[['S', 'AO1', 'S', 'AH0', 'JH', 'P', 'IY1', 'T', 'S', 'AH0'], ['S', 'AO1', 'S', 'IH0', 'JH', 'P', 'IY1', 'T', 'S', 'AH0']]",1
+SMK-401,sausagepizza,skittles,"[['S', 'AO1', 'S', 'AH0', 'JH', 'P', 'IY1', 'T', 'S', 'AH0'], ['S', 'AO1', 'S', 'IH0', 'JH', 'P', 'IY1', 'T', 'S', 'AH0']]","[['S', 'K', 'IH1', 'T', 'AH0', 'L', 'Z']]",1
+SMK-401,skittles,spaghetti,"[['S', 'K', 'IH1', 'T', 'AH0', 'L', 'Z']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SMK-401,spaghetti,sunkist,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['S', 'AH1', 'N', 'K', 'IH2', 'S', 'T']]",1
+SMK-401,sunkist,tatertots,"[['S', 'AH1', 'N', 'K', 'IH2', 'S', 'T']]","[['T', 'EY1', 'T', 'ER0', 'T', 'AA1', 'T', 'S']]",1
+SNI-300,barbecue,macaroniandcheese,"[['B', 'AA1', 'R', 'B', 'IH0', 'K', 'Y', 'UW2']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+SNI-300,macaroniandcheese,soda,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['S', 'OW1', 'D', 'AH0']]",1
+SNI-300,soda,water,"[['S', 'OW1', 'D', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+SNI-300,water,chicken,"[['W', 'AO1', 'T', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+SNI-300,chicken,burger,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['B', 'ER1', 'G', 'ER0']]",0
+SNI-300,burger,rice,"[['B', 'ER1', 'G', 'ER0']]","[['R', 'AY1', 'S']]",0
+SNI-300,rice,steak,"[['R', 'AY1', 'S']]","[['S', 'T', 'EY1', 'K']]",1
+SNI-300,steak,chinese,"[['S', 'T', 'EY1', 'K']]","[['CH', 'AY0', 'N', 'IY1', 'Z']]",0
+SNI-300,chinese,rice,"[['CH', 'AY0', 'N', 'IY1', 'Z']]","[['R', 'AY1', 'S']]",1
+SNI-300,rice,juice,"[['R', 'AY1', 'S']]","[['JH', 'UW1', 'S']]",1
+SNI-300,juice,orange,"[['JH', 'UW1', 'S']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",1
+SNI-300,orange,lemon,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['L', 'EH1', 'M', 'AH0', 'N']]",2
+SNI-300,lemon,apple,"[['L', 'EH1', 'M', 'AH0', 'N']]","[['AE1', 'P', 'AH0', 'L']]",1
+SNI-300,apple,pear,"[['AE1', 'P', 'AH0', 'L']]","[['P', 'EH1', 'R']]",1
+SNI-300,pear,lemon,"[['P', 'EH1', 'R']]","[['L', 'EH1', 'M', 'AH0', 'N']]",1
+SNI-300,lemon,pizza,"[['L', 'EH1', 'M', 'AH0', 'N']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+SNI-300,pizza,spaghetti,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SNR-308,cereal,dietcoke,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]",1
+SNR-308,dietcoke,peanutbutter,"[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]",2
+SNR-308,peanutbutter,chips,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]","[['CH', 'IH1', 'P', 'S']]",1
+SNR-308,chips,candies,"[['CH', 'IH1', 'P', 'S']]","[['K', 'AE1', 'N', 'D', 'IY0', 'Z']]",0
+SNR-308,candies,pop,"[['K', 'AE1', 'N', 'D', 'IY0', 'Z']]","[['P', 'AA1', 'P']]",0
+SNR-308,pop,lemonade,"[['P', 'AA1', 'P']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",0
+SNR-308,lemonade,pies,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['P', 'AY1', 'Z']]",0
+SNR-308,pies,cakes,"[['P', 'AY1', 'Z']]","[['K', 'EY1', 'K', 'S']]",0
+SNR-308,cakes,brownies,"[['K', 'EY1', 'K', 'S']]","[['B', 'R', 'AW1', 'N', 'IY0', 'Z']]",0
+SNR-308,brownies,sandwich,"[['B', 'R', 'AW1', 'N', 'IY0', 'Z']]","[['S', 'AE1', 'N', 'D', 'W', 'IH0', 'CH'], ['S', 'AE1', 'N', 'W', 'IH0', 'CH'], ['S', 'AE1', 'M', 'W', 'IH0', 'CH']]",1
+SNR-308,sandwich,fish,"[['S', 'AE1', 'N', 'D', 'W', 'IH0', 'CH'], ['S', 'AE1', 'N', 'W', 'IH0', 'CH'], ['S', 'AE1', 'M', 'W', 'IH0', 'CH']]","[['F', 'IH1', 'SH']]",1
+SNR-308,fish,chicken,"[['F', 'IH1', 'SH']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SNR-308,chicken,pizza,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+SNR-308,pizza,pizza,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",5
+SNR-308,pizza,tunafish,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['T', 'UW1', 'N', 'AH0', 'F', 'IH0', 'SH']]",1
+SNT-310,broccoli,kiwi,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['K', 'IY1', 'W', 'IY0']]",1
+SNT-310,kiwi,mayo,"[['K', 'IY1', 'W', 'IY0']]","[['M', 'EY1', 'OW0']]",0
+SNT-310,mayo,soda,"[['M', 'EY1', 'OW0']]","[['S', 'OW1', 'D', 'AH0']]",1
+SNT-310,soda,corn,"[['S', 'OW1', 'D', 'AH0']]","[['K', 'AO1', 'R', 'N']]",0
+SNT-310,corn,potatoes,"[['K', 'AO1', 'R', 'N']]","[['P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",0
+SNT-310,potatoes,tomato,"[['P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW2'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2']]",3
+SNT-310,tomato,steak,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW2'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2']]","[['S', 'T', 'EY1', 'K']]",1
+SNT-310,steak,apple,"[['S', 'T', 'EY1', 'K']]","[['AE1', 'P', 'AH0', 'L']]",0
+SNT-310,apple,oranges,"[['AE1', 'P', 'AH0', 'L']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",1
+SNT-310,oranges,banana,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]",2
+SNT-310,banana,plums,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]","[['P', 'L', 'AH1', 'M', 'Z']]",1
+SNT-310,plums,water,"[['P', 'L', 'AH1', 'M', 'Z']]","[['W', 'AO1', 'T', 'ER0']]",0
+SNT-310,water,bread,"[['W', 'AO1', 'T', 'ER0']]","[['B', 'R', 'EH1', 'D']]",0
+SNT-310,bread,turkey,"[['B', 'R', 'EH1', 'D']]","[['T', 'ER1', 'K', 'IY0']]",0
+SNT-310,turkey,mustard,"[['T', 'ER1', 'K', 'IY0']]","[['M', 'AH1', 'S', 'T', 'ER0', 'D']]",2
+SNT-310,mustard,lettuce,"[['M', 'AH1', 'S', 'T', 'ER0', 'D']]","[['L', 'EH1', 'T', 'AH0', 'S']]",2
+SNT-310,lettuce,carrots,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",1
+SNT-310,carrots,radishes,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['R', 'AE1', 'D', 'IH0', 'SH', 'IH0', 'Z']]",1
+SNT-310,radishes,beets,"[['R', 'AE1', 'D', 'IH0', 'SH', 'IH0', 'Z']]","[['B', 'IY1', 'T', 'S']]",0
+SNT-310,beets,cauliflower,"[['B', 'IY1', 'T', 'S']]","[['K', 'AA1', 'L', 'AH0', 'F', 'L', 'AW2', 'ER0']]",0
+SNT-310,cauliflower,beans,"[['K', 'AA1', 'L', 'AH0', 'F', 'L', 'AW2', 'ER0']]","[['B', 'IY1', 'N', 'Z']]",0
+SNT-310,beans,sweetpotatoes,"[['B', 'IY1', 'N', 'Z']]","[['S', 'W', 'IY1', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",1
+SNV-312,2%milk,applejuice,,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]",0
+SNV-312,applejuice,blueberries,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+SNV-312,blueberries,blueberrymuffins,"[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'M', 'AH1', 'F', 'AH0', 'N', 'Z']]",7
+SNV-312,blueberrymuffins,breadsticks,"[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'M', 'AH1', 'F', 'AH0', 'N', 'Z']]","[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]",1
+SNV-312,breadsticks,burrito,"[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]","[['B', 'ER0', 'IY1', 'T', 'OW0']]",1
+SNV-312,burrito,chickennoodles,"[['B', 'ER0', 'IY1', 'T', 'OW0']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'UW1', 'D', 'AH0', 'L', 'Z']]",0
+SNV-312,chickennoodles,chickenpasta,"[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'UW1', 'D', 'AH0', 'L', 'Z']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'P', 'AA1', 'S', 'T', 'AH0']]",5
+SNV-312,chickenpasta,chocolatemilk,"[['CH', 'IH1', 'K', 'AH0', 'N', 'P', 'AA1', 'S', 'T', 'AH0']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'M', 'IH1', 'L', 'K']]",1
+SNV-312,chocolatemilk,cornbread,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'M', 'IH1', 'L', 'K']]","[['K', 'AO1', 'R', 'N', 'B', 'R', 'EH2', 'D']]",1
+SNV-312,cornbread,gatorade,"[['K', 'AO1', 'R', 'N', 'B', 'R', 'EH2', 'D']]","[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]",1
+SNV-312,gatorade,granolabars,"[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]","[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]",1
+SNV-312,granolabars,hamburger,"[['G', 'R', 'AA1', 'N', 'OW0', 'L', 'AE1', 'B', 'AA1', 'R', 'EH1', 'S']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]",1
+SNV-312,hamburger,hotdog,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G']]",1
+SNV-312,hotdog,lasagna,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G']]","[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]",1
+SNV-312,lasagna,mashedpotatoes,"[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]","[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]",1
+SNV-312,mashedpotatoes,orangejuice,"[['M', 'AE1', 'SH', 'T', 'P', 'AH0', 'T', 'EY1', 'T', 'OW0', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",1
+SNV-312,orangejuice,peanutbutter,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]",1
+SNV-312,peanutbutter,chicken,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SNV-312,chicken,rice,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['R', 'AY1', 'S']]",0
+SNV-312,rice,corn,"[['R', 'AY1', 'S']]","[['K', 'AO1', 'R', 'N']]",1
+SNV-312,corn,celery,"[['K', 'AO1', 'R', 'N']]","[['S', 'EH1', 'L', 'ER0', 'IY0']]",0
+SNV-312,celery,water,"[['S', 'EH1', 'L', 'ER0', 'IY0']]","[['W', 'AO1', 'T', 'ER0']]",1
+SNV-312,water,turkey,"[['W', 'AO1', 'T', 'ER0']]","[['T', 'ER1', 'K', 'IY0']]",2
+SNV-312,turkey,ham,"[['T', 'ER1', 'K', 'IY0']]","[['HH', 'AE1', 'M']]",0
+SNV-312,ham,wings,"[['HH', 'AE1', 'M']]","[['W', 'IH1', 'NG', 'Z']]",0
+SNV-312,wings,powerade,"[['W', 'IH1', 'NG', 'Z']]","[['P', 'AW1', 'R', 'AA1', 'D', 'IY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'EY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'AH0']]",0
+SNV-312,powerade,apples,"[['P', 'AW1', 'R', 'AA1', 'D', 'IY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'EY1'], ['P', 'AW1', 'R', 'AA1', 'D', 'AH0']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+SNV-312,apples,oranges,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",1
+SNV-312,oranges,strawberry,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]",1
+SNV-312,strawberry,raspberries,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]","[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'Z']]",4
+SNV-312,raspberries,spaghetti,"[['R', 'AE1', 'Z', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SNV-312,spaghetti,waffles,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['W', 'AA1', 'F', 'AH0', 'L', 'Z']]",1
+SNY-315,applejuice,cereal,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]",2
+SNY-315,cereal,cheezits,"[['S', 'IH1', 'R', 'IY0', 'AH0', 'L']]","[['CH', 'IY1', 'Z', 'IY1', 'T', 'IY1', 'EH1', 'S']]",1
+SNY-315,cheezits,chickennoodlesoup,"[['CH', 'IY1', 'Z', 'IY1', 'T', 'IY1', 'EH1', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'UW1', 'D', 'AH0', 'L', 'S', 'UW1', 'P']]",1
+SNY-315,chickennoodlesoup,cranberryjuice,"[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'UW1', 'D', 'AH0', 'L', 'S', 'UW1', 'P']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]",1
+SNY-315,cranberryjuice,grapejuice,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]","[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]",3
+SNY-315,grapejuice,hotchocolate,"[['G', 'R', 'EY1', 'P', 'JH', 'UW1', 'S']]","[['HH', 'AA1', 'T', 'CH', 'AO1', 'K', 'L', 'AH0', 'T']]",0
+SNY-315,hotchocolate,macaroniandcheese,"[['HH', 'AA1', 'T', 'CH', 'AO1', 'K', 'L', 'AH0', 'T']]","[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+SNY-315,macaroniandcheese,orangejuice,"[['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE2', 'K', 'ER0', 'OW1', 'N', 'IY0', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",2
+SNY-315,orangejuice,chicken,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",2
+SNY-315,chicken,water,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['W', 'AO1', 'T', 'ER0']]",0
+SNY-315,water,pop,"[['W', 'AO1', 'T', 'ER0']]","[['P', 'AA1', 'P']]",0
+SNY-315,pop,steak,"[['P', 'AA1', 'P']]","[['S', 'T', 'EY1', 'K']]",0
+SNY-315,steak,bread,"[['S', 'T', 'EY1', 'K']]","[['B', 'R', 'EH1', 'D']]",0
+SNY-315,bread,milk,"[['B', 'R', 'EH1', 'D']]","[['M', 'IH1', 'L', 'K']]",0
+SNY-315,milk,bananas,"[['M', 'IH1', 'L', 'K']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]",0
+SNY-315,bananas,apples,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0', 'Z']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+SNY-315,apples,oranges,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]",1
+SNY-315,oranges,grapes,"[['AO1', 'R', 'AH0', 'N', 'JH', 'AH0', 'Z'], ['AO1', 'R', 'IH0', 'N', 'JH', 'IH0', 'Z']]","[['G', 'R', 'EY1', 'P', 'S']]",1
+SNY-315,grapes,lettuce,"[['G', 'R', 'EY1', 'P', 'S']]","[['L', 'EH1', 'T', 'AH0', 'S']]",1
+SNY-315,lettuce,crackers,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['K', 'R', 'AE1', 'K', 'ER0', 'Z']]",0
+SNY-315,crackers,tea,"[['K', 'R', 'AE1', 'K', 'ER0', 'Z']]","[['T', 'IY1']]",0
+SNY-315,tea,tomatojuice,"[['T', 'IY1']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW2', 'JH', 'UW1', 'S'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2', 'JH', 'UW1', 'S']]",1
+SNY-315,tomatojuice,tomatosoup,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW2', 'JH', 'UW1', 'S'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2', 'JH', 'UW1', 'S']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW2', 'S', 'UW1', 'P'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW2', 'S', 'UW1', 'P']]",6
+SOA-317,applejuice,pop,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['P', 'AA1', 'P']]",1
+SOA-317,pop,food,"[['P', 'AA1', 'P']]","[['F', 'UW1', 'D']]",0
+SOA-317,food,water,"[['F', 'UW1', 'D']]","[['W', 'AO1', 'T', 'ER0']]",0
+SOA-317,water,chew,"[['W', 'AO1', 'T', 'ER0']]","[['CH', 'UW1']]",0
+SOA-317,chew,orange,"[['CH', 'UW1']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",0
+SOA-317,orange,rootbeer,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['R', 'UW1', 'T', 'B', 'IH1', 'R']]",1
+SOQ-329,blueberries,broccoli,"[['B', 'L', 'UW1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",1
+SOQ-329,broccoli,greenbeans,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['G', 'R', 'IY1', 'N', 'B', 'IY1', 'N', 'Z']]",1
+SOQ-329,greenbeans,hamburger,"[['G', 'R', 'IY1', 'N', 'B', 'IY1', 'N', 'Z']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]",1
+SOQ-329,hamburger,icecream,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",1
+SOQ-329,icecream,kiwi,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['K', 'IY1', 'W', 'IY0']]",1
+SOQ-329,kiwi,meatloaf,"[['K', 'IY1', 'W', 'IY0']]","[['M', 'IY1', 'T', 'L', 'OW0', 'F']]",1
+SOQ-329,meatloaf,pizza,"[['M', 'IY1', 'T', 'L', 'OW0', 'F']]","[['P', 'IY1', 'T', 'S', 'AH0']]",2
+SOQ-329,pizza,banana,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]",1
+SOQ-329,banana,apple,"[['B', 'AH0', 'N', 'AE1', 'N', 'AH0']]","[['AE1', 'P', 'AH0', 'L']]",1
+SOQ-329,apple,water,"[['AE1', 'P', 'AH0', 'L']]","[['W', 'AO1', 'T', 'ER0']]",0
+SOQ-329,water,soda,"[['W', 'AO1', 'T', 'ER0']]","[['S', 'OW1', 'D', 'AH0']]",0
+SOQ-329,soda,orange,"[['S', 'OW1', 'D', 'AH0']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",1
+SOQ-329,orange,strawberry,"[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]",1
+SOQ-329,strawberry,chocolate,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0']]","[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]",1
+SOQ-329,chocolate,beer,"[['CH', 'AO1', 'K', 'L', 'AH0', 'T']]","[['B', 'IH1', 'R']]",0
+SOQ-329,beer,chips,"[['B', 'IH1', 'R']]","[['CH', 'IH1', 'P', 'S']]",1
+SOQ-329,chips,chicken,"[['CH', 'IH1', 'P', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",2
+SOQ-329,chicken,beef,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['B', 'IY1', 'F']]",0
+SOQ-329,beef,bacon,"[['B', 'IY1', 'F']]","[['B', 'EY1', 'K', 'AH0', 'N']]",1
+SOQ-329,bacon,steak,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['S', 'T', 'EY1', 'K']]",2
+SOQ-329,steak,peas,"[['S', 'T', 'EY1', 'K']]","[['P', 'IY1', 'Z']]",0
+SOQ-329,peas,carrots,"[['P', 'IY1', 'Z']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",0
+SOQ-329,carrots,spinach,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['S', 'P', 'IH1', 'N', 'AH0', 'CH']]",1
+SOQ-329,spinach,corn,"[['S', 'P', 'IH1', 'N', 'AH0', 'CH']]","[['K', 'AO1', 'R', 'N']]",1
+SOQ-329,corn,cherries,"[['K', 'AO1', 'R', 'N']]","[['CH', 'EH1', 'R', 'IY0', 'Z']]",1
+SPL-436,cottagecheese,frenchtoast,"[['K', 'AA1', 'T', 'AH0', 'JH', 'CH', 'IY1', 'Z'], ['K', 'AA1', 'T', 'IH0', 'JH', 'CH', 'IY1', 'Z']]","[['F', 'R', 'EH1', 'N', 'CH', 'T', 'OW1', 'S', 'T']]",1
+SPL-436,frenchtoast,gatorade,"[['F', 'R', 'EH1', 'N', 'CH', 'T', 'OW1', 'S', 'T']]","[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]",1
+SPL-436,gatorade,icecream,"[['G', 'AE1', 'T', 'ER0', 'EY2', 'D']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",0
+SPL-436,icecream,propel,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['P', 'R', 'AH0', 'P', 'EH1', 'L']]",1
+SPL-436,propel,lemonade,"[['P', 'R', 'AH0', 'P', 'EH1', 'L']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",1
+SPL-436,lemonade,chips,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['CH', 'IH1', 'P', 'S']]",0
+SPL-436,chips,gingerbread,"[['CH', 'IH1', 'P', 'S']]","[['JH', 'IH1', 'N', 'JH', 'ER0', 'B', 'R', 'EH2', 'D']]",1
+SPL-436,gingerbread,cake,"[['JH', 'IH1', 'N', 'JH', 'ER0', 'B', 'R', 'EH2', 'D']]","[['K', 'EY1', 'K']]",0
+SPL-436,cake,cookies,"[['K', 'EY1', 'K']]","[['K', 'UH1', 'K', 'IY0', 'Z']]",1
+SPL-436,cookies,turkey,"[['K', 'UH1', 'K', 'IY0', 'Z']]","[['T', 'ER1', 'K', 'IY0']]",2
+SPL-436,turkey,ham,"[['T', 'ER1', 'K', 'IY0']]","[['HH', 'AE1', 'M']]",0
+SPL-436,ham,eggs,"[['HH', 'AE1', 'M']]","[['EH1', 'G', 'Z']]",0
+SPL-436,eggs,peanuts,"[['EH1', 'G', 'Z']]","[['P', 'IY1', 'N', 'AH0', 'T', 'S'], ['P', 'IY1', 'N', 'AH2', 'T', 'S']]",0
+SPV-450,frenchfries,garlicbread,"[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]","[['G', 'AA1', 'R', 'L', 'IH0', 'K', 'B', 'R', 'EH1', 'D']]",2
+SPV-450,garlicbread,greenpeppers,"[['G', 'AA1', 'R', 'L', 'IH0', 'K', 'B', 'R', 'EH1', 'D']]","[['G', 'R', 'IY1', 'N', 'P', 'EH1', 'P', 'ER0', 'Z']]",1
+SPV-450,greenpeppers,hamburgers,"[['G', 'R', 'IY1', 'N', 'P', 'EH1', 'P', 'ER0', 'Z']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",2
+SPV-450,hamburgers,hotdogs,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",1
+SPV-450,hotdogs,icecream,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['AY1', 'S', 'K', 'R', 'IY1', 'M']]",0
+SPV-450,icecream,lasagna,"[['AY1', 'S', 'K', 'R', 'IY1', 'M']]","[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]",1
+SPV-450,lasagna,pizza,"[['L', 'AA0', 'S', 'AA1', 'N', 'Y', 'AH0'], ['L', 'AH0', 'Z', 'AA1', 'N', 'Y', 'AH0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+SPV-450,pizza,water,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",1
+SPV-450,water,watermelon,"[['W', 'AO1', 'T', 'ER0']]","[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]",4
+SPV-450,watermelon,candy,"[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]","[['K', 'AE1', 'N', 'D', 'IY0']]",1
+SPV-450,candy,liquor,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['L', 'IH1', 'K', 'ER0']]",1
+SPV-450,liquor,mustard,"[['L', 'IH1', 'K', 'ER0']]","[['M', 'AH1', 'S', 'T', 'ER0', 'D']]",1
+SPV-450,mustard,tomatoes,"[['M', 'AH1', 'S', 'T', 'ER0', 'D']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]",1
+SPV-450,tomatoes,onions,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]","[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]",1
+SPV-450,onions,sodapop,"[['AH1', 'N', 'Y', 'AH0', 'N', 'Z']]","[['S', 'OW1', 'D', 'AH0', 'P', 'AA1', 'P']]",1
+SPV-450,sodapop,corn,"[['S', 'OW1', 'D', 'AH0', 'P', 'AA1', 'P']]","[['K', 'AO1', 'R', 'N']]",0
+SPV-450,corn,strawberries,"[['K', 'AO1', 'R', 'N']]","[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]",1
+SPV-450,strawberries,lettuce,"[['S', 'T', 'R', 'AO1', 'B', 'EH2', 'R', 'IY0', 'Z']]","[['L', 'EH1', 'T', 'AH0', 'S']]",1
+SPV-450,lettuce,cheese,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['CH', 'IY1', 'Z']]",0
+SPV-450,cheese,spaghetti,"[['CH', 'IY1', 'Z']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SPV-450,spaghetti,tacos,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['T', 'AA1', 'K', 'OW0', 'Z']]",1
+SRF-483,chickenlegs,chickentenders,"[['CH', 'IH1', 'K', 'EH1', 'N', 'L', 'EH1', 'G', 'Z']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'T', 'EH1', 'N', 'D', 'ER0', 'Z']]",3
+SRF-483,chickentenders,chickenwings,"[['CH', 'IH1', 'K', 'AH0', 'N', 'T', 'EH1', 'N', 'D', 'ER0', 'Z']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'W', 'IH1', 'NG', 'Z']]",5
+SRF-483,chickenwings,hamburgers,"[['CH', 'IH1', 'K', 'AH0', 'N', 'W', 'IH1', 'NG', 'Z']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",1
+SRF-483,hamburgers,macandcheese,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]",1
+SRF-483,macandcheese,parmesancheese,"[['M', 'AE1', 'K', 'AH0', 'N', 'D', 'CH', 'IY1', 'Z'], ['M', 'AE1', 'K', 'AE1', 'N', 'D', 'CH', 'IY1', 'Z']]","[['P', 'AA1', 'R', 'M', 'AH0', 'Z', 'AA2', 'N', 'CH', 'IY1', 'Z']]",3
+SRF-483,parmesancheese,ribs,"[['P', 'AA1', 'R', 'M', 'AH0', 'Z', 'AA2', 'N', 'CH', 'IY1', 'Z']]","[['R', 'IH1', 'B', 'Z']]",1
+SRF-483,ribs,wings,"[['R', 'IH1', 'B', 'Z']]","[['W', 'IH1', 'NG', 'Z']]",1
+SRF-483,wings,soda,"[['W', 'IH1', 'NG', 'Z']]","[['S', 'OW1', 'D', 'AH0']]",0
+SRF-483,soda,water,"[['S', 'OW1', 'D', 'AH0']]","[['W', 'AO1', 'T', 'ER0']]",0
+SRF-483,water,pickles,"[['W', 'AO1', 'T', 'ER0']]","[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]",0
+SRF-483,pickles,peppers,"[['P', 'IH1', 'K', 'AH0', 'L', 'Z']]","[['P', 'EH1', 'P', 'ER0', 'Z']]",1
+SRF-483,peppers,cheese,"[['P', 'EH1', 'P', 'ER0', 'Z']]","[['CH', 'IY1', 'Z']]",1
+SRF-483,cheese,noodles,"[['CH', 'IY1', 'Z']]","[['N', 'UW1', 'D', 'AH0', 'L', 'Z']]",1
+SRR-498,cheeseburgers,chocolatefudge,"[['CH', 'IY1', 'Z', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'F', 'AH1', 'JH']]",1
+SRR-498,chocolatefudge,chocolatemilk,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'IY1', 'F', 'AH1', 'JH']]","[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'M', 'IH1', 'L', 'K']]",6
+SRR-498,chocolatemilk,fries,"[['CH', 'AA1', 'K', 'L', 'AH0', 'T', 'EH1', 'M', 'IH1', 'L', 'K']]","[['F', 'R', 'AY1', 'Z']]",0
+SRR-498,fries,hamburgers,"[['F', 'R', 'AY1', 'Z']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",1
+SRR-498,hamburgers,mcdonalds,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['M', 'AH0', 'K', 'D', 'AA1', 'N', 'AH0', 'L', 'D', 'Z']]",1
+SRR-498,mcdonalds,omelets,"[['M', 'AH0', 'K', 'D', 'AA1', 'N', 'AH0', 'L', 'D', 'Z']]","[['AA1', 'M', 'L', 'AH0', 'T', 'S']]",1
+SRR-498,omelets,peanutbutterandjelly,"[['AA1', 'M', 'L', 'AH0', 'T', 'S']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0']]",2
+SRR-498,peanutbutterandjelly,pizza,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AH0', 'N', 'D', 'JH', 'EH1', 'L', 'IY0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0', 'AE1', 'N', 'D', 'JH', 'EH1', 'L', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",2
+SRR-498,pizza,ravioli,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['R', 'AE2', 'V', 'IY0', 'OW1', 'L', 'IY0']]",1
+SRR-498,ravioli,romannoodles,"[['R', 'AE2', 'V', 'IY0', 'OW1', 'L', 'IY0']]","[['R', 'OW1', 'M', 'AH0', 'N', 'UW1', 'D', 'AH0', 'L', 'Z']]",1
+SRR-498,romannoodles,milk,"[['R', 'OW1', 'M', 'AH0', 'N', 'UW1', 'D', 'AH0', 'L', 'Z']]","[['M', 'IH1', 'L', 'K']]",1
+SRR-498,milk,soda,"[['M', 'IH1', 'L', 'K']]","[['S', 'OW1', 'D', 'AH0']]",0
+SRR-498,soda,eggs,"[['S', 'OW1', 'D', 'AH0']]","[['EH1', 'G', 'Z']]",0
+SRR-498,eggs,bacon,"[['EH1', 'G', 'Z']]","[['B', 'EY1', 'K', 'AH0', 'N']]",0
+SRR-498,bacon,toast,"[['B', 'EY1', 'K', 'AH0', 'N']]","[['T', 'OW1', 'S', 'T']]",0
+SRR-498,toast,pudding,"[['T', 'OW1', 'S', 'T']]","[['P', 'UH1', 'D', 'IH0', 'NG']]",0
+SRR-498,pudding,cake,"[['P', 'UH1', 'D', 'IH0', 'NG']]","[['K', 'EY1', 'K']]",0
+SRR-498,cake,spaghetti,"[['K', 'EY1', 'K']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",0
+SRR-498,spaghetti,water,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['W', 'AO1', 'T', 'ER0']]",1
+SRR-498,water,strawberrymilk,"[['W', 'AO1', 'T', 'ER0']]","[['S', 'T', 'R', 'AO1', 'B', 'EH1', 'R', 'IY0', 'M', 'IH1', 'L', 'K']]",1
+SRR-498,strawberrymilk,tacos,"[['S', 'T', 'R', 'AO1', 'B', 'EH1', 'R', 'IY0', 'M', 'IH1', 'L', 'K']]","[['T', 'AA1', 'K', 'OW0', 'Z']]",1
+SSG-520,beefandnoodles,calamari,"[['B', 'IY1', 'F', 'AH0', 'N', 'D', 'N', 'UW1', 'D', 'AH0', 'L', 'Z'], ['B', 'IY1', 'F', 'AE1', 'N', 'D', 'N', 'UW1', 'D', 'AH0', 'L', 'Z']]","[['K', 'AA0', 'L', 'AA0', 'M', 'AA1', 'R', 'IY0']]",1
+SSG-520,calamari,chickennuggets,"[['K', 'AA0', 'L', 'AA0', 'M', 'AA1', 'R', 'IY0']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'AH1', 'G', 'AH0', 'T', 'S']]",1
+SSG-520,chickennuggets,koolaid,"[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'AH1', 'G', 'AH0', 'T', 'S']]","[['K', 'UW1', 'L', 'EY1', 'D']]",1
+SSG-520,koolaid,orangejuice,"[['K', 'UW1', 'L', 'EY1', 'D']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",1
+SSG-520,orangejuice,spaghetti,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SSG-520,spaghetti,water,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['W', 'AO1', 'T', 'ER0']]",1
+SSG-520,water,milk,"[['W', 'AO1', 'T', 'ER0']]","[['M', 'IH1', 'L', 'K']]",0
+SSG-520,milk,fish,"[['M', 'IH1', 'L', 'K']]","[['F', 'IH1', 'SH']]",1
+SSG-520,fish,shrimp,"[['F', 'IH1', 'SH']]","[['SH', 'R', 'IH1', 'M', 'P']]",1
+SSG-520,shrimp,lemonade,"[['SH', 'R', 'IH1', 'M', 'P']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",1
+SSG-520,lemonade,candy,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['K', 'AE1', 'N', 'D', 'IY0']]",1
+SSG-520,candy,juice,"[['K', 'AE1', 'N', 'D', 'IY0']]","[['JH', 'UW1', 'S']]",0
+SUG-544,cherrypepsi,drpepper,"[['CH', 'EH1', 'R', 'IY0', 'P', 'EH1', 'P', 'S', 'IY0']]","[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]",3
+SUG-544,drpepper,icee,"[['D', 'R', 'AY1', 'V', 'P', 'EH1', 'P', 'ER0'], ['D', 'AA1', 'K', 'T', 'ER0', 'P', 'EH1', 'P', 'ER0']]","[['AY1', 'S', 'IY1']]",1
+SUG-544,icee,pepsi,"[['AY1', 'S', 'IY1']]","[['P', 'EH1', 'P', 'S', 'IY0']]",2
+SUG-544,pepsi,pizza,"[['P', 'EH1', 'P', 'S', 'IY0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",1
+SUG-544,pizza,pumpkinpie,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['P', 'AH1', 'M', 'P', 'K', 'IH1', 'N', 'P', 'AY1']]",1
+SUG-544,pumpkinpie,potato,"[['P', 'AH1', 'M', 'P', 'K', 'IH1', 'N', 'P', 'AY1']]","[['P', 'AH0', 'T', 'EY1', 'T', 'OW2']]",2
+SUG-544,potato,corn,"[['P', 'AH0', 'T', 'EY1', 'T', 'OW2']]","[['K', 'AO1', 'R', 'N']]",0
+SUG-544,corn,beans,"[['K', 'AO1', 'R', 'N']]","[['B', 'IY1', 'N', 'Z']]",1
+SUG-544,beans,soup,"[['B', 'IY1', 'N', 'Z']]","[['S', 'UW1', 'P']]",0
+SUG-544,soup,tea,"[['S', 'UW1', 'P']]","[['T', 'IY1']]",0
+SUG-544,tea,lemonade,"[['T', 'IY1']]","[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]",0
+SUG-544,lemonade,watermelon,"[['L', 'EH1', 'M', 'AH0', 'N', 'EY1', 'D']]","[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]",2
+SUG-544,watermelon,pumpkin,"[['W', 'AO1', 'T', 'ER0', 'M', 'EH2', 'L', 'AH0', 'N']]","[['P', 'AH1', 'M', 'P', 'K', 'IH0', 'N'], ['P', 'AH1', 'M', 'K', 'IH0', 'N']]",1
+SUG-544,pumpkin,cherry,"[['P', 'AH1', 'M', 'P', 'K', 'IH0', 'N'], ['P', 'AH1', 'M', 'K', 'IH0', 'N']]","[['CH', 'EH1', 'R', 'IY0']]",0
+SUG-544,cherry,apple,"[['CH', 'EH1', 'R', 'IY0']]","[['AE1', 'P', 'AH0', 'L']]",0
+SUG-544,apple,orange,"[['AE1', 'P', 'AH0', 'L']]","[['AO1', 'R', 'AH0', 'N', 'JH'], ['AO1', 'R', 'IH0', 'N', 'JH']]",1
+SVH-570,applejuice,barbecueribs,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['B', 'AA1', 'R', 'B', 'K', 'Y', 'UW1', 'R', 'IH1', 'B', 'Z']]",1
+SVH-570,barbecueribs,broccoli,"[['B', 'AA1', 'R', 'B', 'K', 'Y', 'UW1', 'R', 'IH1', 'B', 'Z']]","[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]",1
+SVH-570,broccoli,dietcoke,"[['B', 'R', 'AA1', 'K', 'AH0', 'L', 'IY0'], ['B', 'R', 'AA1', 'K', 'L', 'IY0']]","[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]",1
+SVH-570,dietcoke,icedcream,"[['D', 'AY1', 'AH0', 'T', 'K', 'OW1', 'K']]","[['AY1', 'S', 'T', 'K', 'R', 'IY1', 'M']]",2
+SVH-570,icedcream,meatloaf,"[['AY1', 'S', 'T', 'K', 'R', 'IY1', 'M']]","[['M', 'IY1', 'T', 'L', 'OW0', 'F']]",1
+SVH-570,meatloaf,orangejuice,"[['M', 'IY1', 'T', 'L', 'OW0', 'F']]","[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]",0
+SVH-570,orangejuice,popsicles,"[['AO1', 'R', 'AH0', 'N', 'JH', 'JH', 'UW1', 'S'], ['AO1', 'R', 'IH0', 'N', 'JH', 'JH', 'UW1', 'S']]","[['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EH1', 'S'], ['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EY1']]",1
+SVH-570,popsicles,cake,"[['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EH1', 'S'], ['P', 'AA1', 'P', 'S', 'AY1', 'S', 'IY1', 'L', 'EY1']]","[['K', 'EY1', 'K']]",0
+SVH-570,cake,fruit,"[['K', 'EY1', 'K']]","[['F', 'R', 'UW1', 'T']]",0
+SVH-570,fruit,milk,"[['F', 'R', 'UW1', 'T']]","[['M', 'IH1', 'L', 'K']]",0
+SVH-570,milk,water,"[['M', 'IH1', 'L', 'K']]","[['W', 'AO1', 'T', 'ER0']]",0
+SVH-570,water,steak,"[['W', 'AO1', 'T', 'ER0']]","[['S', 'T', 'EY1', 'K']]",1
+SVH-570,steak,lettuce,"[['S', 'T', 'EY1', 'K']]","[['L', 'EH1', 'T', 'AH0', 'S']]",1
+SVH-570,lettuce,salad,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['S', 'AE1', 'L', 'AH0', 'D']]",1
+SVH-570,salad,sprite,"[['S', 'AE1', 'L', 'AH0', 'D']]","[['S', 'P', 'R', 'AY1', 'T']]",1
+SVY-587,breadsticks,chickennuggets,"[['B', 'R', 'EH1', 'D', 'Z', 'T', 'IH1', 'K', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'AH1', 'G', 'AH0', 'T', 'S']]",2
+SVY-587,chickennuggets,frenchfries,"[['CH', 'IH1', 'K', 'AH0', 'N', 'N', 'AH1', 'G', 'AH0', 'T', 'S']]","[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]",1
+SVY-587,frenchfries,hamburgers,"[['F', 'R', 'EH1', 'N', 'CH', 'F', 'R', 'AY1', 'Z']]","[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]",1
+SVY-587,hamburgers,hotdogs,"[['HH', 'AE1', 'M', 'B', 'ER0', 'G', 'ER0', 'Z']]","[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]",1
+SVY-587,hotdogs,marinarasauce,"[['HH', 'AA1', 'T', 'D', 'AO2', 'G', 'Z']]","[['M', 'ER0', 'IY1', 'N', 'AH0', 'R', 'AE1', 'S', 'OW1', 'S', 'IY1', 'IY1']]",0
+SVY-587,marinarasauce,peanutbutter,"[['M', 'ER0', 'IY1', 'N', 'AH0', 'R', 'AE1', 'S', 'OW1', 'S', 'IY1', 'IY1']]","[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]",3
+SVY-587,peanutbutter,pizza,"[['P', 'IY1', 'N', 'AH0', 'T', 'B', 'AH1', 'T', 'ER0'], ['P', 'IY1', 'N', 'AH2', 'T', 'B', 'AH1', 'T', 'ER0']]","[['P', 'IY1', 'T', 'S', 'AH0']]",2
+SVY-587,pizza,squid,"[['P', 'IY1', 'T', 'S', 'AH0']]","[['S', 'K', 'W', 'IH1', 'D']]",1
+SVY-587,squid,peaches,"[['S', 'K', 'W', 'IH1', 'D']]","[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]",0
+SVY-587,peaches,apples,"[['P', 'IY1', 'CH', 'AH0', 'Z'], ['P', 'IY1', 'CH', 'IH0', 'Z']]","[['AE1', 'P', 'AH0', 'L', 'Z']]",1
+SVY-587,apples,soda,"[['AE1', 'P', 'AH0', 'L', 'Z']]","[['S', 'OW1', 'D', 'AH0']]",1
+SVY-587,soda,chicken,"[['S', 'OW1', 'D', 'AH0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SVY-587,chicken,carrots,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]",1
+SVY-587,carrots,cabbage,"[['K', 'AE1', 'R', 'AH0', 'T', 'S'], ['K', 'EH1', 'R', 'AH0', 'T', 'S']]","[['K', 'AE1', 'B', 'AH0', 'JH'], ['K', 'AE1', 'B', 'IH0', 'JH']]",2
+SVY-587,cabbage,lettuce,"[['K', 'AE1', 'B', 'AH0', 'JH'], ['K', 'AE1', 'B', 'IH0', 'JH']]","[['L', 'EH1', 'T', 'AH0', 'S']]",1
+SVY-587,lettuce,cheese,"[['L', 'EH1', 'T', 'AH0', 'S']]","[['CH', 'IY1', 'Z']]",0
+SVY-587,cheese,soup,"[['CH', 'IY1', 'Z']]","[['S', 'UW1', 'P']]",0
+SVY-587,soup,yogurt,"[['S', 'UW1', 'P']]","[['Y', 'OW1', 'G', 'ER0', 'T']]",0
+SZA-781,applecider,applejuice,"[['AE1', 'P', 'AH0', 'L', 'S', 'AY1', 'D', 'ER0']]","[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]",4
+SZA-781,applejuice,cranberryjuice,"[['AE1', 'P', 'AH0', 'L', 'JH', 'UW1', 'S']]","[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]",3
+SZA-781,cranberryjuice,spaghetti,"[['K', 'R', 'AE1', 'N', 'B', 'EH2', 'R', 'IY0', 'JH', 'UW1', 'S']]","[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]",1
+SZA-781,spaghetti,tunafish,"[['S', 'P', 'AH0', 'G', 'EH1', 'T', 'IY0']]","[['T', 'UW1', 'N', 'AH0', 'F', 'IH0', 'SH']]",1
+SZA-781,tunafish,juice,"[['T', 'UW1', 'N', 'AH0', 'F', 'IH0', 'SH']]","[['JH', 'UW1', 'S']]",1
+SZA-781,juice,tomatoes,"[['JH', 'UW1', 'S']]","[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]",0
+SZA-781,tomatoes,vegetables,"[['T', 'AH0', 'M', 'EY1', 'T', 'OW0', 'Z'], ['T', 'AH0', 'M', 'AA1', 'T', 'OW0', 'Z']]","[['V', 'EH1', 'JH', 'T', 'AH0', 'B', 'AH0', 'L', 'Z']]",2
+SZA-781,vegetables,asparagus,"[['V', 'EH1', 'JH', 'T', 'AH0', 'B', 'AH0', 'L', 'Z']]","[['AH0', 'S', 'P', 'EH1', 'R', 'AH0', 'G', 'AH0', 'S']]",1
+SZA-781,asparagus,salmon,"[['AH0', 'S', 'P', 'EH1', 'R', 'AH0', 'G', 'AH0', 'S']]","[['S', 'AE1', 'M', 'AH0', 'N']]",1

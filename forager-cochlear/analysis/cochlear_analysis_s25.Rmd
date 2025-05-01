@@ -41,6 +41,8 @@ library(broom)
 library(data.table)
 library(ggstats)
 library(scales)
+library(gt)
+library(gtsummary)
 ```
 
 ## Define Data Import & Validation Functions
@@ -220,7 +222,7 @@ random_nLL_lookup <- full_model_data %>%
 
 
 #setting up parameter matching
-full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,structure,sep="_"))%>% filter(!(Subject %in% c("CAN-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #exclude missing demos and atypical subjs
+full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,structure,sep="_"))%>% filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #exclude missing demos and atypical subjs
 
 #importing parameter counts
 parameters<-read.csv("Cochlear_BIC_Parameters.csv") %>%select(parameter_link,k)
@@ -292,37 +294,66 @@ nh_0.0 <- 6
 ci_0.0 <- 6   
 
 # Total in each group
-nh_total <- 24  
-ci_total <- 17  
+nh_foods_total <- 24  
+ci_foods_total <- 17  
 
 #2 proportion z test - 0.9
-prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_total, ci_total), correct = FALSE)
+prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_foods_total, ci_foods_total), correct = FALSE)
 #sig more for CI
 
 #2 proportion z test - 0.0
 prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_total, ci_total), correct = FALSE)
 #ns
 
+#comparing multimodal alphas across domains, collapsing across groups
+domain_mm_test=best_blended_delta_bic_analysis 
+domain_mm_table <- table(domain_mm_test$domain, domain_mm_test$param1)
 
-#for models
-#looking at pswitch
-model_test =best_blended_delta_bic_analysis%>%filter(model_type=="pswitch")
-model_table <- table(model_test$Group, model_test$model_type)
-
-# Number with alpha = 0.9
-nh_phon <- 12    
-ci_phon <- 2   
+# Number with mm alpha < 0.5
+animals_switch_alpha <- 3    
+foods_switch_alpha <- 19  
 
 # Total in each group
-nh_total <- 24  
-ci_total <- 17  
+animals_total <- 58  
+foods_total <- 41  
 
 # Run 2 proportion z test
-prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_total, ci_total), correct = FALSE)
+prop.test(x = c(animals_switch_alpha,foods_switch_alpha), n = c(animals_total, foods_total), correct = FALSE)
+#NHs marg more likely to have a lower alpha
 
+
+#for models
+#looking at pswitch in foods
+model_test=best_blended_delta_bic_analysis %>%
+  filter(domain == "foods")
+model_table <- table(model_test$Group, model_test$model_type)
+
+# Number with pswitch
+nh_pswitch <- 8    
+ci_pswitch <- 1   
+
+# Total in each group
+nh_foods_total <- 24  
+ci_foods_total <- 17  
+
+# Run 2 proportion z test
+prop.test(x = c(nh_pswitch,ci_pswitch), n = c(nh_foods_total, ci_foods_total), correct = FALSE)
 #NHs sig more likely to have pswitch model
 
+#do groups differ in use of phon models, collapsing across domains
+group_model_table <- table(best_blended_delta_bic_analysis$Group, best_blended_delta_bic_analysis$model_type)
 
+# Number with phon models
+nh_phon_models <-37    
+ci_phon_models <-21    
+
+# Total in each group
+nh_model_total <- 53 
+ci_model_total <- 46  
+
+# Run 2 proportion z test
+prop.test(x = c(nh_phon_models,ci_phon_models), n = c(nh_model_total, ci_model_total), correct = FALSE)
+#NHs sig more likely to have phon models
 
 
 ```
@@ -372,7 +403,7 @@ switch_alpha_plot<-best_blended_delta_bic_analysis%>%mutate(param1=as.character(
        title = "Multimodal Switch Alpha") +
   theme_few()+scale_fill_custom+
   theme(plot.title = element_text(hjust = 0.5))
-  
+
 #best model
 model_plot<-best_blended_delta_bic_analysis%>%
     group_by(Group,domain,model_type) %>%
@@ -400,20 +431,32 @@ lexical_analysis_data <-full_indv_data %>% select(Subject, Group,Phonological_Si
   rename("phonological" = "Phonological_Similarity_mean",
          "frequency" = "Frequency_Value_mean")%>%
   pivot_longer(names_to = "cue", cols=c(phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI"))) %>% unique()%>%
-  filter(!(Subject %in% c("CAN-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #removing participants within missing demo info
+  filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #removing participants within missing demo info
 
 #setting up the semantic df
 #using each participants best semantic structure
 lexical_analysis_data_semantic<-best_blended_delta_bic_analysis%>%
   left_join(full_indv_data%>%mutate(alpha=as.numeric(alpha)) %>%select(Subject,Group,domain,structure,dimension,alpha,Semantic_Similarity_mean)%>%na.omit())%>% mutate(Group = factor(Group, levels = c("NH", "CI")))
 
-
 #Does fluency score differ by Group and domain
 fluency_lm = lm(data = lexical_analysis_data, fluency_score ~ Group*domain)
 summary(fluency_lm)
 car::Anova(fluency_lm)
 
-#SEMANTIC ANALYSES 
+#Basic domain differences
+domain_semantic<- lm(Semantic_Similarity_mean ~ domain, data = lexical_analysis_data_semantic)
+summary(domain_semantic)
+#sig higher avg semantic similarity for foods
+
+domain_phon<- lm(value ~ domain, data = lexical_analysis_data%>%filter(cue=="phonological"))
+summary(domain_phon)
+#sig higher avg phon similarity for foods
+
+domain_freq<- lm(value ~ domain, data = lexical_analysis_data%>%filter(cue=="frequency"))
+summary(domain_freq)
+#sig higher avg freq for foods
+
+#MAIN SEMANTIC ANALYSES 
 #removed alpha as a factor - not enough data across levels
 #Using everyones best-fit structure, does avg semantic similarity differ by Group x domain, fluency score as covariate
 semantic_model<- lm(Semantic_Similarity_mean ~ Group * domain * N, data = lexical_analysis_data_semantic)
@@ -558,8 +601,6 @@ best_clusters <- full_indv_data %>%mutate(Group = factor(Group, levels = c("NH",
 domain_cluster_size_lm = lm(data = best_clusters, Cluster_Size_mean ~ Group * domain * fluency_score)
 summary(domain_cluster_size_lm)
 
-#marginal effect of domain and marg intx of domain x fluency score
-
 #number of switches
 domain_switch_numb_lm = lm(data = best_clusters, Number_of_Switches ~Group * domain * fluency_score)
 summary(domain_switch_numb_lm)
@@ -657,7 +698,7 @@ emmeans(switch_results$model[[2]],pairwise~Group*Switch*fluency_score,simple="Sw
 
 print("Frequency")
 switch_results$model[[3]] %>% summary()
-emmeans(switch_results$model[[3]],pairwise~Group*domain*Switch,simple="Switch",pbkrtest.limit = 35657)
+emmeans(switch_results$model[[3]],pairwise~domain*Group,pbkrtest.limit = 35657)
 
 #semantic <-sig effect of switch, sig interaction between switch and domain (higher similarity for foods on switch trials)
 #phonology<-sig interaction between group x domain, sig intx between domain x switch, sig intx group x domain x switch (similarity higher for CIs on foods switch trials), 
@@ -678,15 +719,16 @@ plots_switch<-switch_results %>%
     emmip_plot = map(model, ~ 
       emmip(.x, Group ~ Switch | domain,  
             cov.reduce = range, CI = TRUE) +
-      labs(title = "", x = "cluster vs. switch", y = paste("Estimated", unique(cue))) +facet_wrap(~domain) 
+      labs(title = "", x = "switch designation", y = paste("Estimated", unique(cue))) +facet_wrap(~domain) 
       +scale_colour_paletteer_d("nationalparkcolors::CraterLake")  +
       scale_fill_paletteer_d("nationalparkcolors::CraterLake") +
       theme_few() + 
       theme(legend.position = "top")))
 
-plots_switch$emmip_plot[[1]]
-plots_switch$emmip_plot[[2]]
-plots_switch$emmip_plot[[3]]
+plots_switch$emmip_plot[[1]]+
+plots_switch$emmip_plot[[2]]+
+plots_switch$emmip_plot[[3]]+
+plot_layout(ncol = 1)
 
 #looking at intx of group x switch x fluency score for phonological similarity
 #emmip plot
@@ -750,7 +792,6 @@ switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values
 
 sem_phon_model<-lm(data = switches_recoded_corr, semantic ~ phonological*Group*domain)
 summary(sem_phon_model)
-car::Anova(sem_phon_model)
 #sig intx of phonology x domain
 ```
 
@@ -770,31 +811,108 @@ switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values
 
 ## Looking at Word Stems
 
-
 ```{r}
+#First pass each raw fluency txt file to phonemes.py
 
-#note these are raw entries
-#read in phoneme data
+#Upload data
+animals_phonemes<-read.csv("animals_phoneme_pairs.csv") %>%mutate(domain="animals")
+foods_phonemes<-read.csv("foods_phoneme_pairs.csv")%>%mutate(domain="foods")
+phonemes<-rbind(animals_phonemes,foods_phonemes)%>% rename(Subject="ID") %>%left_join(participant_groupings)%>%filter(!(Subject %in% c("CAN-667","SFZ-149","SOA-317","CDH-754","SGO-159")))%>%filter(Word1 != Word2) #filter out atypical subjects and consecutive repeats
 
-animals_phonemes<-read.csv("../animals_phonemes_with_stems.csv") %>%rename("Subject"="ID") %>%mutate(domain="animals")
-foods_phonemes<-read.csv("../foods_phonemes_with_stems.csv") %>%rename("Subject"="ID")%>%mutate(domain="foods")
-phonemes<- rbind(animals_phonemes,foods_phonemes) %>% left_join(participant_groupings) %>%left_join(just_fluency)
+#overall
+phoneme_all <- phonemes %>%
+  summarize(
+    count_cont = sum(Shared_Cont_Phonemes > 2, na.rm = TRUE),
+    total = n(),
+    proportion_stems = count_cont / total,
+    avg_shared_length = mean(Shared_Cont_Phonemes, na.rm = TRUE)) %>%
+  ungroup()
+phoneme_all 
 
-#Looking at words with 4 shared continuous phonemes
-phonemes_stem <- phonemes %>%
-  group_by(Group, domain) %>%
-  summarise(
-    proportion_4plus = sum(Shared_Cont_Phonemes > 3, na.rm = TRUE) / n(),
-    avg_shared_cont = mean(Shared_Cont_Phonemes, na.rm = TRUE),
-    .groups = "drop")
-phonemes_stem
+#by domain
+phoneme_domain <- phonemes %>%
+  group_by(domain) %>%
+  summarize(
+    count_cont = sum(Shared_Cont_Phonemes > 2, na.rm = TRUE),
+    total = n(),
+    proportion_stems = count_cont / total,
+    avg_shared_length = mean(Shared_Cont_Phonemes, na.rm = TRUE)) %>%
+  ungroup()
+phoneme_domain 
 
-#put into wide format, look at individual pairs?
-#some kind of chart reflecting proportion? also need to do proportion testing probs
-#think about way to break out into clusters vs switches, dealing w/ replacements, removed repetitions, etc
+#by indv
+phoneme_indv <- phonemes %>%
+  group_by(Subject,Group,domain) %>%
+  summarize(
+    count_cont = sum(Shared_Cont_Phonemes > 2, na.rm = TRUE),
+    total = n(),
+    proportion_stems = count_cont / total,
+    avg_shared_length = mean(Shared_Cont_Phonemes, na.rm = TRUE)) %>%
+  ungroup()
+
+#when looking at phon sim this way, are there group x domain differences in consec shared phoneme length
+phoneme_model<-lmer(data = phonemes, Shared_Cont_Phonemes ~ Group*domain + (1|Subject))
+summary(phoneme_model)
+#large ME for domain but no group effect - but we aren't separating out clusters/switches
+
+#what about when you remove shared stems
+phoneme_model_nostems<-lmer(data = phonemes %>%filter(Shared_Cont_Phonemes<4), Shared_Cont_Phonemes ~ Group*domain+(1|Subject))
+summary(phoneme_model_nostems)
+#didn't make a difference
+
+ggplot(data=phoneme_indv,aes(y=avg_shared_length, x = total, group = Group, color = Group)) + facet_wrap(~domain)+
+  theme_few() + geom_point()+
+  geom_smooth(method = "lm", se = TRUE,size=1) +
+  theme(legend.position="top",
+    aspect.ratio = 1,  
+    axis.text.x = element_text( hjust = 1, face = "bold"))+scale_colour_paletteer_d("Manu::Kereru")+labs(x = "fluency score", y = "avg shared consecutive phonemes")
+
 ```
 
+### Demographics
+```{r}
+library(tableone)
+demos<-read.csv("../data/demographics.csv")
 
+demos_clean<-demos %>% select(ID,Group,Gender,NIH_Race,CAYRS2,Eti,FitMOS,UseYRS2) %>%filter(!(ID %in% c("754", "159")))%>%
+  rename(
+  Race = NIH_Race,
+  Age = CAYRS2,
+  Etiology = Eti,
+  `Age of Implantation (in Months)` = FitMOS,
+  `Length of Use` = UseYRS2)
+
+demos_NH<-demos_clean%>%filter(Group=="NH") %>% select(ID,Group,Gender,Age,Race)%>%mutate(
+    Etiology = NA_character_,
+    `Age of Implantation (in Months)` = NA_real_,
+    `Length of Use` = NA_real_)
+demos_CI<-demos_clean%>%filter(Group=="CI")
+
+demos_combined<-rbind(demos_NH,demos_CI)%>%rename(Subject="ID")
+
+#check counts
+subjects_demos <- unique(demos_combined$Subject)
+subjects_bic <-unique(substring(best_blended_delta_bic$Subject, 5))
+# Subjects in model df but not in demos
+missing_in_demos <- setdiff(subjects_bic, subjects_demos)
+cat("\nSubjects in best_blended_delta_bic but not in demos_combined:\n")
+print(missing_in_demos)
+
+
+demo_table <- demos_combined %>%
+  select(-Subject) %>%
+  tbl_summary(
+    by = Group,
+    statistic = all_continuous() ~ "{mean} ({sd})",
+    digits = all_continuous() ~ 1,
+    missing = "no",         
+    missing_text = "")
+
+demo_table %>%
+  as_gt() %>%
+  gt::gtsave("demo_table.html")
+demo_table
+```
 
 
 

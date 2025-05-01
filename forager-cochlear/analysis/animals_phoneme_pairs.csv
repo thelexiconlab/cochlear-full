@@ -1,0 +1,1237 @@
+ID,Word1,Word2,Phonemes1,Phonemes2,Shared_Cont_Phonemes
+CAF-657,lizard,cat,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['K', 'AE1', 'T']]",0
+CAF-657,cat,hawk,"[['K', 'AE1', 'T']]","[['HH', 'AO1', 'K']]",1
+CAF-657,hawk,dog,"[['HH', 'AO1', 'K']]","[['D', 'AO1', 'G']]",1
+CAF-657,dog,turtle,"[['D', 'AO1', 'G']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+CAF-657,turtle,jellyfish,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['JH', 'EH1', 'L', 'IY0', 'F', 'IH2', 'SH']]",1
+CAF-657,jellyfish,bear,"[['JH', 'EH1', 'L', 'IY0', 'F', 'IH2', 'SH']]","[['B', 'EH1', 'R']]",1
+CAF-657,bear,ant,"[['B', 'EH1', 'R']]","[['AE1', 'N', 'T']]",0
+CAF-657,ant,mosquito,"[['AE1', 'N', 'T']]","[['M', 'AH0', 'S', 'K', 'IY1', 'T', 'OW0']]",1
+CAF-657,mosquito,frog,"[['M', 'AH0', 'S', 'K', 'IY1', 'T', 'OW0']]","[['F', 'R', 'AA1', 'G']]",0
+CAF-657,frog,tadpole,"[['F', 'R', 'AA1', 'G']]","[['T', 'AE1', 'D', 'P', 'OW2', 'L']]",0
+CAF-657,tadpole,fish,"[['T', 'AE1', 'D', 'P', 'OW2', 'L']]","[['F', 'IH1', 'SH']]",0
+CAF-657,fish,shark,"[['F', 'IH1', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+CAF-657,shark,dolphin,"[['SH', 'AA1', 'R', 'K']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CAF-657,dolphin,gorilla,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+CAF-657,gorilla,monkey,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CAF-657,monkey,fly,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['F', 'L', 'AY1']]",0
+CAF-657,fly,eagle,"[['F', 'L', 'AY1']]","[['IY1', 'G', 'AH0', 'L']]",1
+CAF-657,eagle,toad,"[['IY1', 'G', 'AH0', 'L']]","[['T', 'OW1', 'D']]",0
+CAF-657,toad,rat,"[['T', 'OW1', 'D']]","[['R', 'AE1', 'T']]",1
+CAF-657,rat,mouse,"[['R', 'AE1', 'T']]","[['M', 'AW1', 'S']]",0
+CAF-657,mouse,gerbil,"[['M', 'AW1', 'S']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",0
+CAF-657,gerbil,groundhog,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['G', 'R', 'AW1', 'N', 'D', 'HH', 'AA2', 'G']]",0
+CAF-657,groundhog,fox,"[['G', 'R', 'AW1', 'N', 'D', 'HH', 'AA2', 'G']]","[['F', 'AA1', 'K', 'S']]",1
+CAF-657,fox,raccoon,"[['F', 'AA1', 'K', 'S']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+CAF-657,raccoon,deer,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['D', 'IH1', 'R']]",1
+CAF-657,deer,squirrel,"[['D', 'IH1', 'R']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",0
+CAF-657,squirrel,rabbit,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CAF-657,rabbit,bluejay,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['B', 'L', 'UW1', 'JH', 'EY2']]",1
+CAJ-663,peacock,giraffe,"[['P', 'IY1', 'K', 'AA2', 'K']]","[['JH', 'ER0', 'AE1', 'F']]",0
+CAJ-663,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CAJ-663,elephant,zebra,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CAJ-663,zebra,horse,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['HH', 'AO1', 'R', 'S']]",1
+CAJ-663,horse,cat,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AE1', 'T']]",0
+CAJ-663,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CAJ-663,dog,iguana,"[['D', 'AO1', 'G']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",1
+CAJ-663,iguana,turtle,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['T', 'ER1', 'T', 'AH0', 'L']]",1
+CAJ-663,turtle,dolphin,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CAJ-663,dolphin,penguin,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",2
+CAJ-663,penguin,buffalo,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]",1
+CAJ-663,buffalo,kangaroo,"[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",0
+CAJ-663,kangaroo,goose,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['G', 'UW1', 'S']]",1
+CAJ-663,goose,duck,"[['G', 'UW1', 'S']]","[['D', 'AH1', 'K']]",0
+CAJ-663,duck,swan,"[['D', 'AH1', 'K']]","[['S', 'W', 'AA1', 'N'], ['S', 'W', 'AO1', 'N']]",0
+CAJ-663,swan,monkey,"[['S', 'W', 'AA1', 'N'], ['S', 'W', 'AO1', 'N']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+CAJ-663,monkey,chimp,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['CH', 'IH1', 'M', 'P']]",1
+CAJ-663,chimp,lion,"[['CH', 'IH1', 'M', 'P']]","[['L', 'AY1', 'AH0', 'N']]",0
+CAJ-663,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CAM-666,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CAM-666,dog,iguana,"[['D', 'AO1', 'G']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",1
+CAM-666,iguana,wombat,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['W', 'AA1', 'M', 'B', 'AE2', 'T']]",2
+CAM-666,wombat,goat,"[['W', 'AA1', 'M', 'B', 'AE2', 'T']]","[['G', 'OW1', 'T']]",1
+CAM-666,goat,platypus,"[['G', 'OW1', 'T']]","[['P', 'L', 'AE1', 'T', 'AH0', 'P', 'UH2', 'S']]",1
+CAM-666,platypus,bear,"[['P', 'L', 'AE1', 'T', 'AH0', 'P', 'UH2', 'S']]","[['B', 'EH1', 'R']]",0
+CAM-666,bear,firefly,"[['B', 'EH1', 'R']]","[['F', 'AY1', 'ER0', 'F', 'L', 'AY2']]",0
+CAM-666,firefly,fly,"[['F', 'AY1', 'ER0', 'F', 'L', 'AY2']]","[['F', 'L', 'AY1']]",3
+CAM-666,fly,ant,"[['F', 'L', 'AY1']]","[['AE1', 'N', 'T']]",0
+CAM-666,ant,bird,"[['AE1', 'N', 'T']]","[['B', 'ER1', 'D']]",0
+CAM-666,bird,eagle,"[['B', 'ER1', 'D']]","[['IY1', 'G', 'AH0', 'L']]",0
+CAM-666,eagle,moose,"[['IY1', 'G', 'AH0', 'L']]","[['M', 'UW1', 'S']]",0
+CAM-666,moose,deer,"[['M', 'UW1', 'S']]","[['D', 'IH1', 'R']]",0
+CAM-666,deer,mouse,"[['D', 'IH1', 'R']]","[['M', 'AW1', 'S']]",0
+CAM-666,mouse,duck,"[['M', 'AW1', 'S']]","[['D', 'AH1', 'K']]",0
+CAM-666,duck,crow,"[['D', 'AH1', 'K']]","[['K', 'R', 'OW1']]",1
+CAM-666,crow,frog,"[['K', 'R', 'OW1']]","[['F', 'R', 'AA1', 'G']]",1
+CAM-666,frog,tadpole,"[['F', 'R', 'AA1', 'G']]","[['T', 'AE1', 'D', 'P', 'OW2', 'L']]",0
+CAM-666,tadpole,caterpillar,"[['T', 'AE1', 'D', 'P', 'OW2', 'L']]","[['K', 'AE1', 'T', 'AH0', 'P', 'IH2', 'L', 'ER0'], ['K', 'AE1', 'T', 'ER0', 'P', 'IH2', 'L', 'ER0']]",1
+CAM-666,caterpillar,butterfly,"[['K', 'AE1', 'T', 'AH0', 'P', 'IH2', 'L', 'ER0'], ['K', 'AE1', 'T', 'ER0', 'P', 'IH2', 'L', 'ER0']]","[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]",1
+CAM-666,butterfly,moth,"[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]","[['M', 'AO1', 'TH']]",0
+CAM-666,moth,gorilla,"[['M', 'AO1', 'TH']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",0
+CAM-666,gorilla,monkey,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CAM-666,monkey,horse,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['HH', 'AO1', 'R', 'S']]",0
+CAN-667,cat,lion,"[['K', 'AE1', 'T']]","[['L', 'AY1', 'AH0', 'N']]",0
+CAN-667,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CAN-667,tiger,dog,"[['T', 'AY1', 'G', 'ER0']]","[['D', 'AO1', 'G']]",1
+CAN-667,dog,hamster,"[['D', 'AO1', 'G']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",0
+CAN-667,hamster,gerbil,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",1
+CAN-667,gerbil,sheep,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['SH', 'IY1', 'P']]",1
+CAN-667,sheep,horse,"[['SH', 'IY1', 'P']]","[['HH', 'AO1', 'R', 'S']]",0
+CAN-667,horse,pig,"[['HH', 'AO1', 'R', 'S']]","[['P', 'IH1', 'G']]",0
+CAN-667,pig,goat,"[['P', 'IH1', 'G']]","[['G', 'OW1', 'T']]",1
+CAN-667,goat,pony,"[['G', 'OW1', 'T']]","[['P', 'OW1', 'N', 'IY0']]",1
+CAN-667,pony,peacock,"[['P', 'OW1', 'N', 'IY0']]","[['P', 'IY1', 'K', 'AA2', 'K']]",1
+CAN-667,peacock,bird,"[['P', 'IY1', 'K', 'AA2', 'K']]","[['B', 'ER1', 'D']]",0
+CAN-667,bird,lion,"[['B', 'ER1', 'D']]","[['L', 'AY1', 'AH0', 'N']]",0
+CAN-667,lion,lamb,"[['L', 'AY1', 'AH0', 'N']]","[['L', 'AE1', 'M']]",1
+CAN-667,lamb,elephant,"[['L', 'AE1', 'M']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CAN-667,elephant,chicken,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",2
+CAN-667,chicken,rooster,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['R', 'UW1', 'S', 'T', 'ER0']]",0
+CAP-671,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CAP-671,elephant,lion,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['L', 'AY1', 'AH0', 'N']]",2
+CAP-671,lion,hippo,"[['L', 'AY1', 'AH0', 'N']]","[['HH', 'IH1', 'P', 'OW0']]",0
+CAP-671,hippo,bat,"[['HH', 'IH1', 'P', 'OW0']]","[['B', 'AE1', 'T']]",0
+CAP-671,bat,fish,"[['B', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+CAP-671,fish,shark,"[['F', 'IH1', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+CAP-671,shark,turtle,"[['SH', 'AA1', 'R', 'K']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+CAP-671,turtle,snake,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['S', 'N', 'EY1', 'K']]",0
+CAP-671,snake,dolphin,"[['S', 'N', 'EY1', 'K']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CAP-671,dolphin,whale,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",1
+CAP-671,whale,chicken,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+CAP-671,chicken,cow,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['K', 'AW1']]",1
+CAP-671,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+CAP-671,horse,butterfly,"[['HH', 'AO1', 'R', 'S']]","[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]",0
+CAP-671,butterfly,bear,"[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]","[['B', 'EH1', 'R']]",1
+CAP-671,bear,deer,"[['B', 'EH1', 'R']]","[['D', 'IH1', 'R']]",1
+CAP-671,deer,tiger,"[['D', 'IH1', 'R']]","[['T', 'AY1', 'G', 'ER0']]",0
+CAP-671,tiger,flamingo,"[['T', 'AY1', 'G', 'ER0']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+CAQ-672,alligator,octopus,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['AA1', 'K', 'T', 'AH0', 'P', 'UH2', 'S']]",1
+CAQ-672,octopus,ostrich,"[['AA1', 'K', 'T', 'AH0', 'P', 'UH2', 'S']]","[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]",1
+CAQ-672,ostrich,peacock,"[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]","[['P', 'IY1', 'K', 'AA2', 'K']]",0
+CAQ-672,peacock,bear,"[['P', 'IY1', 'K', 'AA2', 'K']]","[['B', 'EH1', 'R']]",0
+CAQ-672,bear,tiger,"[['B', 'EH1', 'R']]","[['T', 'AY1', 'G', 'ER0']]",0
+CAQ-672,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CAQ-672,lion,gorilla,"[['L', 'AY1', 'AH0', 'N']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+CAQ-672,gorilla,monkey,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CAQ-672,monkey,dog,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['D', 'AO1', 'G']]",0
+CAQ-672,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CAQ-672,cat,hyena,"[['K', 'AE1', 'T']]","[['HH', 'AY0', 'IY1', 'N', 'AH0']]",0
+CAQ-672,hyena,snake,"[['HH', 'AY0', 'IY1', 'N', 'AH0']]","[['S', 'N', 'EY1', 'K']]",1
+CAQ-672,snake,fish,"[['S', 'N', 'EY1', 'K']]","[['F', 'IH1', 'SH']]",0
+CAQ-672,fish,bird,"[['F', 'IH1', 'SH']]","[['B', 'ER1', 'D']]",0
+CAQ-672,bird,rabbit,"[['B', 'ER1', 'D']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CAQ-672,rabbit,dolphin,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CAQ-672,dolphin,squirrel,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+CAQ-672,squirrel,guinea,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['G', 'IH1', 'N', 'IY0']]",0
+CAQ-672,guinea,mouse,"[['G', 'IH1', 'N', 'IY0']]","[['M', 'AW1', 'S']]",0
+CAQ-672,mouse,lizard,"[['M', 'AW1', 'S']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+CAQ-672,lizard,iguana,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",0
+CAQ-672,iguana,crocodile,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CAR-673,elephant,giraffe,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+CAR-673,giraffe,tiger,"[['JH', 'ER0', 'AE1', 'F']]","[['T', 'AY1', 'G', 'ER0']]",1
+CAR-673,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CAR-673,lion,cheetah,"[['L', 'AY1', 'AH0', 'N']]","[['CH', 'IY1', 'T', 'AH0']]",1
+CAR-673,cheetah,dog,"[['CH', 'IY1', 'T', 'AH0']]","[['D', 'AO1', 'G']]",0
+CAR-673,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CAR-673,cat,mouse,"[['K', 'AE1', 'T']]","[['M', 'AW1', 'S']]",0
+CAR-673,mouse,rat,"[['M', 'AW1', 'S']]","[['R', 'AE1', 'T']]",0
+CAR-673,rat,ostrich,"[['R', 'AE1', 'T']]","[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]",1
+CAR-673,ostrich,parakeet,"[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]","[['P', 'EH1', 'R', 'AH0', 'K', 'IY2', 'T']]",1
+CAR-673,parakeet,fish,"[['P', 'EH1', 'R', 'AH0', 'K', 'IY2', 'T']]","[['F', 'IH1', 'SH']]",0
+CAR-673,fish,gerbil,"[['F', 'IH1', 'SH']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",1
+CAR-673,gerbil,hamster,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CAR-673,hamster,guinea,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['G', 'IH1', 'N', 'IY0']]",0
+CAR-673,guinea,capybara,"[['G', 'IH1', 'N', 'IY0']]","[['K', 'AE1', 'P', 'W', 'AY1', 'B', 'AA1', 'R', 'AH0']]",0
+CAR-673,capybara,zebra,"[['K', 'AE1', 'P', 'W', 'AY1', 'B', 'AA1', 'R', 'AH0']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",2
+CAR-673,zebra,horse,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['HH', 'AO1', 'R', 'S']]",1
+CAR-673,horse,tiger,"[['HH', 'AO1', 'R', 'S']]","[['T', 'AY1', 'G', 'ER0']]",0
+CAR-673,tiger,emu,"[['T', 'AY1', 'G', 'ER0']]","[['IY1', 'M', 'Y', 'UW2']]",0
+CAR-673,emu,elk,"[['IY1', 'M', 'Y', 'UW2']]","[['EH1', 'L', 'K']]",0
+CAR-673,elk,deer,"[['EH1', 'L', 'K']]","[['D', 'IH1', 'R']]",0
+CAR-673,deer,antelope,"[['D', 'IH1', 'R']]","[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]",0
+CAS-674,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CAS-674,dog,fish,"[['D', 'AO1', 'G']]","[['F', 'IH1', 'SH']]",0
+CAS-674,fish,shark,"[['F', 'IH1', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+CAS-674,shark,dolphin,"[['SH', 'AA1', 'R', 'K']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CAS-674,dolphin,shrimp,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['SH', 'R', 'IH1', 'M', 'P']]",0
+CAS-674,shrimp,crab,"[['SH', 'R', 'IH1', 'M', 'P']]","[['K', 'R', 'AE1', 'B']]",1
+CAS-674,crab,lobster,"[['K', 'R', 'AE1', 'B']]","[['L', 'AA1', 'B', 'S', 'T', 'ER0']]",1
+CAS-674,lobster,iguana,"[['L', 'AA1', 'B', 'S', 'T', 'ER0']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",1
+CAS-674,iguana,bear,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['B', 'EH1', 'R']]",0
+CAS-674,bear,lion,"[['B', 'EH1', 'R']]","[['L', 'AY1', 'AH0', 'N']]",0
+CAS-674,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CAS-674,tiger,eagle,"[['T', 'AY1', 'G', 'ER0']]","[['IY1', 'G', 'AH0', 'L']]",1
+CAS-674,eagle,falcon,"[['IY1', 'G', 'AH0', 'L']]","[['F', 'AE1', 'L', 'K', 'AH0', 'N']]",1
+CAS-674,falcon,raven,"[['F', 'AE1', 'L', 'K', 'AH0', 'N']]","[['R', 'EY1', 'V', 'AH0', 'N']]",2
+CAS-674,raven,lizard,"[['R', 'EY1', 'V', 'AH0', 'N']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+CAS-674,lizard,gecko,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['G', 'EH1', 'K', 'OW0']]",0
+CAS-674,gecko,alligator,"[['G', 'EH1', 'K', 'OW0']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+CAS-674,alligator,crocodile,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CAS-674,crocodile,mammoth,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['M', 'AE1', 'M', 'AH0', 'TH']]",1
+CAS-674,mammoth,kangaroo,"[['M', 'AE1', 'M', 'AH0', 'TH']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",1
+CAU-667,shark,stingray,"[['SH', 'AA1', 'R', 'K']]","[['S', 'T', 'IH1', 'NG', 'R', 'EY1']]",1
+CAU-667,stingray,angelfish,"[['S', 'T', 'IH1', 'NG', 'R', 'EY1']]","[['EY1', 'N', 'JH', 'AH0', 'L', 'F', 'IH2', 'SH']]",1
+CAU-667,angelfish,clownfish,"[['EY1', 'N', 'JH', 'AH0', 'L', 'F', 'IH2', 'SH']]","[['K', 'L', 'AW1', 'N', 'F', 'IH1', 'SH']]",3
+CAU-667,clownfish,seahorse,"[['K', 'L', 'AW1', 'N', 'F', 'IH1', 'SH']]","[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]",0
+CAU-667,seahorse,seadragon,"[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]","[['S', 'IY1', 'D', 'R', 'AE1', 'G', 'AH0', 'N']]",2
+CAU-667,seadragon,penguin,"[['S', 'IY1', 'D', 'R', 'AE1', 'G', 'AH0', 'N']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",2
+CAU-667,penguin,polar,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['P', 'OW1', 'L', 'ER0']]",1
+CAU-667,polar,dolphin,"[['P', 'OW1', 'L', 'ER0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CAU-667,dolphin,sealion,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['S', 'IY1', 'L', 'AY1', 'AH0', 'N'], ['S', 'IY1', 'L', 'AY1', 'AA2', 'N']]",2
+CAU-667,sealion,seal,"[['S', 'IY1', 'L', 'AY1', 'AH0', 'N'], ['S', 'IY1', 'L', 'AY1', 'AA2', 'N']]","[['S', 'IY1', 'L']]",3
+CAU-667,seal,tiger,"[['S', 'IY1', 'L']]","[['T', 'AY1', 'G', 'ER0']]",0
+CAU-667,tiger,panda,"[['T', 'AY1', 'G', 'ER0']]","[['P', 'AE1', 'N', 'D', 'AH0']]",0
+CAU-667,panda,mule,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['M', 'Y', 'UW1', 'L']]",0
+CAU-667,mule,deer,"[['M', 'Y', 'UW1', 'L']]","[['D', 'IH1', 'R']]",0
+CAU-667,deer,bat,"[['D', 'IH1', 'R']]","[['B', 'AE1', 'T']]",0
+CAU-667,bat,koala,"[['B', 'AE1', 'T']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",0
+CAU-667,koala,bear,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['B', 'EH1', 'R']]",0
+CAU-667,bear,bear,"[['B', 'EH1', 'R']]","[['B', 'EH1', 'R']]",3
+CAU-667,bear,lemur,"[['B', 'EH1', 'R']]","[['L', 'IY1', 'M', 'ER0']]",0
+CAU-667,lemur,ringtailed,"[['L', 'IY1', 'M', 'ER0']]","[['R', 'IH1', 'NG', 'T', 'EY1', 'L', 'D']]",1
+CAU-667,ringtailed,lemur,"[['R', 'IH1', 'NG', 'T', 'EY1', 'L', 'D']]","[['L', 'IY1', 'M', 'ER0']]",1
+CAU-667,lemur,lion,"[['L', 'IY1', 'M', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CAU-667,lion,elephant,"[['L', 'AY1', 'AH0', 'N']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",2
+CAU-667,elephant,kangaroo,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",0
+CAU-667,kangaroo,wallaby,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['W', 'AA1', 'L', 'AH0', 'B', 'IY0']]",0
+CAU-667,wallaby,emu,"[['W', 'AA1', 'L', 'AH0', 'B', 'IY0']]","[['IY1', 'M', 'Y', 'UW2']]",1
+CAU-667,emu,ostrich,"[['IY1', 'M', 'Y', 'UW2']]","[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]",0
+CAU-667,ostrich,rhino,"[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]","[['R', 'AY1', 'N', 'OW2']]",1
+CAU-667,rhino,hippo,"[['R', 'AY1', 'N', 'OW2']]","[['HH', 'IH1', 'P', 'OW0']]",1
+CAU-667,hippo,stork,"[['HH', 'IH1', 'P', 'OW0']]","[['S', 'T', 'AO1', 'R', 'K']]",0
+CAU-667,stork,guinea,"[['S', 'T', 'AO1', 'R', 'K']]","[['G', 'IH1', 'N', 'IY0']]",0
+CAU-667,guinea,fowl,"[['G', 'IH1', 'N', 'IY0']]","[['F', 'AW1', 'L']]",0
+CAU-667,fowl,zebra,"[['F', 'AW1', 'L']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+CAU-667,zebra,kudu,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['K', 'UW1', 'D', 'UW1'], ['K', 'UW1', 'D', 'AH0']]",0
+CAU-667,kudu,cow,"[['K', 'UW1', 'D', 'UW1'], ['K', 'UW1', 'D', 'AH0']]","[['K', 'AW1']]",1
+CAU-667,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+CAU-667,horse,pig,"[['HH', 'AO1', 'R', 'S']]","[['P', 'IH1', 'G']]",0
+CAU-667,pig,sheep,"[['P', 'IH1', 'G']]","[['SH', 'IY1', 'P']]",1
+CAU-667,sheep,donkey,"[['SH', 'IY1', 'P']]","[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]",1
+CAU-667,donkey,ox,"[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]","[['AA1', 'K', 'S']]",1
+CAV-678,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CAV-678,cat,bird,"[['K', 'AE1', 'T']]","[['B', 'ER1', 'D']]",0
+CAV-678,bird,elephant,"[['B', 'ER1', 'D']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",0
+CAV-678,elephant,kangaroo,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",0
+CAV-678,kangaroo,cheetah,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['CH', 'IY1', 'T', 'AH0']]",0
+CAV-678,cheetah,lion,"[['CH', 'IY1', 'T', 'AH0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CAV-678,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CAV-678,tiger,bear,"[['T', 'AY1', 'G', 'ER0']]","[['B', 'EH1', 'R']]",0
+CAV-678,bear,iguana,"[['B', 'EH1', 'R']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",0
+CAV-678,iguana,kangaroo,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",1
+CAV-678,kangaroo,pelican,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]",1
+CAV-678,pelican,penguin,"[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",2
+CAV-678,penguin,polar,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['P', 'OW1', 'L', 'ER0']]",1
+CAV-678,polar,grizzly,"[['P', 'OW1', 'L', 'ER0']]","[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]",1
+CAV-678,grizzly,moose,"[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]","[['M', 'UW1', 'S']]",0
+CAV-678,moose,turtle,"[['M', 'UW1', 'S']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+CAV-678,turtle,flamingo,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+CAV-678,flamingo,rhino,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['R', 'AY1', 'N', 'OW2']]",1
+CAV-678,rhino,toucan,"[['R', 'AY1', 'N', 'OW2']]","[['T', 'UW1', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'UW1', 'Y', 'UW1', 'K', 'AH0', 'N'], ['T', 'IH0', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'IH0', 'Y', 'UW1', 'K', 'AH0', 'N'], ['T', 'AH0', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'AH0', 'Y', 'UW1', 'K', 'AH0', 'N']]",1
+CAV-678,toucan,parakeet,"[['T', 'UW1', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'UW1', 'Y', 'UW1', 'K', 'AH0', 'N'], ['T', 'IH0', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'IH0', 'Y', 'UW1', 'K', 'AH0', 'N'], ['T', 'AH0', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'AH0', 'Y', 'UW1', 'K', 'AH0', 'N']]","[['P', 'EH1', 'R', 'AH0', 'K', 'IY2', 'T']]",1
+CAV-678,parakeet,alligator,"[['P', 'EH1', 'R', 'AH0', 'K', 'IY2', 'T']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+CAV-678,alligator,crocodile,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CAV-678,crocodile,zebra,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CAV-678,zebra,horse,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['HH', 'AO1', 'R', 'S']]",1
+CAV-678,horse,rooster,"[['HH', 'AO1', 'R', 'S']]","[['R', 'UW1', 'S', 'T', 'ER0']]",1
+CAV-678,rooster,chicken,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+CAV-678,chicken,pony,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['P', 'OW1', 'N', 'IY0']]",1
+CAY-681,penguin,snake,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['S', 'N', 'EY1', 'K']]",1
+CAY-681,snake,elephant,"[['S', 'N', 'EY1', 'K']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CAY-681,elephant,giraffe,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+CAY-681,giraffe,dog,"[['JH', 'ER0', 'AE1', 'F']]","[['D', 'AO1', 'G']]",0
+CAY-681,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CAY-681,cat,gorilla,"[['K', 'AE1', 'T']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",0
+CAY-681,gorilla,chimp,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['CH', 'IH1', 'M', 'P']]",1
+CAY-681,chimp,ape,"[['CH', 'IH1', 'M', 'P']]","[['EY1', 'P']]",1
+CAY-681,ape,insect,"[['EY1', 'P']]","[['IH1', 'N', 'S', 'EH2', 'K', 'T']]",0
+CAY-681,insect,butterfly,"[['IH1', 'N', 'S', 'EH2', 'K', 'T']]","[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]",1
+CAY-681,butterfly,ladybug,"[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]","[['L', 'EY1', 'D', 'IY0', 'B', 'AH2', 'G']]",2
+CAY-681,ladybug,beetle,"[['L', 'EY1', 'D', 'IY0', 'B', 'AH2', 'G']]","[['B', 'IY1', 'T', 'AH0', 'L']]",1
+CAY-681,beetle,beetle,"[['B', 'IY1', 'T', 'AH0', 'L']]","[['B', 'IY1', 'T', 'AH0', 'L']]",5
+CAY-681,beetle,worm,"[['B', 'IY1', 'T', 'AH0', 'L']]","[['W', 'ER1', 'M']]",0
+CAY-681,worm,ant,"[['W', 'ER1', 'M']]","[['AE1', 'N', 'T']]",0
+CAY-681,ant,ant,"[['AE1', 'N', 'T']]","[['AE1', 'N', 'T']]",3
+CAY-681,ant,lizard,"[['AE1', 'N', 'T']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+CAY-681,lizard,anteater,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]",1
+CAY-681,anteater,human,"[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]","[['HH', 'Y', 'UW1', 'M', 'AH0', 'N'], ['Y', 'UW1', 'M', 'AH0', 'N']]",1
+CAY-681,human,robin,"[['HH', 'Y', 'UW1', 'M', 'AH0', 'N'], ['Y', 'UW1', 'M', 'AH0', 'N']]","[['R', 'AA1', 'B', 'AH0', 'N'], ['R', 'AA1', 'B', 'IH0', 'N']]",2
+CAY-681,robin,cardinal,"[['R', 'AA1', 'B', 'AH0', 'N'], ['R', 'AA1', 'B', 'IH0', 'N']]","[['K', 'AA1', 'R', 'D', 'AH0', 'N', 'AH0', 'L'], ['K', 'AA1', 'R', 'D', 'IH0', 'N', 'AH0', 'L']]",2
+CAY-681,cardinal,bluejay,"[['K', 'AA1', 'R', 'D', 'AH0', 'N', 'AH0', 'L'], ['K', 'AA1', 'R', 'D', 'IH0', 'N', 'AH0', 'L']]","[['B', 'L', 'UW1', 'JH', 'EY2']]",1
+CBD-686,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBD-686,tiger,monkey,"[['T', 'AY1', 'G', 'ER0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+CBD-686,monkey,baboon,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['B', 'AH0', 'B', 'UW1', 'N']]",1
+CBD-686,baboon,giraffe,"[['B', 'AH0', 'B', 'UW1', 'N']]","[['JH', 'ER0', 'AE1', 'F']]",0
+CBD-686,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CBD-686,elephant,buffalo,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]",3
+CBD-686,buffalo,polar,"[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]","[['P', 'OW1', 'L', 'ER0']]",1
+CBD-686,polar,bear,"[['P', 'OW1', 'L', 'ER0']]","[['B', 'EH1', 'R']]",0
+CBD-686,bear,grizzly,"[['B', 'EH1', 'R']]","[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]",1
+CBD-686,grizzly,duck,"[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]","[['D', 'AH1', 'K']]",0
+CBD-686,duck,crocodile,"[['D', 'AH1', 'K']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CBD-686,crocodile,alligator,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+CBD-686,alligator,crocodile,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CBD-686,crocodile,girdle,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['G', 'ER1', 'D', 'AH0', 'L']]",1
+CBD-686,girdle,panda,"[['G', 'ER1', 'D', 'AH0', 'L']]","[['P', 'AE1', 'N', 'D', 'AH0']]",2
+CBD-686,panda,sheep,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['SH', 'IY1', 'P']]",1
+CBD-686,sheep,goat,"[['SH', 'IY1', 'P']]","[['G', 'OW1', 'T']]",0
+CBD-686,goat,cow,"[['G', 'OW1', 'T']]","[['K', 'AW1']]",0
+CBD-686,cow,pony,"[['K', 'AW1']]","[['P', 'OW1', 'N', 'IY0']]",0
+CBD-686,pony,horse,"[['P', 'OW1', 'N', 'IY0']]","[['HH', 'AO1', 'R', 'S']]",0
+CBF-691,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CBF-691,cat,fish,"[['K', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+CBF-691,fish,elephant,"[['F', 'IH1', 'SH']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CBF-691,elephant,cheetah,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['CH', 'IY1', 'T', 'AH0']]",1
+CBF-691,cheetah,tiger,"[['CH', 'IY1', 'T', 'AH0']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBF-691,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CBF-691,lion,polar,"[['L', 'AY1', 'AH0', 'N']]","[['P', 'OW1', 'L', 'ER0']]",1
+CBF-691,polar,turtle,"[['P', 'OW1', 'L', 'ER0']]","[['T', 'ER1', 'T', 'AH0', 'L']]",1
+CBF-691,turtle,penguin,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",1
+CBF-691,penguin,giraffe,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['JH', 'ER0', 'AE1', 'F']]",0
+CBF-691,giraffe,hamster,"[['JH', 'ER0', 'AE1', 'F']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CBF-691,hamster,gerbil,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",1
+CBF-691,gerbil,squirrel,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+CBF-691,squirrel,rabbit,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CBF-691,rabbit,coyote,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]",1
+CBF-691,coyote,deer,"[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]","[['D', 'IH1', 'R']]",0
+CBF-691,deer,walrus,"[['D', 'IH1', 'R']]","[['W', 'AO1', 'L', 'R', 'AH0', 'S']]",1
+CBF-691,walrus,eel,"[['W', 'AO1', 'L', 'R', 'AH0', 'S']]","[['IY1', 'L']]",1
+CBH-693,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CBH-693,cat,fish,"[['K', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+CBH-693,fish,jellyfish,"[['F', 'IH1', 'SH']]","[['JH', 'EH1', 'L', 'IY0', 'F', 'IH2', 'SH']]",3
+CBH-693,jellyfish,shark,"[['JH', 'EH1', 'L', 'IY0', 'F', 'IH2', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+CBH-693,shark,kangaroo,"[['SH', 'AA1', 'R', 'K']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",1
+CBH-693,kangaroo,camel,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['K', 'AE1', 'M', 'AH0', 'L']]",2
+CBH-693,camel,alligator,"[['K', 'AE1', 'M', 'AH0', 'L']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+CBH-693,alligator,leopard,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+CBH-693,leopard,penguin,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",1
+CBH-693,penguin,polar,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['P', 'OW1', 'L', 'ER0']]",1
+CBH-693,polar,bear,"[['P', 'OW1', 'L', 'ER0']]","[['B', 'EH1', 'R']]",0
+CBH-693,bear,bear,"[['B', 'EH1', 'R']]","[['B', 'EH1', 'R']]",3
+CBH-693,bear,antelope,"[['B', 'EH1', 'R']]","[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]",0
+CBH-693,antelope,anteater,"[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]","[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]",3
+CBH-693,anteater,lizard,"[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",1
+CBH-693,lizard,flamingo,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+CBH-693,flamingo,bird,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['B', 'ER1', 'D']]",0
+CBH-693,bird,peacock,"[['B', 'ER1', 'D']]","[['P', 'IY1', 'K', 'AA2', 'K']]",0
+CBH-693,peacock,monkey,"[['P', 'IY1', 'K', 'AA2', 'K']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CBH-693,monkey,chimp,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['CH', 'IH1', 'M', 'P']]",1
+CBH-693,chimp,lion,"[['CH', 'IH1', 'M', 'P']]","[['L', 'AY1', 'AH0', 'N']]",0
+CBH-693,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBH-693,tiger,crocodile,"[['T', 'AY1', 'G', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CBJ-697,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBJ-697,tiger,flamingo,"[['T', 'AY1', 'G', 'ER0']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+CBJ-697,flamingo,monkey,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CBJ-697,monkey,parrot,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['P', 'EH1', 'R', 'AH0', 'T']]",1
+CBJ-697,parrot,ferret,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['F', 'EH1', 'R', 'AH0', 'T']]",4
+CBJ-697,ferret,cat,"[['F', 'EH1', 'R', 'AH0', 'T']]","[['K', 'AE1', 'T']]",1
+CBJ-697,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CBJ-697,dog,fish,"[['D', 'AO1', 'G']]","[['F', 'IH1', 'SH']]",0
+CBJ-697,fish,chimp,"[['F', 'IH1', 'SH']]","[['CH', 'IH1', 'M', 'P']]",1
+CBJ-697,chimp,squirrel,"[['CH', 'IH1', 'M', 'P']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",0
+CBJ-697,squirrel,zebra,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CBJ-697,zebra,elephant,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CBJ-697,elephant,jaguar,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",0
+CBJ-697,jaguar,cheetah,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['CH', 'IY1', 'T', 'AH0']]",0
+CBJ-697,cheetah,rhino,"[['CH', 'IY1', 'T', 'AH0']]","[['R', 'AY1', 'N', 'OW2']]",0
+CBJ-697,rhino,panda,"[['R', 'AY1', 'N', 'OW2']]","[['P', 'AE1', 'N', 'D', 'AH0']]",1
+CBJ-697,panda,koala,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",1
+CBJ-697,koala,anteater,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]",0
+CBJ-697,anteater,beaver,"[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]","[['B', 'IY1', 'V', 'ER0']]",1
+CBJ-697,beaver,porcupine,"[['B', 'IY1', 'V', 'ER0']]","[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]",0
+CBJ-697,porcupine,armadillo,"[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]","[['AA2', 'R', 'M', 'AH0', 'D', 'IH1', 'L', 'OW0']]",1
+CBJ-697,armadillo,zebra,"[['AA2', 'R', 'M', 'AH0', 'D', 'IH1', 'L', 'OW0']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CBL-698,chihuahua,terrier,"[['CH', 'AH0', 'W', 'AA1', 'W', 'AA2'], ['CH', 'IY2', 'W', 'AA1', 'W', 'AH0']]","[['T', 'EH1', 'R', 'IY0', 'ER0']]",0
+CBL-698,terrier,cat,"[['T', 'EH1', 'R', 'IY0', 'ER0']]","[['K', 'AE1', 'T']]",1
+CBL-698,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CBL-698,dog,bird,"[['D', 'AO1', 'G']]","[['B', 'ER1', 'D']]",1
+CBL-698,bird,parakeet,"[['B', 'ER1', 'D']]","[['P', 'EH1', 'R', 'AH0', 'K', 'IY2', 'T']]",0
+CBL-698,parakeet,pelican,"[['P', 'EH1', 'R', 'AH0', 'K', 'IY2', 'T']]","[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]",2
+CBL-698,pelican,parrot,"[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]","[['P', 'EH1', 'R', 'AH0', 'T']]",2
+CBL-698,parrot,pelican,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]",2
+CBL-698,pelican,trex,"[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]","[['T', 'R', 'EY1', 'EH1', 'K', 'S']]",1
+CBL-698,trex,koala,"[['T', 'R', 'EY1', 'EH1', 'K', 'S']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",1
+CBL-698,koala,kangaroo,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",1
+CBL-698,kangaroo,giraffe,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['JH', 'ER0', 'AE1', 'F']]",1
+CBL-698,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CBL-698,elephant,tiger,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBL-698,tiger,zebra,"[['T', 'AY1', 'G', 'ER0']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+CBL-698,zebra,lice,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['L', 'AY1', 'S']]",0
+CBL-698,lice,stickbug,"[['L', 'AY1', 'S']]","[['S', 'T', 'IH1', 'K', 'B', 'AH1', 'G']]",1
+CBL-698,stickbug,stinkbug,"[['S', 'T', 'IH1', 'K', 'B', 'AH1', 'G']]","[['S', 'T', 'IH1', 'NG', 'K', 'B', 'AH0', 'G']]",4
+CBL-698,stinkbug,beetle,"[['S', 'T', 'IH1', 'NG', 'K', 'B', 'AH0', 'G']]","[['B', 'IY1', 'T', 'AH0', 'L']]",1
+CBM-702,tiger,dolphin,"[['T', 'AY1', 'G', 'ER0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",0
+CBM-702,dolphin,lion,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['L', 'AY1', 'AH0', 'N']]",2
+CBM-702,lion,penguin,"[['L', 'AY1', 'AH0', 'N']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",2
+CBM-702,penguin,flamingo,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",2
+CBM-702,flamingo,seagull,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['S', 'IY1', 'G', 'AH2', 'L']]",1
+CBM-702,seagull,pigeon,"[['S', 'IY1', 'G', 'AH2', 'L']]","[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]",1
+CBM-702,pigeon,woodpecker,"[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]","[['W', 'UH1', 'D', 'P', 'EH2', 'K', 'ER0']]",1
+CBM-702,woodpecker,iguana,"[['W', 'UH1', 'D', 'P', 'EH2', 'K', 'ER0']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",1
+CBM-702,iguana,snake,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['S', 'N', 'EY1', 'K']]",1
+CBM-702,snake,snail,"[['S', 'N', 'EY1', 'K']]","[['S', 'N', 'EY1', 'L']]",3
+CBM-702,snail,notsnails,"[['S', 'N', 'EY1', 'L']]","[['N', 'AA1', 'T', 'S', 'N', 'EY1', 'L', 'Z']]",4
+CBM-702,notsnails,goldfish,"[['N', 'AA1', 'T', 'S', 'N', 'EY1', 'L', 'Z']]","[['G', 'OW1', 'L', 'D', 'F', 'IH2', 'SH']]",1
+CBM-702,goldfish,clownfish,"[['G', 'OW1', 'L', 'D', 'F', 'IH2', 'SH']]","[['K', 'L', 'AW1', 'N', 'F', 'IH1', 'SH']]",3
+CBM-702,clownfish,dog,"[['K', 'L', 'AW1', 'N', 'F', 'IH1', 'SH']]","[['D', 'AO1', 'G']]",0
+CBM-702,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CBM-702,cat,gerbil,"[['K', 'AE1', 'T']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",0
+CBM-702,gerbil,snake,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['S', 'N', 'EY1', 'K']]",0
+CBM-702,snake,hamster,"[['S', 'N', 'EY1', 'K']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CBM-702,hamster,rabbit,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CBM-702,rabbit,reptile,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['R', 'EH1', 'P', 'T', 'AY0', 'L']]",1
+CBM-702,reptile,polar,"[['R', 'EH1', 'P', 'T', 'AY0', 'L']]","[['P', 'OW1', 'L', 'ER0']]",1
+CBM-702,polar,grizzly,"[['P', 'OW1', 'L', 'ER0']]","[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]",1
+CBM-702,grizzly,bear,"[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]","[['B', 'EH1', 'R']]",1
+CBM-702,bear,hedgehog,"[['B', 'EH1', 'R']]","[['HH', 'EH1', 'JH', 'HH', 'AA2', 'G']]",1
+CBM-702,hedgehog,porcupine,"[['HH', 'EH1', 'JH', 'HH', 'AA2', 'G']]","[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]",0
+CBM-702,porcupine,dinosaur,"[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]","[['D', 'AY1', 'N', 'AH0', 'S', 'AO2', 'R']]",2
+CBP-707,cow,pig,"[['K', 'AW1']]","[['P', 'IH1', 'G']]",0
+CBP-707,pig,dog,"[['P', 'IH1', 'G']]","[['D', 'AO1', 'G']]",1
+CBP-707,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CBP-707,cat,fish,"[['K', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+CBP-707,fish,bird,"[['F', 'IH1', 'SH']]","[['B', 'ER1', 'D']]",0
+CBP-707,bird,horse,"[['B', 'ER1', 'D']]","[['HH', 'AO1', 'R', 'S']]",0
+CBP-707,horse,elephant,"[['HH', 'AO1', 'R', 'S']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",0
+CBP-707,elephant,tiger,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBP-707,tiger,cheetah,"[['T', 'AY1', 'G', 'ER0']]","[['CH', 'IY1', 'T', 'AH0']]",1
+CBP-707,cheetah,penguin,"[['CH', 'IY1', 'T', 'AH0']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",1
+CBP-707,penguin,fish,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['F', 'IH1', 'SH']]",0
+CBP-707,fish,shark,"[['F', 'IH1', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+CBP-707,shark,dolphin,"[['SH', 'AA1', 'R', 'K']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CBP-707,dolphin,whale,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",1
+CBP-707,whale,ant,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['AE1', 'N', 'T']]",0
+CBP-707,ant,centipede,"[['AE1', 'N', 'T']]","[['S', 'EH1', 'N', 'T', 'IH0', 'P', 'IY2', 'D']]",2
+CBP-707,centipede,millipede,"[['S', 'EH1', 'N', 'T', 'IH0', 'P', 'IY2', 'D']]","[['M', 'IH1', 'L', 'IY0', 'P', 'IY1', 'IY1', 'D']]",2
+CBP-707,millipede,lizard,"[['M', 'IH1', 'L', 'IY0', 'P', 'IY1', 'IY1', 'D']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",1
+CBP-707,lizard,iguana,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",0
+CBP-707,iguana,snake,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['S', 'N', 'EY1', 'K']]",1
+CBP-707,snake,mouse,"[['S', 'N', 'EY1', 'K']]","[['M', 'AW1', 'S']]",1
+CBP-707,mouse,rat,"[['M', 'AW1', 'S']]","[['R', 'AE1', 'T']]",0
+CBP-707,rat,parrot,"[['R', 'AE1', 'T']]","[['P', 'EH1', 'R', 'AH0', 'T']]",1
+CBP-707,parrot,worm,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['W', 'ER1', 'M']]",0
+CBP-707,worm,elephant,"[['W', 'ER1', 'M']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",0
+CBP-707,elephant,monkey,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CBP-707,monkey,gorilla,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+CBS-711,bear,tiger,"[['B', 'EH1', 'R']]","[['T', 'AY1', 'G', 'ER0']]",0
+CBS-711,tiger,rabbit,"[['T', 'AY1', 'G', 'ER0']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CBS-711,rabbit,hamster,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CBS-711,hamster,gerbil,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",1
+CBS-711,gerbil,bird,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['B', 'ER1', 'D']]",1
+CBS-711,bird,tiger,"[['B', 'ER1', 'D']]","[['T', 'AY1', 'G', 'ER0']]",1
+CBS-711,tiger,dolphin,"[['T', 'AY1', 'G', 'ER0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",0
+CBS-711,dolphin,seal,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['S', 'IY1', 'L']]",1
+CBS-711,seal,horse,"[['S', 'IY1', 'L']]","[['HH', 'AO1', 'R', 'S']]",1
+CBS-711,horse,kangaroo,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",0
+CBS-711,kangaroo,cheetah,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['CH', 'IY1', 'T', 'AH0']]",0
+CBS-711,cheetah,zebra,"[['CH', 'IY1', 'T', 'AH0']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CBS-711,zebra,ostrich,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]",1
+CBS-711,ostrich,rhino,"[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]","[['R', 'AY1', 'N', 'OW2']]",1
+CBS-711,rhino,hippo,"[['R', 'AY1', 'N', 'OW2']]","[['HH', 'IH1', 'P', 'OW0']]",1
+CBS-711,hippo,whale,"[['HH', 'IH1', 'P', 'OW0']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",0
+CBS-711,whale,jaguar,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",1
+CBS-711,jaguar,dog,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['D', 'AO1', 'G']]",1
+CBS-711,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CBS-711,cat,monkey,"[['K', 'AE1', 'T']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CBS-711,monkey,alligator,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+CBS-711,alligator,crocodile,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+CBS-711,crocodile,toucan,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['T', 'UW1', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'UW1', 'Y', 'UW1', 'K', 'AH0', 'N'], ['T', 'IH0', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'IH0', 'Y', 'UW1', 'K', 'AH0', 'N'], ['T', 'AH0', 'Y', 'UW1', 'K', 'AE1', 'N'], ['T', 'AH0', 'Y', 'UW1', 'K', 'AH0', 'N']]",1
+CBW-715,horse,puppy,"[['HH', 'AO1', 'R', 'S']]","[['P', 'AH1', 'P', 'IY0']]",0
+CBW-715,puppy,dog,"[['P', 'AH1', 'P', 'IY0']]","[['D', 'AO1', 'G']]",0
+CBW-715,dog,pig,"[['D', 'AO1', 'G']]","[['P', 'IH1', 'G']]",1
+CBW-715,pig,donkey,"[['P', 'IH1', 'G']]","[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]",0
+CBW-715,donkey,mule,"[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]","[['M', 'Y', 'UW1', 'L']]",0
+CBW-715,mule,goose,"[['M', 'Y', 'UW1', 'L']]","[['G', 'UW1', 'S']]",1
+CBW-715,goose,duck,"[['G', 'UW1', 'S']]","[['D', 'AH1', 'K']]",0
+CBW-715,duck,fish,"[['D', 'AH1', 'K']]","[['F', 'IH1', 'SH']]",0
+CBW-715,fish,cheetah,"[['F', 'IH1', 'SH']]","[['CH', 'IY1', 'T', 'AH0']]",0
+CBW-715,cheetah,lion,"[['CH', 'IY1', 'T', 'AH0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CBW-715,lion,leopard,"[['L', 'AY1', 'AH0', 'N']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+CBW-715,leopard,jaguar,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",0
+CBW-715,jaguar,monkey,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+CBW-715,monkey,gorilla,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+CBW-715,gorilla,ape,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['EY1', 'P']]",0
+CBW-715,ape,snake,"[['EY1', 'P']]","[['S', 'N', 'EY1', 'K']]",1
+CBW-715,snake,bee,"[['S', 'N', 'EY1', 'K']]","[['B', 'IY1']]",0
+CCB-720,zebra,tiger,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['T', 'AY1', 'G', 'ER0']]",0
+CCB-720,tiger,lizard,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",1
+CCB-720,lizard,snake,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['S', 'N', 'EY1', 'K']]",0
+CCB-720,snake,koala,"[['S', 'N', 'EY1', 'K']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",1
+CCB-720,koala,shark,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['SH', 'AA1', 'R', 'K']]",1
+CCB-720,shark,fish,"[['SH', 'AA1', 'R', 'K']]","[['F', 'IH1', 'SH']]",1
+CCB-720,fish,rainbow,"[['F', 'IH1', 'SH']]","[['R', 'EY1', 'N', 'B', 'OW2']]",0
+CCB-720,rainbow,bunny,"[['R', 'EY1', 'N', 'B', 'OW2']]","[['B', 'AH1', 'N', 'IY0']]",1
+CCB-720,bunny,dog,"[['B', 'AH1', 'N', 'IY0']]","[['D', 'AO1', 'G']]",0
+CCB-720,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CCB-720,cat,hamster,"[['K', 'AE1', 'T']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CCB-720,hamster,gopher,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['G', 'OW1', 'F', 'ER0']]",1
+CCB-720,gopher,leopard,"[['G', 'OW1', 'F', 'ER0']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+CCC-721,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CCC-721,cat,lion,"[['K', 'AE1', 'T']]","[['L', 'AY1', 'AH0', 'N']]",0
+CCC-721,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CCC-721,tiger,zebra,"[['T', 'AY1', 'G', 'ER0']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+CCC-721,zebra,chicken,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CCC-721,chicken,fish,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['F', 'IH1', 'SH']]",1
+CCC-721,fish,giraffe,"[['F', 'IH1', 'SH']]","[['JH', 'ER0', 'AE1', 'F']]",1
+CCC-721,giraffe,wolf,"[['JH', 'ER0', 'AE1', 'F']]","[['W', 'UH1', 'L', 'F']]",1
+CCC-721,wolf,mouse,"[['W', 'UH1', 'L', 'F']]","[['M', 'AW1', 'S']]",0
+CCC-721,mouse,platypus,"[['M', 'AW1', 'S']]","[['P', 'L', 'AE1', 'T', 'AH0', 'P', 'UH2', 'S']]",1
+CCC-721,platypus,beaver,"[['P', 'L', 'AE1', 'T', 'AH0', 'P', 'UH2', 'S']]","[['B', 'IY1', 'V', 'ER0']]",0
+CCC-721,beaver,duck,"[['B', 'IY1', 'V', 'ER0']]","[['D', 'AH1', 'K']]",0
+CCC-721,duck,goose,"[['D', 'AH1', 'K']]","[['G', 'UW1', 'S']]",0
+CCC-721,goose,bird,"[['G', 'UW1', 'S']]","[['B', 'ER1', 'D']]",0
+CCD-722,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CCD-722,cat,horse,"[['K', 'AE1', 'T']]","[['HH', 'AO1', 'R', 'S']]",0
+CCD-722,horse,frog,"[['HH', 'AO1', 'R', 'S']]","[['F', 'R', 'AA1', 'G']]",1
+CCD-722,frog,butterfly,"[['F', 'R', 'AA1', 'G']]","[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]",1
+CCD-722,butterfly,cricket,"[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]","[['K', 'R', 'IH1', 'K', 'AH0', 'T'], ['K', 'R', 'IH1', 'K', 'IH0', 'T']]",2
+CCD-722,cricket,spider,"[['K', 'R', 'IH1', 'K', 'AH0', 'T'], ['K', 'R', 'IH1', 'K', 'IH0', 'T']]","[['S', 'P', 'AY1', 'D', 'ER0']]",0
+CCD-722,spider,giraffe,"[['S', 'P', 'AY1', 'D', 'ER0']]","[['JH', 'ER0', 'AE1', 'F']]",1
+CCD-722,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CCD-722,elephant,rhino,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['R', 'AY1', 'N', 'OW2']]",1
+CCD-722,rhino,hippo,"[['R', 'AY1', 'N', 'OW2']]","[['HH', 'IH1', 'P', 'OW0']]",1
+CCD-722,hippo,eagle,"[['HH', 'IH1', 'P', 'OW0']]","[['IY1', 'G', 'AH0', 'L']]",0
+CCD-722,eagle,tiger,"[['IY1', 'G', 'AH0', 'L']]","[['T', 'AY1', 'G', 'ER0']]",1
+CCD-722,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CCD-722,lion,bear,"[['L', 'AY1', 'AH0', 'N']]","[['B', 'EH1', 'R']]",0
+CCD-722,bear,polar,"[['B', 'EH1', 'R']]","[['P', 'OW1', 'L', 'ER0']]",0
+CCD-722,polar,dolphin,"[['P', 'OW1', 'L', 'ER0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CCD-722,dolphin,penguin,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",2
+CCD-722,penguin,lizard,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+CCD-722,lizard,snake,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['S', 'N', 'EY1', 'K']]",0
+CCD-722,snake,tarantula,"[['S', 'N', 'EY1', 'K']]","[['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'UW0', 'L', 'AH0'], ['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'AH0', 'L', 'AH0']]",1
+CCD-722,tarantula,shark,"[['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'UW0', 'L', 'AH0'], ['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'AH0', 'L', 'AH0']]","[['SH', 'AA1', 'R', 'K']]",1
+CCD-722,shark,lemur,"[['SH', 'AA1', 'R', 'K']]","[['L', 'IY1', 'M', 'ER0']]",0
+CCD-722,lemur,sloth,"[['L', 'IY1', 'M', 'ER0']]","[['S', 'L', 'OW1', 'TH']]",1
+CCD-722,sloth,zebra,"[['S', 'L', 'OW1', 'TH']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+CCD-722,zebra,wildebeest,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['W', 'AY1', 'L', 'D', 'B', 'IY1', 'S', 'T', 'R', 'IY1', 'T'], ['W', 'AY1', 'L', 'D', 'B', 'IY1', 'S', 'EY1', 'N', 'T']]",1
+CCD-722,wildebeest,deer,"[['W', 'AY1', 'L', 'D', 'B', 'IY1', 'S', 'T', 'R', 'IY1', 'T'], ['W', 'AY1', 'L', 'D', 'B', 'IY1', 'S', 'EY1', 'N', 'T']]","[['D', 'IH1', 'R']]",1
+CCD-722,deer,rabbit,"[['D', 'IH1', 'R']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CCD-722,rabbit,kangaroo,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",1
+CCF-724,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CCF-724,elephant,monkey,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CCF-724,monkey,oscar,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['AO1', 'S', 'K', 'ER0']]",1
+CCF-724,oscar,ostrich,"[['AO1', 'S', 'K', 'ER0']]","[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]",2
+CCF-724,ostrich,fish,"[['AO1', 'S', 'T', 'R', 'IH0', 'CH']]","[['F', 'IH1', 'SH']]",1
+CCF-724,fish,shark,"[['F', 'IH1', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+CCF-724,shark,whale,"[['SH', 'AA1', 'R', 'K']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",0
+CCF-724,whale,bird,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['B', 'ER1', 'D']]",0
+CCF-724,bird,hamster,"[['B', 'ER1', 'D']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CCF-724,hamster,rat,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['R', 'AE1', 'T']]",1
+CCF-724,rat,cat,"[['R', 'AE1', 'T']]","[['K', 'AE1', 'T']]",2
+CCF-724,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CCF-724,dog,horse,"[['D', 'AO1', 'G']]","[['HH', 'AO1', 'R', 'S']]",1
+CCF-724,horse,pig,"[['HH', 'AO1', 'R', 'S']]","[['P', 'IH1', 'G']]",0
+CCF-724,pig,cow,"[['P', 'IH1', 'G']]","[['K', 'AW1']]",0
+CCF-724,cow,chicken,"[['K', 'AW1']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+CCF-724,chicken,seal,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['S', 'IY1', 'L']]",0
+CCH-726,giraffe,hippo,"[['JH', 'ER0', 'AE1', 'F']]","[['HH', 'IH1', 'P', 'OW0']]",0
+CCH-726,hippo,elephant,"[['HH', 'IH1', 'P', 'OW0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",0
+CCH-726,elephant,donkey,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]",0
+CCH-726,donkey,horse,"[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]","[['HH', 'AO1', 'R', 'S']]",0
+CCH-726,horse,dog,"[['HH', 'AO1', 'R', 'S']]","[['D', 'AO1', 'G']]",1
+CCH-726,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CCH-726,cat,tarantula,"[['K', 'AE1', 'T']]","[['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'UW0', 'L', 'AH0'], ['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'AH0', 'L', 'AH0']]",1
+CCH-726,tarantula,fish,"[['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'UW0', 'L', 'AH0'], ['T', 'AH0', 'R', 'AE1', 'N', 'CH', 'AH0', 'L', 'AH0']]","[['F', 'IH1', 'SH']]",0
+CCH-726,fish,raccoon,"[['F', 'IH1', 'SH']]","[['R', 'AE0', 'K', 'UW1', 'N']]",0
+CCH-726,raccoon,deer,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['D', 'IH1', 'R']]",1
+CCH-726,deer,frog,"[['D', 'IH1', 'R']]","[['F', 'R', 'AA1', 'G']]",1
+CCH-726,frog,snake,"[['F', 'R', 'AA1', 'G']]","[['S', 'N', 'EY1', 'K']]",0
+CCH-726,snake,parrot,"[['S', 'N', 'EY1', 'K']]","[['P', 'EH1', 'R', 'AH0', 'T']]",0
+CCH-726,parrot,macaw,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['M', 'AH0', 'K', 'AO1']]",1
+CCH-726,macaw,zebra,"[['M', 'AH0', 'K', 'AO1']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CCH-726,zebra,flamingo,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+CCH-726,flamingo,duck,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['D', 'AH1', 'K']]",1
+CCH-726,duck,turtle,"[['D', 'AH1', 'K']]","[['T', 'ER1', 'T', 'AH0', 'L']]",1
+CCH-726,turtle,cheetah,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['CH', 'IY1', 'T', 'AH0']]",2
+CCH-726,cheetah,jaguar,"[['CH', 'IY1', 'T', 'AH0']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",0
+CCH-726,jaguar,panther,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['P', 'AE1', 'N', 'TH', 'ER0']]",1
+CCH-726,panther,lion,"[['P', 'AE1', 'N', 'TH', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CCL-730,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CCL-730,dog,butterfly,"[['D', 'AO1', 'G']]","[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]",0
+CCL-730,butterfly,bee,"[['B', 'AH1', 'T', 'ER0', 'F', 'L', 'AY2']]","[['B', 'IY1']]",1
+CCL-730,bee,bee,"[['B', 'IY1']]","[['B', 'IY1']]",2
+CCL-730,bee,lion,"[['B', 'IY1']]","[['L', 'AY1', 'AH0', 'N']]",0
+CCL-730,lion,zebra,"[['L', 'AY1', 'AH0', 'N']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CCL-730,zebra,tiger,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['T', 'AY1', 'G', 'ER0']]",0
+CCL-730,tiger,elephant,"[['T', 'AY1', 'G', 'ER0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CCL-730,elephant,bear,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['B', 'EH1', 'R']]",1
+CCL-730,bear,kangaroo,"[['B', 'EH1', 'R']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",0
+CCL-730,kangaroo,dolphin,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",0
+CCL-730,dolphin,fish,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['F', 'IH1', 'SH']]",1
+CCL-730,fish,zebra,"[['F', 'IH1', 'SH']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+CCL-730,zebra,fly,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['F', 'L', 'AY1']]",0
+CCL-730,fly,flea,"[['F', 'L', 'AY1']]","[['F', 'L', 'IY1']]",2
+CCL-730,flea,tiger,"[['F', 'L', 'IY1']]","[['T', 'AY1', 'G', 'ER0']]",0
+CCL-730,tiger,squirrel,"[['T', 'AY1', 'G', 'ER0']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+CCL-730,squirrel,raccoon,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+CCL-730,raccoon,possum,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['P', 'AA1', 'S', 'AH0', 'M']]",0
+CCL-730,possum,rat,"[['P', 'AA1', 'S', 'AH0', 'M']]","[['R', 'AE1', 'T']]",0
+CCL-730,rat,mouse,"[['R', 'AE1', 'T']]","[['M', 'AW1', 'S']]",0
+CCL-730,mouse,snake,"[['M', 'AW1', 'S']]","[['S', 'N', 'EY1', 'K']]",1
+CCL-730,snake,bird,"[['S', 'N', 'EY1', 'K']]","[['B', 'ER1', 'D']]",0
+CCX-744,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+CCX-744,tiger,bear,"[['T', 'AY1', 'G', 'ER0']]","[['B', 'EH1', 'R']]",0
+CCX-744,bear,giraffe,"[['B', 'EH1', 'R']]","[['JH', 'ER0', 'AE1', 'F']]",0
+CCX-744,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CCX-744,elephant,dolphin,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",3
+CCX-744,dolphin,whale,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",1
+CCX-744,whale,snake,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['S', 'N', 'EY1', 'K']]",1
+CCX-744,snake,rabbit,"[['S', 'N', 'EY1', 'K']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",0
+CCX-744,rabbit,lizard,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+CCX-744,lizard,spider,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['S', 'P', 'AY1', 'D', 'ER0']]",1
+CCX-744,spider,bat,"[['S', 'P', 'AY1', 'D', 'ER0']]","[['B', 'AE1', 'T']]",0
+CCX-744,bat,raccoon,"[['B', 'AE1', 'T']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+CCX-744,raccoon,fox,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['F', 'AA1', 'K', 'S']]",1
+CCX-744,fox,wolf,"[['F', 'AA1', 'K', 'S']]","[['W', 'UH1', 'L', 'F']]",1
+CCX-744,wolf,meerkat,"[['W', 'UH1', 'L', 'F']]","[['M', 'IY1', 'ER0', 'K', 'AE1', 'T']]",0
+CCX-744,meerkat,deer,"[['M', 'IY1', 'ER0', 'K', 'AE1', 'T']]","[['D', 'IH1', 'R']]",0
+CCX-744,deer,fish,"[['D', 'IH1', 'R']]","[['F', 'IH1', 'SH']]",1
+CDG-753,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CDG-753,lion,zebra,"[['L', 'AY1', 'AH0', 'N']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+CDG-753,zebra,mammoth,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['M', 'AE1', 'M', 'AH0', 'TH']]",1
+CDG-753,mammoth,elephant,"[['M', 'AE1', 'M', 'AH0', 'TH']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CDG-753,elephant,manatee,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['M', 'AE1', 'N', 'AH0', 'T', 'IY2']]",1
+CDG-753,manatee,hippo,"[['M', 'AE1', 'N', 'AH0', 'T', 'IY2']]","[['HH', 'IH1', 'P', 'OW0']]",0
+CDG-753,hippo,giraffe,"[['HH', 'IH1', 'P', 'OW0']]","[['JH', 'ER0', 'AE1', 'F']]",0
+CDG-753,giraffe,panda,"[['JH', 'ER0', 'AE1', 'F']]","[['P', 'AE1', 'N', 'D', 'AH0']]",1
+CDG-753,panda,lemur,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['L', 'IY1', 'M', 'ER0']]",0
+CDG-753,lemur,sloth,"[['L', 'IY1', 'M', 'ER0']]","[['S', 'L', 'OW1', 'TH']]",1
+CDG-753,sloth,fish,"[['S', 'L', 'OW1', 'TH']]","[['F', 'IH1', 'SH']]",0
+CDG-753,fish,eel,"[['F', 'IH1', 'SH']]","[['IY1', 'L']]",0
+CDG-753,eel,barracuda,"[['IY1', 'L']]","[['B', 'EH2', 'R', 'AH0', 'K', 'UW1', 'D', 'AH0']]",0
+CDG-753,barracuda,shark,"[['B', 'EH2', 'R', 'AH0', 'K', 'UW1', 'D', 'AH0']]","[['SH', 'AA1', 'R', 'K']]",1
+CDG-753,shark,dolphin,"[['SH', 'AA1', 'R', 'K']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+CDG-753,dolphin,whale,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",1
+CDG-753,whale,monkey,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+CDG-753,monkey,ape,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['EY1', 'P']]",0
+CDG-753,ape,gorilla,"[['EY1', 'P']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",0
+CDG-753,gorilla,chimp,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['CH', 'IH1', 'M', 'P']]",1
+CDG-753,chimp,eagle,"[['CH', 'IH1', 'M', 'P']]","[['IY1', 'G', 'AH0', 'L']]",0
+CDG-753,eagle,eagle,"[['IY1', 'G', 'AH0', 'L']]","[['IY1', 'G', 'AH0', 'L']]",4
+CDG-753,eagle,hawk,"[['IY1', 'G', 'AH0', 'L']]","[['HH', 'AO1', 'K']]",0
+CDH-754,wolf,bear,"[['W', 'UH1', 'L', 'F']]","[['B', 'EH1', 'R']]",0
+CDH-754,bear,trex,"[['B', 'EH1', 'R']]","[['T', 'R', 'EY1', 'EH1', 'K', 'S']]",1
+CDH-754,trex,dragon,"[['T', 'R', 'EY1', 'EH1', 'K', 'S']]","[['D', 'R', 'AE1', 'G', 'AH0', 'N']]",1
+CDH-754,dragon,pegasus,"[['D', 'R', 'AE1', 'G', 'AH0', 'N']]","[['P', 'EH1', 'G', 'AH0', 'S', 'AH0', 'S']]",2
+CDH-754,pegasus,stegosaurus,"[['P', 'EH1', 'G', 'AH0', 'S', 'AH0', 'S']]","[['S', 'T', 'EH2', 'G', 'AH0', 'S', 'AO1', 'R', 'AH0', 'S']]",4
+CDH-754,stegosaurus,triceratops,"[['S', 'T', 'EH2', 'G', 'AH0', 'S', 'AO1', 'R', 'AH0', 'S']]","[['T', 'R', 'AY2', 'S', 'EH1', 'R', 'AH0', 'T', 'AO2', 'P', 'S']]",2
+CDH-754,triceratops,monster,"[['T', 'R', 'AY2', 'S', 'EH1', 'R', 'AH0', 'T', 'AO2', 'P', 'S']]","[['M', 'AA1', 'N', 'S', 'T', 'ER0']]",1
+CDH-754,monster,turtle,"[['M', 'AA1', 'N', 'S', 'T', 'ER0']]","[['T', 'ER1', 'T', 'AH0', 'L']]",2
+CDH-754,turtle,piranha,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['P', 'IH0', 'R', 'AE1', 'N', 'HH', 'AH0']]",1
+CDH-754,piranha,frog,"[['P', 'IH0', 'R', 'AE1', 'N', 'HH', 'AH0']]","[['F', 'R', 'AA1', 'G']]",1
+CDH-754,frog,turtle,"[['F', 'R', 'AA1', 'G']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+CDH-754,turtle,tortoise,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['T', 'AO1', 'R', 'T', 'AH0', 'S']]",2
+CDH-754,tortoise,meerkat,"[['T', 'AO1', 'R', 'T', 'AH0', 'S']]","[['M', 'IY1', 'ER0', 'K', 'AE1', 'T']]",1
+CDM-759,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+CDM-759,cat,elephant,"[['K', 'AE1', 'T']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CDM-759,elephant,squirrel,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+CDM-759,squirrel,lion,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['L', 'AY1', 'AH0', 'N']]",1
+CDM-759,lion,lioness,"[['L', 'AY1', 'AH0', 'N']]","[['L', 'AY1', 'AH0', 'N', 'EH1', 'S']]",4
+CDM-759,lioness,fish,"[['L', 'AY1', 'AH0', 'N', 'EH1', 'S']]","[['F', 'IH1', 'SH']]",0
+CDM-759,fish,deer,"[['F', 'IH1', 'SH']]","[['D', 'IH1', 'R']]",1
+CDM-759,deer,rabbit,"[['D', 'IH1', 'R']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CDM-759,rabbit,squirrel,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+CDM-759,squirrel,hamster,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+CDM-759,hamster,bird,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['B', 'ER1', 'D']]",1
+CDM-759,bird,cow,"[['B', 'ER1', 'D']]","[['K', 'AW1']]",0
+CDM-759,cow,lizard,"[['K', 'AW1']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+CDM-759,lizard,porcupine,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]",0
+CDM-759,porcupine,koala,"[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",1
+CDM-759,koala,bluejay,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['B', 'L', 'UW1', 'JH', 'EY2']]",1
+CDM-759,bluejay,hippo,"[['B', 'L', 'UW1', 'JH', 'EY2']]","[['HH', 'IH1', 'P', 'OW0']]",0
+CDM-759,hippo,giraffe,"[['HH', 'IH1', 'P', 'OW0']]","[['JH', 'ER0', 'AE1', 'F']]",0
+CDR-764,giraffe,orangutan,"[['JH', 'ER0', 'AE1', 'F']]","[['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AE0', 'N'], ['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AA0', 'N']]",1
+CDR-764,orangutan,monkey,"[['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AE0', 'N'], ['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AA0', 'N']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+CDR-764,monkey,elephant,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+CDR-764,elephant,bird,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['B', 'ER1', 'D']]",0
+CDR-764,bird,eagle,"[['B', 'ER1', 'D']]","[['IY1', 'G', 'AH0', 'L']]",0
+CDR-764,eagle,jaguar,"[['IY1', 'G', 'AH0', 'L']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",1
+CDR-764,jaguar,cheetah,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['CH', 'IY1', 'T', 'AH0']]",0
+CDR-764,cheetah,frog,"[['CH', 'IY1', 'T', 'AH0']]","[['F', 'R', 'AA1', 'G']]",0
+CDR-764,frog,toad,"[['F', 'R', 'AA1', 'G']]","[['T', 'OW1', 'D']]",0
+CDR-764,toad,flamingo,"[['T', 'OW1', 'D']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+CDR-764,flamingo,lion,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CDR-764,lion,mouse,"[['L', 'AY1', 'AH0', 'N']]","[['M', 'AW1', 'S']]",0
+CDR-764,mouse,bat,"[['M', 'AW1', 'S']]","[['B', 'AE1', 'T']]",0
+CDR-764,bat,fish,"[['B', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+CDR-764,fish,ape,"[['F', 'IH1', 'SH']]","[['EY1', 'P']]",0
+CDR-764,ape,chimp,"[['EY1', 'P']]","[['CH', 'IH1', 'M', 'P']]",1
+CDR-764,chimp,rhino,"[['CH', 'IH1', 'M', 'P']]","[['R', 'AY1', 'N', 'OW2']]",0
+CDU-767,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+CDU-767,dog,fish,"[['D', 'AO1', 'G']]","[['F', 'IH1', 'SH']]",0
+CDU-767,fish,tiger,"[['F', 'IH1', 'SH']]","[['T', 'AY1', 'G', 'ER0']]",0
+CDU-767,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+CDU-767,lion,rabbit,"[['L', 'AY1', 'AH0', 'N']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+CDU-767,rabbit,raccoon,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['R', 'AE0', 'K', 'UW1', 'N']]",2
+CDU-767,raccoon,deer,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['D', 'IH1', 'R']]",1
+CDU-767,deer,mammoth,"[['D', 'IH1', 'R']]","[['M', 'AE1', 'M', 'AH0', 'TH']]",0
+CDU-767,mammoth,whale,"[['M', 'AE1', 'M', 'AH0', 'TH']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",0
+CDU-767,whale,shark,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['SH', 'AA1', 'R', 'K']]",0
+CDU-767,shark,bird,"[['SH', 'AA1', 'R', 'K']]","[['B', 'ER1', 'D']]",0
+CDU-767,bird,penguin,"[['B', 'ER1', 'D']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",0
+CDU-767,penguin,wolf,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['W', 'UH1', 'L', 'F']]",1
+CDU-767,wolf,badger,"[['W', 'UH1', 'L', 'F']]","[['B', 'AE1', 'JH', 'ER0']]",0
+CDU-767,badger,fish,"[['B', 'AE1', 'JH', 'ER0']]","[['F', 'IH1', 'SH']]",0
+CDU-767,fish,baboon,"[['F', 'IH1', 'SH']]","[['B', 'AH0', 'B', 'UW1', 'N']]",0
+CDU-767,baboon,gorilla,"[['B', 'AH0', 'B', 'UW1', 'N']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+CDU-767,gorilla,ape,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['EY1', 'P']]",0
+SFZ-149,monkey,elephant,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SFZ-149,elephant,giraffe,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SFZ-149,giraffe,bird,"[['JH', 'ER0', 'AE1', 'F']]","[['B', 'ER1', 'D']]",1
+SFZ-149,bird,parrot,"[['B', 'ER1', 'D']]","[['P', 'EH1', 'R', 'AH0', 'T']]",0
+SFZ-149,parrot,pilgrim,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['P', 'IH1', 'L', 'G', 'R', 'AH0', 'M'], ['P', 'IH1', 'L', 'G', 'R', 'IH0', 'M']]",2
+SFZ-149,pilgrim,hippo,"[['P', 'IH1', 'L', 'G', 'R', 'AH0', 'M'], ['P', 'IH1', 'L', 'G', 'R', 'IH0', 'M']]","[['HH', 'IH1', 'P', 'OW0']]",1
+SFZ-149,hippo,eagle,"[['HH', 'IH1', 'P', 'OW0']]","[['IY1', 'G', 'AH0', 'L']]",0
+SFZ-149,eagle,turtle,"[['IY1', 'G', 'AH0', 'L']]","[['T', 'ER1', 'T', 'AH0', 'L']]",2
+SFZ-149,turtle,tiger,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['T', 'AY1', 'G', 'ER0']]",1
+SFZ-149,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SFZ-149,lion,cheetah,"[['L', 'AY1', 'AH0', 'N']]","[['CH', 'IY1', 'T', 'AH0']]",1
+SFZ-149,cheetah,donkey,"[['CH', 'IY1', 'T', 'AH0']]","[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]",1
+SFZ-149,donkey,horse,"[['D', 'AA1', 'NG', 'K', 'IY0'], ['D', 'AO1', 'NG', 'K', 'IY0']]","[['HH', 'AO1', 'R', 'S']]",0
+SFZ-149,horse,fish,"[['HH', 'AO1', 'R', 'S']]","[['F', 'IH1', 'SH']]",0
+SFZ-149,fish,cow,"[['F', 'IH1', 'SH']]","[['K', 'AW1']]",0
+SFZ-149,cow,gorilla,"[['K', 'AW1']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",0
+SFZ-149,gorilla,snake,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['S', 'N', 'EY1', 'K']]",0
+SFZ-149,snake,spider,"[['S', 'N', 'EY1', 'K']]","[['S', 'P', 'AY1', 'D', 'ER0']]",1
+SFZ-149,spider,alligator,"[['S', 'P', 'AY1', 'D', 'ER0']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+SGO-159,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SGO-159,cat,ferret,"[['K', 'AE1', 'T']]","[['F', 'EH1', 'R', 'AH0', 'T']]",1
+SGO-159,ferret,hamster,"[['F', 'EH1', 'R', 'AH0', 'T']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+SGO-159,hamster,mouse,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['M', 'AW1', 'S']]",1
+SGO-159,mouse,bird,"[['M', 'AW1', 'S']]","[['B', 'ER1', 'D']]",0
+SGO-159,bird,parrot,"[['B', 'ER1', 'D']]","[['P', 'EH1', 'R', 'AH0', 'T']]",0
+SGO-159,parrot,elephant,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SGO-159,elephant,giraffe,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SGO-159,giraffe,rhino,"[['JH', 'ER0', 'AE1', 'F']]","[['R', 'AY1', 'N', 'OW2']]",0
+SGO-159,rhino,snake,"[['R', 'AY1', 'N', 'OW2']]","[['S', 'N', 'EY1', 'K']]",1
+SGO-159,snake,gorilla,"[['S', 'N', 'EY1', 'K']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",0
+SGO-159,gorilla,ape,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['EY1', 'P']]",0
+SGO-159,ape,monkey,"[['EY1', 'P']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+SGO-159,monkey,squirrel,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+SGO-159,squirrel,groundhog,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['G', 'R', 'AW1', 'N', 'D', 'HH', 'AA2', 'G']]",0
+SGO-159,groundhog,raccoon,"[['G', 'R', 'AW1', 'N', 'D', 'HH', 'AA2', 'G']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+SGO-159,raccoon,possum,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['P', 'AA1', 'S', 'AH0', 'M']]",0
+SGO-159,possum,deer,"[['P', 'AA1', 'S', 'AH0', 'M']]","[['D', 'IH1', 'R']]",0
+SGO-159,deer,turkey,"[['D', 'IH1', 'R']]","[['T', 'ER1', 'K', 'IY0']]",0
+SGO-159,turkey,coyote,"[['T', 'ER1', 'K', 'IY0']]","[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]",1
+SGO-159,coyote,moose,"[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]","[['M', 'UW1', 'S']]",0
+SGO-159,moose,bug,"[['M', 'UW1', 'S']]","[['B', 'AH1', 'G']]",0
+SGO-159,bug,leopard,"[['B', 'AH1', 'G']]","[['L', 'EH1', 'P', 'ER0', 'D']]",0
+SGO-159,leopard,lion,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['L', 'AY1', 'AH0', 'N']]",1
+SGO-159,lion,leopard,"[['L', 'AY1', 'AH0', 'N']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+SGO-159,leopard,cow,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['K', 'AW1']]",0
+SGO-159,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+SGO-159,horse,pig,"[['HH', 'AO1', 'R', 'S']]","[['P', 'IH1', 'G']]",0
+SGO-159,pig,hog,"[['P', 'IH1', 'G']]","[['HH', 'AA1', 'G']]",1
+SGO-159,hog,turkey,"[['HH', 'AA1', 'G']]","[['T', 'ER1', 'K', 'IY0']]",0
+SGO-159,turkey,rooster,"[['T', 'ER1', 'K', 'IY0']]","[['R', 'UW1', 'S', 'T', 'ER0']]",2
+SGO-159,rooster,chicken,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+SGO-159,chicken,turtle,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['T', 'ER1', 'T', 'AH0', 'L']]",1
+SGO-159,turtle,fish,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['F', 'IH1', 'SH']]",0
+SGO-159,fish,scorpion,"[['F', 'IH1', 'SH']]","[['S', 'K', 'AO1', 'R', 'P', 'IY0', 'AH0', 'N']]",0
+SIU-211,frog,lizard,"[['F', 'R', 'AA1', 'G']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+SIU-211,lizard,snake,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['S', 'N', 'EY1', 'K']]",0
+SIU-211,snake,lion,"[['S', 'N', 'EY1', 'K']]","[['L', 'AY1', 'AH0', 'N']]",1
+SIU-211,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SIU-211,tiger,monkey,"[['T', 'AY1', 'G', 'ER0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+SIU-211,monkey,bird,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['B', 'ER1', 'D']]",0
+SIU-211,bird,lizard,"[['B', 'ER1', 'D']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",2
+SIU-211,lizard,lizard,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",5
+SIU-211,lizard,deer,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['D', 'IH1', 'R']]",1
+SIU-211,deer,bear,"[['D', 'IH1', 'R']]","[['B', 'EH1', 'R']]",1
+SIU-211,bear,squirrel,"[['B', 'EH1', 'R']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",0
+SIU-211,squirrel,chipmunk,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['CH', 'IH1', 'P', 'M', 'AH1', 'NG', 'K']]",1
+SIU-211,chipmunk,skunk,"[['CH', 'IH1', 'P', 'M', 'AH1', 'NG', 'K']]","[['S', 'K', 'AH1', 'NG', 'K']]",3
+SIU-211,skunk,fish,"[['S', 'K', 'AH1', 'NG', 'K']]","[['F', 'IH1', 'SH']]",0
+SIU-211,fish,dog,"[['F', 'IH1', 'SH']]","[['D', 'AO1', 'G']]",0
+SIU-211,dog,waterbug,"[['D', 'AO1', 'G']]","[['W', 'AO1', 'T', 'ER0', 'B', 'AH1', 'G']]",1
+SIU-211,waterbug,spider,"[['W', 'AO1', 'T', 'ER0', 'B', 'AH1', 'G']]","[['S', 'P', 'AY1', 'D', 'ER0']]",1
+SIU-211,spider,fly,"[['S', 'P', 'AY1', 'D', 'ER0']]","[['F', 'L', 'AY1']]",1
+SIU-211,fly,ant,"[['F', 'L', 'AY1']]","[['AE1', 'N', 'T']]",0
+SIU-211,ant,giraffe,"[['AE1', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SIU-211,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SIU-211,elephant,penguin,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",2
+SIU-211,penguin,hippo,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['HH', 'IH1', 'P', 'OW0']]",1
+SIZ-390,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SIZ-390,dog,moose,"[['D', 'AO1', 'G']]","[['M', 'UW1', 'S']]",0
+SIZ-390,moose,cow,"[['M', 'UW1', 'S']]","[['K', 'AW1']]",0
+SIZ-390,cow,kangaroo,"[['K', 'AW1']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",1
+SIZ-390,kangaroo,tiger,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['T', 'AY1', 'G', 'ER0']]",2
+SIZ-390,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SIZ-390,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SIZ-390,tiger,elephant,"[['T', 'AY1', 'G', 'ER0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SIZ-390,elephant,hippo,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['HH', 'IH1', 'P', 'OW0']]",0
+SIZ-390,hippo,rhino,"[['HH', 'IH1', 'P', 'OW0']]","[['R', 'AY1', 'N', 'OW2']]",1
+SIZ-390,rhino,manatee,"[['R', 'AY1', 'N', 'OW2']]","[['M', 'AE1', 'N', 'AH0', 'T', 'IY2']]",1
+SIZ-390,manatee,giraffe,"[['M', 'AE1', 'N', 'AH0', 'T', 'IY2']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SIZ-390,giraffe,whale,"[['JH', 'ER0', 'AE1', 'F']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",0
+SIZ-390,whale,bird,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['B', 'ER1', 'D']]",0
+SIZ-390,bird,chimp,"[['B', 'ER1', 'D']]","[['CH', 'IH1', 'M', 'P']]",0
+SIZ-390,chimp,monkey,"[['CH', 'IH1', 'M', 'P']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SKE-234,lion,cheetah,"[['L', 'AY1', 'AH0', 'N']]","[['CH', 'IY1', 'T', 'AH0']]",1
+SKE-234,cheetah,rhino,"[['CH', 'IY1', 'T', 'AH0']]","[['R', 'AY1', 'N', 'OW2']]",0
+SKE-234,rhino,zebra,"[['R', 'AY1', 'N', 'OW2']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SKE-234,zebra,giraffe,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SKE-234,giraffe,gorilla,"[['JH', 'ER0', 'AE1', 'F']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+SKE-234,gorilla,monkey,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SKE-234,monkey,penguin,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",1
+SKE-234,penguin,polar,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['P', 'OW1', 'L', 'ER0']]",1
+SKE-234,polar,seal,"[['P', 'OW1', 'L', 'ER0']]","[['S', 'IY1', 'L']]",1
+SKE-234,seal,killer,"[['S', 'IY1', 'L']]","[['K', 'IH1', 'L', 'ER0']]",1
+SKE-234,killer,dolphin,"[['K', 'IH1', 'L', 'ER0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+SKE-234,dolphin,shark,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['SH', 'AA1', 'R', 'K']]",1
+SKE-234,shark,wolf,"[['SH', 'AA1', 'R', 'K']]","[['W', 'UH1', 'L', 'F']]",0
+SKE-234,wolf,coyote,"[['W', 'UH1', 'L', 'F']]","[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]",0
+SKE-234,coyote,squirrel,"[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+SKE-234,squirrel,chipmunk,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['CH', 'IH1', 'P', 'M', 'AH1', 'NG', 'K']]",1
+SKE-234,chipmunk,owl,"[['CH', 'IH1', 'P', 'M', 'AH1', 'NG', 'K']]","[['AW1', 'L']]",0
+SKE-234,owl,eagle,"[['AW1', 'L']]","[['IY1', 'G', 'AH0', 'L']]",1
+SKE-234,eagle,dog,"[['IY1', 'G', 'AH0', 'L']]","[['D', 'AO1', 'G']]",1
+SKE-234,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SKE-234,cat,pig,"[['K', 'AE1', 'T']]","[['P', 'IH1', 'G']]",0
+SKE-234,pig,horse,"[['P', 'IH1', 'G']]","[['HH', 'AO1', 'R', 'S']]",0
+SKE-234,horse,cow,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AW1']]",0
+SKE-234,cow,chicken,"[['K', 'AW1']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SKE-234,chicken,rooster,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['R', 'UW1', 'S', 'T', 'ER0']]",0
+SKE-234,rooster,duck,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['D', 'AH1', 'K']]",0
+SKE-234,duck,sheep,"[['D', 'AH1', 'K']]","[['SH', 'IY1', 'P']]",0
+SMK-401,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SMK-401,cat,giraffe,"[['K', 'AE1', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SMK-401,giraffe,monkey,"[['JH', 'ER0', 'AE1', 'F']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+SMK-401,monkey,dolphin,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+SMK-401,dolphin,fish,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['F', 'IH1', 'SH']]",1
+SMK-401,fish,goldfish,"[['F', 'IH1', 'SH']]","[['G', 'OW1', 'L', 'D', 'F', 'IH2', 'SH']]",3
+SMK-401,goldfish,shark,"[['G', 'OW1', 'L', 'D', 'F', 'IH2', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+SMK-401,shark,deer,"[['SH', 'AA1', 'R', 'K']]","[['D', 'IH1', 'R']]",1
+SMK-401,deer,buck,"[['D', 'IH1', 'R']]","[['B', 'AH1', 'K']]",0
+SMK-401,buck,squirrel,"[['B', 'AH1', 'K']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+SMK-401,squirrel,raccoon,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+SMK-401,raccoon,beaver,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['B', 'IY1', 'V', 'ER0']]",0
+SMK-401,beaver,bird,"[['B', 'IY1', 'V', 'ER0']]","[['B', 'ER1', 'D']]",1
+SMK-401,bird,eagle,"[['B', 'ER1', 'D']]","[['IY1', 'G', 'AH0', 'L']]",0
+SMK-401,eagle,tiger,"[['IY1', 'G', 'AH0', 'L']]","[['T', 'AY1', 'G', 'ER0']]",1
+SMK-401,tiger,cheetah,"[['T', 'AY1', 'G', 'ER0']]","[['CH', 'IY1', 'T', 'AH0']]",1
+SMK-401,cheetah,lion,"[['CH', 'IY1', 'T', 'AH0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SMK-401,lion,elephant,"[['L', 'AY1', 'AH0', 'N']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",2
+SMK-401,elephant,skunk,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['S', 'K', 'AH1', 'NG', 'K']]",1
+SMK-401,skunk,moose,"[['S', 'K', 'AH1', 'NG', 'K']]","[['M', 'UW1', 'S']]",1
+SMK-401,moose,goose,"[['M', 'UW1', 'S']]","[['G', 'UW1', 'S']]",2
+SMK-401,goose,goose,"[['G', 'UW1', 'S']]","[['G', 'UW1', 'S']]",3
+SMK-401,goose,turkey,"[['G', 'UW1', 'S']]","[['T', 'ER1', 'K', 'IY0']]",0
+SNI-300,dolphin,killer,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['K', 'IH1', 'L', 'ER0']]",1
+SNI-300,killer,whale,"[['K', 'IH1', 'L', 'ER0']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",1
+SNI-300,whale,shark,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['SH', 'AA1', 'R', 'K']]",0
+SNI-300,shark,seahorse,"[['SH', 'AA1', 'R', 'K']]","[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]",1
+SNI-300,seahorse,penguin,"[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",0
+SNI-300,penguin,giraffe,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SNI-300,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SNI-300,elephant,alligator,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",2
+SNI-300,alligator,lizard,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",1
+SNI-300,lizard,bobcat,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['B', 'AA1', 'B', 'K', 'AE2', 'T']]",0
+SNI-300,bobcat,tiger,"[['B', 'AA1', 'B', 'K', 'AE2', 'T']]","[['T', 'AY1', 'G', 'ER0']]",1
+SNI-300,tiger,leopard,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+SNI-300,leopard,jaguar,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",0
+SNI-300,jaguar,dog,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['D', 'AO1', 'G']]",1
+SNI-300,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SNI-300,cat,parrot,"[['K', 'AE1', 'T']]","[['P', 'EH1', 'R', 'AH0', 'T']]",1
+SNI-300,parrot,horse,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['HH', 'AO1', 'R', 'S']]",1
+SNR-308,panther,tiger,"[['P', 'AE1', 'N', 'TH', 'ER0']]","[['T', 'AY1', 'G', 'ER0']]",1
+SNR-308,tiger,bobcat,"[['T', 'AY1', 'G', 'ER0']]","[['B', 'AA1', 'B', 'K', 'AE2', 'T']]",1
+SNR-308,bobcat,dog,"[['B', 'AA1', 'B', 'K', 'AE2', 'T']]","[['D', 'AO1', 'G']]",0
+SNR-308,dog,shepherd,"[['D', 'AO1', 'G']]","[['SH', 'EH1', 'P', 'ER0', 'D']]",1
+SNR-308,shepherd,pigeon,"[['SH', 'EH1', 'P', 'ER0', 'D']]","[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]",1
+SNR-308,pigeon,falcon,"[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]","[['F', 'AE1', 'L', 'K', 'AH0', 'N']]",2
+SNR-308,falcon,eagle,"[['F', 'AE1', 'L', 'K', 'AH0', 'N']]","[['IY1', 'G', 'AH0', 'L']]",1
+SNR-308,eagle,fox,"[['IY1', 'G', 'AH0', 'L']]","[['F', 'AA1', 'K', 'S']]",0
+SNR-308,fox,wolf,"[['F', 'AA1', 'K', 'S']]","[['W', 'UH1', 'L', 'F']]",1
+SNR-308,wolf,bear,"[['W', 'UH1', 'L', 'F']]","[['B', 'EH1', 'R']]",0
+SNR-308,bear,buffalo,"[['B', 'EH1', 'R']]","[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]",1
+SNR-308,buffalo,koala,"[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",1
+SNR-308,koala,polar,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['P', 'OW1', 'L', 'ER0']]",1
+SNR-308,polar,penguin,"[['P', 'OW1', 'L', 'ER0']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",1
+SNR-308,penguin,kitten,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['K', 'IH1', 'T', 'AH0', 'N']]",2
+SNT-310,penguin,elephant,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",2
+SNT-310,elephant,zebra,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SNT-310,zebra,flamingo,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+SNT-310,flamingo,frog,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['F', 'R', 'AA1', 'G']]",1
+SNT-310,frog,dog,"[['F', 'R', 'AA1', 'G']]","[['D', 'AO1', 'G']]",1
+SNT-310,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SNT-310,cat,bird,"[['K', 'AE1', 'T']]","[['B', 'ER1', 'D']]",0
+SNT-310,bird,pigeon,"[['B', 'ER1', 'D']]","[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]",0
+SNT-310,pigeon,seagull,"[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]","[['S', 'IY1', 'G', 'AH2', 'L']]",1
+SNT-310,seagull,pig,"[['S', 'IY1', 'G', 'AH2', 'L']]","[['P', 'IH1', 'G']]",1
+SNT-310,pig,cow,"[['P', 'IH1', 'G']]","[['K', 'AW1']]",0
+SNT-310,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+SNT-310,horse,armadillo,"[['HH', 'AO1', 'R', 'S']]","[['AA2', 'R', 'M', 'AH0', 'D', 'IH1', 'L', 'OW0']]",1
+SNT-310,armadillo,squirrel,"[['AA2', 'R', 'M', 'AH0', 'D', 'IH1', 'L', 'OW0']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+SNT-310,squirrel,mouse,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['M', 'AW1', 'S']]",1
+SNT-310,mouse,skunk,"[['M', 'AW1', 'S']]","[['S', 'K', 'AH1', 'NG', 'K']]",1
+SNT-310,skunk,raccoon,"[['S', 'K', 'AH1', 'NG', 'K']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+SNT-310,raccoon,fox,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['F', 'AA1', 'K', 'S']]",1
+SNT-310,fox,bear,"[['F', 'AA1', 'K', 'S']]","[['B', 'EH1', 'R']]",0
+SNT-310,bear,lion,"[['B', 'EH1', 'R']]","[['L', 'AY1', 'AH0', 'N']]",0
+SNT-310,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SNT-310,tiger,panther,"[['T', 'AY1', 'G', 'ER0']]","[['P', 'AE1', 'N', 'TH', 'ER0']]",1
+SNT-310,panther,cougar,"[['P', 'AE1', 'N', 'TH', 'ER0']]","[['K', 'UW1', 'G', 'ER0']]",1
+SNT-310,cougar,moose,"[['K', 'UW1', 'G', 'ER0']]","[['M', 'UW1', 'S']]",1
+SNT-310,moose,caribou,"[['M', 'UW1', 'S']]","[['K', 'EH1', 'R', 'IH0', 'B', 'UW2']]",1
+SNT-310,caribou,deer,"[['K', 'EH1', 'R', 'IH0', 'B', 'UW2']]","[['D', 'IH1', 'R']]",1
+SNV-312,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SNV-312,dog,fish,"[['D', 'AO1', 'G']]","[['F', 'IH1', 'SH']]",0
+SNV-312,fish,turtle,"[['F', 'IH1', 'SH']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+SNV-312,turtle,bird,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['B', 'ER1', 'D']]",1
+SNV-312,bird,alligator,"[['B', 'ER1', 'D']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+SNV-312,alligator,tiger,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['T', 'AY1', 'G', 'ER0']]",1
+SNV-312,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SNV-312,lion,monkey,"[['L', 'AY1', 'AH0', 'N']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SNV-312,monkey,giraffe,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SNV-312,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SNV-312,elephant,snake,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['S', 'N', 'EY1', 'K']]",1
+SNV-312,snake,frog,"[['S', 'N', 'EY1', 'K']]","[['F', 'R', 'AA1', 'G']]",0
+SNV-312,frog,worm,"[['F', 'R', 'AA1', 'G']]","[['W', 'ER1', 'M']]",0
+SNV-312,worm,bear,"[['W', 'ER1', 'M']]","[['B', 'EH1', 'R']]",0
+SNV-312,bear,wolf,"[['B', 'EH1', 'R']]","[['W', 'UH1', 'L', 'F']]",0
+SNV-312,wolf,kangaroo,"[['W', 'UH1', 'L', 'F']]","[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]",0
+SNV-312,kangaroo,octopus,"[['K', 'AE2', 'NG', 'G', 'ER0', 'UW1']]","[['AA1', 'K', 'T', 'AH0', 'P', 'UH2', 'S']]",1
+SNY-315,deer,raccoon,"[['D', 'IH1', 'R']]","[['R', 'AE0', 'K', 'UW1', 'N']]",1
+SNY-315,raccoon,squirrel,"[['R', 'AE0', 'K', 'UW1', 'N']]","[['S', 'K', 'W', 'ER1', 'AH0', 'L']]",1
+SNY-315,squirrel,possum,"[['S', 'K', 'W', 'ER1', 'AH0', 'L']]","[['P', 'AA1', 'S', 'AH0', 'M']]",1
+SNY-315,possum,dog,"[['P', 'AA1', 'S', 'AH0', 'M']]","[['D', 'AO1', 'G']]",0
+SNY-315,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SNY-315,cat,rabbit,"[['K', 'AE1', 'T']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+SNY-315,rabbit,zebra,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SNY-315,zebra,tiger,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['T', 'AY1', 'G', 'ER0']]",0
+SNY-315,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SNY-315,lion,leopard,"[['L', 'AY1', 'AH0', 'N']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+SNY-315,leopard,antelope,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]",1
+SNY-315,antelope,cougar,"[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]","[['K', 'UW1', 'G', 'ER0']]",0
+SNY-315,cougar,bear,"[['K', 'UW1', 'G', 'ER0']]","[['B', 'EH1', 'R']]",0
+SNY-315,bear,polar,"[['B', 'EH1', 'R']]","[['P', 'OW1', 'L', 'ER0']]",0
+SNY-315,polar,wolf,"[['P', 'OW1', 'L', 'ER0']]","[['W', 'UH1', 'L', 'F']]",1
+SNY-315,wolf,sheep,"[['W', 'UH1', 'L', 'F']]","[['SH', 'IY1', 'P']]",0
+SNY-315,sheep,goat,"[['SH', 'IY1', 'P']]","[['G', 'OW1', 'T']]",0
+SNY-315,goat,cow,"[['G', 'OW1', 'T']]","[['K', 'AW1']]",0
+SNY-315,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+SOA-317,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SOA-317,tiger,giraffe,"[['T', 'AY1', 'G', 'ER0']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SOA-317,giraffe,zebra,"[['JH', 'ER0', 'AE1', 'F']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+SOA-317,zebra,monkey,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SOA-317,monkey,parrot,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['P', 'EH1', 'R', 'AH0', 'T']]",1
+SOA-317,parrot,goat,"[['P', 'EH1', 'R', 'AH0', 'T']]","[['G', 'OW1', 'T']]",1
+SOE-320,chicken,goat,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['G', 'OW1', 'T']]",0
+SOE-320,goat,rhino,"[['G', 'OW1', 'T']]","[['R', 'AY1', 'N', 'OW2']]",1
+SOE-320,rhino,cow,"[['R', 'AY1', 'N', 'OW2']]","[['K', 'AW1']]",0
+SOE-320,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+SOE-320,horse,cat,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AE1', 'T']]",0
+SOE-320,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SOE-320,dog,elephant,"[['D', 'AO1', 'G']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",0
+SOE-320,elephant,zebra,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SOE-320,zebra,lion,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SOE-320,lion,bird,"[['L', 'AY1', 'AH0', 'N']]","[['B', 'ER1', 'D']]",0
+SOE-320,bird,panda,"[['B', 'ER1', 'D']]","[['P', 'AE1', 'N', 'D', 'AH0']]",1
+SOE-320,panda,polar,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['P', 'OW1', 'L', 'ER0']]",1
+SOQ-329,ant,anteater,"[['AE1', 'N', 'T']]","[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]",3
+SOQ-329,anteater,giraffe,"[['AE1', 'N', 'T', 'IY2', 'T', 'ER0']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SOQ-329,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SOQ-329,elephant,lion,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['L', 'AY1', 'AH0', 'N']]",2
+SOQ-329,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SOQ-329,tiger,dog,"[['T', 'AY1', 'G', 'ER0']]","[['D', 'AO1', 'G']]",1
+SOQ-329,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SOQ-329,cat,fish,"[['K', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+SOQ-329,fish,monkey,"[['F', 'IH1', 'SH']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+SOQ-329,monkey,hippo,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['HH', 'IH1', 'P', 'OW0']]",0
+SOQ-329,hippo,rhino,"[['HH', 'IH1', 'P', 'OW0']]","[['R', 'AY1', 'N', 'OW2']]",1
+SOQ-329,rhino,ape,"[['R', 'AY1', 'N', 'OW2']]","[['EY1', 'P']]",0
+SOQ-329,ape,shark,"[['EY1', 'P']]","[['SH', 'AA1', 'R', 'K']]",0
+SOQ-329,shark,dolphin,"[['SH', 'AA1', 'R', 'K']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+SOQ-329,dolphin,seal,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['S', 'IY1', 'L']]",1
+SOQ-329,seal,polar,"[['S', 'IY1', 'L']]","[['P', 'OW1', 'L', 'ER0']]",1
+SOQ-329,polar,bear,"[['P', 'OW1', 'L', 'ER0']]","[['B', 'EH1', 'R']]",0
+SOQ-329,bear,bird,"[['B', 'EH1', 'R']]","[['B', 'ER1', 'D']]",1
+SOQ-329,bird,crane,"[['B', 'ER1', 'D']]","[['K', 'R', 'EY1', 'N']]",0
+SOQ-329,crane,swan,"[['K', 'R', 'EY1', 'N']]","[['S', 'W', 'AA1', 'N'], ['S', 'W', 'AO1', 'N']]",1
+SOQ-329,swan,pigeon,"[['S', 'W', 'AA1', 'N'], ['S', 'W', 'AO1', 'N']]","[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]",1
+SOQ-329,pigeon,dragonfly,"[['P', 'IH1', 'JH', 'AH0', 'N'], ['P', 'IH1', 'JH', 'IH0', 'N']]","[['D', 'R', 'AA1', 'G', 'OW0', 'EH1', 'N', 'F', 'L', 'AY1']]",1
+SOX-335,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SOX-335,lion,elephant,"[['L', 'AY1', 'AH0', 'N']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",2
+SOX-335,elephant,sealion,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['S', 'IY1', 'L', 'AY1', 'AH0', 'N'], ['S', 'IY1', 'L', 'AY1', 'AA2', 'N']]",2
+SOX-335,sealion,dolphin,"[['S', 'IY1', 'L', 'AY1', 'AH0', 'N'], ['S', 'IY1', 'L', 'AY1', 'AA2', 'N']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",2
+SOX-335,dolphin,catfish,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['K', 'AE1', 'T', 'F', 'IH2', 'SH']]",1
+SOX-335,catfish,penguin,"[['K', 'AE1', 'T', 'F', 'IH2', 'SH']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",0
+SOX-335,penguin,monkey,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SOX-335,monkey,shark,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['SH', 'AA1', 'R', 'K']]",1
+SOX-335,shark,whale,"[['SH', 'AA1', 'R', 'K']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",0
+SOX-335,whale,tigerfish,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['T', 'AY1', 'G', 'ER0', 'F', 'IH1', 'SH']]",0
+SPA-338,frog,horse,"[['F', 'R', 'AA1', 'G']]","[['HH', 'AO1', 'R', 'S']]",1
+SPA-338,horse,tiger,"[['HH', 'AO1', 'R', 'S']]","[['T', 'AY1', 'G', 'ER0']]",0
+SPA-338,tiger,lion,"[['T', 'AY1', 'G', 'ER0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SPA-338,lion,seahorse,"[['L', 'AY1', 'AH0', 'N']]","[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]",0
+SPA-338,seahorse,sealion,"[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]","[['S', 'IY1', 'L', 'AY1', 'AH0', 'N'], ['S', 'IY1', 'L', 'AY1', 'AA2', 'N']]",2
+SPA-338,sealion,hippo,"[['S', 'IY1', 'L', 'AY1', 'AH0', 'N'], ['S', 'IY1', 'L', 'AY1', 'AA2', 'N']]","[['HH', 'IH1', 'P', 'OW0']]",0
+SPA-338,hippo,dolphin,"[['HH', 'IH1', 'P', 'OW0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",0
+SPA-338,dolphin,shark,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['SH', 'AA1', 'R', 'K']]",1
+SPA-338,shark,fish,"[['SH', 'AA1', 'R', 'K']]","[['F', 'IH1', 'SH']]",1
+SPA-338,fish,zebra,"[['F', 'IH1', 'SH']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+SPA-338,zebra,gazelle,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['G', 'AH0', 'Z', 'EH1', 'L']]",1
+SPA-338,gazelle,tiger,"[['G', 'AH0', 'Z', 'EH1', 'L']]","[['T', 'AY1', 'G', 'ER0']]",1
+SPA-338,tiger,alligator,"[['T', 'AY1', 'G', 'ER0']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+SPA-338,alligator,crocodile,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+SPA-338,crocodile,giraffe,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SPA-338,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SPC-340,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SPC-340,cat,chicken,"[['K', 'AE1', 'T']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SPC-340,chicken,rooster,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['R', 'UW1', 'S', 'T', 'ER0']]",0
+SPC-340,rooster,pig,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['P', 'IH1', 'G']]",0
+SPC-340,pig,bird,"[['P', 'IH1', 'G']]","[['B', 'ER1', 'D']]",0
+SPC-340,bird,horse,"[['B', 'ER1', 'D']]","[['HH', 'AO1', 'R', 'S']]",0
+SPC-340,horse,cow,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AW1']]",0
+SPC-340,cow,zebra,"[['K', 'AW1']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+SPC-340,zebra,cheetah,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['CH', 'IY1', 'T', 'AH0']]",1
+SPC-340,cheetah,leopard,"[['CH', 'IY1', 'T', 'AH0']]","[['L', 'EH1', 'P', 'ER0', 'D']]",0
+SPC-340,leopard,bear,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['B', 'EH1', 'R']]",1
+SPC-340,bear,walrus,"[['B', 'EH1', 'R']]","[['W', 'AO1', 'L', 'R', 'AH0', 'S']]",1
+SPC-340,walrus,seal,"[['W', 'AO1', 'L', 'R', 'AH0', 'S']]","[['S', 'IY1', 'L']]",1
+SPC-340,seal,dolphin,"[['S', 'IY1', 'L']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+SPC-340,dolphin,giraffe,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SPC-340,giraffe,elephant,"[['JH', 'ER0', 'AE1', 'F']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SPC-340,elephant,monkey,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SPC-340,monkey,spider,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['S', 'P', 'AY1', 'D', 'ER0']]",0
+SPC-340,spider,snake,"[['S', 'P', 'AY1', 'D', 'ER0']]","[['S', 'N', 'EY1', 'K']]",1
+SPH-344,elephant,zebra,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SPH-344,zebra,bird,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['B', 'ER1', 'D']]",1
+SPH-344,bird,dog,"[['B', 'ER1', 'D']]","[['D', 'AO1', 'G']]",1
+SPH-344,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SPH-344,cat,fish,"[['K', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+SPH-344,fish,lion,"[['F', 'IH1', 'SH']]","[['L', 'AY1', 'AH0', 'N']]",0
+SPH-344,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SPH-344,tiger,deer,"[['T', 'AY1', 'G', 'ER0']]","[['D', 'IH1', 'R']]",0
+SPH-344,deer,hippo,"[['D', 'IH1', 'R']]","[['HH', 'IH1', 'P', 'OW0']]",1
+SPL-436,horse,wolf,"[['HH', 'AO1', 'R', 'S']]","[['W', 'UH1', 'L', 'F']]",0
+SPL-436,wolf,dog,"[['W', 'UH1', 'L', 'F']]","[['D', 'AO1', 'G']]",0
+SPL-436,dog,cow,"[['D', 'AO1', 'G']]","[['K', 'AW1']]",0
+SPL-436,cow,hyena,"[['K', 'AW1']]","[['HH', 'AY0', 'IY1', 'N', 'AH0']]",0
+SPL-436,hyena,lion,"[['HH', 'AY0', 'IY1', 'N', 'AH0']]","[['L', 'AY1', 'AH0', 'N']]",1
+SPL-436,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SPL-436,tiger,bear,"[['T', 'AY1', 'G', 'ER0']]","[['B', 'EH1', 'R']]",0
+SPL-436,bear,cheetah,"[['B', 'EH1', 'R']]","[['CH', 'IY1', 'T', 'AH0']]",0
+SPL-436,cheetah,walrus,"[['CH', 'IY1', 'T', 'AH0']]","[['W', 'AO1', 'L', 'R', 'AH0', 'S']]",1
+SPL-436,walrus,seal,"[['W', 'AO1', 'L', 'R', 'AH0', 'S']]","[['S', 'IY1', 'L']]",1
+SPL-436,seal,polar,"[['S', 'IY1', 'L']]","[['P', 'OW1', 'L', 'ER0']]",1
+SPL-436,polar,porcupine,"[['P', 'OW1', 'L', 'ER0']]","[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]",1
+SPL-436,porcupine,horse,"[['P', 'AO1', 'R', 'K', 'Y', 'AH0', 'P', 'AY2', 'N']]","[['HH', 'AO1', 'R', 'S']]",2
+SPL-436,horse,bull,"[['HH', 'AO1', 'R', 'S']]","[['B', 'UH1', 'L']]",0
+SPL-436,bull,bull,"[['B', 'UH1', 'L']]","[['B', 'UH1', 'L']]",3
+SPL-436,bull,oxen,"[['B', 'UH1', 'L']]","[['AA1', 'K', 'S', 'AH0', 'N']]",0
+SPV-450,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SPV-450,cat,bird,"[['K', 'AE1', 'T']]","[['B', 'ER1', 'D']]",0
+SPV-450,bird,pig,"[['B', 'ER1', 'D']]","[['P', 'IH1', 'G']]",0
+SPV-450,pig,elephant,"[['P', 'IH1', 'G']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",0
+SPV-450,elephant,giraffe,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SPV-450,giraffe,alligator,"[['JH', 'ER0', 'AE1', 'F']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+SPV-450,alligator,snake,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['S', 'N', 'EY1', 'K']]",1
+SPV-450,snake,frog,"[['S', 'N', 'EY1', 'K']]","[['F', 'R', 'AA1', 'G']]",0
+SPV-450,frog,fish,"[['F', 'R', 'AA1', 'G']]","[['F', 'IH1', 'SH']]",1
+SPV-450,fish,groundhog,"[['F', 'IH1', 'SH']]","[['G', 'R', 'AW1', 'N', 'D', 'HH', 'AA2', 'G']]",0
+SPV-450,groundhog,boar,"[['G', 'R', 'AW1', 'N', 'D', 'HH', 'AA2', 'G']]","[['B', 'AO1', 'R']]",1
+SPV-450,boar,lion,"[['B', 'AO1', 'R']]","[['L', 'AY1', 'AH0', 'N']]",0
+SPV-450,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SPV-450,tiger,wolf,"[['T', 'AY1', 'G', 'ER0']]","[['W', 'UH1', 'L', 'F']]",0
+SPV-450,wolf,coyote,"[['W', 'UH1', 'L', 'F']]","[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]",0
+SPV-450,coyote,chicken,"[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SPV-450,chicken,rooster,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['R', 'UW1', 'S', 'T', 'ER0']]",0
+SPV-450,rooster,bunny,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['B', 'AH1', 'N', 'IY0']]",0
+SPX-452,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SPX-452,dog,dolphin,"[['D', 'AO1', 'G']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+SPX-452,dolphin,shark,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['SH', 'AA1', 'R', 'K']]",1
+SPX-452,shark,alligator,"[['SH', 'AA1', 'R', 'K']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",0
+SPX-452,alligator,crocodile,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]",1
+SPX-452,crocodile,bird,"[['K', 'R', 'AA1', 'K', 'AH0', 'D', 'AY2', 'L']]","[['B', 'ER1', 'D']]",1
+SPX-452,bird,bear,"[['B', 'ER1', 'D']]","[['B', 'EH1', 'R']]",1
+SPX-452,bear,coyote,"[['B', 'EH1', 'R']]","[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]",0
+SPX-452,coyote,wolf,"[['K', 'AY0', 'OW1', 'T', 'IY0'], ['K', 'AY1', 'OW0', 'T']]","[['W', 'UH1', 'L', 'F']]",0
+SPX-452,wolf,fish,"[['W', 'UH1', 'L', 'F']]","[['F', 'IH1', 'SH']]",1
+SPX-452,fish,seahorse,"[['F', 'IH1', 'SH']]","[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]",0
+SPX-452,seahorse,snail,"[['S', 'IY1', 'HH', 'AO1', 'R', 'S']]","[['S', 'N', 'EY1', 'L']]",1
+SPX-452,snail,koala,"[['S', 'N', 'EY1', 'L']]","[['K', 'OW0', 'AA1', 'L', 'AH0']]",1
+SPX-452,koala,panda,"[['K', 'OW0', 'AA1', 'L', 'AH0']]","[['P', 'AE1', 'N', 'D', 'AH0']]",1
+SPX-452,panda,grizzly,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]",0
+SPX-452,grizzly,hyena,"[['G', 'R', 'IH1', 'Z', 'L', 'IY0']]","[['HH', 'AY0', 'IY1', 'N', 'AH0']]",1
+SPX-452,hyena,snake,"[['HH', 'AY0', 'IY1', 'N', 'AH0']]","[['S', 'N', 'EY1', 'K']]",1
+SPX-452,snake,frog,"[['S', 'N', 'EY1', 'K']]","[['F', 'R', 'AA1', 'G']]",0
+SPX-452,frog,toad,"[['F', 'R', 'AA1', 'G']]","[['T', 'OW1', 'D']]",0
+SPX-452,toad,lion,"[['T', 'OW1', 'D']]","[['L', 'AY1', 'AH0', 'N']]",0
+SPX-452,lion,leopard,"[['L', 'AY1', 'AH0', 'N']]","[['L', 'EH1', 'P', 'ER0', 'D']]",1
+SRF-483,lion,bear,"[['L', 'AY1', 'AH0', 'N']]","[['B', 'EH1', 'R']]",0
+SRF-483,bear,lion,"[['B', 'EH1', 'R']]","[['L', 'AY1', 'AH0', 'N']]",0
+SRF-483,lion,cat,"[['L', 'AY1', 'AH0', 'N']]","[['K', 'AE1', 'T']]",0
+SRF-483,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SRF-483,dog,lizard,"[['D', 'AO1', 'G']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",1
+SRF-483,lizard,bird,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['B', 'ER1', 'D']]",2
+SRF-483,bird,falcon,"[['B', 'ER1', 'D']]","[['F', 'AE1', 'L', 'K', 'AH0', 'N']]",0
+SRF-483,falcon,pelican,"[['F', 'AE1', 'L', 'K', 'AH0', 'N']]","[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]",3
+SRF-483,pelican,warthog,"[['P', 'EH1', 'L', 'AH0', 'K', 'AH0', 'N']]","[['W', 'AO1', 'R', 'T', 'HH', 'AA1', 'G']]",0
+SRF-483,warthog,pig,"[['W', 'AO1', 'R', 'T', 'HH', 'AA1', 'G']]","[['P', 'IH1', 'G']]",1
+SRF-483,pig,horse,"[['P', 'IH1', 'G']]","[['HH', 'AO1', 'R', 'S']]",0
+SRF-483,horse,chicken,"[['HH', 'AO1', 'R', 'S']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+SRF-483,chicken,hog,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['HH', 'AA1', 'G']]",0
+SRF-483,hog,sabertoothcat,"[['HH', 'AA1', 'G']]","[['S', 'EY1', 'B', 'ER0', 'T', 'UW1', 'T', 'EY1', 'CH', 'K', 'AE1', 'T']]",0
+SRF-483,sabertoothcat,duck,"[['S', 'EY1', 'B', 'ER0', 'T', 'UW1', 'T', 'EY1', 'CH', 'K', 'AE1', 'T']]","[['D', 'AH1', 'K']]",1
+SRR-498,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SRR-498,cat,horse,"[['K', 'AE1', 'T']]","[['HH', 'AO1', 'R', 'S']]",0
+SRR-498,horse,turtle,"[['HH', 'AO1', 'R', 'S']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+SRR-498,turtle,ape,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['EY1', 'P']]",0
+SRR-498,ape,monkey,"[['EY1', 'P']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+SRR-498,monkey,pony,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['P', 'OW1', 'N', 'IY0']]",1
+SRR-498,pony,tiger,"[['P', 'OW1', 'N', 'IY0']]","[['T', 'AY1', 'G', 'ER0']]",0
+SRR-498,tiger,shark,"[['T', 'AY1', 'G', 'ER0']]","[['SH', 'AA1', 'R', 'K']]",0
+SRR-498,shark,lizard,"[['SH', 'AA1', 'R', 'K']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+SRR-498,lizard,gecko,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['G', 'EH1', 'K', 'OW0']]",0
+SRR-498,gecko,ant,"[['G', 'EH1', 'K', 'OW0']]","[['AE1', 'N', 'T']]",0
+SRR-498,ant,worm,"[['AE1', 'N', 'T']]","[['W', 'ER1', 'M']]",0
+SRR-498,worm,bird,"[['W', 'ER1', 'M']]","[['B', 'ER1', 'D']]",1
+SRR-498,bird,bear,"[['B', 'ER1', 'D']]","[['B', 'EH1', 'R']]",1
+SRR-498,bear,goat,"[['B', 'EH1', 'R']]","[['G', 'OW1', 'T']]",0
+SRR-498,goat,deer,"[['G', 'OW1', 'T']]","[['D', 'IH1', 'R']]",0
+SRR-498,deer,lion,"[['D', 'IH1', 'R']]","[['L', 'AY1', 'AH0', 'N']]",0
+SSG-520,lion,tiger,"[['L', 'AY1', 'AH0', 'N']]","[['T', 'AY1', 'G', 'ER0']]",1
+SSG-520,tiger,flamingo,"[['T', 'AY1', 'G', 'ER0']]","[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]",1
+SSG-520,flamingo,monkey,"[['F', 'L', 'AH0', 'M', 'IH1', 'NG', 'G', 'OW0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SSG-520,monkey,whale,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]",0
+SSG-520,whale,fish,"[['W', 'EY1', 'L'], ['HH', 'W', 'EY1', 'L']]","[['F', 'IH1', 'SH']]",0
+SSG-520,fish,shark,"[['F', 'IH1', 'SH']]","[['SH', 'AA1', 'R', 'K']]",1
+SSG-520,shark,panther,"[['SH', 'AA1', 'R', 'K']]","[['P', 'AE1', 'N', 'TH', 'ER0']]",0
+SSG-520,panther,cat,"[['P', 'AE1', 'N', 'TH', 'ER0']]","[['K', 'AE1', 'T']]",1
+SSG-520,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SSG-520,dog,snake,"[['D', 'AO1', 'G']]","[['S', 'N', 'EY1', 'K']]",0
+SSG-520,snake,turtle,"[['S', 'N', 'EY1', 'K']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+SSG-520,turtle,turtle,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['T', 'ER1', 'T', 'AH0', 'L']]",5
+SSG-520,turtle,crab,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['K', 'R', 'AE1', 'B']]",0
+SSG-520,crab,squid,"[['K', 'R', 'AE1', 'B']]","[['S', 'K', 'W', 'IH1', 'D']]",1
+SSG-520,squid,octopus,"[['S', 'K', 'W', 'IH1', 'D']]","[['AA1', 'K', 'T', 'AH0', 'P', 'UH2', 'S']]",1
+SSZ-539,pig,cow,"[['P', 'IH1', 'G']]","[['K', 'AW1']]",0
+SSZ-539,cow,horse,"[['K', 'AW1']]","[['HH', 'AO1', 'R', 'S']]",0
+SSZ-539,horse,cat,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AE1', 'T']]",0
+SSZ-539,cat,fish,"[['K', 'AE1', 'T']]","[['F', 'IH1', 'SH']]",0
+SSZ-539,fish,dog,"[['F', 'IH1', 'SH']]","[['D', 'AO1', 'G']]",0
+SSZ-539,dog,monkey,"[['D', 'AO1', 'G']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",0
+SSZ-539,monkey,alligator,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+SSZ-539,alligator,monkey,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SSZ-539,monkey,hippo,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['HH', 'IH1', 'P', 'OW0']]",0
+SSZ-539,hippo,dolphin,"[['HH', 'IH1', 'P', 'OW0']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",0
+SSZ-539,dolphin,shark,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['SH', 'AA1', 'R', 'K']]",1
+SSZ-539,shark,rainbow,"[['SH', 'AA1', 'R', 'K']]","[['R', 'EY1', 'N', 'B', 'OW2']]",1
+SUG-544,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SUG-544,cat,pig,"[['K', 'AE1', 'T']]","[['P', 'IH1', 'G']]",0
+SUG-544,pig,cow,"[['P', 'IH1', 'G']]","[['K', 'AW1']]",0
+SUG-544,cow,chicken,"[['K', 'AW1']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SUG-544,chicken,elephant,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",2
+SUG-544,elephant,monkey,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SUG-544,monkey,fish,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['F', 'IH1', 'SH']]",0
+SUG-544,fish,giraffe,"[['F', 'IH1', 'SH']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SUG-544,giraffe,dolphin,"[['JH', 'ER0', 'AE1', 'F']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",1
+SUG-544,dolphin,dolphin,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['D', 'AA1', 'L', 'F', 'AH0', 'N']]",6
+SUG-544,dolphin,zebra,"[['D', 'AA1', 'L', 'F', 'AH0', 'N']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SUG-544,zebra,shark,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['SH', 'AA1', 'R', 'K']]",1
+SUG-544,shark,turtle,"[['SH', 'AA1', 'R', 'K']]","[['T', 'ER1', 'T', 'AH0', 'L']]",0
+SUG-544,turtle,cow,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['K', 'AW1']]",0
+SUT-556,elephant,giraffe,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SUT-556,giraffe,turtle,"[['JH', 'ER0', 'AE1', 'F']]","[['T', 'ER1', 'T', 'AH0', 'L']]",1
+SUT-556,turtle,zebra,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SUT-556,zebra,monkey,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SUT-556,monkey,dog,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['D', 'AO1', 'G']]",0
+SUT-556,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SUT-556,cat,lizard,"[['K', 'AE1', 'T']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+SUT-556,lizard,dinosaur,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['D', 'AY1', 'N', 'AH0', 'S', 'AO2', 'R']]",1
+SUT-556,dinosaur,bear,"[['D', 'AY1', 'N', 'AH0', 'S', 'AO2', 'R']]","[['B', 'EH1', 'R']]",1
+SUT-556,bear,dragon,"[['B', 'EH1', 'R']]","[['D', 'R', 'AE1', 'G', 'AH0', 'N']]",1
+SUT-556,dragon,horse,"[['D', 'R', 'AE1', 'G', 'AH0', 'N']]","[['HH', 'AO1', 'R', 'S']]",1
+SUT-556,horse,pig,"[['HH', 'AO1', 'R', 'S']]","[['P', 'IH1', 'G']]",0
+SUT-556,pig,cow,"[['P', 'IH1', 'G']]","[['K', 'AW1']]",0
+SUT-556,cow,bird,"[['K', 'AW1']]","[['B', 'ER1', 'D']]",0
+SUV-558,lion,zebra,"[['L', 'AY1', 'AH0', 'N']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SUV-558,zebra,cheetah,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['CH', 'IY1', 'T', 'AH0']]",1
+SUV-558,cheetah,leopard,"[['CH', 'IY1', 'T', 'AH0']]","[['L', 'EH1', 'P', 'ER0', 'D']]",0
+SUV-558,leopard,elephant,"[['L', 'EH1', 'P', 'ER0', 'D']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",1
+SUV-558,elephant,zebra,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SUV-558,zebra,snake,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['S', 'N', 'EY1', 'K']]",0
+SUV-558,snake,monkey,"[['S', 'N', 'EY1', 'K']]","[['M', 'AH1', 'NG', 'K', 'IY0']]",1
+SUV-558,monkey,gorilla,"[['M', 'AH1', 'NG', 'K', 'IY0']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+SUV-558,gorilla,giraffe,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SUV-558,giraffe,tiger,"[['JH', 'ER0', 'AE1', 'F']]","[['T', 'AY1', 'G', 'ER0']]",1
+SUV-558,tiger,cub,"[['T', 'AY1', 'G', 'ER0']]","[['K', 'AH1', 'B']]",0
+SUV-558,cub,ant,"[['K', 'AH1', 'B']]","[['AE1', 'N', 'T']]",0
+SUV-558,ant,dragon,"[['AE1', 'N', 'T']]","[['D', 'R', 'AE1', 'G', 'AH0', 'N']]",1
+SUV-558,dragon,zebra,"[['D', 'R', 'AE1', 'G', 'AH0', 'N']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",1
+SUV-558,zebra,horse,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['HH', 'AO1', 'R', 'S']]",1
+SUV-558,horse,cow,"[['HH', 'AO1', 'R', 'S']]","[['K', 'AW1']]",0
+SUV-558,cow,sheep,"[['K', 'AW1']]","[['SH', 'IY1', 'P']]",0
+SUV-558,sheep,chicken,"[['SH', 'IY1', 'P']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",0
+SVA-563,rhino,orangutan,"[['R', 'AY1', 'N', 'OW2']]","[['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AE0', 'N'], ['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AA0', 'N']]",1
+SVA-563,orangutan,chimp,"[['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AE0', 'N'], ['AO0', 'R', 'AE1', 'NG', 'AH0', 'T', 'AA0', 'N']]","[['CH', 'IH1', 'M', 'P']]",0
+SVA-563,chimp,chipmunk,"[['CH', 'IH1', 'M', 'P']]","[['CH', 'IH1', 'P', 'M', 'AH1', 'NG', 'K']]",2
+SVA-563,chipmunk,giraffe,"[['CH', 'IH1', 'P', 'M', 'AH1', 'NG', 'K']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SVA-563,giraffe,gorilla,"[['JH', 'ER0', 'AE1', 'F']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",1
+SVA-563,gorilla,gorilla,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",5
+SVA-563,gorilla,dog,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['D', 'AO1', 'G']]",1
+SVA-563,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SVA-563,cat,hamster,"[['K', 'AE1', 'T']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+SVA-563,hamster,fish,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['F', 'IH1', 'SH']]",0
+SVA-563,fish,frog,"[['F', 'IH1', 'SH']]","[['F', 'R', 'AA1', 'G']]",1
+SVA-563,frog,snake,"[['F', 'R', 'AA1', 'G']]","[['S', 'N', 'EY1', 'K']]",0
+SVA-563,snake,caterpillar,"[['S', 'N', 'EY1', 'K']]","[['K', 'AE1', 'T', 'AH0', 'P', 'IH2', 'L', 'ER0'], ['K', 'AE1', 'T', 'ER0', 'P', 'IH2', 'L', 'ER0']]",1
+SVA-563,caterpillar,giraffe,"[['K', 'AE1', 'T', 'AH0', 'P', 'IH2', 'L', 'ER0'], ['K', 'AE1', 'T', 'ER0', 'P', 'IH2', 'L', 'ER0']]","[['JH', 'ER0', 'AE1', 'F']]",1
+SVA-563,giraffe,rhino,"[['JH', 'ER0', 'AE1', 'F']]","[['R', 'AY1', 'N', 'OW2']]",0
+SVA-563,rhino,buffalo,"[['R', 'AY1', 'N', 'OW2']]","[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]",1
+SVA-563,buffalo,horse,"[['B', 'AH1', 'F', 'AH0', 'L', 'OW2']]","[['HH', 'AO1', 'R', 'S']]",0
+SVA-563,horse,antelope,"[['HH', 'AO1', 'R', 'S']]","[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]",0
+SVA-563,antelope,deer,"[['AE1', 'N', 'T', 'AH0', 'L', 'OW2', 'P']]","[['D', 'IH1', 'R']]",0
+SVA-563,deer,sheep,"[['D', 'IH1', 'R']]","[['SH', 'IY1', 'P']]",0
+SVH-570,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SVH-570,cat,rabbit,"[['K', 'AE1', 'T']]","[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]",1
+SVH-570,rabbit,hamster,"[['R', 'AE1', 'B', 'AH0', 'T'], ['R', 'AE1', 'B', 'IH0', 'T']]","[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]",1
+SVH-570,hamster,gerbil,"[['HH', 'AE1', 'M', 'S', 'T', 'ER0']]","[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]",1
+SVH-570,gerbil,guinea,"[['JH', 'IY1', 'ER1', 'B', 'IH1', 'L']]","[['G', 'IH1', 'N', 'IY0']]",1
+SVH-570,guinea,penguin,"[['G', 'IH1', 'N', 'IY0']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",1
+SVH-570,penguin,giraffe,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SVH-570,giraffe,jaguar,"[['JH', 'ER0', 'AE1', 'F']]","[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]",1
+SVH-570,jaguar,lion,"[['JH', 'AE1', 'G', 'W', 'AA2', 'R']]","[['L', 'AY1', 'AH0', 'N']]",0
+SVH-570,lion,cheetah,"[['L', 'AY1', 'AH0', 'N']]","[['CH', 'IY1', 'T', 'AH0']]",1
+SVH-570,cheetah,prairie,"[['CH', 'IY1', 'T', 'AH0']]","[['P', 'R', 'EH1', 'R', 'IY0']]",1
+SVH-570,prairie,gorilla,"[['P', 'R', 'EH1', 'R', 'IY0']]","[['G', 'ER0', 'IH1', 'L', 'AH0']]",0
+SVH-570,gorilla,elephant,"[['G', 'ER0', 'IH1', 'L', 'AH0']]","[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]",2
+SVH-570,elephant,tiger,"[['EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T']]","[['T', 'AY1', 'G', 'ER0']]",1
+SVY-587,tiger,zebra,"[['T', 'AY1', 'G', 'ER0']]","[['Z', 'IY1', 'B', 'R', 'AH0']]",0
+SVY-587,zebra,giraffe,"[['Z', 'IY1', 'B', 'R', 'AH0']]","[['JH', 'ER0', 'AE1', 'F']]",0
+SVY-587,giraffe,penguin,"[['JH', 'ER0', 'AE1', 'F']]","[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]",0
+SVY-587,penguin,panda,"[['P', 'EH1', 'NG', 'G', 'W', 'AH0', 'N']]","[['P', 'AE1', 'N', 'D', 'AH0']]",1
+SVY-587,panda,alligator,"[['P', 'AE1', 'N', 'D', 'AH0']]","[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]",1
+SVY-587,alligator,dog,"[['AE1', 'L', 'AH0', 'G', 'EY2', 'T', 'ER0']]","[['D', 'AO1', 'G']]",1
+SVY-587,dog,cat,"[['D', 'AO1', 'G']]","[['K', 'AE1', 'T']]",0
+SVY-587,cat,lizard,"[['K', 'AE1', 'T']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+SVY-587,lizard,gecko,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['G', 'EH1', 'K', 'OW0']]",0
+SVY-587,gecko,crab,"[['G', 'EH1', 'K', 'OW0']]","[['K', 'R', 'AE1', 'B']]",1
+SVY-587,crab,octopus,"[['K', 'R', 'AE1', 'B']]","[['AA1', 'K', 'T', 'AH0', 'P', 'UH2', 'S']]",1
+SVY-587,octopus,jellyfish,"[['AA1', 'K', 'T', 'AH0', 'P', 'UH2', 'S']]","[['JH', 'EH1', 'L', 'IY0', 'F', 'IH2', 'SH']]",0
+SVY-587,jellyfish,turtle,"[['JH', 'EH1', 'L', 'IY0', 'F', 'IH2', 'SH']]","[['T', 'ER1', 'T', 'AH0', 'L']]",1
+SVY-587,turtle,bird,"[['T', 'ER1', 'T', 'AH0', 'L']]","[['B', 'ER1', 'D']]",1
+SVY-587,bird,chick,"[['B', 'ER1', 'D']]","[['CH', 'IH1', 'K']]",0
+SVY-587,chick,hen,"[['CH', 'IH1', 'K']]","[['HH', 'EH1', 'N']]",0
+SVY-587,hen,rooster,"[['HH', 'EH1', 'N']]","[['R', 'UW1', 'S', 'T', 'ER0']]",0
+SVY-587,rooster,crow,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['K', 'R', 'OW1']]",1
+SZA-781,cat,dog,"[['K', 'AE1', 'T']]","[['D', 'AO1', 'G']]",0
+SZA-781,dog,pig,"[['D', 'AO1', 'G']]","[['P', 'IH1', 'G']]",1
+SZA-781,pig,cow,"[['P', 'IH1', 'G']]","[['K', 'AW1']]",0
+SZA-781,cow,chicken,"[['K', 'AW1']]","[['CH', 'IH1', 'K', 'AH0', 'N']]",1
+SZA-781,chicken,rooster,"[['CH', 'IH1', 'K', 'AH0', 'N']]","[['R', 'UW1', 'S', 'T', 'ER0']]",0
+SZA-781,rooster,frog,"[['R', 'UW1', 'S', 'T', 'ER0']]","[['F', 'R', 'AA1', 'G']]",1
+SZA-781,frog,snake,"[['F', 'R', 'AA1', 'G']]","[['S', 'N', 'EY1', 'K']]",0
+SZA-781,snake,lizard,"[['S', 'N', 'EY1', 'K']]","[['L', 'IH1', 'Z', 'ER0', 'D']]",0
+SZA-781,lizard,iguana,"[['L', 'IH1', 'Z', 'ER0', 'D']]","[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]",0
+SZA-781,iguana,badger,"[['AY0', 'G', 'W', 'AA1', 'N', 'AH0']]","[['B', 'AE1', 'JH', 'ER0']]",0
+SZA-781,badger,bulldog,"[['B', 'AE1', 'JH', 'ER0']]","[['B', 'UH1', 'L', 'D', 'AO2', 'G']]",1
+SZA-781,bulldog,puppy,"[['B', 'UH1', 'L', 'D', 'AO2', 'G']]","[['P', 'AH1', 'P', 'IY0']]",0
+SZA-781,puppy,kitten,"[['P', 'AH1', 'P', 'IY0']]","[['K', 'IH1', 'T', 'AH0', 'N']]",1
+SZA-781,kitten,goose,"[['K', 'IH1', 'T', 'AH0', 'N']]","[['G', 'UW1', 'S']]",0
+SZA-781,goose,duck,"[['G', 'UW1', 'S']]","[['D', 'AH1', 'K']]",0
+SZA-781,duck,wolf,"[['D', 'AH1', 'K']]","[['W', 'UH1', 'L', 'F']]",0
