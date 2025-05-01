@@ -302,7 +302,7 @@ prop.test(x = c(nh_0.9, ci_0.9), n = c(nh_foods_total, ci_foods_total), correct 
 #sig more for CI
 
 #2 proportion z test - 0.0
-prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_total, ci_total), correct = FALSE)
+prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_foods_total, ci_foods_total), correct = FALSE)
 #ns
 
 #comparing multimodal alphas across domains, collapsing across groups
