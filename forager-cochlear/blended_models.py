@@ -6,8 +6,8 @@ from forager.cues import create_semantic_matrix
 class blended:
     def __init__(self):
         domains = ['animals', 'foods'] 
-        dimensions = ['50', '100', '200', '300']
-        alphas = np.arange(0,1,0.1)
+        dimensions = ['50']
+        alphas = np.array([1.0])
 
         for d in domains:
             for dim in dimensions:
@@ -23,8 +23,8 @@ class blended:
 
         ## read in speech2vec and word2vec embeddings for specific domain and dimension
 
-        word2vec = np.array(pd.read_csv(domain_path + 'word2vec/' + dimension + '/embeddings.csv'))
-        speech2vec = np.array(pd.read_csv(domain_path + 'speech2vec/' + dimension + '/embeddings.csv'))
+        word2vec = np.array(pd.read_csv(domain_path + 'word2vec/' + dimension + '/' + '1.0'+ '/embeddings.csv'))
+        speech2vec = np.array(pd.read_csv(domain_path + 'speech2vec/' + dimension + '/' + '1.0'+ '/embeddings.csv'))
     
         # Compute the weighted embeddings
         weighted_speech2vec = alpha_speech * speech2vec
