@@ -579,9 +579,9 @@ plots_switch<-switch_results %>%
       theme_few() + 
       theme(legend.position = "top")))
 
+plots_switch$emmip_plot[[3]]+
 plots_switch$emmip_plot[[1]]+
 plots_switch$emmip_plot[[2]]+
-plots_switch$emmip_plot[[3]]+
 plot_layout(ncol = 1)
 
 #intx of group x switch x fluency score for phonological similarity
@@ -640,11 +640,12 @@ phoneme_all
 #by domain
 phoneme_domain <- phonemes %>%
   group_by(domain) %>%
-  summarize(
+   summarize(
     count_cont = sum(Shared_Cont_Phonemes > 2, na.rm = TRUE),
     total = n(),
     proportion_stems = count_cont / total,
-    avg_shared_length = mean(Shared_Cont_Phonemes, na.rm = TRUE)) %>%
+    avg_shared_length = mean(Shared_Cont_Phonemes, na.rm = TRUE),
+    sd_shared_length = sd(Shared_Cont_Phonemes, na.rm = TRUE)) %>%
   ungroup()
 phoneme_domain 
 ```
