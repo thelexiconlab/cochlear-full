@@ -220,10 +220,10 @@ random_nLL_lookup <- full_model_data %>%
 
 
 #setting up parameter matching
-full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,structure,sep="_"))%>% filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #exclude missing demos and atypical subjs
+full_model_data_parameters<-full_model_data %>%mutate(parameter_link=paste(model_type,method,sep="_"))%>% filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #exclude missing demos and atypical subjs
 
 #importing parameter counts
-parameters<-read.csv("Cochlear_BIC_Parameters.csv") %>%select(parameter_link,k)
+parameters<-read.csv("BICparams_noswitch.csv") %>%select(parameter_link,k)
 
 #calculating BIC
 bic <- full_model_data_parameters %>%
@@ -649,3 +649,98 @@ phoneme_domain <- phonemes %>%
   ungroup()
 phoneme_domain 
 ```
+
+
+```{r}
+### Demographics
+library(tableone)
+demos<-read.csv("../data/demographics.csv")
+
+demos_clean<-demos %>% select(ID,Group,Gender,NIH_Race,CAYRS2,Eti,FitMOS,UseYRS2) %>%filter(!(ID %in% c("754", "159")))%>%
+  rename(
+  Race = NIH_Race,
+  Age = CAYRS2,
+  Etiology = Eti)
+
+demos_NH<-demos_clean%>%filter(Group=="NH") %>% select(ID,Group,Gender,Age,Race)%>%mutate(
+    Etiology = NA_character_,
+    `Age of Implantation (in Months)` = NA_real_,
+    `Length of Use` = NA_real_)
+
+demos_CI<-demos_clean%>%filter(Group=="CI")
+
+demos_combined<-rbind(demos_NH,demos_CI)%>%rename(Subject="ID")
+```
+
+
+```{r}
+#alpha correlation
+
+
+alpha_implant <- best_blended_delta_bic_analysis %>%
+  filter(Group == "CI") %>%
+  select(Subject, Group, domain, alpha) %>%              # keep Group & domain
+  rename(ID = Subject) %>%
+  mutate(
+    ID = as.character(stringr::str_sub(ID, 5)),
+    alpha = as.numeric(alpha)
+  ) %>%
+  left_join(
+    demos_CI %>%
+      mutate(ID = as.character(ID)),
+    by = c("ID", "Group")
+  ) 
+
+ # plot age of implantation x alpha
+ggplot(
+  data = alpha_implant,
+  aes(
+    x = FitMOS,
+    y = alpha,
+    color = domain,
+    group = domain
+  )
+) +
+  facet_wrap(~ domain) +
+  theme_few() +
+  geom_point(size = 2, alpha = 0.7) +
+  geom_smooth(method = "lm", se = TRUE, size = 1) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.10)) +   # <-- increments of .10
+  theme(
+    aspect.ratio = 1,
+    axis.text.x = element_text(hjust = 1, face = "bold")
+  ) +
+  paletteer::scale_colour_paletteer_d("nationalparkcolors::CraterLake") +
+  labs(y = "structural alpha", x = "age of implantation (months)")
+
+# plot length of use x alpha
+ggplot(
+  data = alpha_implant,
+  aes(
+    x = UseYRS2,
+    y = alpha,
+    color = domain,
+    group = domain
+  )
+) +
+  facet_wrap(~ domain) +
+  theme_few() +
+  geom_point(size = 2, alpha = 0.7) +
+  geom_smooth(method = "lm", se = TRUE, size = 1) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.10)) +   # <-- increments of .10
+  theme(
+    aspect.ratio = 1,
+    axis.text.x = element_text(hjust = 1, face = "bold")
+  ) +
+  paletteer::scale_colour_paletteer_d("nationalparkcolors::CraterLake") +
+  labs(y = "structural alpha", x = "length of use (years)")
+
+
+# does length of use or age of implantation predict alpha
+
+alpha_corr<- lm(data=alpha_implant, alpha~domain*UseYRS2*FitMOS)
+summary(alpha_corr)
+
+#
+```
+
