@@ -278,10 +278,45 @@ best_blended_delta_bic_analysis <- best_blended_delta_bic %>%
     method = as.character(method),model_type = as.character(model_type))
 
 #comparing structural alpha proportions
+#collapsing across domains
+alpha_test <- best_blended_delta_bic_analysis 
+alpha_table <- table(alpha_test$Group,alpha_test$alpha)
+
+#look at tables to get counts
+# Number with alpha = 1.0
+nh_1.0 <- 3    
+ci_1.0 <- 12   
+
+# Total in each group
+nh_total <- 53  
+ci_total <- 46  
+
+#2 proportion z test - 1.0
+prop.test(x = c(nh_1.0, ci_1.0), n = c(nh_total, ci_total), correct = FALSE)
+
+
+#just for animals
+animals_alpha_test <- best_blended_delta_bic_analysis %>%
+  filter(domain == "animals")
+alpha_animals_table <- table(animals_alpha_test$Group, animals_alpha_test$alpha)
+
+#look at tables to get counts
+# Number with alpha = 1.0
+nh_1.0 <- 2    
+ci_1.0 <- 6   
+
+
+# Total in each group
+nh_animals_total <- 29  
+ci_animals_total <- 29  
+
+#2 proportion z test - 1.0
+prop.test(x = c(nh_1.0, ci_1.0), n = c(nh_animals_total, ci_animals_total), correct = FALSE)
+
 #just for foods
 foods_alpha_test <- best_blended_delta_bic_analysis %>%
   filter(domain == "foods")
-alpha_table <- table(foods_alpha_test$Group, foods_alpha_test$alpha)
+alpha_foods_table <- table(foods_alpha_test$Group, foods_alpha_test$alpha)
 
 #look at tables to get counts
 # Number with alpha = 1.0
@@ -379,61 +414,89 @@ scale_fill_custom <- scale_fill_manual(values = switch_palette)
 
 #STRUCTURE
 #Looking at structural alphas
-best_blended_delta_bic_analysis %>% 
+
+structure_prop <- best_blended_delta_bic_analysis %>% 
   mutate(alpha = as.character(alpha)) %>%
-  group_by(Group, domain, alpha) %>%
-  summarise(n = n(), .groups = "drop") %>%
-  group_by(Group, domain) %>%  
-  mutate(prop = n / sum(n)) %>%  
-  ggplot(aes(x = Group, y = prop, fill = alpha)) +
-  geom_bar(stat = "identity", position = "fill") +  
-  geom_text(aes(label = scales::percent(prop, accuracy = 0.1)), 
-            position = position_fill(vjust = 0.5)) + 
-  facet_wrap(~domain) +  
-  labs(y = "proportion", x = "group", fill = "weight of acoustics", 
-       title = "Structural Alpha") +
+  group_by(Group, domain) %>%
+  count(Group, domain, alpha, name = "n") %>%
+  mutate(prop = n / sum(n)) %>%
+  ungroup()
+
+ggplot(structure_prop, aes(x = Group, y = prop, fill = alpha)) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  facet_wrap(~ domain) +
+  scale_y_continuous(
+    labels = percent_format(accuracy = 1),
+    limits = c(0, 0.4),        # <-- 40% maximum
+    expand = expansion(mult = c(0, 0.05))
+  ) +
+  labs(
+    y = "Percent Best-Fit", x = "Group", fill = "Weight of acoustics",
+    title = "Structural Alpha"
+  ) +
   theme_few() +
   scale_fill_paletteer_d("colorBlindness::Blue2Orange12Steps") +
   theme(
     plot.title = element_text(hjust = 0.5),
-    axis.text.x = element_text(face = "bold"))
-
+    axis.text.x  = element_text(face = "bold")
+  )
  
 
 #PROCESS
 #multimodaldelta switch betas
-switch_alpha_plot<-best_blended_delta_bic_analysis%>%mutate(param1=as.character(param1))%>%
-  group_by(Group, domain, param1) %>%
-  count() %>%
-  group_by(Group, domain) %>%  #calculate within each group x domain
-  mutate(prop = n / sum(n)) %>%  #compute proportion 
-  ggplot(aes(x = Group, y = prop, fill =param1)) +
-  geom_bar(stat = "identity", position = "fill") +  
-  geom_text(aes(label = percent(prop, accuracy = 0.1)), 
-            position = position_fill(vjust = 0.5)) + 
-  facet_wrap(~domain) +  
-  labs(y = "proportion",x="group", fill = "semantic weight", 
-       title = "Multimodal Switch Alpha") +
-  theme_few()+scale_fill_custom+
-  theme(plot.title = element_text(hjust = 0.5))
+switch_prop <- best_blended_delta_bic_analysis %>%
+  mutate(param1 = as.character(param1)) %>%
+  group_by(Group, domain) %>%
+  count(Group, domain, param1, name = "n") %>%         # tallies by Group×domain×param1
+  mutate(prop = n / sum(n)) %>%                        # % within each Group×domain
+  ungroup()
+
+switch_alpha_plot<-ggplot(switch_prop, aes(x = Group, y = prop, fill = param1)) +
+  geom_col(position = position_dodge2(width = 0.8, preserve = "single"), width = 0.75) +
+  facet_wrap(~ domain) +
+  scale_y_continuous(
+    labels = percent_format(accuracy = 1),
+    expand  = expansion(mult = c(0, 0.05))
+  ) +
+  labs(
+    y = "Percent Best-Fit", x = "Group",
+    fill = "Semantic weight",
+    title = "Multimodal Switch Alpha"
+  ) +
+  theme_few() +
+  scale_fill_custom 
+  theme(
+    plot.title = element_text(hjust = 0.5),
+    axis.text.x = element_text(face = "bold"))
 
 #best model
-model_plot<-best_blended_delta_bic_analysis%>%
-    group_by(Group,domain,model_type) %>%
-  count() %>%
-  group_by(Group, domain) %>%  #calculate within each group x domain
-  mutate(prop = n / sum(n)) %>%  #compute proportion 
-  ggplot(aes(x = Group, y = prop, fill =model_type)) +
-  geom_bar(stat = "identity", position = "fill") +  
-  geom_text(aes(label = percent(prop, accuracy = 0.1)), 
-            position = position_fill(vjust = 0.5)) + 
-  facet_wrap(~domain) +  
-  labs(y = "proportion", x="group",fill = "model", 
-       title = "Best-fit Model") +
-  theme_few()+scale_fill_paletteer_d("rcartocolor::DarkMint")+
-   theme(plot.title = element_text(hjust = 0.5))
+model_prop <-
+  best_blended_delta_bic_analysis %>%
+  group_by(Group, domain) %>%
+  count(Group, domain, model_type, name = "n") %>%
+  mutate(prop = n / sum(n)) %>%
+  ungroup()
 
-switch_alpha_plot+model_plot
+
+model_plot<-ggplot(model_prop,aes(x = Group, y = prop, fill = model_type)) +
+  geom_col(
+    position = position_dodge2(width = 0.8, preserve = "single"),
+    width = 0.75
+  ) +
+  facet_wrap(~ domain) +
+  scale_y_continuous(labels = percent_format(accuracy = 1),
+                     expand = expansion(mult = c(0, 0.05))) +
+  labs(
+    y = "Percent Best-Fit", x = "Group",
+    fill = "Model",
+    title = "Best-fit Model"
+  ) +
+  theme_few() +
+  scale_fill_paletteer_d("rcartocolor::DarkMint") +
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.x = element_text(face = "bold"))
+
+
 ```
 
 ## Lexical & Clustering Analyses
@@ -453,6 +516,13 @@ lexical_analysis_data <-full_indv_data %>% select(Subject, Group,Phonological_Si
 lexical_analysis_data_semantic<-best_blended_delta_bic_analysis%>%
   left_join(full_indv_data%>%mutate(alpha=as.numeric(alpha)) %>%select(Subject,Group,domain,structure,dimension,alpha,Semantic_Similarity_mean)%>%na.omit())%>% mutate(Group = factor(Group, levels = c("NH", "CI")))
 
+# getting fluency means
+lexical_analysis_data %>%
+  group_by(Group) %>%
+  summarise(
+    mean_fluency = mean(fluency_score),
+    sd_fluency = sd(fluency_score),
+    n = n())
 #Does fluency score differ by Group and domain
 fluency_lm = lm(data = lexical_analysis_data, fluency_score ~ Group*domain)
 summary(fluency_lm)
@@ -625,8 +695,18 @@ switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values
 #Upload data
 animals_phonemes<-read.csv("animals_phoneme_pairs.csv") %>%mutate(domain="animals")
 foods_phonemes<-read.csv("foods_phoneme_pairs.csv")%>%mutate(domain="foods")
-phonemes<-rbind(animals_phonemes,foods_phonemes)%>% rename(Subject="ID") %>%left_join(participant_groupings)%>%filter(!(Subject %in% c("CAN-667","SFZ-149","SOA-317","CDH-754","SGO-159")))%>%filter(Word1 != Word2) #filter out atypical/missing demo subjects and consecutive repeats
+phonemes<-rbind(animals_phonemes,foods_phonemes)%>% rename(Subject="ID") %>%left_join(participant_groupings)%>%filter(!(Subject %in% c("CAN-667","SFZ-149","SOA-317","CDH-754","SGO-159")))%>%filter(Word1 != Word2) #filter out atypical/missing demo subjects 
 
+#get list of words w/ shared stems
+phonemes_stem<-phonemes%>%
+  filter(Shared_Cont_Phonemes > 2) %>%
+  arrange(Subject, Group, domain) %>%
+  filter(lag(Word2) != Word1 | is.na(lag(Word2))) %>%  # keep only if not repeated
+  select(Subject, Group, domain, Word1, Word2)%>%
+  pivot_longer(cols = c(Word1, Word2),
+               names_to = "Word_Type",
+               values_to = "Word") %>%
+  select(-Word_Type) %>%rename(entry="Word")
 #overall
 phoneme_all <- phonemes %>%
   summarize(
@@ -648,12 +728,53 @@ phoneme_domain <- phonemes %>%
     sd_shared_length = sd(Shared_Cont_Phonemes, na.rm = TRUE)) %>%
   ungroup()
 phoneme_domain 
+
+
+# taking out words w shared stems to see if lexical analyses change
+#import corrections to link to replacements
+library(readxl)
+animals_repl <- read_excel("../data/lexical_data/animals/corrections.xlsx") %>%
+  mutate(domain = "animals")
+foods_repl <- read_excel("../data/lexical_data/foods/corrections.xlsx") %>%
+  mutate(domain = "foods")
+
+comb_repl <- bind_rows(animals_repl, foods_repl) 
+
+
+comb_phonemes <- phonemes_stem %>%
+  left_join(comb_repl, by = c("entry", "domain"), relationship = "many-to-many") %>%
+  mutate(entry = if_else(!is.na(replacement), replacement, entry))
+
+switches_filtered <- switches_recoded %>% rename(entry="Fluency_Item")%>%
+  anti_join(
+    comb_phonemes %>% select(Subject, entry),
+    by = c("Subject", "entry"))
+
+switch_no_stem_results <- switches_filtered  %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%
+  group_by(cue) %>%                                   
+  nest() %>%                                         
+ mutate(
+    model = map(data, ~ lm(value ~ Group*domain*Switch*fluency_score, data = .)) 
+  )
+
+#View results
+print("phonological")
+switch_no_stem_results$model[[2]] %>% summary()
+emmeans(switch_no_stem_results$model[[2]],pairwise~Group*domain*Switch,simple="Group",pbkrtest.limit = 35657)
+emmeans(switch_no_stem_results$model[[2]],pairwise~Group*Switch*fluency_score,simple="Switch",pbkrtest.limit = 35657) 
+
+# looking at 3 way intx - does magnitude of difference between switch designations differ across groups in either domain
+mod <- switch_results$model[[2]]
+emm_domain <- emmeans(mod, ~ Group * domain * Switch, by = "domain")
+contrast(emm_domain, interaction = "pairwise")
+
 ```
 
 
 ```{r}
 ### Demographics
-library(tableone)
+# Note the demographics information is not publicly available due to confidentiality concerns.
+''' library(tableone)
 demos<-read.csv("../data/demographics.csv")
 
 demos_clean<-demos %>% select(ID,Group,Gender,NIH_Race,CAYRS2,Eti,FitMOS,UseYRS2) %>%filter(!(ID %in% c("754", "159")))%>%
@@ -670,13 +791,8 @@ demos_NH<-demos_clean%>%filter(Group=="NH") %>% select(ID,Group,Gender,Age,Race)
 demos_CI<-demos_clean%>%filter(Group=="CI")
 
 demos_combined<-rbind(demos_NH,demos_CI)%>%rename(Subject="ID")
-```
 
-
-```{r}
-#alpha correlation
-
-
+# alpha correlation
 alpha_implant <- best_blended_delta_bic_analysis %>%
   filter(Group == "CI") %>%
   select(Subject, Group, domain, alpha) %>%              # keep Group & domain
@@ -691,7 +807,7 @@ alpha_implant <- best_blended_delta_bic_analysis %>%
     by = c("ID", "Group")
   ) 
 
- # plot age of implantation x alpha
+# plot age of implantation x alpha
 ggplot(
   data = alpha_implant,
   aes(
@@ -739,8 +855,5 @@ ggplot(
 # does length of use or age of implantation predict alpha
 
 alpha_corr<- lm(data=alpha_implant, alpha~domain*UseYRS2*FitMOS)
-summary(alpha_corr)
-
-#
+summary(alpha_corr) '''
 ```
-
