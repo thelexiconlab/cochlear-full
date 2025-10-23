@@ -746,17 +746,6 @@ best_clusters <- full_indv_data %>%mutate(Group = factor(Group, levels = c("NH",
   group_by(Subject,Group,domain) %>%left_join(lexical_analysis_data%>%select(Subject,Group,domain,fluency_score)%>%unique(), by = c("Subject", "Group","domain")) #adding fluency_score back in
 
 
-# NOT INCL FLUENCY SCORE AS COVARIATE
-#avg cluster size
-#number of items produced as a covariate
-domain_cluster_size_nofs_lm = lm(data = best_clusters, Cluster_Size_mean ~ Group * domain)
-summary(domain_cluster_size_nofs_lm)
-
-#number of switches
-domain_switch_numb_nofs_lm = lm(data = best_clusters, Number_of_Switches ~Group * domain)
-summary(domain_switch_numb_nofs_lm)
-#ME of fluency score
-
 #avg cluster size
 #number of items produced as a covariate
 domain_cluster_size_lm = lm(data = best_clusters, Cluster_Size_mean ~ Group * domain * fluency_score)
