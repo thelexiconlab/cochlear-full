@@ -203,38 +203,29 @@ validate_combined_data(full_switch_data, "switch_results.csv")
 ```
 #===================================================Analysis Starts Here=========================================================
 
-# Basic Fluency Performance
+# Basic Fluency
 ```{r}
-#setting up lexical df for later
-lexical_analysis_data <-full_indv_data %>% select(Subject, Group,Phonological_Similarity_mean, Frequency_Value_mean, 
-         fluency_score, domain) %>% na.omit() %>% left_join(best_blended_delta_bic %>% select(Subject,domain,Group,alpha)) %>%mutate(alpha=as.numeric(as.character(alpha)))%>%
-  rename("phonological" = "Phonological_Similarity_mean",
-         "frequency" = "Frequency_Value_mean")%>%
-  pivot_longer(names_to = "cue", cols=c(phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI"))) %>% unique()%>%
-  filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #removing participants within missing demo info
+#Getting N
+just_fluency<-full_indv_data %>%select(Subject,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()%>%  filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159")))
 
+# basic fluency performance
 # getting fluency means
-lexical_analysis_data %>%
+just_fluency %>%
   group_by(Group) %>%
   summarise(
-    mean_fluency = mean(fluency_score),
-    sd_fluency = sd(fluency_score),
-    n = n())
+    mean_fluency = mean(N),
+    sd_fluency = sd(N),
+    N = n())
 
 #Does fluency score differ by Group and domain
-fluency_lm = lm(data = lexical_analysis_data, fluency_score ~ Group*domain)
+fluency_lm = lm(data = just_fluency, N ~ Group*domain)
 summary(fluency_lm)
 car::Anova(fluency_lm)
-
 ```
-
 
 # Model Analyses
 
 ```{r}
-
-#Getting N
-just_fluency<-full_indv_data %>%select(Subject,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()
 
 #Extract random model's nLL for each Subject x domain x structure x dim x alpha
 random_nLL_lookup <- full_model_data %>%
@@ -631,6 +622,14 @@ model_plot<-ggplot(model_prop,aes(x = Group, y = prop, fill = model_type)) +
 
 ## Overall Lexical - Domain differences
 ```{r}
+#setting up lexical df 
+lexical_analysis_data <-full_indv_data %>% select(Subject, Group,Phonological_Similarity_mean, Frequency_Value_mean, 
+         fluency_score, domain) %>% na.omit() %>% left_join(best_blended_delta_bic %>% select(Subject,domain,Group,alpha)) %>%mutate(alpha=as.numeric(as.character(alpha)))%>%
+  rename("phonological" = "Phonological_Similarity_mean",
+         "frequency" = "Frequency_Value_mean")%>%
+  pivot_longer(names_to = "cue", cols=c(phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI"))) %>% unique()%>%
+  filter(!(Subject %in% c("CAN-667","CAU-667","SFZ-149","SOA-317","CDH-754","SGO-159"))) #removing participants within missing demo info
+
 #setting up the semantic df 
 #using each participants best semantic structure
 lexical_analysis_data_semantic<-best_blended_delta_bic_analysis%>%
