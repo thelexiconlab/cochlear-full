@@ -372,18 +372,20 @@ prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_foods_total, ci_foods_total), correct 
 #ns
 
 ### Does age of implantation or length of use correlate w/ best-fit structural alpha
-# Note the demographics information is not publicly available due to confidentiality concerns.
+# Note demographic information & individual battery scores are not publicly available due to confidentiality concerns.
 
 #import data
 #library(tableone)
-#demos<-read.csv("../data/demographics.csv")
+#demos<-read.csv("demographics.csv")
 
-#demos_clean<-demos %>% select(ID,Group,Gender,NIH_Race,CAYRS2,Eti,FitMOS,UseYRS2) %>%filter(!(ID %in% c("754", "159")))%>%
+#demos_clean<-demos %>% select(ID,Group,Gender,NIH_Race,CAYRS2,Eti,FitMOS,UseYRS2,X.4ppvtae) %>%filter(!(ID %in% c("754", "159")))%>%
 #  rename(
 #  Race = NIH_Race,
 #  Age = CAYRS2,
-#  Etiology = Eti)
+#  Etiology = Eti,
+ # PPVT=X.4ppvtae)
 
+# for table
 #demos_NH<-demos_clean%>%filter(Group=="NH") %>% select(ID,Group,Gender,Age,Race)%>%mutate(
 #    Etiology = NA_character_,
 #    `Age of Implantation (in Months)` = NA_real_,
@@ -392,20 +394,21 @@ prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_foods_total, ci_foods_total), correct 
 #demos_CI<-demos_clean%>%filter(Group=="CI")
 #demos_combined<-rbind(demos_NH,demos_CI)%>%rename(SID="ID")
 
+
 # does structural alpha correlate w/ age of implantation / years of use
 #alpha_implant <- best_blended_delta_bic_analysis %>%
 #  filter(Group == "CI") %>%
 #  select(SID, Group, domain, alpha) %>%             
 #  rename(ID = SID) %>%
 #  mutate(
-#    ID = as.character(stringr::str_sub(ID, 5)),
+#   ID = as.character(stringr::str_sub(ID, 5)),
 #    alpha = as.numeric(alpha)
 #  ) %>%
 #  left_join(
 #    demos_CI %>%
 #      mutate(ID = as.character(ID)),
 #    by = c("ID", "Group")
-#  ) 
+ # ) 
 
 # plot age of implantation x alpha
 #ggplot(
@@ -455,6 +458,40 @@ prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_foods_total, ci_foods_total), correct 
 # does length of use or age of implantation predict alpha
 #alpha_corr<- lm(data=alpha_implant, alpha~domain*UseYRS2*FitMOS)
 #summary(alpha_corr) 
+
+## BATTERY MEASURES
+
+## Group differences in receptive semantic processing via PPVT
+
+# get group averages for PPVT
+#demos_clean %>%
+#  group_by(Group) %>%
+#  summarise(
+ #   mean_PPVT = mean(PPVT),
+ #   sd_PPVT = sd(PPVT))
+
+
+#ppvt<- lm(data=demos_clean, PPVT~Group)
+#summary(ppvt)
+
+
+### Does phonological processing ability, measured by nonword repetition score, differ by group
+
+#import NWR data
+#nwr_data<-read.csv("nwr_data.csv")
+#nwr_comp<-best_blended_delta_bic_analysis %>%left_join(nwr_data)%>%filter(NWR_Score!="#NULL!")%>%mutate(NWR_Score=as.numeric(NWR_Score))
+
+#Group averages
+#nwr_comp %>%
+#  group_by(Group) %>%
+#  summarise(
+#    mean_nwr = mean(NWR_Score),
+#    sd_fluency = sd(NWR_Score))
+
+
+#nwr<- lm(data=nwr_comp, NWR_Score~Group)
+#summary(nwr)
+
 
 #==============SWITCH PARAMETERS=======================
 
@@ -524,6 +561,8 @@ prop.test(x = c(nh_pswitch,ci_pswitch), n = c(nh_foods_total, ci_foods_total), c
 
 ```
  
+
+
 ## Individual Differences Plots
 ```{r}
 #nested bar plots
