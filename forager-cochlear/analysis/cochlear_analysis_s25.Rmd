@@ -263,17 +263,6 @@ best_blended_delta_bic = bic_clean%>%
   slice(1)
 
 
-#Best models per Group x domain
-#median delta BIC
-#median_delta_bic = bic_clean %>%filter(structure=="blended")%>%
-#  mutate(deltaBIC  = randomBIC - optimalBIC) %>%
- # group_by(Group,domain,everything) %>%
-#  summarise(mediandeltaBIC = median(deltaBIC)) %>%
- # arrange(desc(mediandeltaBIC)) %>%
- # slice(1) %>% 
- # ungroup() 
-#kable(median_delta_bic)
-
 #Getting SID counts
 best_blended_delta_bic %>%
   group_by(Group, domain) %>%
@@ -511,18 +500,18 @@ foods_total <- 41
 prop.test(x = c(animals_switch_beta,foods_switch_beta), n = c(animals_total, foods_total), correct = FALSE)
 #foods more likely to have a lower mm alpha
 
-#comparing multimodal betas across groups in foods
+#comparing multimodal betas across groups in foods, do more CIs ignore phonology (Beta = 1)
 group_mm_test=best_blended_delta_bic_analysis %>%
   filter(domain == "foods")
 group_mm_table <- table(group_mm_test$Group, group_mm_test$param1)
 
-# Number with mm beta < 0.5
-nh_foods_switch_beta <- 14    
-ci_foods_switch_beta <- 5  
+# Number with mm beta = 1
+nh_foods_switch_beta <- 2    
+ci_foods_switch_beta <- 10  
 
 # Run 2 proportion z test
 prop.test(x = c(nh_foods_switch_beta,ci_foods_switch_beta), n = c(nh_foods_total, ci_foods_total), correct = FALSE)
-#marginally more for nhs
+
 
 #======================MODELS============================
 
