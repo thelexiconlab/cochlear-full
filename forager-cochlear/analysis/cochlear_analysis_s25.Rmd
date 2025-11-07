@@ -608,7 +608,7 @@ switch_alpha_plot<-ggplot(switch_prop, aes(x = Group, y = prop, fill = param1)) 
   labs(
     y = "Percent Best-Fit", x = "Group",
     fill = "Semantic weight",
-    title = "Multimodal Switch Alpha"
+    title = "Multimodal Switch Beta"
   ) +
   theme_few() +
   scale_fill_custom 
