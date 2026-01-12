@@ -200,13 +200,17 @@ full_switch_data<-as.data.frame(full_switch_data)
 #check data
 validate_combined_data(full_switch_data, "switch_results.csv")
 
+
+#PPVT scores
+ppvt_scores<-read.csv("ppvt_covariates.csv")
+
 ```
 #===================================================Analysis Starts Here=========================================================
 
 # Basic Fluency
 ```{r}
 #Getting N
-just_fluency<-full_indv_data %>%select(SID,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()%>%  filter(!(SID %in% c("332053124","722249212","826471010","934821408","566255711","588241255")))
+just_fluency<-full_indv_data %>%select(SID,Group,domain,fluency_score) %>%rename("N"="fluency_score") %>%na.omit() %>%unique()%>%  filter(!(SID %in% c("332053124","722249212","826471010","934821408","566255711","588241255")))%>%left_join(ppvt_scores %>%rename("SID"="ID"),by=c("SID","Group"))
 
 # basic fluency performance
 # getting fluency means
@@ -221,6 +225,13 @@ just_fluency %>%
 fluency_lm = lm(data = just_fluency, N ~ Group*domain)
 summary(fluency_lm)
 car::Anova(fluency_lm)
+
+# w ppvt as covariate
+fluency_lm_ppvt = lm(data = just_fluency, N ~ Group*domain+PPVT)
+summary(fluency_lm_ppvt)
+car::Anova(fluency_lm_ppvt)
+
+#no sig changes
 ```
 
 # Model Analyses
@@ -370,9 +381,9 @@ prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_foods_total, ci_foods_total), correct 
 #demos_clean<-demos %>% select(ID,Group,Gender,NIH_Race,CAYRS2,Eti,FitMOS,UseYRS2,X.4ppvtae) %>%filter(!(ID %in% c("754", "159")))%>%
 #  rename(
 #  Race = NIH_Race,
-#  Age = CAYRS2,
-#  Etiology = Eti,
- # PPVT=X.4ppvtae)
+ # Age = CAYRS2,
+ # Etiology = Eti,
+#  PPVT=X.4ppvtae)
 
 # for table
 #demos_NH<-demos_clean%>%filter(Group=="NH") %>% select(ID,Group,Gender,Age,Race)%>%mutate(
@@ -456,13 +467,16 @@ prop.test(x = c(nh_0.0, ci_0.0), n = c(nh_foods_total, ci_foods_total), correct 
 #demos_clean %>%
 #  group_by(Group) %>%
 #  summarise(
- #   mean_PPVT = mean(PPVT),
- #   sd_PPVT = sd(PPVT))
+#    mean_PPVT = mean(PPVT),
+#    sd_PPVT = sd(PPVT))
 
 
 #ppvt<- lm(data=demos_clean, PPVT~Group)
 #summary(ppvt)
 
+#ppvt_scores<-demos_clean %>%
+#  group_by(ID,Group)%>%select(ID,Group,PPVT)
+#write.csv(ppvt_scores,"ppvt_covariates.csv")
 
 ### Does phonological processing ability, measured by nonword repetition score, differ by group
 
@@ -858,11 +872,48 @@ emmeans(switch_results$model[[3]],pairwise~domain*Group,pbkrtest.limit = 35657)
 
 #correlation between semantic x phonological similarity in each domain
 #on an item level
-switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values_from = value)%>% select(SID, Group, Fluency_Item,semantic, phonological, frequency,domain) %>% na.omit() %>%mutate(Group = factor(Group, levels = c("NH","CI")))
+switches_recoded_corr<-switches_recoded %>% pivot_wider(names_from = cue, values_from = value)%>% select(SID, Group, Fluency_Item,semantic, phonological, frequency,domain,PPVT) %>% na.omit() %>%mutate(Group = factor(Group, levels = c("NH","CI")))
 
 sem_phon_model<-lm(data = switches_recoded_corr, semantic ~ phonological*Group*domain)
 summary(sem_phon_model)
 #sig intx of phonology x domain
+
+#=====================
+### same as above but w/ PPVT score as a covariate
+## does cluster/switch designation predict semantic similarity, phonological similarity, and frequency for each Group x Domain
+switch_results_ppvt <- switches_recoded  %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%
+  group_by(cue) %>%                                   
+  nest() %>%                                         
+ mutate(
+    model = map(data, ~ lm(value ~ Group*domain*Switch*fluency_score+PPVT, data = .)) 
+  )
+
+#View results
+#large so calling indp
+print("Semantic")
+switch_results_ppvt$model[[1]] %>% summary() 
+emmeans(switch_results_ppvt$model[[1]],pairwise~domain*Switch,simple="domain",pbkrtest.limit = 35657)
+
+print("phonological")
+switch_results_ppvt$model[[2]] %>% summary()
+emmeans(switch_results_ppvt$model[[2]],pairwise~Group*domain*Switch,simple="Group",pbkrtest.limit = 35657)
+emmeans(switch_results_ppvt$model[[2]],pairwise~Group*Switch*fluency_score,simple="Switch",pbkrtest.limit = 35657) 
+
+# looking at 3 way intx - does magnitude of difference between switch designations differ across groups in either domain
+mod <- switch_results_ppvt$model[[2]]
+emm_domain <- emmeans(mod, ~ Group * Switch, by = "domain")
+contrast(emm_domain, interaction = "pairwise")
+
+print("Frequency")
+switch_results_ppvt$model[[3]] %>% summary()
+emmeans(switch_results_ppvt$model[[3]],pairwise~domain*Group,pbkrtest.limit = 35657)
+
+#correlation between semantic x phonological similarity in each domain
+#on an item level
+sem_phon_model_ppvt<-lm(data = switches_recoded_corr, semantic ~ phonological*Group*domain+PPVT)
+summary(sem_phon_model_ppvt)
+
+#nothing changed when incl PPVT as a covariate
 
 ```
 
