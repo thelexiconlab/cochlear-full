@@ -672,11 +672,11 @@ lexical_analysis_data <-full_indv_data %>% select(SID, Group,Phonological_Simila
   pivot_longer(names_to = "cue", cols=c(phonological,frequency))%>%mutate(Group = factor(Group, levels = c("NH","CI"))) %>% unique()%>%
   filter(!(SID %in% c("332053124","722249212","826471010","934821408","566255711","588241255"))) #removing participants within missing demo info
 
+
 #setting up the semantic df 
 #using each participants best semantic structure
 lexical_analysis_data_semantic<-best_blended_delta_bic_analysis%>%
   left_join(full_indv_data%>%mutate(alpha=as.numeric(alpha)) %>%select(SID,Group,domain,structure,dimension,alpha,Semantic_Similarity_mean)%>%na.omit())%>% mutate(Group = factor(Group, levels = c("NH", "CI")))
-
 
 #Basic domain differences in lexical metrics
 domain_semantic<- lm(Semantic_Similarity_mean ~ domain, data = lexical_analysis_data_semantic)
@@ -690,6 +690,7 @@ summary(domain_phon)
 domain_freq<- lm(value ~ domain, data = lexical_analysis_data%>%filter(cue=="frequency"))
 summary(domain_freq)
 #sig higher avg freq for foods
+
 
 ```
 
@@ -785,7 +786,7 @@ phoneme_domain
 #filtering to only include indv best model from above
 best_clusters <- full_indv_data %>%mutate(Group = factor(Group, levels = c("NH","CI")))%>%
   filter(paste(SID,Group,domain,full_method,dimension,structure,alpha) %in% paste(best_blended_delta_bic$SID,best_blended_delta_bic$Group,best_blended_delta_bic$domain, best_blended_delta_bic$full_method,best_blended_delta_bic$dimension,best_blended_delta_bic$structure,best_blended_delta_bic$alpha)) %>%select(-fluency_score)%>% #this is full of NAs & produces mismatch .x/.y error, so dropping
-  group_by(SID,Group,domain) %>%left_join(lexical_analysis_data%>%select(SID,Group,domain,fluency_score)%>%unique(), by = c("SID", "Group","domain")) #adding fluency_score back in
+  group_by(SID,Group,domain) %>%left_join(lexical_analysis_data%>%select(SID,Group,domain,fluency_score)%>%unique(), by = c("SID", "Group","domain")) %>%left_join(ppvt_scores%>%rename("SID"="ID"),by=c("SID","Group")) #adding fluency_score back in
 
 
 #avg cluster size
@@ -796,6 +797,18 @@ summary(domain_cluster_size_lm)
 #number of switches
 domain_switch_numb_lm = lm(data = best_clusters, Number_of_Switches ~Group * domain * fluency_score)
 summary(domain_switch_numb_lm)
+#ME of fluency score
+
+
+##same as above but w/ ppvt as a covariate
+#avg cluster size
+#number of items produced as a covariate
+domain_cluster_size_lm_ppvt = lm(data = best_clusters, Cluster_Size_mean ~ Group * domain * fluency_score + PPVT)
+summary(domain_cluster_size_lm_ppvt)
+
+#number of switches
+domain_switch_numb_lm_ppvt = lm(data = best_clusters, Number_of_Switches ~Group * domain * fluency_score + PPVT)
+summary(domain_switch_numb_lm_ppvt)
 #ME of fluency score
 ```
 
